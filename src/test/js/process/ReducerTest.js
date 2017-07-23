@@ -90,7 +90,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
 
          answer[1406] = {
             id: 1406,
-            title: "Monopoly",
+            title: "Monopoly (1933)",
             minPlayers: 2,
             maxPlayers: 8,
             categories: [],
@@ -99,7 +99,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          };
          answer[181] = {
             id: 181,
-            title: "Risk",
+            title: "Risk (1959)",
             minPlayers: 2,
             maxPlayers: 6,
             categories: [],
@@ -116,11 +116,11 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
 
          answer[1406] = {
             id: 1406,
-            title: "Monopoly",
+            title: "Monopoly (1933)",
          };
          answer[181] = {
             id: 181,
-            title: "Risk",
+            title: "Risk (1959)",
          };
 
          return answer;

@@ -25,6 +25,8 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          this.mechanicMap = {};
          // user ID to object
          this.usernameMap = {};
+         // username to boolean
+         this.usernameToReceivedMap = {};
 
          this.usernames.forEach(function(username, id)
          {

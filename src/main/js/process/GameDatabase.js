@@ -1,5 +1,5 @@
-define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFetcher", "process/GameSummaryFetcher"],
-   function(Action, GameCollectionFetcher, GameDetailFetcher, GameSummaryFetcher)
+define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFetcher", "process/GameSummaryFetcher", "process/Selector"],
+   function(Action, GameCollectionFetcher, GameDetailFetcher, GameSummaryFetcher, Selector)
    {
       "use strict";
 
@@ -9,7 +9,6 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          // callback optional.
 
          var that = this;
-         var usernameToReceivedMap = {};
 
          var collectionCallback;
          var summaryCallback;
@@ -20,39 +19,9 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
             return store;
          };
 
-         this.pageCount = function()
-         {
-            return store.getState().pageCount;
-         };
-
          this.callback = function()
          {
             return callback;
-         };
-
-         this.gameCollectionMap = function()
-         {
-            return store.getState().gameCollectionMap;
-         };
-
-         this.gameDetailMap = function()
-         {
-            return store.getState().gameDetailMap;
-         };
-
-         this.gameSummaryMap = function()
-         {
-            return store.getState().gameSummaryMap;
-         };
-
-         this.usernameToReceivedMap = function()
-         {
-            return usernameToReceivedMap;
-         };
-
-         this.usernames = function()
-         {
-            return store.getState().usernames;
          };
 
          this.receiveCollection = function(username, collectionIds)
@@ -63,13 +32,13 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
             if (collectionIds.length > 0)
             {
-               usernameToReceivedMap[username] = true;
                store.dispatch(Action.addUserCollection(username, collectionIds));
             }
 
             if (this.isCollectionsLoaded())
             {
-               this.collectionCallback(this.gameCollectionMap());
+               var gameCollectionMap = Selector.gameCollectionMap(store.getState());
+               this.collectionCallback(gameCollectionMap);
             }
          };
 
@@ -82,7 +51,8 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
             if (this.detailCallback)
             {
-               this.detailCallback(this.gameDetailMap());
+               var gameDetailMap = Selector.gameDetailMap(store.getState());
+               this.detailCallback(gameDetailMap);
             }
          };
 
@@ -95,30 +65,16 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
             if (this.isSummariesLoaded() && this.summaryCallback)
             {
-               this.summaryCallback(this.gameSummaryMap());
+               var gameSummaryMap = Selector.gameSummaryMap(store.getState());
+               this.summaryCallback(gameSummaryMap);
             }
          };
       }
 
-      GameDatabase.prototype.findGameCollectionsById = function(id)
-      {
-         return this.gameCollectionMap()[id];
-      };
-
-      GameDatabase.prototype.findGameDetailById = function(id)
-      {
-         return this.gameDetailMap()[id];
-      };
-
-      GameDatabase.prototype.findGameSummaryById = function(id)
-      {
-         return this.gameSummaryMap()[id];
-      };
-
       GameDatabase.prototype.isCollectionsLoaded = function()
       {
-         var usernames = this.usernames();
-         var usernameToReceivedMap = this.usernameToReceivedMap();
+         var usernames = Selector.usernames(this.store().getState());
+         var usernameToReceivedMap = Selector.usernameToReceivedMap(this.store().getState());
 
          return usernames.reduce(function(accumulator, username)
          {
@@ -129,17 +85,18 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
       GameDatabase.prototype.isDetailsLoaded = function()
       {
          var length = Object.keys(this.gameDetailMap()).length;
-         var pageCount = this.pageCount();
+         var gameTotal = Selector.gameTotal(this.store().getState());
 
-         return (length === pageCount * 100);
+         return (length === gameTotal);
       };
 
       GameDatabase.prototype.isSummariesLoaded = function()
       {
-         var length = Object.keys(this.gameSummaryMap()).length;
-         var pageCount = this.pageCount();
+         var gameSummaryMap = Selector.gameSummaryMap(this.store().getState());
+         var length = Object.keys(gameSummaryMap).length;
+         var gameTotal = Selector.gameTotal(this.store().getState());
 
-         return (length === pageCount * 100);
+         return (length === gameTotal);
       };
 
       GameDatabase.prototype.load = function()
@@ -169,7 +126,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          InputValidator.validateNotNull("callback", callback);
 
          this.collectionCallback = callback;
-         var usernames = this.usernames();
+         var usernames = Selector.usernames(this.store().getState());
 
          usernames.forEach(function(username)
          {
@@ -194,7 +151,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
          var needGameDetailIds = keys.filter(function(key)
          {
-            return this.findGameDetailById(key) === undefined;
+            return Selector.findGameDetailById(this.store().getState(), key) === undefined;
          }, this);
          // LOGGER.info("GameDatabase.loadGameDetails() needGameDetailIds.length = " + needGameDetailIds.length);
 
@@ -219,7 +176,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          InputValidator.validateNotNull("callback", callback);
 
          this.summaryCallback = callback;
-         var pageCount = this.pageCount();
+         var pageCount = Selector.pageCount(this.store().getState());
 
          for (var i = 1; i <= pageCount; i++)
          {

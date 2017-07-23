@@ -66,6 +66,8 @@ define(function()
 
    Action.setFilters = function(filters)
    {
+      InputValidator.validateNotNull("filters", filters);
+
       return (
       {
          type: Action.SET_FILTERS,
@@ -75,6 +77,8 @@ define(function()
 
    Action.setGameDatabase = function(gameDatabase)
    {
+      InputValidator.validateNotNull("gameDatabase", gameDatabase);
+
       return (
       {
          type: Action.SET_GAME_DATABASE,

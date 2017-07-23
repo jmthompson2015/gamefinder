@@ -1,4 +1,4 @@
-define(function()
+define(["process/Selector"], function(Selector)
 {
    "use strict";
    var Connector = {};
@@ -26,11 +26,11 @@ define(function()
    Connector.ProgressUI = {
       mapStateToProps: function(state, ownProps)
       {
-         var gameTotal = state.pageCount * 100;
+         var gameTotal = Selector.gameTotal(state);
 
          return (
          {
-            collectionCount: Object.keys(state.gameDatabase.usernameToReceivedMap()).length,
+            collectionCount: Object.keys(state.usernameToReceivedMap).length,
             collectionTotal: state.usernames.length,
             summaryCount: Object.keys(state.gameSummaryMap).length,
             summaryTotal: gameTotal,

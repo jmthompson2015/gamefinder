@@ -1,5 +1,5 @@
-define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
-   function(DefaultFilters, GameData, InitialState, Action)
+define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process/Selector"],
+   function(DefaultFilters, GameData, InitialState, Action, Selector)
    {
       "use strict";
       var Reducer = {};
@@ -50,8 +50,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                });
                newFilteredGameData = [];
                var gameData = Object.values(newGameDataMap);
-               var gameCount = state.pageCount * 100;
-               var isDataLoaded = (gameCount === gameData.length);
+               var isDataLoaded = (Selector.gameTotal(state) === gameData.length);
                newFilteredGameData.vizziniAddAll(gameData);
                Reducer.sortGameData(newFilteredGameData);
                return Object.assign(
@@ -78,6 +77,9 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                });
             case Action.ADD_USER_COLLECTION:
                LOGGER.info("Reducer gameIds.length = " + action.gameIds.length);
+               var newUsernameToReceivedMap = Object.assign(
+               {}, state.usernameToReceivedMap);
+               newUsernameToReceivedMap[action.username] = true;
                newGameCollectionMap = Object.assign(
                {}, state.gameCollectionMap);
                action.gameIds.forEach(function(id)
@@ -98,6 +100,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                {}, state,
                {
                   gameCollectionMap: newGameCollectionMap,
+                  usernameToReceivedMap: newUsernameToReceivedMap,
                });
             case Action.REMOVE_FILTERS:
                LOGGER.info("Reducer remove filters");
@@ -162,8 +165,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
 
          Object.values(newGameDetailMap).forEach(function(gameDetail)
          {
-            var gameSummary = this.findGameSummaryById(state, gameDetail.id);
-            var gameCollections = this.findGameCollectionsById(state, gameDetail.id);
+            var gameSummary = Selector.findGameSummaryById(state, gameDetail.id);
+            var gameCollections = Selector.findGameCollectionsById(state, gameDetail.id);
             gameDataMap[gameDetail.id] = GameData.createGameData(gameSummary, gameDetail, gameCollections);
          }, this);
       };
@@ -202,16 +205,6 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
          Reducer.sortGameData(answer);
 
          return answer;
-      };
-
-      Reducer.findGameCollectionsById = function(state, id)
-      {
-         return state.gameCollectionMap[id];
-      };
-
-      Reducer.findGameSummaryById = function(state, id)
-      {
-         return state.gameSummaryMap[id];
       };
 
       Reducer.passes = function(data, filters)

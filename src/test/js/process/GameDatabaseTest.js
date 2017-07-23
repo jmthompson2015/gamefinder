@@ -14,33 +14,6 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
 
          // Verify.
          assert.ok(result);
-         assert.ok(result.usernameToReceivedMap());
-      });
-
-      QUnit.test("findGameCollectionsById()", function(assert)
-      {
-         // Setup.
-         var store = Redux.createStore(Reducer.root);
-         var gameDatabase = new GameDatabase(store);
-         var id = 161936; // Pandemic Legacy Season 1
-         var collectionCallback = function(gameCollectionMap)
-         {
-            // Verify.
-            assert.equal(Object.keys(gameCollectionMap).length, 170);
-
-            // Run.
-            var result = gameDatabase.findGameCollectionsById(id);
-
-            // Verify.
-            assert.ok(true, "test resumed from async operation");
-            assert.ok(result);
-            assert.ok(Array.isArray(result));
-            assert.equal(result[0].name, "ghightshoe");
-            done();
-         };
-
-         var done = assert.async();
-         gameDatabase.loadCollections(collectionCallback);
       });
 
       QUnit.test("loadCollections()", function(assert)

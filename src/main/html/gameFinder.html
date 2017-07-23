@@ -38,8 +38,10 @@
 		LOGGER.setTraceEnabled(false);
 		LOGGER.setDebugEnabled(false);
 
-		require(["process/Action", "process/GameDatabase", "process/Reducer", "process/ui/Connector", "process/ui/GameTable", "process/ui/ProgressUI"],
-			function(Action, GameDatabase, Reducer, Connector, GameTable, ProgressUI)
+		require(["process/Action", "process/GameDatabase", "process/Reducer", "process/Selector", "process/ui/Connector", "process/ui/GameTable",
+				"process/ui/ProgressUI"
+			],
+			function(Action, GameDatabase, Reducer, Selector, Connector, GameTable, ProgressUI)
 			{
 				var store = Redux.createStore(Reducer.root);
 				var gameDatabase = new GameDatabase(store, myCallback);
@@ -64,7 +66,7 @@
 				{
 					LOGGER.info("myCallback() store.getState().isDataLoaded ? " + store.getState().isDataLoaded);
 
-					if (store.getState().isDataLoaded)
+					if (Selector.isDataLoaded(store.getState()))
 					{
 						// Clear the progress area.
 						var el = document.getElementById("progress");

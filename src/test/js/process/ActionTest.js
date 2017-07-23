@@ -54,13 +54,13 @@ define(["process/Action"],
 
          answer[1406] = {
             id: 1406,
-            title: "Monopoly",
+            title: "Monopoly (1933)",
             minPlayers: 2,
             maxPlayers: 8,
          };
          answer[181] = {
             id: 181,
-            title: "Risk",
+            title: "Risk (1959)",
             minPlayers: 2,
             maxPlayers: 6,
          };
@@ -74,11 +74,11 @@ define(["process/Action"],
 
          answer[12] = {
             id: 12,
-            title: "Monopoly",
+            title: "Monopoly (1933)",
          };
          answer[34] = {
             id: 34,
-            title: "Risk",
+            title: "Risk (1959)",
          };
 
          return answer;
