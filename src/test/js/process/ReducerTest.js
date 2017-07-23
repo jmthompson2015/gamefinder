@@ -1,5 +1,5 @@
-define(["InitialState", "process/Action", "process/GameDatabase", "process/Reducer"],
-   function(InitialState, Action, GameDatabase, Reducer)
+define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer"],
+   function(InitialState, Action, GameLoader, Reducer)
    {
       "use strict";
       QUnit.module("Reducer");
@@ -9,7 +9,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          // Setup.
          var store = Redux.createStore(Reducer.root);
          var pageCount = 2;
-         var gameDatabase = new GameDatabase(store, pageCount);
+         var gameLoader = new GameLoader(store, pageCount);
 
          var state = new InitialState();
          var gameSummaryMap = createGameSummaryMap();

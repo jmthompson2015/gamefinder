@@ -38,14 +38,14 @@
 		LOGGER.setTraceEnabled(false);
 		LOGGER.setDebugEnabled(false);
 
-		require(["process/Action", "process/GameDatabase", "process/Reducer", "process/Selector", "process/ui/Connector", "process/ui/GameTable",
+		require(["process/Action", "process/GameLoader", "process/Reducer", "process/Selector", "process/ui/Connector", "process/ui/GameTable",
 				"process/ui/ProgressUI"
 			],
-			function(Action, GameDatabase, Reducer, Selector, Connector, GameTable, ProgressUI)
+			function(Action, GameLoader, Reducer, Selector, Connector, GameTable, ProgressUI)
 			{
 				var store = Redux.createStore(Reducer.root);
-				var gameDatabase = new GameDatabase(store, myCallback);
-				gameDatabase.load();
+				var gameLoader = new GameLoader(store, myCallback);
+				gameLoader.load();
 
 				var connector0 = ReactRedux.connect(Connector.ProgressUI.mapStateToProps)(ProgressUI);
 				var element0 = React.createElement(ReactRedux.Provider,

@@ -1,16 +1,16 @@
-define(["process/Action", "process/GameDatabase", "process/Reducer"],
-   function(Action, GameDatabase, Reducer)
+define(["process/Action", "process/GameLoader", "process/Reducer"],
+   function(Action, GameLoader, Reducer)
    {
       "use strict";
-      QUnit.module("GameDatabase");
+      QUnit.module("GameLoader");
 
-      QUnit.test("GameDatabase()", function(assert)
+      QUnit.test("GameLoader()", function(assert)
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
 
          // Run.
-         var result = new GameDatabase(store);
+         var result = new GameLoader(store);
 
          // Verify.
          assert.ok(result);
@@ -20,7 +20,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var callback = function(gameSummaryMap)
          {
             // Verify.
@@ -33,7 +33,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
 
          // Run.
          var done = assert.async();
-         gameDatabase.loadCollections(callback);
+         gameLoader.loadCollections(callback);
       });
 
       QUnit.test("loadGameDetails()", function(assert)
@@ -41,7 +41,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
          // Setup.
          var store = Redux.createStore(Reducer.root);
          store.dispatch(Action.setPageCount(1));
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var summaryCallback = function(gameSummaryMap)
          {
             assert.ok(true, "test resumed from async operation");
@@ -63,11 +63,11 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
 
             // Run.
             var done = assert.async();
-            gameDatabase.loadGameDetails(gameSummaryMap, detailCallback);
+            gameLoader.loadGameDetails(gameSummaryMap, detailCallback);
          };
 
          var done2 = assert.async();
-         gameDatabase.loadGameSummaries(summaryCallback);
+         gameLoader.loadGameSummaries(summaryCallback);
       });
 
       QUnit.test("loadGameSummaries()", function(assert)
@@ -75,7 +75,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
          // Setup.
          var store = Redux.createStore(Reducer.root);
          store.dispatch(Action.setPageCount(2));
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var summaryCallback = function(gameSummaryMap)
          {
             // Verify.
@@ -87,6 +87,6 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
 
          // Run.
          var done = assert.async();
-         gameDatabase.loadGameSummaries(summaryCallback);
+         gameLoader.loadGameSummaries(summaryCallback);
       });
    });

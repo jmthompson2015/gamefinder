@@ -1,5 +1,5 @@
-define(["InitialState", "process/Action", "process/GameDatabase", "process/Reducer", "process/Selector"],
-   function(InitialState, Action, GameDatabase, Reducer, Selector)
+define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer", "process/Selector"],
+   function(InitialState, Action, GameLoader, Reducer, Selector)
    {
       "use strict";
       QUnit.module("Selector");
@@ -8,7 +8,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var id = 161936; // Pandemic Legacy Season 1
          var callback = function(gameCollectionMap)
          {
@@ -27,7 +27,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          };
 
          var done = assert.async();
-         gameDatabase.loadCollections(callback);
+         gameLoader.loadCollections(callback);
       });
 
       QUnit.test("findGameDetailById()", function(assert)
@@ -37,7 +37,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          store.dispatch(Action.setPageCount(1));
          var newGameSummaryMap = createGameSummaryMap();
          store.dispatch(Action.addGameSummaries(newGameSummaryMap));
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var id = 1406; // Monopoly
          var callback = function(gameDetailMap)
          {
@@ -56,7 +56,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          };
 
          var done = assert.async();
-         gameDatabase.loadGameDetails(newGameSummaryMap, callback);
+         gameLoader.loadGameDetails(newGameSummaryMap, callback);
       });
 
       QUnit.test("findGameSummaryById()", function(assert)
@@ -64,7 +64,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          // Setup.
          var store = Redux.createStore(Reducer.root);
          store.dispatch(Action.setPageCount(1));
-         var gameDatabase = new GameDatabase(store);
+         var gameLoader = new GameLoader(store);
          var id = 161936; // Pandemic Legacy Season 1
          var callback = function(gameSummaryMap)
          {
@@ -83,7 +83,7 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          };
 
          var done = assert.async();
-         gameDatabase.loadGameSummaries(callback);
+         gameLoader.loadGameSummaries(callback);
       });
 
       QUnit.test("gameCollectionMap()", function(assert)

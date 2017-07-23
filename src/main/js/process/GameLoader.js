@@ -3,7 +3,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
    {
       "use strict";
 
-      function GameDatabase(store, callback)
+      function GameLoader(store, callback)
       {
          InputValidator.validateNotNull("store", store);
          // callback optional.
@@ -28,7 +28,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          {
             InputValidator.validateNotNull("username", username);
             InputValidator.validateNotNull("collectionIds", collectionIds);
-            // LOGGER.info("GameDatabase.receiveCollection(" + username + ") collectionIds.length = " + collectionIds.length);
+            // LOGGER.info("GameLoader.receiveCollection(" + username + ") collectionIds.length = " + collectionIds.length);
 
             if (collectionIds.length > 0)
             {
@@ -45,7 +45,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          this.receiveDetailData = function(newGameDetailMap)
          {
             InputValidator.validateNotNull("newGameDetailMap", newGameDetailMap);
-            // LOGGER.info("GameDatabase.receiveDetailData() newGameDetailMap length = " + Object.keys(newGameDetailMap).length);
+            // LOGGER.info("GameLoader.receiveDetailData() newGameDetailMap length = " + Object.keys(newGameDetailMap).length);
 
             store.dispatch(Action.addGameDetails(newGameDetailMap));
 
@@ -59,7 +59,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          this.receiveSummaryData = function(newGameSummaryMap)
          {
             InputValidator.validateNotNull("newGameSummaryMap", newGameSummaryMap);
-            // LOGGER.info("GameDatabase.receiveSummaryData() newGameSummaryMap length = " + Object.keys(newGameSummaryMap).length);
+            // LOGGER.info("GameLoader.receiveSummaryData() newGameSummaryMap length = " + Object.keys(newGameSummaryMap).length);
 
             store.dispatch(Action.addGameSummaries(newGameSummaryMap));
 
@@ -71,7 +71,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          };
       }
 
-      GameDatabase.prototype.isCollectionsLoaded = function()
+      GameLoader.prototype.isCollectionsLoaded = function()
       {
          var usernames = Selector.usernames(this.store().getState());
          var usernameToReceivedMap = Selector.usernameToReceivedMap(this.store().getState());
@@ -82,7 +82,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          }, true);
       };
 
-      GameDatabase.prototype.isDetailsLoaded = function()
+      GameLoader.prototype.isDetailsLoaded = function()
       {
          var length = Object.keys(this.gameDetailMap()).length;
          var gameTotal = Selector.gameTotal(this.store().getState());
@@ -90,7 +90,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          return (length === gameTotal);
       };
 
-      GameDatabase.prototype.isSummariesLoaded = function()
+      GameLoader.prototype.isSummariesLoaded = function()
       {
          var gameSummaryMap = Selector.gameSummaryMap(this.store().getState());
          var length = Object.keys(gameSummaryMap).length;
@@ -99,7 +99,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          return (length === gameTotal);
       };
 
-      GameDatabase.prototype.load = function()
+      GameLoader.prototype.load = function()
       {
          // Load from the internet.
          var collectionCallback = function(gameCollectionMap)
@@ -121,7 +121,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          this.loadCollections(collectionCallback);
       };
 
-      GameDatabase.prototype.loadCollections = function(callback)
+      GameLoader.prototype.loadCollections = function(callback)
       {
          InputValidator.validateNotNull("callback", callback);
 
@@ -139,7 +139,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          }, this);
       };
 
-      GameDatabase.prototype.loadGameDetails = function(newGameSummaryMap, callback)
+      GameLoader.prototype.loadGameDetails = function(newGameSummaryMap, callback)
       {
          InputValidator.validateNotNull("newGameSummaryMap", newGameSummaryMap);
          InputValidator.validateNotNull("callback", callback);
@@ -147,13 +147,13 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          // Fetch a game detail for each game summary.
          this.detailCallback = callback;
          var keys = Object.keys(newGameSummaryMap);
-         // LOGGER.info("GameDatabase.loadGameDetails() keys.length = " + keys.length);
+         // LOGGER.info("GameLoader.loadGameDetails() keys.length = " + keys.length);
 
          var needGameDetailIds = keys.filter(function(key)
          {
             return Selector.findGameDetailById(this.store().getState(), key) === undefined;
          }, this);
-         // LOGGER.info("GameDatabase.loadGameDetails() needGameDetailIds.length = " + needGameDetailIds.length);
+         // LOGGER.info("GameLoader.loadGameDetails() needGameDetailIds.length = " + needGameDetailIds.length);
 
          if (needGameDetailIds.length > 0)
          {
@@ -171,7 +171,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          }
       };
 
-      GameDatabase.prototype.loadGameSummaries = function(callback)
+      GameLoader.prototype.loadGameSummaries = function(callback)
       {
          InputValidator.validateNotNull("callback", callback);
 
@@ -185,5 +185,5 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          }
       };
 
-      return GameDatabase;
+      return GameLoader;
    });
