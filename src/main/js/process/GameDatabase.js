@@ -3,10 +3,9 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
    {
       "use strict";
 
-      function GameDatabase(store, pageCount, callback)
+      function GameDatabase(store, callback)
       {
          InputValidator.validateNotNull("store", store);
-         InputValidator.validateInRange("pageCount", pageCount, 1, 10);
          // callback optional.
 
          var that = this;
@@ -23,7 +22,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
          this.pageCount = function()
          {
-            return pageCount;
+            return store.getState().pageCount;
          };
 
          this.callback = function()

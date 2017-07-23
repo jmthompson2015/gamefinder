@@ -8,14 +8,12 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var pageCount = 5;
 
          // Run.
-         var result = new GameDatabase(store, pageCount);
+         var result = new GameDatabase(store);
 
          // Verify.
          assert.ok(result);
-         assert.equal(result.pageCount(), pageCount);
          assert.ok(result.usernameToReceivedMap());
       });
 
@@ -23,8 +21,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var pageCount = 1;
-         var gameDatabase = new GameDatabase(store, pageCount);
+         var gameDatabase = new GameDatabase(store);
          var id = 161936; // Pandemic Legacy Season 1
          var collectionCallback = function(gameCollectionMap)
          {
@@ -50,8 +47,7 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var pageCount = 5;
-         var gameDatabase = new GameDatabase(store, pageCount);
+         var gameDatabase = new GameDatabase(store);
          var callback = function(gameSummaryMap)
          {
             // Verify.
@@ -72,8 +68,8 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var pageCount = 1;
-         var gameDatabase = new GameDatabase(store, pageCount);
+         store.dispatch(Action.setPageCount(1));
+         var gameDatabase = new GameDatabase(store);
          store.dispatch(Action.setGameDatabase(gameDatabase));
          var summaryCallback = function(gameSummaryMap)
          {
@@ -107,8 +103,8 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
       {
          // Setup.
          var store = Redux.createStore(Reducer.root);
-         var pageCount = 2;
-         var gameDatabase = new GameDatabase(store, pageCount);
+         store.dispatch(Action.setPageCount(2));
+         var gameDatabase = new GameDatabase(store);
          var summaryCallback = function(gameSummaryMap)
          {
             // Verify.

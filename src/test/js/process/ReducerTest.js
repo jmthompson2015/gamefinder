@@ -67,6 +67,23 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          assert.equal(Object.keys(result.gameCollectionMap).length, length + 2);
       });
 
+      QUnit.test("setPageCount()", function(assert)
+      {
+         // Setup.
+         var state = new InitialState();
+         var length = 0;
+         assert.equal(state.pageCount, 8);
+         var pageCount = 5;
+         var action = Action.setPageCount(pageCount);
+
+         // Run.
+         var result = Reducer.root(state, action);
+
+         // Verify.
+         assert.ok(result);
+         assert.equal(result.pageCount, pageCount);
+      });
+
       function createGameDetailMap()
       {
          var answer = {};

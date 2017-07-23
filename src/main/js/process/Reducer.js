@@ -50,7 +50,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                });
                newFilteredGameData = [];
                var gameData = Object.values(newGameDataMap);
-               var gameCount = state.gameDatabase.pageCount() * 100;
+               var gameCount = state.pageCount * 100;
                var isDataLoaded = (gameCount === gameData.length);
                newFilteredGameData.vizziniAddAll(gameData);
                Reducer.sortGameData(newFilteredGameData);
@@ -140,6 +140,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                {}, state,
                {
                   gameDatabase: action.gameDatabase,
+               });
+            case Action.SET_PAGE_COUNT:
+               LOGGER.info("Reducer pageCount = " + action.pageCount);
+               return Object.assign(
+               {}, state,
+               {
+                  pageCount: action.pageCount,
                });
             default:
                LOGGER.warn("Reducer.root: Unhandled action type: " + action.type);

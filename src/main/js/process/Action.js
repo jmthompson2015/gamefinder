@@ -10,6 +10,7 @@ define(function()
    Action.SET_DEFAULT_FILTERS = "setDefaultFilters";
    Action.SET_FILTERS = "setFilters";
    Action.SET_GAME_DATABASE = "setGameDatabase";
+   Action.SET_PAGE_COUNT = "setPageCount";
 
    Action.addGameDetails = function(gameDetailMap)
    {
@@ -78,6 +79,17 @@ define(function()
       {
          type: Action.SET_GAME_DATABASE,
          gameDatabase: gameDatabase,
+      });
+   };
+
+   Action.setPageCount = function(pageCount)
+   {
+      InputValidator.validateInRange("pageCount", pageCount, 1, 10);
+
+      return (
+      {
+         type: Action.SET_PAGE_COUNT,
+         pageCount: pageCount,
       });
    };
 

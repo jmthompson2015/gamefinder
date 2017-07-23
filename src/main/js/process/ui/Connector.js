@@ -26,7 +26,7 @@ define(function()
    Connector.ProgressUI = {
       mapStateToProps: function(state, ownProps)
       {
-         var gameTotal = state.gameDatabase.pageCount() * 100;
+         var gameTotal = state.pageCount * 100;
 
          return (
          {
