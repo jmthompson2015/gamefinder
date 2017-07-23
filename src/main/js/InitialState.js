@@ -7,7 +7,6 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
       {
          this.pageCount = 8;
 
-         this.gameDatabase = undefined;
          this.gameDataMap = {};
          this.filteredGameData = [];
 

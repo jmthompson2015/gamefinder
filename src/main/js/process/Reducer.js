@@ -137,13 +137,6 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                   filters: newFilters,
                   filteredGameData: newFilteredGameData,
                });
-            case Action.SET_GAME_DATABASE:
-               LOGGER.info("Reducer gameDatabase = " + action.gameDatabase);
-               return Object.assign(
-               {}, state,
-               {
-                  gameDatabase: action.gameDatabase,
-               });
             case Action.SET_PAGE_COUNT:
                LOGGER.info("Reducer pageCount = " + action.pageCount);
                return Object.assign(

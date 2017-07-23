@@ -45,7 +45,6 @@
 			{
 				var store = Redux.createStore(Reducer.root);
 				var gameDatabase = new GameDatabase(store, myCallback);
-				store.dispatch(Action.setGameDatabase(gameDatabase));
 				gameDatabase.load();
 
 				var connector0 = ReactRedux.connect(Connector.ProgressUI.mapStateToProps)(ProgressUI);

@@ -12,9 +12,6 @@ define(["InitialState", "process/Action", "process/GameDatabase", "process/Reduc
          var gameDatabase = new GameDatabase(store, pageCount);
 
          var state = new InitialState();
-         state.gameDatabase = gameDatabase;
-         var action0 = Action.setGameDatabase(gameDatabase);
-         state = Reducer.root(state, action0);
          var gameSummaryMap = createGameSummaryMap();
          var action1 = Action.addGameSummaries(gameSummaryMap);
          state = Reducer.root(state, action1);

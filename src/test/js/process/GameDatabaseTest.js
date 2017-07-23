@@ -25,7 +25,6 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
          {
             // Verify.
             assert.ok(true, "test resumed from async operation");
-            // var gameCollectionMap = gameDatabase.gameCollectionMap();
             var gameCollectionMap = store.getState().gameCollectionMap;
             assert.ok(gameCollectionMap);
             assert.equal(Object.keys(gameCollectionMap).length, 170);
@@ -43,7 +42,6 @@ define(["process/Action", "process/GameDatabase", "process/Reducer"],
          var store = Redux.createStore(Reducer.root);
          store.dispatch(Action.setPageCount(1));
          var gameDatabase = new GameDatabase(store);
-         store.dispatch(Action.setGameDatabase(gameDatabase));
          var summaryCallback = function(gameSummaryMap)
          {
             assert.ok(true, "test resumed from async operation");

@@ -9,7 +9,6 @@ define(function()
    Action.REMOVE_FILTERS = "removeFilters";
    Action.SET_DEFAULT_FILTERS = "setDefaultFilters";
    Action.SET_FILTERS = "setFilters";
-   Action.SET_GAME_DATABASE = "setGameDatabase";
    Action.SET_PAGE_COUNT = "setPageCount";
 
    Action.addGameDetails = function(gameDetailMap)
@@ -72,17 +71,6 @@ define(function()
       {
          type: Action.SET_FILTERS,
          filters: filters,
-      });
-   };
-
-   Action.setGameDatabase = function(gameDatabase)
-   {
-      InputValidator.validateNotNull("gameDatabase", gameDatabase);
-
-      return (
-      {
-         type: Action.SET_GAME_DATABASE,
-         gameDatabase: gameDatabase,
       });
    };
 
