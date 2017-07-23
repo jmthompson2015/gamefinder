@@ -16,7 +16,7 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          this.gameDetailMap = {};
          // game ID to summary
          this.gameSummaryMap = {};
-         this.usernames = ["ghightshoe", "jmthompson", "kmistr"];
+         this.usernames = Immutable.List(["ghightshoe", "jmthompson", "kmistr"]);
 
          this.isDataLoaded = false;
          this.categoryMap = {};
@@ -25,30 +25,19 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          // user ID to object
          this.usernameMap = {};
          // username to boolean
-         this.usernameToReceivedMap = {};
+         this.usernameToReceivedMap = Immutable.Map();
 
+         var entityMap = this.usernameMap;
          this.usernames.forEach(function(username, id)
          {
-            // this.newEntity("username", i, username);
-            var entityMap = this.usernameMap;
-            var answer = entityMap[id];
+            var user = {
+               type: "username",
+               id: parseInt(id),
+               name: username,
+               count: 0,
+            };
 
-            if (answer)
-            {
-               // Increment count.
-               answer.count++;
-            }
-            else
-            {
-               answer = {
-                  type: "username",
-                  id: parseInt(id),
-                  name: username,
-                  count: 0,
-               };
-
-               entityMap[answer.id] = answer;
-            }
+            entityMap[user.id] = user;
          }, this);
 
          // FIXME

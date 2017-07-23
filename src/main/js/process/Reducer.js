@@ -31,8 +31,6 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                {}, state.designerMap);
                newMechanicMap = Object.assign(
                {}, state.mechanicMap);
-               newUsernameMap = Object.assign(
-               {}, state.usernameMap);
                Object.keys(action.gameDetailMap).forEach(function(id)
                {
                   var gameDetail = action.gameDetailMap[id];
@@ -63,7 +61,6 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                   gameDetailMap: newGameDetailMap,
                   isDataLoaded: isDataLoaded,
                   mechanicMap: newMechanicMap,
-                  usernameMap: newUsernameMap,
                });
             case Action.ADD_GAME_SUMMARIES:
                LOGGER.info("Reducer gameSummaryMap length = " + Object.keys(action.gameSummaryMap).length);
@@ -77,9 +74,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                });
             case Action.ADD_USER_COLLECTION:
                LOGGER.info("Reducer gameIds.length = " + action.gameIds.length);
-               var newUsernameToReceivedMap = Object.assign(
-               {}, state.usernameToReceivedMap);
-               newUsernameToReceivedMap[action.username] = true;
+               var newUsernameToReceivedMap = state.usernameToReceivedMap.set(action.username, true);
                newGameCollectionMap = Object.assign(
                {}, state.gameCollectionMap);
                action.gameIds.forEach(function(id)

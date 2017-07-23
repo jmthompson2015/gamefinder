@@ -30,8 +30,8 @@ define(["process/Selector"], function(Selector)
 
          return (
          {
-            collectionCount: Object.keys(state.usernameToReceivedMap).length,
-            collectionTotal: state.usernames.length,
+            collectionCount: state.usernameToReceivedMap.size,
+            collectionTotal: state.usernames.size,
             summaryCount: Object.keys(state.gameSummaryMap).length,
             summaryTotal: gameTotal,
             detailCount: Object.keys(state.gameDetailMap).length,

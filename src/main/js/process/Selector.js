@@ -45,7 +45,7 @@ define(function()
 
       return usernames.reduce(function(accumulator, username)
       {
-         return accumulator && (usernameToReceivedMap[username] === true);
+         return accumulator && (usernameToReceivedMap.get(username) === true);
       }, true);
    };
 

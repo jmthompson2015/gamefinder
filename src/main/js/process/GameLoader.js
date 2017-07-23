@@ -23,35 +23,6 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          };
       }
 
-      GameLoader.prototype.isCollectionsLoaded = function()
-      {
-         var usernames = Selector.usernames(this.store().getState());
-         var usernameToReceivedMap = Selector.usernameToReceivedMap(this.store().getState());
-
-         return usernames.reduce(function(accumulator, username)
-         {
-            return accumulator && (usernameToReceivedMap[username] === true);
-         }, true);
-      };
-
-      GameLoader.prototype.isDetailsLoaded = function()
-      {
-         var gameDetailMap = Selector.gameDetailMap(store.getState());
-         var length = Object.keys(gameDetailMap).length;
-         var gameTotal = Selector.gameTotal(this.store().getState());
-
-         return (length === gameTotal);
-      };
-
-      GameLoader.prototype.isSummariesLoaded = function()
-      {
-         var gameSummaryMap = Selector.gameSummaryMap(this.store().getState());
-         var length = Object.keys(gameSummaryMap).length;
-         var gameTotal = Selector.gameTotal(this.store().getState());
-
-         return (length === gameTotal);
-      };
-
       GameLoader.prototype.load = function()
       {
          // Load from the internet.
@@ -144,7 +115,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
             store.dispatch(Action.addUserCollection(username, collectionIds));
          }
 
-         if (this.isCollectionsLoaded())
+         if (Selector.isCollectionsLoaded(store.getState()))
          {
             var gameCollectionMap = Selector.gameCollectionMap(store.getState());
             this.collectionCallback(gameCollectionMap);
@@ -172,7 +143,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
          var store = this.store();
          store.dispatch(Action.addGameSummaries(newGameSummaryMap));
 
-         if (this.isSummariesLoaded() && this.summaryCallback)
+         if (Selector.isSummariesLoaded(store.getState()) && this.summaryCallback)
          {
             var gameSummaryMap = Selector.gameSummaryMap(store.getState());
             this.summaryCallback(gameSummaryMap);

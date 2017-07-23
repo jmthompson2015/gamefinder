@@ -22,6 +22,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
             assert.ok(true, "test resumed from async operation");
             assert.ok(result);
             assert.ok(Array.isArray(result));
+            assert.equal(result.length, 1);
             assert.equal(result[0].name, "ghightshoe");
             done();
          };
@@ -181,8 +182,8 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
          // Verify.
          assert.ok(result);
-         assert.ok(Array.isArray(result));
-         assert.equal(result.length, 3);
+         assert.ok(result instanceof Immutable.List);
+         assert.equal(result.size, 3);
       });
 
       function createGameSummaryMap()
