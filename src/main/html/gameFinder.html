@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>BGG Game Finder</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="../../../lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../../lib/prop-types/prop-types-15.5.10.min.js"></script>
+	<script src="../../../lib/react/react-15.6.1.min.js"></script>
+	<script src="../../../lib/react-dom/react-dom-15.6.1.min.js"></script>
+	<script src="../../../lib/react-redux/react-redux-5.0.5.min.js"></script>
+	<script src="../../../lib/reactable/reactable-0.14.1.js"></script>
+	<script src="../../../lib/redux/redux-3.6.0.min.js"></script>
+	<script src="../../../lib/require/require-2.3.3.min.js" data-main="../js/GameColumns"></script>
+
+	<script src="../js/core-util/Logger.js"></script>
+	<script src="../js/core-util/InputValidator.js"></script>
+	<script src="../js/core-util/ArrayAugments.js"></script>
+	<script src="../js/core-util/MathAugments.js"></script>
+	<script src="../js/core-util/ObjectAugments.js"></script>
+
+</head>
+<body>
+	<h1>
+		<a href="https://www.boardgamegeek.com" target="_blank"><img id="bgg_cornerlogo" src="../resources/bgg_cornerlogo.png" /></a> Game
+		Finder
+	</h1>
+	<section>
+		<div style="padding-bottom: 10px;" id="progress"></div>
+	</section>
+	<section>
+		<div id="gameTable"></div>
+	</section>
+	<script>
+		"use strict";
+
+		var LOGGER = new Logger();
+		LOGGER.setTraceEnabled(false);
+		LOGGER.setDebugEnabled(false);
+
+		require(["process/Action", "process/GameDatabase", "process/Reducer", "process/ui/Connector", "process/ui/GameTable", "process/ui/ProgressUI"],
+			function(Action, GameDatabase, Reducer, Connector, GameTable, ProgressUI)
+			{
+				var store = Redux.createStore(Reducer.root);
+				var pageCount = 2;
+				var gameDatabase = new GameDatabase(store, pageCount, myCallback);
+				store.dispatch(Action.setGameDatabase(gameDatabase));
+				gameDatabase.load();
+
+				var connector0 = ReactRedux.connect(Connector.ProgressUI.mapStateToProps)(ProgressUI);
+				var element0 = React.createElement(ReactRedux.Provider,
+				{
+					store: store,
+				}, React.createElement(connector0));
+				ReactDOM.render(element0, document.getElementById("progress"));
+
+				var connector1 = ReactRedux.connect(Connector.GameTable.mapStateToProps)(GameTable);
+				var element1 = React.createElement(ReactRedux.Provider,
+				{
+					store: store,
+				}, React.createElement(connector1));
+				ReactDOM.render(element1, document.getElementById("gameTable"));
+
+				function myCallback(newGameDetailMap)
+				{
+					LOGGER.info("myCallback() gameDatabase.isCollectionsLoaded() ? " + gameDatabase.isCollectionsLoaded());
+					LOGGER.info("myCallback() gameDatabase.isSummariesLoaded() ? " + gameDatabase.isSummariesLoaded());
+					LOGGER.info("myCallback() gameDatabase.isDetailsLoaded() ? " + gameDatabase.isDetailsLoaded());
+				}
+			});
+	</script>
+</body>
+
+</html>
