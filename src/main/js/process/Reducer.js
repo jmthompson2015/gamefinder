@@ -18,7 +18,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
          switch (action.type)
          {
             case Action.ADD_GAME_DETAILS:
-               LOGGER.info("Reducer gameDetailMap = " + action.gameDetailMap + (action.gameDetailMap !== undefined ? " length = " + Object.keys(action.gameDetailMap).length : ""));
+               LOGGER.info("Reducer gameDetailMap length = " + Object.keys(action.gameDetailMap).length);
                newGameDetailMap = Object.assign(
                {}, state.gameDetailMap);
                newGameDataMap = Object.assign(
@@ -67,7 +67,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                   usernameMap: newUsernameMap,
                });
             case Action.ADD_GAME_SUMMARIES:
-               LOGGER.info("Reducer gameSummaryMap = " + action.gameSummaryMap + (action.gameSummaryMap !== undefined ? " length = " + Object.keys(action.gameSummaryMap).length : ""));
+               LOGGER.info("Reducer gameSummaryMap length = " + Object.keys(action.gameSummaryMap).length);
                newGameSummaryMap = Object.assign(
                {}, state.gameSummaryMap);
                Object.vizziniMerge(newGameSummaryMap, action.gameSummaryMap);
@@ -77,7 +77,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action"],
                   gameSummaryMap: newGameSummaryMap,
                });
             case Action.ADD_USER_COLLECTION:
-               LOGGER.info("Reducer gameCollectionMap = " + action.gameCollectionMap + (action.gameCollectionMap !== undefined ? " length = " + Object.keys(action.gameCollectionMap).length : ""));
+               LOGGER.info("Reducer gameIds.length = " + action.gameIds.length);
                newGameCollectionMap = Object.assign(
                {}, state.gameCollectionMap);
                action.gameIds.forEach(function(id)

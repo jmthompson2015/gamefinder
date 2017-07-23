@@ -4,6 +4,12 @@ define(function()
    {
       render: function()
       {
+         var statusUI = React.DOM.img(
+         {
+            src: "../resources/Waiting.gif",
+            width: 24,
+         });
+
          var rows = [];
 
          var cells = [];
@@ -17,6 +23,11 @@ define(function()
             key: "progress01",
             className: "progressNumberCell",
          }, this.props.collectionCount + " / " + this.props.collectionTotal));
+         cells.push(React.DOM.td(
+         {
+            key: "progress02",
+            rowSpan: 3,
+         }, statusUI));
          rows.push(React.DOM.tr(
          {
             key: rows.length,

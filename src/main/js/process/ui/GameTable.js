@@ -176,19 +176,6 @@ define(["GameColumns", "process/ui/Connector", "process/ui/FilterUI", "process/u
                key: "filterUI",
             }, React.DOM.td(
             {}, filterUI)));
-            if (!this.context.store.getState().isDataLoaded)
-            {
-               var statusUI = React.DOM.img(
-               {
-                  src: "../resources/Waiting.gif",
-                  width: 24,
-               });
-               rows.push(React.DOM.tr(
-               {
-                  key: "statusUI",
-               }, React.DOM.td(
-               {}, statusUI)));
-            }
             rows.push(React.DOM.tr(
             {
                key: "table",
