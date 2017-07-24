@@ -51,7 +51,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          // Setup.
          var state = new InitialState();
          var length = 0;
-         assert.equal(Object.keys(state.gameCollectionMap).length, length);
+         assert.equal(state.gameCollectionMap.size, length);
          var username = "jmthompson";
          var gameIds = [1406, 181];
          var action = Action.addUserCollection(username, gameIds);
@@ -61,7 +61,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
          // Verify.
          assert.ok(result);
-         assert.equal(Object.keys(result.gameCollectionMap).length, length + 2);
+         assert.equal(result.gameCollectionMap.size, length + 2);
       });
 
       QUnit.test("setPageCount()", function(assert)
@@ -109,19 +109,19 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
       function createGameSummaryMap()
       {
-         var answer = {};
+         var answer = Immutable.Map();
 
-         answer[1406] = Immutable.Map(
+         answer = answer.set(1406, Immutable.Map(
          {
             id: 1406,
             title: "Monopoly (1933)",
-         });
-         answer[181] = Immutable.Map(
+         }));
+         answer = answer.set(181, Immutable.Map(
          {
             id: 181,
             title: "Risk (1959)",
-         });
+         }));
 
-         return Immutable.Map(answer);
+         return answer;
       }
    });

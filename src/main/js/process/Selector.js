@@ -5,7 +5,9 @@ define(function()
 
    Selector.findGameCollectionsById = function(state, id)
    {
-      return this.gameCollectionMap(state)[id];
+      InputValidator.validateIsNumber("id", id);
+
+      return this.gameCollectionMap(state).get(id);
    };
 
    Selector.findGameDetailById = function(state, id)
@@ -15,7 +17,9 @@ define(function()
 
    Selector.findGameSummaryById = function(state, id)
    {
-      return this.gameSummaryMap(state).get("" + id);
+      InputValidator.validateIsNumber("id", id);
+
+      return this.gameSummaryMap(state).get(id);
    };
 
    Selector.gameCollectionMap = function(state)

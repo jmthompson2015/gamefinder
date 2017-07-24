@@ -13,7 +13,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          var callback = function(gameCollectionMap)
          {
             // Verify.
-            assert.equal(Object.keys(gameCollectionMap).length, 170);
+            assert.equal(gameCollectionMap.size, 170);
 
             // Run.
             var result = Selector.findGameCollectionsById(store.getState(), id);
@@ -189,19 +189,19 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
       function createGameSummaryMap()
       {
-         var answer = {};
+         var answer = Immutable.Map();
 
-         answer[1406] = Immutable.Map(
+         answer = answer.set(1406, Immutable.Map(
          {
             id: 1406,
             title: "Monopoly (1933)",
-         });
-         answer[181] = Immutable.Map(
+         }));
+         answer = answer.set(181, Immutable.Map(
          {
             id: 181,
             title: "Risk (1959)",
-         });
+         }));
 
-         return Immutable.Map(answer);
+         return answer;
       }
    });

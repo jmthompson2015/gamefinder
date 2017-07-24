@@ -57,7 +57,7 @@ define(function()
       {
          LOGGER.trace("GameSummaryFetcher.parseGameSummaries() start");
 
-         var answer = {};
+         var answer = Immutable.Map();
 
          // This gives the data rows (tr).
          var xpath = "//tr[@id='row_']";
@@ -68,14 +68,14 @@ define(function()
          while (thisRow)
          {
             var gameSummary = parseGameSummary(xmlDocument, thisRow);
-            answer[gameSummary.get("id")] = gameSummary;
+            answer = answer.set(gameSummary.get("id"), gameSummary);
 
             thisRow = rows.iterateNext();
          }
 
          LOGGER.trace("GameSummaryFetcher.parseGameSummaries() end");
 
-         return Immutable.Map(answer);
+         return answer;
       }
 
       function parseGameSummary(xmlDocument, xmlFragment)

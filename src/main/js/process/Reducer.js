@@ -37,7 +37,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                   Reducer.entityMap(state, newCategoryMap, gameDetail.categories);
                   Reducer.entityMap(state, newDesignerMap, gameDetail.designers);
                   Reducer.entityMap(state, newMechanicMap, gameDetail.mechanics);
-                  var users = state.gameCollectionMap[id];
+                  var users = Selector.findGameCollectionsById(state, parseInt(id));
                   if (users && users.length > 0)
                   {
                      users.forEach(function(user)
@@ -73,21 +73,18 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
             case Action.ADD_USER_COLLECTION:
                LOGGER.info("Reducer gameIds.length = " + action.gameIds.length);
                var newUsernameToReceivedMap = state.usernameToReceivedMap.set(action.username, true);
-               newGameCollectionMap = Object.assign(
-               {}, state.gameCollectionMap);
+               newGameCollectionMap = state.gameCollectionMap;
                action.gameIds.forEach(function(id)
                {
-                  var users = newGameCollectionMap[id];
+                  var users = Selector.findGameCollectionsById(state, parseInt(id));
                   var userId = state.usernames.indexOf(action.username);
                   var user = state.usernameMap[userId];
                   if (users === undefined)
                   {
-                     newGameCollectionMap[id] = [user];
+                     users = [];
                   }
-                  else
-                  {
-                     users.push(user);
-                  }
+                  users.push(user);
+                  newGameCollectionMap = newGameCollectionMap.set(id, users);
                });
                return Object.assign(
                {}, state,
@@ -172,8 +169,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
 
          Object.values(newGameDetailMap).forEach(function(gameDetail)
          {
-            var gameSummary = Selector.findGameSummaryById(state, gameDetail.id);
-            var gameCollections = Selector.findGameCollectionsById(state, gameDetail.id);
+            var gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id));
+            var gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.id));
             gameDataMap[gameDetail.id] = GameData.createGameData(gameSummary, gameDetail, gameCollections);
          }, this);
       };

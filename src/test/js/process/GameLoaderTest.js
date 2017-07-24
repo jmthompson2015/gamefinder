@@ -27,7 +27,7 @@ define(["process/Action", "process/GameLoader", "process/Reducer"],
             assert.ok(true, "test resumed from async operation");
             var gameCollectionMap = store.getState().gameCollectionMap;
             assert.ok(gameCollectionMap);
-            assert.equal(Object.keys(gameCollectionMap).length, 170);
+            assert.equal(gameCollectionMap.size, 170);
             done();
          };
 
