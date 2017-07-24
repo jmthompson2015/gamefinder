@@ -70,7 +70,8 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          var callback = function(gameSummaryMap)
          {
             // Verify.
-            assert.equal(Object.keys(gameSummaryMap).length, 100);
+            assert.equal(gameSummaryMap.size, 100);
+            assert.ok(Selector.gameSummaryMap(store.getState()) instanceof Immutable.Map);
 
             // Run.
             var result = Selector.findGameSummaryById(store.getState(), id);
@@ -78,8 +79,8 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
             // Verify.
             assert.ok(true, "test resumed from async operation");
             assert.ok(result);
-            assert.equal(result.id, id);
-            assert.equal(result.title, "Pandemic Legacy: Season 1 (2015)");
+            assert.equal(result.get("id"), id);
+            assert.equal(result.get("title"), "Pandemic Legacy: Season 1 (2015)");
             done();
          };
 
@@ -190,15 +191,17 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
       {
          var answer = {};
 
-         answer[1406] = {
+         answer[1406] = Immutable.Map(
+         {
             id: 1406,
             title: "Monopoly (1933)",
-         };
-         answer[181] = {
+         });
+         answer[181] = Immutable.Map(
+         {
             id: 181,
             title: "Risk (1959)",
-         };
+         });
 
-         return answer;
+         return Immutable.Map(answer);
       }
    });

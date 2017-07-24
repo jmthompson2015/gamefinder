@@ -46,6 +46,7 @@ define(["process/Action", "process/GameLoader", "process/Reducer"],
          {
             assert.ok(true, "test resumed from async operation");
             assert.ok(gameSummaryMap);
+            assert.ok(gameSummaryMap instanceof Immutable.Map);
 
             var detailCallback = function(gameDetailMap)
             {
@@ -53,7 +54,7 @@ define(["process/Action", "process/GameLoader", "process/Reducer"],
                assert.ok(true, "test resumed from async operation");
                assert.ok(gameDetailMap);
 
-               if (Object.keys(gameDetailMap).length === Object.keys(gameSummaryMap).length)
+               if (Object.keys(gameDetailMap).length === gameSummaryMap.size)
                {
                   assert.equal(Object.keys(gameDetailMap).length, 100);
                   done();
@@ -81,7 +82,7 @@ define(["process/Action", "process/GameLoader", "process/Reducer"],
             // Verify.
             assert.ok(true, "summaryCallback() test resumed from async operation");
             assert.ok(gameSummaryMap);
-            assert.equal(Object.keys(gameSummaryMap).length, 200);
+            assert.equal(gameSummaryMap.size, 200);
             done();
          };
 

@@ -15,7 +15,7 @@ define(function()
 
    Selector.findGameSummaryById = function(state, id)
    {
-      return this.gameSummaryMap(state)[id];
+      return this.gameSummaryMap(state).get("" + id);
    };
 
    Selector.gameCollectionMap = function(state)
@@ -64,7 +64,7 @@ define(function()
 
    Selector.isSummariesLoaded = function(state)
    {
-      var length = Object.keys(this.gameSummaryMap(state)).length;
+      var length = this.gameSummaryMap(state).size;
       var gameTotal = this.gameTotal(state);
 
       return (length === gameTotal);

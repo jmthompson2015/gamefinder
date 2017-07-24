@@ -63,10 +63,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                   mechanicMap: newMechanicMap,
                });
             case Action.ADD_GAME_SUMMARIES:
-               LOGGER.info("Reducer gameSummaryMap length = " + Object.keys(action.gameSummaryMap).length);
-               newGameSummaryMap = Object.assign(
-               {}, state.gameSummaryMap);
-               Object.vizziniMerge(newGameSummaryMap, action.gameSummaryMap);
+               LOGGER.info("Reducer gameSummaryMap.size = " + action.gameSummaryMap.size);
+               newGameSummaryMap = state.gameSummaryMap.merge(action.gameSummaryMap);
                return Object.assign(
                {}, state,
                {

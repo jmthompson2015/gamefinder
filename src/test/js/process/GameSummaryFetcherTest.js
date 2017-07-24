@@ -11,14 +11,18 @@ define(["process/GameSummaryFetcher", "process/Reducer"],
          var callback = function(newGameSummaryMap)
          {
             assert.ok(newGameSummaryMap);
-            var gameSummaries = Object.values(newGameSummaryMap);
+            var gameSummaries = newGameSummaryMap.toIndexedSeq().toArray();
             assert.ok(gameSummaries);
+            gameSummaries.sort(function(a, b)
+            {
+               return a.get("id") - b.get("id");
+            });
             var length = 100;
             assert.equal(gameSummaries.length, length);
-            assert.equal(gameSummaries[0].id, 1);
-            assert.equal(gameSummaries[0].title, "Die Macher (1986)");
-            assert.equal(gameSummaries[length - 1].id, 198928);
-            assert.equal(gameSummaries[length - 1].title, "Pandemic Iberia (2016)");
+            assert.equal(gameSummaries[0].get("id"), 1);
+            assert.equal(gameSummaries[0].get("title"), "Die Macher (1986)");
+            assert.equal(gameSummaries[length - 1].get("id"), 198928);
+            assert.equal(gameSummaries[length - 1].get("title"), "Pandemic Iberia (2016)");
          };
          var fetcher = new GameSummaryFetcher(page, callback);
          var xmlDocument = load("GameSummaries2");

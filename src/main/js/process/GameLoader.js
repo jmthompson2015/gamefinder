@@ -79,7 +79,7 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
 
          // Fetch a game detail for each game summary.
          this.detailCallback = callback;
-         var keys = Object.keys(newGameSummaryMap);
+         var keys = newGameSummaryMap.keySeq().toArray();
 
          var needGameDetailIds = keys.filter(function(key)
          {

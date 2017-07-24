@@ -68,14 +68,14 @@ define(function()
          while (thisRow)
          {
             var gameSummary = parseGameSummary(xmlDocument, thisRow);
-            answer[gameSummary.id] = gameSummary;
+            answer[gameSummary.get("id")] = gameSummary;
 
             thisRow = rows.iterateNext();
          }
 
          LOGGER.trace("GameSummaryFetcher.parseGameSummaries() end");
 
-         return answer;
+         return Immutable.Map(answer);
       }
 
       function parseGameSummary(xmlDocument, xmlFragment)
@@ -104,7 +104,7 @@ define(function()
          var averageRatingDisplay = cells.snapshotItem(4).textContent.trim();
          var numVoters = cells.snapshotItem(5).textContent.trim();
 
-         return (
+         return Immutable.Map(
          {
             id: parseInt(id),
             title: title,

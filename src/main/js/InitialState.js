@@ -16,7 +16,7 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          // game ID to detail
          this.gameDetailMap = {};
          // game ID to summary
-         this.gameSummaryMap = {};
+         this.gameSummaryMap = Immutable.Map();
 
          this.collectionTime = undefined;
          this.summaryTime = undefined;

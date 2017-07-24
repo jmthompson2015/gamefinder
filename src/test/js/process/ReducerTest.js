@@ -15,7 +15,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          var gameSummaryMap = createGameSummaryMap();
          var action1 = Action.addGameSummaries(gameSummaryMap);
          state = Reducer.root(state, action1);
-         assert.equal(Object.keys(state.gameSummaryMap).length, 2);
+         assert.equal(state.gameSummaryMap.size, 2);
          var gameDetailMap = createGameDetailMap();
          assert.equal(Object.keys(state.gameDetailMap).length, 0);
          var action = Action.addGameDetails(gameDetailMap);
@@ -34,7 +34,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          // Setup.
          var state = new InitialState();
          var length = 0;
-         assert.equal(Object.keys(state.gameSummaryMap).length, length);
+         assert.equal(state.gameSummaryMap.size, length);
          var gameSummaryMap = createGameSummaryMap();
          var action = Action.addGameSummaries(gameSummaryMap);
 
@@ -43,7 +43,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
          // Verify.
          assert.ok(result);
-         assert.equal(Object.keys(result.gameSummaryMap).length, length + 2);
+         assert.equal(result.gameSummaryMap.size, length + 2);
       });
 
       QUnit.test("addUserCollection()", function(assert)
@@ -111,15 +111,17 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
       {
          var answer = {};
 
-         answer[1406] = {
+         answer[1406] = Immutable.Map(
+         {
             id: 1406,
             title: "Monopoly (1933)",
-         };
-         answer[181] = {
+         });
+         answer[181] = Immutable.Map(
+         {
             id: 181,
             title: "Risk (1959)",
-         };
+         });
 
-         return answer;
+         return Immutable.Map(answer);
       }
    });
