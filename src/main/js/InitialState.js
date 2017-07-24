@@ -6,6 +6,7 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
       function InitialState()
       {
          this.pageCount = 8;
+         this.usernames = Immutable.List(["ghightshoe", "jmthompson", "kmistr"]);
 
          this.gameDataMap = {};
          this.filteredGameData = [];
@@ -16,7 +17,10 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          this.gameDetailMap = {};
          // game ID to summary
          this.gameSummaryMap = {};
-         this.usernames = Immutable.List(["ghightshoe", "jmthompson", "kmistr"]);
+
+         this.collectionTime = undefined;
+         this.summaryTime = undefined;
+         this.detailTime = undefined;
 
          this.isDataLoaded = false;
          this.categoryMap = {};

@@ -107,6 +107,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                {
                   filteredGameData: newFilteredGameData,
                });
+            case Action.SET_COLLECTION_TIME:
+               LOGGER.info("Reducer collectionTime = " + action.time);
+               return Object.assign(
+               {}, state,
+               {
+                  collectionTime: action.time,
+               });
             case Action.SET_DEFAULT_FILTERS:
                LOGGER.info("Reducer set default filters");
                newFilters = DefaultFilters.create();
@@ -114,6 +121,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                {}, state,
                {
                   filters: newFilters,
+               });
+            case Action.SET_DETAIL_TIME:
+               LOGGER.info("Reducer detailTime = " + action.time);
+               return Object.assign(
+               {}, state,
+               {
+                  detailTime: action.time,
                });
             case Action.SET_FILTERS:
                LOGGER.info("Reducer filters = " + action.filters);
@@ -138,6 +152,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                {}, state,
                {
                   pageCount: action.pageCount,
+               });
+            case Action.SET_SUMMARY_TIME:
+               LOGGER.info("Reducer summaryTime = " + action.time);
+               return Object.assign(
+               {}, state,
+               {
+                  summaryTime: action.time,
                });
             default:
                LOGGER.warn("Reducer.root: Unhandled action type: " + action.type);

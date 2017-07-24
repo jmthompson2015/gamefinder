@@ -32,10 +32,13 @@ define(["process/Selector"], function(Selector)
          {
             collectionCount: state.usernameToReceivedMap.size,
             collectionTotal: state.usernames.size,
+            collectionTime: state.collectionTime,
             summaryCount: Object.keys(state.gameSummaryMap).length,
             summaryTotal: gameTotal,
+            summaryTime: state.summaryTime,
             detailCount: Object.keys(state.gameDetailMap).length,
             detailTotal: gameTotal,
+            detailTime: state.detailTime,
          });
       }
    };

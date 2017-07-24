@@ -7,9 +7,12 @@ define(function()
    Action.ADD_GAME_SUMMARIES = "addGameSummaries";
    Action.ADD_USER_COLLECTION = "addUserCollection";
    Action.REMOVE_FILTERS = "removeFilters";
+   Action.SET_COLLECTION_TIME = "setCollectionTime";
    Action.SET_DEFAULT_FILTERS = "setDefaultFilters";
+   Action.SET_DETAIL_TIME = "setDetailTime";
    Action.SET_FILTERS = "setFilters";
    Action.SET_PAGE_COUNT = "setPageCount";
+   Action.SET_SUMMARY_TIME = "setSummaryTime";
 
    Action.addGameDetails = function(gameDetailMap)
    {
@@ -55,11 +58,33 @@ define(function()
       });
    };
 
+   Action.setCollectionTime = function(time)
+   {
+      InputValidator.validateIsNumber("time", time);
+
+      return (
+      {
+         type: Action.SET_COLLECTION_TIME,
+         time: time,
+      });
+   };
+
    Action.setDefaultFilters = function()
    {
       return (
       {
          type: Action.SET_DEFAULT_FILTERS,
+      });
+   };
+
+   Action.setDetailTime = function(time)
+   {
+      InputValidator.validateIsNumber("time", time);
+
+      return (
+      {
+         type: Action.SET_DETAIL_TIME,
+         time: time,
       });
    };
 
@@ -82,6 +107,17 @@ define(function()
       {
          type: Action.SET_PAGE_COUNT,
          pageCount: pageCount,
+      });
+   };
+
+   Action.setSummaryTime = function(time)
+   {
+      InputValidator.validateIsNumber("time", time);
+
+      return (
+      {
+         type: Action.SET_SUMMARY_TIME,
+         time: time,
       });
    };
 

@@ -26,12 +26,25 @@ define(["process/Action", "process/GameCollectionFetcher", "process/GameDetailFe
       GameLoader.prototype.load = function()
       {
          // Load from the internet.
+         var store = this.store();
+         var start0 = Date.now();
+
          var collectionCallback = function(gameCollectionMap)
          {
+            var end0 = Date.now();
+            store.dispatch(Action.setCollectionTime(end0 - start0));
+            var start1 = Date.now();
+
             var summaryCallback = function(gameSummaryMap)
             {
+               var end1 = Date.now();
+               store.dispatch(Action.setSummaryTime(end1 - start1));
+               var start2 = Date.now();
+
                var detailCallback = function(gameDetailMap)
                {
+                  var end2 = Date.now();
+                  store.dispatch(Action.setDetailTime(end2 - start2));
                   var callback = this.callback();
                   callback(gameDetailMap);
                };

@@ -8,6 +8,8 @@
 	<script src="../../../../lib/react/react-15.6.1.min.js"></script>
 	<script src="../../../../lib/react-dom/react-dom-15.6.1.min.js"></script>
 	<script src="../../../../lib/require/require-2.3.3.min.js" data-main="../../../../src/main/js/GameColumns"></script>
+
+	<script src="../../../main/js/core-util/TimePrinter.js"></script>
 </head>
 <body>
 	<div id="panel"></div>
@@ -20,10 +22,13 @@
 			{
 				collectionCount: 2,
 				collectionTotal: 3,
+				collectionTime: 2222,
 				summaryCount: 100,
 				summaryTotal: 200,
+				summaryTime: 3333,
 				detailCount: 50,
 				detailTotal: 200,
+				detailTime: 4444,
 			});
 
 			ReactDOM.render(element, document.getElementById("panel"));
