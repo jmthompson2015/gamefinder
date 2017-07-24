@@ -26,7 +26,10 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          // Verify.
          assert.ok(result);
          assert.equal(Object.keys(result.gameDetailMap).length, 2);
-         assert.equal(Object.keys(result.gameDataMap).length, 2);
+         assert.ok(result.gameDataMap instanceof Immutable.Map);
+         assert.equal(result.gameDataMap.size, 2);
+         assert.ok(result.filteredGameData instanceof Immutable.List, "result.filteredGameData = " + result.filteredGameData);
+         assert.equal(result.filteredGameData.size, 2);
       });
 
       QUnit.test("addGameSummaries()", function(assert)

@@ -8,8 +8,8 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          this.pageCount = 8;
          this.usernames = Immutable.List(["ghightshoe", "jmthompson", "kmistr"]);
 
-         this.gameDataMap = {};
-         this.filteredGameData = [];
+         this.gameDataMap = Immutable.Map();
+         this.filteredGameData = Immutable.List();
 
          // game ID to array of users
          this.gameCollectionMap = Immutable.Map();

@@ -24,7 +24,7 @@ define(function()
 
          var rows = [];
 
-         var rowCount = "Row Count: " + rowData.length;
+         var rowCount = "Row Count: " + rowData.size;
          rows.push(React.DOM.tr(
          {
             key: rows.length,

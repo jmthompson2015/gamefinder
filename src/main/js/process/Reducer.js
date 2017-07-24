@@ -13,7 +13,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
             return new InitialState();
          }
 
-         var newCategoryMap, newDesignerMap, newFilteredGameData, newFilters, newGameCollectionMap, newGameDataMap, newGameDetailMap, newGameSummaryMap, newMechanicMap, newUsernameMap;
+         var gameData, newCategoryMap, newDesignerMap, newFilteredGameData, newFilters, newGameCollectionMap, newGameDataMap, newGameDetailMap, newGameSummaryMap, newMechanicMap, newUsernameMap;
 
          switch (action.type)
          {
@@ -21,10 +21,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                LOGGER.info("Reducer gameDetailMap length = " + Object.keys(action.gameDetailMap).length);
                newGameDetailMap = Object.assign(
                {}, state.gameDetailMap);
-               newGameDataMap = Object.assign(
-               {}, state.gameDataMap);
                Object.vizziniMerge(newGameDetailMap, action.gameDetailMap);
-               Reducer.addGameData(state, newGameDataMap, action.gameDetailMap);
+               newGameDataMap = Reducer.addGameData(state, state.gameDataMap, action.gameDetailMap);
                newCategoryMap = Object.assign(
                {}, state.categoryMap);
                newDesignerMap = Object.assign(
@@ -46,11 +44,9 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                      });
                   }
                });
-               newFilteredGameData = [];
-               var gameData = Object.values(newGameDataMap);
-               var isDataLoaded = (Selector.gameTotal(state) === gameData.length);
-               newFilteredGameData.vizziniAddAll(gameData);
-               Reducer.sortGameData(newFilteredGameData);
+               gameData = Immutable.List(newGameDataMap.toIndexedSeq().toArray());
+               var isDataLoaded = (Selector.gameTotal(state) === gameData.size);
+               newFilteredGameData = Reducer.sortGameData(gameData);
                return Object.assign(
                {}, state,
                {
@@ -94,9 +90,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                });
             case Action.REMOVE_FILTERS:
                LOGGER.info("Reducer remove filters");
-               newFilteredGameData = [];
-               newFilteredGameData.vizziniAddAll(Object.values(state.gameDataMap));
-               Reducer.sortGameData(newFilteredGameData);
+               gameData = Immutable.List(state.gameDataMap.toIndexedSeq().toArray());
+               newFilteredGameData = Reducer.sortGameData(gameData);
                return Object.assign(
                {}, state,
                {
@@ -133,7 +128,8 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                newFilters = Object.assign(
                {}, state.filters);
                Object.vizziniMerge(newFilters, action.filters);
-               newFilteredGameData = Reducer.filterGameData(Object.values(state.gameDataMap), newFilters);
+               gameData = Immutable.List(state.gameDataMap.toIndexedSeq().toArray());
+               newFilteredGameData = Reducer.filterGameData(gameData, newFilters);
                Reducer.saveToLocalStorage(newFilters);
                return Object.assign(
                {}, state,
@@ -171,8 +167,10 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
          {
             var gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id));
             var gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.id));
-            gameDataMap[gameDetail.id] = GameData.createGameData(gameSummary, gameDetail, gameCollections);
+            gameDataMap = gameDataMap.set(gameDetail.id, GameData.createGameData(gameSummary, gameDetail, gameCollections));
          }, this);
+
+         return gameDataMap;
       };
 
       Reducer.entityMap = function(state, newEntityMap, newEntities)
@@ -206,9 +204,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
             return Reducer.passes(data, filters);
          });
 
-         Reducer.sortGameData(answer);
-
-         return answer;
+         return Reducer.sortGameData(answer);
       };
 
       Reducer.passes = function(data, filters)
@@ -251,7 +247,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
 
       Reducer.sortGameData = function(gameData)
       {
-         gameData.sort(function(a, b)
+         return gameData.sort(function(a, b)
          {
             return a.boardGameRank - b.boardGameRank;
          });
