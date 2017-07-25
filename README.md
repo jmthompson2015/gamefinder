@@ -1,5 +1,7 @@
 # Game Finder
 
+Provides an application to view and filter the top games at [BoardGameGeek](https://www.boardgamegeek.com).
+
 ## Applications
 
 * [BoardGameGeek Game Finder](https://rawgit.com/jmthompson2015/gamefinder/master/src/main/html/gameFinder.html)
