@@ -1,5 +1,5 @@
-define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer", "process/Selector"],
-   function(InitialState, Action, GameLoader, Reducer, Selector)
+define(["process/Action", "process/GameLoader", "process/Reducer", "process/Selector"],
+   function(Action, GameLoader, Reducer, Selector)
    {
       "use strict";
       QUnit.module("Selector");

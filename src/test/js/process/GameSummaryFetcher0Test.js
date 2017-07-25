@@ -1,5 +1,5 @@
-define(["process/GameSummaryFetcher", "process/Reducer"],
-   function(GameSummaryFetcher, Reducer)
+define(["process/GameSummaryFetcher"],
+   function(GameSummaryFetcher)
    {
       "use strict";
       QUnit.module("GameSummaryFetcher0");
