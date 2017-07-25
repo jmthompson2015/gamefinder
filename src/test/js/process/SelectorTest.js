@@ -43,7 +43,7 @@ define(["process/Action", "process/GameLoader", "process/Reducer", "process/Sele
          var callback = function(gameDetailMap)
          {
             // Verify.
-            assert.equal(Object.keys(gameDetailMap).length, 2);
+            assert.equal(gameDetailMap.size, 2);
 
             // Run.
             var result = Selector.findGameDetailById(store.getState(), id);
@@ -51,8 +51,8 @@ define(["process/Action", "process/GameLoader", "process/Reducer", "process/Sele
             // Verify.
             assert.ok(true, "test resumed from async operation");
             assert.ok(result);
-            assert.equal(result.id, id);
-            assert.equal(result.title, "Monopoly");
+            assert.equal(result.get("id"), id);
+            assert.equal(result.get("title"), "Monopoly");
             done();
          };
 

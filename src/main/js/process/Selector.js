@@ -12,7 +12,9 @@ define(function()
 
    Selector.findGameDetailById = function(state, id)
    {
-      return this.gameDetailMap(state)[id];
+      InputValidator.validateIsNumber("id", id);
+
+      return this.gameDetailMap(state).get(id);
    };
 
    Selector.findGameSummaryById = function(state, id)

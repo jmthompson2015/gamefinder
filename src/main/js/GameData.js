@@ -8,9 +8,9 @@ define(function()
       InputValidator.validateNotNull("gameSummary", gameSummary);
       InputValidator.validateNotNull("gameDetail", gameDetail);
       // usernames optional.
-      if (gameSummary.get("id") !== gameDetail.id)
+      if (gameSummary.get("id") !== gameDetail.get("id"))
       {
-         throw "ID mismatch: gameSummary.id = " + gameSummary.id + " gameDetail.id = " + gameDetail.id;
+         throw "ID mismatch: gameSummary.get(\"id\") = " + gameSummary.get("id") + " gameDetail.get(\"id\") = " + gameDetail.get("id");
       }
 
       var answer = {};
@@ -19,19 +19,19 @@ define(function()
       answer.boardGameRank = gameSummary.get("boardGameRank");
       answer.geekRating = gameSummary.get("geekRating");
 
-      var designers = (gameDetail.designers ? gameDetail.designers : []);
-      var categories = (gameDetail.categories ? gameDetail.categories : []);
-      var mechanics = (gameDetail.mechanics ? gameDetail.mechanics : []);
+      var designers = gameDetail.get("designers");
+      var categories = gameDetail.get("categories");
+      var mechanics = gameDetail.get("mechanics");
 
-      answer.title = gameDetail.title;
+      answer.title = gameDetail.get("title");
       answer.designers = designers;
-      answer.yearPublished = gameDetail.yearPublished;
-      answer.minPlayers = gameDetail.minPlayers;
-      answer.maxPlayers = gameDetail.maxPlayers;
-      answer.bestWithPlayers = gameDetail.bestWithPlayers;
-      answer.minPlayTime = gameDetail.minPlayTime;
-      answer.maxPlayTime = gameDetail.maxPlayTime;
-      answer.averageWeight = gameDetail.averageWeight;
+      answer.yearPublished = gameDetail.get("yearPublished");
+      answer.minPlayers = gameDetail.get("minPlayers");
+      answer.maxPlayers = gameDetail.get("maxPlayers");
+      answer.bestWithPlayers = gameDetail.get("bestWithPlayers");
+      answer.minPlayTime = gameDetail.get("minPlayTime");
+      answer.maxPlayTime = gameDetail.get("maxPlayTime");
+      answer.averageWeight = gameDetail.get("averageWeight");
       answer.categories = categories;
       answer.mechanics = mechanics;
 

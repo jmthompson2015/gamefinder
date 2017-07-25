@@ -13,8 +13,12 @@ define(["process/GameDetailFetcher"], function(GameDetailFetcher)
       {
          // Verify.
          assert.ok(newGameDetailMap);
-         var gameDetails = Object.values(newGameDetailMap);
+         var gameDetails = newGameDetailMap.toIndexedSeq().toArray();
          assert.ok(gameDetails);
+         gameDetails.sort(function(a, b)
+         {
+            return a.id - b.id;
+         });
          var length = gameIds.length;
          assert.equal(gameDetails.length, length);
          verifyFirst(gameDetails[0]);
@@ -29,35 +33,35 @@ define(["process/GameDetailFetcher"], function(GameDetailFetcher)
       function verifyFirst(gameDetail)
       {
          assert.ok(gameDetail);
-         assert.equal(gameDetail.id, 12333);
-         assert.equal(gameDetail.title, "Twilight Struggle");
-         assert.equal(gameDetail.yearPublished, 2005);
-         assert.equal(gameDetail.minPlayers, 2);
-         assert.equal(gameDetail.maxPlayers, 2);
-         assert.equal(gameDetail.bestWithPlayers, 2);
-         assert.equal(gameDetail.minPlayTime, 180);
-         assert.equal(gameDetail.maxPlayTime, 180);
-         assert.equal(gameDetail.averageWeight, 3.534);
-         assert.equal(gameDetail.designers.length, 2);
-         assert.equal(gameDetail.categories.length, 3);
-         assert.equal(gameDetail.mechanics.length, 5);
+         assert.equal(gameDetail.get("id"), 12333);
+         assert.equal(gameDetail.get("title"), "Twilight Struggle");
+         assert.equal(gameDetail.get("yearPublished"), 2005);
+         assert.equal(gameDetail.get("minPlayers"), 2);
+         assert.equal(gameDetail.get("maxPlayers"), 2);
+         assert.equal(gameDetail.get("bestWithPlayers"), 2);
+         assert.equal(gameDetail.get("minPlayTime"), 180);
+         assert.equal(gameDetail.get("maxPlayTime"), 180);
+         assert.equal(gameDetail.get("averageWeight"), 3.534);
+         assert.equal(gameDetail.get("designers").length, 2);
+         assert.equal(gameDetail.get("categories").length, 3);
+         assert.equal(gameDetail.get("mechanics").length, 5);
       }
 
       function verifyLast(gameDetail)
       {
          assert.ok(gameDetail);
-         assert.equal(gameDetail.id, 120677);
-         assert.equal(gameDetail.title, "Terra Mystica");
-         assert.equal(gameDetail.yearPublished, 2012);
-         assert.equal(gameDetail.minPlayers, 2);
-         assert.equal(gameDetail.maxPlayers, 5);
-         assert.equal(gameDetail.bestWithPlayers, 4);
-         assert.equal(gameDetail.minPlayTime, 60);
-         assert.equal(gameDetail.maxPlayTime, 150);
-         assert.equal(gameDetail.averageWeight, 3.9356);
-         assert.equal(gameDetail.designers.length, 2);
-         assert.equal(gameDetail.categories.length, 4);
-         assert.equal(gameDetail.mechanics.length, 3);
+         assert.equal(gameDetail.get("id"), 120677);
+         assert.equal(gameDetail.get("title"), "Terra Mystica");
+         assert.equal(gameDetail.get("yearPublished"), 2012);
+         assert.equal(gameDetail.get("minPlayers"), 2);
+         assert.equal(gameDetail.get("maxPlayers"), 5);
+         assert.equal(gameDetail.get("bestWithPlayers"), 4);
+         assert.equal(gameDetail.get("minPlayTime"), 60);
+         assert.equal(gameDetail.get("maxPlayTime"), 150);
+         assert.equal(gameDetail.get("averageWeight"), 3.9356);
+         assert.equal(gameDetail.get("designers").length, 2);
+         assert.equal(gameDetail.get("categories").length, 4);
+         assert.equal(gameDetail.get("mechanics").length, 3);
       }
    });
 

@@ -17,7 +17,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
          state = Reducer.root(state, action1);
          assert.equal(state.gameSummaryMap.size, 2);
          var gameDetailMap = createGameDetailMap();
-         assert.equal(Object.keys(state.gameDetailMap).length, 0);
+         assert.equal(state.gameDetailMap.size, 0);
          var action = Action.addGameDetails(gameDetailMap);
 
          // Run.
@@ -25,7 +25,7 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
          // Verify.
          assert.ok(result);
-         assert.equal(Object.keys(result.gameDetailMap).length, 2);
+         assert.equal(result.gameDetailMap.size, 2);
          assert.ok(result.gameDataMap instanceof Immutable.Map);
          assert.equal(result.gameDataMap.size, 2);
          assert.ok(result.filteredGameData instanceof Immutable.List, "result.filteredGameData = " + result.filteredGameData);
@@ -86,26 +86,30 @@ define(["InitialState", "process/Action", "process/GameLoader", "process/Reducer
 
       function createGameDetailMap()
       {
-         var answer = {};
+         var answer = Immutable.Map();
 
-         answer[1406] = {
-            id: 1406,
-            title: "Monopoly (1933)",
-            minPlayers: 2,
-            maxPlayers: 8,
-            categories: [],
-            designers: [],
-            mechanics: [],
-         };
-         answer[181] = {
-            id: 181,
-            title: "Risk (1959)",
-            minPlayers: 2,
-            maxPlayers: 6,
-            categories: [],
-            designers: [],
-            mechanics: [],
-         };
+         answer = answer.set(1406,
+            Immutable.Map(
+            {
+               id: 1406,
+               title: "Monopoly (1933)",
+               minPlayers: 2,
+               maxPlayers: 8,
+               categories: [],
+               designers: [],
+               mechanics: [],
+            }));
+         answer = answer.set(181,
+            Immutable.Map(
+            {
+               id: 181,
+               title: "Risk (1959)",
+               minPlayers: 2,
+               maxPlayers: 6,
+               categories: [],
+               designers: [],
+               mechanics: [],
+            }));
 
          return answer;
       }

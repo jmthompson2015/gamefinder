@@ -54,9 +54,9 @@ define(["process/Action", "process/GameLoader", "process/Reducer"],
                assert.ok(true, "test resumed from async operation");
                assert.ok(gameDetailMap);
 
-               if (Object.keys(gameDetailMap).length === gameSummaryMap.size)
+               if (gameDetailMap.size === gameSummaryMap.size)
                {
-                  assert.equal(Object.keys(gameDetailMap).length, 100);
+                  assert.equal(gameDetailMap.size, 100);
                   done();
                   done2();
                }

@@ -36,7 +36,7 @@ define(["process/Selector"], function(Selector)
             summaryCount: state.gameSummaryMap.size,
             summaryTotal: gameTotal,
             summaryTime: state.summaryTime,
-            detailCount: Object.keys(state.gameDetailMap).length,
+            detailCount: state.gameDetailMap.size,
             detailTotal: gameTotal,
             detailTime: state.detailTime,
          });

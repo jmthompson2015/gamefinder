@@ -123,7 +123,7 @@ define(function()
       {
          LOGGER.trace("GameDetailFetcher.parseGameDetails() start");
 
-         var answer = {};
+         var answer = Immutable.Map();
 
          // This gives the data items.
          var xpath = "query/results/items/item";
@@ -134,7 +134,7 @@ define(function()
          while (thisRow)
          {
             var gameDetail = parseGameDetail(xmlDocument, thisRow);
-            answer[gameDetail.id] = gameDetail;
+            answer = answer.set(gameDetail.get("id"), gameDetail);
 
             thisRow = rows.iterateNext();
          }
@@ -176,7 +176,7 @@ define(function()
          var designers = parseEntities(xmlDocument, xmlFragment, "boardgamedesigner");
          var mechanics = parseEntities(xmlDocument, xmlFragment, "boardgamemechanic");
 
-         return (
+         return Immutable.Map(
          {
             id: parseInt(id),
             title: title,

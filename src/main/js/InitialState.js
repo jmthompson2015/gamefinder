@@ -14,7 +14,7 @@ define(["DefaultFilters", "EntityFilter", "RangeFilter"],
          // game ID to array of users
          this.gameCollectionMap = Immutable.Map();
          // game ID to detail
-         this.gameDetailMap = {};
+         this.gameDetailMap = Immutable.Map();
          // game ID to summary
          this.gameSummaryMap = Immutable.Map();
 

@@ -19,9 +19,7 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
          {
             case Action.ADD_GAME_DETAILS:
                LOGGER.info("Reducer gameDetailMap length = " + Object.keys(action.gameDetailMap).length);
-               newGameDetailMap = Object.assign(
-               {}, state.gameDetailMap);
-               Object.vizziniMerge(newGameDetailMap, action.gameDetailMap);
+               newGameDetailMap = state.gameDetailMap.merge(action.gameDetailMap);
                newGameDataMap = Reducer.addGameData(state, state.gameDataMap, action.gameDetailMap);
                newCategoryMap = Object.assign(
                {}, state.categoryMap);
@@ -29,12 +27,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
                {}, state.designerMap);
                newMechanicMap = Object.assign(
                {}, state.mechanicMap);
-               Object.keys(action.gameDetailMap).forEach(function(id)
+               var gameDetailKeys = action.gameDetailMap.keySeq().toArray();
+               gameDetailKeys.forEach(function(id)
                {
-                  var gameDetail = action.gameDetailMap[id];
-                  Reducer.entityMap(state, newCategoryMap, gameDetail.categories);
-                  Reducer.entityMap(state, newDesignerMap, gameDetail.designers);
-                  Reducer.entityMap(state, newMechanicMap, gameDetail.mechanics);
+                  var gameDetail = action.gameDetailMap.get(parseInt(id));
+                  Reducer.entityMap(state, newCategoryMap, gameDetail.get("categories"));
+                  Reducer.entityMap(state, newDesignerMap, gameDetail.get("designers"));
+                  Reducer.entityMap(state, newMechanicMap, gameDetail.get("mechanics"));
                   var users = Selector.findGameCollectionsById(state, parseInt(id));
                   if (users && users.length > 0)
                   {
@@ -163,11 +162,13 @@ define(["DefaultFilters", "GameData", "InitialState", "process/Action", "process
          InputValidator.validateNotNull("gameDataMap", gameDataMap);
          InputValidator.validateNotNull("newGameDetailMap", newGameDetailMap);
 
-         Object.values(newGameDetailMap).forEach(function(gameDetail)
+         var gameDetails = newGameDetailMap.toIndexedSeq().toArray();
+
+         gameDetails.forEach(function(gameDetail)
          {
-            var gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id));
-            var gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.id));
-            gameDataMap = gameDataMap.set(gameDetail.id, GameData.createGameData(gameSummary, gameDetail, gameCollections));
+            var gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.get("id")));
+            var gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.get("id")));
+            gameDataMap = gameDataMap.set(gameDetail.get("id"), GameData.createGameData(gameSummary, gameDetail, gameCollections));
          }, this);
 
          return gameDataMap;
