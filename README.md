@@ -2,7 +2,7 @@
 
 ## Applications
 
-* [BoardGameGeek Game Finder](https://rawgit.com/jmthompson2015/gamefinder/master/src/main/html/gamefinder.html)
+* [BoardGameGeek Game Finder](https://rawgit.com/jmthompson2015/gamefinder/master/src/main/html/gameFinder.html)
 
 ## Built With
 
