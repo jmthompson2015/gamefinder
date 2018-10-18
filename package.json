@@ -1,0 +1,39 @@
+{
+  "name": "gamefinder",
+  "version": "1.0.0",
+  "description": "Provides an application to view and filter the top games at [BoardGameGeek](https://www.boardgamegeek.com).",
+  "main": ".eslintrc.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmthompson2015/gamefinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmthompson2015/gamefinder/issues"
+  },
+  "homepage": "https://github.com/jmthompson2015/gamefinder#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "ramda": "^0.25.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.27"
+  }
+}
