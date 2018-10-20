@@ -1,9 +1,9 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
-const fs = require("fs");
 const R = require("ramda");
 
 const FileLoader = require("./FileLoader.js");
+const FileWriter = require("./FileWriter.js");
 
 const GameSummaryFetcher = {};
 
@@ -44,18 +44,6 @@ const reduceFunction1 = (accum, dataRow) => {
   }
 
   return accum;
-};
-
-const writeFile = (outputFile, content) => {
-  fs.writeFile(outputFile, content, err => {
-    // throws an error, you could also catch it here
-    if (err) {
-      throw err;
-    }
-
-    // success case, the file was saved
-    console.log(`${outputFile} saved`);
-  });
 };
 
 GameSummaryFetcher.fetch = page =>
@@ -101,7 +89,7 @@ const start = Date.now();
 const maxPages = 10;
 GameSummaryFetcher.fetchAll(maxPages).then(content0 => {
   const content = JSON.stringify(content0, null, "  ");
-  writeFile(OUTPUT_FILE, content);
+  FileWriter.writeFile(OUTPUT_FILE, content);
   const end = Date.now();
   console.log(`elapsed: ${end - start} ms`);
 });

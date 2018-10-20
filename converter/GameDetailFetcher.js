@@ -1,12 +1,12 @@
 /* eslint new-cap: ["error", { "newIsCap": false }] */
 /* eslint no-console: ["error", { allow: ["log", "error"] }] */
 
-const fs = require("fs");
 const xpath = require("xpath");
 const dom = require("xmldom").DOMParser;
 const R = require("ramda");
 
 const FileLoader = require("./FileLoader.js");
+const FileWriter = require("./FileWriter.js");
 
 const GameDetailFetcher = {};
 
@@ -223,18 +223,6 @@ function parseGameDetails(xmlDocument) {
   return answer;
 }
 
-const writeFile = (outputFile, content) => {
-  fs.writeFile(outputFile, content, err => {
-    // throws an error, you could also catch it here
-    if (err) {
-      throw err;
-    }
-
-    // success case, the file was saved
-    console.log(`${outputFile} saved`);
-  });
-};
-
 GameDetailFetcher.fetchAll = gameIds =>
   new Promise((resolve, reject) => {
     const url = createUrl(gameIds);
@@ -262,7 +250,7 @@ loadGameIds().then(gameIds => {
 
       if (count === setCount) {
         const content = JSON.stringify(gameDetails, null, "  ");
-        writeFile(OUTPUT_FILE, content);
+        FileWriter.writeFile(OUTPUT_FILE, content);
         const end = Date.now();
         console.log(`elapsed: ${end - start} ms`);
       }
