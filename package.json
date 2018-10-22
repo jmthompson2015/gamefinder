@@ -31,6 +31,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "ramda": "^0.25.0",
+    "redux": "^4.0.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "xmldom": "^0.1.27",
