@@ -1,5 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "error"] }] */
 
+import ASelector from "../artifact/Selector.js";
+
 import GameCollectionState from "../state/GameCollectionState.js";
 
 const createUrl = username => {
@@ -41,7 +43,8 @@ GameCollectionFetcher.fetchData = username =>
     const receiveData = xmlDocument => {
       const collectionIds = parseUserCollectionIds(xmlDocument);
       collectionIds.sort((a, b) => a - b);
-      resolve(GameCollectionState.create({ username, collectionIds }));
+      const user = ASelector.userByName(username);
+      resolve(GameCollectionState.create({ userId: user.id, collectionIds }));
     };
 
     const url = createUrl(username);

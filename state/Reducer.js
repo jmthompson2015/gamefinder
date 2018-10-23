@@ -1,5 +1,7 @@
 /* eslint no-console: ["error", { allow: ["log", "warn"] }] */
 
+import ASelector from "../artifact/Selector.js";
+
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
 import DefaultFilters from "./DefaultFilters.js";
@@ -18,40 +20,30 @@ Reducer.root = (state, action) => {
   let gameData;
   let gameDetailKeys;
   let isDataLoaded;
-  let newCategoryMap;
-  let newDesignerMap;
   let newFilteredGameData;
   let newFilters;
   let newGameCollectionMap;
   let newGameDataMap;
   let newGameDetailMap;
   let newGameSummaryMap;
-  let newMechanicMap;
-  // let newUsernameMap;
-  let newUsernameToReceivedMap;
+  let newUserToReceivedMap;
   let users;
 
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
       // console.log(`Reducer gameDetailMap length = ${Object.keys(action.gameDetailMap).length}`);
+      newGameCollectionMap = state.gameCollectionMap;
       newGameDetailMap = R.merge(state.gameDetailMap, action.gameDetailMap);
       newGameDataMap = Reducer.addGameData(state, state.gameDataMap, action.gameDetailMap);
-      newCategoryMap = Object.assign({}, state.categoryMap);
-      newDesignerMap = Object.assign({}, state.designerMap);
-      newMechanicMap = Object.assign({}, state.mechanicMap);
       gameDetailKeys = Object.keys(action.gameDetailMap);
       gameDetailKeys.forEach(id => {
-        const gameDetail = action.gameDetailMap[parseInt(id, 10)];
-        Reducer.entityMap(state, newCategoryMap, gameDetail.categories);
-        Reducer.entityMap(state, newDesignerMap, gameDetail.designers);
-        Reducer.entityMap(state, newMechanicMap, gameDetail.mechanics);
+        let newUsers = [];
         users = Selector.findGameCollectionsById(state, parseInt(id, 10));
         if (users && users.length > 0) {
-          users.forEach(user0 => {
-            const user = user0;
-            if (user) {
-              user.count += 1;
-            }
+          users.forEach(user => {
+            const newUser = R.assoc("count", user.count + 1, user);
+            newUsers = R.append(newUser, newUsers);
+            newGameCollectionMap = R.assoc(id, newUsers, newGameCollectionMap);
           });
         }
       });
@@ -63,13 +55,11 @@ Reducer.root = (state, action) => {
       isDataLoaded = Selector.gameTotal(state) === gameData.length;
       newFilteredGameData = Reducer.sortGameData(gameData);
       return Object.assign({}, state, {
-        categoryMap: newCategoryMap,
-        designerMap: newDesignerMap,
         filteredGameData: newFilteredGameData,
+        gameCollectionMap: newGameCollectionMap,
         gameDataMap: newGameDataMap,
         gameDetailMap: newGameDetailMap,
-        isDataLoaded,
-        mechanicMap: newMechanicMap
+        isDataLoaded
       });
     case ActionType.ADD_GAME_SUMMARIES:
       console.log(`Reducer gameSummaryMap.length = ${Object.keys(action.gameSummaryMap).length}`);
@@ -79,21 +69,19 @@ Reducer.root = (state, action) => {
       });
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
-      newUsernameToReceivedMap = R.assoc(action.username, true, state.usernameToReceivedMap);
+      newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
       newGameCollectionMap = state.gameCollectionMap;
       action.gameIds.forEach(id => {
-        users = Selector.findGameCollectionsById(state, parseInt(id, 10));
-        const userId = state.usernames.indexOf(action.username);
-        const user = state.usernameMap[userId];
-        if (users === undefined) {
-          users = [];
+        let collections = Selector.findGameCollectionsById(state, parseInt(id, 10));
+        if (collections === undefined) {
+          collections = [];
         }
-        users.push(user);
-        newGameCollectionMap = R.assoc(id, users, newGameCollectionMap);
+        collections.push(action.userId);
+        newGameCollectionMap = R.assoc(id, collections, newGameCollectionMap);
       });
       return Object.assign({}, state, {
         gameCollectionMap: newGameCollectionMap,
-        usernameToReceivedMap: newUsernameToReceivedMap
+        userToReceivedMap: newUserToReceivedMap
       });
     case ActionType.REMOVE_FILTERS:
       console.log("Reducer remove filters");
@@ -154,13 +142,11 @@ Reducer.addGameData = (state, gameDataMap0, newGameDetailMap) => {
   gameDetails.forEach(gameDetail => {
     const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
     const gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.id, 10));
+    const userIds = R.map(collection => collection.userId, gameCollections);
+    const users = ASelector.usersByIds(userIds);
 
     if (gameSummary) {
-      const newGameData = GameDataState.create({
-        gameSummary,
-        gameDetail,
-        usernames: gameCollections
-      });
+      const newGameData = GameDataState.create({ gameSummary, gameDetail, users });
       gameDataMap = R.assoc(gameDetail.id, newGameData, gameDataMap);
     }
   });
@@ -168,16 +154,17 @@ Reducer.addGameData = (state, gameDataMap0, newGameDetailMap) => {
   return gameDataMap;
 };
 
-Reducer.entityMap = (state, newEntityMap0, newEntities) => {
+Reducer.entityMap = (state, newEntityMap0, newEntityIds) => {
   const newEntityMap = newEntityMap0;
 
-  newEntities.forEach(newEntity => {
-    const entity = newEntityMap[newEntity.id];
+  newEntityIds.forEach(newEntityId => {
+    const entity = newEntityMap[newEntityId];
 
     if (entity) {
-      newEntityMap[entity.id] = R.assoc("count", entity.count + 1, entity);
+      newEntityMap[newEntityId] = R.assoc("count", entity.count + 1, entity);
     } else {
-      newEntityMap[newEntity.id] = newEntity;
+      const newEntity = ASelector.entity(newEntityId);
+      newEntityMap[newEntityId] = R.assoc("count", 1, newEntity);
     }
   });
 };

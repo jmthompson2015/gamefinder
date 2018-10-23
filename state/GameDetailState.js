@@ -10,14 +10,13 @@ GameDetailState.create = ({
   minPlayTime,
   maxPlayTime,
   averageWeight,
-  designers = [],
-  categories = [],
-  mechanics = []
+  categoryIds = [],
+  designerIds = [],
+  mechanicIds = []
 }) =>
   Immutable({
     id,
     title,
-    designers,
     yearPublished,
     minPlayers,
     maxPlayers,
@@ -25,8 +24,9 @@ GameDetailState.create = ({
     minPlayTime,
     maxPlayTime,
     averageWeight,
-    categories,
-    mechanics
+    categoryIds,
+    designerIds,
+    mechanicIds
   });
 
 Object.freeze(GameDetailState);

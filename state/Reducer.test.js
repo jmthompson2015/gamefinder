@@ -12,18 +12,18 @@ const createGameDetailMap = () => {
     title: "Monopoly (1933)",
     minPlayers: 2,
     maxPlayers: 8,
-    categories: [],
-    designers: [],
-    mechanics: []
+    categoryIds: [],
+    designerIds: [],
+    mechanicIds: []
   };
   answer[181] = {
     id: 181,
     title: "Risk (1959)",
     minPlayers: 2,
     maxPlayers: 6,
-    categories: [],
-    designers: [],
-    mechanics: []
+    categoryIds: [],
+    designerIds: [],
+    mechanicIds: []
   };
 
   return answer;
@@ -80,9 +80,9 @@ QUnit.test("addUserCollection()", assert => {
   const state = AppState.create();
   const length = 0;
   assert.equal(Object.keys(state.gameCollectionMap).length, length);
-  const username = "jmthompson";
+  const userId = 2;
   const gameIds = [1406, 181];
-  const action = ActionCreator.addUserCollection(username, gameIds);
+  const action = ActionCreator.addUserCollection(userId, gameIds);
 
   // Run.
   const result = Reducer.root(state, action);

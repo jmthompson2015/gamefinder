@@ -201,4 +201,6 @@ const Mechanic = {
   }
 }
 
+Object.freeze(Mechanic);
+
 export default Mechanic;

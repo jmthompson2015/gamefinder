@@ -11,6 +11,8 @@ const OUTPUT_FILE = "../artifact/Designer.js";
 const HEADER = `const Designer = `;
 const FOOTER = `
 
+Object.freeze(Designer);
+
 export default Designer;`;
 
 DesignerGenerator.convert = () => {

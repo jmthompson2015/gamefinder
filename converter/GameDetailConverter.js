@@ -9,24 +9,36 @@ const INPUT_FILE = "GameDetail.json";
 const OUTPUT_FILE = "../artifact/GameDetail.js";
 const HEADER = `const GameDetail = `;
 const FOOTER = `
+
+Object.freeze(GameDetail);
+
 export default GameDetail;`;
 
 const replaceCategories = gameDetail => {
-  const categoriesIds = R.map(category => category.id, gameDetail.categories);
+  const categoryIds = R.map(category => category.id, gameDetail.categories);
 
-  return R.assoc("categories", categoriesIds, gameDetail);
+  return R.pipe(
+    R.dissoc("categories"),
+    R.assoc("categoryIds", categoryIds)
+  )(gameDetail);
 };
 
 const replaceDesigners = gameDetail => {
-  const designersIds = R.map(designer => designer.id, gameDetail.designers);
+  const designerIds = R.map(designer => designer.id, gameDetail.designers);
 
-  return R.assoc("designers", designersIds, gameDetail);
+  return R.pipe(
+    R.dissoc("designers"),
+    R.assoc("designerIds", designerIds)
+  )(gameDetail);
 };
 
 const replaceMechanics = gameDetail => {
-  const mechanicsIds = R.map(mechanic => mechanic.id, gameDetail.mechanics);
+  const mechanicIds = R.map(mechanic => mechanic.id, gameDetail.mechanics);
 
-  return R.assoc("mechanics", mechanicsIds, gameDetail);
+  return R.pipe(
+    R.dissoc("mechanics"),
+    R.assoc("mechanicIds", mechanicIds)
+  )(gameDetail);
 };
 
 GameDetailConverter.convert = () => {

@@ -160,18 +160,5 @@ QUnit.test("pageCount()", assert => {
   assert.equal(result, 5);
 });
 
-QUnit.test("usernames()", assert => {
-  // Setup.
-  const store = Redux.createStore(Reducer.root);
-
-  // Run.
-  const result = Selector.usernames(store.getState());
-
-  // Verify.
-  assert.ok(result);
-  // assert.ok(result instanceof Immutable.List);
-  assert.equal(result.length, 3);
-});
-
 const SelectorTest = {};
 export default SelectorTest;

@@ -2,9 +2,9 @@ import GameCollectionState from "./GameCollectionState.js";
 
 QUnit.module("GameCollectionState");
 
-const PROPS = ["username", "collectionIds"];
+const PROPS = ["userId", "collectionIds"];
 
-const createTestState = () => GameCollectionState.create({ username: 1, collectionIds: 2 });
+const createTestState = () => GameCollectionState.create({ userId: 1, collectionIds: 2 });
 
 QUnit.test("create()", assert => {
   // Run.

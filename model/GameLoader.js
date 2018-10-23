@@ -1,3 +1,5 @@
+import ASelector from "../artifact/Selector.js";
+
 import ActionCreator from "../state/ActionCreator.js";
 import Selector from "../state/Selector.js";
 
@@ -33,9 +35,9 @@ GameLoader.load = store =>
 
 GameLoader.loadCollections = store =>
   new Promise(resolve => {
-    const receiveCollection = ({ username, collectionIds }) => {
+    const receiveCollection = ({ userId, collectionIds }) => {
       if (collectionIds.length > 0) {
-        store.dispatch(ActionCreator.addUserCollection(username, collectionIds));
+        store.dispatch(ActionCreator.addUserCollection(userId, collectionIds));
       }
 
       if (Selector.isCollectionsLoaded(store.getState())) {
@@ -44,7 +46,7 @@ GameLoader.loadCollections = store =>
       }
     };
 
-    const usernames = Selector.usernames(store.getState());
+    const usernames = ASelector.usernames();
     usernames.forEach(username => {
       GameCollectionFetcher.fetchData(username).then(receiveCollection);
     });

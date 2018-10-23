@@ -11,6 +11,8 @@ const OUTPUT_FILE = "../artifact/Category.js";
 const HEADER = `const Category = `;
 const FOOTER = `
 
+Object.freeze(Category);
+
 export default Category;`;
 
 CategoryGenerator.convert = () => {

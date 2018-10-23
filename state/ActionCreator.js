@@ -17,7 +17,7 @@ ActionCreator.addGameSummaries = makeActionCreator(ActionType.ADD_GAME_SUMMARIES
 
 ActionCreator.addUserCollection = makeActionCreator(
   ActionType.ADD_USER_COLLECTION,
-  "username",
+  "userId",
   "gameIds"
 );
 

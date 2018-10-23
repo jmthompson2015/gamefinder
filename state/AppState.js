@@ -4,7 +4,6 @@ const AppState = {};
 
 AppState.create = ({
   pageCount = 5,
-  usernames = ["ghightshoe", "jmthompson", "kmistr"],
   gameDataMap = {},
   filteredGameData = [],
   gameCollectionMap = {},
@@ -17,13 +16,11 @@ AppState.create = ({
   categoryMap = {},
   designerMap = {},
   mechanicMap = {},
-  usernameMap = {},
-  usernameToReceivedMap = {},
+  userToReceivedMap = {},
   filters = DefaultFilters.create()
 } = {}) =>
   Immutable({
     pageCount,
-    usernames,
     gameDataMap,
     filteredGameData,
     // game ID to array of users
@@ -39,10 +36,8 @@ AppState.create = ({
     categoryMap,
     designerMap,
     mechanicMap,
-    // user ID to object
-    usernameMap,
-    // username to boolean
-    usernameToReceivedMap,
+    // user ID to boolean
+    userToReceivedMap,
     filters
   });
 

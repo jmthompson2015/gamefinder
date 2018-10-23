@@ -11,6 +11,8 @@ const OUTPUT_FILE = "../artifact/Mechanic.js";
 const HEADER = `const Mechanic = `;
 const FOOTER = `
 
+Object.freeze(Mechanic);
+
 export default Mechanic;`;
 
 MechanicGenerator.convert = () => {

@@ -915,6 +915,10 @@ const Designer = {
     "id": 4735,
     "name": "Ignacy Trzewiczek"
   },
+  "4773": {
+    "id": 4773,
+    "name": "Patrick Leder"
+  },
   "4786": {
     "id": 4786,
     "name": "Jason Little"
@@ -2547,6 +2551,10 @@ const Designer = {
     "id": 79123,
     "name": "Jean Yves Monpertuis"
   },
+  "79566": {
+    "id": 79566,
+    "name": "David Somerville"
+  },
   "79931": {
     "id": 79931,
     "name": "Fabien Riffaud"
@@ -2788,5 +2796,7 @@ const Designer = {
     "name": "Jakub Łapot"
   }
 }
+
+Object.freeze(Designer);
 
 export default Designer;

@@ -61,7 +61,7 @@ GameSummaryFetcher.fetch = page =>
       const tableBody = data.substring(index0, index1 + key1.length);
       const dataRows = tableBody.split("</tr>");
       dataRows.shift();
-      console.log(`dataRows.length = ${dataRows.length}`);
+      // console.log(`dataRows.length = ${dataRows.length}`);
 
       resolve(R.reduce(reduceFunction1, [], dataRows));
     });

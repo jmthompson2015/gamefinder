@@ -8,11 +8,11 @@ QUnit.test("fetchData() ghightshoe", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ username, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    assert.ok(username);
-    assert.equal(username, username);
+    assert.ok(userId);
+    assert.equal(userId, 1);
     assert.ok(collectionIds);
     const length = 31;
     assert.equal(collectionIds.length, length);
@@ -28,11 +28,11 @@ QUnit.test("fetchData() jmthompson", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ username, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    assert.ok(username);
-    assert.equal(username, username);
+    assert.ok(userId);
+    assert.equal(userId, 2);
     assert.ok(collectionIds);
     const length = 177;
     assert.equal(collectionIds.length, length);
@@ -48,11 +48,11 @@ QUnit.test("fetchData() kmistr", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ username, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    assert.ok(username);
-    assert.equal(username, username);
+    assert.ok(userId);
+    assert.equal(userId, 3);
     assert.ok(collectionIds);
     const length = 34;
     assert.equal(collectionIds.length, length);

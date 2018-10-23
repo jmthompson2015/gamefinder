@@ -1,6 +1,8 @@
+import ASelector from "../artifact/Selector.js";
+
 const Selector = {};
 
-Selector.findGameCollectionsById = (state, id) => Selector.gameCollectionMap(state)[id];
+Selector.findGameCollectionsById = (state, id) => Selector.gameCollectionMap(state)[id] || [];
 
 Selector.findGameDetailById = (state, id) => Selector.gameDetailMap(state)[id];
 
@@ -15,11 +17,11 @@ Selector.gameSummaryMap = state => state.gameSummaryMap;
 Selector.gameTotal = state => Selector.pageCount(state) * 100;
 
 Selector.isCollectionsLoaded = state => {
-  const usernames = Selector.usernames(state);
-  const usernameToReceivedMap = Selector.usernameToReceivedMap(state);
+  const userIds = ASelector.userIds();
+  const userToReceivedMap = Selector.userToReceivedMap(state);
 
-  return usernames.reduce(
-    (accumulator, username) => accumulator && usernameToReceivedMap[username] === true,
+  return userIds.reduce(
+    (accumulator, userId) => accumulator && userToReceivedMap[userId] === true,
     true
   );
 };
@@ -42,8 +44,6 @@ Selector.isSummariesLoaded = state => {
 
 Selector.pageCount = state => state.pageCount;
 
-Selector.usernameToReceivedMap = state => state.usernameToReceivedMap;
-
-Selector.usernames = state => state.usernames;
+Selector.userToReceivedMap = state => state.userToReceivedMap;
 
 export default Selector;

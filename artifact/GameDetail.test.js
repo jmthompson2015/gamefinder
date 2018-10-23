@@ -16,7 +16,7 @@ QUnit.test("GameDetail properties Scythe", assert => {
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 998;
+  const length = 1000;
 
   // Run.
   const keys = Object.keys(GameDetail);

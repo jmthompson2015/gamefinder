@@ -42,16 +42,16 @@ QUnit.test("addGameSummaries()", assert => {
 
 QUnit.test("addUserCollection()", assert => {
   // Setup.
-  const username = 3;
+  const userId = 3;
   const gameIds = 4;
 
   // Run.
-  const result = ActionCreator.addUserCollection(username, gameIds);
+  const result = ActionCreator.addUserCollection(userId, gameIds);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_USER_COLLECTION);
-  assert.equal(result.username, username);
+  assert.equal(result.userId, userId);
   assert.equal(result.gameIds, gameIds);
 });
 

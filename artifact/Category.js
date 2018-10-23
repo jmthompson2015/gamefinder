@@ -325,4 +325,6 @@ const Category = {
   }
 }
 
+Object.freeze(Category);
+
 export default Category;

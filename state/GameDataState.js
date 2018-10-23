@@ -1,7 +1,9 @@
+import ASelector from "../artifact/Selector.js";
+
 const GameDataState = {};
 
-GameDataState.create = ({ gameSummary, gameDetail, usernames }) => {
-  // usernames optional.
+GameDataState.create = ({ gameSummary, gameDetail, users }) => {
+  // users optional.
   if (gameSummary.id !== gameDetail.id) {
     throw new Error(
       `ID mismatch: gameSummary.id = ${gameSummary.id} gameDetail.id = ${gameDetail.id}`
@@ -12,33 +14,33 @@ GameDataState.create = ({ gameSummary, gameDetail, usernames }) => {
   const {
     averageWeight,
     bestWithPlayers,
-    categories,
-    designers,
-    mechanics,
     maxPlayers,
     maxPlayTime,
     minPlayers,
     minPlayTime,
     title,
-    yearPublished
+    yearPublished,
+    categoryIds,
+    designerIds,
+    mechanicIds
   } = gameDetail;
 
   return Immutable({
     averageWeight,
     bestWithPlayers,
     boardGameRank,
-    categories,
-    designers,
     geekRating,
     id,
     maxPlayers,
     maxPlayTime,
-    mechanics,
     minPlayers,
     minPlayTime,
     title,
-    usernames,
-    yearPublished
+    users,
+    yearPublished,
+    categories: ASelector.categoriesByIds(categoryIds),
+    designers: ASelector.designersByIds(designerIds),
+    mechanics: ASelector.mechanicsByIds(mechanicIds)
   });
 };
 

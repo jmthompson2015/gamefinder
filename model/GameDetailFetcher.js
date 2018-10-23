@@ -164,10 +164,13 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
   const designers = parseEntities(xmlDocument, xmlFragment, "boardgamedesigner");
   const mechanics = parseEntities(xmlDocument, xmlFragment, "boardgamemechanic");
 
+  const categoryIds = R.map(category => category.id, categories);
+  const designerIds = R.map(designer => designer.id, designers);
+  const mechanicIds = R.map(mechanic => mechanic.id, mechanics);
+
   return GameDetailState.create({
     id: parseInt(id, 10),
     title,
-    designers,
     yearPublished: parseInt(yearPublished, 10),
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
@@ -175,8 +178,9 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     minPlayTime: parseInt(minPlayTime, 10),
     maxPlayTime: parseInt(maxPlayTime, 10),
     averageWeight: Number(averageWeight),
-    categories,
-    mechanics
+    categoryIds,
+    designerIds,
+    mechanicIds
   });
 };
 
