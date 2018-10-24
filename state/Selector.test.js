@@ -48,9 +48,9 @@ const createGameSummaryMap = () => {
 //   const id = 169786; // Scythe
 //
 //   const done = assert.async();
-//   const callback = gameDetailMap => {
+//   const callback = gameToDetail => {
 //     // Verify.
-//     assert.equal(Object.values(gameDetailMap).length, 1000);
+//     assert.equal(Object.values(gameToDetail).length, 1000);
 //
 //     // Run.
 //     const result = Selector.findGameDetailById(store.getState(), id);
@@ -93,12 +93,12 @@ QUnit.test("gameToUsers()", assert => {
   assert.ok(result);
 });
 
-QUnit.test("gameDetailMap()", assert => {
+QUnit.test("gameToDetail()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
   // Run.
-  const result = Selector.gameDetailMap(store.getState());
+  const result = Selector.gameToDetail(store.getState());
 
   // Verify.
   assert.ok(result);

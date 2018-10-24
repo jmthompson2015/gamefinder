@@ -58,8 +58,8 @@ GameLoader.loadGameDetails = (store, gameSummaryMap) =>
       store.dispatch(ActionCreator.addGameDetails(newGameDetailMap));
 
       if (Selector.isDetailsLoaded(store.getState())) {
-        const gameDetailMap = Selector.gameDetailMap(store.getState());
-        resolve(gameDetailMap);
+        const gameToDetail = Selector.gameToDetail(store.getState());
+        resolve(gameToDetail);
       }
     };
 

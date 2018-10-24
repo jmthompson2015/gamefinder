@@ -17,8 +17,8 @@ export default Category;`;
 
 CategoryGenerator.convert = () => {
   FileLoader.loadLocalFile(INPUT_FILE).then(data => {
-    const gameDetailMap = JSON.parse(data);
-    const gameDetails = Object.values(gameDetailMap);
+    const gameToDetail = JSON.parse(data);
+    const gameDetails = Object.values(gameToDetail);
 
     const reduceFunction1 = (accum, detail) =>
       detail[PROPERTY] ? R.concat(detail[PROPERTY], accum) : accum;

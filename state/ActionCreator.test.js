@@ -16,15 +16,15 @@ QUnit.test("all action types", assert => {
 
 QUnit.test("addGameDetails()", assert => {
   // Setup.
-  const gameDetailMap = 3;
+  const gameToDetail = 3;
 
   // Run.
-  const result = ActionCreator.addGameDetails(gameDetailMap);
+  const result = ActionCreator.addGameDetails(gameToDetail);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_GAME_DETAILS);
-  assert.equal(result.gameDetailMap, gameDetailMap);
+  assert.equal(result.gameToDetail, gameToDetail);
 });
 
 QUnit.test("addGameSummaries()", assert => {

@@ -16,7 +16,7 @@ const gameSummaryMap = R.reduce((accum, summary) => R.assoc(summary.id, summary,
   gameSummary1,
   gameSummary2
 ]);
-const gameDetailMap = R.reduce((accum, detail) => R.assoc(detail.id, detail, accum), {}, [
+const gameToDetail = R.reduce((accum, detail) => R.assoc(detail.id, detail, accum), {}, [
   gameDetail1,
   gameDetail2
 ]);
@@ -26,7 +26,7 @@ store.dispatch(ActionCreator.addUserCollection(1, [169786]));
 store.dispatch(ActionCreator.addUserCollection(2, [169786, 162886]));
 store.dispatch(ActionCreator.addUserCollection(3, [162886]));
 store.dispatch(ActionCreator.addGameSummaries(gameSummaryMap));
-store.dispatch(ActionCreator.addGameDetails(gameDetailMap));
+store.dispatch(ActionCreator.addGameDetails(gameToDetail));
 
 const container = React.createElement(GameTableContainer);
 const element = React.createElement(ReactRedux.Provider, { store }, container);

@@ -45,16 +45,16 @@ QUnit.test("addGameDetails()", assert => {
   const action1 = ActionCreator.addGameSummaries(gameSummaryMap);
   state = Reducer.root(state, action1);
   assert.equal(Object.values(state.gameSummaryMap).length, 2);
-  const gameDetailMap = createGameDetailMap();
-  assert.equal(Object.values(state.gameDetailMap).length, 0);
-  const action = ActionCreator.addGameDetails(gameDetailMap);
+  const gameToDetail = createGameDetailMap();
+  assert.equal(Object.values(state.gameToDetail).length, 0);
+  const action = ActionCreator.addGameDetails(gameToDetail);
 
   // Run.
   const result = Reducer.root(state, action);
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.values(result.gameDetailMap).length, 2, "gameDetailMap length");
+  assert.equal(Object.values(result.gameToDetail).length, 2, "gameToDetail length");
   assert.equal(Object.values(result.gameDataMap).length, 2, "gameDataMap length");
   assert.equal(result.filteredTableRows.length, 2, "filteredTableRows length");
 });

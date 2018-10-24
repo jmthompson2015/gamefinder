@@ -22,8 +22,8 @@ Reducer.root = (state, action) => {
   let newFilteredGameData;
   let newFilters;
   let newGameDataMap;
-  let newGameDetailMap;
   let newGameSummaryMap;
+  let newGameToDetail;
   let newGameToUsers;
   let newUserToReceivedMap;
   let tableRows;
@@ -31,11 +31,11 @@ Reducer.root = (state, action) => {
 
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
-      // console.log(`Reducer gameDetailMap length = ${Object.keys(action.gameDetailMap).length}`);
+      // console.log(`Reducer gameToDetail length = ${Object.keys(action.gameToDetail).length}`);
       newGameToUsers = state.gameToUsers;
-      newGameDetailMap = R.merge(state.gameDetailMap, action.gameDetailMap);
-      newGameDataMap = Reducer.addTableRows(state, state.tableRows, action.gameDetailMap);
-      gameDetailKeys = Object.keys(action.gameDetailMap);
+      newGameToDetail = R.merge(state.gameToDetail, action.gameToDetail);
+      newGameDataMap = Reducer.addTableRows(state, state.tableRows, action.gameToDetail);
+      gameDetailKeys = Object.keys(action.gameToDetail);
       gameDetailKeys.forEach(id => {
         let newUsers = [];
         users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
@@ -58,7 +58,7 @@ Reducer.root = (state, action) => {
         filteredTableRows: newFilteredGameData,
         gameToUsers: newGameToUsers,
         gameDataMap: newGameDataMap,
-        gameDetailMap: newGameDetailMap,
+        gameToDetail: newGameToDetail,
         isDataLoaded
       });
     case ActionType.ADD_GAME_SUMMARIES:
@@ -135,8 +135,8 @@ Reducer.root = (state, action) => {
   }
 };
 
-Reducer.addTableRows = (state, tableRows0, newGameDetailMap) => {
-  const gameDetails = Object.values(newGameDetailMap);
+Reducer.addTableRows = (state, tableRows0, newGameToDetail) => {
+  const gameDetails = Object.values(newGameToDetail);
   let tableRows = tableRows0;
 
   gameDetails.forEach(gameDetail => {

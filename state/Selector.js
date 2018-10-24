@@ -2,17 +2,17 @@ import ASelector from "../artifact/Selector.js";
 
 const Selector = {};
 
-Selector.findGameDetailById = (state, id) => Selector.gameDetailMap(state)[id];
+Selector.findGameDetailById = (state, id) => Selector.gameToDetail(state)[id];
 
 Selector.findGameSummaryById = (state, id) => Selector.gameSummaryMap(state)[id];
 
 Selector.findGameUsersByGameId = (state, id) => Selector.gameToUsers(state)[id] || [];
 
-Selector.gameToUsers = state => state.gameToUsers;
-
-Selector.gameDetailMap = state => state.gameDetailMap;
-
 Selector.gameSummaryMap = state => state.gameSummaryMap;
+
+Selector.gameToDetail = state => state.gameToDetail;
+
+Selector.gameToUsers = state => state.gameToUsers;
 
 Selector.gameTotal = state => Selector.pageCount(state) * 100;
 
@@ -29,7 +29,7 @@ Selector.isCollectionsLoaded = state => {
 Selector.isDataLoaded = state => state.isDataLoaded;
 
 Selector.isDetailsLoaded = state => {
-  const { length } = Object.keys(Selector.gameDetailMap(state));
+  const { length } = Object.keys(Selector.gameToDetail(state));
   const gameTotal = Selector.gameTotal(state);
 
   return length === gameTotal;
