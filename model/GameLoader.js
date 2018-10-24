@@ -41,8 +41,8 @@ GameLoader.loadCollections = store =>
       }
 
       if (Selector.isCollectionsLoaded(store.getState())) {
-        const gameCollectionMap = Selector.gameCollectionMap(store.getState());
-        resolve(gameCollectionMap);
+        const gameToUsers = Selector.gameToUsers(store.getState());
+        resolve(gameToUsers);
       }
     };
 

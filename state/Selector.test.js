@@ -13,18 +13,18 @@ const createGameSummaryMap = () => {
   return answer;
 };
 
-// QUnit.test("findGameCollectionsById()", assert => {
+// QUnit.test("findGameUsersByGameId()", assert => {
 //   // Setup.
 //   const store = Redux.createStore(Reducer.root);
 //   // const gameLoader = new GameLoader(store);
 //   const id = 161936; // Pandemic Legacy Season 1
 //   const done = assert.async();
-//   const callback = gameCollectionMap => {
+//   const callback = gameToUsers => {
 //     // Verify.
-//     assert.equal(Object.values(gameCollectionMap).length, 240);
+//     assert.equal(Object.values(gameToUsers).length, 240);
 //
 //     // Run.
-//     const result = Selector.findGameCollectionsById(store.getState(), id);
+//     const result = Selector.findGameUsersByGameId(store.getState(), id);
 //
 //     // Verify.
 //     assert.ok(true, "test resumed from async operation");
@@ -82,12 +82,12 @@ QUnit.test("findGameSummaryById()", assert => {
   assert.equal(result.title, "Monopoly (1933)");
 });
 
-QUnit.test("gameCollectionMap()", assert => {
+QUnit.test("gameToUsers()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
   // Run.
-  const result = Selector.gameCollectionMap(store.getState());
+  const result = Selector.gameToUsers(store.getState());
 
   // Verify.
   assert.ok(result);

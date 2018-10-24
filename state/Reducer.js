@@ -21,10 +21,10 @@ Reducer.root = (state, action) => {
   let isDataLoaded;
   let newFilteredGameData;
   let newFilters;
-  let newGameCollectionMap;
   let newGameDataMap;
   let newGameDetailMap;
   let newGameSummaryMap;
+  let newGameToUsers;
   let newUserToReceivedMap;
   let tableRows;
   let users;
@@ -32,18 +32,18 @@ Reducer.root = (state, action) => {
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
       // console.log(`Reducer gameDetailMap length = ${Object.keys(action.gameDetailMap).length}`);
-      newGameCollectionMap = state.gameCollectionMap;
+      newGameToUsers = state.gameToUsers;
       newGameDetailMap = R.merge(state.gameDetailMap, action.gameDetailMap);
       newGameDataMap = Reducer.addTableRows(state, state.tableRows, action.gameDetailMap);
       gameDetailKeys = Object.keys(action.gameDetailMap);
       gameDetailKeys.forEach(id => {
         let newUsers = [];
-        users = Selector.findGameCollectionsById(state, parseInt(id, 10));
+        users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
         if (users && users.length > 0) {
           users.forEach(user => {
             const newUser = R.assoc("count", user.count + 1, user);
             newUsers = R.append(newUser, newUsers);
-            newGameCollectionMap = R.assoc(id, newUsers, newGameCollectionMap);
+            newGameToUsers = R.assoc(id, newUsers, newGameToUsers);
           });
         }
       });
@@ -56,7 +56,7 @@ Reducer.root = (state, action) => {
       newFilteredGameData = Reducer.sortTableRows(tableRows);
       return Object.assign({}, state, {
         filteredTableRows: newFilteredGameData,
-        gameCollectionMap: newGameCollectionMap,
+        gameToUsers: newGameToUsers,
         gameDataMap: newGameDataMap,
         gameDetailMap: newGameDetailMap,
         isDataLoaded
@@ -70,17 +70,17 @@ Reducer.root = (state, action) => {
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
       newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
-      newGameCollectionMap = state.gameCollectionMap;
+      newGameToUsers = state.gameToUsers;
       action.gameIds.forEach(id => {
-        let collections = Selector.findGameCollectionsById(state, parseInt(id, 10));
+        let collections = Selector.findGameUsersByGameId(state, parseInt(id, 10));
         if (collections === undefined) {
           collections = [];
         }
         collections.push(action.userId);
-        newGameCollectionMap = R.assoc(id, collections, newGameCollectionMap);
+        newGameToUsers = R.assoc(id, collections, newGameToUsers);
       });
       return Object.assign({}, state, {
-        gameCollectionMap: newGameCollectionMap,
+        gameToUsers: newGameToUsers,
         userToReceivedMap: newUserToReceivedMap
       });
     case ActionType.REMOVE_FILTERS:
@@ -141,7 +141,7 @@ Reducer.addTableRows = (state, tableRows0, newGameDetailMap) => {
 
   gameDetails.forEach(gameDetail => {
     const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
-    const gameCollections = Selector.findGameCollectionsById(state, parseInt(gameDetail.id, 10));
+    const gameCollections = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
     const userIds = R.map(collection => collection.userId, gameCollections);
     const users = ASelector.usersByIds(userIds);
 

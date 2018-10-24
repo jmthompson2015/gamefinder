@@ -79,7 +79,7 @@ QUnit.test("addUserCollection()", assert => {
   // Setup.
   const state = AppState.create();
   const length = 0;
-  assert.equal(Object.keys(state.gameCollectionMap).length, length);
+  assert.equal(Object.keys(state.gameToUsers).length, length);
   const userId = 2;
   const gameIds = [1406, 181];
   const action = ActionCreator.addUserCollection(userId, gameIds);
@@ -89,7 +89,7 @@ QUnit.test("addUserCollection()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result.gameCollectionMap).length, length + 2);
+  assert.equal(Object.keys(result.gameToUsers).length, length + 2);
 });
 
 QUnit.test("setPageCount()", assert => {

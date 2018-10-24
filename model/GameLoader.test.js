@@ -15,9 +15,9 @@ QUnit.test("load()", assert => {
   GameLoader.load(store).then(() => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    const { gameCollectionMap, gameDetailMap, gameSummaryMap } = store.getState();
-    assert.ok(gameCollectionMap);
-    assert.equal(Object.keys(gameCollectionMap).length, 240);
+    const { gameToUsers, gameDetailMap, gameSummaryMap } = store.getState();
+    assert.ok(gameToUsers);
+    assert.equal(Object.keys(gameToUsers).length, 240);
     assert.ok(gameSummaryMap);
     assert.equal(Object.keys(gameSummaryMap).length, 200);
     assert.ok(gameDetailMap);
@@ -35,9 +35,9 @@ QUnit.test("loadCollections()", assert => {
   GameLoader.loadCollections(store).then(() => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    const { gameCollectionMap } = store.getState();
-    assert.ok(gameCollectionMap);
-    assert.equal(Object.keys(gameCollectionMap).length, 240);
+    const { gameToUsers } = store.getState();
+    assert.ok(gameToUsers);
+    assert.equal(Object.keys(gameToUsers).length, 240);
     done();
   });
 });

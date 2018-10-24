@@ -2,13 +2,13 @@ import ASelector from "../artifact/Selector.js";
 
 const Selector = {};
 
-Selector.findGameCollectionsById = (state, id) => Selector.gameCollectionMap(state)[id] || [];
-
 Selector.findGameDetailById = (state, id) => Selector.gameDetailMap(state)[id];
 
 Selector.findGameSummaryById = (state, id) => Selector.gameSummaryMap(state)[id];
 
-Selector.gameCollectionMap = state => state.gameCollectionMap;
+Selector.findGameUsersByGameId = (state, id) => Selector.gameToUsers(state)[id] || [];
+
+Selector.gameToUsers = state => state.gameToUsers;
 
 Selector.gameDetailMap = state => state.gameDetailMap;
 
