@@ -19,12 +19,12 @@ GameLoader.load = store =>
       store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
       const start1 = Date.now();
 
-      GameLoader.loadGameSummaries(store).then(gameSummaryMap => {
+      GameLoader.loadGameSummaries(store).then(gameToSummary => {
         const end1 = Date.now();
         store.dispatch(ActionCreator.setSummaryTime(end1 - start1));
         const start2 = Date.now();
 
-        GameLoader.loadGameDetails(store, gameSummaryMap).then(() => {
+        GameLoader.loadGameDetails(store, gameToSummary).then(() => {
           const end2 = Date.now();
           store.dispatch(ActionCreator.setDetailTime(end2 - start2));
           resolve();
@@ -52,7 +52,7 @@ GameLoader.loadCollections = store =>
     });
   });
 
-GameLoader.loadGameDetails = (store, gameSummaryMap) =>
+GameLoader.loadGameDetails = (store, gameToSummary) =>
   new Promise(resolve => {
     const receiveDetailData = newGameDetailMap => {
       store.dispatch(ActionCreator.addGameDetails(newGameDetailMap));
@@ -64,7 +64,7 @@ GameLoader.loadGameDetails = (store, gameSummaryMap) =>
     };
 
     // Fetch a game detail for each game summary.
-    const keys = Object.keys(gameSummaryMap);
+    const keys = Object.keys(gameToSummary);
 
     const needGameDetailIds = keys.filter(
       key => Selector.findGameDetailById(store.getState(), key) === undefined,
@@ -86,12 +86,12 @@ GameLoader.loadGameDetails = (store, gameSummaryMap) =>
 
 GameLoader.loadGameSummaries = store =>
   new Promise(resolve => {
-    const receiveSummaryData = newGameSummaryMap => {
-      store.dispatch(ActionCreator.addGameSummaries(newGameSummaryMap));
+    const receiveSummaryData = newGameToSummary => {
+      store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
 
       if (Selector.isSummariesLoaded(store.getState())) {
-        const gameSummaryMap = Selector.gameSummaryMap(store.getState());
-        resolve(gameSummaryMap);
+        const gameToSummary = Selector.gameToSummary(store.getState());
+        resolve(gameToSummary);
       }
     };
 

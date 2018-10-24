@@ -22,8 +22,8 @@ Reducer.root = (state, action) => {
   let newFilteredGameData;
   let newFilters;
   let newGameDataMap;
-  let newGameSummaryMap;
   let newGameToDetail;
+  let newGameToSummary;
   let newGameToUsers;
   let newUserToReceivedMap;
   let tableRows;
@@ -62,10 +62,10 @@ Reducer.root = (state, action) => {
         isDataLoaded
       });
     case ActionType.ADD_GAME_SUMMARIES:
-      console.log(`Reducer gameSummaryMap.length = ${Object.keys(action.gameSummaryMap).length}`);
-      newGameSummaryMap = R.merge(state.gameSummaryMap, action.gameSummaryMap);
+      console.log(`Reducer gameToSummary.length = ${Object.keys(action.gameToSummary).length}`);
+      newGameToSummary = R.merge(state.gameToSummary, action.gameToSummary);
       return Object.assign({}, state, {
-        gameSummaryMap: newGameSummaryMap
+        gameToSummary: newGameToSummary
       });
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);

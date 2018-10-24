@@ -29,15 +29,15 @@ QUnit.test("addGameDetails()", assert => {
 
 QUnit.test("addGameSummaries()", assert => {
   // Setup.
-  const gameSummaryMap = 3;
+  const gameToSummary = 3;
 
   // Run.
-  const result = ActionCreator.addGameSummaries(gameSummaryMap);
+  const result = ActionCreator.addGameSummaries(gameToSummary);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_GAME_SUMMARIES);
-  assert.equal(result.gameSummaryMap, gameSummaryMap);
+  assert.equal(result.gameToSummary, gameToSummary);
 });
 
 QUnit.test("addUserCollection()", assert => {

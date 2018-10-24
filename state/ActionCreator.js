@@ -13,7 +13,7 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
 
 ActionCreator.addGameDetails = makeActionCreator(ActionType.ADD_GAME_DETAILS, "gameToDetail");
 
-ActionCreator.addGameSummaries = makeActionCreator(ActionType.ADD_GAME_SUMMARIES, "gameSummaryMap");
+ActionCreator.addGameSummaries = makeActionCreator(ActionType.ADD_GAME_SUMMARIES, "gameToSummary");
 
 ActionCreator.addUserCollection = makeActionCreator(
   ActionType.ADD_USER_COLLECTION,

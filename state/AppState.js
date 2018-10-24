@@ -6,8 +6,8 @@ AppState.create = ({
   pageCount = 5,
   gameDataMap = {},
   filteredTableRows = [],
-  gameSummaryMap = {},
   gameToDetail = {},
+  gameToSummary = {},
   gameToUsers = {},
   collectionTime,
   summaryTime,
@@ -23,10 +23,10 @@ AppState.create = ({
     pageCount,
     gameDataMap,
     filteredTableRows,
-    // game ID to summary
-    gameSummaryMap,
     // game ID to detail
     gameToDetail,
+    // game ID to summary
+    gameToSummary,
     // game ID to user IDs
     gameToUsers,
     collectionTime,

@@ -8,11 +8,11 @@ QUnit.test("fetchData() 2", assert => {
 
   // Run.
   const done = assert.async();
-  GameSummaryFetcher.fetchData(page).then(newGameSummaryMap => {
+  GameSummaryFetcher.fetchData(page).then(newGameToSummary => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    assert.ok(newGameSummaryMap);
-    const gameSummaries = Object.values(newGameSummaryMap);
+    assert.ok(newGameToSummary);
+    const gameSummaries = Object.values(newGameToSummary);
     assert.ok(gameSummaries);
     gameSummaries.sort((a, b) => a.id - b.id);
     const length = 100;

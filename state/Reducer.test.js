@@ -41,10 +41,10 @@ const createGameSummaryMap = () => {
 QUnit.test("addGameDetails()", assert => {
   // Setup.
   let state = AppState.create();
-  const gameSummaryMap = createGameSummaryMap();
-  const action1 = ActionCreator.addGameSummaries(gameSummaryMap);
+  const gameToSummary = createGameSummaryMap();
+  const action1 = ActionCreator.addGameSummaries(gameToSummary);
   state = Reducer.root(state, action1);
-  assert.equal(Object.values(state.gameSummaryMap).length, 2);
+  assert.equal(Object.values(state.gameToSummary).length, 2);
   const gameToDetail = createGameDetailMap();
   assert.equal(Object.values(state.gameToDetail).length, 0);
   const action = ActionCreator.addGameDetails(gameToDetail);
@@ -63,16 +63,16 @@ QUnit.test("addGameSummaries()", assert => {
   // Setup.
   const state = AppState.create();
   const length = 0;
-  assert.equal(Object.keys(state.gameSummaryMap).length, length);
-  const gameSummaryMap = createGameSummaryMap();
-  const action = ActionCreator.addGameSummaries(gameSummaryMap);
+  assert.equal(Object.keys(state.gameToSummary).length, length);
+  const gameToSummary = createGameSummaryMap();
+  const action = ActionCreator.addGameSummaries(gameToSummary);
 
   // Run.
   const result = Reducer.root(state, action);
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result.gameSummaryMap).length, length + 2);
+  assert.equal(Object.keys(result.gameToSummary).length, length + 2);
 });
 
 QUnit.test("addUserCollection()", assert => {

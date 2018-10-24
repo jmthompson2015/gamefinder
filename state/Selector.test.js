@@ -42,8 +42,8 @@ const createGameSummaryMap = () => {
 //   // Setup.
 //   const store = Redux.createStore(Reducer.root);
 //   store.dispatch(ActionCreator.setPageCount(1));
-//   const newGameSummaryMap = createGameSummaryMap();
-//   store.dispatch(ActionCreator.addGameSummaries(newGameSummaryMap));
+//   const newGameToSummary = createGameSummaryMap();
+//   store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
 //   // const gameLoader = new GameLoader(store);
 //   const id = 169786; // Scythe
 //
@@ -63,14 +63,14 @@ const createGameSummaryMap = () => {
 //     done();
 //   };
 //
-//   // gameLoader.loadGameDetails(newGameSummaryMap, callback);
+//   // gameLoader.loadGameDetails(newGameToSummary, callback);
 // });
 
 QUnit.test("findGameSummaryById()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
-  const newGameSummaryMap = createGameSummaryMap();
-  store.dispatch(ActionCreator.addGameSummaries(newGameSummaryMap));
+  const newGameToSummary = createGameSummaryMap();
+  store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
   const id = 1406; // Monopoly
 
   // Run.
@@ -104,12 +104,12 @@ QUnit.test("gameToDetail()", assert => {
   assert.ok(result);
 });
 
-QUnit.test("gameSummaryMap()", assert => {
+QUnit.test("gameToSummary()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
   // Run.
-  const result = Selector.gameSummaryMap(store.getState());
+  const result = Selector.gameToSummary(store.getState());
 
   // Verify.
   assert.ok(result);

@@ -11,7 +11,7 @@ const mapStateToProps = state => {
     collectionCount: Object.keys(state.userToReceivedMap).length,
     collectionTotal: Object.keys(User).length,
     collectionTime: state.collectionTime,
-    summaryCount: Object.keys(state.gameSummaryMap).length,
+    summaryCount: Object.keys(state.gameToSummary).length,
     summaryTotal: gameTotal,
     summaryTime: state.summaryTime,
     detailCount: Object.keys(state.gameToDetail).length,

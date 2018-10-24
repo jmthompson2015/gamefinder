@@ -4,13 +4,13 @@ const Selector = {};
 
 Selector.findGameDetailById = (state, id) => Selector.gameToDetail(state)[id];
 
-Selector.findGameSummaryById = (state, id) => Selector.gameSummaryMap(state)[id];
+Selector.findGameSummaryById = (state, id) => Selector.gameToSummary(state)[id];
 
 Selector.findGameUsersByGameId = (state, id) => Selector.gameToUsers(state)[id] || [];
 
-Selector.gameSummaryMap = state => state.gameSummaryMap;
-
 Selector.gameToDetail = state => state.gameToDetail;
+
+Selector.gameToSummary = state => state.gameToSummary;
 
 Selector.gameToUsers = state => state.gameToUsers;
 
@@ -36,7 +36,7 @@ Selector.isDetailsLoaded = state => {
 };
 
 Selector.isSummariesLoaded = state => {
-  const { length } = Object.keys(Selector.gameSummaryMap(state));
+  const { length } = Object.keys(Selector.gameToSummary(state));
   const gameTotal = Selector.gameTotal(state);
 
   return length === gameTotal;
