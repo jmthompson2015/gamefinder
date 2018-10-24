@@ -26,7 +26,7 @@ Reducer.root = (state, action) => {
   let newGameDetailMap;
   let newGameSummaryMap;
   let newUserToReceivedMap;
-  let tableRow;
+  let tableRows;
   let users;
 
   switch (action.type) {
@@ -34,7 +34,7 @@ Reducer.root = (state, action) => {
       // console.log(`Reducer gameDetailMap length = ${Object.keys(action.gameDetailMap).length}`);
       newGameCollectionMap = state.gameCollectionMap;
       newGameDetailMap = R.merge(state.gameDetailMap, action.gameDetailMap);
-      newGameDataMap = Reducer.addGameData(state, state.gameDataMap, action.gameDetailMap);
+      newGameDataMap = Reducer.addTableRows(state, state.tableRows, action.gameDetailMap);
       gameDetailKeys = Object.keys(action.gameDetailMap);
       gameDetailKeys.forEach(id => {
         let newUsers = [];
@@ -47,15 +47,15 @@ Reducer.root = (state, action) => {
           });
         }
       });
-      tableRow = Object.values(newGameDataMap);
+      tableRows = Object.values(newGameDataMap);
       console.log(
         `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
       );
-      console.log(`Reducer ADD_GAME_DETAILS tableRow.length = ${tableRow.length}`);
-      isDataLoaded = Selector.gameTotal(state) === tableRow.length;
-      newFilteredGameData = Reducer.sortGameData(tableRow);
+      console.log(`Reducer ADD_GAME_DETAILS tableRows.length = ${tableRows.length}`);
+      isDataLoaded = Selector.gameTotal(state) === tableRows.length;
+      newFilteredGameData = Reducer.sortTableRows(tableRows);
       return Object.assign({}, state, {
-        filteredGameData: newFilteredGameData,
+        filteredTableRows: newFilteredGameData,
         gameCollectionMap: newGameCollectionMap,
         gameDataMap: newGameDataMap,
         gameDetailMap: newGameDetailMap,
@@ -85,8 +85,8 @@ Reducer.root = (state, action) => {
       });
     case ActionType.REMOVE_FILTERS:
       console.log("Reducer remove filters");
-      tableRow = Object.values(state.gameDataMap);
-      newFilteredGameData = Reducer.sortGameData(tableRow);
+      tableRows = Object.values(state.gameDataMap);
+      newFilteredGameData = Reducer.sortGameData(tableRows);
       return Object.assign({}, state, {
         filteredGameData: newFilteredGameData
       });
@@ -112,12 +112,12 @@ Reducer.root = (state, action) => {
         console.log(`${columnKey}: ${action.filters[columnKey]}`);
       });
       newFilters = R.merge(state.filters, action.filters);
-      tableRow = Object.values(state.gameDataMap);
-      newFilteredGameData = Reducer.filterGameData(tableRow, newFilters);
+      tableRows = Object.values(state.gameDataMap);
+      newFilteredGameData = Reducer.filterTableRows(tableRows, newFilters);
       Reducer.saveToLocalStorage(newFilters);
       return Object.assign({}, state, {
         filters: newFilters,
-        filteredGameData: newFilteredGameData
+        filteredTableRows: newFilteredGameData
       });
     case ActionType.SET_PAGE_COUNT:
       console.log(`Reducer pageCount = ${action.pageCount}`);
@@ -135,9 +135,9 @@ Reducer.root = (state, action) => {
   }
 };
 
-Reducer.addGameData = (state, gameDataMap0, newGameDetailMap) => {
+Reducer.addTableRows = (state, tableRows0, newGameDetailMap) => {
   const gameDetails = Object.values(newGameDetailMap);
-  let gameDataMap = gameDataMap0;
+  let tableRows = tableRows0;
 
   gameDetails.forEach(gameDetail => {
     const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
@@ -147,11 +147,11 @@ Reducer.addGameData = (state, gameDataMap0, newGameDetailMap) => {
 
     if (gameSummary) {
       const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
-      gameDataMap = R.assoc(gameDetail.id, newTableRow, gameDataMap);
+      tableRows = R.assoc(gameDetail.id, newTableRow, tableRows);
     }
   });
 
-  return gameDataMap;
+  return tableRows;
 };
 
 Reducer.entityMap = (state, newEntityMap0, newEntityIds) => {
@@ -169,10 +169,10 @@ Reducer.entityMap = (state, newEntityMap0, newEntityIds) => {
   });
 };
 
-Reducer.filterGameData = (tableRow, filters) => {
-  const answer = tableRow.filter(data => Reducer.passes(data, filters));
+Reducer.filterTableRows = (tableRows, filters) => {
+  const answer = tableRows.filter(data => Reducer.passes(data, filters));
 
-  return Reducer.sortGameData(answer);
+  return Reducer.sortTableRows(answer);
 };
 
 Reducer.passes = (data, filters) => {
@@ -203,7 +203,7 @@ Reducer.saveToLocalStorage = filters => {
   localStorage.filters = JSON.stringify(filterObjects);
 };
 
-Reducer.sortGameData = tableRow => tableRow.sort((a, b) => a.boardGameRank - b.boardGameRank);
+Reducer.sortTableRows = tableRows => tableRows.sort((a, b) => a.boardGameRank - b.boardGameRank);
 
 if (Object.freeze) {
   Object.freeze(Reducer);

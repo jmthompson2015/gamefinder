@@ -5,7 +5,7 @@ const AppState = {};
 AppState.create = ({
   pageCount = 5,
   gameDataMap = {},
-  filteredGameData = [],
+  filteredTableRows = [],
   gameCollectionMap = {},
   gameDetailMap = {},
   gameSummaryMap = {},
@@ -22,8 +22,8 @@ AppState.create = ({
   Immutable({
     pageCount,
     gameDataMap,
-    filteredGameData,
-    // game ID to array of users
+    filteredTableRows,
+    // game ID to user IDs
     gameCollectionMap,
     // game ID to detail
     gameDetailMap,
