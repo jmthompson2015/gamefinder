@@ -1,7 +1,6 @@
 const GameCollectionState = {};
 
-GameCollectionState.create = ({ userId, collectionIds = [] }) =>
-  Immutable({ userId, collectionIds });
+GameCollectionState.create = ({ userId, gameIds = [] }) => Immutable({ userId, gameIds });
 
 Object.freeze(GameCollectionState);
 

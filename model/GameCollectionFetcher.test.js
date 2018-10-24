@@ -8,16 +8,16 @@ QUnit.test("fetchData() ghightshoe", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
     assert.equal(userId, 1);
-    assert.ok(collectionIds);
+    assert.ok(gameIds);
     const length = 31;
-    assert.equal(collectionIds.length, length);
-    assert.equal(collectionIds[0], 74);
-    assert.equal(collectionIds[length - 1], 221107);
+    assert.equal(gameIds.length, length);
+    assert.equal(gameIds[0], 74);
+    assert.equal(gameIds[length - 1], 221107);
     done();
   });
 });
@@ -28,16 +28,16 @@ QUnit.test("fetchData() jmthompson", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
     assert.equal(userId, 2);
-    assert.ok(collectionIds);
+    assert.ok(gameIds);
     const length = 177;
-    assert.equal(collectionIds.length, length);
-    assert.equal(collectionIds[0], 1198);
-    assert.equal(collectionIds[length - 1], 246718);
+    assert.equal(gameIds.length, length);
+    assert.equal(gameIds[0], 1198);
+    assert.equal(gameIds[length - 1], 246718);
     done();
   });
 });
@@ -48,16 +48,16 @@ QUnit.test("fetchData() kmistr", assert => {
 
   // Run.
   const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ userId, collectionIds }) => {
+  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
     assert.equal(userId, 3);
-    assert.ok(collectionIds);
+    assert.ok(gameIds);
     const length = 34;
-    assert.equal(collectionIds.length, length);
-    assert.equal(collectionIds[0], 13);
-    assert.equal(collectionIds[length - 1], 192951);
+    assert.equal(gameIds.length, length);
+    assert.equal(gameIds[0], 13);
+    assert.equal(gameIds[length - 1], 192951);
     done();
   });
 });

@@ -35,9 +35,9 @@ GameLoader.load = store =>
 
 GameLoader.loadCollections = store =>
   new Promise(resolve => {
-    const receiveCollection = ({ userId, collectionIds }) => {
-      if (collectionIds.length > 0) {
-        store.dispatch(ActionCreator.addUserCollection(userId, collectionIds));
+    const receiveCollection = ({ userId, gameIds }) => {
+      if (gameIds.length > 0) {
+        store.dispatch(ActionCreator.addUserCollection(userId, gameIds));
       }
 
       if (Selector.isCollectionsLoaded(store.getState())) {

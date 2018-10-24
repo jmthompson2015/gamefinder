@@ -16,7 +16,7 @@ const createUrl = username => {
   return answer;
 };
 
-const parseUserCollectionIds = xmlDocument => {
+const parseUserGameIds = xmlDocument => {
   const answer = [];
 
   // This gives the data items.
@@ -41,10 +41,10 @@ const GameCollectionFetcher = {};
 GameCollectionFetcher.fetchData = username =>
   new Promise((resolve, reject) => {
     const receiveData = xmlDocument => {
-      const collectionIds = parseUserCollectionIds(xmlDocument);
-      collectionIds.sort((a, b) => a - b);
+      const gameIds = parseUserGameIds(xmlDocument);
+      gameIds.sort((a, b) => a - b);
       const user = ASelector.userByName(username);
-      resolve(GameCollectionState.create({ userId: user.id, collectionIds }));
+      resolve(GameCollectionState.create({ userId: user.id, gameIds }));
     };
 
     const url = createUrl(username);
