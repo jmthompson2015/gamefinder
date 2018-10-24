@@ -92,6 +92,34 @@ QUnit.test("addUserCollection()", assert => {
   assert.equal(Object.keys(result.gameToUsers).length, length + 2);
 });
 
+QUnit.test("setCollectionTime()", assert => {
+  // Setup.
+  const state = AppState.create();
+  const time = 12;
+  const action = ActionCreator.setCollectionTime(time);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.collectionTime, time);
+});
+
+QUnit.test("setDetailTime()", assert => {
+  // Setup.
+  const state = AppState.create();
+  const time = 12;
+  const action = ActionCreator.setDetailTime(time);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.detailTime, time);
+});
+
 QUnit.test("setPageCount()", assert => {
   // Setup.
   const state = AppState.create();
@@ -105,6 +133,20 @@ QUnit.test("setPageCount()", assert => {
   // Verify.
   assert.ok(result);
   assert.equal(result.pageCount, pageCount);
+});
+
+QUnit.test("setSummaryTime()", assert => {
+  // Setup.
+  const state = AppState.create();
+  const time = 12;
+  const action = ActionCreator.setSummaryTime(time);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.summaryTime, time);
 });
 
 const ReducerTest = {};
