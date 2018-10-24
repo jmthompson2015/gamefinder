@@ -4,7 +4,7 @@ const AppState = {};
 
 AppState.create = ({
   pageCount = 5,
-  gameDataMap = {},
+  tableRows = [],
   filteredTableRows = [],
   gameToDetail = {},
   gameToSummary = {},
@@ -21,7 +21,7 @@ AppState.create = ({
 } = {}) =>
   Immutable({
     pageCount,
-    gameDataMap,
+    tableRows,
     filteredTableRows,
     // game ID to detail
     gameToDetail,

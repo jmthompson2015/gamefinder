@@ -55,7 +55,7 @@ QUnit.test("addGameDetails()", assert => {
   // Verify.
   assert.ok(result);
   assert.equal(Object.values(result.gameToDetail).length, 2, "gameToDetail length");
-  assert.equal(Object.values(result.gameDataMap).length, 2, "gameDataMap length");
+  assert.equal(result.tableRows.length, 2, "tableRows length");
   assert.equal(result.filteredTableRows.length, 2, "filteredTableRows length");
 });
 

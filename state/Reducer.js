@@ -21,24 +21,21 @@ Reducer.root = (state, action) => {
   let isDataLoaded;
   let newFilteredGameData;
   let newFilters;
-  let newGameDataMap;
   let newGameToDetail;
   let newGameToSummary;
   let newGameToUsers;
+  let newTableRows;
   let newUserToReceivedMap;
-  let tableRows;
-  let users;
 
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
-      // console.log(`Reducer gameToDetail length = ${Object.keys(action.gameToDetail).length}`);
       newGameToUsers = state.gameToUsers;
       newGameToDetail = R.merge(state.gameToDetail, action.gameToDetail);
-      newGameDataMap = Reducer.addTableRows(state, state.tableRows, action.gameToDetail);
+      newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameToDetail);
       gameDetailKeys = Object.keys(action.gameToDetail);
       gameDetailKeys.forEach(id => {
         let newUsers = [];
-        users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
+        const users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
         if (users && users.length > 0) {
           users.forEach(user => {
             const newUser = R.assoc("count", user.count + 1, user);
@@ -47,17 +44,16 @@ Reducer.root = (state, action) => {
           });
         }
       });
-      tableRows = Object.values(newGameDataMap);
       console.log(
         `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
       );
-      console.log(`Reducer ADD_GAME_DETAILS tableRows.length = ${tableRows.length}`);
-      isDataLoaded = Selector.gameTotal(state) === tableRows.length;
-      newFilteredGameData = Reducer.sortTableRows(tableRows);
+      console.log(`Reducer ADD_GAME_DETAILS newTableRows.length = ${newTableRows.length}`);
+      isDataLoaded = Selector.gameTotal(state) === newTableRows.length;
+      newFilteredGameData = Reducer.sortTableRows(newTableRows);
       return Object.assign({}, state, {
         filteredTableRows: newFilteredGameData,
         gameToUsers: newGameToUsers,
-        gameDataMap: newGameDataMap,
+        tableRows: newTableRows,
         gameToDetail: newGameToDetail,
         isDataLoaded
       });
@@ -85,8 +81,7 @@ Reducer.root = (state, action) => {
       });
     case ActionType.REMOVE_FILTERS:
       console.log("Reducer remove filters");
-      tableRows = Object.values(state.gameDataMap);
-      newFilteredGameData = Reducer.sortGameData(tableRows);
+      newFilteredGameData = Reducer.sortGameData(state.tableRows);
       return Object.assign({}, state, {
         filteredGameData: newFilteredGameData
       });
@@ -112,8 +107,7 @@ Reducer.root = (state, action) => {
         console.log(`${columnKey}: ${action.filters[columnKey]}`);
       });
       newFilters = R.merge(state.filters, action.filters);
-      tableRows = Object.values(state.gameDataMap);
-      newFilteredGameData = Reducer.filterTableRows(tableRows, newFilters);
+      newFilteredGameData = Reducer.filterTableRows(state.tableRows, newFilters);
       Reducer.saveToLocalStorage(newFilters);
       return Object.assign({}, state, {
         filters: newFilters,
@@ -141,32 +135,17 @@ Reducer.addTableRows = (state, tableRows0, newGameToDetail) => {
 
   gameDetails.forEach(gameDetail => {
     const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
-    const gameCollections = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
-    const userIds = R.map(collection => collection.userId, gameCollections);
+    const gameUsers = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
+    const userIds = R.map(collection => collection.userId, gameUsers);
     const users = ASelector.usersByIds(userIds);
 
     if (gameSummary) {
       const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
-      tableRows = R.assoc(gameDetail.id, newTableRow, tableRows);
+      tableRows = R.append(newTableRow, tableRows);
     }
   });
 
   return tableRows;
-};
-
-Reducer.entityMap = (state, newEntityMap0, newEntityIds) => {
-  const newEntityMap = newEntityMap0;
-
-  newEntityIds.forEach(newEntityId => {
-    const entity = newEntityMap[newEntityId];
-
-    if (entity) {
-      newEntityMap[newEntityId] = R.assoc("count", entity.count + 1, entity);
-    } else {
-      const newEntity = ASelector.entity(newEntityId);
-      newEntityMap[newEntityId] = R.assoc("count", 1, newEntity);
-    }
-  });
 };
 
 Reducer.filterTableRows = (tableRows, filters) => {
