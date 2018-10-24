@@ -12,6 +12,7 @@ module.exports = {
     Reactable: true,
     ReactDOM: true,
     ReactDOMFactories: true,
+    ReactRedux: true,
     Redux: true
   },
   rules: {
