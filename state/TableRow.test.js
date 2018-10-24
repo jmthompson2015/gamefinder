@@ -1,11 +1,11 @@
 import GameDetail from "../artifact/GameDetail.js";
 import User from "../artifact/User.js";
 
-import GameDataState from "./GameDataState.js";
+import TableRow from "./TableRow.js";
 import GameDetailState from "./GameDetailState.js";
 import GameSummaryState from "./GameSummaryState.js";
 
-QUnit.module("GameDataState");
+QUnit.module("TableRow");
 
 const PROPS = ["id", "title"];
 
@@ -13,7 +13,7 @@ const createTestState = () => {
   const gameSummary = GameSummaryState.create({ id: 1 });
   const gameDetail = GameDetailState.create({ id: 1, title: 2 });
   const users = [User[1]];
-  return GameDataState.create({ gameSummary, gameDetail, users });
+  return TableRow.create({ gameSummary, gameDetail, users });
 };
 
 QUnit.test("create()", assert => {
@@ -33,7 +33,7 @@ QUnit.test("create() Scythe", assert => {
   const users = [User[1]];
 
   // Run.
-  const data = GameDataState.create({ gameSummary, gameDetail, users });
+  const data = TableRow.create({ gameSummary, gameDetail, users });
 
   // Verify.
   assert.ok(data);
@@ -60,5 +60,5 @@ QUnit.test("create() immutable", assert => {
   }
 });
 
-const GameDataStateTest = {};
-export default GameDataStateTest;
+const TableRowTest = {};
+export default TableRowTest;

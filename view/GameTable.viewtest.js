@@ -1,8 +1,8 @@
 import GameDetail from "../artifact/GameDetail.js";
 import User from "../artifact/User.js";
 
-import GameDataState from "../state/GameDataState.js";
 import GameSummaryState from "../state/GameSummaryState.js";
+import TableRow from "../state/TableRow.js";
 
 import GameTable from "./GameTable.js";
 
@@ -15,12 +15,12 @@ const gameDetail2 = GameDetail[162886]; // Spirit Island
 const users2 = [User[2], User[3]];
 
 const rowData = [
-  GameDataState.create({
+  TableRow.create({
     gameSummary: gameSummary1,
     gameDetail: gameDetail1,
     users: users1
   }),
-  GameDataState.create({
+  TableRow.create({
     gameSummary: gameSummary2,
     gameDetail: gameDetail2,
     users: users2

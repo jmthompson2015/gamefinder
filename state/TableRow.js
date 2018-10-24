@@ -1,8 +1,8 @@
 import ASelector from "../artifact/Selector.js";
 
-const GameDataState = {};
+const TableRow = {};
 
-GameDataState.create = ({ gameSummary, gameDetail, users }) => {
+TableRow.create = ({ gameSummary, gameDetail, users }) => {
   // users optional.
   if (gameSummary.id !== gameDetail.id) {
     throw new Error(
@@ -44,4 +44,4 @@ GameDataState.create = ({ gameSummary, gameDetail, users }) => {
   });
 };
 
-export default GameDataState;
+export default TableRow;
