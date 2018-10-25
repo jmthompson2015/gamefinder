@@ -168,7 +168,7 @@ Reducer.saveToLocalStorage = filters => {
   localStorage.filters = JSON.stringify(filterObjects);
 };
 
-Reducer.sortTableRows = tableRows => R.sort(R.descend(R.prop("boardGameRank")), tableRows);
+Reducer.sortTableRows = tableRows => R.sort(R.ascend(R.prop("boardGameRank")), tableRows);
 
 if (Object.freeze) {
   Object.freeze(Reducer);
