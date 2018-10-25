@@ -2,8 +2,10 @@ const GameDetailState = {};
 
 GameDetailState.create = ({
   id,
+  boardGameRank,
   title,
   yearPublished,
+  geekRating,
   minPlayers,
   maxPlayers,
   bestWithPlayers,
@@ -16,8 +18,10 @@ GameDetailState.create = ({
 }) =>
   Immutable({
     id,
+    boardGameRank,
     title,
     yearPublished,
+    geekRating,
     minPlayers,
     maxPlayers,
     bestWithPlayers,

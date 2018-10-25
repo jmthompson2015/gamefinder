@@ -2163,10 +2163,6 @@ const Designer = {
     "id": 62238,
     "name": "Keith Matejka"
   },
-  "62511": {
-    "id": 62511,
-    "name": "Eduardo Baraf"
-  },
   "62640": {
     "id": 62640,
     "name": "Jamey Stegmaier"

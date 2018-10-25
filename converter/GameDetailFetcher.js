@@ -119,6 +119,15 @@ function parseGameDetail(xmlDocument, xmlFragment) {
   const idCell = xpath.evaluate("@id", xmlFragment, null, xpath.XPathResult.STRING_TYPE, null);
   const id = idCell.stringValue.trim();
 
+  const boardGameRankCell = xpath.evaluate(
+    "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@value",
+    xmlFragment,
+    null,
+    xpath.XPathResult.STRING_TYPE,
+    null
+  );
+  const boardGameRank = boardGameRankCell.stringValue.trim();
+
   const titleCell = xpath.evaluate(
     "name[@type='primary']/@value",
     xmlFragment,
@@ -136,6 +145,15 @@ function parseGameDetail(xmlDocument, xmlFragment) {
     null
   );
   const yearPublished = yearPublishedCell.stringValue.trim();
+
+  const geekRatingCell = xpath.evaluate(
+    "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@bayesaverage",
+    xmlFragment,
+    null,
+    xpath.XPathResult.STRING_TYPE,
+    null
+  );
+  const geekRating = geekRatingCell.stringValue.trim();
 
   const minPlayersCell = xpath.evaluate(
     "minplayers/@value",
@@ -190,9 +208,11 @@ function parseGameDetail(xmlDocument, xmlFragment) {
 
   return {
     id: parseInt(id, 10),
+    boardGameRank: parseInt(boardGameRank, 10),
     title,
     designers,
     yearPublished: parseInt(yearPublished, 10),
+    geekRating: Number(geekRating),
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
     bestWithPlayers: parseInt(bestWithPlayers, 10),
