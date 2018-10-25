@@ -95,6 +95,15 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
   const idCell = xmlDocument.evaluate("@id", xmlFragment, null, XPathResult.STRING_TYPE, null);
   const id = idCell.stringValue.trim();
 
+  const boardGameRankCell = xmlDocument.evaluate(
+    "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@value",
+    xmlFragment,
+    null,
+    XPathResult.STRING_TYPE,
+    null
+  );
+  const boardGameRank = boardGameRankCell.stringValue.trim();
+
   const titleCell = xmlDocument.evaluate(
     "name[@type='primary']/@value",
     xmlFragment,
@@ -112,6 +121,15 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     null
   );
   const yearPublished = yearPublishedCell.stringValue.trim();
+
+  const geekRatingCell = xmlDocument.evaluate(
+    "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@bayesaverage",
+    xmlFragment,
+    null,
+    XPathResult.STRING_TYPE,
+    null
+  );
+  const geekRating = geekRatingCell.stringValue.trim();
 
   const minPlayersCell = xmlDocument.evaluate(
     "minplayers/@value",
@@ -170,8 +188,10 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
 
   return GameDetailState.create({
     id: parseInt(id, 10),
+    boardGameRank: parseInt(boardGameRank, 10),
     title,
     yearPublished: parseInt(yearPublished, 10),
+    geekRating: Number(geekRating),
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
     bestWithPlayers: parseInt(bestWithPlayers, 10),
