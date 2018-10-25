@@ -19,12 +19,12 @@ GameLoader.load = store =>
       store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
       const start1 = Date.now();
 
-      GameLoader.loadGameSummaries(store).then(gameToSummary => {
+      GameLoader.loadGameSummaries(store).then(gameSummaries => {
         const end1 = Date.now();
         store.dispatch(ActionCreator.setSummaryTime(end1 - start1));
         const start2 = Date.now();
 
-        GameLoader.loadGameDetails(store, gameToSummary).then(() => {
+        GameLoader.loadGameDetails(store, gameSummaries).then(() => {
           const end2 = Date.now();
           store.dispatch(ActionCreator.setDetailTime(end2 - start2));
           resolve();
@@ -52,10 +52,10 @@ GameLoader.loadCollections = store =>
     });
   });
 
-GameLoader.loadGameDetails = (store, gameToSummary) =>
+GameLoader.loadGameDetails = (store, gameSummaries) =>
   new Promise(resolve => {
-    const receiveDetailData = newGameDetailMap => {
-      store.dispatch(ActionCreator.addGameDetails(newGameDetailMap));
+    const receiveDetailData = gameDetails => {
+      store.dispatch(ActionCreator.addGameDetails(gameDetails));
 
       if (Selector.isDetailsLoaded(store.getState())) {
         const gameToDetail = Selector.gameToDetail(store.getState());
@@ -64,10 +64,10 @@ GameLoader.loadGameDetails = (store, gameToSummary) =>
     };
 
     // Fetch a game detail for each game summary.
-    const keys = Object.keys(gameToSummary);
+    const gameIds = R.map(gameSummary => gameSummary.id, gameSummaries);
 
-    const needGameDetailIds = keys.filter(
-      key => Selector.findGameDetailById(store.getState(), key) === undefined,
+    const needGameDetailIds = gameIds.filter(
+      gameId => Selector.findGameDetailById(store.getState(), gameId) === undefined,
       this
     );
 
@@ -86,12 +86,12 @@ GameLoader.loadGameDetails = (store, gameToSummary) =>
 
 GameLoader.loadGameSummaries = store =>
   new Promise(resolve => {
-    const receiveSummaryData = newGameToSummary => {
-      store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
+    const receiveSummaryData = gameSummaries => {
+      store.dispatch(ActionCreator.addGameSummaries(gameSummaries));
 
       if (Selector.isSummariesLoaded(store.getState())) {
-        const gameToSummary = Selector.gameToSummary(store.getState());
-        resolve(gameToSummary);
+        const myGameSummaries = Object.values(Selector.gameToSummary(store.getState()));
+        resolve(myGameSummaries);
       }
     };
 

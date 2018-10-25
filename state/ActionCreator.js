@@ -11,9 +11,9 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
   return action;
 };
 
-ActionCreator.addGameDetails = makeActionCreator(ActionType.ADD_GAME_DETAILS, "gameToDetail");
+ActionCreator.addGameDetails = makeActionCreator(ActionType.ADD_GAME_DETAILS, "gameDetails");
 
-ActionCreator.addGameSummaries = makeActionCreator(ActionType.ADD_GAME_SUMMARIES, "gameToSummary");
+ActionCreator.addGameSummaries = makeActionCreator(ActionType.ADD_GAME_SUMMARIES, "gameSummaries");
 
 ActionCreator.addUserCollection = makeActionCreator(
   ActionType.ADD_USER_COLLECTION,

@@ -60,7 +60,7 @@ const parseGameSummary = (xmlDocument, xmlFragment) => {
 };
 
 const parseGameSummaries = xmlDocument => {
-  let answer = {};
+  const answer = [];
 
   // This gives the data rows (tr).
   const xpath = "//tr[@id='row_']";
@@ -70,7 +70,7 @@ const parseGameSummaries = xmlDocument => {
 
   while (thisRow) {
     const gameSummary = parseGameSummary(xmlDocument, thisRow);
-    answer = R.assoc(gameSummary.id, gameSummary, answer);
+    answer.push(gameSummary);
 
     thisRow = rows.iterateNext();
   }

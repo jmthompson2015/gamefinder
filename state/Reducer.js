@@ -17,7 +17,9 @@ Reducer.root = (state, action) => {
     return AppState.create();
   }
 
-  let gameDetailKeys;
+  let gameDetailIds;
+  let gameToDetail;
+  let gameToSummary;
   let isDataLoaded;
   let newFilteredGameData;
   let newFilters;
@@ -30,16 +32,21 @@ Reducer.root = (state, action) => {
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
       newGameToUsers = state.gameToUsers;
-      newGameToDetail = R.merge(state.gameToDetail, action.gameToDetail);
-      newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameToDetail);
-      gameDetailKeys = Object.keys(action.gameToDetail);
+      gameToDetail = R.reduce(
+        (accum, detail) => R.assoc(detail.id, detail, accum),
+        {},
+        action.gameDetails
+      );
+      newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
+      newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameDetails);
+      gameDetailIds = R.map(detail => detail.id, action.gameDetails);
       R.forEach(id => {
         const users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
         if (users && users.length > 0) {
           const newUsers = R.map(user => R.assoc("count", user.count + 1, user), users);
           newGameToUsers = R.assoc(id, newUsers, newGameToUsers);
         }
-      }, gameDetailKeys);
+      }, gameDetailIds);
       console.log(
         `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
       );
@@ -54,8 +61,13 @@ Reducer.root = (state, action) => {
         R.assoc("isDataLoaded", isDataLoaded)
       )(state);
     case ActionType.ADD_GAME_SUMMARIES:
-      console.log(`Reducer gameToSummary.length = ${Object.keys(action.gameToSummary).length}`);
-      newGameToSummary = R.merge(state.gameToSummary, action.gameToSummary);
+      console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);
+      gameToSummary = R.reduce(
+        (accum, summary) => R.assoc(summary.id, summary, accum),
+        {},
+        action.gameSummaries
+      );
+      newGameToSummary = R.merge(state.gameToSummary, gameToSummary);
       return R.assoc("gameToSummary", newGameToSummary, state);
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
@@ -107,8 +119,7 @@ Reducer.root = (state, action) => {
   }
 };
 
-Reducer.addTableRows = (state, tableRows, newGameToDetail) => {
-  const gameDetails = Object.values(newGameToDetail);
+Reducer.addTableRows = (state, tableRows, gameDetails) => {
   let answer = tableRows;
 
   R.forEach(gameDetail => {

@@ -185,7 +185,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
 };
 
 const parseGameDetails = xmlDocument => {
-  const answer = {};
+  const answer = [];
 
   // This gives the data items.
   const xpath = "query/results/items/item";
@@ -195,7 +195,7 @@ const parseGameDetails = xmlDocument => {
 
   while (thisRow) {
     const gameDetail = parseGameDetail(xmlDocument, thisRow);
-    answer[gameDetail.id] = gameDetail;
+    answer.push(gameDetail);
 
     thisRow = rows.iterateNext();
   }
@@ -209,16 +209,17 @@ GameDetailFetcher.fetchData = gameIds =>
   new Promise((resolve, reject) => {
     const reduceFunction = (accum, gameId) => {
       const gameDetail = GameDetail[gameId];
-      return gameDetail ? R.assoc(gameDetail.id, gameDetail, accum) : accum;
+      return gameDetail ? R.append(gameDetail, accum) : accum;
     };
-    const gameToDetail0 = R.reduce(reduceFunction, {}, gameIds);
-    const gameIds0 = R.map(detail => detail.id, Object.values(gameToDetail0));
+    const gameDetails0 = R.reduce(reduceFunction, [], gameIds);
+    const gameIds0 = R.map(detail => detail.id, Object.values(gameDetails0));
     const gameIds1 = R.difference(gameIds, gameIds0);
 
     if (gameIds1.length > 0) {
+      console.log(`GameDetailFetcher gameIds1 = ${gameIds1}`);
       const receiveData = xmlDocument => {
         const gameDetails = parseGameDetails(xmlDocument);
-        resolve(R.merge(gameToDetail0, gameDetails));
+        resolve(R.concat(gameDetails0, gameDetails));
       };
 
       const url = createUrl(gameIds1);
@@ -229,7 +230,7 @@ GameDetailFetcher.fetchData = gameIds =>
           reject(errorThrown);
         });
     } else {
-      resolve(gameToDetail0);
+      resolve(gameDetails0);
     }
   });
 

@@ -4,10 +4,8 @@ import Reducer from "./Reducer.js";
 
 QUnit.module("Reducer");
 
-const createGameDetailMap = () => {
-  const answer = {};
-
-  answer[1406] = {
+const createGameDetails = () => [
+  {
     id: 1406,
     title: "Monopoly (1933)",
     minPlayers: 2,
@@ -15,8 +13,8 @@ const createGameDetailMap = () => {
     categoryIds: [],
     designerIds: [],
     mechanicIds: []
-  };
-  answer[181] = {
+  },
+  {
     id: 181,
     title: "Risk (1959)",
     minPlayers: 2,
@@ -24,30 +22,24 @@ const createGameDetailMap = () => {
     categoryIds: [],
     designerIds: [],
     mechanicIds: []
-  };
+  }
+];
 
-  return answer;
-};
-
-const createGameSummaryMap = () => {
-  const answer = {};
-
-  answer[1406] = { id: 1406, title: "Monopoly (1933)" };
-  answer[181] = { id: 181, title: "Risk (1959)" };
-
-  return answer;
-};
+const createGameSummaries = () => [
+  { id: 1406, title: "Monopoly (1933)" },
+  { id: 181, title: "Risk (1959)" }
+];
 
 QUnit.test("addGameDetails()", assert => {
   // Setup.
   let state = AppState.create();
-  const gameToSummary = createGameSummaryMap();
-  const action1 = ActionCreator.addGameSummaries(gameToSummary);
+  const gameSummaries = createGameSummaries();
+  const action1 = ActionCreator.addGameSummaries(gameSummaries);
   state = Reducer.root(state, action1);
   assert.equal(Object.values(state.gameToSummary).length, 2);
-  const gameToDetail = createGameDetailMap();
+  const gameDetails = createGameDetails();
   assert.equal(Object.values(state.gameToDetail).length, 0);
-  const action = ActionCreator.addGameDetails(gameToDetail);
+  const action = ActionCreator.addGameDetails(gameDetails);
 
   // Run.
   const result = Reducer.root(state, action);
@@ -64,8 +56,8 @@ QUnit.test("addGameSummaries()", assert => {
   const state = AppState.create();
   const length = 0;
   assert.equal(Object.keys(state.gameToSummary).length, length);
-  const gameToSummary = createGameSummaryMap();
-  const action = ActionCreator.addGameSummaries(gameToSummary);
+  const gameSummaries = createGameSummaries();
+  const action = ActionCreator.addGameSummaries(gameSummaries);
 
   // Run.
   const result = Reducer.root(state, action);

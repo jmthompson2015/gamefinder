@@ -4,18 +4,17 @@ QUnit.module("GameDetailFetcher");
 
 QUnit.test("fetchData()", assert => {
   // Setup.
-  const gameIds = [];
-  gameIds.push(1406); // Monopoly
-  gameIds.push(12333); // Twilight Struggle
-  gameIds.push(120677); // Terra Mystica
+  const gameIds = [
+    1406, // Monopoly
+    12333, // Twilight Struggle
+    120677 // Terra Mystica
+  ];
 
   // Run.
   const done = assert.async();
-  GameDetailFetcher.fetchData(gameIds).then(newGameDetailMap => {
+  GameDetailFetcher.fetchData(gameIds).then(gameDetails => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
-    assert.ok(newGameDetailMap);
-    const gameDetails = Object.values(newGameDetailMap);
     assert.ok(gameDetails);
     gameDetails.sort((a, b) => a.id - b.id);
     const { length } = gameIds;

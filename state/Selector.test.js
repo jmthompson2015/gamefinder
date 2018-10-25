@@ -4,14 +4,10 @@ import Selector from "./Selector.js";
 
 QUnit.module("Selector");
 
-const createGameSummaryMap = () => {
-  const answer = {};
-
-  answer[1406] = { id: 1406, title: "Monopoly (1933)" };
-  answer[181] = { id: 181, title: "Risk (1959)" };
-
-  return answer;
-};
+const createGameSummaries = () => [
+  { id: 1406, title: "Monopoly (1933)" },
+  { id: 181, title: "Risk (1959)" }
+];
 
 // QUnit.test("findGameUsersByGameId()", assert => {
 //   // Setup.
@@ -69,8 +65,8 @@ const createGameSummaryMap = () => {
 QUnit.test("findGameSummaryById()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
-  const newGameToSummary = createGameSummaryMap();
-  store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
+  const newGameSummaries = createGameSummaries();
+  store.dispatch(ActionCreator.addGameSummaries(newGameSummaries));
   const id = 1406; // Monopoly
 
   // Run.

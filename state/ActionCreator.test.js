@@ -16,28 +16,28 @@ QUnit.test("all action types", assert => {
 
 QUnit.test("addGameDetails()", assert => {
   // Setup.
-  const gameToDetail = 3;
+  const gameDetails = 3;
 
   // Run.
-  const result = ActionCreator.addGameDetails(gameToDetail);
+  const result = ActionCreator.addGameDetails(gameDetails);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_GAME_DETAILS);
-  assert.equal(result.gameToDetail, gameToDetail);
+  assert.equal(result.gameDetails, gameDetails);
 });
 
 QUnit.test("addGameSummaries()", assert => {
   // Setup.
-  const gameToSummary = 3;
+  const gameSummaries = 3;
 
   // Run.
-  const result = ActionCreator.addGameSummaries(gameToSummary);
+  const result = ActionCreator.addGameSummaries(gameSummaries);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_GAME_SUMMARIES);
-  assert.equal(result.gameToSummary, gameToSummary);
+  assert.equal(result.gameSummaries, gameSummaries);
 });
 
 QUnit.test("addUserCollection()", assert => {
