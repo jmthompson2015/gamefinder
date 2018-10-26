@@ -5,6 +5,7 @@ import ASelector from "../artifact/Selector.js";
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
 import DefaultFilters from "./DefaultFilters.js";
+import EntityUtils from "./EntityUtilities.js";
 import Selector from "./Selector.js";
 import TableRow from "./TableRow.js";
 
@@ -21,11 +22,15 @@ Reducer.root = (state, action) => {
   let gameToDetail;
   let gameToSummary;
   let isDataLoaded;
+  let newCategoryMap;
+  let newDesignerMap;
   let newFilteredGameData;
   let newFilters;
+  let newGameDetails;
   let newGameToDetail;
   let newGameToSummary;
   let newGameToUsers;
+  let newMechanicMap;
   let newTableRows;
   let newUserToReceivedMap;
 
@@ -51,6 +56,12 @@ Reducer.root = (state, action) => {
         `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
       );
       console.log(`Reducer ADD_GAME_DETAILS newTableRows.length = ${newTableRows.length}`);
+
+      newGameDetails = Object.values(newGameToDetail);
+      newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
+      newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
+      newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
+
       isDataLoaded = Selector.gameTotal(state) === newTableRows.length;
       newFilteredGameData = Reducer.sortTableRows(newTableRows);
       return R.pipe(
@@ -58,7 +69,10 @@ Reducer.root = (state, action) => {
         R.assoc("gameToUsers", newGameToUsers),
         R.assoc("tableRows", newTableRows),
         R.assoc("gameToDetail", newGameToDetail),
-        R.assoc("isDataLoaded", isDataLoaded)
+        R.assoc("isDataLoaded", isDataLoaded),
+        R.assoc("categoryMap", newCategoryMap),
+        R.assoc("designerMap", newDesignerMap),
+        R.assoc("mechanicMap", newMechanicMap)
       )(state);
     case ActionType.ADD_GAME_SUMMARIES:
       console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);
@@ -120,24 +134,21 @@ Reducer.root = (state, action) => {
 };
 
 Reducer.addTableRows = (state, tableRows, gameDetails) => {
-  let answer = tableRows;
-
-  R.forEach(gameDetail => {
+  const reduceFunction = (accum, gameDetail) => {
     const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
+    const userIds = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
+    const users = ASelector.usersByIds(userIds);
+    const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
 
-    if (gameSummary) {
-      const userIds = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
-      const users = ASelector.usersByIds(userIds);
-      const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
-      answer = R.append(newTableRow, answer);
-    }
-  }, gameDetails);
+    return R.append(newTableRow, accum);
+  };
+  const newTableRows = R.reduce(reduceFunction, [], gameDetails);
 
-  return answer;
+  return R.concat(tableRows, newTableRows);
 };
 
 Reducer.filterTableRows = (tableRows, filters) => {
-  const answer = tableRows.filter(data => Reducer.passes(data, filters));
+  const answer = R.filter(data => Reducer.passes(data, filters), tableRows);
 
   return Reducer.sortTableRows(answer);
 };

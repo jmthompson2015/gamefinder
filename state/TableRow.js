@@ -11,7 +11,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     );
   }
 
-  const { boardGameRank1, geekRating1, id } = gameSummary;
+  const { boardGameRank1, geekRating1, id } = gameSummary || {};
   const {
     averageWeight,
     bestWithPlayers,

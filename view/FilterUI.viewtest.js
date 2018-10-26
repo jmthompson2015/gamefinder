@@ -1,11 +1,10 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
-import Category from "../artifact/Category.js";
-import Designer from "../artifact/Designer.js";
-import Mechanic from "../artifact/Mechanic.js";
+import GameDetail from "../artifact/GameDetail.js";
 import User from "../artifact/User.js";
 
 import DefaultFilters from "../state/DefaultFilters.js";
+import EntityUtils from "../state/EntityUtilities.js";
 
 import FilterUI from "./FilterUI.js";
 
@@ -15,9 +14,11 @@ const clearCacheOnClick = () => console.log("clearCacheOnClick()");
 const removeOnClick = () => console.log("removeOnClick()");
 const restoreDefaultsOnClick = () => console.log("restoreDefaultsOnClick()");
 
-const categoryMap = R.map(entity => R.assoc("count", 1, entity), Category);
-const designerMap = R.map(entity => R.assoc("count", 1, entity), Designer);
-const mechanicMap = R.map(entity => R.assoc("count", 1, entity), Mechanic);
+const gameDetails = Object.values(GameDetail);
+
+const categoryMap = EntityUtils.createCategoryMap(gameDetails);
+const designerMap = EntityUtils.createDesignerMap(gameDetails);
+const mechanicMap = EntityUtils.createMechanicMap(gameDetails);
 const userMap = R.map(entity => R.assoc("count", 1, entity), User);
 
 const element = React.createElement(FilterUI, {
