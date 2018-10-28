@@ -5,7 +5,7 @@ import DataTable from "./DataTable.js";
 const entityReduceFunction = (accum, entity) => R.append(`${entity.name}, `, accum);
 
 const valueFunctions = {
-  usernames: data => R.reduce(entityReduceFunction, "", data.users),
+  usernames: data => R.reduce(entityReduceFunction, "", data.usernames),
   designers: data => R.reduce(entityReduceFunction, "", data.designers),
   categories: data => R.reduce(entityReduceFunction, "", data.categories),
   mechanics: data => R.reduce(entityReduceFunction, "", data.mechanics)
@@ -49,7 +49,7 @@ const mapUsers = users => {
 const round2 = value => Math.round(value * 100.0) / 100.0;
 
 const cellFunctions = {
-  usernames: data => (data.users !== undefined ? mapUsers(data.users) : undefined),
+  usernames: data => (data.usernames !== undefined ? mapUsers(data.usernames) : undefined),
   title: data => {
     const src = "../resource/BoardGameGeek16.png";
     const href = `https://www.boardgamegeek.com/boardgame/${data.id}`;

@@ -42,7 +42,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     minPlayers,
     minPlayTime,
     title,
-    users,
+    usernames: users,
     yearPublished,
     categories: ASelector.categoriesByIds(categoryIds),
     designers: ASelector.designersByIds(designerIds),
