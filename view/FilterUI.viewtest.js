@@ -8,12 +8,16 @@ import EntityUtils from "../state/EntityUtilities.js";
 
 import FilterUI from "./FilterUI.js";
 
-const filters = DefaultFilters.create();
-const applyOnClick = () => console.log("applyOnClick()");
+const applyOnClick = event => {
+  const { filters: filtersString } = event.currentTarget.dataset;
+  const filters = JSON.parse(filtersString);
+  console.log(`applyOnClick() filters = ${JSON.stringify(filters)}`);
+};
 const clearCacheOnClick = () => console.log("clearCacheOnClick()");
 const removeOnClick = () => console.log("removeOnClick()");
 const restoreDefaultsOnClick = () => console.log("restoreDefaultsOnClick()");
 
+const filters = DefaultFilters.create();
 const gameDetails = Object.values(GameDetail);
 
 const categoryMap = EntityUtils.createCategoryMap(gameDetails);

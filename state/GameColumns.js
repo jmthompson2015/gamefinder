@@ -68,4 +68,10 @@ const GameColumns = [
   }
 ];
 
+GameColumns.findByKey = key => {
+  const columns = R.filter(col => col.key === key, GameColumns);
+
+  return columns.length > 0 ? columns[0] : undefined;
+};
+
 export default GameColumns;

@@ -8,7 +8,7 @@ const concatEntityIds = idProperty => (accum, detail) => R.concat(accum, detail[
 
 const createIdToCount = R.countBy(r => r);
 
-const createObj = (type, idToCount, id) => ({ name: type[id].name, count: idToCount[id] });
+const createObj = (type, idToCount, id) => ({ id, name: type[id].name, count: idToCount[id] });
 
 const createMap = (details, idProperty, type) => {
   const ids = R.reduce(concatEntityIds(idProperty), [], details);

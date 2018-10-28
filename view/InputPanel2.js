@@ -33,6 +33,8 @@ class InputPanel2 extends React.Component {
     }
 
     this.state = { selected };
+
+    this.handleChange = this.handleChangeFunction.bind(this);
   }
 
   createInputProps() {
@@ -62,7 +64,7 @@ class InputPanel2 extends React.Component {
 
     switch (type) {
       case InputPanel2.Type.CHECKBOX:
-        inputProps.defaultChecked = selected.includes(value);
+        inputProps.defaultChecked = R.filter(sel => sel.id === value.id, selected).length > 0;
         break;
       case InputPanel2.Type.RADIO:
         inputProps.defaultChecked = value === selected;
@@ -89,7 +91,7 @@ class InputPanel2 extends React.Component {
     return ReactDOMFactories.tr({ key: `row${value}${i}` }, cells);
   }
 
-  handleChange(event) {
+  handleChangeFunction(event) {
     const source = event.target;
     const { id } = source;
     let { selected } = this.state;
@@ -101,7 +103,7 @@ class InputPanel2 extends React.Component {
         if (source.checked) {
           selected.push(mySelected);
         } else {
-          selected.vizziniRemove(mySelected);
+          selected = R.without([mySelected], selected);
         }
         break;
       case InputPanel2.Type.RADIO:

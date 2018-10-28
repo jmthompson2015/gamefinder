@@ -5,7 +5,9 @@ import ASelector from "../artifact/Selector.js";
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
 import DefaultFilters from "./DefaultFilters.js";
+import EntityFilterUtils from "./EntityFilterUtilities.js";
 import EntityUtils from "./EntityUtilities.js";
+import RangeFilterUtils from "./RangeFilterUtilities.js";
 import Selector from "./Selector.js";
 import TableRow from "./TableRow.js";
 
@@ -24,7 +26,7 @@ Reducer.root = (state, action) => {
   let isDataLoaded;
   let newCategoryMap;
   let newDesignerMap;
-  let newFilteredGameData;
+  let newFilteredTableRows;
   let newFilters;
   let newGameDetails;
   let newGameToDetail;
@@ -63,9 +65,9 @@ Reducer.root = (state, action) => {
       newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
 
       isDataLoaded = Selector.gameTotal(state) === newTableRows.length;
-      newFilteredGameData = Reducer.sortTableRows(newTableRows);
+      newFilteredTableRows = Reducer.sortTableRows(newTableRows);
       return R.pipe(
-        R.assoc("filteredTableRows", newFilteredGameData),
+        R.assoc("filteredTableRows", newFilteredTableRows),
         R.assoc("gameToUsers", newGameToUsers),
         R.assoc("tableRows", newTableRows),
         R.assoc("gameToDetail", newGameToDetail),
@@ -97,8 +99,8 @@ Reducer.root = (state, action) => {
       )(state);
     case ActionType.REMOVE_FILTERS:
       console.log("Reducer remove filters");
-      newFilteredGameData = Reducer.sortGameData(state.tableRows);
-      return R.assoc("filteredGameData", newFilteredGameData, state);
+      newFilteredTableRows = Reducer.sortTableRows(state.tableRows);
+      return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.SET_COLLECTION_TIME:
       console.log(`Reducer collectionTime = ${action.time}`);
       return R.assoc("collectionTime", action.time, state);
@@ -111,15 +113,12 @@ Reducer.root = (state, action) => {
       return R.assoc("detailTime", action.time, state);
     case ActionType.SET_FILTERS:
       console.log(`Reducer filters = ${action.filters}`);
-      R.forEach(columnKey => {
-        console.log(`${columnKey}: ${action.filters[columnKey]}`);
-      }, Object.getOwnPropertyNames(action.filters));
       newFilters = R.merge(state.filters, action.filters);
-      newFilteredGameData = Reducer.filterTableRows(state.tableRows, newFilters);
+      newFilteredTableRows = Reducer.filterTableRows(state.tableRows, newFilters);
       Reducer.saveToLocalStorage(newFilters);
       return R.pipe(
         R.assoc("filters", newFilters),
-        R.assoc("filteredTableRows", newFilteredGameData)
+        R.assoc("filteredTableRows", newFilteredTableRows)
       )(state);
     case ActionType.SET_PAGE_COUNT:
       console.log(`Reducer pageCount = ${action.pageCount}`);
@@ -156,12 +155,19 @@ Reducer.filterTableRows = (tableRows, filters) => {
 Reducer.passes = (data, filters) => {
   let answer = true;
   const propertyNames = Object.getOwnPropertyNames(filters);
+  const entityColumnKeys = R.map(col => col.key, DefaultFilters.entityColumns);
+  const rangeColumnKeys = R.map(col => col.key, DefaultFilters.rangeColumns);
 
   for (let i = 0; i < propertyNames.length; i += 1) {
     const propertyName = propertyNames[i];
     const filter = filters[propertyName];
+    const isEntityColumn = entityColumnKeys.includes(propertyName);
+    const isRangeColumn = rangeColumnKeys.includes(propertyName);
+    const passes =
+      (isEntityColumn && EntityFilterUtils.passes(filter, data)) ||
+      (isRangeColumn && RangeFilterUtils.passes(filter, data));
 
-    if (!filter.passes(data)) {
+    if (!passes) {
       answer = false;
       break;
     }
@@ -171,12 +177,7 @@ Reducer.passes = (data, filters) => {
 };
 
 Reducer.saveToLocalStorage = filters => {
-  const filterObjects = R.map(
-    columnKey => filters[columnKey].toObject(),
-    Object.getOwnPropertyNames(filters)
-  );
-
-  localStorage.filters = JSON.stringify(filterObjects);
+  localStorage.filters = JSON.stringify(filters);
 };
 
 Reducer.sortTableRows = tableRows => R.sort(R.ascend(R.prop("boardGameRank")), tableRows);

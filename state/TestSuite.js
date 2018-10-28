@@ -1,5 +1,6 @@
 import ActionCreatorTest from "./ActionCreator.test.js";
 import ActionTypeTest from "./ActionType.test.js";
+import DefaultFiltersTest from "./DefaultFilters.test.js";
 import EntityFilterTest from "./EntityFilter.test.js";
 import EntityFilterUtilitiesTest from "./EntityFilterUtilities.test.js";
 import EntityUtilitiesTest from "./EntityUtilities.test.js";
