@@ -20,7 +20,6 @@ Reducer.root = (state, action) => {
     return AppState.create();
   }
 
-  let gameDetailIds;
   let gameToDetail;
   let gameToSummary;
   let isDataLoaded;
@@ -34,11 +33,11 @@ Reducer.root = (state, action) => {
   let newGameToUsers;
   let newMechanicMap;
   let newTableRows;
+  let newUserMap;
   let newUserToReceivedMap;
 
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
-      newGameToUsers = state.gameToUsers;
       gameToDetail = R.reduce(
         (accum, detail) => R.assoc(detail.id, detail, accum),
         {},
@@ -46,14 +45,6 @@ Reducer.root = (state, action) => {
       );
       newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
       newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameDetails);
-      gameDetailIds = R.map(detail => detail.id, action.gameDetails);
-      R.forEach(id => {
-        const users = Selector.findGameUsersByGameId(state, parseInt(id, 10));
-        if (users && users.length > 0) {
-          const newUsers = R.map(user => R.assoc("count", user.count + 1, user), users);
-          newGameToUsers = R.assoc(id, newUsers, newGameToUsers);
-        }
-      }, gameDetailIds);
       console.log(
         `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
       );
@@ -63,18 +54,19 @@ Reducer.root = (state, action) => {
       newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
       newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
       newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
+      newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
 
       isDataLoaded = Selector.gameTotal(state) === newTableRows.length;
       newFilteredTableRows = Reducer.sortTableRows(newTableRows);
       return R.pipe(
         R.assoc("filteredTableRows", newFilteredTableRows),
-        R.assoc("gameToUsers", newGameToUsers),
         R.assoc("tableRows", newTableRows),
         R.assoc("gameToDetail", newGameToDetail),
         R.assoc("isDataLoaded", isDataLoaded),
         R.assoc("categoryMap", newCategoryMap),
         R.assoc("designerMap", newDesignerMap),
-        R.assoc("mechanicMap", newMechanicMap)
+        R.assoc("mechanicMap", newMechanicMap),
+        R.assoc("userMap", newUserMap)
       )(state);
     case ActionType.ADD_GAME_SUMMARIES:
       console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);

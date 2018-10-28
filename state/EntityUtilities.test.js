@@ -71,5 +71,21 @@ QUnit.test("createMechanicMap()", assert => {
   verifyEntity(assert, result[2676], 2676, "Grid Movement", 1);
 });
 
+QUnit.test("createUserMap()", assert => {
+  // Setup.
+  const details = createGameDetails();
+  const gameToUsers = { 169786: [1, 2], 162886: [2, 3] };
+
+  // Run.
+  const result = EntityUtils.createUserMap(details, gameToUsers);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(Object.keys(result).length, 3);
+  verifyEntity(assert, result[1], 1, "ghightshoe", 1);
+  verifyEntity(assert, result[2], 2, "jmthompson", 2);
+  verifyEntity(assert, result[3], 3, "kmistr", 1);
+});
+
 const EntityUtilitiesTest = {};
 export default EntityUtilitiesTest;
