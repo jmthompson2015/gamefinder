@@ -10,9 +10,6 @@ class FilterUI extends React.Component {
   constructor(props) {
     super(props);
 
-    const { filters } = this.props;
-    this.state = { filters };
-
     this.handleEntityChange = this.handleEntityChangeFunction.bind(this);
     this.handleRangeChange = this.handleRangeChangeFunction.bind(this);
   }
@@ -30,14 +27,7 @@ class FilterUI extends React.Component {
     );
     const unfilterButton = ReactDOMFactories.button({ onClick: removeOnClick }, "Remove Filter");
 
-    const { filters } = this.state;
-    const filterButton = ReactDOMFactories.button(
-      {
-        "data-filters": JSON.stringify(filters),
-        onClick: applyOnClick
-      },
-      "Apply Filter"
-    );
+    const filterButton = ReactDOMFactories.button({ onClick: applyOnClick }, "Apply Filter");
 
     const cells = [];
     cells.push(ReactDOMFactories.td({ key: cells.length }, filterCacheButton));
@@ -116,14 +106,14 @@ class FilterUI extends React.Component {
 
   handleEntityChangeFunction(filter) {
     // console.log(`handleEntityChange() filter = ${JSON.stringify(filter)}`);
-    const { filters } = this.state;
-    this.setState({ filters: R.assoc(filter.columnKey, filter, filters) });
+    const { onChange } = this.props;
+    onChange(filter);
   }
 
   handleRangeChangeFunction(filter) {
     // console.log(`handleRangeChange() filter = ${JSON.stringify(filter)}`);
-    const { filters } = this.state;
-    this.setState({ filters: R.assoc(filter.columnKey, filter, filters) });
+    const { onChange } = this.props;
+    onChange(filter);
   }
 
   render() {
@@ -149,6 +139,7 @@ FilterUI.propTypes = {
   filters: PropTypes.shape().isRequired,
   applyOnClick: PropTypes.func.isRequired,
   clearCacheOnClick: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   removeOnClick: PropTypes.func.isRequired,
   restoreDefaultsOnClick: PropTypes.func.isRequired,
 

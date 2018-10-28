@@ -1,5 +1,6 @@
 import AppState from "./AppState.js";
 import ActionCreator from "./ActionCreator.js";
+import RangeFilter from "./RangeFilter.js";
 import Reducer from "./Reducer.js";
 
 QUnit.module("Reducer");
@@ -110,6 +111,21 @@ QUnit.test("setDetailTime()", assert => {
   // Verify.
   assert.ok(result);
   assert.equal(result.detailTime, time);
+});
+
+QUnit.test("setFilter()", assert => {
+  // Setup.
+  const state = AppState.create();
+  const columnKey = "geekRating";
+  const filter = RangeFilter.create({ columnKey });
+  const action = ActionCreator.setFilter(filter);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.filters[columnKey], filter);
 });
 
 QUnit.test("setPageCount()", assert => {

@@ -97,29 +97,30 @@ Reducer.root = (state, action) => {
         R.assoc("gameToUsers", newGameToUsers),
         R.assoc("userToReceivedMap", newUserToReceivedMap)
       )(state);
+    case ActionType.APPLY_FILTERS:
+      console.log(`Reducer APPLY_FILTERS`);
+      newFilteredTableRows = Reducer.filterTableRows(state.tableRows, state.filters);
+      Reducer.saveToLocalStorage(state.filters);
+      return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.REMOVE_FILTERS:
-      console.log("Reducer remove filters");
+      console.log("Reducer REMOVE_FILTERS");
       newFilteredTableRows = Reducer.sortTableRows(state.tableRows);
       return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.SET_COLLECTION_TIME:
       console.log(`Reducer collectionTime = ${action.time}`);
       return R.assoc("collectionTime", action.time, state);
     case ActionType.SET_DEFAULT_FILTERS:
-      console.log("Reducer set default filters");
+      console.log("Reducer SET_DEFAULT_FILTERS");
       newFilters = DefaultFilters.create();
       return R.assoc("filters", newFilters, state);
     case ActionType.SET_DETAIL_TIME:
       console.log(`Reducer detailTime = ${action.time}`);
       return R.assoc("detailTime", action.time, state);
-    case ActionType.SET_FILTERS:
-      console.log(`Reducer filters = ${action.filters}`);
-      newFilters = R.merge(state.filters, action.filters);
-      newFilteredTableRows = Reducer.filterTableRows(state.tableRows, newFilters);
+    case ActionType.SET_FILTER:
+      console.log(`Reducer SET_FILTER filter = ${JSON.stringify(action.filter)}`);
+      newFilters = R.assoc(action.filter.columnKey, action.filter, state.filters);
       Reducer.saveToLocalStorage(newFilters);
-      return R.pipe(
-        R.assoc("filters", newFilters),
-        R.assoc("filteredTableRows", newFilteredTableRows)
-      )(state);
+      return R.assoc("filters", newFilters, state);
     case ActionType.SET_PAGE_COUNT:
       console.log(`Reducer pageCount = ${action.pageCount}`);
       return R.assoc("pageCount", action.pageCount, state);

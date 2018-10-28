@@ -19,16 +19,17 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = (dispatch /* , ownProps */) => ({
-  applyOnClick: event => {
+  applyOnClick: () => {
     // console.log("applyOnClick()");
-    const { filters: filtersString } = event.currentTarget.dataset;
-    const filters = JSON.parse(filtersString);
-    // console.log(`applyOnClick() filters = ${JSON.stringify(filters)}`);
-    dispatch(ActionCreator.setFilters(filters));
+    dispatch(ActionCreator.applyFilters());
   },
   clearCacheOnClick: () => {
     // console.log("clearCacheOnClick()");
     localStorage.removeItem("filters");
+  },
+  onChange: filter => {
+    // console.log("FilterContainer onChange()");
+    dispatch(ActionCreator.setFilter(filter));
   },
   removeOnClick: () => {
     // console.log("removeOnClick()");

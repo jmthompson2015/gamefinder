@@ -6,7 +6,7 @@ QUnit.module("ActionCreator");
 QUnit.test("all action types", assert => {
   // Setup.
   const actionTypeKeys = Object.getOwnPropertyNames(ActionType);
-  assert.equal(actionTypeKeys.length, 10);
+  assert.equal(actionTypeKeys.length, 11);
 
   // Run / Verify.
   actionTypeKeys.forEach(key => {
@@ -103,17 +103,17 @@ QUnit.test("setDetailTime()", assert => {
   assert.equal(result.time, time);
 });
 
-QUnit.test("setFilters()", assert => {
+QUnit.test("setFilter()", assert => {
   // Setup.
-  const filters = 3;
+  const filter = 3;
 
   // Run.
-  const result = ActionCreator.setFilters(filters);
+  const result = ActionCreator.setFilter(filter);
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.type, ActionType.SET_FILTERS);
-  assert.equal(result.filters, filters);
+  assert.equal(result.type, ActionType.SET_FILTER);
+  assert.equal(result.filter, filter);
 });
 
 QUnit.test("setPageCount()", assert => {
