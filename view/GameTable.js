@@ -2,11 +2,13 @@ import GameColumns from "../state/GameColumns.js";
 
 import DataTable from "./DataTable.js";
 
+const entityReduceFunction = (accum, entity) => R.append(`${entity.name}, `, accum);
+
 const valueFunctions = {
-  usernames: data => data.users,
-  designers: data => data.designers,
-  categories: data => data.categories,
-  mechanics: data => data.mechanics
+  usernames: data => R.reduce(entityReduceFunction, "", data.users),
+  designers: data => R.reduce(entityReduceFunction, "", data.designers),
+  categories: data => R.reduce(entityReduceFunction, "", data.categories),
+  mechanics: data => R.reduce(entityReduceFunction, "", data.mechanics)
 };
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////
