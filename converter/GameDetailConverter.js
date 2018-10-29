@@ -1,5 +1,6 @@
 const R = require("ramda");
 
+const CharacterConverter = require("./CharacterConverter.js");
 const FileLoader = require("./FileLoader.js");
 const FileWriter = require("./FileWriter.js");
 
@@ -41,12 +42,19 @@ const replaceMechanics = gameDetail => {
   )(gameDetail);
 };
 
+const replaceTitle = gameDetail => {
+  const newTitle = CharacterConverter.convert(gameDetail.title);
+
+  return R.assoc("title", newTitle, gameDetail);
+};
+
 GameDetailConverter.convert = () => {
   FileLoader.loadLocalFile(INPUT_FILE).then(data => {
     const gameDetails0 = JSON.parse(data);
-    const gameDetails1 = R.map(gameDetail => replaceCategories(gameDetail), gameDetails0);
-    const gameDetails2 = R.map(gameDetail => replaceDesigners(gameDetail), gameDetails1);
-    const gameDetails = R.map(gameDetail => replaceMechanics(gameDetail), gameDetails2);
+    const gameDetails1 = R.map(gameDetail => replaceTitle(gameDetail), gameDetails0);
+    const gameDetails2 = R.map(gameDetail => replaceCategories(gameDetail), gameDetails1);
+    const gameDetails3 = R.map(gameDetail => replaceDesigners(gameDetail), gameDetails2);
+    const gameDetails = R.map(gameDetail => replaceMechanics(gameDetail), gameDetails3);
 
     const content = `${HEADER}${JSON.stringify(gameDetails, null, "  ")}${FOOTER}`;
     FileWriter.writeFile(OUTPUT_FILE, content);

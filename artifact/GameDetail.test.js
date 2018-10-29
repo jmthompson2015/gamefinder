@@ -13,7 +13,7 @@ QUnit.test("GameDetail properties Scythe", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 7);
   assert.equal(detail.title, "Scythe");
-  assert.equal(detail.geekRating, 8.10941);
+  assert.equal(detail.geekRating, 8.10955);
 });
 
 QUnit.test("GameDetail properties Spirit Island", assert => {
@@ -25,14 +25,14 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 29);
+  assert.equal(detail.boardGameRank, 27);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(detail.geekRating, 7.84984);
+  assert.equal(detail.geekRating, 7.85373);
 });
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 999;
+  const length = 1000;
 
   // Run.
   const keys = Object.keys(GameDetail);

@@ -1,5 +1,6 @@
 const R = require("ramda");
 
+const CharacterConverter = require("./CharacterConverter.js");
 const FileLoader = require("./FileLoader.js");
 const FileWriter = require("./FileWriter.js");
 
@@ -29,7 +30,9 @@ CategoryGenerator.convert = () => {
       R.dissoc("count")
     );
     const reduceFunction2 = (accum, item) => {
-      const newItem = pipeFunction(item);
+      const newItem0 = pipeFunction(item);
+      const newName = CharacterConverter.convert(newItem0.name);
+      const newItem = R.assoc("name", newName, newItem0);
       return R.assoc(newItem.id, newItem, accum);
     };
     const itemMap = R.reduce(reduceFunction2, {}, allItem);

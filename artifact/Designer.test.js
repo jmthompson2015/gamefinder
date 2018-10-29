@@ -30,7 +30,7 @@ QUnit.test("Designer keys", assert => {
 
   const designerLast = Designer[keys[length - 1]];
   assert.equal(designerLast.id, 108405);
-  assert.equal(designerLast.name, "Jakub Łapot");
+  assert.equal(designerLast.name, "Jakub Lapot");
 });
 
 const DesignerTest = {};
