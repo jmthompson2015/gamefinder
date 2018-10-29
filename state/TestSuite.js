@@ -4,6 +4,7 @@ import DefaultFiltersTest from "./DefaultFilters.test.js";
 import EntityFilterTest from "./EntityFilter.test.js";
 import EntityFilterUtilitiesTest from "./EntityFilterUtilities.test.js";
 import EntityUtilitiesTest from "./EntityUtilities.test.js";
+import FilterUtilitiesTest from "./FilterUtilities.test.js";
 import GameCollectionStateTest from "./GameCollectionState.test.js";
 import GameColumnsTest from "./GameColumns.test.js";
 import GameDetailStateTest from "./GameDetailState.test.js";

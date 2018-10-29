@@ -5,9 +5,8 @@ import ASelector from "../artifact/Selector.js";
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
 import DefaultFilters from "./DefaultFilters.js";
-import EntityFilterUtils from "./EntityFilterUtilities.js";
 import EntityUtils from "./EntityUtilities.js";
-import RangeFilterUtils from "./RangeFilterUtilities.js";
+import FilterUtils from "./FilterUtilities.js";
 import Selector from "./Selector.js";
 import TableRow from "./TableRow.js";
 
@@ -140,33 +139,9 @@ Reducer.addTableRows = (state, tableRows, gameDetails) => {
 };
 
 Reducer.filterTableRows = (tableRows, filters) => {
-  const answer = R.filter(data => Reducer.passes(data, filters), tableRows);
+  const answer = R.filter(data => FilterUtils.passesAll(filters, data), tableRows);
 
   return Reducer.sortTableRows(answer);
-};
-
-Reducer.passes = (data, filters) => {
-  let answer = true;
-  const propertyNames = Object.getOwnPropertyNames(filters);
-  const entityColumnKeys = R.map(col => col.key, DefaultFilters.entityColumns);
-  const rangeColumnKeys = R.map(col => col.key, DefaultFilters.rangeColumns);
-
-  for (let i = 0; i < propertyNames.length; i += 1) {
-    const propertyName = propertyNames[i];
-    const filter = filters[propertyName];
-    const isEntityColumn = entityColumnKeys.includes(propertyName);
-    const isRangeColumn = rangeColumnKeys.includes(propertyName);
-    const passes =
-      (isEntityColumn && EntityFilterUtils.passes(filter, data)) ||
-      (isRangeColumn && RangeFilterUtils.passes(filter, data));
-
-    if (!passes) {
-      answer = false;
-      break;
-    }
-  }
-
-  return answer;
 };
 
 Reducer.saveToLocalStorage = filters => {
