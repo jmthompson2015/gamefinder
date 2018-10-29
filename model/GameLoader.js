@@ -19,12 +19,12 @@ GameLoader.load = store =>
       store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
       const start1 = Date.now();
 
-      GameLoader.loadGameSummaries(store).then(gameSummaries => {
+      GameLoader.loadGameSummaries(store).then(() => {
         const end1 = Date.now();
         store.dispatch(ActionCreator.setSummaryTime(end1 - start1));
         const start2 = Date.now();
 
-        GameLoader.loadGameDetails(store, gameSummaries).then(() => {
+        GameLoader.loadGameDetails(store).then(() => {
           const end2 = Date.now();
           store.dispatch(ActionCreator.setDetailTime(end2 - start2));
           resolve();
@@ -52,7 +52,7 @@ GameLoader.loadCollections = store =>
     });
   });
 
-GameLoader.loadGameDetails = (store, gameSummaries) =>
+GameLoader.loadGameDetails = store =>
   new Promise(resolve => {
     const receiveDetailData = gameDetails => {
       store.dispatch(ActionCreator.addGameDetails(gameDetails));
@@ -64,7 +64,7 @@ GameLoader.loadGameDetails = (store, gameSummaries) =>
     };
 
     // Fetch a game detail for each game summary.
-    const gameIds = R.map(gameSummary => gameSummary.id, gameSummaries);
+    const gameIds = Selector.gameIdsFromCollectionsAndSummaries(store.getState());
 
     const needGameDetailIds = gameIds.filter(
       gameId => Selector.findGameDetailById(store.getState(), gameId) === undefined,

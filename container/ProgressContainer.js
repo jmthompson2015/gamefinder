@@ -4,20 +4,16 @@ import Selector from "../state/Selector.js";
 
 import ProgressUI from "../view/ProgressUI.js";
 
-const mapStateToProps = state => {
-  const gameTotal = Selector.gameTotal(state);
-
-  return {
-    collectionCount: Object.keys(state.userToReceivedMap).length,
-    collectionTotal: Object.keys(User).length,
-    collectionTime: state.collectionTime,
-    summaryCount: Object.keys(state.gameToSummary).length,
-    summaryTotal: gameTotal,
-    summaryTime: state.summaryTime,
-    detailCount: Object.keys(state.gameToDetail).length,
-    detailTotal: gameTotal,
-    detailTime: state.detailTime
-  };
-};
+const mapStateToProps = state => ({
+  collectionCount: Object.keys(state.userToReceivedMap).length,
+  collectionTotal: Object.keys(User).length,
+  collectionTime: state.collectionTime,
+  summaryCount: Object.keys(state.gameToSummary).length,
+  summaryTotal: Selector.expectedSummaryCount(state),
+  summaryTime: state.summaryTime,
+  detailCount: Object.keys(state.gameToDetail).length,
+  detailTotal: Selector.expectedDetailCount(state),
+  detailTime: state.detailTime
+});
 
 export default ReactRedux.connect(mapStateToProps)(ProgressUI);

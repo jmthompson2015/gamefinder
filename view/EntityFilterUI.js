@@ -50,7 +50,8 @@ class EntityFilterUI extends React.Component {
     const values = Object.values(entityMap);
     sortEntities(values);
 
-    const labelFunction = value => `${value.name.replace(/ /g, NBSP)}${NBSP}(${value.count})`;
+    const labelFunction = value =>
+      value && value.name ? `${value.name.replace(/ /g, NBSP)}${NBSP}(${value.count})` : undefined;
     const initialValues =
       filter && filter.values.length > 0 ? R.map(id => entityMap[id], filter.values) : [];
 

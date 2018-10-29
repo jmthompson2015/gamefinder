@@ -45,9 +45,13 @@ Reducer.root = (state, action) => {
       newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
       newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameDetails);
       console.log(
-        `Reducer ADD_GAME_DETAILS Selector.gameTotal(state) = ${Selector.gameTotal(state)}`
+        `Reducer ADD_GAME_DETAILS Selector.expectedDetailCount = ${Selector.expectedDetailCount(
+          state
+        )}`
       );
       console.log(`Reducer ADD_GAME_DETAILS newTableRows.length = ${newTableRows.length}`);
+      isDataLoaded = Selector.expectedDetailCount(state) === newTableRows.length;
+      newFilteredTableRows = Reducer.sortTableRows(newTableRows);
 
       newGameDetails = Object.values(newGameToDetail);
       newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
@@ -55,8 +59,6 @@ Reducer.root = (state, action) => {
       newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
       newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
 
-      isDataLoaded = Selector.gameTotal(state) === newTableRows.length;
-      newFilteredTableRows = Reducer.sortTableRows(newTableRows);
       return R.pipe(
         R.assoc("filteredTableRows", newFilteredTableRows),
         R.assoc("tableRows", newTableRows),

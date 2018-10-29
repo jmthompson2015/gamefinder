@@ -11,12 +11,13 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     );
   }
 
-  const { boardGameRank1, geekRating1, id } = gameSummary || {};
+  const { boardGameRank: boardGameRank1, geekRating: geekRating1, id: id1 } = gameSummary || {};
   const {
     averageWeight,
     bestWithPlayers,
     boardGameRank: boardGameRank2,
     geekRating: geekRating2,
+    id: id2,
     maxPlayers,
     maxPlayTime,
     minPlayers,
@@ -28,6 +29,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     mechanicIds
   } = gameDetail;
 
+  const id = id1 || id2;
   const boardGameRank = boardGameRank1 || boardGameRank2;
   const geekRating = geekRating1 || geekRating2;
 

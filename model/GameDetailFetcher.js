@@ -102,7 +102,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     XPathResult.STRING_TYPE,
     null
   );
-  const boardGameRank = boardGameRankCell.stringValue.trim();
+  const boardGameRank0 = boardGameRankCell.stringValue.trim();
 
   const titleCell = xmlDocument.evaluate(
     "name[@type='primary']/@value",
@@ -129,7 +129,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     XPathResult.STRING_TYPE,
     null
   );
-  const geekRating = geekRatingCell.stringValue.trim();
+  const geekRating0 = geekRatingCell.stringValue.trim();
 
   const minPlayersCell = xmlDocument.evaluate(
     "minplayers/@value",
@@ -178,6 +178,12 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
   );
   const averageWeight = averageWeightCell.stringValue.trim();
 
+  const boardGameRank1 = boardGameRank0 !== undefined ? parseInt(boardGameRank0, 10) : undefined;
+  const boardGameRank = !Number.isNaN(boardGameRank1) ? boardGameRank1 : undefined;
+
+  const geekRating1 = geekRating0 !== undefined ? Number(geekRating0, 10) : undefined;
+  const geekRating = !Number.isNaN(geekRating1) ? geekRating1 : undefined;
+
   const categories = parseEntities(xmlDocument, xmlFragment, "boardgamecategory");
   const designers = parseEntities(xmlDocument, xmlFragment, "boardgamedesigner");
   const mechanics = parseEntities(xmlDocument, xmlFragment, "boardgamemechanic");
@@ -188,10 +194,10 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
 
   return GameDetailState.create({
     id: parseInt(id, 10),
-    boardGameRank: parseInt(boardGameRank, 10),
+    boardGameRank,
     title,
     yearPublished: parseInt(yearPublished, 10),
-    geekRating: Number(geekRating),
+    geekRating,
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
     bestWithPlayers: parseInt(bestWithPlayers, 10),
