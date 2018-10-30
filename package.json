@@ -21,24 +21,28 @@
   },
   "homepage": "https://github.com/jmthompson2015/gamefinder#readme",
   "devDependencies": {
-    "eslint": "^5.7.0",
+    "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "qunit": "^2.7.1"
   },
   "dependencies": {
     "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
     "prop-types": "^15.6.2",
     "ramda": "^0.25.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-dom-factories": "^1.0.2",
-    "react-redux": "^5.0.7",
+    "react-redux": "^5.1.0",
     "redux": "^4.0.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
+    "seamless-immutable": "^7.1.4",
+    "tachyons": "^4.11.1",
     "xmldom": "^0.1.27",
     "xpath": "0.0.27"
   }
