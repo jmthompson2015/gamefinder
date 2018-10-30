@@ -43,21 +43,33 @@ Reducer.root = (state, action) => {
         action.gameDetails
       );
       newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
-      newTableRows = Reducer.addTableRows(state, state.tableRows, action.gameDetails);
+
       console.log(
         `Reducer ADD_GAME_DETAILS Selector.expectedDetailCount = ${Selector.expectedDetailCount(
           state
         )}`
       );
-      console.log(`Reducer ADD_GAME_DETAILS newTableRows.length = ${newTableRows.length}`);
-      isDataLoaded = Selector.expectedDetailCount(state) === newTableRows.length;
-      newFilteredTableRows = Reducer.sortTableRows(newTableRows);
+      console.log(
+        `Reducer ADD_GAME_DETAILS newGameToDetail length = ${Object.keys(newGameToDetail).length}`
+      );
+      isDataLoaded = Selector.expectedDetailCount(state) === Object.keys(newGameToDetail).length;
 
-      newGameDetails = Object.values(newGameToDetail);
-      newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
-      newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
-      newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
-      newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
+      if (isDataLoaded) {
+        newGameDetails = Object.values(newGameToDetail);
+        newTableRows = Reducer.addTableRows(state, state.tableRows, newGameDetails);
+        newFilteredTableRows = Reducer.sortTableRows(newTableRows);
+        newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
+        newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
+        newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
+        newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
+      } else {
+        newTableRows = [];
+        newFilteredTableRows = [];
+        newCategoryMap = {};
+        newDesignerMap = {};
+        newMechanicMap = {};
+        newUserMap = {};
+      }
 
       return R.pipe(
         R.assoc("filteredTableRows", newFilteredTableRows),
