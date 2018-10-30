@@ -16,7 +16,7 @@ QUnit.test("Designer properties Stefan Feld", assert => {
 
 QUnit.test("Designer keys", assert => {
   // Setup.
-  const length = 698;
+  const length = 727;
 
   // Run.
   const keys = Object.keys(Designer);

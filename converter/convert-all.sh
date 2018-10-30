@@ -1,3 +1,5 @@
+node GameCollectionFetcher
+
 node GameSummaryFetcher
 
 node GameDetailFetcher

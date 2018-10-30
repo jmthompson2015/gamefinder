@@ -4,7 +4,7 @@ const GameDetail = {
     "boardGameRank": 199,
     "title": "Die Macher",
     "yearPublished": 1986,
-    "geekRating": 7.21807,
+    "geekRating": 7.21839,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -32,7 +32,7 @@ const GameDetail = {
     "boardGameRank": 180,
     "title": "Samurai",
     "yearPublished": 1998,
-    "geekRating": 7.26213,
+    "geekRating": 7.26209,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -58,7 +58,7 @@ const GameDetail = {
     "boardGameRank": 214,
     "title": "Acquire",
     "yearPublished": 1964,
-    "geekRating": 7.19431,
+    "geekRating": 7.19421,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -79,10 +79,10 @@ const GameDetail = {
   },
   "10": {
     "id": 10,
-    "boardGameRank": 823,
+    "boardGameRank": 824,
     "title": "Elfenland",
     "yearPublished": 1998,
-    "geekRating": 6.54633,
+    "geekRating": 6.54644,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -108,7 +108,7 @@ const GameDetail = {
     "boardGameRank": 379,
     "title": "Bohnanza",
     "yearPublished": 1997,
-    "geekRating": 6.95868,
+    "geekRating": 6.9587,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 5,
@@ -134,7 +134,7 @@ const GameDetail = {
     "boardGameRank": 137,
     "title": "Ra",
     "yearPublished": 1999,
-    "geekRating": 7.33761,
+    "geekRating": 7.3377,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -159,13 +159,13 @@ const GameDetail = {
     "boardGameRank": 293,
     "title": "Catan",
     "yearPublished": 1995,
-    "geekRating": 7.06041,
+    "geekRating": 7.06016,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 2.3452,
+    "averageWeight": 2.3451,
     "categoryIds": [
       1026
     ],
@@ -182,10 +182,10 @@ const GameDetail = {
   },
   "15": {
     "id": 15,
-    "boardGameRank": 840,
+    "boardGameRank": 843,
     "title": "Cosmic Encounter",
     "yearPublished": 1977,
-    "geekRating": 6.5357,
+    "geekRating": 6.53591,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -213,7 +213,7 @@ const GameDetail = {
     "boardGameRank": 349,
     "title": "RoboRally",
     "yearPublished": 1994,
-    "geekRating": 6.99445,
+    "geekRating": 6.99435,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 5,
@@ -238,7 +238,7 @@ const GameDetail = {
   },
   "22": {
     "id": 22,
-    "boardGameRank": 981,
+    "boardGameRank": 980,
     "title": "Magic Realm",
     "yearPublished": 1979,
     "geekRating": 6.44783,
@@ -296,7 +296,7 @@ const GameDetail = {
     "boardGameRank": 646,
     "title": "Can't Stop",
     "yearPublished": 1980,
-    "geekRating": 6.69818,
+    "geekRating": 6.69826,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -319,7 +319,7 @@ const GameDetail = {
     "boardGameRank": 71,
     "title": "Tigris & Euphrates",
     "yearPublished": 1997,
-    "geekRating": 7.57203,
+    "geekRating": 7.57188,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -343,10 +343,10 @@ const GameDetail = {
   },
   "45": {
     "id": 45,
-    "boardGameRank": 583,
+    "boardGameRank": 582,
     "title": "Liar's Dice",
     "yearPublished": 1800,
-    "geekRating": 6.76214,
+    "geekRating": 6.76238,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -374,7 +374,7 @@ const GameDetail = {
     "boardGameRank": 458,
     "title": "Medici",
     "yearPublished": 1995,
-    "geekRating": 6.88113,
+    "geekRating": 6.88149,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -398,7 +398,7 @@ const GameDetail = {
     "boardGameRank": 368,
     "title": "Chinatown",
     "yearPublished": 1999,
-    "geekRating": 6.9753,
+    "geekRating": 6.97558,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -424,7 +424,7 @@ const GameDetail = {
     "boardGameRank": 294,
     "title": "Lost Cities",
     "yearPublished": 1999,
-    "geekRating": 7.05953,
+    "geekRating": 7.05962,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -448,7 +448,7 @@ const GameDetail = {
     "boardGameRank": 586,
     "title": "Ricochet Robots",
     "yearPublished": 1999,
-    "geekRating": 6.75599,
+    "geekRating": 6.75593,
     "minPlayers": 1,
     "maxPlayers": 99,
     "bestWithPlayers": 4,
@@ -474,7 +474,7 @@ const GameDetail = {
     "boardGameRank": 213,
     "title": "Tikal",
     "yearPublished": 1999,
-    "geekRating": 7.19501,
+    "geekRating": 7.19486,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -501,7 +501,7 @@ const GameDetail = {
   },
   "60": {
     "id": 60,
-    "boardGameRank": 629,
+    "boardGameRank": 631,
     "title": "Vinci",
     "yearPublished": 1999,
     "geekRating": 6.72002,
@@ -527,10 +527,10 @@ const GameDetail = {
   },
   "66": {
     "id": 66,
-    "boardGameRank": 849,
+    "boardGameRank": 851,
     "title": "Lowenherz",
     "yearPublished": 1997,
-    "geekRating": 6.53221,
+    "geekRating": 6.53235,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -555,7 +555,7 @@ const GameDetail = {
     "boardGameRank": 232,
     "title": "Civilization",
     "yearPublished": 1980,
-    "geekRating": 7.16785,
+    "geekRating": 7.16771,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 7,
@@ -579,12 +579,38 @@ const GameDetail = {
       2008
     ]
   },
+  "74": {
+    "id": 74,
+    "boardGameRank": 3422,
+    "title": "Apples to Apples",
+    "yearPublished": 1999,
+    "geekRating": 5.7732,
+    "minPlayers": 4,
+    "maxPlayers": 10,
+    "bestWithPlayers": 6,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.164,
+    "categoryIds": [
+      1002,
+      1079,
+      1030
+    ],
+    "designerIds": [
+      7034,
+      294
+    ],
+    "mechanicIds": [
+      2040,
+      2020
+    ]
+  },
   "88": {
     "id": 88,
-    "boardGameRank": 422,
+    "boardGameRank": 423,
     "title": "Torres",
     "yearPublished": 1999,
-    "geekRating": 6.91975,
+    "geekRating": 6.91964,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -613,7 +639,7 @@ const GameDetail = {
     "boardGameRank": 108,
     "title": "Paths of Glory",
     "yearPublished": 1999,
-    "geekRating": 7.41627,
+    "geekRating": 7.4166,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -638,7 +664,7 @@ const GameDetail = {
     "boardGameRank": 56,
     "title": "El Grande",
     "yearPublished": 1995,
-    "geekRating": 7.64085,
+    "geekRating": 7.64052,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -689,7 +715,7 @@ const GameDetail = {
   },
   "103": {
     "id": 103,
-    "boardGameRank": 817,
+    "boardGameRank": 818,
     "title": "Titan",
     "yearPublished": 1980,
     "geekRating": 6.54839,
@@ -720,7 +746,7 @@ const GameDetail = {
     "boardGameRank": 785,
     "title": "Colossal Arena",
     "yearPublished": 1997,
-    "geekRating": 6.58142,
+    "geekRating": 6.5815,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -767,10 +793,10 @@ const GameDetail = {
   },
   "112": {
     "id": 112,
-    "boardGameRank": 813,
+    "boardGameRank": 814,
     "title": "Condottiere",
     "yearPublished": 1995,
-    "geekRating": 6.55744,
+    "geekRating": 6.55743,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -796,7 +822,7 @@ const GameDetail = {
   },
   "115": {
     "id": 115,
-    "boardGameRank": 967,
+    "boardGameRank": 968,
     "title": "I'm the Boss!",
     "yearPublished": 1994,
     "geekRating": 6.4526,
@@ -825,13 +851,13 @@ const GameDetail = {
     "boardGameRank": 220,
     "title": "Modern Art",
     "yearPublished": 1992,
-    "geekRating": 7.18628,
+    "geekRating": 7.18632,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.3163,
+    "averageWeight": 2.3161,
     "categoryIds": [
       1002,
       1021
@@ -850,7 +876,7 @@ const GameDetail = {
     "boardGameRank": 223,
     "title": "Dune",
     "yearPublished": 1979,
-    "geekRating": 7.18481,
+    "geekRating": 7.18499,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -884,7 +910,7 @@ const GameDetail = {
     "boardGameRank": 700,
     "title": "Primordial Soup",
     "yearPublished": 1997,
-    "geekRating": 6.6462,
+    "geekRating": 6.64622,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -910,7 +936,7 @@ const GameDetail = {
     "boardGameRank": 327,
     "title": "PitchCar",
     "yearPublished": 1995,
-    "geekRating": 7.02034,
+    "geekRating": 7.02023,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -933,7 +959,7 @@ const GameDetail = {
   },
   "152": {
     "id": 152,
-    "boardGameRank": 872,
+    "boardGameRank": 871,
     "title": "Mu & More",
     "yearPublished": 1995,
     "geekRating": 6.51079,
@@ -988,13 +1014,13 @@ const GameDetail = {
     "boardGameRank": 419,
     "title": "Chess",
     "yearPublished": 1475,
-    "geekRating": 6.92173,
+    "geekRating": 6.92193,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 3.739,
+    "averageWeight": 3.7393,
     "categoryIds": [
       1009
     ],
@@ -1010,13 +1036,13 @@ const GameDetail = {
     "boardGameRank": 262,
     "title": "For Sale",
     "yearPublished": 1997,
-    "geekRating": 7.10613,
+    "geekRating": 7.10605,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.2767,
+    "averageWeight": 1.2765,
     "categoryIds": [
       1002,
       1021
@@ -1034,7 +1060,7 @@ const GameDetail = {
     "boardGameRank": 599,
     "title": "Formula De",
     "yearPublished": 1991,
-    "geekRating": 6.74749,
+    "geekRating": 6.74752,
     "minPlayers": 2,
     "maxPlayers": 10,
     "bestWithPlayers": 5,
@@ -1063,7 +1089,7 @@ const GameDetail = {
     "boardGameRank": 128,
     "title": "Go",
     "yearPublished": -2200,
-    "geekRating": 7.37168,
+    "geekRating": 7.37172,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -1085,7 +1111,7 @@ const GameDetail = {
     "boardGameRank": 888,
     "title": "Kremlin",
     "yearPublished": 1986,
-    "geekRating": 6.50194,
+    "geekRating": 6.50208,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -1106,10 +1132,10 @@ const GameDetail = {
   },
   "199": {
     "id": 199,
-    "boardGameRank": 999,
+    "boardGameRank": 998,
     "title": "Manhattan",
     "yearPublished": 1994,
-    "geekRating": 6.43738,
+    "geekRating": 6.43769,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -1132,7 +1158,7 @@ const GameDetail = {
     "boardGameRank": 127,
     "title": "Tichu",
     "yearPublished": 1991,
-    "geekRating": 7.37325,
+    "geekRating": 7.37352,
     "minPlayers": 4,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -1154,10 +1180,10 @@ const GameDetail = {
   },
   "220": {
     "id": 220,
-    "boardGameRank": 724,
+    "boardGameRank": 723,
     "title": "High Society",
     "yearPublished": 1995,
-    "geekRating": 6.62984,
+    "geekRating": 6.63082,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -1201,10 +1227,10 @@ const GameDetail = {
   },
   "224": {
     "id": 224,
-    "boardGameRank": 624,
+    "boardGameRank": 625,
     "title": "History of the World",
     "yearPublished": 1991,
-    "geekRating": 6.72284,
+    "geekRating": 6.72304,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -1231,10 +1257,10 @@ const GameDetail = {
   },
   "230": {
     "id": 230,
-    "boardGameRank": 738,
+    "boardGameRank": 739,
     "title": "Merchant of Venus",
     "yearPublished": 1988,
-    "geekRating": 6.62119,
+    "geekRating": 6.62137,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -1261,7 +1287,7 @@ const GameDetail = {
   },
   "234": {
     "id": 234,
-    "boardGameRank": 150,
+    "boardGameRank": 151,
     "title": "Hannibal: Rome vs. Carthage",
     "yearPublished": 1996,
     "geekRating": 7.31286,
@@ -1292,7 +1318,7 @@ const GameDetail = {
     "boardGameRank": 573,
     "title": "Britannia",
     "yearPublished": 1986,
-    "geekRating": 6.77835,
+    "geekRating": 6.77856,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -1316,10 +1342,10 @@ const GameDetail = {
   },
   "242": {
     "id": 242,
-    "boardGameRank": 998,
+    "boardGameRank": 999,
     "title": "Junta",
     "yearPublished": 1978,
-    "geekRating": 6.43756,
+    "geekRating": 6.4373,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 7,
@@ -1357,7 +1383,7 @@ const GameDetail = {
     "boardGameRank": 212,
     "title": "Advanced Squad Leader",
     "yearPublished": 1985,
-    "geekRating": 7.19558,
+    "geekRating": 7.19553,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -1381,9 +1407,33 @@ const GameDetail = {
       2015
     ]
   },
+  "258": {
+    "id": 258,
+    "boardGameRank": 6986,
+    "title": "Fluxx",
+    "yearPublished": 1997,
+    "geekRating": 5.57946,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 5,
+    "maxPlayTime": 30,
+    "averageWeight": 1.3908,
+    "categoryIds": [
+      1002
+    ],
+    "designerIds": [
+      122,
+      164
+    ],
+    "mechanicIds": [
+      2040,
+      2004
+    ]
+  },
   "278": {
     "id": 278,
-    "boardGameRank": 768,
+    "boardGameRank": 769,
     "title": "Catan Card Game",
     "yearPublished": 1996,
     "geekRating": 6.59591,
@@ -1408,12 +1458,43 @@ const GameDetail = {
       2008
     ]
   },
+  "325": {
+    "id": 325,
+    "boardGameRank": null,
+    "title": "Catan: Seafarers",
+    "yearPublished": 1997,
+    "geekRating": 6.96559,
+    "minPlayers": 3,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 2.4086,
+    "categoryIds": [
+      1015,
+      1042,
+      1020,
+      1008,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "327": {
     "id": 327,
-    "boardGameRank": 721,
+    "boardGameRank": 722,
     "title": "Loopin' Louie",
     "yearPublished": 1992,
-    "geekRating": 6.63177,
+    "geekRating": 6.6317,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -1439,7 +1520,7 @@ const GameDetail = {
   },
   "354": {
     "id": 354,
-    "boardGameRank": 830,
+    "boardGameRank": 831,
     "title": "Sticheln",
     "yearPublished": 1993,
     "geekRating": 6.54339,
@@ -1466,7 +1547,7 @@ const GameDetail = {
     "boardGameRank": 369,
     "title": "Schotten Totten",
     "yearPublished": 1999,
-    "geekRating": 6.97305,
+    "geekRating": 6.9729,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -1487,10 +1568,10 @@ const GameDetail = {
   },
   "394": {
     "id": 394,
-    "boardGameRank": 941,
+    "boardGameRank": 942,
     "title": "Kahuna",
     "yearPublished": 1998,
-    "geekRating": 6.4718,
+    "geekRating": 6.47191,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -1516,7 +1597,7 @@ const GameDetail = {
     "boardGameRank": 175,
     "title": "1830: Railways & Robber Barons",
     "yearPublished": 1986,
-    "geekRating": 7.27389,
+    "geekRating": 7.27405,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -1569,13 +1650,13 @@ const GameDetail = {
     "boardGameRank": 595,
     "title": "6 nimmt!",
     "yearPublished": 1994,
-    "geekRating": 6.7535,
+    "geekRating": 6.75327,
     "minPlayers": 2,
     "maxPlayers": 10,
     "bestWithPlayers": 5,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 1.2227,
+    "averageWeight": 1.2225,
     "categoryIds": [
       1002
     ],
@@ -1592,13 +1673,13 @@ const GameDetail = {
     "boardGameRank": 153,
     "title": "Magic: The Gathering",
     "yearPublished": 1993,
-    "geekRating": 7.31034,
+    "geekRating": 7.31044,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 20,
     "maxPlayTime": 20,
-    "averageWeight": 3.1706,
+    "averageWeight": 3.1705,
     "categoryIds": [
       1002,
       1044,
@@ -1618,7 +1699,7 @@ const GameDetail = {
     "boardGameRank": 321,
     "title": "Taj Mahal",
     "yearPublished": 2000,
-    "geekRating": 7.02576,
+    "geekRating": 7.02569,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -1642,10 +1723,10 @@ const GameDetail = {
   },
   "478": {
     "id": 478,
-    "boardGameRank": 333,
+    "boardGameRank": 334,
     "title": "Citadels",
     "yearPublished": 2000,
-    "geekRating": 7.01556,
+    "geekRating": 7.01563,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 5,
@@ -1730,7 +1811,7 @@ const GameDetail = {
     "boardGameRank": 543,
     "title": "Web of Power",
     "yearPublished": 2000,
-    "geekRating": 6.80018,
+    "geekRating": 6.80028,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -1753,7 +1834,7 @@ const GameDetail = {
   },
   "492": {
     "id": 492,
-    "boardGameRank": 874,
+    "boardGameRank": 875,
     "title": "Aladdin's Dragons",
     "yearPublished": 2000,
     "geekRating": 6.50907,
@@ -1783,7 +1864,7 @@ const GameDetail = {
     "boardGameRank": 440,
     "title": "Through the Desert",
     "yearPublished": 1998,
-    "geekRating": 6.90357,
+    "geekRating": 6.90349,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -1805,10 +1886,10 @@ const GameDetail = {
   },
   "521": {
     "id": 521,
-    "boardGameRank": 76,
+    "boardGameRank": 77,
     "title": "Crokinole",
     "yearPublished": 1876,
-    "geekRating": 7.52914,
+    "geekRating": 7.52965,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -1876,7 +1957,7 @@ const GameDetail = {
     "boardGameRank": 652,
     "title": "Battle Cry",
     "yearPublished": 2000,
-    "geekRating": 6.69277,
+    "geekRating": 6.69213,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -1898,7 +1979,7 @@ const GameDetail = {
   },
   "554": {
     "id": 554,
-    "boardGameRank": 589,
+    "boardGameRank": 590,
     "title": "La Città",
     "yearPublished": 2000,
     "geekRating": 6.75518,
@@ -1927,10 +2008,10 @@ const GameDetail = {
   },
   "555": {
     "id": 555,
-    "boardGameRank": 126,
+    "boardGameRank": 125,
     "title": "The Princes of Florence",
     "yearPublished": 2000,
-    "geekRating": 7.37405,
+    "geekRating": 7.37423,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -1956,7 +2037,7 @@ const GameDetail = {
     "boardGameRank": 392,
     "title": "Up Front",
     "yearPublished": 1983,
-    "geekRating": 6.94564,
+    "geekRating": 6.94566,
     "minPlayers": 2,
     "maxPlayers": 3,
     "bestWithPlayers": 2,
@@ -1980,10 +2061,10 @@ const GameDetail = {
   },
   "594": {
     "id": 594,
-    "boardGameRank": 978,
+    "boardGameRank": 977,
     "title": "Sleuth",
     "yearPublished": 1971,
-    "geekRating": 6.44863,
+    "geekRating": 6.44907,
     "minPlayers": 3,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -2006,10 +2087,10 @@ const GameDetail = {
   },
   "681": {
     "id": 681,
-    "boardGameRank": 832,
+    "boardGameRank": 833,
     "title": "Quarto",
     "yearPublished": 1991,
-    "geekRating": 6.54124,
+    "geekRating": 6.54122,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -2028,10 +2109,10 @@ const GameDetail = {
   },
   "699": {
     "id": 699,
-    "boardGameRank": 555,
+    "boardGameRank": 556,
     "title": "HeroQuest",
     "yearPublished": 1989,
-    "geekRating": 6.79194,
+    "geekRating": 6.79165,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -2091,7 +2172,7 @@ const GameDetail = {
     "boardGameRank": 185,
     "title": "Battle Line",
     "yearPublished": 2000,
-    "geekRating": 7.245,
+    "geekRating": 7.24506,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -2116,7 +2197,7 @@ const GameDetail = {
     "boardGameRank": 141,
     "title": "Carcassonne",
     "yearPublished": 2000,
-    "geekRating": 7.32979,
+    "geekRating": 7.32971,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -2138,10 +2219,10 @@ const GameDetail = {
   },
   "823": {
     "id": 823,
-    "boardGameRank": 722,
+    "boardGameRank": 721,
     "title": "Lord of the Rings",
     "yearPublished": 2000,
-    "geekRating": 6.63163,
+    "geekRating": 6.63178,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -2166,10 +2247,10 @@ const GameDetail = {
   },
   "826": {
     "id": 826,
-    "boardGameRank": 871,
+    "boardGameRank": 872,
     "title": "Cartagena",
     "yearPublished": 2000,
-    "geekRating": 6.51082,
+    "geekRating": 6.51075,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -2190,10 +2271,10 @@ const GameDetail = {
   },
   "833": {
     "id": 833,
-    "boardGameRank": 727,
+    "boardGameRank": 726,
     "title": "For the People",
     "yearPublished": 1998,
-    "geekRating": 6.62863,
+    "geekRating": 6.62922,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -2216,7 +2297,7 @@ const GameDetail = {
   },
   "855": {
     "id": 855,
-    "boardGameRank": 753,
+    "boardGameRank": 754,
     "title": "Java",
     "yearPublished": 2000,
     "geekRating": 6.60907,
@@ -2295,6 +2376,37 @@ const GameDetail = {
       2004
     ]
   },
+  "891": {
+    "id": 891,
+    "boardGameRank": 6670,
+    "title": "Cranium",
+    "yearPublished": 1998,
+    "geekRating": 5.58684,
+    "minPlayers": 4,
+    "maxPlayers": 16,
+    "bestWithPlayers": 8,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 1.4367,
+    "categoryIds": [
+      1030,
+      1028,
+      1027,
+      1025
+    ],
+    "designerIds": [
+      4828,
+      4827
+    ],
+    "mechanicIds": [
+      2073,
+      2039,
+      2055,
+      2019,
+      2035,
+      2038
+    ]
+  },
   "902": {
     "id": 902,
     "boardGameRank": 854,
@@ -2344,6 +2456,35 @@ const GameDetail = {
     "mechanicIds": [
       2012,
       2004
+    ]
+  },
+  "926": {
+    "id": 926,
+    "boardGameRank": null,
+    "title": "Catan: Cities & Knights",
+    "yearPublished": 1998,
+    "geekRating": 7.22732,
+    "minPlayers": 3,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 2.8989,
+    "categoryIds": [
+      1042,
+      1035,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008
     ]
   },
   "939": {
@@ -2404,7 +2545,7 @@ const GameDetail = {
   },
   "1041": {
     "id": 1041,
-    "boardGameRank": 547,
+    "boardGameRank": 546,
     "title": "San Marco",
     "yearPublished": 2001,
     "geekRating": 6.79922,
@@ -2481,6 +2622,31 @@ const GameDetail = {
       2015
     ]
   },
+  "1198": {
+    "id": 1198,
+    "boardGameRank": 1260,
+    "title": "SET",
+    "yearPublished": 1988,
+    "geekRating": 6.30706,
+    "minPlayers": 2,
+    "maxPlayers": 20,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.6912,
+    "categoryIds": [
+      1002,
+      1028,
+      1037
+    ],
+    "designerIds": [
+      620
+    ],
+    "mechanicIds": [
+      2060,
+      2004
+    ]
+  },
   "1231": {
     "id": 1231,
     "boardGameRank": 862,
@@ -2506,7 +2672,7 @@ const GameDetail = {
   },
   "1261": {
     "id": 1261,
-    "boardGameRank": 770,
+    "boardGameRank": 772,
     "title": "Medina",
     "yearPublished": 2001,
     "geekRating": 6.5952,
@@ -2527,9 +2693,36 @@ const GameDetail = {
       2002
     ]
   },
+  "1294": {
+    "id": 1294,
+    "boardGameRank": 7989,
+    "title": "Clue",
+    "yearPublished": 1949,
+    "geekRating": 5.56039,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 1.6694,
+    "categoryIds": [
+      1023,
+      1039,
+      1064,
+      1040
+    ],
+    "designerIds": [
+      660
+    ],
+    "mechanicIds": [
+      2676,
+      2047,
+      2035
+    ]
+  },
   "1301": {
     "id": 1301,
-    "boardGameRank": 609,
+    "boardGameRank": 610,
     "title": "Netrunner",
     "yearPublished": 1996,
     "geekRating": 6.73665,
@@ -2553,10 +2746,10 @@ const GameDetail = {
   },
   "1345": {
     "id": 1345,
-    "boardGameRank": 531,
+    "boardGameRank": 530,
     "title": "Genoa",
     "yearPublished": 2001,
-    "geekRating": 6.8097,
+    "geekRating": 6.80973,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -2581,10 +2774,10 @@ const GameDetail = {
   },
   "1353": {
     "id": 1353,
-    "boardGameRank": 399,
+    "boardGameRank": 400,
     "title": "Time's Up!",
     "yearPublished": 1999,
-    "geekRating": 6.93895,
+    "geekRating": 6.93881,
     "minPlayers": 4,
     "maxPlayers": 18,
     "bestWithPlayers": 6,
@@ -2606,10 +2799,10 @@ const GameDetail = {
   },
   "1382": {
     "id": 1382,
-    "boardGameRank": 693,
+    "boardGameRank": 694,
     "title": "Winner's Circle",
     "yearPublished": 2001,
-    "geekRating": 6.65301,
+    "geekRating": 6.65326,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -2631,10 +2824,10 @@ const GameDetail = {
   },
   "1403": {
     "id": 1403,
-    "boardGameRank": 957,
+    "boardGameRank": 956,
     "title": "Turn the Tide",
     "yearPublished": 1997,
-    "geekRating": 6.46252,
+    "geekRating": 6.46264,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -2652,9 +2845,37 @@ const GameDetail = {
       2020
     ]
   },
+  "1406": {
+    "id": 1406,
+    "boardGameRank": 16118,
+    "title": "Monopoly",
+    "yearPublished": 1933,
+    "geekRating": 4.32978,
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 180,
+    "averageWeight": 1.6709,
+    "categoryIds": [
+      1021,
+      1026
+    ],
+    "designerIds": [
+      1268,
+      3109
+    ],
+    "mechanicIds": [
+      2012,
+      2685,
+      2035,
+      2004,
+      2008
+    ]
+  },
   "1465": {
     "id": 1465,
-    "boardGameRank": 692,
+    "boardGameRank": 693,
     "title": "Wizard",
     "yearPublished": 1984,
     "geekRating": 6.65373,
@@ -2704,10 +2925,10 @@ const GameDetail = {
   },
   "1513": {
     "id": 1513,
-    "boardGameRank": 356,
+    "boardGameRank": 358,
     "title": "The Republic of Rome",
     "yearPublished": 1990,
-    "geekRating": 6.98846,
+    "geekRating": 6.98801,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -2735,7 +2956,7 @@ const GameDetail = {
   },
   "1540": {
     "id": 1540,
-    "boardGameRank": 866,
+    "boardGameRank": 867,
     "title": "BattleTech",
     "yearPublished": 1985,
     "geekRating": 6.51302,
@@ -2764,7 +2985,7 @@ const GameDetail = {
   },
   "1608": {
     "id": 1608,
-    "boardGameRank": 706,
+    "boardGameRank": 705,
     "title": "Ambush!",
     "yearPublished": 1983,
     "geekRating": 6.64225,
@@ -2793,10 +3014,10 @@ const GameDetail = {
   },
   "1634": {
     "id": 1634,
-    "boardGameRank": 682,
+    "boardGameRank": 680,
     "title": "Warhammer Quest",
     "yearPublished": 1995,
-    "geekRating": 6.65974,
+    "geekRating": 6.66051,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -2823,10 +3044,10 @@ const GameDetail = {
   },
   "1822": {
     "id": 1822,
-    "boardGameRank": 610,
+    "boardGameRank": 609,
     "title": "Wilderness War",
     "yearPublished": 2001,
-    "geekRating": 6.73649,
+    "geekRating": 6.73699,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -2858,7 +3079,7 @@ const GameDetail = {
     "bestWithPlayers": 4,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 2.5828,
+    "averageWeight": 2.5814,
     "categoryIds": [
       1020,
       1026,
@@ -2874,7 +3095,7 @@ const GameDetail = {
   },
   "1915": {
     "id": 1915,
-    "boardGameRank": 950,
+    "boardGameRank": 951,
     "title": "Middle-earth",
     "yearPublished": 1995,
     "geekRating": 6.46566,
@@ -2908,7 +3129,7 @@ const GameDetail = {
     "boardGameRank": 963,
     "title": "The Civil War",
     "yearPublished": 1983,
-    "geekRating": 6.45765,
+    "geekRating": 6.45841,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -2932,10 +3153,10 @@ const GameDetail = {
   },
   "2093": {
     "id": 2093,
-    "boardGameRank": 645,
+    "boardGameRank": 644,
     "title": "Mahjong",
     "yearPublished": 1850,
-    "geekRating": 6.69924,
+    "geekRating": 6.69968,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -2955,7 +3176,7 @@ const GameDetail = {
   },
   "2122": {
     "id": 2122,
-    "boardGameRank": 969,
+    "boardGameRank": 970,
     "title": "Vampire: The Eternal Struggle",
     "yearPublished": 1994,
     "geekRating": 6.4519,
@@ -2987,7 +3208,7 @@ const GameDetail = {
     "boardGameRank": 452,
     "title": "Space Hulk",
     "yearPublished": 1989,
-    "geekRating": 6.88796,
+    "geekRating": 6.88822,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -3074,7 +3295,7 @@ const GameDetail = {
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 2.6854,
+    "averageWeight": 2.6835,
     "categoryIds": [
       1009
     ],
@@ -3107,18 +3328,40 @@ const GameDetail = {
       2040
     ]
   },
+  "2448": {
+    "id": 2448,
+    "boardGameRank": 3496,
+    "title": "Kalah",
+    "yearPublished": 700,
+    "geekRating": 5.76483,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 10,
+    "maxPlayTime": 10,
+    "averageWeight": 1.6382,
+    "categoryIds": [
+      1009
+    ],
+    "designerIds": [
+      98735
+    ],
+    "mechanicIds": [
+      2078
+    ]
+  },
   "2453": {
     "id": 2453,
     "boardGameRank": 549,
     "title": "Blokus",
     "yearPublished": 2000,
-    "geekRating": 6.79788,
+    "geekRating": 6.79761,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 20,
     "maxPlayTime": 20,
-    "averageWeight": 1.786,
+    "averageWeight": 1.7854,
     "categoryIds": [
       1009,
       1086
@@ -3134,10 +3377,10 @@ const GameDetail = {
   },
   "2507": {
     "id": 2507,
-    "boardGameRank": 729,
+    "boardGameRank": 730,
     "title": "Liberte",
     "yearPublished": 2001,
-    "geekRating": 6.62741,
+    "geekRating": 6.62708,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -3163,7 +3406,7 @@ const GameDetail = {
     "boardGameRank": 66,
     "title": "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases",
     "yearPublished": 1981,
-    "geekRating": 7.58986,
+    "geekRating": 7.58951,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 2,
@@ -3192,7 +3435,7 @@ const GameDetail = {
     "boardGameRank": 34,
     "title": "Power Grid",
     "yearPublished": 2004,
-    "geekRating": 7.81583,
+    "geekRating": 7.81555,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -3216,13 +3459,13 @@ const GameDetail = {
     "boardGameRank": 237,
     "title": "Survive: Escape from Atlantis!",
     "yearPublished": 1982,
-    "geekRating": 7.15876,
+    "geekRating": 7.15874,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 45,
     "maxPlayTime": 60,
-    "averageWeight": 1.7114,
+    "averageWeight": 1.7117,
     "categoryIds": [
       1022,
       1089,
@@ -3247,13 +3490,13 @@ const GameDetail = {
     "boardGameRank": 206,
     "title": "Hive",
     "yearPublished": 2001,
-    "geekRating": 7.20701,
+    "geekRating": 7.20695,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 20,
     "maxPlayTime": 20,
-    "averageWeight": 2.3392,
+    "averageWeight": 2.339,
     "categoryIds": [
       1009,
       1089
@@ -3266,12 +3509,40 @@ const GameDetail = {
       2002
     ]
   },
+  "2807": {
+    "id": 2807,
+    "boardGameRank": null,
+    "title": "Catan: 5-6 Player Extension",
+    "yearPublished": 1996,
+    "geekRating": 6.76676,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "bestWithPlayers": 5,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.3314,
+    "categoryIds": [
+      1042,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "2842": {
     "id": 2842,
     "boardGameRank": 922,
     "title": "TransAmerica",
     "yearPublished": 2001,
-    "geekRating": 6.48349,
+    "geekRating": 6.48386,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -3293,7 +3564,7 @@ const GameDetail = {
     "boardGameRank": 528,
     "title": "Mexica",
     "yearPublished": 2002,
-    "geekRating": 6.81637,
+    "geekRating": 6.81605,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -3319,7 +3590,7 @@ const GameDetail = {
   },
   "3072": {
     "id": 3072,
-    "boardGameRank": 863,
+    "boardGameRank": 864,
     "title": "Necromunda",
     "yearPublished": 1995,
     "geekRating": 6.51764,
@@ -3353,13 +3624,13 @@ const GameDetail = {
     "boardGameRank": 15,
     "title": "Puerto Rico",
     "yearPublished": 2002,
-    "geekRating": 7.93745,
+    "geekRating": 7.93727,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 150,
-    "averageWeight": 3.291,
+    "averageWeight": 3.2909,
     "categoryIds": [
       1029,
       1021,
@@ -3371,6 +3642,54 @@ const GameDetail = {
     "mechanicIds": [
       2079
     ]
+  },
+  "3090": {
+    "id": 3090,
+    "boardGameRank": 14584,
+    "title": "Doctor Who: The Game of Time & Space",
+    "yearPublished": 1980,
+    "geekRating": 5.47737,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 3,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 1.9091,
+    "categoryIds": [
+      1020,
+      1046,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      128
+    ],
+    "mechanicIds": [
+      2004
+    ]
+  },
+  "3122": {
+    "id": 3122,
+    "boardGameRank": 15921,
+    "title": "Doctor Who Collectible Card Game",
+    "yearPublished": 1996,
+    "geekRating": 5.35817,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 1.7778,
+    "categoryIds": [
+      1002,
+      1044,
+      1064
+    ],
+    "designerIds": [
+      1291,
+      1292
+    ],
+    "mechanicIds": []
   },
   "3201": {
     "id": 3201,
@@ -3406,10 +3725,10 @@ const GameDetail = {
   },
   "3284": {
     "id": 3284,
-    "boardGameRank": 933,
+    "boardGameRank": 932,
     "title": "Star Wars: Epic Duels",
     "yearPublished": 2002,
-    "geekRating": 6.47825,
+    "geekRating": 6.47852,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -3574,12 +3893,72 @@ const GameDetail = {
       2082
     ]
   },
+  "4101": {
+    "id": 4101,
+    "boardGameRank": null,
+    "title": "Catan: Cities & Knights - 5-6 Player Extension",
+    "yearPublished": 2000,
+    "geekRating": 6.62144,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "bestWithPlayers": 5,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.7436,
+    "categoryIds": [
+      1042,
+      1035,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008
+    ]
+  },
+  "4103": {
+    "id": 4103,
+    "boardGameRank": null,
+    "title": "Catan: Seafarers - 5-6 Player Extension",
+    "yearPublished": 1999,
+    "geekRating": 6.53875,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "bestWithPlayers": 5,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.4217,
+    "categoryIds": [
+      1015,
+      1042,
+      1020,
+      1008,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "4390": {
     "id": 4390,
     "boardGameRank": 401,
     "title": "Carcassonne: Hunters and Gatherers",
     "yearPublished": 2002,
-    "geekRating": 6.93656,
+    "geekRating": 6.93647,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -3599,10 +3978,10 @@ const GameDetail = {
   },
   "5404": {
     "id": 5404,
-    "boardGameRank": 268,
+    "boardGameRank": 269,
     "title": "Amun-Re",
     "yearPublished": 2003,
-    "geekRating": 7.09358,
+    "geekRating": 7.09377,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -3626,7 +4005,7 @@ const GameDetail = {
     "boardGameRank": 943,
     "title": "Balloon Cup",
     "yearPublished": 2003,
-    "geekRating": 6.47099,
+    "geekRating": 6.4712,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -3651,7 +4030,7 @@ const GameDetail = {
     "boardGameRank": 676,
     "title": "Domaine",
     "yearPublished": 2003,
-    "geekRating": 6.66459,
+    "geekRating": 6.66445,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -3676,7 +4055,7 @@ const GameDetail = {
     "boardGameRank": 495,
     "title": "Coloretto",
     "yearPublished": 2003,
-    "geekRating": 6.84738,
+    "geekRating": 6.84736,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -3698,7 +4077,7 @@ const GameDetail = {
   },
   "6205": {
     "id": 6205,
-    "boardGameRank": 958,
+    "boardGameRank": 959,
     "title": "Europe Engulfed",
     "yearPublished": 2003,
     "geekRating": 6.46156,
@@ -3725,10 +4104,10 @@ const GameDetail = {
   },
   "6249": {
     "id": 6249,
-    "boardGameRank": 403,
+    "boardGameRank": 404,
     "title": "Alhambra",
     "yearPublished": 2003,
-    "geekRating": 6.93373,
+    "geekRating": 6.93384,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -3780,7 +4159,7 @@ const GameDetail = {
     "boardGameRank": 336,
     "title": "A Game of Thrones (First Edition)",
     "yearPublished": 2003,
-    "geekRating": 7.01424,
+    "geekRating": 7.01412,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -3814,7 +4193,7 @@ const GameDetail = {
     "boardGameRank": 695,
     "title": "Zendo",
     "yearPublished": 2001,
-    "geekRating": 6.65161,
+    "geekRating": 6.65172,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -3837,7 +4216,7 @@ const GameDetail = {
   },
   "7480": {
     "id": 7480,
-    "boardGameRank": 896,
+    "boardGameRank": 898,
     "title": "Sword of Rome",
     "yearPublished": 2004,
     "geekRating": 6.49556,
@@ -3868,7 +4247,7 @@ const GameDetail = {
     "boardGameRank": 519,
     "title": "Carcassonne: The Castle",
     "yearPublished": 2003,
-    "geekRating": 6.82389,
+    "geekRating": 6.82391,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -3891,10 +4270,10 @@ const GameDetail = {
   },
   "7805": {
     "id": 7805,
-    "boardGameRank": 940,
+    "boardGameRank": 941,
     "title": "Fearsome Floors",
     "yearPublished": 2003,
-    "geekRating": 6.4725,
+    "geekRating": 6.47263,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 5,
@@ -3918,7 +4297,7 @@ const GameDetail = {
     "boardGameRank": 142,
     "title": "YINSH",
     "yearPublished": 2003,
-    "geekRating": 7.32711,
+    "geekRating": 7.32721,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -3938,7 +4317,7 @@ const GameDetail = {
   },
   "8045": {
     "id": 8045,
-    "boardGameRank": 627,
+    "boardGameRank": 628,
     "title": "Princes of the Renaissance",
     "yearPublished": 2003,
     "geekRating": 6.72172,
@@ -3965,10 +4344,10 @@ const GameDetail = {
   },
   "8051": {
     "id": 8051,
-    "boardGameRank": 591,
+    "boardGameRank": 592,
     "title": "Attika",
     "yearPublished": 2003,
-    "geekRating": 6.75431,
+    "geekRating": 6.75416,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -3991,10 +4370,10 @@ const GameDetail = {
   },
   "8125": {
     "id": 8125,
-    "boardGameRank": 560,
+    "boardGameRank": 559,
     "title": "Santiago",
     "yearPublished": 2003,
-    "geekRating": 6.79039,
+    "geekRating": 6.79061,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -4021,7 +4400,7 @@ const GameDetail = {
     "boardGameRank": 696,
     "title": "Hey, That's My Fish!",
     "yearPublished": 2003,
-    "geekRating": 6.64821,
+    "geekRating": 6.64823,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -4044,10 +4423,10 @@ const GameDetail = {
   },
   "8217": {
     "id": 8217,
-    "boardGameRank": 234,
+    "boardGameRank": 235,
     "title": "San Juan",
     "yearPublished": 2004,
-    "geekRating": 7.16387,
+    "geekRating": 7.16377,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -4070,10 +4449,10 @@ const GameDetail = {
   },
   "8989": {
     "id": 8989,
-    "boardGameRank": 735,
+    "boardGameRank": 737,
     "title": "Hansa",
     "yearPublished": 2004,
-    "geekRating": 6.62235,
+    "geekRating": 6.62224,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -4099,7 +4478,7 @@ const GameDetail = {
   },
   "9203": {
     "id": 9203,
-    "boardGameRank": 819,
+    "boardGameRank": 820,
     "title": "Wings of War: Famous Aces",
     "yearPublished": 2004,
     "geekRating": 6.54758,
@@ -4131,7 +4510,7 @@ const GameDetail = {
     "boardGameRank": 132,
     "title": "Ticket to Ride",
     "yearPublished": 2004,
-    "geekRating": 7.3571,
+    "geekRating": 7.35702,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -4153,10 +4532,10 @@ const GameDetail = {
   },
   "9216": {
     "id": 9216,
-    "boardGameRank": 116,
+    "boardGameRank": 117,
     "title": "Goa",
     "yearPublished": 2004,
-    "geekRating": 7.39443,
+    "geekRating": 7.39429,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -4183,7 +4562,7 @@ const GameDetail = {
     "boardGameRank": 239,
     "title": "Saint Petersburg",
     "yearPublished": 2004,
-    "geekRating": 7.15624,
+    "geekRating": 7.15609,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -4205,10 +4584,10 @@ const GameDetail = {
   },
   "9220": {
     "id": 9220,
-    "boardGameRank": 885,
+    "boardGameRank": 886,
     "title": "Saboteur",
     "yearPublished": 2004,
-    "geekRating": 6.50343,
+    "geekRating": 6.5033,
     "minPlayers": 3,
     "maxPlayers": 10,
     "bestWithPlayers": 7,
@@ -4234,10 +4613,10 @@ const GameDetail = {
   },
   "9440": {
     "id": 9440,
-    "boardGameRank": 530,
+    "boardGameRank": 531,
     "title": "Maharaja: The Game of Palace Building in India",
     "yearPublished": 2004,
-    "geekRating": 6.81027,
+    "geekRating": 6.80937,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -4261,7 +4640,7 @@ const GameDetail = {
   },
   "9446": {
     "id": 9446,
-    "boardGameRank": 925,
+    "boardGameRank": 926,
     "title": "Blue Moon",
     "yearPublished": 2004,
     "geekRating": 6.48247,
@@ -4290,7 +4669,7 @@ const GameDetail = {
     "boardGameRank": 83,
     "title": "War of the Ring (First Edition)",
     "yearPublished": 2004,
-    "geekRating": 7.4982,
+    "geekRating": 7.49809,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -4321,7 +4700,7 @@ const GameDetail = {
   },
   "9625": {
     "id": 9625,
-    "boardGameRank": 354,
+    "boardGameRank": 355,
     "title": "Struggle of Empires",
     "yearPublished": 2004,
     "geekRating": 6.9906,
@@ -4353,7 +4732,7 @@ const GameDetail = {
     "boardGameRank": 340,
     "title": "Ingenious",
     "yearPublished": 2004,
-    "geekRating": 7.00446,
+    "geekRating": 7.00453,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -4375,7 +4754,7 @@ const GameDetail = {
   },
   "9823": {
     "id": 9823,
-    "boardGameRank": 426,
+    "boardGameRank": 427,
     "title": "Advanced Squad Leader: Starter Kit #1",
     "yearPublished": 2004,
     "geekRating": 6.91727,
@@ -4384,7 +4763,7 @@ const GameDetail = {
     "bestWithPlayers": 2,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 3.7316,
+    "averageWeight": 3.7324,
     "categoryIds": [
       1019,
       1049
@@ -4402,13 +4781,13 @@ const GameDetail = {
     "boardGameRank": 444,
     "title": "Betrayal at House on the Hill",
     "yearPublished": 2004,
-    "geekRating": 6.90057,
+    "geekRating": 6.90047,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 2.3684,
+    "averageWeight": 2.3688,
     "categoryIds": [
       1022,
       1020,
@@ -4435,10 +4814,10 @@ const GameDetail = {
   },
   "10630": {
     "id": 10630,
-    "boardGameRank": 115,
+    "boardGameRank": 116,
     "title": "Memoir '44",
     "yearPublished": 2004,
-    "geekRating": 7.3948,
+    "geekRating": 7.39478,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 2,
@@ -4465,10 +4844,10 @@ const GameDetail = {
   },
   "10640": {
     "id": 10640,
-    "boardGameRank": 843,
+    "boardGameRank": 846,
     "title": "Doom: The Boardgame",
     "yearPublished": 2004,
-    "geekRating": 6.5351,
+    "geekRating": 6.53426,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -4496,7 +4875,7 @@ const GameDetail = {
   },
   "11170": {
     "id": 11170,
-    "boardGameRank": 276,
+    "boardGameRank": 277,
     "title": "Heroscape Master Set: Rise of the Valkyrie",
     "yearPublished": 2004,
     "geekRating": 7.08728,
@@ -4526,10 +4905,10 @@ const GameDetail = {
   },
   "11825": {
     "id": 11825,
-    "boardGameRank": 775,
+    "boardGameRank": 773,
     "title": "Empire of the Sun",
     "yearPublished": 2005,
-    "geekRating": 6.59284,
+    "geekRating": 6.59402,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -4553,7 +4932,7 @@ const GameDetail = {
   },
   "12002": {
     "id": 12002,
-    "boardGameRank": 513,
+    "boardGameRank": 514,
     "title": "Jambo",
     "yearPublished": 2004,
     "geekRating": 6.82851,
@@ -4581,13 +4960,13 @@ const GameDetail = {
     "boardGameRank": 5,
     "title": "Twilight Struggle",
     "yearPublished": 2005,
-    "geekRating": 8.18604,
+    "geekRating": 8.18608,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 120,
     "maxPlayTime": 180,
-    "averageWeight": 3.5592,
+    "averageWeight": 3.5594,
     "categoryIds": [
       1069,
       1001,
@@ -4607,16 +4986,16 @@ const GameDetail = {
   },
   "12493": {
     "id": 12493,
-    "boardGameRank": 49,
+    "boardGameRank": 48,
     "title": "Twilight Imperium (Third Edition)",
     "yearPublished": 2005,
-    "geekRating": 7.66272,
+    "geekRating": 7.66263,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
     "minPlayTime": 180,
     "maxPlayTime": 240,
-    "averageWeight": 4.2461,
+    "averageWeight": 4.2455,
     "categoryIds": [
       1015,
       1026,
@@ -4643,7 +5022,7 @@ const GameDetail = {
   },
   "12495": {
     "id": 12495,
-    "boardGameRank": 799,
+    "boardGameRank": 800,
     "title": "Fire & Axe: A Viking Saga",
     "yearPublished": 2004,
     "geekRating": 6.56965,
@@ -4670,7 +5049,7 @@ const GameDetail = {
   },
   "12761": {
     "id": 12761,
-    "boardGameRank": 956,
+    "boardGameRank": 957,
     "title": "Ys",
     "yearPublished": 2004,
     "geekRating": 6.46256,
@@ -4720,7 +5099,7 @@ const GameDetail = {
   },
   "12902": {
     "id": 12902,
-    "boardGameRank": 534,
+    "boardGameRank": 533,
     "title": "Carcassonne: The City",
     "yearPublished": 2004,
     "geekRating": 6.8077,
@@ -4747,7 +5126,7 @@ const GameDetail = {
     "boardGameRank": 398,
     "title": "No Thanks!",
     "yearPublished": 2004,
-    "geekRating": 6.9394,
+    "geekRating": 6.9393,
     "minPlayers": 3,
     "maxPlayers": 7,
     "bestWithPlayers": 5,
@@ -4828,10 +5207,10 @@ const GameDetail = {
   },
   "13004": {
     "id": 13004,
-    "boardGameRank": 462,
+    "boardGameRank": 463,
     "title": "The Downfall of Pompeii",
     "yearPublished": 2004,
-    "geekRating": 6.87862,
+    "geekRating": 6.87864,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -4855,7 +5234,7 @@ const GameDetail = {
     "boardGameRank": 198,
     "title": "Antiquity",
     "yearPublished": 2004,
-    "geekRating": 7.21925,
+    "geekRating": 7.21894,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -4911,7 +5290,7 @@ const GameDetail = {
     "boardGameRank": 876,
     "title": "In the Shadow of the Emperor",
     "yearPublished": 2004,
-    "geekRating": 6.50829,
+    "geekRating": 6.50868,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -4936,7 +5315,7 @@ const GameDetail = {
     "boardGameRank": 778,
     "title": "Fairy Tale",
     "yearPublished": 2004,
-    "geekRating": 6.58754,
+    "geekRating": 6.58778,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -4987,7 +5366,7 @@ const GameDetail = {
     "boardGameRank": 99,
     "title": "Commands & Colors: Ancients",
     "yearPublished": 2006,
-    "geekRating": 7.44663,
+    "geekRating": 7.4462,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -5014,7 +5393,7 @@ const GameDetail = {
     "boardGameRank": 94,
     "title": "Ticket to Ride: Europe",
     "yearPublished": 2005,
-    "geekRating": 7.45642,
+    "geekRating": 7.45628,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5039,7 +5418,7 @@ const GameDetail = {
     "boardGameRank": 330,
     "title": "Shadows over Camelot",
     "yearPublished": 2005,
-    "geekRating": 7.01718,
+    "geekRating": 7.01721,
     "minPlayers": 3,
     "maxPlayers": 7,
     "bestWithPlayers": 6,
@@ -5093,10 +5472,10 @@ const GameDetail = {
   },
   "15363": {
     "id": 15363,
-    "boardGameRank": 353,
+    "boardGameRank": 354,
     "title": "Nexus Ops",
     "yearPublished": 2005,
-    "geekRating": 6.99173,
+    "geekRating": 6.99207,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -5146,10 +5525,10 @@ const GameDetail = {
   },
   "15512": {
     "id": 15512,
-    "boardGameRank": 633,
+    "boardGameRank": 634,
     "title": "Diamant",
     "yearPublished": 2005,
-    "geekRating": 6.71484,
+    "geekRating": 6.71493,
     "minPlayers": 3,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -5175,7 +5554,7 @@ const GameDetail = {
     "boardGameRank": 640,
     "title": "Manila",
     "yearPublished": 2005,
-    "geekRating": 6.70577,
+    "geekRating": 6.706,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5232,13 +5611,13 @@ const GameDetail = {
     "boardGameRank": 247,
     "title": "Arkham Horror",
     "yearPublished": 2005,
-    "geekRating": 7.13464,
+    "geekRating": 7.13462,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
     "minPlayTime": 120,
     "maxPlayTime": 360,
-    "averageWeight": 3.5554,
+    "averageWeight": 3.5552,
     "categoryIds": [
       1022,
       1010,
@@ -5264,7 +5643,7 @@ const GameDetail = {
     "boardGameRank": 807,
     "title": "Blokus Duo",
     "yearPublished": 2005,
-    "geekRating": 6.5653,
+    "geekRating": 6.5654,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -5342,13 +5721,13 @@ const GameDetail = {
     "boardGameRank": 859,
     "title": "Ubongo",
     "yearPublished": 2003,
-    "geekRating": 6.52341,
+    "geekRating": 6.52306,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 25,
     "maxPlayTime": 25,
-    "averageWeight": 1.5479,
+    "averageWeight": 1.5467,
     "categoryIds": [
       1028,
       1037
@@ -5366,7 +5745,7 @@ const GameDetail = {
     "boardGameRank": 797,
     "title": "Tsuro",
     "yearPublished": 2004,
-    "geekRating": 6.57276,
+    "geekRating": 6.57272,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -5392,7 +5771,7 @@ const GameDetail = {
     "boardGameRank": 96,
     "title": "Railways of the World",
     "yearPublished": 2005,
-    "geekRating": 7.45018,
+    "geekRating": 7.4502,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -5422,7 +5801,7 @@ const GameDetail = {
     "boardGameRank": 280,
     "title": "Descent: Journeys in the Dark",
     "yearPublished": 2005,
-    "geekRating": 7.08067,
+    "geekRating": 7.08062,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -5450,10 +5829,10 @@ const GameDetail = {
   },
   "17329": {
     "id": 17329,
-    "boardGameRank": 754,
+    "boardGameRank": 755,
     "title": "Animal Upon Animal",
     "yearPublished": 2005,
-    "geekRating": 6.60906,
+    "geekRating": 6.60881,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -5532,10 +5911,10 @@ const GameDetail = {
   },
   "17405": {
     "id": 17405,
-    "boardGameRank": 491,
+    "boardGameRank": 492,
     "title": "1846: The Race for the Midwest",
     "yearPublished": 2005,
-    "geekRating": 6.85211,
+    "geekRating": 6.85168,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5585,7 +5964,7 @@ const GameDetail = {
     "boardGameRank": 658,
     "title": "China",
     "yearPublished": 2005,
-    "geekRating": 6.6826,
+    "geekRating": 6.68266,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -5608,10 +5987,10 @@ const GameDetail = {
   },
   "18258": {
     "id": 18258,
-    "boardGameRank": 752,
+    "boardGameRank": 753,
     "title": "Mission: Red Planet",
     "yearPublished": 2005,
-    "geekRating": 6.60994,
+    "geekRating": 6.61008,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5637,7 +6016,7 @@ const GameDetail = {
     "boardGameRank": 46,
     "title": "Caylus",
     "yearPublished": 2005,
-    "geekRating": 7.67508,
+    "geekRating": 7.6746,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -5661,7 +6040,7 @@ const GameDetail = {
     "boardGameRank": 267,
     "title": "Lord of the Rings: The Confrontation",
     "yearPublished": 2005,
-    "geekRating": 7.10116,
+    "geekRating": 7.10099,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -5691,7 +6070,7 @@ const GameDetail = {
   },
   "19100": {
     "id": 19100,
-    "boardGameRank": 737,
+    "boardGameRank": 738,
     "title": "Hacienda",
     "yearPublished": 2005,
     "geekRating": 6.62186,
@@ -5719,10 +6098,10 @@ const GameDetail = {
   },
   "19237": {
     "id": 19237,
-    "boardGameRank": 932,
+    "boardGameRank": 934,
     "title": "Ca$h 'n Gun$",
     "yearPublished": 2005,
-    "geekRating": 6.47835,
+    "geekRating": 6.47809,
     "minPlayers": 4,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -5752,7 +6131,7 @@ const GameDetail = {
     "boardGameRank": 594,
     "title": "Antike",
     "yearPublished": 2005,
-    "geekRating": 6.75404,
+    "geekRating": 6.75329,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -5774,37 +6153,12 @@ const GameDetail = {
       2046
     ]
   },
-  "19622": {
-    "id": 19622,
-    "boardGameRank": 1001,
-    "title": "A Victory Lost: Crisis in Ukraine 1942-1943",
-    "yearPublished": 2006,
-    "geekRating": 6.43631,
-    "minPlayers": 2,
-    "maxPlayers": 2,
-    "bestWithPlayers": 2,
-    "minPlayTime": 360,
-    "maxPlayTime": 360,
-    "averageWeight": 2.5805,
-    "categoryIds": [
-      1019,
-      1049
-    ],
-    "designerIds": [
-      4350
-    ],
-    "mechanicIds": [
-      2057,
-      2072,
-      2026
-    ]
-  },
   "19777": {
     "id": 19777,
     "boardGameRank": 191,
     "title": "Indonesia",
     "yearPublished": 2005,
-    "geekRating": 7.23347,
+    "geekRating": 7.23388,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5832,7 +6186,7 @@ const GameDetail = {
     "boardGameRank": 155,
     "title": "Glory to Rome",
     "yearPublished": 2005,
-    "geekRating": 7.30744,
+    "geekRating": 7.30782,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -5861,7 +6215,7 @@ const GameDetail = {
     "boardGameRank": 865,
     "title": "Aton",
     "yearPublished": 2005,
-    "geekRating": 6.51576,
+    "geekRating": 6.516,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -5880,12 +6234,38 @@ const GameDetail = {
       2020
     ]
   },
+  "20022": {
+    "id": 20022,
+    "boardGameRank": 2052,
+    "title": "Terra Nova",
+    "yearPublished": 2006,
+    "geekRating": 6.02182,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.2597,
+    "categoryIds": [
+      1009,
+      1086
+    ],
+    "designerIds": [
+      2623,
+      2622
+    ],
+    "mechanicIds": [
+      2080,
+      2043,
+      2676
+    ]
+  },
   "20100": {
     "id": 20100,
-    "boardGameRank": 526,
+    "boardGameRank": 527,
     "title": "Wits & Wagers",
     "yearPublished": 2005,
-    "geekRating": 6.81696,
+    "geekRating": 6.81658,
     "minPlayers": 3,
     "maxPlayers": 7,
     "bestWithPlayers": 7,
@@ -5935,7 +6315,7 @@ const GameDetail = {
   },
   "20542": {
     "id": 20542,
-    "boardGameRank": 852,
+    "boardGameRank": 853,
     "title": "Advanced Squad Leader: Starter Kit #3",
     "yearPublished": 2007,
     "geekRating": 6.53098,
@@ -5944,7 +6324,7 @@ const GameDetail = {
     "bestWithPlayers": 2,
     "minPlayTime": 180,
     "maxPlayTime": 180,
-    "averageWeight": 3.888,
+    "averageWeight": 3.8889,
     "categoryIds": [
       1019,
       1049
@@ -5962,7 +6342,7 @@ const GameDetail = {
     "boardGameRank": 134,
     "title": "Shogun",
     "yearPublished": 2006,
-    "geekRating": 7.34576,
+    "geekRating": 7.34518,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -5991,7 +6371,7 @@ const GameDetail = {
     "boardGameRank": 418,
     "title": "Fury of Dracula (second edition)",
     "yearPublished": 2005,
-    "geekRating": 6.92199,
+    "geekRating": 6.92204,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -6048,7 +6428,7 @@ const GameDetail = {
     "boardGameRank": 215,
     "title": "Neuroshima Hex! 3.0",
     "yearPublished": 2006,
-    "geekRating": 7.19223,
+    "geekRating": 7.1926,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -6075,7 +6455,7 @@ const GameDetail = {
     "boardGameRank": 241,
     "title": "Ticket to Ride: Marklin",
     "yearPublished": 2006,
-    "geekRating": 7.14276,
+    "geekRating": 7.14282,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -6202,10 +6582,10 @@ const GameDetail = {
   },
   "21790": {
     "id": 21790,
-    "boardGameRank": 352,
+    "boardGameRank": 353,
     "title": "Thurn and Taxis",
     "yearPublished": 2006,
-    "geekRating": 6.99234,
+    "geekRating": 6.99243,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6232,7 +6612,7 @@ const GameDetail = {
     "boardGameRank": 523,
     "title": "Blue Moon City",
     "yearPublished": 2006,
-    "geekRating": 6.81877,
+    "geekRating": 6.81892,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6320,7 +6700,7 @@ const GameDetail = {
     "boardGameRank": 464,
     "title": "Yspahan",
     "yearPublished": 2006,
-    "geekRating": 6.87505,
+    "geekRating": 6.87494,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6368,7 +6748,7 @@ const GameDetail = {
     "boardGameRank": 144,
     "title": "Age of Empires III: The Age of Discovery",
     "yearPublished": 2007,
-    "geekRating": 7.3225,
+    "geekRating": 7.3224,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -6395,7 +6775,7 @@ const GameDetail = {
     "boardGameRank": 615,
     "title": "Tide of Iron",
     "yearPublished": 2007,
-    "geekRating": 6.72963,
+    "geekRating": 6.72946,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -6424,7 +6804,7 @@ const GameDetail = {
   },
   "22827": {
     "id": 22827,
-    "boardGameRank": 351,
+    "boardGameRank": 352,
     "title": "StarCraft: The Board Game",
     "yearPublished": 2007,
     "geekRating": 6.99256,
@@ -6456,12 +6836,40 @@ const GameDetail = {
       2015
     ]
   },
+  "23010": {
+    "id": 23010,
+    "boardGameRank": 3764,
+    "title": "Risk: 40th Anniversary Collector's Edition",
+    "yearPublished": 1999,
+    "geekRating": 5.73539,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 120,
+    "maxPlayTime": 0,
+    "averageWeight": 2.28,
+    "categoryIds": [
+      1086,
+      1019
+    ],
+    "designerIds": [
+      116,
+      1047
+    ],
+    "mechanicIds": [
+      2080,
+      2046,
+      2072,
+      2685,
+      2004
+    ]
+  },
   "23094": {
     "id": 23094,
-    "boardGameRank": 710,
+    "boardGameRank": 709,
     "title": "Planet Steam",
     "yearPublished": 2008,
-    "geekRating": 6.64065,
+    "geekRating": 6.64133,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -6484,10 +6892,10 @@ const GameDetail = {
   },
   "24068": {
     "id": 24068,
-    "boardGameRank": 747,
+    "boardGameRank": 751,
     "title": "Shadow Hunters",
     "yearPublished": 2005,
-    "geekRating": 6.6131,
+    "geekRating": 6.6128,
     "minPlayers": 4,
     "maxPlayers": 8,
     "bestWithPlayers": 7,
@@ -6517,7 +6925,7 @@ const GameDetail = {
     "boardGameRank": 146,
     "title": "Imperial",
     "yearPublished": 2006,
-    "geekRating": 7.31859,
+    "geekRating": 7.3186,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -6540,7 +6948,7 @@ const GameDetail = {
   },
   "24417": {
     "id": 24417,
-    "boardGameRank": 909,
+    "boardGameRank": 908,
     "title": "Factory Fun",
     "yearPublished": 2006,
     "geekRating": 6.48963,
@@ -6568,7 +6976,7 @@ const GameDetail = {
     "boardGameRank": 238,
     "title": "The Pillars of the Earth",
     "yearPublished": 2006,
-    "geekRating": 7.15667,
+    "geekRating": 7.15662,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6591,10 +6999,10 @@ const GameDetail = {
   },
   "24508": {
     "id": 24508,
-    "boardGameRank": 420,
+    "boardGameRank": 421,
     "title": "Taluva",
     "yearPublished": 2006,
-    "geekRating": 6.92052,
+    "geekRating": 6.92072,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -6615,7 +7023,7 @@ const GameDetail = {
   },
   "24800": {
     "id": 24800,
-    "boardGameRank": 423,
+    "boardGameRank": 424,
     "title": "Conflict of Heroes: Awakening the Bear! - Russia 1941-42",
     "yearPublished": 2008,
     "geekRating": 6.91923,
@@ -6645,7 +7053,7 @@ const GameDetail = {
     "boardGameRank": 955,
     "title": "Traders of Osaka",
     "yearPublished": 2006,
-    "geekRating": 6.46271,
+    "geekRating": 6.46285,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -6671,7 +7079,7 @@ const GameDetail = {
     "boardGameRank": 143,
     "title": "Sekigahara: The Unification of Japan",
     "yearPublished": 2011,
-    "geekRating": 7.32554,
+    "geekRating": 7.32662,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -6697,7 +7105,7 @@ const GameDetail = {
     "boardGameRank": 205,
     "title": "Merchants & Marauders",
     "yearPublished": 2010,
-    "geekRating": 7.20836,
+    "geekRating": 7.20806,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6727,7 +7135,7 @@ const GameDetail = {
     "boardGameRank": 259,
     "title": "BattleLore",
     "yearPublished": 2006,
-    "geekRating": 7.10914,
+    "geekRating": 7.10848,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -6757,7 +7165,7 @@ const GameDetail = {
     "boardGameRank": 224,
     "title": "Notre Dame",
     "yearPublished": 2007,
-    "geekRating": 7.18419,
+    "geekRating": 7.18464,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -6779,10 +7187,10 @@ const GameDetail = {
   },
   "25568": {
     "id": 25568,
-    "boardGameRank": 662,
+    "boardGameRank": 661,
     "title": "Metropolys",
     "yearPublished": 2008,
-    "geekRating": 6.682,
+    "geekRating": 6.68193,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6805,7 +7213,7 @@ const GameDetail = {
     "boardGameRank": 32,
     "title": "Through the Ages: A Story of Civilization",
     "yearPublished": 2006,
-    "geekRating": 7.82776,
+    "geekRating": 7.82759,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -6856,7 +7264,7 @@ const GameDetail = {
     "boardGameRank": 673,
     "title": "Qwirkle",
     "yearPublished": 2006,
-    "geekRating": 6.6682,
+    "geekRating": 6.66828,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -6880,13 +7288,13 @@ const GameDetail = {
     "boardGameRank": 776,
     "title": "The Werewolves of Miller's Hollow",
     "yearPublished": 2001,
-    "geekRating": 6.59097,
+    "geekRating": 6.59108,
     "minPlayers": 8,
     "maxPlayers": 18,
     "bestWithPlayers": 12,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.3209,
+    "averageWeight": 1.3203,
     "categoryIds": [
       1023,
       1039,
@@ -6908,7 +7316,7 @@ const GameDetail = {
   },
   "26457": {
     "id": 26457,
-    "boardGameRank": 953,
+    "boardGameRank": 954,
     "title": "Successors (third edition)",
     "yearPublished": 2008,
     "geekRating": 6.46396,
@@ -6937,7 +7345,7 @@ const GameDetail = {
   },
   "26566": {
     "id": 26566,
-    "boardGameRank": 527,
+    "boardGameRank": 526,
     "title": "Homesteaders",
     "yearPublished": 2009,
     "geekRating": 6.81677,
@@ -6959,12 +7367,40 @@ const GameDetail = {
       2012
     ]
   },
+  "26696": {
+    "id": 26696,
+    "boardGameRank": 15976,
+    "title": "Monopoly: Star Wars Limited Collector's Edition",
+    "yearPublished": 1996,
+    "geekRating": 5.32275,
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 1.642,
+    "categoryIds": [
+      1021,
+      1064,
+      1026
+    ],
+    "designerIds": [
+      3
+    ],
+    "mechanicIds": [
+      2012,
+      2685,
+      2035,
+      2004,
+      2008
+    ]
+  },
   "26990": {
     "id": 26990,
     "boardGameRank": 584,
     "title": "Container",
     "yearPublished": 2007,
-    "geekRating": 6.75994,
+    "geekRating": 6.76065,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -6990,10 +7426,10 @@ const GameDetail = {
   },
   "26997": {
     "id": 26997,
-    "boardGameRank": 439,
+    "boardGameRank": 437,
     "title": "1989: Dawn of Freedom",
     "yearPublished": 2012,
-    "geekRating": 6.90551,
+    "geekRating": 6.90625,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -7019,7 +7455,7 @@ const GameDetail = {
     "boardGameRank": 278,
     "title": "Kingsburg",
     "yearPublished": 2007,
-    "geekRating": 7.08679,
+    "geekRating": 7.0867,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -7046,7 +7482,7 @@ const GameDetail = {
     "boardGameRank": 323,
     "title": "Vikings",
     "yearPublished": 2007,
-    "geekRating": 7.02493,
+    "geekRating": 7.02481,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -7072,7 +7508,7 @@ const GameDetail = {
     "boardGameRank": 699,
     "title": "Caylus Magna Carta",
     "yearPublished": 2007,
-    "geekRating": 6.64739,
+    "geekRating": 6.64745,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -7095,10 +7531,10 @@ const GameDetail = {
   },
   "27588": {
     "id": 27588,
-    "boardGameRank": 628,
+    "boardGameRank": 629,
     "title": "Zooloretto",
     "yearPublished": 2007,
-    "geekRating": 6.72106,
+    "geekRating": 6.72095,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -7118,16 +7554,16 @@ const GameDetail = {
   },
   "27708": {
     "id": 27708,
-    "boardGameRank": 157,
+    "boardGameRank": 156,
     "title": "1960: The Making of the President",
     "yearPublished": 2007,
-    "geekRating": 7.30433,
+    "geekRating": 7.3044,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 90,
     "maxPlayTime": 120,
-    "averageWeight": 3.2011,
+    "averageWeight": 3.2009,
     "categoryIds": [
       1001
     ],
@@ -7143,10 +7579,10 @@ const GameDetail = {
   },
   "27746": {
     "id": 27746,
-    "boardGameRank": 359,
+    "boardGameRank": 360,
     "title": "Colosseum",
     "yearPublished": 2007,
-    "geekRating": 6.98693,
+    "geekRating": 6.98717,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -7167,6 +7603,37 @@ const GameDetail = {
       2035,
       2004,
       2008
+    ]
+  },
+  "27760": {
+    "id": 27760,
+    "boardGameRank": null,
+    "title": "Catan: Traders & Barbarians",
+    "yearPublished": 2007,
+    "geekRating": 6.56327,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.5767,
+    "categoryIds": [
+      1042,
+      1026,
+      1011
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2012,
+      2072,
+      2040,
+      2047,
+      2011,
+      2081,
+      2008,
+      2017
     ]
   },
   "27833": {
@@ -7231,7 +7698,7 @@ const GameDetail = {
     "boardGameRank": 417,
     "title": "Jamaica",
     "yearPublished": 2007,
-    "geekRating": 6.92236,
+    "geekRating": 6.92208,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -7260,7 +7727,7 @@ const GameDetail = {
     "boardGameRank": 47,
     "title": "Race for the Galaxy",
     "yearPublished": 2007,
-    "geekRating": 7.66956,
+    "geekRating": 7.66952,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -7286,7 +7753,7 @@ const GameDetail = {
   },
   "28181": {
     "id": 28181,
-    "boardGameRank": 470,
+    "boardGameRank": 469,
     "title": "Combat Commander: Pacific",
     "yearPublished": 2008,
     "geekRating": 6.87036,
@@ -7317,13 +7784,13 @@ const GameDetail = {
     "boardGameRank": 24,
     "title": "Brass: Lancashire",
     "yearPublished": 2007,
-    "geekRating": 7.87118,
+    "geekRating": 7.87126,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 3.873,
+    "averageWeight": 3.8723,
     "categoryIds": [
       1021,
       1088,
@@ -7339,10 +7806,10 @@ const GameDetail = {
   },
   "29368": {
     "id": 29368,
-    "boardGameRank": 570,
+    "boardGameRank": 571,
     "title": "Last Night on Earth: The Zombie Game",
     "yearPublished": 2007,
-    "geekRating": 6.78278,
+    "geekRating": 6.7823,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -7394,7 +7861,7 @@ const GameDetail = {
   },
   "29934": {
     "id": 29934,
-    "boardGameRank": 834,
+    "boardGameRank": 835,
     "title": "Amyitis",
     "yearPublished": 2007,
     "geekRating": 6.53926,
@@ -7419,7 +7886,7 @@ const GameDetail = {
     "boardGameRank": 430,
     "title": "Cuba",
     "yearPublished": 2007,
-    "geekRating": 6.91328,
+    "geekRating": 6.91336,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -7469,13 +7936,13 @@ const GameDetail = {
     "boardGameRank": 74,
     "title": "Pandemic",
     "yearPublished": 2008,
-    "geekRating": 7.55552,
+    "geekRating": 7.55531,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.4246,
+    "averageWeight": 2.4245,
     "categoryIds": [
       2145
     ],
@@ -7494,7 +7961,7 @@ const GameDetail = {
   },
   "30618": {
     "id": 30618,
-    "boardGameRank": 730,
+    "boardGameRank": 729,
     "title": "Eat Poop You Cat",
     "yearPublished": 1984,
     "geekRating": 6.62728,
@@ -7520,7 +7987,7 @@ const GameDetail = {
     "boardGameRank": 602,
     "title": "Tammany Hall",
     "yearPublished": 2007,
-    "geekRating": 6.74489,
+    "geekRating": 6.74528,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -7543,7 +8010,7 @@ const GameDetail = {
   },
   "30658": {
     "id": 30658,
-    "boardGameRank": 923,
+    "boardGameRank": 924,
     "title": "Rise of Empires",
     "yearPublished": 2009,
     "geekRating": 6.48336,
@@ -7594,7 +8061,7 @@ const GameDetail = {
   },
   "30957": {
     "id": 30957,
-    "boardGameRank": 498,
+    "boardGameRank": 497,
     "title": "Tribune: Primus Inter Pares",
     "yearPublished": 2007,
     "geekRating": 6.8457,
@@ -7624,7 +8091,7 @@ const GameDetail = {
     "boardGameRank": 20,
     "title": "Agricola",
     "yearPublished": 2007,
-    "geekRating": 7.91047,
+    "geekRating": 7.91032,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -7649,10 +8116,10 @@ const GameDetail = {
   },
   "31481": {
     "id": 31481,
-    "boardGameRank": 135,
+    "boardGameRank": 136,
     "title": "Galaxy Trucker",
     "yearPublished": 2007,
-    "geekRating": 7.34095,
+    "geekRating": 7.34061,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -7676,7 +8143,7 @@ const GameDetail = {
   },
   "31563": {
     "id": 31563,
-    "boardGameRank": 455,
+    "boardGameRank": 456,
     "title": "Middle-Earth Quest",
     "yearPublished": 2009,
     "geekRating": 6.88316,
@@ -7685,7 +8152,7 @@ const GameDetail = {
     "bestWithPlayers": 3,
     "minPlayTime": 180,
     "maxPlayTime": 180,
-    "averageWeight": 3.5341,
+    "averageWeight": 3.5354,
     "categoryIds": [
       1022,
       1020,
@@ -7709,7 +8176,7 @@ const GameDetail = {
     "boardGameRank": 226,
     "title": "In the Year of the Dragon",
     "yearPublished": 2007,
-    "geekRating": 7.1805,
+    "geekRating": 7.18053,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -7733,7 +8200,7 @@ const GameDetail = {
     "boardGameRank": 118,
     "title": "Ticket to Ride: Nordic Countries",
     "yearPublished": 2007,
-    "geekRating": 7.38896,
+    "geekRating": 7.38898,
     "minPlayers": 2,
     "maxPlayers": 3,
     "bestWithPlayers": 3,
@@ -7758,7 +8225,7 @@ const GameDetail = {
     "boardGameRank": 371,
     "title": "Chicago Express",
     "yearPublished": 2007,
-    "geekRating": 6.9693,
+    "geekRating": 6.96936,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -7807,7 +8274,7 @@ const GameDetail = {
     "boardGameRank": 210,
     "title": "Endeavor",
     "yearPublished": 2009,
-    "geekRating": 7.19856,
+    "geekRating": 7.19864,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -7831,10 +8298,10 @@ const GameDetail = {
   },
   "33604": {
     "id": 33604,
-    "boardGameRank": 847,
+    "boardGameRank": 850,
     "title": "Say Anything",
     "yearPublished": 2008,
-    "geekRating": 6.53338,
+    "geekRating": 6.53327,
     "minPlayers": 3,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -7881,16 +8348,16 @@ const GameDetail = {
   },
   "34119": {
     "id": 34119,
-    "boardGameRank": 331,
+    "boardGameRank": 332,
     "title": "Tales of the Arabian Nights",
     "yearPublished": 2009,
-    "geekRating": 7.01658,
+    "geekRating": 7.01643,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 2.1643,
+    "averageWeight": 2.164,
     "categoryIds": [
       1022,
       1052,
@@ -7915,7 +8382,7 @@ const GameDetail = {
   },
   "34194": {
     "id": 34194,
-    "boardGameRank": 900,
+    "boardGameRank": 902,
     "title": "Aquaretto",
     "yearPublished": 2008,
     "geekRating": 6.49411,
@@ -7941,7 +8408,7 @@ const GameDetail = {
     "boardGameRank": 299,
     "title": "Biblios",
     "yearPublished": 2007,
-    "geekRating": 7.05447,
+    "geekRating": 7.05425,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -7964,12 +8431,67 @@ const GameDetail = {
       2004
     ]
   },
+  "34499": {
+    "id": 34499,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: The Gathering Storm",
+    "yearPublished": 2008,
+    "geekRating": 7.76671,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9803,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2040,
+      2020,
+      2079,
+      2015
+    ]
+  },
+  "34583": {
+    "id": 34583,
+    "boardGameRank": 15344,
+    "title": "Set Cubed",
+    "yearPublished": 2008,
+    "geekRating": 5.45069,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.963,
+    "categoryIds": [
+      1009,
+      1017
+    ],
+    "designerIds": [
+      620
+    ],
+    "mechanicIds": [
+      2072,
+      2048,
+      2060
+    ]
+  },
   "34635": {
     "id": 34635,
     "boardGameRank": 81,
     "title": "Stone Age",
     "yearPublished": 2008,
-    "geekRating": 7.5103,
+    "geekRating": 7.51022,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -7989,18 +8511,46 @@ const GameDetail = {
       2082
     ]
   },
+  "34691": {
+    "id": 34691,
+    "boardGameRank": null,
+    "title": "Catan: Traders & Barbarians - 5-6 Player Extension",
+    "yearPublished": 2008,
+    "geekRating": 5.93609,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "bestWithPlayers": 5,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 2.4634,
+    "categoryIds": [
+      1015,
+      1042,
+      1026
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "35052": {
     "id": 35052,
     "boardGameRank": 733,
     "title": "Axis & Allies Anniversary Edition",
     "yearPublished": 2008,
-    "geekRating": 6.62323,
+    "geekRating": 6.6234,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
     "minPlayTime": 360,
     "maxPlayTime": 360,
-    "averageWeight": 3.1257,
+    "averageWeight": 3.1304,
     "categoryIds": [
       1019,
       1049
@@ -8070,7 +8620,7 @@ const GameDetail = {
     "boardGameRank": 39,
     "title": "Le Havre",
     "yearPublished": 2008,
-    "geekRating": 7.77261,
+    "geekRating": 7.7728,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -8092,7 +8642,7 @@ const GameDetail = {
   },
   "35815": {
     "id": 35815,
-    "boardGameRank": 773,
+    "boardGameRank": 774,
     "title": "A Touch of Evil: The Supernatural Game",
     "yearPublished": 2008,
     "geekRating": 6.59363,
@@ -8124,13 +8674,13 @@ const GameDetail = {
     "boardGameRank": 73,
     "title": "Dominion",
     "yearPublished": 2008,
-    "geekRating": 7.55881,
+    "geekRating": 7.55858,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 2.3659,
+    "averageWeight": 2.3656,
     "categoryIds": [
       1002,
       1035
@@ -8174,7 +8724,7 @@ const GameDetail = {
     "boardGameRank": 302,
     "title": "Time's Up! Title Recall!",
     "yearPublished": 2008,
-    "geekRating": 7.05252,
+    "geekRating": 7.05251,
     "minPlayers": 4,
     "maxPlayers": 18,
     "bestWithPlayers": 6,
@@ -8201,7 +8751,7 @@ const GameDetail = {
     "boardGameRank": 201,
     "title": "Claustrophobia",
     "yearPublished": 2009,
-    "geekRating": 7.20937,
+    "geekRating": 7.20923,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -8229,13 +8779,13 @@ const GameDetail = {
     "boardGameRank": 202,
     "title": "Ghost Stories",
     "yearPublished": 2008,
-    "geekRating": 7.20935,
+    "geekRating": 7.20914,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 2.9056,
+    "averageWeight": 2.9057,
     "categoryIds": [
       1010,
       1046,
@@ -8289,10 +8839,10 @@ const GameDetail = {
   },
   "37380": {
     "id": 37380,
-    "boardGameRank": 587,
+    "boardGameRank": 588,
     "title": "Roll Through the Ages: The Bronze Age",
     "yearPublished": 2008,
-    "geekRating": 6.75579,
+    "geekRating": 6.75572,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -8315,10 +8865,10 @@ const GameDetail = {
   },
   "37628": {
     "id": 37628,
-    "boardGameRank": 714,
+    "boardGameRank": 713,
     "title": "Haggis",
     "yearPublished": 2010,
-    "geekRating": 6.63799,
+    "geekRating": 6.63815,
     "minPlayers": 2,
     "maxPlayers": 3,
     "bestWithPlayers": 2,
@@ -8339,7 +8889,7 @@ const GameDetail = {
   },
   "37836": {
     "id": 37836,
-    "boardGameRank": 743,
+    "boardGameRank": 744,
     "title": "Julius Caesar",
     "yearPublished": 2010,
     "geekRating": 6.61728,
@@ -8372,7 +8922,7 @@ const GameDetail = {
     "boardGameRank": 449,
     "title": "Formula D",
     "yearPublished": 2008,
-    "geekRating": 6.89573,
+    "geekRating": 6.89581,
     "minPlayers": 2,
     "maxPlayers": 10,
     "bestWithPlayers": 6,
@@ -8398,10 +8948,10 @@ const GameDetail = {
   },
   "37919": {
     "id": 37919,
-    "boardGameRank": 812,
+    "boardGameRank": 811,
     "title": "Ascending Empires",
     "yearPublished": 2011,
-    "geekRating": 6.55794,
+    "geekRating": 6.55875,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -8428,7 +8978,7 @@ const GameDetail = {
     "boardGameRank": 617,
     "title": "Snow Tails",
     "yearPublished": 2008,
-    "geekRating": 6.72838,
+    "geekRating": 6.7283,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -8452,10 +9002,10 @@ const GameDetail = {
   },
   "38159": {
     "id": 38159,
-    "boardGameRank": 709,
+    "boardGameRank": 710,
     "title": "Ultimate Werewolf: Ultimate Edition",
     "yearPublished": 2008,
-    "geekRating": 6.64143,
+    "geekRating": 6.64073,
     "minPlayers": 5,
     "maxPlayers": 68,
     "bestWithPlayers": 15,
@@ -8482,7 +9032,7 @@ const GameDetail = {
   },
   "38343": {
     "id": 38343,
-    "boardGameRank": 942,
+    "boardGameRank": 944,
     "title": "Ad Astra",
     "yearPublished": 2009,
     "geekRating": 6.47107,
@@ -8510,10 +9060,10 @@ const GameDetail = {
   },
   "38453": {
     "id": 38453,
-    "boardGameRank": 160,
+    "boardGameRank": 161,
     "title": "Space Alert",
     "yearPublished": 2008,
-    "geekRating": 7.30045,
+    "geekRating": 7.30042,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -8671,7 +9221,7 @@ const GameDetail = {
     "boardGameRank": 107,
     "title": "Cosmic Encounter",
     "yearPublished": 2008,
-    "geekRating": 7.41696,
+    "geekRating": 7.41699,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -8705,7 +9255,7 @@ const GameDetail = {
     "boardGameRank": 245,
     "title": "At the Gates of Loyang",
     "yearPublished": 2009,
-    "geekRating": 7.13688,
+    "geekRating": 7.13666,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -8726,10 +9276,10 @@ const GameDetail = {
   },
   "39684": {
     "id": 39684,
-    "boardGameRank": 853,
+    "boardGameRank": 852,
     "title": "Merkator",
     "yearPublished": 2010,
-    "geekRating": 6.53086,
+    "geekRating": 6.53116,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -8752,7 +9302,7 @@ const GameDetail = {
     "boardGameRank": 203,
     "title": "Dixit",
     "yearPublished": 2008,
-    "geekRating": 7.20915,
+    "geekRating": 7.20913,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -8778,7 +9328,7 @@ const GameDetail = {
     "boardGameRank": 350,
     "title": "Carson City",
     "yearPublished": 2009,
-    "geekRating": 6.9941,
+    "geekRating": 6.99417,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -8803,10 +9353,10 @@ const GameDetail = {
   },
   "39953": {
     "id": 39953,
-    "boardGameRank": 741,
+    "boardGameRank": 743,
     "title": "A Game of Thrones: The Card Game",
     "yearPublished": 2008,
-    "geekRating": 6.61851,
+    "geekRating": 6.61825,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -8834,12 +9384,41 @@ const GameDetail = {
       2015
     ]
   },
+  "40210": {
+    "id": 40210,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: Rebel vs Imperium",
+    "yearPublished": 2009,
+    "geekRating": 7.4927,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.0612,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2040,
+      2020,
+      2015
+    ]
+  },
   "40270": {
     "id": 40270,
     "boardGameRank": 938,
     "title": "Call of Cthulhu: The Card Game",
     "yearPublished": 2008,
-    "geekRating": 6.47406,
+    "geekRating": 6.47434,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -8867,7 +9446,7 @@ const GameDetail = {
     "boardGameRank": 255,
     "title": "Maria",
     "yearPublished": 2009,
-    "geekRating": 7.11407,
+    "geekRating": 7.11398,
     "minPlayers": 2,
     "maxPlayers": 3,
     "bestWithPlayers": 3,
@@ -8893,10 +9472,10 @@ const GameDetail = {
   },
   "40628": {
     "id": 40628,
-    "boardGameRank": 546,
+    "boardGameRank": 545,
     "title": "Finca",
     "yearPublished": 2009,
-    "geekRating": 6.79937,
+    "geekRating": 6.79953,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -8921,7 +9500,7 @@ const GameDetail = {
     "boardGameRank": 193,
     "title": "Small World",
     "yearPublished": 2009,
-    "geekRating": 7.22911,
+    "geekRating": 7.22908,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -8945,10 +9524,10 @@ const GameDetail = {
   },
   "40765": {
     "id": 40765,
-    "boardGameRank": 216,
+    "boardGameRank": 218,
     "title": "Clash of Cultures",
     "yearPublished": 2012,
-    "geekRating": 7.1899,
+    "geekRating": 7.18914,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -8977,9 +9556,34 @@ const GameDetail = {
       2015
     ]
   },
+  "40770": {
+    "id": 40770,
+    "boardGameRank": 1761,
+    "title": "The Golden City",
+    "yearPublished": 2009,
+    "geekRating": 6.10708,
+    "minPlayers": 3,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.2562,
+    "categoryIds": [
+      1022,
+      1050
+    ],
+    "designerIds": [
+      86
+    ],
+    "mechanicIds": [
+      2080,
+      2012,
+      2081
+    ]
+  },
   "40793": {
     "id": 40793,
-    "boardGameRank": 732,
+    "boardGameRank": 731,
     "title": "Dice Town",
     "yearPublished": 2009,
     "geekRating": 6.62399,
@@ -9008,7 +9612,7 @@ const GameDetail = {
     "boardGameRank": 59,
     "title": "Dominion: Intrigue",
     "yearPublished": 2009,
-    "geekRating": 7.62436,
+    "geekRating": 7.62431,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -9026,6 +9630,40 @@ const GameDetail = {
       2041,
       2664,
       2040
+    ]
+  },
+  "40849": {
+    "id": 40849,
+    "boardGameRank": null,
+    "title": "Pandemic: On the Brink",
+    "yearPublished": 2009,
+    "geekRating": 7.85256,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 4,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.6515,
+    "categoryIds": [
+      1084,
+      1042,
+      2145,
+      1016
+    ],
+    "designerIds": [
+      378,
+      150
+    ],
+    "mechanicIds": [
+      2001,
+      2023,
+      2040,
+      2019,
+      2078,
+      2016,
+      2004,
+      2008,
+      2015
     ]
   },
   "41002": {
@@ -9091,7 +9729,7 @@ const GameDetail = {
     "boardGameRank": 187,
     "title": "The Resistance",
     "yearPublished": 2009,
-    "geekRating": 7.24406,
+    "geekRating": 7.24404,
     "minPlayers": 5,
     "maxPlayers": 10,
     "bestWithPlayers": 7,
@@ -9121,7 +9759,7 @@ const GameDetail = {
     "boardGameRank": 860,
     "title": "The Magic Labyrinth",
     "yearPublished": 2009,
-    "geekRating": 6.51921,
+    "geekRating": 6.51953,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -9147,7 +9785,7 @@ const GameDetail = {
   },
   "41933": {
     "id": 41933,
-    "boardGameRank": 990,
+    "boardGameRank": 991,
     "title": "Arctic Scavengers",
     "yearPublished": 2009,
     "geekRating": 6.44158,
@@ -9173,10 +9811,10 @@ const GameDetail = {
   },
   "42052": {
     "id": 42052,
-    "boardGameRank": 309,
+    "boardGameRank": 308,
     "title": "Vinhos",
     "yearPublished": 2010,
-    "geekRating": 7.03802,
+    "geekRating": 7.03862,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -9201,7 +9839,7 @@ const GameDetail = {
     "boardGameRank": 397,
     "title": "Tobago",
     "yearPublished": 2009,
-    "geekRating": 6.94075,
+    "geekRating": 6.94095,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -9227,7 +9865,7 @@ const GameDetail = {
     "boardGameRank": 808,
     "title": "Rattus",
     "yearPublished": 2010,
-    "geekRating": 6.56495,
+    "geekRating": 6.56486,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -9250,16 +9888,16 @@ const GameDetail = {
   },
   "42487": {
     "id": 42487,
-    "boardGameRank": 977,
+    "boardGameRank": 978,
     "title": "Lost Cities: The Board Game",
     "yearPublished": 2008,
-    "geekRating": 6.44868,
+    "geekRating": 6.44871,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 30,
     "maxPlayTime": 60,
-    "averageWeight": 1.7514,
+    "averageWeight": 1.7472,
     "categoryIds": [
       1022,
       1020
@@ -9305,10 +9943,10 @@ const GameDetail = {
   },
   "42910": {
     "id": 42910,
-    "boardGameRank": 713,
+    "boardGameRank": 714,
     "title": "Peloponnes",
     "yearPublished": 2009,
-    "geekRating": 6.63813,
+    "geekRating": 6.638,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -9334,7 +9972,7 @@ const GameDetail = {
     "boardGameRank": 113,
     "title": "Hansa Teutonica",
     "yearPublished": 2009,
-    "geekRating": 7.39928,
+    "geekRating": 7.39953,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -9355,10 +9993,10 @@ const GameDetail = {
   },
   "43022": {
     "id": 43022,
-    "boardGameRank": 820,
+    "boardGameRank": 819,
     "title": "Yomi",
     "yearPublished": 2011,
-    "geekRating": 6.54758,
+    "geekRating": 6.54797,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -9387,13 +10025,13 @@ const GameDetail = {
     "boardGameRank": 95,
     "title": "Chaos in the Old World",
     "yearPublished": 2009,
-    "geekRating": 7.45112,
+    "geekRating": 7.45141,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 3.1801,
+    "averageWeight": 3.1799,
     "categoryIds": [
       1010,
       1046,
@@ -9417,10 +10055,10 @@ const GameDetail = {
   },
   "43443": {
     "id": 43443,
-    "boardGameRank": 831,
+    "boardGameRank": 832,
     "title": "Castle Panic",
     "yearPublished": 2009,
-    "geekRating": 6.54303,
+    "geekRating": 6.54291,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -9474,7 +10112,7 @@ const GameDetail = {
     "boardGameRank": 311,
     "title": "Friday",
     "yearPublished": 2011,
-    "geekRating": 7.03585,
+    "geekRating": 7.03586,
     "minPlayers": 1,
     "maxPlayers": 1,
     "bestWithPlayers": 1,
@@ -9501,7 +10139,7 @@ const GameDetail = {
     "boardGameRank": 717,
     "title": "Power Grid: Factory Manager",
     "yearPublished": 2009,
-    "geekRating": 6.63408,
+    "geekRating": 6.63429,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -9525,7 +10163,7 @@ const GameDetail = {
     "boardGameRank": 190,
     "title": "Dungeon Lords",
     "yearPublished": 2009,
-    "geekRating": 7.2342,
+    "geekRating": 7.23437,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -9551,7 +10189,7 @@ const GameDetail = {
   },
   "45986": {
     "id": 45986,
-    "boardGameRank": 588,
+    "boardGameRank": 589,
     "title": "Stronghold",
     "yearPublished": 2009,
     "geekRating": 6.7553,
@@ -9581,7 +10219,7 @@ const GameDetail = {
     "boardGameRank": 229,
     "title": "Telestrations",
     "yearPublished": 2009,
-    "geekRating": 7.17318,
+    "geekRating": 7.17301,
     "minPlayers": 4,
     "maxPlayers": 8,
     "bestWithPlayers": 8,
@@ -9603,7 +10241,7 @@ const GameDetail = {
   },
   "47055": {
     "id": 47055,
-    "boardGameRank": 816,
+    "boardGameRank": 817,
     "title": "High Frontier",
     "yearPublished": 2010,
     "geekRating": 6.54942,
@@ -9664,7 +10302,7 @@ const GameDetail = {
     "boardGameRank": 168,
     "title": "Alien Frontiers",
     "yearPublished": 2010,
-    "geekRating": 7.28689,
+    "geekRating": 7.28687,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -9741,6 +10379,33 @@ const GameDetail = {
       2082
     ]
   },
+  "51811": {
+    "id": 51811,
+    "boardGameRank": null,
+    "title": "Dominion: Seaside",
+    "yearPublished": 2009,
+    "geekRating": 7.81002,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      1002,
+      1042,
+      1035,
+      1008
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
+    ]
+  },
   "52461": {
     "id": 52461,
     "boardGameRank": 561,
@@ -9770,10 +10435,10 @@ const GameDetail = {
   },
   "53093": {
     "id": 53093,
-    "boardGameRank": 746,
+    "boardGameRank": 748,
     "title": "Heroes of Normandie",
     "yearPublished": 2014,
-    "geekRating": 6.61349,
+    "geekRating": 6.61311,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -9799,10 +10464,10 @@ const GameDetail = {
   },
   "53953": {
     "id": 53953,
-    "boardGameRank": 556,
+    "boardGameRank": 557,
     "title": "Thunderstone",
     "yearPublished": 2009,
-    "geekRating": 6.79117,
+    "geekRating": 6.79137,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -9828,13 +10493,13 @@ const GameDetail = {
     "boardGameRank": 112,
     "title": "Jaipur",
     "yearPublished": 2009,
-    "geekRating": 7.40826,
+    "geekRating": 7.40805,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.5195,
+    "averageWeight": 1.5199,
     "categoryIds": [
       1089,
       1002
@@ -9853,7 +10518,7 @@ const GameDetail = {
     "boardGameRank": 177,
     "title": "Imperial 2030",
     "yearPublished": 2009,
-    "geekRating": 7.26976,
+    "geekRating": 7.27019,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -9876,10 +10541,10 @@ const GameDetail = {
   },
   "54625": {
     "id": 54625,
-    "boardGameRank": 235,
+    "boardGameRank": 234,
     "title": "Space Hulk (third edition)",
     "yearPublished": 2009,
-    "geekRating": 7.16383,
+    "geekRating": 7.1639,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -9907,13 +10572,13 @@ const GameDetail = {
     "boardGameRank": 138,
     "title": "Cyclades",
     "yearPublished": 2009,
-    "geekRating": 7.33446,
+    "geekRating": 7.33396,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
     "minPlayTime": 60,
     "maxPlayTime": 90,
-    "averageWeight": 2.8278,
+    "averageWeight": 2.8268,
     "categoryIds": [
       1050,
       1029,
@@ -9939,10 +10604,10 @@ const GameDetail = {
   },
   "55427": {
     "id": 55427,
-    "boardGameRank": 634,
+    "boardGameRank": 636,
     "title": "Mr. Jack in New York",
     "yearPublished": 2009,
-    "geekRating": 6.71412,
+    "geekRating": 6.71403,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -9995,7 +10660,7 @@ const GameDetail = {
     "boardGameRank": 248,
     "title": "Macao",
     "yearPublished": 2009,
-    "geekRating": 7.13351,
+    "geekRating": 7.13385,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -10024,13 +10689,13 @@ const GameDetail = {
     "boardGameRank": 35,
     "title": "Kingdom Death: Monster",
     "yearPublished": 2015,
-    "geekRating": 7.80666,
+    "geekRating": 7.80746,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 180,
-    "averageWeight": 4.2334,
+    "averageWeight": 4.2354,
     "categoryIds": [
       1022,
       1010,
@@ -10076,7 +10741,7 @@ const GameDetail = {
   },
   "55829": {
     "id": 55829,
-    "boardGameRank": 989,
+    "boardGameRank": 990,
     "title": "Axis & Allies Pacific 1940",
     "yearPublished": 2009,
     "geekRating": 6.44227,
@@ -10105,10 +10770,10 @@ const GameDetail = {
   },
   "56692": {
     "id": 56692,
-    "boardGameRank": 701,
+    "boardGameRank": 702,
     "title": "Parade",
     "yearPublished": 2007,
-    "geekRating": 6.64563,
+    "geekRating": 6.64552,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -10132,7 +10797,7 @@ const GameDetail = {
     "boardGameRank": 712,
     "title": "Catacombs",
     "yearPublished": 2010,
-    "geekRating": 6.63846,
+    "geekRating": 6.63823,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -10159,7 +10824,7 @@ const GameDetail = {
   },
   "57925": {
     "id": 57925,
-    "boardGameRank": 961,
+    "boardGameRank": 962,
     "title": "Havana",
     "yearPublished": 2009,
     "geekRating": 6.45911,
@@ -10188,7 +10853,7 @@ const GameDetail = {
     "boardGameRank": 381,
     "title": "Summoner Wars",
     "yearPublished": 2009,
-    "geekRating": 6.95663,
+    "geekRating": 6.95555,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -10241,9 +10906,34 @@ const GameDetail = {
       2082
     ]
   },
+  "58708": {
+    "id": 58708,
+    "boardGameRank": null,
+    "title": "Power Grid: Brazil/Spain & Portugal",
+    "yearPublished": 2009,
+    "geekRating": 6.82082,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.9709,
+    "categoryIds": [
+      1021,
+      1042,
+      1088
+    ],
+    "designerIds": [
+      141
+    ],
+    "mechanicIds": [
+      2012,
+      2081
+    ]
+  },
   "58936": {
     "id": 58936,
-    "boardGameRank": 882,
+    "boardGameRank": 884,
     "title": "Wars of the Roses: Lancaster vs. York",
     "yearPublished": 2010,
     "geekRating": 6.5048,
@@ -10274,10 +10964,10 @@ const GameDetail = {
   },
   "59294": {
     "id": 59294,
-    "boardGameRank": 156,
+    "boardGameRank": 157,
     "title": "Runewars",
     "yearPublished": 2010,
-    "geekRating": 7.30455,
+    "geekRating": 7.30428,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -10307,7 +10997,7 @@ const GameDetail = {
     "boardGameRank": 638,
     "title": "Dungeons & Dragons: Castle Ravenloft Board Game",
     "yearPublished": 2010,
-    "geekRating": 6.71025,
+    "geekRating": 6.71024,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -10342,7 +11032,7 @@ const GameDetail = {
     "boardGameRank": 189,
     "title": "Letters from Whitechapel",
     "yearPublished": 2011,
-    "geekRating": 7.23634,
+    "geekRating": 7.23609,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 2,
@@ -10368,7 +11058,7 @@ const GameDetail = {
   },
   "60435": {
     "id": 60435,
-    "boardGameRank": 748,
+    "boardGameRank": 749,
     "title": "Rallyman",
     "yearPublished": 2009,
     "geekRating": 6.61301,
@@ -10394,7 +11084,7 @@ const GameDetail = {
   },
   "61692": {
     "id": 61692,
-    "boardGameRank": 839,
+    "boardGameRank": 842,
     "title": "Axis & Allies Europe 1940",
     "yearPublished": 2010,
     "geekRating": 6.53604,
@@ -10425,7 +11115,7 @@ const GameDetail = {
     "boardGameRank": 51,
     "title": "Dominant Species",
     "yearPublished": 2010,
-    "geekRating": 7.6615,
+    "geekRating": 7.66111,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -10455,13 +11145,13 @@ const GameDetail = {
     "boardGameRank": 305,
     "title": "Commands & Colors: Napoleonics",
     "yearPublished": 2010,
-    "geekRating": 7.04892,
+    "geekRating": 7.04829,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 90,
     "maxPlayTime": 90,
-    "averageWeight": 2.7364,
+    "averageWeight": 2.7376,
     "categoryIds": [
       1051,
       1019
@@ -10482,13 +11172,13 @@ const GameDetail = {
     "boardGameRank": 297,
     "title": "Labyrinth: The War on Terror, 2001 - ?",
     "yearPublished": 2010,
-    "geekRating": 7.0552,
+    "geekRating": 7.05539,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 180,
     "maxPlayTime": 180,
-    "averageWeight": 3.5753,
+    "averageWeight": 3.5764,
     "categoryIds": [
       1069,
       1001,
@@ -10511,7 +11201,7 @@ const GameDetail = {
     "boardGameRank": 895,
     "title": "Spot it!",
     "yearPublished": 2009,
-    "geekRating": 6.49709,
+    "geekRating": 6.49637,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -10540,7 +11230,7 @@ const GameDetail = {
     "boardGameRank": 222,
     "title": "The Manhattan Project",
     "yearPublished": 2012,
-    "geekRating": 7.18514,
+    "geekRating": 7.1851,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -10569,7 +11259,7 @@ const GameDetail = {
     "boardGameRank": 283,
     "title": "Innovation",
     "yearPublished": 2010,
-    "geekRating": 7.07359,
+    "geekRating": 7.07357,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -10590,10 +11280,10 @@ const GameDetail = {
   },
   "65244": {
     "id": 65244,
-    "boardGameRank": 606,
+    "boardGameRank": 607,
     "title": "Forbidden Island",
     "yearPublished": 2010,
-    "geekRating": 6.73995,
+    "geekRating": 6.74005,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -10620,10 +11310,10 @@ const GameDetail = {
   },
   "65532": {
     "id": 65532,
-    "boardGameRank": 386,
+    "boardGameRank": 388,
     "title": "Defenders of the Realm",
     "yearPublished": 2010,
-    "geekRating": 6.95001,
+    "geekRating": 6.94997,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -10653,7 +11343,7 @@ const GameDetail = {
     "boardGameRank": 275,
     "title": "London (first edition)",
     "yearPublished": 2010,
-    "geekRating": 7.08783,
+    "geekRating": 7.08782,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -10674,7 +11364,7 @@ const GameDetail = {
   },
   "65901": {
     "id": 65901,
-    "boardGameRank": 492,
+    "boardGameRank": 493,
     "title": "Age of Industry",
     "yearPublished": 2010,
     "geekRating": 6.84903,
@@ -10703,7 +11393,7 @@ const GameDetail = {
     "boardGameRank": 669,
     "title": "Rivals for Catan",
     "yearPublished": 2010,
-    "geekRating": 6.67698,
+    "geekRating": 6.67647,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -10725,12 +11415,67 @@ const GameDetail = {
       2040
     ]
   },
+  "66098": {
+    "id": 66098,
+    "boardGameRank": null,
+    "title": "Dominion: Alchemy",
+    "yearPublished": 2010,
+    "geekRating": 6.71736,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.4548,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
+    ]
+  },
+  "66121": {
+    "id": 66121,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: The Brink of War",
+    "yearPublished": 2010,
+    "geekRating": 7.14632,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.3559,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2040,
+      2020,
+      2015
+    ]
+  },
   "66188": {
     "id": 66188,
-    "boardGameRank": 251,
+    "boardGameRank": 252,
     "title": "Fresco",
     "yearPublished": 2010,
-    "geekRating": 7.12225,
+    "geekRating": 7.12215,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -10786,10 +11531,10 @@ const GameDetail = {
   },
   "66362": {
     "id": 66362,
-    "boardGameRank": 264,
+    "boardGameRank": 263,
     "title": "Glen More",
     "yearPublished": 2010,
-    "geekRating": 7.1052,
+    "geekRating": 7.10545,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -10818,7 +11563,7 @@ const GameDetail = {
     "boardGameRank": 618,
     "title": "The Speicherstadt",
     "yearPublished": 2010,
-    "geekRating": 6.72736,
+    "geekRating": 6.72774,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -10841,7 +11586,7 @@ const GameDetail = {
     "boardGameRank": 174,
     "title": "Navegador",
     "yearPublished": 2010,
-    "geekRating": 7.27497,
+    "geekRating": 7.27486,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -10859,6 +11604,32 @@ const GameDetail = {
     ],
     "mechanicIds": [
       2046
+    ]
+  },
+  "66690": {
+    "id": 66690,
+    "boardGameRank": null,
+    "title": "Dominion: Prosperity",
+    "yearPublished": 2010,
+    "geekRating": 7.99441,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.4871,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
     ]
   },
   "67492": {
@@ -10897,7 +11668,7 @@ const GameDetail = {
     "boardGameRank": 671,
     "title": "No Retreat! The Russian Front",
     "yearPublished": 2011,
-    "geekRating": 6.66883,
+    "geekRating": 6.66943,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -10920,10 +11691,10 @@ const GameDetail = {
   },
   "68425": {
     "id": 68425,
-    "boardGameRank": 445,
+    "boardGameRank": 446,
     "title": "Eminent Domain",
     "yearPublished": 2011,
-    "geekRating": 6.89881,
+    "geekRating": 6.89863,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -10951,7 +11722,7 @@ const GameDetail = {
     "boardGameRank": 43,
     "title": "7 Wonders",
     "yearPublished": 2010,
-    "geekRating": 7.70328,
+    "geekRating": 7.70314,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -10977,7 +11748,7 @@ const GameDetail = {
   },
   "69779": {
     "id": 69779,
-    "boardGameRank": 535,
+    "boardGameRank": 536,
     "title": "Polis: Fight for the Hegemony",
     "yearPublished": 2012,
     "geekRating": 6.80709,
@@ -11010,7 +11781,7 @@ const GameDetail = {
     "boardGameRank": 520,
     "title": "Ascension: Deckbuilding Game",
     "yearPublished": 2010,
-    "geekRating": 6.8225,
+    "geekRating": 6.82248,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -11036,7 +11807,7 @@ const GameDetail = {
     "boardGameRank": 92,
     "title": "Ora et Labora",
     "yearPublished": 2011,
-    "geekRating": 7.46481,
+    "geekRating": 7.46482,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -11067,7 +11838,7 @@ const GameDetail = {
     "boardGameRank": 236,
     "title": "King of Tokyo",
     "yearPublished": 2011,
-    "geekRating": 7.16327,
+    "geekRating": 7.16331,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -11096,7 +11867,7 @@ const GameDetail = {
     "boardGameRank": 414,
     "title": "Luna",
     "yearPublished": 2010,
-    "geekRating": 6.92502,
+    "geekRating": 6.92516,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -11123,7 +11894,7 @@ const GameDetail = {
     "boardGameRank": 219,
     "title": "Takenoko",
     "yearPublished": 2011,
-    "geekRating": 7.18748,
+    "geekRating": 7.18761,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -11152,10 +11923,10 @@ const GameDetail = {
   },
   "71671": {
     "id": 71671,
-    "boardGameRank": 691,
+    "boardGameRank": 692,
     "title": "Yggdrasil",
     "yearPublished": 2011,
-    "geekRating": 6.6538,
+    "geekRating": 6.65411,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 2,
@@ -11182,7 +11953,7 @@ const GameDetail = {
     "boardGameRank": 539,
     "title": "Space Hulk: Death Angel - The Card Game",
     "yearPublished": 2010,
-    "geekRating": 6.80449,
+    "geekRating": 6.80469,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 1,
@@ -11210,7 +11981,7 @@ const GameDetail = {
     "boardGameRank": 964,
     "title": "Onirim",
     "yearPublished": 2010,
-    "geekRating": 6.4569,
+    "geekRating": 6.457,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 1,
@@ -11237,13 +12008,13 @@ const GameDetail = {
     "boardGameRank": 36,
     "title": "Eclipse",
     "yearPublished": 2011,
-    "geekRating": 7.7965,
+    "geekRating": 7.7963,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 180,
-    "averageWeight": 3.688,
+    "averageWeight": 3.6881,
     "categoryIds": [
       1015,
       1046,
@@ -11270,7 +12041,7 @@ const GameDetail = {
     "boardGameRank": 572,
     "title": "CO₂",
     "yearPublished": 2012,
-    "geekRating": 6.78127,
+    "geekRating": 6.78109,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -11293,10 +12064,10 @@ const GameDetail = {
   },
   "72287": {
     "id": 72287,
-    "boardGameRank": 632,
+    "boardGameRank": 633,
     "title": "Mr. Jack Pocket",
     "yearPublished": 2010,
-    "geekRating": 6.71815,
+    "geekRating": 6.71825,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -11322,7 +12093,7 @@ const GameDetail = {
     "boardGameRank": 538,
     "title": "The Networks",
     "yearPublished": 2016,
-    "geekRating": 6.8059,
+    "geekRating": 6.80631,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -11343,7 +12114,7 @@ const GameDetail = {
   },
   "72991": {
     "id": 72991,
-    "boardGameRank": 835,
+    "boardGameRank": 839,
     "title": "Asara",
     "yearPublished": 2010,
     "geekRating": 6.53733,
@@ -11404,7 +12175,7 @@ const GameDetail = {
   },
   "73369": {
     "id": 73369,
-    "boardGameRank": 987,
+    "boardGameRank": 988,
     "title": "51st State",
     "yearPublished": 2010,
     "geekRating": 6.44409,
@@ -11434,7 +12205,7 @@ const GameDetail = {
     "boardGameRank": 68,
     "title": "Troyes",
     "yearPublished": 2010,
-    "geekRating": 7.58209,
+    "geekRating": 7.58232,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -11459,10 +12230,10 @@ const GameDetail = {
   },
   "73761": {
     "id": 73761,
-    "boardGameRank": 468,
+    "boardGameRank": 467,
     "title": "K2",
     "yearPublished": 2010,
-    "geekRating": 6.87078,
+    "geekRating": 6.87094,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -11509,10 +12280,10 @@ const GameDetail = {
   },
   "75449": {
     "id": 75449,
-    "boardGameRank": 774,
+    "boardGameRank": 775,
     "title": "Firenze",
     "yearPublished": 2010,
-    "geekRating": 6.59322,
+    "geekRating": 6.59179,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -11536,7 +12307,7 @@ const GameDetail = {
     "boardGameRank": 184,
     "title": "Sid Meier's Civilization: The Board Game",
     "yearPublished": 2010,
-    "geekRating": 7.24818,
+    "geekRating": 7.24807,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -11569,7 +12340,7 @@ const GameDetail = {
     "boardGameRank": 110,
     "title": "The Lord of the Rings: The Card Game",
     "yearPublished": 2011,
-    "geekRating": 7.41276,
+    "geekRating": 7.41282,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -11625,7 +12396,7 @@ const GameDetail = {
   },
   "79828": {
     "id": 79828,
-    "boardGameRank": 252,
+    "boardGameRank": 251,
     "title": "A Few Acres of Snow",
     "yearPublished": 2011,
     "geekRating": 7.12217,
@@ -11658,7 +12429,7 @@ const GameDetail = {
     "boardGameRank": 939,
     "title": "Escape from the Aliens in Outer Space",
     "yearPublished": 2010,
-    "geekRating": 6.47359,
+    "geekRating": 6.47429,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -11689,7 +12460,7 @@ const GameDetail = {
     "boardGameRank": 169,
     "title": "Xia: Legends of a Drift System",
     "yearPublished": 2014,
-    "geekRating": 7.286,
+    "geekRating": 7.28604,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -11748,7 +12519,7 @@ const GameDetail = {
   },
   "82421": {
     "id": 82421,
-    "boardGameRank": 467,
+    "boardGameRank": 468,
     "title": "Summoner Wars: Phoenix Elves vs Tundra Orcs",
     "yearPublished": 2009,
     "geekRating": 6.87088,
@@ -11803,7 +12574,7 @@ const GameDetail = {
     "boardGameRank": 271,
     "title": "Mansions of Madness",
     "yearPublished": 2011,
-    "geekRating": 7.09176,
+    "geekRating": 7.09182,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -11869,7 +12640,7 @@ const GameDetail = {
     "boardGameRank": 11,
     "title": "The Castles of Burgundy",
     "yearPublished": 2011,
-    "geekRating": 8.00775,
+    "geekRating": 8.00801,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -11895,13 +12666,13 @@ const GameDetail = {
     "boardGameRank": 878,
     "title": "Timeline: Inventions",
     "yearPublished": 2010,
-    "geekRating": 6.50755,
+    "geekRating": 6.50797,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.1138,
+    "averageWeight": 1.1134,
     "categoryIds": [
       1002,
       1094,
@@ -11917,7 +12688,7 @@ const GameDetail = {
     "boardGameRank": 576,
     "title": "Thunderstone: Dragonspire",
     "yearPublished": 2011,
-    "geekRating": 6.77402,
+    "geekRating": 6.7741,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -11940,10 +12711,10 @@ const GameDetail = {
   },
   "88827": {
     "id": 88827,
-    "boardGameRank": 949,
+    "boardGameRank": 950,
     "title": "Battle Cry: 150th Civil War Anniversary Edition",
     "yearPublished": 2010,
-    "geekRating": 6.46843,
+    "geekRating": 6.46725,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -11970,7 +12741,7 @@ const GameDetail = {
     "boardGameRank": 581,
     "title": "BattleCON: War of Indines",
     "yearPublished": 2010,
-    "geekRating": 6.76532,
+    "geekRating": 6.76536,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -11998,7 +12769,7 @@ const GameDetail = {
     "boardGameRank": 246,
     "title": "Blood Bowl: Team Manager - The Card Game",
     "yearPublished": 2011,
-    "geekRating": 7.1368,
+    "geekRating": 7.13638,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12024,10 +12795,10 @@ const GameDetail = {
   },
   "90419": {
     "id": 90419,
-    "boardGameRank": 308,
+    "boardGameRank": 309,
     "title": "Airlines Europe",
     "yearPublished": 2011,
-    "geekRating": 7.03832,
+    "geekRating": 7.03827,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12048,12 +12819,38 @@ const GameDetail = {
       2005
     ]
   },
+  "90850": {
+    "id": 90850,
+    "boardGameRank": null,
+    "title": "Dominion: Cornucopia",
+    "yearPublished": 2011,
+    "geekRating": 7.28619,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.4035,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
+    ]
+  },
   "91080": {
     "id": 91080,
-    "boardGameRank": 792,
+    "boardGameRank": 793,
     "title": "Andean Abyss",
     "yearPublished": 2012,
-    "geekRating": 6.57633,
+    "geekRating": 6.5755,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12082,7 +12879,7 @@ const GameDetail = {
     "boardGameRank": 408,
     "title": "Discworld: Ankh-Morpork",
     "yearPublished": 2011,
-    "geekRating": 6.9323,
+    "geekRating": 6.93224,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12107,16 +12904,16 @@ const GameDetail = {
   },
   "91514": {
     "id": 91514,
-    "boardGameRank": 625,
+    "boardGameRank": 627,
     "title": "Rhino Hero",
     "yearPublished": 2011,
-    "geekRating": 6.72248,
+    "geekRating": 6.7223,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 5,
     "maxPlayTime": 15,
-    "averageWeight": 1.0294,
+    "averageWeight": 1.0292,
     "categoryIds": [
       1032,
       1089,
@@ -12136,7 +12933,7 @@ const GameDetail = {
     "boardGameRank": 711,
     "title": "Quarriors!",
     "yearPublished": 2011,
-    "geekRating": 6.64013,
+    "geekRating": 6.64017,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12163,7 +12960,7 @@ const GameDetail = {
     "boardGameRank": 494,
     "title": "Dungeons & Dragons: The Legend of Drizzt Board Game",
     "yearPublished": 2011,
-    "geekRating": 6.84772,
+    "geekRating": 6.84751,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12191,7 +12988,7 @@ const GameDetail = {
   },
   "91873": {
     "id": 91873,
-    "boardGameRank": 739,
+    "boardGameRank": 740,
     "title": "Strasbourg",
     "yearPublished": 2011,
     "geekRating": 6.62072,
@@ -12221,7 +13018,7 @@ const GameDetail = {
     "boardGameRank": 927,
     "title": "Olympos",
     "yearPublished": 2011,
-    "geekRating": 6.4814,
+    "geekRating": 6.48141,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12247,10 +13044,10 @@ const GameDetail = {
   },
   "92415": {
     "id": 92415,
-    "boardGameRank": 425,
+    "boardGameRank": 426,
     "title": "Skull",
     "yearPublished": 2011,
-    "geekRating": 6.91806,
+    "geekRating": 6.91765,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -12270,12 +13067,42 @@ const GameDetail = {
       2685
     ]
   },
+  "92539": {
+    "id": 92539,
+    "boardGameRank": null,
+    "title": "7 Wonders: Leaders",
+    "yearPublished": 2011,
+    "geekRating": 7.58438,
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 40,
+    "maxPlayTime": 40,
+    "averageWeight": 2.2866,
+    "categoryIds": [
+      1050,
+      1002,
+      1029,
+      1015,
+      1042
+    ],
+    "designerIds": [
+      9714
+    ],
+    "mechanicIds": [
+      2041,
+      2040,
+      2004,
+      2020,
+      2015
+    ]
+  },
   "92828": {
     "id": 92828,
     "boardGameRank": 173,
     "title": "Dixit: Odyssey",
     "yearPublished": 2011,
-    "geekRating": 7.27886,
+    "geekRating": 7.27888,
     "minPlayers": 3,
     "maxPlayers": 12,
     "bestWithPlayers": 6,
@@ -12297,12 +13124,43 @@ const GameDetail = {
       2017
     ]
   },
+  "92932": {
+    "id": 92932,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: Alien Artifacts",
+    "yearPublished": 2013,
+    "geekRating": 6.54938,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.9155,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2676,
+      2040,
+      2020,
+      2002,
+      2015
+    ]
+  },
   "93260": {
     "id": 93260,
     "boardGameRank": 154,
     "title": "Summoner Wars: Master Set",
     "yearPublished": 2011,
-    "geekRating": 7.30801,
+    "geekRating": 7.30789,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -12329,7 +13187,7 @@ const GameDetail = {
     "boardGameRank": 985,
     "title": "Omen: A Reign of War",
     "yearPublished": 2011,
-    "geekRating": 6.44506,
+    "geekRating": 6.44517,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -12380,12 +13238,39 @@ const GameDetail = {
       2015
     ]
   },
+  "94288": {
+    "id": 94288,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hunt for Gollum",
+    "yearPublished": 2011,
+    "geekRating": 6.48062,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8354,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "94362": {
     "id": 94362,
-    "boardGameRank": 911,
+    "boardGameRank": 910,
     "title": "Rune Age",
     "yearPublished": 2011,
-    "geekRating": 6.48947,
+    "geekRating": 6.48933,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12410,10 +13295,10 @@ const GameDetail = {
   },
   "95064": {
     "id": 95064,
-    "boardGameRank": 582,
+    "boardGameRank": 583,
     "title": "Ascension: Return of the Fallen",
     "yearPublished": 2011,
-    "geekRating": 6.76232,
+    "geekRating": 6.76213,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -12438,7 +13323,7 @@ const GameDetail = {
   },
   "95103": {
     "id": 95103,
-    "boardGameRank": 751,
+    "boardGameRank": 752,
     "title": "Fortune and Glory: The Cliffhanger Game",
     "yearPublished": 2011,
     "geekRating": 6.61132,
@@ -12465,12 +13350,39 @@ const GameDetail = {
       2015
     ]
   },
+  "95338": {
+    "id": 95338,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Conflict at the Carrock",
+    "yearPublished": 2011,
+    "geekRating": 6.59937,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.875,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "95527": {
     "id": 95527,
-    "boardGameRank": 300,
+    "boardGameRank": 298,
     "title": "Madeira",
     "yearPublished": 2013,
-    "geekRating": 7.0544,
+    "geekRating": 7.05437,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12525,7 +13437,7 @@ const GameDetail = {
     "boardGameRank": 22,
     "title": "Mage Knight Board Game",
     "yearPublished": 2011,
-    "geekRating": 7.90271,
+    "geekRating": 7.9026,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 1,
@@ -12559,7 +13471,7 @@ const GameDetail = {
     "boardGameRank": 253,
     "title": "Lancaster",
     "yearPublished": 2011,
-    "geekRating": 7.11986,
+    "geekRating": 7.11997,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12584,7 +13496,7 @@ const GameDetail = {
     "boardGameRank": 147,
     "title": "Dungeon Petz",
     "yearPublished": 2011,
-    "geekRating": 7.31711,
+    "geekRating": 7.3175,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12611,7 +13523,7 @@ const GameDetail = {
     "boardGameRank": 296,
     "title": "Small World Underground",
     "yearPublished": 2011,
-    "geekRating": 7.05771,
+    "geekRating": 7.05766,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12635,10 +13547,10 @@ const GameDetail = {
   },
   "97842": {
     "id": 97842,
-    "boardGameRank": 341,
+    "boardGameRank": 342,
     "title": "Last Will",
     "yearPublished": 2011,
-    "geekRating": 7.00355,
+    "geekRating": 7.00332,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12661,10 +13573,10 @@ const GameDetail = {
   },
   "97903": {
     "id": 97903,
-    "boardGameRank": 664,
+    "boardGameRank": 665,
     "title": "Terror in Meeple City",
     "yearPublished": 2013,
-    "geekRating": 6.68083,
+    "geekRating": 6.68074,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12685,12 +13597,39 @@ const GameDetail = {
       2015
     ]
   },
+  "98113": {
+    "id": 98113,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - A Journey to Rhosgobel",
+    "yearPublished": 2011,
+    "geekRating": 6.41319,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8542,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "98229": {
     "id": 98229,
     "boardGameRank": 612,
     "title": "Pictomania",
     "yearPublished": 2011,
-    "geekRating": 6.73613,
+    "geekRating": 6.73628,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -12735,6 +13674,33 @@ const GameDetail = {
       2040
     ]
   },
+  "98634": {
+    "id": 98634,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hills of Emyn Muil",
+    "yearPublished": 2011,
+    "geekRating": 6.25164,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.7021,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "98778": {
     "id": 98778,
     "boardGameRank": 288,
@@ -12746,7 +13712,7 @@ const GameDetail = {
     "bestWithPlayers": 4,
     "minPlayTime": 25,
     "maxPlayTime": 25,
-    "averageWeight": 1.7029,
+    "averageWeight": 1.7031,
     "categoryIds": [
       1002,
       1039,
@@ -12762,12 +13728,39 @@ const GameDetail = {
       2004
     ]
   },
+  "100092": {
+    "id": 100092,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dead Marshes",
+    "yearPublished": 2011,
+    "geekRating": 6.30648,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "100423": {
     "id": 100423,
     "boardGameRank": 478,
     "title": "Elder Sign",
     "yearPublished": 2011,
-    "geekRating": 6.86229,
+    "geekRating": 6.86185,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -12799,7 +13792,7 @@ const GameDetail = {
     "boardGameRank": 266,
     "title": "Flash Point: Fire Rescue",
     "yearPublished": 2011,
-    "geekRating": 7.10368,
+    "geekRating": 7.10385,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -12827,7 +13820,7 @@ const GameDetail = {
     "boardGameRank": 158,
     "title": "Mage Wars Arena",
     "yearPublished": 2012,
-    "geekRating": 7.30278,
+    "geekRating": 7.30245,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -12876,12 +13869,36 @@ const GameDetail = {
       2020
     ]
   },
+  "102104": {
+    "id": 102104,
+    "boardGameRank": 1779,
+    "title": "Star Fluxx",
+    "yearPublished": 2011,
+    "geekRating": 6.10274,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 10,
+    "maxPlayTime": 10,
+    "averageWeight": 1.4379,
+    "categoryIds": [
+      1002,
+      1016
+    ],
+    "designerIds": [
+      122
+    ],
+    "mechanicIds": [
+      2040,
+      2004
+    ]
+  },
   "102548": {
     "id": 102548,
     "boardGameRank": 805,
     "title": "Dungeon Fighter",
     "yearPublished": 2011,
-    "geekRating": 6.56665,
+    "geekRating": 6.56655,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -12914,7 +13931,7 @@ const GameDetail = {
     "boardGameRank": 282,
     "title": "Sentinels of the Multiverse",
     "yearPublished": 2011,
-    "geekRating": 7.07428,
+    "geekRating": 7.07419,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -12942,7 +13959,7 @@ const GameDetail = {
     "boardGameRank": 72,
     "title": "Trajan",
     "yearPublished": 2011,
-    "geekRating": 7.5635,
+    "geekRating": 7.56288,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -12968,13 +13985,13 @@ const GameDetail = {
     "boardGameRank": 16,
     "title": "Caverna: The Cave Farmers",
     "yearPublished": 2013,
-    "geekRating": 7.93344,
+    "geekRating": 7.93331,
     "minPlayers": 1,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
     "minPlayTime": 30,
     "maxPlayTime": 210,
-    "averageWeight": 3.7759,
+    "averageWeight": 3.7753,
     "categoryIds": [
       1089,
       1021,
@@ -12989,9 +14006,36 @@ const GameDetail = {
       2082
     ]
   },
+  "102875": {
+    "id": 102875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Return to Mirkwood",
+    "yearPublished": 2011,
+    "geekRating": 6.3977,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9231,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "103185": {
     "id": 103185,
-    "boardGameRank": 973,
+    "boardGameRank": 974,
     "title": "Walnut Grove",
     "yearPublished": 2011,
     "geekRating": 6.45037,
@@ -13016,10 +14060,10 @@ const GameDetail = {
   },
   "103343": {
     "id": 103343,
-    "boardGameRank": 88,
+    "boardGameRank": 87,
     "title": "A Game of Thrones: The Board Game (Second Edition)",
     "yearPublished": 2011,
-    "geekRating": 7.48342,
+    "geekRating": 7.48344,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -13052,7 +14096,7 @@ const GameDetail = {
     "boardGameRank": 67,
     "title": "Star Wars: X-Wing Miniatures Game",
     "yearPublished": 2012,
-    "geekRating": 7.5825,
+    "geekRating": 7.58238,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -13110,7 +14154,7 @@ const GameDetail = {
     "boardGameRank": 114,
     "title": "Village",
     "yearPublished": 2011,
-    "geekRating": 7.39549,
+    "geekRating": 7.3956,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -13132,7 +14176,7 @@ const GameDetail = {
   },
   "104020": {
     "id": 104020,
-    "boardGameRank": 681,
+    "boardGameRank": 682,
     "title": "Vanuatu",
     "yearPublished": 2011,
     "geekRating": 6.65993,
@@ -13163,7 +14207,7 @@ const GameDetail = {
     "boardGameRank": 78,
     "title": "Descent: Journeys in the Dark (Second Edition)",
     "yearPublished": 2012,
-    "geekRating": 7.51524,
+    "geekRating": 7.51511,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -13195,7 +14239,7 @@ const GameDetail = {
   },
   "104347": {
     "id": 104347,
-    "boardGameRank": 788,
+    "boardGameRank": 789,
     "title": "Santiago de Cuba",
     "yearPublished": 2011,
     "geekRating": 6.57866,
@@ -13223,7 +14267,7 @@ const GameDetail = {
   },
   "104363": {
     "id": 104363,
-    "boardGameRank": 622,
+    "boardGameRank": 623,
     "title": "Rex: Final Days of an Empire",
     "yearPublished": 2012,
     "geekRating": 6.72525,
@@ -13254,6 +14298,32 @@ const GameDetail = {
       2019,
       2078,
       2015
+    ]
+  },
+  "104557": {
+    "id": 104557,
+    "boardGameRank": null,
+    "title": "Dominion: Hinterlands",
+    "yearPublished": 2011,
+    "geekRating": 7.49519,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5427,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
     ]
   },
   "104710": {
@@ -13288,7 +14358,7 @@ const GameDetail = {
     "boardGameRank": 802,
     "title": "Tournay",
     "yearPublished": 2011,
-    "geekRating": 6.56816,
+    "geekRating": 6.56788,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -13317,7 +14387,7 @@ const GameDetail = {
     "boardGameRank": 244,
     "title": "Risk Legacy",
     "yearPublished": 2011,
-    "geekRating": 7.14067,
+    "geekRating": 7.14167,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -13345,7 +14415,7 @@ const GameDetail = {
     "boardGameRank": 291,
     "title": "Archipelago",
     "yearPublished": 2012,
-    "geekRating": 7.06281,
+    "geekRating": 7.06299,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -13378,7 +14448,7 @@ const GameDetail = {
     "boardGameRank": 562,
     "title": "Hawaii",
     "yearPublished": 2011,
-    "geekRating": 6.78927,
+    "geekRating": 6.7891,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -13427,7 +14497,7 @@ const GameDetail = {
     "boardGameRank": 466,
     "title": "Kingdom Builder",
     "yearPublished": 2011,
-    "geekRating": 6.87162,
+    "geekRating": 6.87189,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -13448,12 +14518,40 @@ const GameDetail = {
       2081
     ]
   },
+  "107933": {
+    "id": 107933,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Khazad-dûm",
+    "yearPublished": 2011,
+    "geekRating": 6.74832,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "108745": {
     "id": 108745,
     "boardGameRank": 166,
     "title": "Seasons",
     "yearPublished": 2012,
-    "geekRating": 7.2919,
+    "geekRating": 7.29197,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -13480,7 +14578,7 @@ const GameDetail = {
     "boardGameRank": 554,
     "title": "Ascension: Storm of Souls",
     "yearPublished": 2011,
-    "geekRating": 6.79222,
+    "geekRating": 6.79204,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -13505,10 +14603,10 @@ const GameDetail = {
   },
   "108906": {
     "id": 108906,
-    "boardGameRank": 557,
+    "boardGameRank": 555,
     "title": "Thunder Alley",
     "yearPublished": 2014,
-    "geekRating": 6.79107,
+    "geekRating": 6.79195,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -13561,7 +14659,7 @@ const GameDetail = {
     "boardGameRank": 207,
     "title": "Kanban: Driver's Edition",
     "yearPublished": 2014,
-    "geekRating": 7.20326,
+    "geekRating": 7.20441,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -13582,12 +14680,40 @@ const GameDetail = {
       2082
     ]
   },
+  "110193": {
+    "id": 110193,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Redhorn Gate",
+    "yearPublished": 2012,
+    "geekRating": 6.19909,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6818,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "110277": {
     "id": 110277,
     "boardGameRank": 450,
     "title": "Among the Stars",
     "yearPublished": 2012,
-    "geekRating": 6.89191,
+    "geekRating": 6.89178,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -13614,7 +14740,7 @@ const GameDetail = {
     "boardGameRank": 52,
     "title": "Lords of Waterdeep",
     "yearPublished": 2012,
-    "geekRating": 7.65659,
+    "geekRating": 7.6563,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -13633,6 +14759,34 @@ const GameDetail = {
       2004,
       2686,
       2082
+    ]
+  },
+  "110794": {
+    "id": 110794,
+    "boardGameRank": null,
+    "title": "Catan Scenarios: Oil Springs",
+    "yearPublished": 2011,
+    "geekRating": 5.71054,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 60,
+    "averageWeight": 2.1786,
+    "categoryIds": [
+      1042,
+      1026
+    ],
+    "designerIds": [
+      53400,
+      53399
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2011,
+      2081,
+      2008
     ]
   },
   "111124": {
@@ -13669,10 +14823,10 @@ const GameDetail = {
   },
   "111341": {
     "id": 111341,
-    "boardGameRank": 329,
+    "boardGameRank": 328,
     "title": "The Great Zimbabwe",
     "yearPublished": 2012,
-    "geekRating": 7.01898,
+    "geekRating": 7.01927,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -13698,12 +14852,43 @@ const GameDetail = {
       2015
     ]
   },
+  "111661": {
+    "id": 111661,
+    "boardGameRank": null,
+    "title": "7 Wonders: Cities",
+    "yearPublished": 2012,
+    "geekRating": 7.51642,
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.3531,
+    "categoryIds": [
+      1050,
+      1002,
+      1029,
+      1015,
+      1042
+    ],
+    "designerIds": [
+      9714
+    ],
+    "mechanicIds": [
+      2041,
+      2040,
+      2019,
+      2004,
+      2020,
+      2015
+    ]
+  },
   "111799": {
     "id": 111799,
-    "boardGameRank": 493,
+    "boardGameRank": 491,
     "title": "Cuba Libre",
     "yearPublished": 2013,
-    "geekRating": 6.84821,
+    "geekRating": 6.85223,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -13728,12 +14913,40 @@ const GameDetail = {
       2015
     ]
   },
+  "112064": {
+    "id": 112064,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Road to Rivendell",
+    "yearPublished": 2012,
+    "geekRating": 6.13315,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6842,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "112138": {
     "id": 112138,
-    "boardGameRank": 988,
+    "boardGameRank": 989,
     "title": "Krosmaster: Arena",
     "yearPublished": 2012,
-    "geekRating": 6.44374,
+    "geekRating": 6.44306,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -13764,7 +14977,7 @@ const GameDetail = {
     "boardGameRank": 435,
     "title": "Escape: The Curse of the Temple",
     "yearPublished": 2012,
-    "geekRating": 6.90787,
+    "geekRating": 6.90767,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -13796,13 +15009,13 @@ const GameDetail = {
     "boardGameRank": 965,
     "title": "Timeline: Events",
     "yearPublished": 2011,
-    "geekRating": 6.45643,
+    "geekRating": 6.45656,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.1171,
+    "averageWeight": 1.1161,
     "categoryIds": [
       1002,
       1094,
@@ -13815,10 +15028,10 @@ const GameDetail = {
   },
   "113873": {
     "id": 113873,
-    "boardGameRank": 970,
+    "boardGameRank": 973,
     "title": "The Hunters: German U-Boats at War, 1939-43",
     "yearPublished": 2013,
-    "geekRating": 6.45162,
+    "geekRating": 6.45135,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 1,
@@ -13844,7 +15057,7 @@ const GameDetail = {
     "boardGameRank": 348,
     "title": "Zombicide",
     "yearPublished": 2012,
-    "geekRating": 6.99754,
+    "geekRating": 6.997,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -13873,7 +15086,7 @@ const GameDetail = {
   },
   "113997": {
     "id": 113997,
-    "boardGameRank": 438,
+    "boardGameRank": 439,
     "title": "Tajemnicze Domostwo",
     "yearPublished": 2013,
     "geekRating": 6.906,
@@ -13896,9 +15109,37 @@ const GameDetail = {
       2040
     ]
   },
+  "114351": {
+    "id": 114351,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Watcher in the Water",
+    "yearPublished": 2012,
+    "geekRating": 6.24475,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.7143,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "115746": {
     "id": 115746,
-    "boardGameRank": 13,
+    "boardGameRank": 12,
     "title": "War of the Ring (Second Edition)",
     "yearPublished": 2012,
     "geekRating": 8.00427,
@@ -13935,7 +15176,7 @@ const GameDetail = {
     "boardGameRank": 343,
     "title": "Thunderstone Advance: Towers of Ruin",
     "yearPublished": 2012,
-    "geekRating": 7.00251,
+    "geekRating": 7.0026,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -13962,7 +15203,7 @@ const GameDetail = {
     "boardGameRank": 474,
     "title": "Yedo",
     "yearPublished": 2012,
-    "geekRating": 6.86695,
+    "geekRating": 6.86723,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -13984,12 +15225,40 @@ const GameDetail = {
       2082
     ]
   },
+  "117929": {
+    "id": 117929,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Long Dark",
+    "yearPublished": 2012,
+    "geekRating": 6.0796,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.5882,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "117959": {
     "id": 117959,
-    "boardGameRank": 483,
+    "boardGameRank": 482,
     "title": "Las Vegas",
     "yearPublished": 2012,
-    "geekRating": 6.85828,
+    "geekRating": 6.85846,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -14040,7 +15309,7 @@ const GameDetail = {
     "boardGameRank": 139,
     "title": "Targi",
     "yearPublished": 2012,
-    "geekRating": 7.33293,
+    "geekRating": 7.33299,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14061,10 +15330,10 @@ const GameDetail = {
   },
   "119432": {
     "id": 119432,
-    "boardGameRank": 358,
+    "boardGameRank": 359,
     "title": "Snowdonia",
     "yearPublished": 2012,
-    "geekRating": 6.98738,
+    "geekRating": 6.9873,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -14088,7 +15357,7 @@ const GameDetail = {
     "boardGameRank": 316,
     "title": "Freedom: The Underground Railroad",
     "yearPublished": 2012,
-    "geekRating": 7.03309,
+    "geekRating": 7.03332,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -14136,12 +15405,40 @@ const GameDetail = {
       2041
     ]
   },
+  "119640": {
+    "id": 119640,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Foundations of Stone",
+    "yearPublished": 2012,
+    "geekRating": 6.26877,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.65,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "119788": {
     "id": 119788,
     "boardGameRank": 541,
     "title": "Hyperborea",
     "yearPublished": 2014,
-    "geekRating": 6.80181,
+    "geekRating": 6.80138,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -14170,7 +15467,7 @@ const GameDetail = {
     "boardGameRank": 188,
     "title": "Agricola: All Creatures Big and Small",
     "yearPublished": 2012,
-    "geekRating": 7.23673,
+    "geekRating": 7.23669,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14222,7 +15519,7 @@ const GameDetail = {
     "boardGameRank": 9,
     "title": "Terra Mystica",
     "yearPublished": 2012,
-    "geekRating": 8.07123,
+    "geekRating": 8.07122,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -14275,10 +15572,10 @@ const GameDetail = {
   },
   "121297": {
     "id": 121297,
-    "boardGameRank": 726,
+    "boardGameRank": 724,
     "title": "Fleet",
     "yearPublished": 2012,
-    "geekRating": 6.62969,
+    "geekRating": 6.63,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -14300,10 +15597,10 @@ const GameDetail = {
   },
   "121408": {
     "id": 121408,
-    "boardGameRank": 385,
+    "boardGameRank": 386,
     "title": "Trains",
     "yearPublished": 2012,
-    "geekRating": 6.95291,
+    "geekRating": 6.9526,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -14354,12 +15651,40 @@ const GameDetail = {
       2011
     ]
   },
+  "121900": {
+    "id": 121900,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Shadow and Flame",
+    "yearPublished": 2012,
+    "geekRating": 6.16716,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "121921": {
     "id": 121921,
     "boardGameRank": 40,
     "title": "Robinson Crusoe: Adventures on the Cursed Island",
     "yearPublished": 2012,
-    "geekRating": 7.76816,
+    "geekRating": 7.7679,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -14391,7 +15716,7 @@ const GameDetail = {
     "boardGameRank": 873,
     "title": "Ascension: Immortal Heroes",
     "yearPublished": 2012,
-    "geekRating": 6.51048,
+    "geekRating": 6.51007,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14419,7 +15744,7 @@ const GameDetail = {
     "boardGameRank": 605,
     "title": "Morels",
     "yearPublished": 2012,
-    "geekRating": 6.74073,
+    "geekRating": 6.74081,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14445,7 +15770,7 @@ const GameDetail = {
     "boardGameRank": 44,
     "title": "Keyflower",
     "yearPublished": 2012,
-    "geekRating": 7.6974,
+    "geekRating": 7.69734,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -14479,13 +15804,13 @@ const GameDetail = {
     "boardGameRank": 660,
     "title": "Smash Up",
     "yearPublished": 2012,
-    "geekRating": 6.68245,
+    "geekRating": 6.68235,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.0524,
+    "averageWeight": 2.0537,
     "categoryIds": [
       1002,
       1010,
@@ -14506,10 +15831,10 @@ const GameDetail = {
   },
   "123123": {
     "id": 123123,
-    "boardGameRank": 217,
+    "boardGameRank": 216,
     "title": "BattleCON: Devastation of Indines",
     "yearPublished": 2013,
-    "geekRating": 7.18986,
+    "geekRating": 7.18957,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -14532,10 +15857,10 @@ const GameDetail = {
   },
   "123260": {
     "id": 123260,
-    "boardGameRank": 97,
+    "boardGameRank": 98,
     "title": "Suburbia",
     "yearPublished": 2012,
-    "geekRating": 7.4477,
+    "geekRating": 7.44755,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -14557,7 +15882,7 @@ const GameDetail = {
   },
   "123499": {
     "id": 123499,
-    "boardGameRank": 893,
+    "boardGameRank": 894,
     "title": "City of Iron",
     "yearPublished": 2013,
     "geekRating": 6.49971,
@@ -14591,7 +15916,7 @@ const GameDetail = {
     "boardGameRank": 453,
     "title": "Tokaido",
     "yearPublished": 2012,
-    "geekRating": 6.88761,
+    "geekRating": 6.88735,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -14613,7 +15938,7 @@ const GameDetail = {
   },
   "123607": {
     "id": 123607,
-    "boardGameRank": 918,
+    "boardGameRank": 919,
     "title": "Puzzle Strike (Third Edition)",
     "yearPublished": 2012,
     "geekRating": 6.48547,
@@ -14637,9 +15962,164 @@ const GameDetail = {
       2015
     ]
   },
+  "123695": {
+    "id": 123695,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hobbit: Over Hill and Under Hill",
+    "yearPublished": 2012,
+    "geekRating": 6.43035,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.1081,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "123755": {
+    "id": 123755,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - X-Wing Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.8368,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2951,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123759": {
+    "id": 123759,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Fighter Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.75362,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2222,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123763": {
+    "id": 123763,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Y-Wing Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.81703,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.3077,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123764": {
+    "id": 123764,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Advanced Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.87033,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2763,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "123955": {
     "id": 123955,
-    "boardGameRank": 734,
+    "boardGameRank": 735,
     "title": "Thunderbolt Apache Leader",
     "yearPublished": 2012,
     "geekRating": 6.62289,
@@ -14663,12 +16143,39 @@ const GameDetail = {
       2070
     ]
   },
+  "124185": {
+    "id": 124185,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Unity Hero Character",
+    "yearPublished": 2012,
+    "geekRating": 6.58287,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.303,
+    "categoryIds": [
+      1002,
+      1116,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
   "124361": {
     "id": 124361,
     "boardGameRank": 21,
     "title": "Concordia",
     "yearPublished": 2013,
-    "geekRating": 7.90524,
+    "geekRating": 7.90553,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -14695,7 +16202,7 @@ const GameDetail = {
     "boardGameRank": 227,
     "title": "Mice and Mystics",
     "yearPublished": 2012,
-    "geekRating": 7.17874,
+    "geekRating": 7.17858,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -14726,7 +16233,7 @@ const GameDetail = {
     "boardGameRank": 42,
     "title": "Android: Netrunner",
     "yearPublished": 2012,
-    "geekRating": 7.72865,
+    "geekRating": 7.72855,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14755,7 +16262,7 @@ const GameDetail = {
     "boardGameRank": 64,
     "title": "The Gallerist",
     "yearPublished": 2015,
-    "geekRating": 7.59672,
+    "geekRating": 7.59697,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -14774,12 +16281,38 @@ const GameDetail = {
       2082
     ]
   },
+  "125403": {
+    "id": 125403,
+    "boardGameRank": null,
+    "title": "Dominion: Dark Ages",
+    "yearPublished": 2012,
+    "geekRating": 7.51648,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.7249,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
+    ]
+  },
   "125548": {
     "id": 125548,
-    "boardGameRank": 875,
+    "boardGameRank": 877,
     "title": "Pixel Tactics",
     "yearPublished": 2012,
-    "geekRating": 6.50848,
+    "geekRating": 6.50834,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -14806,7 +16339,7 @@ const GameDetail = {
     "boardGameRank": 314,
     "title": "Libertalia",
     "yearPublished": 2012,
-    "geekRating": 7.03447,
+    "geekRating": 7.03422,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -14851,12 +16384,37 @@ const GameDetail = {
       2664
     ]
   },
+  "125921": {
+    "id": 125921,
+    "boardGameRank": 1517,
+    "title": "Catan: Junior",
+    "yearPublished": 2012,
+    "geekRating": 6.19877,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.5222,
+    "categoryIds": [
+      1041,
+      1008,
+      1090
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2081
+    ]
+  },
   "126042": {
     "id": 126042,
     "boardGameRank": 101,
     "title": "Nations",
     "yearPublished": 2013,
-    "geekRating": 7.4366,
+    "geekRating": 7.43681,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -14884,13 +16442,13 @@ const GameDetail = {
     "boardGameRank": 38,
     "title": "Tzolk'in: The Mayan Calendar",
     "yearPublished": 2012,
-    "geekRating": 7.78081,
+    "geekRating": 7.7809,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 90,
-    "averageWeight": 3.6374,
+    "averageWeight": 3.6377,
     "categoryIds": [
       1050,
       1015,
@@ -14909,7 +16467,7 @@ const GameDetail = {
   },
   "126792": {
     "id": 126792,
-    "boardGameRank": 427,
+    "boardGameRank": 428,
     "title": "Myrmes",
     "yearPublished": 2012,
     "geekRating": 6.91539,
@@ -14934,18 +16492,43 @@ const GameDetail = {
       2082
     ]
   },
+  "126951": {
+    "id": 126951,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Ambuscade Villain Character",
+    "yearPublished": 2012,
+    "geekRating": 6.39018,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.1852,
+    "categoryIds": [
+      1002,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023
+    ]
+  },
   "127023": {
     "id": 127023,
     "boardGameRank": 75,
     "title": "Kemet",
     "yearPublished": 2012,
-    "geekRating": 7.53122,
+    "geekRating": 7.53068,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
     "minPlayTime": 90,
     "maxPlayTime": 120,
-    "averageWeight": 2.9926,
+    "averageWeight": 2.9908,
     "categoryIds": [
       1050,
       1046,
@@ -14966,10 +16549,10 @@ const GameDetail = {
   },
   "127024": {
     "id": 127024,
-    "boardGameRank": 867,
+    "boardGameRank": 866,
     "title": "Room 25",
     "yearPublished": 2013,
-    "geekRating": 6.51299,
+    "geekRating": 6.51322,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -15001,10 +16584,10 @@ const GameDetail = {
   },
   "127060": {
     "id": 127060,
-    "boardGameRank": 161,
+    "boardGameRank": 162,
     "title": "Bora Bora",
     "yearPublished": 2013,
-    "geekRating": 7.30035,
+    "geekRating": 7.30041,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15028,7 +16611,7 @@ const GameDetail = {
     "boardGameRank": 303,
     "title": "Legends of Andor",
     "yearPublished": 2012,
-    "geekRating": 7.04977,
+    "geekRating": 7.04951,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15056,7 +16639,7 @@ const GameDetail = {
     "boardGameRank": 678,
     "title": "A Distant Plain",
     "yearPublished": 2013,
-    "geekRating": 6.66174,
+    "geekRating": 6.66283,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15081,7 +16664,7 @@ const GameDetail = {
   },
   "128271": {
     "id": 128271,
-    "boardGameRank": 328,
+    "boardGameRank": 329,
     "title": "Ginkgopolis",
     "yearPublished": 2012,
     "geekRating": 7.01909,
@@ -15109,10 +16692,10 @@ const GameDetail = {
   },
   "128621": {
     "id": 128621,
-    "boardGameRank": 125,
+    "boardGameRank": 126,
     "title": "Viticulture",
     "yearPublished": 2013,
-    "geekRating": 7.37452,
+    "geekRating": 7.37419,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -15137,7 +16720,7 @@ const GameDetail = {
     "boardGameRank": 287,
     "title": "Spartacus: A Game of Blood & Treachery",
     "yearPublished": 2012,
-    "geekRating": 7.0714,
+    "geekRating": 7.07094,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15177,7 +16760,7 @@ const GameDetail = {
     "bestWithPlayers": 4,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 3.4926,
+    "averageWeight": 3.4951,
     "categoryIds": [
       1002,
       1102,
@@ -15201,7 +16784,7 @@ const GameDetail = {
     "boardGameRank": 89,
     "title": "The Resistance: Avalon",
     "yearPublished": 2012,
-    "geekRating": 7.48246,
+    "geekRating": 7.48229,
     "minPlayers": 5,
     "maxPlayers": 10,
     "bestWithPlayers": 7,
@@ -15231,7 +16814,7 @@ const GameDetail = {
   },
   "128996": {
     "id": 128996,
-    "boardGameRank": 263,
+    "boardGameRank": 264,
     "title": "1775: Rebellion",
     "yearPublished": 2013,
     "geekRating": 7.10522,
@@ -15266,7 +16849,7 @@ const GameDetail = {
     "boardGameRank": 845,
     "title": "Le Havre: The Inland Port",
     "yearPublished": 2012,
-    "geekRating": 6.53475,
+    "geekRating": 6.53487,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -15284,18 +16867,153 @@ const GameDetail = {
       2001
     ]
   },
+  "129430": {
+    "id": 129430,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - A-Wing Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.73708,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.3778,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129431": {
+    "id": 129431,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Interceptor Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.85848,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.2955,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129432": {
+    "id": 129432,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Millennium Falcon Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 7.1333,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.3906,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129433": {
+    "id": 129433,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Slave I Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.88926,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4182,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "129437": {
     "id": 129437,
     "boardGameRank": 129,
     "title": "Legendary: A Marvel Deck Building Game",
     "yearPublished": 2012,
-    "geekRating": 7.3672,
+    "geekRating": 7.36675,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.4618,
+    "averageWeight": 2.4611,
     "categoryIds": [
       1002,
       1116
@@ -15306,6 +17024,35 @@ const GameDetail = {
     "mechanicIds": [
       2023,
       2664
+    ]
+  },
+  "129480": {
+    "id": 129480,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Heirs of Numenor",
+    "yearPublished": 2012,
+    "geekRating": 6.21583,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.1111,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "129622": {
@@ -15338,7 +17085,7 @@ const GameDetail = {
     "boardGameRank": 569,
     "title": "The Palaces of Carrara",
     "yearPublished": 2012,
-    "geekRating": 6.78346,
+    "geekRating": 6.78385,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15361,10 +17108,10 @@ const GameDetail = {
   },
   "130176": {
     "id": 130176,
-    "boardGameRank": 690,
+    "boardGameRank": 689,
     "title": "Tales & Games: The Hare & the Tortoise",
     "yearPublished": 2011,
-    "geekRating": 6.65444,
+    "geekRating": 6.65536,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -15386,9 +17133,36 @@ const GameDetail = {
       2040
     ]
   },
+  "130715": {
+    "id": 130715,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hobbit: On the Doorstep",
+    "yearPublished": 2013,
+    "geekRating": 6.2136,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3.12,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "130960": {
     "id": 130960,
-    "boardGameRank": 390,
+    "boardGameRank": 391,
     "title": "Triumph & Tragedy",
     "yearPublished": 2015,
     "geekRating": 6.94576,
@@ -15420,10 +17194,10 @@ const GameDetail = {
   },
   "131014": {
     "id": 131014,
-    "boardGameRank": 793,
+    "boardGameRank": 790,
     "title": "Carcassonne: Winter Edition",
     "yearPublished": 2012,
-    "geekRating": 6.57619,
+    "geekRating": 6.57643,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -15444,7 +17218,7 @@ const GameDetail = {
   },
   "131111": {
     "id": 131111,
-    "boardGameRank": 892,
+    "boardGameRank": 893,
     "title": "Codex: Card-Time Strategy - Deluxe Set",
     "yearPublished": 2016,
     "geekRating": 6.50035,
@@ -15475,7 +17249,7 @@ const GameDetail = {
     "boardGameRank": 677,
     "title": "Qwixx",
     "yearPublished": 2012,
-    "geekRating": 6.6639,
+    "geekRating": 6.66386,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -15498,7 +17272,7 @@ const GameDetail = {
     "boardGameRank": 490,
     "title": "Panamax",
     "yearPublished": 2014,
-    "geekRating": 6.85317,
+    "geekRating": 6.85362,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -15526,7 +17300,7 @@ const GameDetail = {
   },
   "131325": {
     "id": 131325,
-    "boardGameRank": 994,
+    "boardGameRank": 993,
     "title": "Timeline: Diversity",
     "yearPublished": 2012,
     "geekRating": 6.43915,
@@ -15557,7 +17331,7 @@ const GameDetail = {
     "bestWithPlayers": 5,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.4236,
+    "averageWeight": 1.4228,
     "categoryIds": [
       1023,
       1002,
@@ -15577,10 +17351,10 @@ const GameDetail = {
   },
   "131366": {
     "id": 131366,
-    "boardGameRank": 996,
+    "boardGameRank": 995,
     "title": "Eight-Minute Empire",
     "yearPublished": 2012,
-    "geekRating": 6.43811,
+    "geekRating": 6.43821,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -15636,7 +17410,7 @@ const GameDetail = {
     "boardGameRank": 512,
     "title": "Churchill",
     "yearPublished": 2015,
-    "geekRating": 6.83136,
+    "geekRating": 6.83212,
     "minPlayers": 1,
     "maxPlayers": 3,
     "bestWithPlayers": 3,
@@ -15655,6 +17429,35 @@ const GameDetail = {
       2012,
       2018,
       2072
+    ]
+  },
+  "132020": {
+    "id": 132020,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Steward's Fear",
+    "yearPublished": 2013,
+    "geekRating": 5.9881,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 1,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "132028": {
@@ -15686,7 +17489,7 @@ const GameDetail = {
   },
   "132372": {
     "id": 132372,
-    "boardGameRank": 740,
+    "boardGameRank": 741,
     "title": "Guildhall",
     "yearPublished": 2012,
     "geekRating": 6.62057,
@@ -15714,7 +17517,7 @@ const GameDetail = {
     "boardGameRank": 61,
     "title": "Roll for the Galaxy",
     "yearPublished": 2014,
-    "geekRating": 7.60882,
+    "geekRating": 7.60859,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -15745,13 +17548,13 @@ const GameDetail = {
     "boardGameRank": 301,
     "title": "Pathfinder Adventure Card Game: Rise of the Runelords - Base Set",
     "yearPublished": 2013,
-    "geekRating": 7.05333,
+    "geekRating": 7.05269,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 90,
-    "averageWeight": 2.7113,
+    "averageWeight": 2.7117,
     "categoryIds": [
       1022,
       1002,
@@ -15774,12 +17577,41 @@ const GameDetail = {
       2015
     ]
   },
+  "133167": {
+    "id": 133167,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Druadan Forest",
+    "yearPublished": 2013,
+    "geekRating": 5.89796,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.9091,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "133473": {
     "id": 133473,
-    "boardGameRank": 360,
+    "boardGameRank": 361,
     "title": "Sushi Go!",
     "yearPublished": 2013,
-    "geekRating": 6.98661,
+    "geekRating": 6.98654,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -15799,12 +17631,38 @@ const GameDetail = {
       2020
     ]
   },
+  "133597": {
+    "id": 133597,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Miss Information Villain Character",
+    "yearPublished": 2013,
+    "geekRating": 6.37103,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.381,
+    "categoryIds": [
+      1002,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243,
+      68036
+    ],
+    "mechanicIds": [
+      2023
+    ]
+  },
   "133848": {
     "id": 133848,
     "boardGameRank": 322,
     "title": "Euphoria: Build a Better Dystopia",
     "yearPublished": 2013,
-    "geekRating": 7.02518,
+    "geekRating": 7.02527,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -15826,12 +17684,41 @@ const GameDetail = {
       2082
     ]
   },
+  "133993": {
+    "id": 133993,
+    "boardGameRank": null,
+    "title": "7 Wonders: Wonder Pack",
+    "yearPublished": 2013,
+    "geekRating": 7.11507,
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.3,
+    "categoryIds": [
+      1050,
+      1002,
+      1029,
+      1015,
+      1042
+    ],
+    "designerIds": [
+      9714
+    ],
+    "mechanicIds": [
+      2041,
+      2004,
+      2020,
+      2015
+    ]
+  },
   "134253": {
     "id": 134253,
     "boardGameRank": 804,
     "title": "Hostage Negotiator",
     "yearPublished": 2015,
-    "geekRating": 6.56722,
+    "geekRating": 6.56708,
     "minPlayers": 1,
     "maxPlayers": 1,
     "bestWithPlayers": 1,
@@ -15853,10 +17740,10 @@ const GameDetail = {
   },
   "134352": {
     "id": 134352,
-    "boardGameRank": 767,
+    "boardGameRank": 766,
     "title": "Two Rooms and a Boom",
     "yearPublished": 2013,
-    "geekRating": 6.59598,
+    "geekRating": 6.59675,
     "minPlayers": 6,
     "maxPlayers": 30,
     "bestWithPlayers": 14,
@@ -15883,12 +17770,96 @@ const GameDetail = {
       2017
     ]
   },
+  "134388": {
+    "id": 134388,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Silver Gulch, 1883 Environment",
+    "yearPublished": 2013,
+    "geekRating": 6.37591,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.2174,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "134389": {
+    "id": 134389,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Scholar Hero Character",
+    "yearPublished": 2013,
+    "geekRating": 6.45049,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.3636,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "134396": {
+    "id": 134396,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Final Wasteland Environment",
+    "yearPublished": 2013,
+    "geekRating": 6.37183,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
   "134453": {
     "id": 134453,
-    "boardGameRank": 904,
+    "boardGameRank": 903,
     "title": "The Little Prince: Make Me a Planet",
     "yearPublished": 2013,
-    "geekRating": 6.49308,
+    "geekRating": 6.4935,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -15913,7 +17884,7 @@ const GameDetail = {
     "boardGameRank": 382,
     "title": "Smash Up: Awesome Level 9000",
     "yearPublished": 2013,
-    "geekRating": 6.95535,
+    "geekRating": 6.95524,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -15937,12 +17908,41 @@ const GameDetail = {
       2015
     ]
   },
+  "134946": {
+    "id": 134946,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Encounter at Amon Dîn",
+    "yearPublished": 2013,
+    "geekRating": 5.89619,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.7778,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "135219": {
     "id": 135219,
-    "boardGameRank": 387,
+    "boardGameRank": 389,
     "title": "The Battle of Five Armies",
     "yearPublished": 2014,
-    "geekRating": 6.94647,
+    "geekRating": 6.94644,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -15968,9 +17968,39 @@ const GameDetail = {
       2040
     ]
   },
+  "135378": {
+    "id": 135378,
+    "boardGameRank": null,
+    "title": "Catan: Explorers & Pirates",
+    "yearPublished": 2013,
+    "geekRating": 6.2338,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 90,
+    "maxPlayTime": 120,
+    "averageWeight": 2.7812,
+    "categoryIds": [
+      1042,
+      1008,
+      1026,
+      1090,
+      1011
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "135382": {
     "id": 135382,
-    "boardGameRank": 644,
+    "boardGameRank": 645,
     "title": "Shadowrun: Crossfire",
     "yearPublished": 2014,
     "geekRating": 6.69952,
@@ -16003,10 +18033,10 @@ const GameDetail = {
   },
   "135779": {
     "id": 135779,
-    "boardGameRank": 811,
+    "boardGameRank": 812,
     "title": "A Fake Artist Goes to New York",
     "yearPublished": 2012,
-    "geekRating": 6.55812,
+    "geekRating": 6.55822,
     "minPlayers": 5,
     "maxPlayers": 10,
     "bestWithPlayers": 6,
@@ -16031,7 +18061,7 @@ const GameDetail = {
     "boardGameRank": 273,
     "title": "Forbidden Desert",
     "yearPublished": 2013,
-    "geekRating": 7.09019,
+    "geekRating": 7.09011,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -16057,12 +18087,39 @@ const GameDetail = {
       2015
     ]
   },
+  "136223": {
+    "id": 136223,
+    "boardGameRank": null,
+    "title": "Village Inn",
+    "yearPublished": 2013,
+    "geekRating": 7.05908,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 2.9919,
+    "categoryIds": [
+      1042,
+      1013,
+      1035
+    ],
+    "designerIds": [
+      6940,
+      6941
+    ],
+    "mechanicIds": [
+      2041,
+      2004,
+      2082
+    ]
+  },
   "136888": {
     "id": 136888,
     "boardGameRank": 204,
     "title": "Bruges",
     "yearPublished": 2013,
-    "geekRating": 7.20904,
+    "geekRating": 7.20901,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -16086,16 +18143,16 @@ const GameDetail = {
   },
   "136991": {
     "id": 136991,
-    "boardGameRank": 667,
+    "boardGameRank": 668,
     "title": "Loony Quest",
     "yearPublished": 2015,
-    "geekRating": 6.67806,
+    "geekRating": 6.67669,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 20,
     "maxPlayTime": 30,
-    "averageWeight": 1.2256,
+    "averageWeight": 1.2239,
     "categoryIds": [
       1032,
       1010,
@@ -16107,6 +18164,65 @@ const GameDetail = {
     ],
     "mechanicIds": [
       2039
+    ]
+  },
+  "137136": {
+    "id": 137136,
+    "boardGameRank": null,
+    "title": "Pandemic: In the Lab",
+    "yearPublished": 2013,
+    "geekRating": 7.30314,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 45,
+    "maxPlayTime": 60,
+    "averageWeight": 2.84,
+    "categoryIds": [
+      1084,
+      1042,
+      2145,
+      1016
+    ],
+    "designerIds": [
+      378,
+      150
+    ],
+    "mechanicIds": [
+      2001,
+      2023,
+      2040,
+      2019,
+      2078,
+      2004,
+      2008,
+      2015
+    ]
+  },
+  "137166": {
+    "id": 137166,
+    "boardGameRank": null,
+    "title": "Dominion: Guilds",
+    "yearPublished": 2013,
+    "geekRating": 7.11151,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5392,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
     ]
   },
   "137269": {
@@ -16136,10 +18252,10 @@ const GameDetail = {
   },
   "137297": {
     "id": 137297,
-    "boardGameRank": 800,
+    "boardGameRank": 801,
     "title": "Rise of Augustus",
     "yearPublished": 2013,
-    "geekRating": 6.56931,
+    "geekRating": 6.5693,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -16164,7 +18280,7 @@ const GameDetail = {
     "boardGameRank": 279,
     "title": "Amerigo",
     "yearPublished": 2013,
-    "geekRating": 7.08573,
+    "geekRating": 7.08584,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16187,10 +18303,10 @@ const GameDetail = {
   },
   "137649": {
     "id": 137649,
-    "boardGameRank": 661,
+    "boardGameRank": 662,
     "title": "Level 7 [Omega Protocol]",
     "yearPublished": 2013,
-    "geekRating": 6.68235,
+    "geekRating": 6.68162,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -16211,6 +18327,35 @@ const GameDetail = {
       2072,
       2011,
       2019,
+      2015
+    ]
+  },
+  "137773": {
+    "id": 137773,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Assault on Osgiliath",
+    "yearPublished": 2013,
+    "geekRating": 5.86913,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -16250,7 +18395,7 @@ const GameDetail = {
     "boardGameRank": 281,
     "title": "Firefly: The Game",
     "yearPublished": 2013,
-    "geekRating": 7.07877,
+    "geekRating": 7.07872,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -16280,7 +18425,7 @@ const GameDetail = {
   },
   "138431": {
     "id": 138431,
-    "boardGameRank": 903,
+    "boardGameRank": 904,
     "title": "Galaxy Defenders",
     "yearPublished": 2014,
     "geekRating": 6.49342,
@@ -16338,7 +18483,7 @@ const GameDetail = {
     "boardGameRank": 916,
     "title": "Mascarade",
     "yearPublished": 2013,
-    "geekRating": 6.48588,
+    "geekRating": 6.48589,
     "minPlayers": 2,
     "maxPlayers": 13,
     "bestWithPlayers": 7,
@@ -16358,9 +18503,38 @@ const GameDetail = {
       2015
     ]
   },
+  "139413": {
+    "id": 139413,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Blood of Gondor",
+    "yearPublished": 2013,
+    "geekRating": 5.85621,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "139771": {
     "id": 139771,
-    "boardGameRank": 968,
+    "boardGameRank": 969,
     "title": "Star Trek: Attack Wing",
     "yearPublished": 2013,
     "geekRating": 6.45195,
@@ -16415,7 +18589,7 @@ const GameDetail = {
     "boardGameRank": 228,
     "title": "Cthulhu Wars",
     "yearPublished": 2015,
-    "geekRating": 7.17665,
+    "geekRating": 7.1772,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16474,13 +18648,13 @@ const GameDetail = {
     "boardGameRank": 145,
     "title": "Lewis & Clark",
     "yearPublished": 2013,
-    "geekRating": 7.31913,
+    "geekRating": 7.31916,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 3.3299,
+    "averageWeight": 3.3311,
     "categoryIds": [
       1055,
       1031
@@ -16496,12 +18670,40 @@ const GameDetail = {
       2082
     ]
   },
+  "140917": {
+    "id": 140917,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Morgul Vale",
+    "yearPublished": 2013,
+    "geekRating": 5.88122,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040
+    ]
+  },
   "140933": {
     "id": 140933,
     "boardGameRank": 742,
     "title": "Blueprints",
     "yearPublished": 2013,
-    "geekRating": 6.61831,
+    "geekRating": 6.61853,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16522,10 +18724,10 @@ const GameDetail = {
   },
   "140934": {
     "id": 140934,
-    "boardGameRank": 357,
+    "boardGameRank": 356,
     "title": "Arboretum",
     "yearPublished": 2015,
-    "geekRating": 6.98793,
+    "geekRating": 6.98866,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -16546,10 +18748,10 @@ const GameDetail = {
   },
   "141423": {
     "id": 141423,
-    "boardGameRank": 899,
+    "boardGameRank": 896,
     "title": "Dead Men Tell No Tales",
     "yearPublished": 2015,
-    "geekRating": 6.49445,
+    "geekRating": 6.49581,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -16578,10 +18780,10 @@ const GameDetail = {
   },
   "141517": {
     "id": 141517,
-    "boardGameRank": 631,
+    "boardGameRank": 632,
     "title": "A Study in Emerald",
     "yearPublished": 2013,
-    "geekRating": 6.71877,
+    "geekRating": 6.71962,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -16612,10 +18814,10 @@ const GameDetail = {
   },
   "141572": {
     "id": 141572,
-    "boardGameRank": 319,
+    "boardGameRank": 318,
     "title": "Paperback",
     "yearPublished": 2014,
-    "geekRating": 7.02758,
+    "geekRating": 7.02803,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -16638,10 +18840,10 @@ const GameDetail = {
   },
   "142079": {
     "id": 142079,
-    "boardGameRank": 991,
+    "boardGameRank": 992,
     "title": "Space Cadets: Dice Duel",
     "yearPublished": 2013,
-    "geekRating": 6.44091,
+    "geekRating": 6.44106,
     "minPlayers": 4,
     "maxPlayers": 8,
     "bestWithPlayers": 8,
@@ -16672,7 +18874,7 @@ const GameDetail = {
     "boardGameRank": 687,
     "title": "Eight-Minute Empire: Legends",
     "yearPublished": 2013,
-    "geekRating": 6.65597,
+    "geekRating": 6.65652,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16697,9 +18899,144 @@ const GameDetail = {
       2015
     ]
   },
+  "142527": {
+    "id": 142527,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Lambda-class Shuttle Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.41371,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.619,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142545": {
+    "id": 142545,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - HWK-290 Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.31144,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.3333,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142546": {
+    "id": 142546,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - B-Wing Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.71071,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.6786,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142547": {
+    "id": 142547,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Bomber Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.46849,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "142852": {
     "id": 142852,
-    "boardGameRank": 937,
+    "boardGameRank": 940,
     "title": "DC Comics Deck-Building Game: Heroes Unite",
     "yearPublished": 2014,
     "geekRating": 6.47413,
@@ -16720,12 +19057,40 @@ const GameDetail = {
       2664
     ]
   },
+  "142875": {
+    "id": 142875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Black Riders",
+    "yearPublished": 2013,
+    "geekRating": 6.30184,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9583,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "142992": {
     "id": 142992,
     "boardGameRank": 879,
     "title": "Gravwell: Escape from the 9th Dimension",
     "yearPublished": 2013,
-    "geekRating": 6.50747,
+    "geekRating": 6.50787,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -16751,7 +19116,7 @@ const GameDetail = {
     "boardGameRank": 809,
     "title": "Sylvion",
     "yearPublished": 2015,
-    "geekRating": 6.56042,
+    "geekRating": 6.56059,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 1,
@@ -16779,7 +19144,7 @@ const GameDetail = {
     "boardGameRank": 488,
     "title": "Coal Baron",
     "yearPublished": 2013,
-    "geekRating": 6.85423,
+    "geekRating": 6.85432,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -16804,10 +19169,10 @@ const GameDetail = {
   },
   "143519": {
     "id": 143519,
-    "boardGameRank": 375,
+    "boardGameRank": 374,
     "title": "Quantum",
     "yearPublished": 2013,
-    "geekRating": 6.96272,
+    "geekRating": 6.96305,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16835,13 +19200,13 @@ const GameDetail = {
     "boardGameRank": 209,
     "title": "Glass Road",
     "yearPublished": 2013,
-    "geekRating": 7.19945,
+    "geekRating": 7.19955,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 20,
     "maxPlayTime": 80,
-    "averageWeight": 2.9714,
+    "averageWeight": 2.969,
     "categoryIds": [
       1029,
       1021,
@@ -16860,10 +19225,10 @@ const GameDetail = {
   },
   "143741": {
     "id": 143741,
-    "boardGameRank": 482,
+    "boardGameRank": 484,
     "title": "BANG! The Dice Game",
     "yearPublished": 2013,
-    "geekRating": 6.8584,
+    "geekRating": 6.85842,
     "minPlayers": 3,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -16890,12 +19255,38 @@ const GameDetail = {
       2015
     ]
   },
+  "143789": {
+    "id": 143789,
+    "boardGameRank": null,
+    "title": "Machi Koro: Harbor",
+    "yearPublished": 2012,
+    "geekRating": 6.78447,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.6627,
+    "categoryIds": [
+      1002,
+      1029,
+      1017,
+      1042
+    ],
+    "designerIds": [
+      68814
+    ],
+    "mechanicIds": [
+      2072,
+      2004
+    ]
+  },
   "143884": {
     "id": 143884,
     "boardGameRank": 781,
     "title": "Machi Koro",
     "yearPublished": 2012,
-    "geekRating": 6.58558,
+    "geekRating": 6.58538,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16946,10 +19337,10 @@ const GameDetail = {
   },
   "144041": {
     "id": 144041,
-    "boardGameRank": 837,
+    "boardGameRank": 836,
     "title": "Patchistory",
     "yearPublished": 2013,
-    "geekRating": 6.53644,
+    "geekRating": 6.5382,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -16986,7 +19377,7 @@ const GameDetail = {
   },
   "144189": {
     "id": 144189,
-    "boardGameRank": 428,
+    "boardGameRank": 429,
     "title": "Fire in the Lake",
     "yearPublished": 2014,
     "geekRating": 6.91372,
@@ -17014,10 +19405,10 @@ const GameDetail = {
   },
   "144344": {
     "id": 144344,
-    "boardGameRank": 195,
+    "boardGameRank": 196,
     "title": "Rococo",
     "yearPublished": 2013,
-    "geekRating": 7.22364,
+    "geekRating": 7.22358,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -17041,12 +19432,42 @@ const GameDetail = {
       2004
     ]
   },
+  "144419": {
+    "id": 144419,
+    "boardGameRank": null,
+    "title": "Catan: Explorers & Pirates - 5-6 Player Extension",
+    "yearPublished": 2013,
+    "geekRating": 5.64651,
+    "minPlayers": 5,
+    "maxPlayers": 6,
+    "bestWithPlayers": 5,
+    "minPlayTime": 120,
+    "maxPlayTime": 150,
+    "averageWeight": 3.0909,
+    "categoryIds": [
+      1042,
+      1008,
+      1026,
+      1090,
+      1011
+    ],
+    "designerIds": [
+      11
+    ],
+    "mechanicIds": [
+      2072,
+      2040,
+      2011,
+      2081,
+      2008
+    ]
+  },
   "144592": {
     "id": 144592,
     "boardGameRank": 250,
     "title": "Bruxelles 1893",
     "yearPublished": 2013,
-    "geekRating": 7.1258,
+    "geekRating": 7.12575,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -17069,10 +19490,10 @@ const GameDetail = {
   },
   "144733": {
     "id": 144733,
-    "boardGameRank": 70,
+    "boardGameRank": 69,
     "title": "Russian Railroads",
     "yearPublished": 2013,
-    "geekRating": 7.57454,
+    "geekRating": 7.5747,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17096,7 +19517,7 @@ const GameDetail = {
     "boardGameRank": 402,
     "title": "Argent: The Consortium",
     "yearPublished": 2015,
-    "geekRating": 6.93629,
+    "geekRating": 6.93569,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -17117,12 +19538,37 @@ const GameDetail = {
       2082
     ]
   },
+  "145196": {
+    "id": 145196,
+    "boardGameRank": null,
+    "title": "Suburbia Inc",
+    "yearPublished": 2013,
+    "geekRating": 7.1939,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 2.7294,
+    "categoryIds": [
+      1029,
+      1021,
+      1042
+    ],
+    "designerIds": [
+      6046
+    ],
+    "mechanicIds": [
+      2011,
+      2002
+    ]
+  },
   "145371": {
     "id": 145371,
-    "boardGameRank": 850,
+    "boardGameRank": 847,
     "title": "Three Kingdoms Redux",
     "yearPublished": 2014,
-    "geekRating": 6.53196,
+    "geekRating": 6.53378,
     "minPlayers": 3,
     "maxPlayers": 3,
     "bestWithPlayers": 3,
@@ -17155,7 +19601,7 @@ const GameDetail = {
     "boardGameRank": 771,
     "title": "Coconuts",
     "yearPublished": 2013,
-    "geekRating": 6.59475,
+    "geekRating": 6.59537,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17175,10 +19621,10 @@ const GameDetail = {
   },
   "145659": {
     "id": 145659,
-    "boardGameRank": 544,
+    "boardGameRank": 547,
     "title": "Scoville",
     "yearPublished": 2014,
-    "geekRating": 6.79998,
+    "geekRating": 6.79904,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -17202,13 +19648,13 @@ const GameDetail = {
     "boardGameRank": 50,
     "title": "Eldritch Horror",
     "yearPublished": 2013,
-    "geekRating": 7.66166,
+    "geekRating": 7.66187,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
     "minPlayTime": 120,
     "maxPlayTime": 240,
-    "averageWeight": 3.3077,
+    "averageWeight": 3.3085,
     "categoryIds": [
       1022,
       1010,
@@ -17234,7 +19680,7 @@ const GameDetail = {
     "boardGameRank": 972,
     "title": "Forge War",
     "yearPublished": 2015,
-    "geekRating": 6.4505,
+    "geekRating": 6.45156,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -17264,7 +19710,7 @@ const GameDetail = {
     "boardGameRank": 471,
     "title": "Tash-Kalar: Arena of Legends",
     "yearPublished": 2013,
-    "geekRating": 6.87001,
+    "geekRating": 6.86999,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -17292,10 +19738,10 @@ const GameDetail = {
   },
   "146439": {
     "id": 146439,
-    "boardGameRank": 149,
+    "boardGameRank": 150,
     "title": "BattleLore (Second Edition)",
     "yearPublished": 2013,
-    "geekRating": 7.31358,
+    "geekRating": 7.31349,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -17324,7 +19770,7 @@ const GameDetail = {
     "boardGameRank": 57,
     "title": "T.I.M.E Stories",
     "yearPublished": 2015,
-    "geekRating": 7.63978,
+    "geekRating": 7.63959,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17348,18 +19794,46 @@ const GameDetail = {
       2015
     ]
   },
+  "146574": {
+    "id": 146574,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Voice of Isengard",
+    "yearPublished": 2014,
+    "geekRating": 5.94073,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "146652": {
     "id": 146652,
     "boardGameRank": 86,
     "title": "Legendary Encounters: An Alien Deck Building Game",
     "yearPublished": 2014,
-    "geekRating": 7.48771,
+    "geekRating": 7.48705,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 30,
     "maxPlayTime": 60,
-    "averageWeight": 2.7127,
+    "averageWeight": 2.7107,
     "categoryIds": [
       1002,
       1046,
@@ -17380,12 +19854,77 @@ const GameDetail = {
       2015
     ]
   },
+  "146757": {
+    "id": 146757,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Rebel Transport Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.06664,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.9333,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      60239,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "146766": {
+    "id": 146766,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Tantive IV Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.10231,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.8667,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "146791": {
     "id": 146791,
     "boardGameRank": 274,
     "title": "Shadows of Brimstone: City of the Ancients",
     "yearPublished": 2014,
-    "geekRating": 7.0889,
+    "geekRating": 7.08832,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17418,7 +19957,7 @@ const GameDetail = {
     "boardGameRank": 122,
     "title": "La Granja",
     "yearPublished": 2014,
-    "geekRating": 7.38297,
+    "geekRating": 7.38277,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17444,10 +19983,10 @@ const GameDetail = {
   },
   "147020": {
     "id": 147020,
-    "boardGameRank": 87,
+    "boardGameRank": 88,
     "title": "Star Realms",
     "yearPublished": 2014,
-    "geekRating": 7.48345,
+    "geekRating": 7.48304,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -17472,10 +20011,10 @@ const GameDetail = {
   },
   "147151": {
     "id": 147151,
-    "boardGameRank": 592,
+    "boardGameRank": 593,
     "title": "Concept",
     "yearPublished": 2013,
-    "geekRating": 6.75427,
+    "geekRating": 6.75414,
     "minPlayers": 4,
     "maxPlayers": 12,
     "bestWithPlayers": 6,
@@ -17519,12 +20058,41 @@ const GameDetail = {
       2002
     ]
   },
+  "147723": {
+    "id": 147723,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Road Darkens",
+    "yearPublished": 2014,
+    "geekRating": 5.98194,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "147949": {
     "id": 147949,
-    "boardGameRank": 285,
+    "boardGameRank": 286,
     "title": "One Night Ultimate Werewolf",
     "yearPublished": 2014,
-    "geekRating": 7.07187,
+    "geekRating": 7.07102,
     "minPlayers": 3,
     "maxPlayers": 10,
     "bestWithPlayers": 6,
@@ -17553,7 +20121,7 @@ const GameDetail = {
     "boardGameRank": 121,
     "title": "Splendor",
     "yearPublished": 2014,
-    "geekRating": 7.38301,
+    "geekRating": 7.38279,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -17573,12 +20141,50 @@ const GameDetail = {
       2004
     ]
   },
+  "148259": {
+    "id": 148259,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Aces Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.61911,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2019,
+      2685,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "148319": {
     "id": 148319,
-    "boardGameRank": 536,
+    "boardGameRank": 537,
     "title": "Tragedy Looper",
     "yearPublished": 2011,
-    "geekRating": 6.80681,
+    "geekRating": 6.80695,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17604,7 +20210,7 @@ const GameDetail = {
     "boardGameRank": 459,
     "title": "Marvel Dice Masters: Avengers vs. X-Men",
     "yearPublished": 2014,
-    "geekRating": 6.88085,
+    "geekRating": 6.88068,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -17661,7 +20267,7 @@ const GameDetail = {
     "boardGameRank": 90,
     "title": "Istanbul",
     "yearPublished": 2014,
-    "geekRating": 7.47377,
+    "geekRating": 7.47384,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -17683,10 +20289,10 @@ const GameDetail = {
   },
   "149155": {
     "id": 149155,
-    "boardGameRank": 951,
+    "boardGameRank": 952,
     "title": "Dead Man's Draw",
     "yearPublished": 2015,
-    "geekRating": 6.46506,
+    "geekRating": 6.46529,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -17707,10 +20313,10 @@ const GameDetail = {
   },
   "150145": {
     "id": 150145,
-    "boardGameRank": 908,
+    "boardGameRank": 911,
     "title": "Skull King",
     "yearPublished": 2013,
-    "geekRating": 6.48988,
+    "geekRating": 6.48925,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -17731,10 +20337,10 @@ const GameDetail = {
   },
   "150312": {
     "id": 150312,
-    "boardGameRank": 848,
+    "boardGameRank": 849,
     "title": "Welcome to the Dungeon",
     "yearPublished": 2013,
-    "geekRating": 6.53326,
+    "geekRating": 6.53347,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -17758,10 +20364,10 @@ const GameDetail = {
   },
   "150376": {
     "id": 150376,
-    "boardGameRank": 69,
+    "boardGameRank": 70,
     "title": "Dead of Winter: A Crossroads Game",
     "yearPublished": 2014,
-    "geekRating": 7.57478,
+    "geekRating": 7.57437,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -17796,7 +20402,7 @@ const GameDetail = {
     "boardGameRank": 272,
     "title": "Pandemic: The Cure",
     "yearPublished": 2014,
-    "geekRating": 7.09065,
+    "geekRating": 7.09112,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -17823,7 +20429,7 @@ const GameDetail = {
   },
   "150997": {
     "id": 150997,
-    "boardGameRank": 374,
+    "boardGameRank": 375,
     "title": "Shadows of Brimstone: Swamps of Death",
     "yearPublished": 2014,
     "geekRating": 6.96297,
@@ -17858,13 +20464,13 @@ const GameDetail = {
     "boardGameRank": 649,
     "title": "Valley of the Kings",
     "yearPublished": 2014,
-    "geekRating": 6.69585,
+    "geekRating": 6.69551,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.1971,
+    "averageWeight": 2.1957,
     "categoryIds": [
       1050,
       1002,
@@ -17884,7 +20490,7 @@ const GameDetail = {
     "boardGameRank": 507,
     "title": "Smash Up: Science Fiction Double Feature",
     "yearPublished": 2014,
-    "geekRating": 6.83564,
+    "geekRating": 6.83542,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -17949,7 +20555,7 @@ const GameDetail = {
     "boardGameRank": 372,
     "title": "Baseball Highlights: 2045",
     "yearPublished": 2015,
-    "geekRating": 6.96579,
+    "geekRating": 6.9658,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -17972,10 +20578,10 @@ const GameDetail = {
   },
   "151347": {
     "id": 151347,
-    "boardGameRank": 277,
+    "boardGameRank": 276,
     "title": "Millennium Blades",
     "yearPublished": 2016,
-    "geekRating": 7.08722,
+    "geekRating": 7.08747,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -18003,7 +20609,7 @@ const GameDetail = {
     "boardGameRank": 684,
     "title": "Diamonds",
     "yearPublished": 2014,
-    "geekRating": 6.65959,
+    "geekRating": 6.65912,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -18026,7 +20632,7 @@ const GameDetail = {
     "boardGameRank": 786,
     "title": "Fief: France 1429",
     "yearPublished": 2015,
-    "geekRating": 6.57996,
+    "geekRating": 6.58089,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -18078,7 +20684,7 @@ const GameDetail = {
     "boardGameRank": 715,
     "title": "Linko!",
     "yearPublished": 2014,
-    "geekRating": 6.63736,
+    "geekRating": 6.63689,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -18098,12 +20704,70 @@ const GameDetail = {
       2004
     ]
   },
+  "153130": {
+    "id": 153130,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dunland Trap",
+    "yearPublished": 2014,
+    "geekRating": 5.79696,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "153527": {
+    "id": 153527,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Rook City & Infernal Relics Expansion",
+    "yearPublished": 2013,
+    "geekRating": 6.50069,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.6786,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      4819,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "153938": {
     "id": 153938,
-    "boardGameRank": 394,
+    "boardGameRank": 393,
     "title": "Camel Up",
     "yearPublished": 2014,
-    "geekRating": 6.94431,
+    "geekRating": 6.94445,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -18126,16 +20790,16 @@ const GameDetail = {
   },
   "154086": {
     "id": 154086,
-    "boardGameRank": 694,
+    "boardGameRank": 691,
     "title": "Gold West",
     "yearPublished": 2015,
-    "geekRating": 6.65263,
+    "geekRating": 6.65414,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 45,
     "maxPlayTime": 60,
-    "averageWeight": 2.4909,
+    "averageWeight": 2.4821,
     "categoryIds": [
       1055,
       1021,
@@ -18156,13 +20820,13 @@ const GameDetail = {
     "boardGameRank": 140,
     "title": "Imperial Settlers",
     "yearPublished": 2014,
-    "geekRating": 7.33137,
+    "geekRating": 7.33129,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 45,
     "maxPlayTime": 90,
-    "averageWeight": 2.7718,
+    "averageWeight": 2.7721,
     "categoryIds": [
       1050,
       1002,
@@ -18181,10 +20845,10 @@ const GameDetail = {
   },
   "154246": {
     "id": 154246,
-    "boardGameRank": 749,
+    "boardGameRank": 750,
     "title": "La Isla",
     "yearPublished": 2014,
-    "geekRating": 6.61275,
+    "geekRating": 6.61297,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18211,7 +20875,7 @@ const GameDetail = {
     "boardGameRank": 803,
     "title": "Medieval Academy",
     "yearPublished": 2014,
-    "geekRating": 6.56784,
+    "geekRating": 6.56732,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -18235,7 +20899,7 @@ const GameDetail = {
     "boardGameRank": 598,
     "title": "Akrotiri",
     "yearPublished": 2014,
-    "geekRating": 6.74942,
+    "geekRating": 6.74998,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -18257,12 +20921,177 @@ const GameDetail = {
       2002
     ]
   },
+  "154493": {
+    "id": 154493,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Three Trials",
+    "yearPublished": 2014,
+    "geekRating": 5.81107,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "154766": {
+    "id": 154766,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Z-95 Headhunter Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.21596,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.1818,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154767": {
+    "id": 154767,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Defender Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.31955,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.4737,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154768": {
+    "id": 154768,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - E-Wing Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.32813,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154769": {
+    "id": 154769,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Phantom Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.48628,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "154809": {
     "id": 154809,
     "boardGameRank": 249,
     "title": "Nippon",
     "yearPublished": 2015,
-    "geekRating": 7.12828,
+    "geekRating": 7.12846,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18284,10 +21113,10 @@ const GameDetail = {
   },
   "154825": {
     "id": 154825,
-    "boardGameRank": 571,
+    "boardGameRank": 570,
     "title": "Arkwright",
     "yearPublished": 2014,
-    "geekRating": 6.78243,
+    "geekRating": 6.78335,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18314,13 +21143,13 @@ const GameDetail = {
     "boardGameRank": 91,
     "title": "Arcadia Quest",
     "yearPublished": 2014,
-    "geekRating": 7.47002,
+    "geekRating": 7.47003,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 2.5129,
+    "averageWeight": 2.511,
     "categoryIds": [
       1022,
       1010,
@@ -18342,10 +21171,10 @@ const GameDetail = {
   },
   "155362": {
     "id": 155362,
-    "boardGameRank": 533,
+    "boardGameRank": 534,
     "title": "Ca$h 'n Guns (Second Edition)",
     "yearPublished": 2014,
-    "geekRating": 6.80773,
+    "geekRating": 6.80763,
     "minPlayers": 4,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -18375,7 +21204,7 @@ const GameDetail = {
     "boardGameRank": 85,
     "title": "Castles of Mad King Ludwig",
     "yearPublished": 2014,
-    "geekRating": 7.48976,
+    "geekRating": 7.49022,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18402,7 +21231,7 @@ const GameDetail = {
     "boardGameRank": 413,
     "title": "Specter Ops",
     "yearPublished": 2015,
-    "geekRating": 6.92653,
+    "geekRating": 6.92659,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -18433,7 +21262,7 @@ const GameDetail = {
     "boardGameRank": 339,
     "title": "Evolution",
     "yearPublished": 2014,
-    "geekRating": 7.00456,
+    "geekRating": 7.00461,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -18469,13 +21298,13 @@ const GameDetail = {
     "boardGameRank": 109,
     "title": "Inis",
     "yearPublished": 2016,
-    "geekRating": 7.41452,
+    "geekRating": 7.4143,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 90,
-    "averageWeight": 2.8883,
+    "averageWeight": 2.8833,
     "categoryIds": [
       1050,
       1002,
@@ -18498,10 +21327,10 @@ const GameDetail = {
   },
   "155873": {
     "id": 155873,
-    "boardGameRank": 151,
+    "boardGameRank": 152,
     "title": "Power Grid Deluxe: Europe/North America",
     "yearPublished": 2014,
-    "geekRating": 7.31273,
+    "geekRating": 7.31239,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -18522,10 +21351,10 @@ const GameDetail = {
   },
   "155987": {
     "id": 155987,
-    "boardGameRank": 332,
+    "boardGameRank": 331,
     "title": "Abyss",
     "yearPublished": 2014,
-    "geekRating": 7.01637,
+    "geekRating": 7.01649,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18555,7 +21384,7 @@ const GameDetail = {
     "boardGameRank": 409,
     "title": "Port Royal",
     "yearPublished": 2014,
-    "geekRating": 6.93182,
+    "geekRating": 6.93198,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -18578,16 +21407,16 @@ const GameDetail = {
   },
   "156091": {
     "id": 156091,
-    "boardGameRank": 705,
+    "boardGameRank": 706,
     "title": "Sons of Anarchy: Men of Mayhem",
     "yearPublished": 2014,
-    "geekRating": 6.64299,
+    "geekRating": 6.64223,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 90,
-    "averageWeight": 2.5698,
+    "averageWeight": 2.5517,
     "categoryIds": [
       1033,
       1064,
@@ -18617,7 +21446,7 @@ const GameDetail = {
     "boardGameRank": 170,
     "title": "Deception: Murder in Hong Kong",
     "yearPublished": 2014,
-    "geekRating": 7.28521,
+    "geekRating": 7.28584,
     "minPlayers": 4,
     "maxPlayers": 12,
     "bestWithPlayers": 7,
@@ -18643,13 +21472,13 @@ const GameDetail = {
     "boardGameRank": 477,
     "title": "Onirim (second edition)",
     "yearPublished": 2014,
-    "geekRating": 6.8624,
+    "geekRating": 6.86221,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 1,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.5949,
+    "averageWeight": 1.5975,
     "categoryIds": [
       1002,
       1020,
@@ -18665,12 +21494,40 @@ const GameDetail = {
       2004
     ]
   },
+  "156416": {
+    "id": 156416,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Trouble in Tharbad",
+    "yearPublished": 2014,
+    "geekRating": 5.75836,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.8333,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "156546": {
     "id": 156546,
     "boardGameRank": 436,
     "title": "Monikers",
     "yearPublished": 2015,
-    "geekRating": 6.90701,
+    "geekRating": 6.90694,
     "minPlayers": 4,
     "maxPlayers": 20,
     "bestWithPlayers": 8,
@@ -18696,10 +21553,10 @@ const GameDetail = {
   },
   "156566": {
     "id": 156566,
-    "boardGameRank": 559,
+    "boardGameRank": 560,
     "title": "Lords of Xidit",
     "yearPublished": 2014,
-    "geekRating": 6.79048,
+    "geekRating": 6.79061,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -18722,10 +21579,10 @@ const GameDetail = {
   },
   "156689": {
     "id": 156689,
-    "boardGameRank": 469,
+    "boardGameRank": 470,
     "title": "Legendary: Villains - A Marvel Deck Building Game",
     "yearPublished": 2014,
-    "geekRating": 6.87047,
+    "geekRating": 6.87015,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -18774,12 +21631,46 @@ const GameDetail = {
       2015
     ]
   },
+  "156770": {
+    "id": 156770,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Rebel Aces Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.43874,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "156776": {
     "id": 156776,
-    "boardGameRank": 636,
+    "boardGameRank": 637,
     "title": "Warhammer 40,000: Conquest",
     "yearPublished": 2014,
-    "geekRating": 6.71153,
+    "geekRating": 6.71123,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -18807,7 +21698,7 @@ const GameDetail = {
     "boardGameRank": 580,
     "title": "Black Orchestra",
     "yearPublished": 2016,
-    "geekRating": 6.76747,
+    "geekRating": 6.7688,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -18892,7 +21783,7 @@ const GameDetail = {
     "boardGameRank": 55,
     "title": "Five Tribes",
     "yearPublished": 2014,
-    "geekRating": 7.64923,
+    "geekRating": 7.64894,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -18921,7 +21812,7 @@ const GameDetail = {
     "boardGameRank": 655,
     "title": "Black Fleet",
     "yearPublished": 2014,
-    "geekRating": 6.68716,
+    "geekRating": 6.68765,
     "minPlayers": 3,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -18944,10 +21835,10 @@ const GameDetail = {
   },
   "157526": {
     "id": 157526,
-    "boardGameRank": 755,
+    "boardGameRank": 756,
     "title": "Viceroy",
     "yearPublished": 2014,
-    "geekRating": 6.60881,
+    "geekRating": 6.6083,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -18978,7 +21869,7 @@ const GameDetail = {
     "boardGameRank": 719,
     "title": "Nations: The Dice Game",
     "yearPublished": 2014,
-    "geekRating": 6.63291,
+    "geekRating": 6.63346,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19001,13 +21892,13 @@ const GameDetail = {
     "boardGameRank": 256,
     "title": "Sheriff of Nottingham",
     "yearPublished": 2014,
-    "geekRating": 7.11294,
+    "geekRating": 7.11281,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 1.6643,
+    "averageWeight": 1.6632,
     "categoryIds": [
       1023,
       1002,
@@ -19033,7 +21924,7 @@ const GameDetail = {
     "boardGameRank": 525,
     "title": "Marvel Dice Masters: Uncanny X-Men",
     "yearPublished": 2014,
-    "geekRating": 6.81753,
+    "geekRating": 6.81719,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -19060,7 +21951,7 @@ const GameDetail = {
     "boardGameRank": 647,
     "title": "Dogs of War",
     "yearPublished": 2014,
-    "geekRating": 6.69688,
+    "geekRating": 6.69681,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -19089,7 +21980,7 @@ const GameDetail = {
     "boardGameRank": 260,
     "title": "Hanamikoji",
     "yearPublished": 2013,
-    "geekRating": 7.10753,
+    "geekRating": 7.10684,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -19111,7 +22002,7 @@ const GameDetail = {
   },
   "158889": {
     "id": 158889,
-    "boardGameRank": 454,
+    "boardGameRank": 455,
     "title": "Summoner Wars: Alliances Master Set",
     "yearPublished": 2014,
     "geekRating": 6.88318,
@@ -19141,7 +22032,7 @@ const GameDetail = {
     "boardGameRank": 310,
     "title": "Colt Express",
     "yearPublished": 2014,
-    "geekRating": 7.03756,
+    "geekRating": 7.03726,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -19167,10 +22058,10 @@ const GameDetail = {
   },
   "159109": {
     "id": 159109,
-    "boardGameRank": 841,
+    "boardGameRank": 848,
     "title": "XenoShyft: Onslaught",
     "yearPublished": 2015,
-    "geekRating": 6.53552,
+    "geekRating": 6.53348,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -19196,7 +22087,7 @@ const GameDetail = {
   },
   "159473": {
     "id": 159473,
-    "boardGameRank": 697,
+    "boardGameRank": 698,
     "title": "Quartermaster General",
     "yearPublished": 2014,
     "geekRating": 6.64808,
@@ -19222,10 +22113,10 @@ const GameDetail = {
   },
   "159503": {
     "id": 159503,
-    "boardGameRank": 945,
+    "boardGameRank": 946,
     "title": "The Captain Is Dead",
     "yearPublished": 2014,
-    "geekRating": 6.4705,
+    "geekRating": 6.47046,
     "minPlayers": 1,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -19254,7 +22145,7 @@ const GameDetail = {
     "boardGameRank": 370,
     "title": "AquaSphere",
     "yearPublished": 2014,
-    "geekRating": 6.97229,
+    "geekRating": 6.97198,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19279,7 +22170,7 @@ const GameDetail = {
     "boardGameRank": 54,
     "title": "Fields of Arle",
     "yearPublished": 2014,
-    "geekRating": 7.65466,
+    "geekRating": 7.65475,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -19309,7 +22200,7 @@ const GameDetail = {
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 90,
-    "averageWeight": 2.7927,
+    "averageWeight": 2.7952,
     "categoryIds": [
       1022,
       1010,
@@ -19366,12 +22257,40 @@ const GameDetail = {
       2015
     ]
   },
+  "160464": {
+    "id": 160464,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Antlered Crown",
+    "yearPublished": 2014,
+    "geekRating": 5.73075,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "160477": {
     "id": 160477,
     "boardGameRank": 183,
     "title": "Onitama",
     "yearPublished": 2014,
-    "geekRating": 7.24919,
+    "geekRating": 7.24912,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -19392,10 +22311,10 @@ const GameDetail = {
   },
   "160495": {
     "id": 160495,
-    "boardGameRank": 405,
+    "boardGameRank": 407,
     "title": "ZhanGuo",
     "yearPublished": 2014,
-    "geekRating": 6.93328,
+    "geekRating": 6.93272,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19420,13 +22339,13 @@ const GameDetail = {
     "boardGameRank": 451,
     "title": "King of New York",
     "yearPublished": 2014,
-    "geekRating": 6.88912,
+    "geekRating": 6.88902,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
     "minPlayTime": 40,
     "maxPlayTime": 40,
-    "averageWeight": 1.8542,
+    "averageWeight": 1.8519,
     "categoryIds": [
       1017,
       1046,
@@ -19450,7 +22369,7 @@ const GameDetail = {
     "boardGameRank": 838,
     "title": "Thunderbirds",
     "yearPublished": 2015,
-    "geekRating": 6.53613,
+    "geekRating": 6.53739,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -19476,16 +22395,16 @@ const GameDetail = {
   },
   "160851": {
     "id": 160851,
-    "boardGameRank": 590,
+    "boardGameRank": 591,
     "title": "Lanterns: The Harvest Festival",
     "yearPublished": 2015,
-    "geekRating": 6.75499,
+    "geekRating": 6.75454,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.5707,
+    "averageWeight": 1.5676,
     "categoryIds": [],
     "designerIds": [
       71997
@@ -19499,7 +22418,7 @@ const GameDetail = {
   },
   "160902": {
     "id": 160902,
-    "boardGameRank": 910,
+    "boardGameRank": 909,
     "title": "Dungeons & Dragons Dice Masters: Battle for Faerûn",
     "yearPublished": 2015,
     "geekRating": 6.48947,
@@ -19525,12 +22444,70 @@ const GameDetail = {
       2015
     ]
   },
+  "161031": {
+    "id": 161031,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - VT-49 Decimator Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.2269,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4545,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2020,
+      2015
+    ]
+  },
+  "161032": {
+    "id": 161032,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - YT-2400 Freighter Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.2327,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4545,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2020,
+      2015
+    ]
+  },
   "161417": {
     "id": 161417,
     "boardGameRank": 552,
     "title": "Red7",
     "yearPublished": 2014,
-    "geekRating": 6.79337,
+    "geekRating": 6.79345,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19553,16 +22530,16 @@ const GameDetail = {
   },
   "161533": {
     "id": 161533,
-    "boardGameRank": 98,
+    "boardGameRank": 97,
     "title": "Lisboa",
     "yearPublished": 2017,
-    "geekRating": 7.44701,
+    "geekRating": 7.44851,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 4.5,
+    "averageWeight": 4.5029,
     "categoryIds": [
       1029,
       1021,
@@ -19580,10 +22557,10 @@ const GameDetail = {
   },
   "161614": {
     "id": 161614,
-    "boardGameRank": 286,
+    "boardGameRank": 285,
     "title": "Stockpile",
     "yearPublished": 2015,
-    "geekRating": 7.07154,
+    "geekRating": 7.07143,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -19609,7 +22586,7 @@ const GameDetail = {
     "boardGameRank": 614,
     "title": "Zombicide Season 3: Rue Morgue",
     "yearPublished": 2015,
-    "geekRating": 6.73285,
+    "geekRating": 6.73366,
     "minPlayers": 1,
     "maxPlayers": 12,
     "bestWithPlayers": 3,
@@ -19641,7 +22618,7 @@ const GameDetail = {
     "boardGameRank": 2,
     "title": "Pandemic Legacy: Season 1",
     "yearPublished": 2015,
-    "geekRating": 8.49471,
+    "geekRating": 8.49473,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19671,7 +22648,7 @@ const GameDetail = {
     "boardGameRank": 84,
     "title": "Alchemists",
     "yearPublished": 2014,
-    "geekRating": 7.49787,
+    "geekRating": 7.49753,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19697,7 +22674,7 @@ const GameDetail = {
     "boardGameRank": 441,
     "title": "Steampunk Rally",
     "yearPublished": 2015,
-    "geekRating": 6.90318,
+    "geekRating": 6.9029,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -19724,7 +22701,7 @@ const GameDetail = {
     "boardGameRank": 307,
     "title": "Deus",
     "yearPublished": 2014,
-    "geekRating": 7.03902,
+    "geekRating": 7.03916,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -19779,13 +22756,13 @@ const GameDetail = {
     "boardGameRank": 27,
     "title": "Spirit Island",
     "yearPublished": 2017,
-    "geekRating": 7.85373,
+    "geekRating": 7.85453,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 90,
     "maxPlayTime": 120,
-    "averageWeight": 3.8897,
+    "averageWeight": 3.8926,
     "categoryIds": [
       2726,
       1084,
@@ -19813,7 +22790,7 @@ const GameDetail = {
     "boardGameRank": 164,
     "title": "Trickerion: Legends of Illusion",
     "yearPublished": 2015,
-    "geekRating": 7.29775,
+    "geekRating": 7.298,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19835,10 +22812,10 @@ const GameDetail = {
   },
   "163154": {
     "id": 163154,
-    "boardGameRank": 801,
+    "boardGameRank": 798,
     "title": "Falling Sky: The Gallic Revolt Against Caesar",
     "yearPublished": 2016,
-    "geekRating": 6.56921,
+    "geekRating": 6.57215,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19867,7 +22844,7 @@ const GameDetail = {
     "boardGameRank": 378,
     "title": "One Night Ultimate Werewolf Daybreak",
     "yearPublished": 2015,
-    "geekRating": 6.95939,
+    "geekRating": 6.95918,
     "minPlayers": 3,
     "maxPlayers": 7,
     "bestWithPlayers": 7,
@@ -19896,13 +22873,13 @@ const GameDetail = {
     "boardGameRank": 58,
     "title": "Patchwork",
     "yearPublished": 2014,
-    "geekRating": 7.62556,
+    "geekRating": 7.62517,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 15,
     "maxPlayTime": 30,
-    "averageWeight": 1.6983,
+    "averageWeight": 1.6987,
     "categoryIds": [
       1009,
       1028
@@ -19946,10 +22923,10 @@ const GameDetail = {
   },
   "163602": {
     "id": 163602,
-    "boardGameRank": 514,
+    "boardGameRank": 515,
     "title": "XCOM: The Board Game",
     "yearPublished": 2015,
-    "geekRating": 6.82721,
+    "geekRating": 6.82701,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -19977,10 +22954,10 @@ const GameDetail = {
   },
   "163642": {
     "id": 163642,
-    "boardGameRank": 915,
+    "boardGameRank": 918,
     "title": "Chimera Station",
     "yearPublished": 2017,
-    "geekRating": 6.4862,
+    "geekRating": 6.48555,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -19999,12 +22976,68 @@ const GameDetail = {
       2082
     ]
   },
+  "163676": {
+    "id": 163676,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Omnitron IV Environment",
+    "yearPublished": 2015,
+    "geekRating": 6.01235,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "163686": {
+    "id": 163686,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Wager Master Villain Character",
+    "yearPublished": 2015,
+    "geekRating": 5.93684,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.1429,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
   "163745": {
     "id": 163745,
     "boardGameRank": 194,
     "title": "Star Wars: Armada",
     "yearPublished": 2015,
-    "geekRating": 7.22877,
+    "geekRating": 7.22885,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -20029,12 +23062,40 @@ const GameDetail = {
       2015
     ]
   },
+  "163839": {
+    "id": 163839,
+    "boardGameRank": 987,
+    "title": "Feudum",
+    "yearPublished": 2018,
+    "geekRating": 6.4444,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 4,
+    "minPlayTime": 80,
+    "maxPlayTime": 180,
+    "averageWeight": 4.4839,
+    "categoryIds": [
+      1022,
+      1021,
+      1010,
+      1035
+    ],
+    "designerIds": [
+      77297
+    ],
+    "mechanicIds": [
+      2689,
+      2080,
+      2040,
+      2020
+    ]
+  },
   "163967": {
     "id": 163967,
     "boardGameRank": 230,
     "title": "Tiny Epic Galaxies",
     "yearPublished": 2015,
-    "geekRating": 7.17224,
+    "geekRating": 7.17254,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -20060,7 +23121,7 @@ const GameDetail = {
     "boardGameRank": 320,
     "title": "Elysium",
     "yearPublished": 2015,
-    "geekRating": 7.02685,
+    "geekRating": 7.02697,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -20086,7 +23147,7 @@ const GameDetail = {
     "boardGameRank": 30,
     "title": "Star Wars: Imperial Assault",
     "yearPublished": 2014,
-    "geekRating": 7.83319,
+    "geekRating": 7.83255,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -20115,12 +23176,104 @@ const GameDetail = {
       2015
     ]
   },
+  "164165": {
+    "id": 164165,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - StarViper Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.99964,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164166": {
+    "id": 164166,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - M3-A Interceptor Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.87077,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164168": {
+    "id": 164168,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - IG-2000 Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.97866,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164169": {
+    "id": 164169,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Most Wanted Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.22348,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.125,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
   "164265": {
     "id": 164265,
     "boardGameRank": 688,
     "title": "Witness",
     "yearPublished": 2014,
-    "geekRating": 6.6551,
+    "geekRating": 6.65627,
     "minPlayers": 4,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20142,12 +23295,39 @@ const GameDetail = {
       2027
     ]
   },
+  "164313": {
+    "id": 164313,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Lost Realm",
+    "yearPublished": 2015,
+    "geekRating": 5.8276,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 1,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040
+    ]
+  },
   "164338": {
     "id": 164338,
-    "boardGameRank": 744,
+    "boardGameRank": 745,
     "title": "The Golden Ages",
     "yearPublished": 2014,
-    "geekRating": 6.61613,
+    "geekRating": 6.61627,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20169,12 +23349,69 @@ const GameDetail = {
       2002
     ]
   },
+  "164340": {
+    "id": 164340,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Guise Hero Character",
+    "yearPublished": 2015,
+    "geekRating": 6.15764,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.0769,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "164665": {
+    "id": 164665,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Treason of Saruman",
+    "yearPublished": 2015,
+    "geekRating": 5.82639,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "164928": {
     "id": 164928,
     "boardGameRank": 25,
     "title": "Orleans",
     "yearPublished": 2014,
-    "geekRating": 7.86863,
+    "geekRating": 7.86823,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20197,10 +23434,10 @@ const GameDetail = {
   },
   "164949": {
     "id": 164949,
-    "boardGameRank": 946,
+    "boardGameRank": 949,
     "title": "Time of Crisis",
     "yearPublished": 2017,
-    "geekRating": 6.47039,
+    "geekRating": 6.46989,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20226,10 +23463,10 @@ const GameDetail = {
   },
   "165401": {
     "id": 165401,
-    "boardGameRank": 537,
+    "boardGameRank": 535,
     "title": "Wir sind das Volk!",
     "yearPublished": 2014,
-    "geekRating": 6.80679,
+    "geekRating": 6.80726,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -20251,10 +23488,10 @@ const GameDetail = {
   },
   "165722": {
     "id": 165722,
-    "boardGameRank": 424,
+    "boardGameRank": 425,
     "title": "KLASK",
     "yearPublished": 2014,
-    "geekRating": 6.91821,
+    "geekRating": 6.91875,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -20274,7 +23511,7 @@ const GameDetail = {
     "boardGameRank": 635,
     "title": "Space Hulk (fourth edition)",
     "yearPublished": 2014,
-    "geekRating": 6.71348,
+    "geekRating": 6.71406,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -20296,10 +23533,10 @@ const GameDetail = {
   },
   "165872": {
     "id": 165872,
-    "boardGameRank": 814,
+    "boardGameRank": 813,
     "title": "Liberty or Death: The American Insurrection",
     "yearPublished": 2016,
-    "geekRating": 6.55725,
+    "geekRating": 6.55797,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20326,7 +23563,7 @@ const GameDetail = {
     "boardGameRank": 858,
     "title": "Royals",
     "yearPublished": 2014,
-    "geekRating": 6.52457,
+    "geekRating": 6.52491,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -20348,7 +23585,7 @@ const GameDetail = {
     "boardGameRank": 861,
     "title": "The Staufer Dynasty",
     "yearPublished": 2014,
-    "geekRating": 6.51865,
+    "geekRating": 6.51899,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -20380,7 +23617,7 @@ const GameDetail = {
     "bestWithPlayers": 6,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.2519,
+    "averageWeight": 1.2513,
     "categoryIds": [
       1023,
       1039,
@@ -20400,10 +23637,10 @@ const GameDetail = {
   },
   "166669": {
     "id": 166669,
-    "boardGameRank": 269,
+    "boardGameRank": 268,
     "title": "San Juan (second edition)",
     "yearPublished": 2014,
-    "geekRating": 7.09293,
+    "geekRating": 7.0943,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -20422,6 +23659,118 @@ const GameDetail = {
       2040,
       2004,
       2079
+    ]
+  },
+  "166702": {
+    "id": 166702,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Bases & Battleships",
+    "yearPublished": 2014,
+    "geekRating": 6.79937,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166704": {
+    "id": 166704,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Fleets & Fortresses",
+    "yearPublished": 2014,
+    "geekRating": 6.75888,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2.0256,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166707": {
+    "id": 166707,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Events",
+    "yearPublished": 2014,
+    "geekRating": 6.41021,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 1.913,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166708": {
+    "id": 166708,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Heroes",
+    "yearPublished": 2014,
+    "geekRating": 6.35049,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
     ]
   },
   "167270": {
@@ -20451,10 +23800,10 @@ const GameDetail = {
   },
   "167400": {
     "id": 167400,
-    "boardGameRank": 404,
+    "boardGameRank": 405,
     "title": "Ashes: Rise of the Phoenixborn",
     "yearPublished": 2015,
-    "geekRating": 6.93349,
+    "geekRating": 6.93364,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -20481,7 +23830,7 @@ const GameDetail = {
     "boardGameRank": 1000,
     "title": "Barony",
     "yearPublished": 2015,
-    "geekRating": 6.43698,
+    "geekRating": 6.4368,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20507,13 +23856,13 @@ const GameDetail = {
     "boardGameRank": 4,
     "title": "Terraforming Mars",
     "yearPublished": 2016,
-    "geekRating": 8.21652,
+    "geekRating": 8.21635,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 120,
     "maxPlayTime": 120,
-    "averageWeight": 3.2366,
+    "averageWeight": 3.2369,
     "categoryIds": [
       1021,
       1084,
@@ -20535,10 +23884,10 @@ const GameDetail = {
   },
   "168435": {
     "id": 168435,
-    "boardGameRank": 497,
+    "boardGameRank": 499,
     "title": "Between Two Cities",
     "yearPublished": 2015,
-    "geekRating": 6.84599,
+    "geekRating": 6.84548,
     "minPlayers": 1,
     "maxPlayers": 7,
     "bestWithPlayers": 5,
@@ -20566,7 +23915,7 @@ const GameDetail = {
     "boardGameRank": 460,
     "title": "Love Letter: Batman",
     "yearPublished": 2015,
-    "geekRating": 6.87955,
+    "geekRating": 6.87975,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20591,7 +23940,7 @@ const GameDetail = {
     "boardGameRank": 601,
     "title": "Smash Up: Pretty Pretty Smash Up",
     "yearPublished": 2015,
-    "geekRating": 6.74667,
+    "geekRating": 6.74647,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -20613,12 +23962,132 @@ const GameDetail = {
       2015
     ]
   },
+  "168927": {
+    "id": 168927,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Victory-class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.78711,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.75,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "168928": {
+    "id": 168928,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - CR90 Corellian Corvette Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.79545,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "168929": {
+    "id": 168929,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Nebulon-B Frigate Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.7683,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "169017": {
+    "id": 169017,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Assault Frigate Mark II Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.8241,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.8333,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "169018": {
+    "id": 169018,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Gladiator-class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.87967,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
   "169124": {
     "id": 169124,
-    "boardGameRank": 566,
+    "boardGameRank": 567,
     "title": "Flick 'em Up!",
     "yearPublished": 2015,
-    "geekRating": 6.78629,
+    "geekRating": 6.78515,
     "minPlayers": 2,
     "maxPlayers": 10,
     "bestWithPlayers": 4,
@@ -20641,10 +24110,10 @@ const GameDetail = {
   },
   "169255": {
     "id": 169255,
-    "boardGameRank": 325,
+    "boardGameRank": 326,
     "title": "A Game of Thrones: The Card Game (Second Edition)",
     "yearPublished": 2015,
-    "geekRating": 7.02306,
+    "geekRating": 7.02269,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -20676,7 +24145,7 @@ const GameDetail = {
     "boardGameRank": 240,
     "title": "Roll Player",
     "yearPublished": 2016,
-    "geekRating": 7.15162,
+    "geekRating": 7.15206,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -20702,13 +24171,13 @@ const GameDetail = {
     "boardGameRank": 565,
     "title": "Deep Sea Adventure",
     "yearPublished": 2014,
-    "geekRating": 6.7879,
+    "geekRating": 6.78773,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.2025,
+    "averageWeight": 1.2013,
     "categoryIds": [
       1017,
       1020,
@@ -20730,13 +24199,13 @@ const GameDetail = {
     "boardGameRank": 7,
     "title": "Scythe",
     "yearPublished": 2016,
-    "geekRating": 8.10955,
+    "geekRating": 8.10943,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 115,
-    "averageWeight": 3.3573,
+    "averageWeight": 3.3588,
     "categoryIds": [
       1021,
       1046,
@@ -20754,10 +24223,10 @@ const GameDetail = {
   },
   "169794": {
     "id": 169794,
-    "boardGameRank": 944,
+    "boardGameRank": 945,
     "title": "Haspelknecht",
     "yearPublished": 2015,
-    "geekRating": 6.4708,
+    "geekRating": 6.47087,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -20781,13 +24250,13 @@ const GameDetail = {
     "boardGameRank": 105,
     "title": "Raiders of the North Sea",
     "yearPublished": 2015,
-    "geekRating": 7.42586,
+    "geekRating": 7.42593,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 2.5857,
+    "averageWeight": 2.5829,
     "categoryIds": [
       1035,
       1008
@@ -20806,7 +24275,7 @@ const GameDetail = {
     "boardGameRank": 26,
     "title": "Blood Rage",
     "yearPublished": 2015,
-    "geekRating": 7.86043,
+    "geekRating": 7.86038,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -20834,10 +24303,10 @@ const GameDetail = {
   },
   "170416": {
     "id": 170416,
-    "boardGameRank": 499,
+    "boardGameRank": 498,
     "title": "Vast: The Crystal Caverns",
     "yearPublished": 2016,
-    "geekRating": 6.84491,
+    "geekRating": 6.8457,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -20867,7 +24336,7 @@ const GameDetail = {
     "boardGameRank": 568,
     "title": "Valeria: Card Kingdoms",
     "yearPublished": 2016,
-    "geekRating": 6.78455,
+    "geekRating": 6.78503,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -20888,12 +24357,43 @@ const GameDetail = {
       2072
     ]
   },
+  "170728": {
+    "id": 170728,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Raider Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.892,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1016
+    ],
+    "designerIds": [
+      60239,
+      65291,
+      12018
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "170771": {
     "id": 170771,
-    "boardGameRank": 456,
+    "boardGameRank": 454,
     "title": "Sword & Sorcery",
     "yearPublished": 2017,
-    "geekRating": 6.88274,
+    "geekRating": 6.88363,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -20924,7 +24424,7 @@ const GameDetail = {
     "boardGameRank": 104,
     "title": "Captain Sonar",
     "yearPublished": 2016,
-    "geekRating": 7.42758,
+    "geekRating": 7.426,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 8,
@@ -20953,16 +24453,16 @@ const GameDetail = {
   },
   "171233": {
     "id": 171233,
-    "boardGameRank": 665,
+    "boardGameRank": 664,
     "title": "The Big Book of Madness",
     "yearPublished": 2015,
-    "geekRating": 6.68062,
+    "geekRating": 6.68083,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 90,
-    "averageWeight": 2.7429,
+    "averageWeight": 2.7358,
     "categoryIds": [
       1002,
       1010
@@ -20983,7 +24483,7 @@ const GameDetail = {
     "boardGameRank": 551,
     "title": "FUSE",
     "yearPublished": 2015,
-    "geekRating": 6.79575,
+    "geekRating": 6.795,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -21010,7 +24510,7 @@ const GameDetail = {
     "boardGameRank": 508,
     "title": "Cacao",
     "yearPublished": 2015,
-    "geekRating": 6.83463,
+    "geekRating": 6.83487,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21036,7 +24536,7 @@ const GameDetail = {
     "boardGameRank": 41,
     "title": "The Voyages of Marco Polo",
     "yearPublished": 2015,
-    "geekRating": 7.73887,
+    "geekRating": 7.73871,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21067,7 +24567,7 @@ const GameDetail = {
     "boardGameRank": 295,
     "title": "The Grizzled",
     "yearPublished": 2015,
-    "geekRating": 7.05786,
+    "geekRating": 7.05825,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -21091,10 +24591,10 @@ const GameDetail = {
   },
   "171669": {
     "id": 171669,
-    "boardGameRank": 597,
+    "boardGameRank": 596,
     "title": "Discoveries",
     "yearPublished": 2015,
-    "geekRating": 6.74991,
+    "geekRating": 6.75035,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21117,10 +24617,10 @@ const GameDetail = {
   },
   "171879": {
     "id": 171879,
-    "boardGameRank": 798,
+    "boardGameRank": 799,
     "title": "Kraftwagen",
     "yearPublished": 2015,
-    "geekRating": 6.56969,
+    "geekRating": 6.56985,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21144,7 +24644,7 @@ const GameDetail = {
     "boardGameRank": 604,
     "title": "The Others",
     "yearPublished": 2016,
-    "geekRating": 6.74172,
+    "geekRating": 6.74187,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -21173,7 +24673,7 @@ const GameDetail = {
     "boardGameRank": 192,
     "title": "Burgle Bros.",
     "yearPublished": 2015,
-    "geekRating": 7.2294,
+    "geekRating": 7.2295,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21228,12 +24728,43 @@ const GameDetail = {
       2015
     ]
   },
+  "172225": {
+    "id": 172225,
+    "boardGameRank": 3964,
+    "title": "Exploding Kittens",
+    "yearPublished": 2015,
+    "geekRating": 5.71676,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 4,
+    "minPlayTime": 15,
+    "maxPlayTime": 15,
+    "averageWeight": 1.0669,
+    "categoryIds": [
+      1089,
+      1002,
+      1116,
+      1079
+    ],
+    "designerIds": [
+      71478,
+      80158,
+      5874
+    ],
+    "mechanicIds": [
+      2040,
+      2685,
+      2661,
+      2004,
+      2686
+    ]
+  },
   "172287": {
     "id": 172287,
     "boardGameRank": 102,
     "title": "Champions of Midgard",
     "yearPublished": 2015,
-    "geekRating": 7.4304,
+    "geekRating": 7.43119,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21260,10 +24791,10 @@ const GameDetail = {
   },
   "172308": {
     "id": 172308,
-    "boardGameRank": 407,
+    "boardGameRank": 403,
     "title": "Broom Service",
     "yearPublished": 2015,
-    "geekRating": 6.93285,
+    "geekRating": 6.93488,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -21287,10 +24818,10 @@ const GameDetail = {
   },
   "172381": {
     "id": 172381,
-    "boardGameRank": 962,
+    "boardGameRank": 961,
     "title": "My Village",
     "yearPublished": 2015,
-    "geekRating": 6.45897,
+    "geekRating": 6.45912,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -21315,7 +24846,7 @@ const GameDetail = {
     "boardGameRank": 971,
     "title": "Porta Nigra",
     "yearPublished": 2015,
-    "geekRating": 6.45121,
+    "geekRating": 6.45184,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21342,7 +24873,7 @@ const GameDetail = {
     "boardGameRank": 62,
     "title": "Mombasa",
     "yearPublished": 2015,
-    "geekRating": 7.6018,
+    "geekRating": 7.60185,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21367,12 +24898,40 @@ const GameDetail = {
       2082
     ]
   },
+  "172680": {
+    "id": 172680,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Wastes of Eriador",
+    "yearPublished": 2015,
+    "geekRating": 5.67532,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "172818": {
     "id": 172818,
     "boardGameRank": 171,
     "title": "Above and Below",
     "yearPublished": 2015,
-    "geekRating": 7.28325,
+    "geekRating": 7.28306,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21404,10 +24963,10 @@ const GameDetail = {
   },
   "173064": {
     "id": 173064,
-    "boardGameRank": 623,
+    "boardGameRank": 624,
     "title": "Leaving Earth",
     "yearPublished": 2015,
-    "geekRating": 6.72456,
+    "geekRating": 6.72467,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 1,
@@ -21430,10 +24989,10 @@ const GameDetail = {
   },
   "173090": {
     "id": 173090,
-    "boardGameRank": 897,
+    "boardGameRank": 899,
     "title": "The Game",
     "yearPublished": 2015,
-    "geekRating": 6.49476,
+    "geekRating": 6.49461,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -21454,10 +25013,10 @@ const GameDetail = {
   },
   "173101": {
     "id": 173101,
-    "boardGameRank": 995,
+    "boardGameRank": 994,
     "title": "Council of 4",
     "yearPublished": 2015,
-    "geekRating": 6.43875,
+    "geekRating": 6.43897,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21483,13 +25042,13 @@ const GameDetail = {
     "boardGameRank": 14,
     "title": "7 Wonders Duel",
     "yearPublished": 2015,
-    "geekRating": 8.00274,
+    "geekRating": 8.00287,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 2.2309,
+    "averageWeight": 2.2314,
     "categoryIds": [
       1050,
       1002,
@@ -21532,18 +25091,38 @@ const GameDetail = {
       2082
     ]
   },
+  "173899": {
+    "id": 173899,
+    "boardGameRank": 14902,
+    "title": "The Sherlock Holmes Puzzle Case",
+    "yearPublished": 2014,
+    "geekRating": 5.46824,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 1,
+    "categoryIds": [
+      1039,
+      1030,
+      1028
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "174430": {
     "id": 174430,
     "boardGameRank": 1,
     "title": "Gloomhaven",
     "yearPublished": 2017,
-    "geekRating": 8.62011,
+    "geekRating": 8.62024,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 3.7597,
+    "averageWeight": 3.762,
     "categoryIds": [
       1022,
       1020,
@@ -21563,6 +25142,34 @@ const GameDetail = {
       2028,
       2020,
       2027,
+      2015
+    ]
+  },
+  "174565": {
+    "id": 174565,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Escape from Mount Gram",
+    "yearPublished": 2015,
+    "geekRating": 5.69303,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -21599,7 +25206,7 @@ const GameDetail = {
     "boardGameRank": 761,
     "title": "New York 1901",
     "yearPublished": 2015,
-    "geekRating": 6.59934,
+    "geekRating": 6.59938,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21620,10 +25227,10 @@ const GameDetail = {
   },
   "174785": {
     "id": 174785,
-    "boardGameRank": 388,
+    "boardGameRank": 390,
     "title": "Mare Nostrum: Empires",
     "yearPublished": 2016,
-    "geekRating": 6.94616,
+    "geekRating": 6.94592,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -21653,7 +25260,7 @@ const GameDetail = {
     "boardGameRank": 603,
     "title": "Celestia",
     "yearPublished": 2015,
-    "geekRating": 6.74299,
+    "geekRating": 6.7436,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 5,
@@ -21680,7 +25287,7 @@ const GameDetail = {
     "boardGameRank": 82,
     "title": "Forbidden Stars",
     "yearPublished": 2015,
-    "geekRating": 7.50602,
+    "geekRating": 7.50643,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -21712,7 +25319,7 @@ const GameDetail = {
     "boardGameRank": 784,
     "title": "Mottainai",
     "yearPublished": 2015,
-    "geekRating": 6.58245,
+    "geekRating": 6.58319,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -21735,7 +25342,7 @@ const GameDetail = {
   },
   "175223": {
     "id": 175223,
-    "boardGameRank": 924,
+    "boardGameRank": 925,
     "title": "Valley of the Kings: Afterlife",
     "yearPublished": 2015,
     "geekRating": 6.48284,
@@ -21744,7 +25351,7 @@ const GameDetail = {
     "bestWithPlayers": 2,
     "minPlayTime": 45,
     "maxPlayTime": 45,
-    "averageWeight": 2.2667,
+    "averageWeight": 2.2609,
     "categoryIds": [
       1050,
       1002,
@@ -21760,12 +25367,130 @@ const GameDetail = {
       2040
     ]
   },
+  "175283": {
+    "id": 175283,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.87673,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175284": {
+    "id": 175284,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Home One Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.79547,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      1017,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175285": {
+    "id": 175285,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Rogues and Villains Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.85698,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1017,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175287": {
+    "id": 175287,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - MC30c Frigate Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.75372,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.3333,
+    "categoryIds": [
+      1017,
+      1042,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
   "175324": {
     "id": 175324,
-    "boardGameRank": 764,
+    "boardGameRank": 762,
     "title": "Fog of Love",
     "yearPublished": 2017,
-    "geekRating": 6.59718,
+    "geekRating": 6.59853,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -21795,7 +25520,7 @@ const GameDetail = {
     "boardGameRank": 167,
     "title": "Vinhos Deluxe Edition",
     "yearPublished": 2016,
-    "geekRating": 7.28918,
+    "geekRating": 7.28906,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21820,13 +25545,13 @@ const GameDetail = {
     "boardGameRank": 28,
     "title": "Food Chain Magnate",
     "yearPublished": 2015,
-    "geekRating": 7.85033,
+    "geekRating": 7.85064,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 120,
     "maxPlayTime": 240,
-    "averageWeight": 4.2135,
+    "averageWeight": 4.2168,
     "categoryIds": [
       1021,
       1088
@@ -21843,12 +25568,40 @@ const GameDetail = {
       2020
     ]
   },
+  "176058": {
+    "id": 176058,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Across the Ettenmoors",
+    "yearPublished": 2015,
+    "geekRating": 5.68971,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "176165": {
     "id": 176165,
     "boardGameRank": 787,
     "title": "Dale of Merchants",
     "yearPublished": 2015,
-    "geekRating": 6.57988,
+    "geekRating": 6.58055,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -21872,12 +25625,41 @@ const GameDetail = {
       2686
     ]
   },
+  "176173": {
+    "id": 176173,
+    "boardGameRank": null,
+    "title": "Evolution: Flight",
+    "yearPublished": 2015,
+    "geekRating": 6.39155,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6136,
+    "categoryIds": [
+      1089,
+      1002,
+      1042,
+      1036
+    ],
+    "designerIds": [
+      3245,
+      39262,
+      9247
+    ],
+    "mechanicIds": [
+      2040,
+      2016,
+      2020
+    ]
+  },
   "176189": {
     "id": 176189,
     "boardGameRank": 123,
     "title": "Zombicide: Black Plague",
     "yearPublished": 2015,
-    "geekRating": 7.3826,
+    "geekRating": 7.38208,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -21910,7 +25692,7 @@ const GameDetail = {
     "boardGameRank": 868,
     "title": "Tides of Time",
     "yearPublished": 2015,
-    "geekRating": 6.51291,
+    "geekRating": 6.51252,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -21935,7 +25717,7 @@ const GameDetail = {
     "boardGameRank": 254,
     "title": "Quadropolis",
     "yearPublished": 2016,
-    "geekRating": 7.11656,
+    "geekRating": 7.11666,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -21961,7 +25743,7 @@ const GameDetail = {
     "boardGameRank": 159,
     "title": "Isle of Skye: From Chieftain to King",
     "yearPublished": 2015,
-    "geekRating": 7.3011,
+    "geekRating": 7.30137,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -21984,10 +25766,10 @@ const GameDetail = {
   },
   "176544": {
     "id": 176544,
-    "boardGameRank": 756,
+    "boardGameRank": 757,
     "title": "Automania",
     "yearPublished": 2015,
-    "geekRating": 6.60788,
+    "geekRating": 6.60802,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22014,7 +25796,7 @@ const GameDetail = {
     "boardGameRank": 200,
     "title": "The Manhattan Project: Energy Empire",
     "yearPublished": 2016,
-    "geekRating": 7.21212,
+    "geekRating": 7.21202,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -22037,12 +25819,153 @@ const GameDetail = {
       2082
     ]
   },
+  "176742": {
+    "id": 176742,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Hound's Tooth Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.89316,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "176744": {
+    "id": 176744,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - K-wing Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 6.03843,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "176819": {
+    "id": 176819,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Punisher Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.92096,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "176820": {
+    "id": 176820,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Kihraxz Fighter Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.87489,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "176920": {
     "id": 176920,
     "boardGameRank": 197,
     "title": "Mission: Red Planet (Second Edition)",
     "yearPublished": 2015,
-    "geekRating": 7.21971,
+    "geekRating": 7.21908,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -22062,12 +25985,41 @@ const GameDetail = {
       2020
     ]
   },
+  "177163": {
+    "id": 177163,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Land of Shadow",
+    "yearPublished": 2015,
+    "geekRating": 5.74966,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "177524": {
     "id": 177524,
     "boardGameRank": 780,
     "title": "ICECOOL",
     "yearPublished": 2016,
-    "geekRating": 6.58671,
+    "geekRating": 6.58649,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22092,7 +26044,7 @@ const GameDetail = {
     "boardGameRank": 511,
     "title": "13 Days: The Cuban Missile Crisis",
     "yearPublished": 2016,
-    "geekRating": 6.83189,
+    "geekRating": 6.83214,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -22115,12 +26067,40 @@ const GameDetail = {
       2040
     ]
   },
+  "177608": {
+    "id": 177608,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Treachery of Rhudaur",
+    "yearPublished": 2015,
+    "geekRating": 5.67035,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "177639": {
     "id": 177639,
-    "boardGameRank": 313,
+    "boardGameRank": 315,
     "title": "Raptor",
     "yearPublished": 2015,
-    "geekRating": 7.03454,
+    "geekRating": 7.03417,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -22151,7 +26131,7 @@ const GameDetail = {
     "boardGameRank": 630,
     "title": "Signorie",
     "yearPublished": 2015,
-    "geekRating": 6.71998,
+    "geekRating": 6.72051,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22177,13 +26157,13 @@ const GameDetail = {
     "boardGameRank": 31,
     "title": "A Feast for Odin",
     "yearPublished": 2016,
-    "geekRating": 7.83236,
+    "geekRating": 7.83224,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 120,
-    "averageWeight": 3.8389,
+    "averageWeight": 3.8364,
     "categoryIds": [
       1021,
       1088,
@@ -22240,7 +26220,7 @@ const GameDetail = {
     "boardGameRank": 663,
     "title": "World's Fair 1893",
     "yearPublished": 2016,
-    "geekRating": 6.68176,
+    "geekRating": 6.68137,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22259,18 +26239,46 @@ const GameDetail = {
       2004
     ]
   },
+  "178862": {
+    "id": 178862,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Battle of Carn Dûm",
+    "yearPublished": 2015,
+    "geekRating": 5.64688,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 1,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "178900": {
     "id": 178900,
-    "boardGameRank": 48,
+    "boardGameRank": 49,
     "title": "Codenames",
     "yearPublished": 2015,
-    "geekRating": 7.6629,
+    "geekRating": 7.66263,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
     "minPlayTime": 15,
     "maxPlayTime": 15,
-    "averageWeight": 1.3204,
+    "averageWeight": 1.3202,
     "categoryIds": [
       1002,
       1039,
@@ -22292,7 +26300,7 @@ const GameDetail = {
     "boardGameRank": 643,
     "title": "Unfair",
     "yearPublished": 2017,
-    "geekRating": 6.70134,
+    "geekRating": 6.70121,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -22321,13 +26329,13 @@ const GameDetail = {
     "boardGameRank": 505,
     "title": "One Deck Dungeon",
     "yearPublished": 2016,
-    "geekRating": 6.83693,
+    "geekRating": 6.83776,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 1,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 2,
+    "averageWeight": 2.0105,
     "categoryIds": [
       1002,
       1017,
@@ -22346,10 +26354,10 @@ const GameDetail = {
   },
   "179460": {
     "id": 179460,
-    "boardGameRank": 919,
+    "boardGameRank": 915,
     "title": "Stronghold (2nd edition)",
     "yearPublished": 2016,
-    "geekRating": 6.48499,
+    "geekRating": 6.48681,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -22373,10 +26381,10 @@ const GameDetail = {
   },
   "179572": {
     "id": 179572,
-    "boardGameRank": 883,
+    "boardGameRank": 882,
     "title": "Dice City",
     "yearPublished": 2015,
-    "geekRating": 6.50452,
+    "geekRating": 6.50537,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -22402,7 +26410,7 @@ const GameDetail = {
     "boardGameRank": 465,
     "title": "Arcadia Quest: Inferno",
     "yearPublished": 2017,
-    "geekRating": 6.87313,
+    "geekRating": 6.87384,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22456,10 +26464,10 @@ const GameDetail = {
   },
   "180263": {
     "id": 180263,
-    "boardGameRank": 12,
+    "boardGameRank": 13,
     "title": "The 7th Continent",
     "yearPublished": 2017,
-    "geekRating": 8.00446,
+    "geekRating": 8.00389,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 1,
@@ -22487,7 +26495,7 @@ const GameDetail = {
   },
   "180511": {
     "id": 180511,
-    "boardGameRank": 437,
+    "boardGameRank": 438,
     "title": "Shakespeare",
     "yearPublished": 2015,
     "geekRating": 6.90601,
@@ -22511,10 +26519,10 @@ const GameDetail = {
   },
   "180593": {
     "id": 180593,
-    "boardGameRank": 698,
+    "boardGameRank": 697,
     "title": "The Bloody Inn",
     "yearPublished": 2015,
-    "geekRating": 6.64758,
+    "geekRating": 6.64809,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22536,10 +26544,10 @@ const GameDetail = {
   },
   "180680": {
     "id": 180680,
-    "boardGameRank": 620,
+    "boardGameRank": 622,
     "title": "Automobiles",
     "yearPublished": 2016,
-    "geekRating": 6.72586,
+    "geekRating": 6.72531,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -22559,12 +26567,40 @@ const GameDetail = {
       2040
     ]
   },
+  "180695": {
+    "id": 180695,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dread Realm",
+    "yearPublished": 2015,
+    "geekRating": 5.66318,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 1,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "180899": {
     "id": 180899,
-    "boardGameRank": 902,
+    "boardGameRank": 901,
     "title": "Ponzi Scheme",
     "yearPublished": 2015,
-    "geekRating": 6.49368,
+    "geekRating": 6.49444,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -22587,13 +26623,13 @@ const GameDetail = {
     "boardGameRank": 406,
     "title": "Potion Explosion",
     "yearPublished": 2015,
-    "geekRating": 6.93306,
+    "geekRating": 6.93289,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 1.7574,
+    "averageWeight": 1.7591,
     "categoryIds": [
       1010,
       1028
@@ -22614,7 +26650,7 @@ const GameDetail = {
     "boardGameRank": 179,
     "title": "Fury of Dracula (third/fourth edition)",
     "yearPublished": 2015,
-    "geekRating": 7.26262,
+    "geekRating": 7.26317,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -22645,7 +26681,7 @@ const GameDetail = {
     "boardGameRank": 172,
     "title": "Mysterium",
     "yearPublished": 2015,
-    "geekRating": 7.28271,
+    "geekRating": 7.28258,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 5,
@@ -22672,7 +26708,7 @@ const GameDetail = {
     "boardGameRank": 376,
     "title": "Warhammer Quest: The Adventure Card Game",
     "yearPublished": 2015,
-    "geekRating": 6.96254,
+    "geekRating": 6.96244,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -22700,10 +26736,10 @@ const GameDetail = {
   },
   "181524": {
     "id": 181524,
-    "boardGameRank": 980,
+    "boardGameRank": 981,
     "title": "Masmorra: Dungeons of Arcadia",
     "yearPublished": 2017,
-    "geekRating": 6.44788,
+    "geekRating": 6.44771,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -22734,7 +26770,7 @@ const GameDetail = {
     "boardGameRank": 411,
     "title": "Runebound (Third Edition)",
     "yearPublished": 2015,
-    "geekRating": 6.92801,
+    "geekRating": 6.92829,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -22755,12 +26791,57 @@ const GameDetail = {
       2015
     ]
   },
+  "181682": {
+    "id": 181682,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Celestial Tribunal Environment",
+    "yearPublished": 2015,
+    "geekRating": 5.8257,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 30,
+    "maxPlayTime": 60,
+    "averageWeight": 1,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023
+    ]
+  },
+  "181683": {
+    "id": 181683,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Chokepoint Villain Character",
+    "yearPublished": 2015,
+    "geekRating": 5.83858,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 1,
+    "categoryIds": [
+      1116
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "181687": {
     "id": 181687,
-    "boardGameRank": 656,
+    "boardGameRank": 657,
     "title": "The Pursuit of Happiness",
     "yearPublished": 2015,
-    "geekRating": 6.68501,
+    "geekRating": 6.68534,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -22781,10 +26862,10 @@ const GameDetail = {
   },
   "181796": {
     "id": 181796,
-    "boardGameRank": 824,
+    "boardGameRank": 823,
     "title": "The Prodigals Club",
     "yearPublished": 2015,
-    "geekRating": 6.54587,
+    "geekRating": 6.54684,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -22806,10 +26887,10 @@ const GameDetail = {
   },
   "181810": {
     "id": 181810,
-    "boardGameRank": 934,
+    "boardGameRank": 935,
     "title": "Kodama: The Tree Spirits",
     "yearPublished": 2016,
-    "geekRating": 6.47787,
+    "geekRating": 6.47794,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -22833,13 +26914,13 @@ const GameDetail = {
     "boardGameRank": 3,
     "title": "Through the Ages: A New Story of Civilization",
     "yearPublished": 2015,
-    "geekRating": 8.28231,
+    "geekRating": 8.28259,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 180,
     "maxPlayTime": 240,
-    "averageWeight": 4.38,
+    "averageWeight": 4.3803,
     "categoryIds": [
       1002,
       1015,
@@ -22859,7 +26940,7 @@ const GameDetail = {
     "boardGameRank": 233,
     "title": "Evolution: Climate",
     "yearPublished": 2016,
-    "geekRating": 7.16534,
+    "geekRating": 7.16694,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -22890,7 +26971,7 @@ const GameDetail = {
   },
   "182340": {
     "id": 182340,
-    "boardGameRank": 769,
+    "boardGameRank": 770,
     "title": "Star Trek: Frontiers",
     "yearPublished": 2016,
     "geekRating": 6.59554,
@@ -22917,12 +26998,112 @@ const GameDetail = {
       2015
     ]
   },
+  "182369": {
+    "id": 182369,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Inquisitor's TIE Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.87715,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182370": {
+    "id": 182370,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Ghost Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.90504,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182371": {
+    "id": 182371,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Assault Carrier Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.81189,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182373": {
+    "id": 182373,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Punishing One Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.84531,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182374": {
+    "id": 182374,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Mist Hunter",
+    "yearPublished": 2016,
+    "geekRating": 5.78144,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "182631": {
     "id": 182631,
-    "boardGameRank": 162,
+    "boardGameRank": 160,
     "title": "Star Realms: Colony Wars",
     "yearPublished": 2015,
-    "geekRating": 7.29953,
+    "geekRating": 7.30134,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -22950,7 +27131,7 @@ const GameDetail = {
     "boardGameRank": 810,
     "title": "Watson & Holmes",
     "yearPublished": 2015,
-    "geekRating": 6.56014,
+    "geekRating": 6.56051,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -22980,13 +27161,13 @@ const GameDetail = {
     "boardGameRank": 100,
     "title": "Grand Austria Hotel",
     "yearPublished": 2015,
-    "geekRating": 7.43991,
+    "geekRating": 7.44054,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 3.2236,
+    "averageWeight": 3.2229,
     "categoryIds": [
       1021
     ],
@@ -23000,12 +27181,38 @@ const GameDetail = {
       2004
     ]
   },
+  "182930": {
+    "id": 182930,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Grey Havens",
+    "yearPublished": 2015,
+    "geekRating": 5.78444,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 0,
+    "averageWeight": 3.5,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040
+    ]
+  },
   "183251": {
     "id": 183251,
     "boardGameRank": 384,
     "title": "Karuba",
     "yearPublished": 2015,
-    "geekRating": 6.95492,
+    "geekRating": 6.95474,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23031,13 +27238,13 @@ const GameDetail = {
     "boardGameRank": 18,
     "title": "Viticulture Essential Edition",
     "yearPublished": 2015,
-    "geekRating": 7.91685,
+    "geekRating": 7.91676,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
     "minPlayTime": 45,
     "maxPlayTime": 90,
-    "averageWeight": 2.9158,
+    "averageWeight": 2.916,
     "categoryIds": [
       1021,
       1013
@@ -23057,7 +27264,7 @@ const GameDetail = {
     "boardGameRank": 257,
     "title": "Star Wars: X-Wing Miniatures Game - The Force Awakens Core Set",
     "yearPublished": 2015,
-    "geekRating": 7.11065,
+    "geekRating": 7.11085,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -23088,10 +27295,10 @@ const GameDetail = {
   },
   "183840": {
     "id": 183840,
-    "boardGameRank": 596,
+    "boardGameRank": 597,
     "title": "Oh My Goods!",
     "yearPublished": 2015,
-    "geekRating": 6.75042,
+    "geekRating": 6.75019,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23118,7 +27325,7 @@ const GameDetail = {
     "boardGameRank": 683,
     "title": "Risk: Star Wars Edition",
     "yearPublished": 2015,
-    "geekRating": 6.6597,
+    "geekRating": 6.65913,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23143,12 +27350,72 @@ const GameDetail = {
       2015
     ]
   },
+  "183966": {
+    "id": 183966,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - T-70 X-Wing Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.89503,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "183967": {
+    "id": 183967,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE/fo Fighter Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.87718,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "184151": {
     "id": 184151,
-    "boardGameRank": 723,
+    "boardGameRank": 728,
     "title": "Legend of the Five Rings: The Card Game",
     "yearPublished": 2017,
-    "geekRating": 6.63161,
+    "geekRating": 6.62858,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -23207,7 +27474,7 @@ const GameDetail = {
     "boardGameRank": 510,
     "title": "Bunny Kingdom",
     "yearPublished": 2017,
-    "geekRating": 6.8341,
+    "geekRating": 6.83402,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23232,7 +27499,7 @@ const GameDetail = {
     "boardGameRank": 65,
     "title": "Anachrony",
     "yearPublished": 2017,
-    "geekRating": 7.59018,
+    "geekRating": 7.59123,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -23259,10 +27526,10 @@ const GameDetail = {
   },
   "185589": {
     "id": 185589,
-    "boardGameRank": 674,
+    "boardGameRank": 675,
     "title": "Islebound",
     "yearPublished": 2016,
-    "geekRating": 6.66733,
+    "geekRating": 6.66671,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23283,10 +27550,10 @@ const GameDetail = {
   },
   "186751": {
     "id": 186751,
-    "boardGameRank": 312,
+    "boardGameRank": 313,
     "title": "Mythic Battles: Pantheon",
     "yearPublished": 2017,
-    "geekRating": 7.03544,
+    "geekRating": 7.03445,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23317,10 +27584,10 @@ const GameDetail = {
   },
   "187377": {
     "id": 187377,
-    "boardGameRank": 763,
+    "boardGameRank": 767,
     "title": "Vikings Gone Wild",
     "yearPublished": 2017,
-    "geekRating": 6.59771,
+    "geekRating": 6.59659,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -23346,10 +27613,10 @@ const GameDetail = {
   },
   "187617": {
     "id": 187617,
-    "boardGameRank": 463,
+    "boardGameRank": 462,
     "title": "Nemo's War (second edition)",
     "yearPublished": 2017,
-    "geekRating": 6.87838,
+    "geekRating": 6.87885,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 1,
@@ -23383,13 +27650,13 @@ const GameDetail = {
     "boardGameRank": 6,
     "title": "Star Wars: Rebellion",
     "yearPublished": 2016,
-    "geekRating": 8.16302,
+    "geekRating": 8.16318,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 180,
     "maxPlayTime": 240,
-    "averageWeight": 3.653,
+    "averageWeight": 3.6537,
     "categoryIds": [
       1046,
       1047,
@@ -23414,7 +27681,7 @@ const GameDetail = {
     "boardGameRank": 182,
     "title": "Secret Hitler",
     "yearPublished": 2016,
-    "geekRating": 7.24983,
+    "geekRating": 7.24979,
     "minPlayers": 5,
     "maxPlayers": 10,
     "bestWithPlayers": 8,
@@ -23447,7 +27714,7 @@ const GameDetail = {
     "boardGameRank": 165,
     "title": "This War of Mine: The Board Game",
     "yearPublished": 2017,
-    "geekRating": 7.29519,
+    "geekRating": 7.29265,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 1,
@@ -23482,7 +27749,7 @@ const GameDetail = {
     "boardGameRank": 242,
     "title": "Tyrants of the Underdark",
     "yearPublished": 2016,
-    "geekRating": 7.1427,
+    "geekRating": 7.14276,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23503,12 +27770,45 @@ const GameDetail = {
       2686
     ]
   },
+  "190087": {
+    "id": 190087,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Veterans Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.89452,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2043,
+      2072,
+      2019,
+      2685,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "191051": {
     "id": 191051,
     "boardGameRank": 626,
     "title": "Outlive",
     "yearPublished": 2017,
-    "geekRating": 6.72245,
+    "geekRating": 6.72298,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23530,16 +27830,16 @@ const GameDetail = {
   },
   "191189": {
     "id": 191189,
-    "boardGameRank": 136,
+    "boardGameRank": 135,
     "title": "Aeon's End",
     "yearPublished": 2016,
-    "geekRating": 7.34022,
+    "geekRating": 7.34115,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 2.8469,
+    "averageWeight": 2.85,
     "categoryIds": [
       1002,
       1010,
@@ -23559,10 +27859,10 @@ const GameDetail = {
   },
   "191231": {
     "id": 191231,
-    "boardGameRank": 689,
+    "boardGameRank": 690,
     "title": "Via Nebula",
     "yearPublished": 2016,
-    "geekRating": 6.65449,
+    "geekRating": 6.6549,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23586,7 +27886,7 @@ const GameDetail = {
     "boardGameRank": 363,
     "title": "Imhotep",
     "yearPublished": 2016,
-    "geekRating": 6.98406,
+    "geekRating": 6.98418,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23610,7 +27910,7 @@ const GameDetail = {
     "boardGameRank": 881,
     "title": "Ulm",
     "yearPublished": 2016,
-    "geekRating": 6.50586,
+    "geekRating": 6.5062,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -23634,7 +27934,7 @@ const GameDetail = {
     "boardGameRank": 585,
     "title": "The Castles of Burgundy: The Card Game",
     "yearPublished": 2016,
-    "geekRating": 6.75916,
+    "geekRating": 6.75949,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23655,10 +27955,10 @@ const GameDetail = {
   },
   "192135": {
     "id": 192135,
-    "boardGameRank": 196,
+    "boardGameRank": 195,
     "title": "Too Many Bones",
     "yearPublished": 2017,
-    "geekRating": 7.22332,
+    "geekRating": 7.22701,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -23689,13 +27989,13 @@ const GameDetail = {
     "boardGameRank": 304,
     "title": "Pandemic: Reign of Cthulhu",
     "yearPublished": 2016,
-    "geekRating": 7.04939,
+    "geekRating": 7.04928,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 40,
     "maxPlayTime": 40,
-    "averageWeight": 2.1446,
+    "averageWeight": 2.1429,
     "categoryIds": [
       1024,
       1082,
@@ -23717,10 +28017,10 @@ const GameDetail = {
   },
   "192291": {
     "id": 192291,
-    "boardGameRank": 148,
+    "boardGameRank": 149,
     "title": "Sushi Go Party!",
     "yearPublished": 2016,
-    "geekRating": 7.31394,
+    "geekRating": 7.31436,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 5,
@@ -23743,10 +28043,10 @@ const GameDetail = {
   },
   "192457": {
     "id": 192457,
-    "boardGameRank": 393,
+    "boardGameRank": 394,
     "title": "Cry Havoc",
     "yearPublished": 2016,
-    "geekRating": 6.94454,
+    "geekRating": 6.94401,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23777,7 +28077,7 @@ const GameDetail = {
     "boardGameRank": 261,
     "title": "51st State: Master Set",
     "yearPublished": 2016,
-    "geekRating": 7.10641,
+    "geekRating": 7.10678,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23805,7 +28105,7 @@ const GameDetail = {
     "boardGameRank": 346,
     "title": "The Colonists",
     "yearPublished": 2016,
-    "geekRating": 6.99837,
+    "geekRating": 6.99897,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -23827,12 +28127,38 @@ const GameDetail = {
       2082
     ]
   },
+  "192951": {
+    "id": 192951,
+    "boardGameRank": null,
+    "title": "Dominion: Empires",
+    "yearPublished": 2016,
+    "geekRating": 6.97222,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.7143,
+    "categoryIds": [
+      1002,
+      1042,
+      1035
+    ],
+    "designerIds": [
+      10525
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2040
+    ]
+  },
   "193037": {
     "id": 193037,
     "boardGameRank": 163,
     "title": "Dead of Winter: The Long Night",
     "yearPublished": 2016,
-    "geekRating": 7.29844,
+    "geekRating": 7.29864,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -23865,10 +28191,10 @@ const GameDetail = {
   },
   "193042": {
     "id": 193042,
-    "boardGameRank": 446,
+    "boardGameRank": 445,
     "title": "Junk Art",
     "yearPublished": 2016,
-    "geekRating": 6.89859,
+    "geekRating": 6.89889,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -23890,10 +28216,10 @@ const GameDetail = {
   },
   "193214": {
     "id": 193214,
-    "boardGameRank": 884,
+    "boardGameRank": 885,
     "title": "Meeple Circus",
     "yearPublished": 2017,
-    "geekRating": 6.5041,
+    "geekRating": 6.50415,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -23918,7 +28244,7 @@ const GameDetail = {
     "boardGameRank": 516,
     "title": "The Oracle of Delphi",
     "yearPublished": 2016,
-    "geekRating": 6.82687,
+    "geekRating": 6.82657,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -23947,13 +28273,13 @@ const GameDetail = {
     "boardGameRank": 10,
     "title": "Great Western Trail",
     "yearPublished": 2016,
-    "geekRating": 8.06509,
+    "geekRating": 8.06469,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 75,
     "maxPlayTime": 150,
-    "averageWeight": 3.6891,
+    "averageWeight": 3.688,
     "categoryIds": [
       1055,
       1089
@@ -23970,10 +28296,10 @@ const GameDetail = {
   },
   "193949": {
     "id": 193949,
-    "boardGameRank": 607,
+    "boardGameRank": 606,
     "title": "Star Trek: Ascendancy",
     "yearPublished": 2016,
-    "geekRating": 6.73991,
+    "geekRating": 6.74073,
     "minPlayers": 3,
     "maxPlayers": 3,
     "bestWithPlayers": 3,
@@ -24006,16 +28332,16 @@ const GameDetail = {
   },
   "194594": {
     "id": 194594,
-    "boardGameRank": 315,
+    "boardGameRank": 312,
     "title": "Dice Forge",
     "yearPublished": 2017,
-    "geekRating": 7.03441,
+    "geekRating": 7.03473,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 40,
     "maxPlayTime": 40,
-    "averageWeight": 1.9193,
+    "averageWeight": 1.9136,
     "categoryIds": [
       1050,
       1017,
@@ -24035,7 +28361,7 @@ const GameDetail = {
     "boardGameRank": 373,
     "title": "Mystic Vale",
     "yearPublished": 2016,
-    "geekRating": 6.96403,
+    "geekRating": 6.96421,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -24059,13 +28385,13 @@ const GameDetail = {
     "boardGameRank": 983,
     "title": "Happy Salmon",
     "yearPublished": 2016,
-    "geekRating": 6.44559,
+    "geekRating": 6.44662,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
     "minPlayTime": 2,
     "maxPlayTime": 2,
-    "averageWeight": 1.093,
+    "averageWeight": 1.0909,
     "categoryIds": [
       1089,
       1041,
@@ -24085,7 +28411,7 @@ const GameDetail = {
     "boardGameRank": 80,
     "title": "Santorini",
     "yearPublished": 2016,
-    "geekRating": 7.51242,
+    "geekRating": 7.5124,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -24111,7 +28437,7 @@ const GameDetail = {
     "boardGameRank": 578,
     "title": "Not Alone",
     "yearPublished": 2016,
-    "geekRating": 6.76985,
+    "geekRating": 6.7693,
     "minPlayers": 2,
     "maxPlayers": 7,
     "bestWithPlayers": 4,
@@ -24136,10 +28462,10 @@ const GameDetail = {
   },
   "194880": {
     "id": 194880,
-    "boardGameRank": 789,
+    "boardGameRank": 792,
     "title": "Dream Home",
     "yearPublished": 2016,
-    "geekRating": 6.57664,
+    "geekRating": 6.57617,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24162,10 +28488,10 @@ const GameDetail = {
   },
   "195137": {
     "id": 195137,
-    "boardGameRank": 672,
+    "boardGameRank": 674,
     "title": "Catacombs (third edition)",
     "yearPublished": 2015,
-    "geekRating": 6.66839,
+    "geekRating": 6.66811,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -24192,7 +28518,7 @@ const GameDetail = {
   },
   "195162": {
     "id": 195162,
-    "boardGameRank": 833,
+    "boardGameRank": 834,
     "title": "Plague Inc.: The Board Game",
     "yearPublished": 2017,
     "geekRating": 6.54116,
@@ -24221,10 +28547,10 @@ const GameDetail = {
   },
   "195314": {
     "id": 195314,
-    "boardGameRank": 901,
+    "boardGameRank": 900,
     "title": "Herbaceous",
     "yearPublished": 2017,
-    "geekRating": 6.49378,
+    "geekRating": 6.49449,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24250,7 +28576,7 @@ const GameDetail = {
     "boardGameRank": 124,
     "title": "Near and Far",
     "yearPublished": 2017,
-    "geekRating": 7.3763,
+    "geekRating": 7.376,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24276,10 +28602,10 @@ const GameDetail = {
   },
   "195539": {
     "id": 195539,
-    "boardGameRank": 342,
+    "boardGameRank": 341,
     "title": "The Godfather: Corleone's Empire",
     "yearPublished": 2017,
-    "geekRating": 7.00342,
+    "geekRating": 7.00398,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 5,
@@ -24305,10 +28631,10 @@ const GameDetail = {
   },
   "195544": {
     "id": 195544,
-    "boardGameRank": 975,
+    "boardGameRank": 976,
     "title": "Tides of Madness",
     "yearPublished": 2016,
-    "geekRating": 6.44881,
+    "geekRating": 6.44913,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -24329,10 +28655,10 @@ const GameDetail = {
   },
   "195560": {
     "id": 195560,
-    "boardGameRank": 750,
+    "boardGameRank": 747,
     "title": "Wasteland Express Delivery Service",
     "yearPublished": 2017,
-    "geekRating": 6.61274,
+    "geekRating": 6.6133,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -24360,7 +28686,7 @@ const GameDetail = {
     "boardGameRank": 542,
     "title": "Love Letter Premium",
     "yearPublished": 2016,
-    "geekRating": 6.80106,
+    "geekRating": 6.80102,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -24384,7 +28710,7 @@ const GameDetail = {
     "boardGameRank": 93,
     "title": "Yokohama",
     "yearPublished": 2016,
-    "geekRating": 7.46091,
+    "geekRating": 7.46143,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24410,7 +28736,7 @@ const GameDetail = {
     "boardGameRank": 639,
     "title": "Massive Darkness",
     "yearPublished": 2017,
-    "geekRating": 6.70692,
+    "geekRating": 6.7067,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -24440,10 +28766,10 @@ const GameDetail = {
   },
   "197376": {
     "id": 197376,
-    "boardGameRank": 117,
+    "boardGameRank": 115,
     "title": "Charterstone",
     "yearPublished": 2017,
-    "geekRating": 7.39406,
+    "geekRating": 7.39508,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -24466,10 +28792,10 @@ const GameDetail = {
   },
   "197405": {
     "id": 197405,
-    "boardGameRank": 766,
+    "boardGameRank": 764,
     "title": "Tak",
     "yearPublished": 2017,
-    "geekRating": 6.59696,
+    "geekRating": 6.59771,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -24493,7 +28819,7 @@ const GameDetail = {
     "boardGameRank": 650,
     "title": "Fugitive",
     "yearPublished": 2017,
-    "geekRating": 6.69392,
+    "geekRating": 6.69414,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -24518,10 +28844,10 @@ const GameDetail = {
   },
   "198454": {
     "id": 198454,
-    "boardGameRank": 864,
+    "boardGameRank": 863,
     "title": "When I Dream",
     "yearPublished": 2016,
-    "geekRating": 6.51745,
+    "geekRating": 6.51798,
     "minPlayers": 4,
     "maxPlayers": 10,
     "bestWithPlayers": 6,
@@ -24546,10 +28872,10 @@ const GameDetail = {
   },
   "198773": {
     "id": 198773,
-    "boardGameRank": 218,
+    "boardGameRank": 217,
     "title": "Codenames: Pictures",
     "yearPublished": 2016,
-    "geekRating": 7.18919,
+    "geekRating": 7.18941,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -24571,12 +28897,38 @@ const GameDetail = {
       2661
     ]
   },
+  "198786": {
+    "id": 198786,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Assault Carriers Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.63601,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2079,
+      2015
+    ]
+  },
   "198928": {
     "id": 198928,
     "boardGameRank": 79,
     "title": "Pandemic: Iberia",
     "yearPublished": 2016,
-    "geekRating": 7.51295,
+    "geekRating": 7.51354,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -24602,10 +28954,10 @@ const GameDetail = {
   },
   "198953": {
     "id": 198953,
-    "boardGameRank": 567,
+    "boardGameRank": 566,
     "title": "Pax Renaissance",
     "yearPublished": 2016,
-    "geekRating": 6.78466,
+    "geekRating": 6.78542,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24629,13 +28981,13 @@ const GameDetail = {
     "boardGameRank": 178,
     "title": "Hero Realms",
     "yearPublished": 2016,
-    "geekRating": 7.2664,
+    "geekRating": 7.26663,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 20,
     "maxPlayTime": 30,
-    "averageWeight": 1.9419,
+    "averageWeight": 1.9425,
     "categoryIds": [
       1002,
       1010,
@@ -24657,7 +29009,7 @@ const GameDetail = {
     "boardGameRank": 270,
     "title": "Harry Potter: Hogwarts Battle",
     "yearPublished": 2016,
-    "geekRating": 7.09277,
+    "geekRating": 7.09338,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24681,12 +29033,41 @@ const GameDetail = {
       2015
     ]
   },
+  "199451": {
+    "id": 199451,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Heroes of the Resistance Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.86081,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1044,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "199478": {
     "id": 199478,
     "boardGameRank": 258,
     "title": "Flamme Rouge",
     "yearPublished": 2016,
-    "geekRating": 7.10978,
+    "geekRating": 7.10984,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24712,7 +29093,7 @@ const GameDetail = {
     "boardGameRank": 133,
     "title": "Sagrada",
     "yearPublished": 2017,
-    "geekRating": 7.34653,
+    "geekRating": 7.34666,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -24734,12 +29115,37 @@ const GameDetail = {
       2004
     ]
   },
+  "199727": {
+    "id": 199727,
+    "boardGameRank": null,
+    "title": "Scythe: Invaders from Afar",
+    "yearPublished": 2016,
+    "geekRating": 7.73095,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 5,
+    "minPlayTime": 90,
+    "maxPlayTime": 140,
+    "averageWeight": 3.3704,
+    "categoryIds": [
+      1021,
+      1042,
+      1086,
+      1019
+    ],
+    "designerIds": [
+      62640
+    ],
+    "mechanicIds": [
+      2080
+    ]
+  },
   "199792": {
     "id": 199792,
-    "boardGameRank": 391,
+    "boardGameRank": 385,
     "title": "Everdell",
     "yearPublished": 2018,
-    "geekRating": 6.94574,
+    "geekRating": 6.95468,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24764,10 +29170,10 @@ const GameDetail = {
   },
   "200077": {
     "id": 200077,
-    "boardGameRank": 641,
+    "boardGameRank": 642,
     "title": "Mint Works",
     "yearPublished": 2017,
-    "geekRating": 6.70216,
+    "geekRating": 6.70186,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24792,7 +29198,7 @@ const GameDetail = {
     "boardGameRank": 524,
     "title": "Kanagawa",
     "yearPublished": 2016,
-    "geekRating": 6.81802,
+    "geekRating": 6.81781,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24816,12 +29222,38 @@ const GameDetail = {
       2082
     ]
   },
+  "200454": {
+    "id": 200454,
+    "boardGameRank": 1755,
+    "title": "Planetarium",
+    "yearPublished": 2017,
+    "geekRating": 6.10834,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.0741,
+    "categoryIds": [
+      1094,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      91757
+    ],
+    "mechanicIds": [
+      2676,
+      2040,
+      2004
+    ]
+  },
   "200680": {
     "id": 200680,
     "boardGameRank": 103,
     "title": "Agricola (Revised Edition)",
     "yearPublished": 2016,
-    "geekRating": 7.42932,
+    "geekRating": 7.42987,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24848,7 +29280,7 @@ const GameDetail = {
     "boardGameRank": 765,
     "title": "Fields of Green",
     "yearPublished": 2016,
-    "geekRating": 6.59716,
+    "geekRating": 6.59761,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -24870,12 +29302,171 @@ const GameDetail = {
       2079
     ]
   },
+  "201038": {
+    "id": 201038,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Interdictor Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.654,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1064,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
+  "201039": {
+    "id": 201039,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Liberty Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.65431,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1064,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
+  "201310": {
+    "id": 201310,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Protectorate Starfighter Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.77159,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201311": {
+    "id": 201311,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Shadow Caster Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.7153,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201312": {
+    "id": 201312,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Special Forces TIE Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.78134,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      60309,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201313": {
+    "id": 201313,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - ARC-170 Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.79337,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
   "201808": {
     "id": 201808,
     "boardGameRank": 60,
     "title": "Clank!: A Deck-Building Adventure",
     "yearPublished": 2016,
-    "geekRating": 7.60958,
+    "geekRating": 7.60961,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24902,7 +29493,7 @@ const GameDetail = {
     "boardGameRank": 654,
     "title": "Ex Libris",
     "yearPublished": 2017,
-    "geekRating": 6.68845,
+    "geekRating": 6.68848,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -24925,12 +29516,39 @@ const GameDetail = {
       2082
     ]
   },
+  "201875": {
+    "id": 201875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The City of Corsairs",
+    "yearPublished": 2016,
+    "geekRating": 5.61523,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 0,
+    "categoryIds": [
+      1002,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "201921": {
     "id": 201921,
     "boardGameRank": 553,
     "title": "Tiny Epic Quest",
     "yearPublished": 2017,
-    "geekRating": 6.79333,
+    "geekRating": 6.79307,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -24957,7 +29575,7 @@ const GameDetail = {
     "boardGameRank": 550,
     "title": "Adrenaline",
     "yearPublished": 2016,
-    "geekRating": 6.79714,
+    "geekRating": 6.79623,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -24983,10 +29601,10 @@ const GameDetail = {
   },
   "202426": {
     "id": 202426,
-    "boardGameRank": 702,
+    "boardGameRank": 701,
     "title": "Sidereal Confluence: Trading and Negotiation in the Elysian Quadrant",
     "yearPublished": 2017,
-    "geekRating": 6.64508,
+    "geekRating": 6.6457,
     "minPlayers": 4,
     "maxPlayers": 9,
     "bestWithPlayers": 6,
@@ -25012,7 +29630,7 @@ const GameDetail = {
     "boardGameRank": 815,
     "title": "Ticket to Ride: Rails & Sails",
     "yearPublished": 2016,
-    "geekRating": 6.55093,
+    "geekRating": 6.55091,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -25034,10 +29652,10 @@ const GameDetail = {
   },
   "203416": {
     "id": 203416,
-    "boardGameRank": 484,
+    "boardGameRank": 483,
     "title": "Exit: The Game - The Pharaoh's Tomb",
     "yearPublished": 2016,
-    "geekRating": 6.85714,
+    "geekRating": 6.85845,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 2,
@@ -25061,7 +29679,7 @@ const GameDetail = {
     "boardGameRank": 532,
     "title": "Exit: The Game - The Secret Lab",
     "yearPublished": 2016,
-    "geekRating": 6.80859,
+    "geekRating": 6.80931,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 2,
@@ -25086,13 +29704,13 @@ const GameDetail = {
     "boardGameRank": 176,
     "title": "Exit: The Game - The Abandoned Cabin",
     "yearPublished": 2016,
-    "geekRating": 7.27029,
+    "geekRating": 7.27142,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 2.4833,
+    "averageWeight": 2.4839,
     "categoryIds": [
       1039,
       1028,
@@ -25108,10 +29726,10 @@ const GameDetail = {
   },
   "203427": {
     "id": 203427,
-    "boardGameRank": 619,
+    "boardGameRank": 620,
     "title": "Fabled Fruit",
     "yearPublished": 2016,
-    "geekRating": 6.7261,
+    "geekRating": 6.72626,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -25135,7 +29753,7 @@ const GameDetail = {
     "boardGameRank": 131,
     "title": "Lorenzo il Magnifico",
     "yearPublished": 2016,
-    "geekRating": 7.35845,
+    "geekRating": 7.3591,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -25162,7 +29780,7 @@ const GameDetail = {
     "boardGameRank": 651,
     "title": "Cottage Garden",
     "yearPublished": 2016,
-    "geekRating": 6.69377,
+    "geekRating": 6.69383,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -25181,12 +29799,44 @@ const GameDetail = {
       2002
     ]
   },
+  "204053": {
+    "id": 204053,
+    "boardGameRank": null,
+    "title": "Exploding Kittens: Imploding Kittens",
+    "yearPublished": 2016,
+    "geekRating": 6.2023,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 15,
+    "maxPlayTime": 0,
+    "averageWeight": 1.125,
+    "categoryIds": [
+      1089,
+      1002,
+      1116,
+      1042,
+      1079
+    ],
+    "designerIds": [
+      71478,
+      80158,
+      5874
+    ],
+    "mechanicIds": [
+      2040,
+      2685,
+      2661,
+      2004,
+      2686
+    ]
+  },
   "204305": {
     "id": 204305,
     "boardGameRank": 306,
     "title": "Sherlock Holmes Consulting Detective: Jack the Ripper & West End Adventures",
     "yearPublished": 2017,
-    "geekRating": 7.04573,
+    "geekRating": 7.04503,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 2,
@@ -25213,10 +29863,10 @@ const GameDetail = {
   },
   "204516": {
     "id": 204516,
-    "boardGameRank": 790,
+    "boardGameRank": 788,
     "title": "878: Vikings - Invasions of England",
     "yearPublished": 2017,
-    "geekRating": 6.57647,
+    "geekRating": 6.57904,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -25248,7 +29898,7 @@ const GameDetail = {
     "boardGameRank": 186,
     "title": "Kingdomino",
     "yearPublished": 2016,
-    "geekRating": 7.24449,
+    "geekRating": 7.2445,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -25275,7 +29925,7 @@ const GameDetail = {
     "boardGameRank": 806,
     "title": "Escape Room: The Game",
     "yearPublished": 2016,
-    "geekRating": 6.56549,
+    "geekRating": 6.56562,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -25290,6 +29940,38 @@ const GameDetail = {
     "designerIds": [],
     "mechanicIds": [
       2023
+    ]
+  },
+  "204853": {
+    "id": 204853,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - The Corellian Conflict",
+    "yearPublished": 2016,
+    "geekRating": 5.65385,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 120,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      46412,
+      97519,
+      21425
+    ],
+    "mechanicIds": [
+      2689,
+      2001,
+      2072,
+      2015
     ]
   },
   "205059": {
@@ -25330,10 +30012,10 @@ const GameDetail = {
   },
   "205359": {
     "id": 205359,
-    "boardGameRank": 298,
+    "boardGameRank": 300,
     "title": "Star Wars: Destiny",
     "yearPublished": 2016,
-    "geekRating": 7.05465,
+    "geekRating": 7.05376,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -25363,7 +30045,7 @@ const GameDetail = {
     "boardGameRank": 558,
     "title": "Citadels",
     "yearPublished": 2016,
-    "geekRating": 6.79106,
+    "geekRating": 6.79104,
     "minPlayers": 2,
     "maxPlayers": 8,
     "bestWithPlayers": 5,
@@ -25388,10 +30070,10 @@ const GameDetail = {
   },
   "205597": {
     "id": 205597,
-    "boardGameRank": 936,
+    "boardGameRank": 937,
     "title": "Jump Drive",
     "yearPublished": 2017,
-    "geekRating": 6.47596,
+    "geekRating": 6.47647,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -25415,13 +30097,13 @@ const GameDetail = {
     "boardGameRank": 19,
     "title": "Arkham Horror: The Card Game",
     "yearPublished": 2016,
-    "geekRating": 7.91448,
+    "geekRating": 7.91454,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
     "minPlayTime": 60,
     "maxPlayTime": 120,
-    "averageWeight": 3.2716,
+    "averageWeight": 3.2727,
     "categoryIds": [
       1022,
       1002,
@@ -25445,10 +30127,10 @@ const GameDetail = {
   },
   "205716": {
     "id": 205716,
-    "boardGameRank": 877,
+    "boardGameRank": 874,
     "title": "New Angeles",
     "yearPublished": 2016,
-    "geekRating": 6.5078,
+    "geekRating": 6.50948,
     "minPlayers": 4,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -25476,13 +30158,13 @@ const GameDetail = {
     "boardGameRank": 53,
     "title": "Rising Sun",
     "yearPublished": 2018,
-    "geekRating": 7.65632,
+    "geekRating": 7.65535,
     "minPlayers": 3,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 90,
     "maxPlayTime": 120,
-    "averageWeight": 3.2238,
+    "averageWeight": 3.2265,
     "categoryIds": [
       1023,
       1010,
@@ -25510,7 +30192,7 @@ const GameDetail = {
     "boardGameRank": 231,
     "title": "Ethnos",
     "yearPublished": 2017,
-    "geekRating": 7.17154,
+    "geekRating": 7.17092,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -25536,7 +30218,7 @@ const GameDetail = {
     "boardGameRank": 335,
     "title": "First Class: All Aboard the Orient Express!",
     "yearPublished": 2016,
-    "geekRating": 7.01425,
+    "geekRating": 7.01424,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -25557,10 +30239,10 @@ const GameDetail = {
   },
   "207336": {
     "id": 207336,
-    "boardGameRank": 745,
+    "boardGameRank": 746,
     "title": "Honshū",
     "yearPublished": 2016,
-    "geekRating": 6.61515,
+    "geekRating": 6.61522,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -25581,12 +30263,112 @@ const GameDetail = {
       2002
     ]
   },
+  "207580": {
+    "id": 207580,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Sabine's TIE Fighter Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.68077,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "207581": {
+    "id": 207581,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Quadjumper Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.63872,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "207582": {
+    "id": 207582,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Upsilon-class Shuttle Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.69235,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "207691": {
     "id": 207691,
-    "boardGameRank": 680,
+    "boardGameRank": 681,
     "title": "Railroad Revolution",
     "yearPublished": 2016,
-    "geekRating": 6.65997,
+    "geekRating": 6.66045,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -25610,7 +30392,7 @@ const GameDetail = {
     "boardGameRank": 679,
     "title": "5-Minute Dungeon",
     "yearPublished": 2017,
-    "geekRating": 6.66119,
+    "geekRating": 6.66086,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -25625,6 +30407,100 @@ const GameDetail = {
     ],
     "designerIds": [
       85851
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "208071": {
+    "id": 208071,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Striker Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.74751,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "208072": {
+    "id": 208072,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - U-Wing Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.71331,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "208545": {
+    "id": 208545,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Dunwich Legacy: Expansion",
+    "yearPublished": 2017,
+    "geekRating": 7.08841,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.4706,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
     ],
     "mechanicIds": [
       2023,
@@ -25672,13 +30548,13 @@ const GameDetail = {
     "boardGameRank": 211,
     "title": "Century: Spice Road",
     "yearPublished": 2017,
-    "geekRating": 7.19658,
+    "geekRating": 7.19613,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 1.7489,
+    "averageWeight": 1.7456,
     "categoryIds": [
       1002,
       1021,
@@ -25694,12 +30570,41 @@ const GameDetail = {
       2004
     ]
   },
+  "209728": {
+    "id": 209728,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Curse of the Rougarou: Scenario Pack",
+    "yearPublished": 2016,
+    "geekRating": 6.29224,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.4286,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "209778": {
     "id": 209778,
     "boardGameRank": 344,
     "title": "Magic Maze",
     "yearPublished": 2017,
-    "geekRating": 7.00238,
+    "geekRating": 7.00258,
     "minPlayers": 1,
     "maxPlayers": 8,
     "bestWithPlayers": 4,
@@ -25722,12 +30627,94 @@ const GameDetail = {
       2015
     ]
   },
+  "210025": {
+    "id": 210025,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Miskatonic Museum: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.49941,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.1111,
+    "categoryIds": [
+      1002,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "212317": {
+    "id": 212317,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Phoenix Home Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.57849,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "212350": {
+    "id": 212350,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Rebel Fighter Squadrons II Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.58513,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "212351": {
+    "id": 212351,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Fighter Squadrons II Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.61633,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "212402": {
     "id": 212402,
-    "boardGameRank": 842,
+    "boardGameRank": 840,
     "title": "The Grimm Forest",
     "yearPublished": 2018,
-    "geekRating": 6.53519,
+    "geekRating": 6.53624,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -25775,12 +30762,40 @@ const GameDetail = {
       2015
     ]
   },
+  "212734": {
+    "id": 212734,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Essex County Express: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.45837,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.25,
+    "categoryIds": [
+      1002,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "213893": {
     "id": 213893,
     "boardGameRank": 540,
     "title": "Yamataï",
     "yearPublished": 2017,
-    "geekRating": 6.80266,
+    "geekRating": 6.80377,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -25804,7 +30819,7 @@ const GameDetail = {
     "boardGameRank": 529,
     "title": "Downforce",
     "yearPublished": 2017,
-    "geekRating": 6.81435,
+    "geekRating": 6.81372,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -25828,10 +30843,10 @@ const GameDetail = {
   },
   "215341": {
     "id": 215341,
-    "boardGameRank": 657,
+    "boardGameRank": 656,
     "title": "Thunderstone Quest",
     "yearPublished": 2018,
-    "geekRating": 6.68408,
+    "geekRating": 6.68571,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -25851,12 +30866,41 @@ const GameDetail = {
       2664
     ]
   },
+  "215510": {
+    "id": 215510,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Carnevale of Horrors: Scenario Pack",
+    "yearPublished": 2016,
+    "geekRating": 6.30885,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 1,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.25,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "216091": {
     "id": 216091,
-    "boardGameRank": 974,
+    "boardGameRank": 975,
     "title": "Unlock! The Formula",
     "yearPublished": 2017,
-    "geekRating": 6.45016,
+    "geekRating": 6.44986,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -25879,10 +30923,10 @@ const GameDetail = {
   },
   "216092": {
     "id": 216092,
-    "boardGameRank": 836,
+    "boardGameRank": 837,
     "title": "Unlock! Squeek & Sausage",
     "yearPublished": 2017,
-    "geekRating": 6.53672,
+    "geekRating": 6.53783,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -25908,13 +30952,13 @@ const GameDetail = {
     "boardGameRank": 45,
     "title": "Clans of Caledonia",
     "yearPublished": 2017,
-    "geekRating": 7.68615,
+    "geekRating": 7.6854,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 30,
     "maxPlayTime": 120,
-    "averageWeight": 3.4317,
+    "averageWeight": 3.4304,
     "categoryIds": [
       1021
     ],
@@ -25933,7 +30977,7 @@ const GameDetail = {
     "boardGameRank": 777,
     "title": "The Lost Expedition",
     "yearPublished": 2017,
-    "geekRating": 6.58842,
+    "geekRating": 6.58997,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 1,
@@ -25952,12 +30996,40 @@ const GameDetail = {
       2023
     ]
   },
+  "216556": {
+    "id": 216556,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Blood on the Altar: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.38441,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1002,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "216734": {
     "id": 216734,
-    "boardGameRank": 818,
+    "boardGameRank": 816,
     "title": "Dice Throne: Season One",
     "yearPublished": 2018,
-    "geekRating": 6.54798,
+    "geekRating": 6.54968,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 2,
@@ -25982,10 +31054,10 @@ const GameDetail = {
   },
   "217372": {
     "id": 217372,
-    "boardGameRank": 326,
+    "boardGameRank": 324,
     "title": "The Quest for El Dorado",
     "yearPublished": 2017,
-    "geekRating": 7.02234,
+    "geekRating": 7.02317,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26009,10 +31081,10 @@ const GameDetail = {
   },
   "217449": {
     "id": 217449,
-    "boardGameRank": 762,
+    "boardGameRank": 763,
     "title": "NMBR 9",
     "yearPublished": 2017,
-    "geekRating": 6.5978,
+    "geekRating": 6.59843,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26033,12 +31105,39 @@ const GameDetail = {
       2002
     ]
   },
+  "217973": {
+    "id": 217973,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - C-ROC Cruiser Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.592,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
   "218333": {
     "id": 218333,
-    "boardGameRank": 846,
+    "boardGameRank": 841,
     "title": "Rhino Hero: Super Battle",
     "yearPublished": 2017,
-    "geekRating": 6.53452,
+    "geekRating": 6.53605,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26060,16 +31159,16 @@ const GameDetail = {
   },
   "218417": {
     "id": 218417,
-    "boardGameRank": 421,
+    "boardGameRank": 422,
     "title": "Aeon's End: War Eternal",
     "yearPublished": 2017,
-    "geekRating": 6.92037,
+    "geekRating": 6.91979,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 60,
     "maxPlayTime": 60,
-    "averageWeight": 2.9474,
+    "averageWeight": 2.9487,
     "categoryIds": [
       1002,
       1010,
@@ -26089,10 +31188,10 @@ const GameDetail = {
   },
   "218603": {
     "id": 218603,
-    "boardGameRank": 318,
+    "boardGameRank": 319,
     "title": "Photosynthesis",
     "yearPublished": 2017,
-    "geekRating": 7.02798,
+    "geekRating": 7.02751,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26111,12 +31210,40 @@ const GameDetail = {
       2001
     ]
   },
+  "219054": {
+    "id": 219054,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Undimensioned and Unseen: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.21151,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.2857,
+    "categoryIds": [
+      1002,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "219215": {
     "id": 219215,
-    "boardGameRank": 926,
+    "boardGameRank": 923,
     "title": "Werewords",
     "yearPublished": 2017,
-    "geekRating": 6.48215,
+    "geekRating": 6.4834,
     "minPlayers": 4,
     "maxPlayers": 10,
     "bestWithPlayers": 6,
@@ -26139,10 +31266,10 @@ const GameDetail = {
   },
   "219513": {
     "id": 219513,
-    "boardGameRank": 324,
+    "boardGameRank": 325,
     "title": "Barenpark",
     "yearPublished": 2017,
-    "geekRating": 7.02377,
+    "geekRating": 7.02317,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26167,13 +31294,13 @@ const GameDetail = {
     "boardGameRank": 8,
     "title": "Gaia Project",
     "yearPublished": 2017,
-    "geekRating": 8.08565,
+    "geekRating": 8.08585,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
     "minPlayTime": 60,
     "maxPlayTime": 150,
-    "averageWeight": 4.3064,
+    "averageWeight": 4.3051,
     "categoryIds": [
       1015,
       1021,
@@ -26192,10 +31319,10 @@ const GameDetail = {
   },
   "220520": {
     "id": 220520,
-    "boardGameRank": 593,
+    "boardGameRank": 587,
     "title": "Caverna: Cave vs Cave",
     "yearPublished": 2017,
-    "geekRating": 6.75406,
+    "geekRating": 6.75589,
     "minPlayers": 1,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -26220,13 +31347,13 @@ const GameDetail = {
     "boardGameRank": 243,
     "title": "Rajas of the Ganges",
     "yearPublished": 2017,
-    "geekRating": 7.14092,
+    "geekRating": 7.14268,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
     "minPlayTime": 45,
     "maxPlayTime": 75,
-    "averageWeight": 2.8833,
+    "averageWeight": 2.876,
     "categoryIds": [
       1017,
       1021,
@@ -26247,7 +31374,7 @@ const GameDetail = {
     "boardGameRank": 33,
     "title": "Pandemic Legacy: Season 2",
     "yearPublished": 2017,
-    "geekRating": 7.81708,
+    "geekRating": 7.81739,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26277,7 +31404,7 @@ const GameDetail = {
     "boardGameRank": 225,
     "title": "Dinosaur Island",
     "yearPublished": 2017,
-    "geekRating": 7.18105,
+    "geekRating": 7.18209,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26303,10 +31430,10 @@ const GameDetail = {
   },
   "221318": {
     "id": 221318,
-    "boardGameRank": 886,
+    "boardGameRank": 883,
     "title": "Whistle Stop",
     "yearPublished": 2017,
-    "geekRating": 6.50331,
+    "geekRating": 6.505,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
@@ -26327,12 +31454,45 @@ const GameDetail = {
       2002
     ]
   },
+  "221725": {
+    "id": 221725,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Where Doom Awaits: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.19523,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.5714,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
+    ]
+  },
   "221965": {
     "id": 221965,
     "boardGameRank": 473,
     "title": "The Fox in the Forest",
     "yearPublished": 2017,
-    "geekRating": 6.86834,
+    "geekRating": 6.8676,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -26354,10 +31514,10 @@ const GameDetail = {
   },
   "222509": {
     "id": 222509,
-    "boardGameRank": 389,
+    "boardGameRank": 387,
     "title": "Lords of Hellas",
     "yearPublished": 2017,
-    "geekRating": 6.94599,
+    "geekRating": 6.95186,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26385,10 +31545,10 @@ const GameDetail = {
   },
   "223321": {
     "id": 223321,
-    "boardGameRank": 851,
+    "boardGameRank": 830,
     "title": "Detective: A Modern Crime Board Game",
     "yearPublished": 2018,
-    "geekRating": 6.53178,
+    "geekRating": 6.54404,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -26409,12 +31569,132 @@ const GameDetail = {
       2027
     ]
   },
+  "223421": {
+    "id": 223421,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Scurrg H-6 Bomber Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.63966,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "223422": {
+    "id": 223422,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Aggressor Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62374,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "223423": {
+    "id": 223423,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Auzituck Gunship Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.63923,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "223555": {
+    "id": 223555,
+    "boardGameRank": null,
+    "title": "Scythe: The Wind Gambit",
+    "yearPublished": 2017,
+    "geekRating": 7.15199,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 70,
+    "maxPlayTime": 140,
+    "averageWeight": 3.1667,
+    "categoryIds": [
+      1021,
+      1042,
+      1011,
+      1019
+    ],
+    "designerIds": [
+      99547,
+      62640
+    ],
+    "mechanicIds": [
+      2080,
+      2078
+    ]
+  },
   "223750": {
     "id": 223750,
-    "boardGameRank": 960,
+    "boardGameRank": 958,
     "title": "Hardback",
     "yearPublished": 2018,
-    "geekRating": 6.45944,
+    "geekRating": 6.46247,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 2,
@@ -26437,10 +31717,10 @@ const GameDetail = {
   },
   "223855": {
     "id": 223855,
-    "boardGameRank": 993,
+    "boardGameRank": 996,
     "title": "Sentient",
     "yearPublished": 2017,
-    "geekRating": 6.43925,
+    "geekRating": 6.43818,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26463,10 +31743,10 @@ const GameDetail = {
   },
   "223953": {
     "id": 223953,
-    "boardGameRank": 976,
+    "boardGameRank": 966,
     "title": "Kitchen Rush",
     "yearPublished": 2017,
-    "geekRating": 6.44868,
+    "geekRating": 6.45469,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26490,13 +31770,13 @@ const GameDetail = {
     "boardGameRank": 111,
     "title": "Codenames Duet",
     "yearPublished": 2017,
-    "geekRating": 7.40992,
+    "geekRating": 7.40988,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 15,
     "maxPlayTime": 30,
-    "averageWeight": 1.2857,
+    "averageWeight": 1.2824,
     "categoryIds": [
       1002,
       1039,
@@ -26513,12 +31793,40 @@ const GameDetail = {
       2661
     ]
   },
+  "224363": {
+    "id": 224363,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Lost in Time and Space: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.18899,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1002,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "224517": {
     "id": 224517,
-    "boardGameRank": 77,
+    "boardGameRank": 76,
     "title": "Brass: Birmingham",
     "yearPublished": 2018,
-    "geekRating": 7.52243,
+    "geekRating": 7.52967,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26542,10 +31850,10 @@ const GameDetail = {
   },
   "224597": {
     "id": 224597,
-    "boardGameRank": 515,
+    "boardGameRank": 513,
     "title": "Warhammer Underworlds: Shadespire",
     "yearPublished": 2017,
-    "geekRating": 6.82718,
+    "geekRating": 6.82903,
     "minPlayers": 2,
     "maxPlayers": 2,
     "bestWithPlayers": 2,
@@ -26575,10 +31883,10 @@ const GameDetail = {
   },
   "224710": {
     "id": 224710,
-    "boardGameRank": 736,
+    "boardGameRank": 734,
     "title": "Zombicide: Green Horde",
     "yearPublished": 2018,
-    "geekRating": 6.62198,
+    "geekRating": 6.62295,
     "minPlayers": 1,
     "maxPlayers": 6,
     "bestWithPlayers": 3,
@@ -26604,10 +31912,10 @@ const GameDetail = {
   },
   "225694": {
     "id": 225694,
-    "boardGameRank": 355,
+    "boardGameRank": 351,
     "title": "Decrypto",
     "yearPublished": 2018,
-    "geekRating": 6.99005,
+    "geekRating": 6.9938,
     "minPlayers": 3,
     "maxPlayers": 8,
     "bestWithPlayers": 6,
@@ -26627,10 +31935,10 @@ const GameDetail = {
   },
   "226501": {
     "id": 226501,
-    "boardGameRank": 966,
+    "boardGameRank": 967,
     "title": "Dragonfire",
     "yearPublished": 2017,
-    "geekRating": 6.45435,
+    "geekRating": 6.45455,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -26668,7 +31976,7 @@ const GameDetail = {
     "boardGameRank": 364,
     "title": "Heaven & Ale",
     "yearPublished": 2017,
-    "geekRating": 6.98212,
+    "geekRating": 6.98228,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26693,7 +32001,7 @@ const GameDetail = {
     "boardGameRank": 290,
     "title": "Pulsar 2849",
     "yearPublished": 2017,
-    "geekRating": 7.06351,
+    "geekRating": 7.06431,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26714,12 +32022,42 @@ const GameDetail = {
       2015
     ]
   },
+  "228391": {
+    "id": 228391,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Guns for Hire Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62582,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
   "229220": {
     "id": 229220,
     "boardGameRank": 415,
     "title": "Santa Maria",
     "yearPublished": 2017,
-    "geekRating": 6.92426,
+    "geekRating": 6.9237,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -26742,10 +32080,10 @@ const GameDetail = {
   },
   "229265": {
     "id": 229265,
-    "boardGameRank": 954,
+    "boardGameRank": 953,
     "title": "Wendake",
     "yearPublished": 2017,
-    "geekRating": 6.46322,
+    "geekRating": 6.4645,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26771,10 +32109,10 @@ const GameDetail = {
   },
   "230080": {
     "id": 230080,
-    "boardGameRank": 731,
+    "boardGameRank": 732,
     "title": "Majesty: For the Realm",
     "yearPublished": 2017,
-    "geekRating": 6.62403,
+    "geekRating": 6.62386,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26795,10 +32133,10 @@ const GameDetail = {
   },
   "230085": {
     "id": 230085,
-    "boardGameRank": 959,
+    "boardGameRank": 960,
     "title": "Agra",
     "yearPublished": 2017,
-    "geekRating": 6.45953,
+    "geekRating": 6.45981,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -26822,13 +32160,13 @@ const GameDetail = {
     "boardGameRank": 37,
     "title": "Azul",
     "yearPublished": 2017,
-    "geekRating": 7.78664,
+    "geekRating": 7.78711,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 1.8205,
+    "averageWeight": 1.821,
     "categoryIds": [
       1009,
       1070
@@ -26848,7 +32186,7 @@ const GameDetail = {
     "boardGameRank": 410,
     "title": "Queendomino",
     "yearPublished": 2017,
-    "geekRating": 6.92905,
+    "geekRating": 6.92954,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
@@ -26873,16 +32211,16 @@ const GameDetail = {
   },
   "232219": {
     "id": 232219,
-    "boardGameRank": 668,
+    "boardGameRank": 667,
     "title": "Dragon Castle",
     "yearPublished": 2017,
-    "geekRating": 6.67771,
+    "geekRating": 6.67852,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 2.0556,
+    "averageWeight": 2.0541,
     "categoryIds": [
       1009
     ],
@@ -26900,10 +32238,10 @@ const GameDetail = {
   },
   "232405": {
     "id": 232405,
-    "boardGameRank": 952,
+    "boardGameRank": 933,
     "title": "Western Legends",
     "yearPublished": 2018,
-    "geekRating": 6.4648,
+    "geekRating": 6.47822,
     "minPlayers": 2,
     "maxPlayers": 6,
     "bestWithPlayers": 4,
@@ -26928,16 +32266,16 @@ const GameDetail = {
   },
   "232832": {
     "id": 232832,
-    "boardGameRank": 334,
+    "boardGameRank": 333,
     "title": "Century: Golem Edition",
     "yearPublished": 2017,
-    "geekRating": 7.01507,
+    "geekRating": 7.01566,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
     "minPlayTime": 30,
     "maxPlayTime": 45,
-    "averageWeight": 1.5769,
+    "averageWeight": 1.6038,
     "categoryIds": [
       1002,
       1021,
@@ -26955,10 +32293,10 @@ const GameDetail = {
   },
   "232918": {
     "id": 232918,
-    "boardGameRank": 898,
+    "boardGameRank": 897,
     "title": "Fallout",
     "yearPublished": 2017,
-    "geekRating": 6.4945,
+    "geekRating": 6.49564,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 1,
@@ -26991,7 +32329,7 @@ const GameDetail = {
     "boardGameRank": 17,
     "title": "Twilight Imperium (Fourth Edition)",
     "yearPublished": 2017,
-    "geekRating": 7.92793,
+    "geekRating": 7.92859,
     "minPlayers": 3,
     "maxPlayers": 6,
     "bestWithPlayers": 6,
@@ -27027,10 +32365,10 @@ const GameDetail = {
   },
   "233247": {
     "id": 233247,
-    "boardGameRank": 728,
+    "boardGameRank": 727,
     "title": "Sid Meier's Civilization: A New Dawn",
     "yearPublished": 2017,
-    "geekRating": 6.62835,
+    "geekRating": 6.62906,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -27051,10 +32389,10 @@ const GameDetail = {
   },
   "233312": {
     "id": 233312,
-    "boardGameRank": 772,
+    "boardGameRank": 768,
     "title": "Stuffed Fables",
     "yearPublished": 2018,
-    "geekRating": 6.5942,
+    "geekRating": 6.59651,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -27079,10 +32417,10 @@ const GameDetail = {
   },
   "233371": {
     "id": 233371,
-    "boardGameRank": 152,
+    "boardGameRank": 148,
     "title": "Clank! In! Space!",
     "yearPublished": 2017,
-    "geekRating": 7.31243,
+    "geekRating": 7.3146,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -27106,16 +32444,16 @@ const GameDetail = {
   },
   "233398": {
     "id": 233398,
-    "boardGameRank": 637,
+    "boardGameRank": 619,
     "title": "Endeavor: Age of Sail",
     "yearPublished": 2018,
-    "geekRating": 6.71145,
+    "geekRating": 6.72711,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 4,
     "minPlayTime": 60,
     "maxPlayTime": 90,
-    "averageWeight": 2.8864,
+    "averageWeight": 2.8889,
     "categoryIds": [
       1020,
       1008,
@@ -27133,10 +32471,10 @@ const GameDetail = {
   },
   "233867": {
     "id": 233867,
-    "boardGameRank": 429,
+    "boardGameRank": 420,
     "title": "Welcome To...",
     "yearPublished": 2018,
-    "geekRating": 6.91329,
+    "geekRating": 6.92148,
     "minPlayers": 1,
     "maxPlayers": 100,
     "bestWithPlayers": 4,
@@ -27154,12 +32492,43 @@ const GameDetail = {
       2048
     ]
   },
+  "233977": {
+    "id": 233977,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Labyrinths of Lunacy: Scenario Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.72548,
+    "minPlayers": 1,
+    "maxPlayers": 12,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2001,
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
+    ]
+  },
   "234277": {
     "id": 234277,
     "boardGameRank": 653,
     "title": "Nusfjord",
     "yearPublished": 2017,
-    "geekRating": 6.68962,
+    "geekRating": 6.69179,
     "minPlayers": 1,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -27178,10 +32547,10 @@ const GameDetail = {
   },
   "234487": {
     "id": 234487,
-    "boardGameRank": 361,
+    "boardGameRank": 357,
     "title": "Altiplano",
     "yearPublished": 2017,
-    "geekRating": 6.98651,
+    "geekRating": 6.98841,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -27200,10 +32569,10 @@ const GameDetail = {
   },
   "234671": {
     "id": 234671,
-    "boardGameRank": 894,
+    "boardGameRank": 892,
     "title": "Pandemic: Rising Tide",
     "yearPublished": 2017,
-    "geekRating": 6.49968,
+    "geekRating": 6.50044,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -27219,12 +32588,119 @@ const GameDetail = {
       2023
     ]
   },
+  "235365": {
+    "id": 235365,
+    "boardGameRank": 4649,
+    "title": "Doctor Who Fluxx",
+    "yearPublished": 2017,
+    "geekRating": 5.66662,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 5,
+    "maxPlayTime": 30,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1064
+    ],
+    "designerIds": [
+      122
+    ],
+    "mechanicIds": [
+      2004
+    ]
+  },
+  "235604": {
+    "id": 235604,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Chimaera Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235605": {
+    "id": 235605,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Profundity Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": null,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 3,
+    "categoryIds": [],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235606": {
+    "id": 235606,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Alpha-Class Star Wing Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.61837,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [],
+    "designerIds": [
+      60309,
+      60239,
+      46412
+    ],
+    "mechanicIds": []
+  },
+  "235607": {
+    "id": 235607,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - M12-L Kimogila Fighter Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.56003,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235608": {
+    "id": 235608,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Phantom II Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.59348,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "236191": {
     "id": 236191,
-    "boardGameRank": 545,
+    "boardGameRank": 544,
     "title": "London (second edition)",
     "yearPublished": 2017,
-    "geekRating": 6.79973,
+    "geekRating": 6.80017,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -27249,7 +32725,7 @@ const GameDetail = {
     "boardGameRank": 130,
     "title": "Root",
     "yearPublished": 2018,
-    "geekRating": 7.35941,
+    "geekRating": 7.36231,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -27273,12 +32749,74 @@ const GameDetail = {
       2015
     ]
   },
+  "237192": {
+    "id": 237192,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Silencer Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.61568,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "237391": {
+    "id": 237391,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Resistance Bomber Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.56949,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "242302": {
     "id": 242302,
-    "boardGameRank": 935,
+    "boardGameRank": 936,
     "title": "Space Base",
     "yearPublished": 2018,
-    "geekRating": 6.47652,
+    "geekRating": 6.47683,
     "minPlayers": 2,
     "maxPlayers": 5,
     "bestWithPlayers": 3,
@@ -27300,10 +32838,10 @@ const GameDetail = {
   },
   "242574": {
     "id": 242574,
-    "boardGameRank": 675,
+    "boardGameRank": 672,
     "title": "Century: Eastern Wonders",
     "yearPublished": 2018,
-    "geekRating": 6.667,
+    "geekRating": 6.66891,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -27323,16 +32861,16 @@ const GameDetail = {
   },
   "244522": {
     "id": 244522,
-    "boardGameRank": 400,
+    "boardGameRank": 399,
     "title": "Ganz schon clever",
     "yearPublished": 2018,
-    "geekRating": 6.93718,
+    "geekRating": 6.93928,
     "minPlayers": 1,
     "maxPlayers": 4,
     "bestWithPlayers": 2,
     "minPlayTime": 30,
     "maxPlayTime": 30,
-    "averageWeight": 1.9189,
+    "averageWeight": 1.92,
     "categoryIds": [
       1017
     ],
@@ -27346,10 +32884,10 @@ const GameDetail = {
   },
   "244992": {
     "id": 244992,
-    "boardGameRank": 642,
+    "boardGameRank": 641,
     "title": "The Mind",
     "yearPublished": 2018,
-    "geekRating": 6.70144,
+    "geekRating": 6.70273,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 4,
@@ -27370,10 +32908,10 @@ const GameDetail = {
   },
   "245638": {
     "id": 245638,
-    "boardGameRank": 757,
+    "boardGameRank": 736,
     "title": "Coimbra",
     "yearPublished": 2018,
-    "geekRating": 6.60604,
+    "geekRating": 6.62276,
     "minPlayers": 2,
     "maxPlayers": 4,
     "bestWithPlayers": 3,
@@ -27392,6 +32930,39 @@ const GameDetail = {
       2041,
       2072,
       2004
+    ]
+  },
+  "246718": {
+    "id": 246718,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Reaper Expansion Pack",
+    "yearPublished": 2018,
+    "geekRating": null,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
     ]
   }
 }

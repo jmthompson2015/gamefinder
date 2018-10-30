@@ -34,16 +34,28 @@ function createUrl(gameIds) {
 
 const loadGameIds = () =>
   new Promise((resolve, reject) => {
-    const inputFile = "GameSummary.json";
-    FileLoader.loadLocalFile(inputFile).then(data => {
-      if (data === undefined) {
-        reject(new Error(`Failed to load url: ${inputFile}`));
+    const inputFile1 = "GameUser.json";
+    FileLoader.loadLocalFile(inputFile1).then(data1 => {
+      if (data1 === undefined) {
+        reject(new Error(`Failed to load url: ${inputFile1}`));
       }
 
-      const summaries = JSON.parse(data);
-      const gameIds = R.map(summary => summary.gameId, summaries);
+      const gameToUser = JSON.parse(data1);
+      const gameIds1 = Object.keys(gameToUser);
 
-      resolve(gameIds);
+      const inputFile2 = "GameSummary.json";
+      FileLoader.loadLocalFile(inputFile2).then(data2 => {
+        if (data2 === undefined) {
+          reject(new Error(`Failed to load url: ${inputFile2}`));
+        }
+
+        const summaries = JSON.parse(data2);
+        const gameIds2 = R.map(summary => summary.gameId, summaries);
+
+        const gameIds = R.uniq(R.concat(gameIds1, gameIds2));
+        gameIds.sort();
+        resolve(gameIds);
+      });
     });
   });
 

@@ -13,7 +13,7 @@ QUnit.test("GameDetail properties Scythe", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 7);
   assert.equal(detail.title, "Scythe");
-  assert.equal(detail.geekRating, 8.10955);
+  assert.equal(detail.geekRating, 8.10943);
 });
 
 QUnit.test("GameDetail properties Spirit Island", assert => {
@@ -27,12 +27,12 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 27);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(detail.geekRating, 7.85373);
+  assert.equal(detail.geekRating, 7.85453);
 });
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 1000;
+  const length = 1199;
 
   // Run.
   const keys = Object.keys(GameDetail);
@@ -45,8 +45,8 @@ QUnit.test("GameDetail keys", assert => {
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[keys[length - 1]];
-  assert.equal(detailLast.id, 245638);
-  assert.equal(detailLast.title, "Coimbra");
+  assert.equal(detailLast.id, 246718);
+  assert.equal(detailLast.title, "Star Wars: X-Wing Miniatures Game - TIE Reaper Expansion Pack");
 });
 
 const GameDetailTest = {};
