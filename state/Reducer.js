@@ -43,15 +43,6 @@ Reducer.root = (state, action) => {
         action.gameDetails
       );
       newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
-
-      console.log(
-        `Reducer ADD_GAME_DETAILS Selector.expectedDetailCount = ${Selector.expectedDetailCount(
-          state
-        )}`
-      );
-      console.log(
-        `Reducer ADD_GAME_DETAILS newGameToDetail length = ${Object.keys(newGameToDetail).length}`
-      );
       isDataLoaded = Selector.expectedDetailCount(state) === Object.keys(newGameToDetail).length;
 
       if (isDataLoaded) {
@@ -62,25 +53,19 @@ Reducer.root = (state, action) => {
         newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
         newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
         newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
-      } else {
-        newTableRows = [];
-        newFilteredTableRows = [];
-        newCategoryMap = {};
-        newDesignerMap = {};
-        newMechanicMap = {};
-        newUserMap = {};
-      }
 
-      return R.pipe(
-        R.assoc("filteredTableRows", newFilteredTableRows),
-        R.assoc("tableRows", newTableRows),
-        R.assoc("gameToDetail", newGameToDetail),
-        R.assoc("isDataLoaded", isDataLoaded),
-        R.assoc("categoryMap", newCategoryMap),
-        R.assoc("designerMap", newDesignerMap),
-        R.assoc("mechanicMap", newMechanicMap),
-        R.assoc("userMap", newUserMap)
-      )(state);
+        return R.pipe(
+          R.assoc("filteredTableRows", newFilteredTableRows),
+          R.assoc("tableRows", newTableRows),
+          R.assoc("gameToDetail", newGameToDetail),
+          R.assoc("isDataLoaded", isDataLoaded),
+          R.assoc("categoryMap", newCategoryMap),
+          R.assoc("designerMap", newDesignerMap),
+          R.assoc("mechanicMap", newMechanicMap),
+          R.assoc("userMap", newUserMap)
+        )(state);
+      }
+      return R.assoc("gameToDetail", newGameToDetail, state);
     case ActionType.ADD_GAME_SUMMARIES:
       console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);
       gameToSummary = R.reduce(
@@ -140,12 +125,17 @@ Reducer.root = (state, action) => {
 
 Reducer.addTableRows = (state, tableRows, gameDetails) => {
   const reduceFunction = (accum, gameDetail) => {
-    const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
-    const userIds = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
-    const users = ASelector.usersByIds(userIds);
-    const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
+    // 1042: Expansion for Base-game
+    if (gameDetail.boardGameRank || !gameDetail.categoryIds.includes(1042)) {
+      const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
+      const userIds = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
+      const users = ASelector.usersByIds(userIds);
+      const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
 
-    return R.append(newTableRow, accum);
+      return R.append(newTableRow, accum);
+    }
+
+    return accum;
   };
   const newTableRows = R.reduce(reduceFunction, [], gameDetails);
 

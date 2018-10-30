@@ -12,7 +12,7 @@ const createUrl = page => {
   const query = `select * from htmlstring where url="${sourceUrl}"`;
   const answer = `${baseUrl +
     encodeURIComponent(query)}&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`;
-  console.log(`url = ${answer}`);
+  // console.log(`url = ${answer}`);
 
   return answer;
 };

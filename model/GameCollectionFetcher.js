@@ -11,7 +11,7 @@ const createUrl = username => {
   const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
   const query = `select * from xml where url='${sourceUrl}'`;
   const answer = baseUrl + encodeURIComponent(query);
-  console.log(`url = ${answer}`);
+  // console.log(`url = ${answer}`);
 
   return answer;
 };
