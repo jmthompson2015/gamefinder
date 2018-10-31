@@ -19,24 +19,24 @@ class FilterUI extends React.Component {
 
     const filterCacheButton = ReactDOMFactories.button(
       { onClick: clearCacheOnClick },
-      "Clear Filter Cache"
+      "Clear Cache"
     );
     const restoreButton = ReactDOMFactories.button(
       { onClick: restoreDefaultsOnClick },
       "Restore Defaults"
     );
-    const unfilterButton = ReactDOMFactories.button({ onClick: removeOnClick }, "Remove Filter");
+    const unfilterButton = ReactDOMFactories.button({ onClick: removeOnClick }, "Remove");
+    const filterButton = ReactDOMFactories.button({ onClick: applyOnClick }, "Apply");
 
-    const filterButton = ReactDOMFactories.button({ onClick: applyOnClick }, "Apply Filter");
+    const cells = [
+      ReactUtils.createCell(filterCacheButton, "filterCacheButton", "pa1"),
+      ReactUtils.createCell(restoreButton, "restoreButton", "pa1"),
+      ReactUtils.createCell(unfilterButton, "unfilterButton", "pa1"),
+      ReactUtils.createCell(filterButton, "filterButton", "pa1")
+    ];
+    const row = ReactUtils.createRow(cells);
 
-    const cells = [];
-    cells.push(ReactDOMFactories.td({ key: cells.length }, filterCacheButton));
-    cells.push(ReactDOMFactories.td({ key: cells.length }, restoreButton));
-    cells.push(ReactDOMFactories.td({ key: cells.length }, unfilterButton));
-    cells.push(ReactDOMFactories.td({ key: cells.length }, filterButton));
-    const row = ReactDOMFactories.tr({}, cells);
-
-    return ReactDOMFactories.table({}, ReactDOMFactories.tbody({}, row));
+    return ReactUtils.createTable(row, "buttonTable", "f6 fr");
   }
 
   createEntityTable() {
@@ -71,17 +71,13 @@ class FilterUI extends React.Component {
         onChange: handleEntityChange
       });
       cells.push(
-        ReactUtils.createCell(
-          entitiesContainer,
-          EntityFilterUtils.toString(filter),
-          "entityFilterContainer"
-        )
+        ReactUtils.createCell(entitiesContainer, EntityFilterUtils.toString(filter), "pl2 v-top")
       );
     }, DefaultFilters.entityColumns);
 
     const row = ReactUtils.createRow(cells);
 
-    return ReactUtils.createTable(row, "filtersUI", "filtersUI");
+    return ReactUtils.createTable(row, "filtersUI", "f6");
   }
 
   createRangeTable() {
@@ -101,7 +97,7 @@ class FilterUI extends React.Component {
       rows.push(row);
     }, DefaultFilters.rangeColumns);
 
-    return ReactUtils.createTable(rows, "rangeTable", "filterTable");
+    return ReactUtils.createTable(rows, "rangeTable", "gf-bg-light2 f6 mh1");
   }
 
   handleEntityChangeFunction(filter) {
@@ -119,19 +115,21 @@ class FilterUI extends React.Component {
   render() {
     const cells = [
       ReactUtils.createCell(this.createRangeTable(), "rangeTable", "v-top"),
-      ReactUtils.createCell(this.createEntityTable(), "entityTable", "filtersUI")
+      ReactUtils.createCell(this.createEntityTable(), "entityTable", "f6 mh1")
     ];
     const rows0 = ReactUtils.createRow(cells, "filterTableCells");
     const table0 = ReactUtils.createTable(rows0, "filterTableRow");
+    const cell0 = ReactUtils.createCell("Filter", "filterTitle", "b f4 gf-light2 pa1 tl");
     const cell1 = ReactUtils.createCell(table0, "filterTable");
-    const cell2 = ReactUtils.createCell(this.createButtonTable(), "buttonTable");
+    const cell2 = ReactUtils.createCell(this.createButtonTable(), "buttonTable", "center pa2");
 
     const rows = [
+      ReactUtils.createRow(cell0, "filterTitleRow"),
       ReactUtils.createRow(cell1, "filterTablesRow"),
       ReactUtils.createRow(cell2, "buttonRow")
     ];
 
-    return ReactUtils.createTable(rows, "filterTable", "filtersUI f7");
+    return ReactUtils.createTable(rows, "filterTable", "gf-bg-dark1 gf-f-entity pa1");
   }
 }
 

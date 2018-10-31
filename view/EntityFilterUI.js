@@ -55,10 +55,7 @@ class EntityFilterUI extends React.Component {
     const initialValues =
       filter && filter.values.length > 0 ? R.map(id => entityMap[id], filter.values) : [];
 
-    const label = ReactDOMFactories.span(
-      { key: "entityLabel", className: "entityLabel" },
-      column.label
-    );
+    const label = ReactDOMFactories.span({ key: "entityLabel", className: "b f6" }, column.label);
     const checkboxPanel = React.createElement(InputPanel2, {
       onChange: this.handleEntityChange,
       type: InputPanel2.Type.CHECKBOX,
@@ -67,22 +64,21 @@ class EntityFilterUI extends React.Component {
       clientProps,
       initialValues,
       labelFunction,
-      panelClass: "entitiesTable"
+      panelClass: "bg-white gf-f-entity tl"
     });
     const entitiesContainer = ReactDOMFactories.div(
-      { key: "entitiesContainer", className: "entitiesContainer" },
+      {
+        key: "entitiesContainer",
+        className: "gf-h-entity overflow-auto"
+      },
       checkboxPanel
     );
 
-    const cell1 = ReactUtils.createCell(
-      label,
-      `${column.key}EntitiesLabel`,
-      "entityFilterContainer"
-    );
+    const cell1 = ReactUtils.createCell(label, `${column.key}LabelCell`, "f6 gf-light2 tc v-top");
     const cell2 = ReactUtils.createCell(
       entitiesContainer,
-      `${column.key}EntitiesContainer`,
-      "entityFilterContainer"
+      `${column.key}ContainerCell`,
+      "gf-bg-light2 f6 tc v-top"
     );
 
     const rows = [
@@ -90,7 +86,7 @@ class EntityFilterUI extends React.Component {
       ReactUtils.createRow(cell2, "entitiesRow")
     ];
 
-    return ReactUtils.createTable(rows, "filtersUI", "filtersUI");
+    return ReactUtils.createTable(rows, "filtersUI", "f6");
   }
 }
 

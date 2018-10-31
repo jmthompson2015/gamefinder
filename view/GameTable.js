@@ -1,6 +1,7 @@
 import GameColumns from "../state/GameColumns.js";
 
 import DataTable from "./DataTable.js";
+import ReactUtils from "./ReactUtilities.js";
 
 const entityReduceFunction = (accum, entity) => R.append(`${entity.name}, `, accum);
 
@@ -24,14 +25,13 @@ const createEntitiesTable = (entities, url) => {
   const mapFunction = entity => {
     const href = url + entity.id;
     const link = createImageLink(src, href);
-    const cell = ReactDOMFactories.td({}, entity.name, link);
+    const cell = ReactUtils.createCell([entity.name, link]);
 
-    return ReactDOMFactories.tr({ key: entity.name }, cell);
+    return ReactUtils.createRow(cell, entity.name);
   };
   const rows = R.map(mapFunction, entities);
-  const tbody = ReactDOMFactories.tbody({}, rows);
 
-  return ReactDOMFactories.table({ className: "entitiesTable" }, tbody);
+  return ReactUtils.createTable(rows, url, "bn gf-f-entity tl");
 };
 
 const mapUsers = users => {

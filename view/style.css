@@ -1,5 +1,5 @@
 body {
-  background-image: url('../resource/yellowGradient.png');
+  background-image: url("../resource/yellowGradient.png");
   background-repeat: repeat-y;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -9,112 +9,144 @@ table {
   text-align: center;
 }
 
-.dataTable tbody tr:nth-child(2n) td {
-  background: LightCyan;
+.gf-b--dark1,
+.dataTable td {
+  border: 1px solid DarkGreen;
 }
 
-.dataTable tbody tr:nth-child(2n+1) td {
-  background: White;
+.gf-b--light2,
+.dataTable th {
+  border: 1px solid LightYellow;
 }
 
-.entitiesTable tbody tr:nth-child(2n) td {
-  background: white;
+.gf-bg-light1 {
+  background: #e0ffe0;
 }
 
-.entitiesTable tbody tr:nth-child(2n+1) td {
-  background: white;
+.gf-bg-medium1 {
+  background: LimeGreen;
 }
 
-.filterTable tr:nth-child(odd) {
-  background: White;
+.gf-bg-dark1,
+.dataTable th {
+  background: DarkGreen;
 }
 
-.filterTable tr:nth-child(even) {
-  background: LightCyan;
+.gf-bg-light2 {
+  background: LightYellow;
 }
 
-#ALIGN_CENTER, .filterLabel, .alignCenter {
-  text-align: center;
+.gf-bg-medium2 {
+  background: Yellow;
 }
 
-#ALIGN_LEFT, .entitiesTable, .progressTextCell, .rowCount, .textCell, .alignLeft {
-  text-align: left;
+.gf-bg-dark2 {
+  background: Olive;
 }
 
-#ALIGN_MIDDLE, #bgg_cornerlogo, .imageBlock, .alignMiddle {
-  vertical-align: middle;
+.gf-light1 {
+  color: #e0ffe0;
 }
 
-#ALIGN_RIGHT, .numberCell, .progressNumberCell, .alignRight {
-  text-align: right;
+.gf-medium1 {
+  color: LimeGreen;
 }
 
-#ALIGN_TOP, .entityFilterContainer, .alignTop {
-  vertical-align: top;
+.gf-dark1 {
+  color: DarkGreen;
 }
 
-#BACKGROUND_DARK, .dataTable th, .backgroundDark {
-  background-color: green;
-  color: white;
+.gf-light2,
+.dataTable th {
+  color: LightYellow;
 }
 
-#BORDER_DARK, .dataTable td, .borderDark {
-  border: 1px solid green;
+.gf-medium2 {
+  color: Yellow;
 }
 
-#BORDER_LIGHT, .dataTable th, .borderLight {
-  border: 1px solid lightGray;
+.gf-dark2 {
+  color: Olive;
 }
 
-#BORDER_NONE, .entitiesTable td, .borderNone {
-  border: 0px solid lightGray;
-}
-
-#DISPLAY_INLINE_BLOCK, .textImageLink, .displayInlineBlock {
-  display: inline-block;
-}
-
-#FLOAT_RIGHT, .imageBlock, .floatRight {
-  float: right;
-}
-
-#FONT_BOLD, .entityLabel, fontBold {
-  font-weight: bold;
-}
-
-#FONT_SMALL, .dataTable, .entityLabel, .filterLabel, .filterTable, .filtersUI, .rowCount, .fontSmall {
-  font-size: small;
-}
-
-#FONT_X_SMALL, .entitiesTable, .fontXSmall {
+.gf-f-entity {
   font-size: x-small;
 }
 
-#HEIGHT_200, .entitiesContainer, .height170 {
-  height: 200px;
+.gf-h-entity {
+  height: 180px;
 }
 
-#OVERFLOW_Y_AUTO, .entitiesContainer, .overflowYAuto {
-  overflow-y: auto;
+.dataTable tbody tr:nth-child(2n) td {
+  background: #e0ffe0;
 }
 
-#PADDING_LEFT5, .entityFilterContainer, .paddingLeft5 {
-  padding-left: 5px;
+.dataTable tbody tr:nth-child(2n + 1) td {
+  background: White;
 }
 
-#PADDING_LR3, .filterTable td, .progressUI td, .paddingLR3 {
+#ALIGN_LEFT,
+.progressTextCell,
+.rowCount,
+.textCell,
+.alignLeft {
+  text-align: left;
+}
+
+#ALIGN_MIDDLE,
+#bgg_cornerlogo,
+.imageBlock,
+.alignMiddle {
+  vertical-align: middle;
+}
+
+#ALIGN_RIGHT,
+.numberCell,
+.progressNumberCell,
+.alignRight {
+  text-align: right;
+}
+
+#DISPLAY_INLINE_BLOCK,
+.textImageLink,
+.displayInlineBlock {
+  display: inline-block;
+}
+
+#FLOAT_RIGHT,
+.imageBlock,
+.floatRight {
+  float: right;
+}
+
+#FONT_SMALL,
+.dataTable,
+.rowCount,
+.fontSmall {
+  font-size: small;
+}
+
+#PADDING_LR3,
+.progressUI td,
+.paddingLR3 {
   padding-left: 3px;
   padding-right: 3px;
 }
 
-#PADDING_TOP_10, .rowCount, .paddingTop10 {
+#PADDING_TOP_10,
+.rowCount,
+.paddingTop10 {
   padding-top: 10px;
 }
 
-#WIDTH_60, .filterField, .width60 {
+#WIDTH_60,
+.filterField,
+.width60 {
   width: 60px;
 }
 
-#WIDTH_FULL, .textImageLink, .widthFull {
+#WIDTH_FULL,
+.textImageLink,
+.widthFull {
   width: 100%;
 }
