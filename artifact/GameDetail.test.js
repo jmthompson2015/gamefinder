@@ -2,6 +2,8 @@ import GameDetail from "./GameDetail.js";
 
 QUnit.module("GameDetail");
 
+const round2 = value => Math.round(value * 100.0) / 100.0;
+
 QUnit.test("GameDetail properties Scythe", assert => {
   // Setup.
   const id = 169786;
@@ -13,7 +15,7 @@ QUnit.test("GameDetail properties Scythe", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 7);
   assert.equal(detail.title, "Scythe");
-  assert.equal(detail.geekRating, 8.10943);
+  assert.equal(round2(detail.geekRating), 8.11);
 });
 
 QUnit.test("GameDetail properties Spirit Island", assert => {
@@ -27,7 +29,7 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 27);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(detail.geekRating, 7.85453);
+  assert.equal(round2(detail.geekRating), 7.85);
 });
 
 QUnit.test("GameDetail keys", assert => {

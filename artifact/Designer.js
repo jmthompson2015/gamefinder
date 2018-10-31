@@ -931,6 +931,10 @@ const Designer = {
     "id": 4337,
     "name": "Ludovic Maublanc"
   },
+  "4350": {
+    "id": 4350,
+    "name": "Tetsuya Nakamura"
+  },
   "4372": {
     "id": 4372,
     "name": "Daniel Mandel"
