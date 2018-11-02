@@ -10,7 +10,8 @@ const FileWriter = require("./FileWriter.js");
 
 const USER = ["ghightshoe", "jmthompson", "kmistr"];
 
-const OUTPUT_FILE = "GameUser.json";
+const OUTPUT_FILE1 = "UserGame.json";
+const OUTPUT_FILE2 = "GameUser.json";
 
 const createUrl = username => {
   const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
@@ -68,10 +69,12 @@ GameCollectionFetcher.fetchData = username =>
 
 GameCollectionFetcher.fetchAll = () =>
   new Promise(resolve => {
-    let content = {};
+    let content1 = {};
+    let content2 = {};
     let count = 0;
     const loopFunction = data => {
-      content = R.reduce(
+      content1 = R.assoc(data.userId, data, content1);
+      content2 = R.reduce(
         (accum, gameId) => {
           const entry = accum[gameId];
           if (entry === undefined) {
@@ -82,13 +85,13 @@ GameCollectionFetcher.fetchAll = () =>
           newUsers.sort();
           return R.assoc(gameId, newUsers, accum);
         },
-        content,
+        content2,
         data.gameIds
       );
       count += 1;
 
       if (count === USER.length) {
-        resolve(content);
+        resolve([content1, content2]);
       }
     };
 
@@ -98,9 +101,11 @@ GameCollectionFetcher.fetchAll = () =>
   });
 
 const start = Date.now();
-GameCollectionFetcher.fetchAll().then(content0 => {
-  const content = JSON.stringify(content0, null, "  ");
-  FileWriter.writeFile(OUTPUT_FILE, content);
+GameCollectionFetcher.fetchAll().then(contents => {
+  const content1 = JSON.stringify(contents[0], null, "  ");
+  const content2 = JSON.stringify(contents[1], null, "  ");
+  FileWriter.writeFile(OUTPUT_FILE1, content1);
+  FileWriter.writeFile(OUTPUT_FILE2, content2);
   const end = Date.now();
   console.log(`elapsed: ${end - start} ms`);
 });

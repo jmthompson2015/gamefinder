@@ -1,4 +1,5 @@
 converter/GameDetail.json
 converter/GameSummary.json
 converter/GameUser.json
+converter/UserGame.json
 node_modules/
