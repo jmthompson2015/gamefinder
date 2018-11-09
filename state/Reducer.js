@@ -33,6 +33,7 @@ Reducer.root = (state, action) => {
   let newMechanicMap;
   let newTableRows;
   let newUserMap;
+  let newUserToGames;
   let newUserToReceivedMap;
 
   switch (action.type) {
@@ -77,6 +78,7 @@ Reducer.root = (state, action) => {
       return R.assoc("gameToSummary", newGameToSummary, state);
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
+      newUserToGames = R.assoc(action.userId, action.gameIds, state.userToGames);
       newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
       newGameToUsers = state.gameToUsers;
       R.forEach(id => {
@@ -85,6 +87,7 @@ Reducer.root = (state, action) => {
       }, action.gameIds);
       return R.pipe(
         R.assoc("gameToUsers", newGameToUsers),
+        R.assoc("userToGames", newUserToGames),
         R.assoc("userToReceivedMap", newUserToReceivedMap)
       )(state);
     case ActionType.APPLY_FILTERS:

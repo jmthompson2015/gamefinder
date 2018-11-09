@@ -4,7 +4,7 @@ Provides an application to view and filter the top games at [BoardGameGeek](http
 
 ## Applications
 
-- [Game Finder](https://jmthompson2015.github.io/gamefinder/src/main/html/gameFinder.html)
+- [Game Finder](https://jmthompson2015.github.io/gamefinder/app/GameFinder.html)
 
 ## Built With
 
