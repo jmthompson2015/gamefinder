@@ -85,13 +85,17 @@ GameSummaryFetcher.fetchData = page =>
     const receiveData = xmlDocument0 => {
       const xmlDocument = xmlDocument0;
       let content = xmlDocument.children[0].children[0].children[0];
-      content = content.innerHTML;
-      content = content.replace(/&lt;/g, "<");
-      content = content.replace(/&gt;/g, ">");
+      if (content) {
+        content = content.innerHTML;
+        content = content.replace(/&lt;/g, "<");
+        content = content.replace(/&gt;/g, ">");
 
-      xmlDocument.children[0].children[0].children[0].innerHTML = content;
-      const gameSummaries = parseGameSummaries(xmlDocument);
-      resolve(gameSummaries);
+        xmlDocument.children[0].children[0].children[0].innerHTML = content;
+        const gameSummaries = parseGameSummaries(xmlDocument);
+        resolve(gameSummaries);
+      } else {
+        reject(new Error(`XML document content is undefined for page: ${page}`));
+      }
     };
 
     const url = createUrl(page);

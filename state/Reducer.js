@@ -16,7 +16,7 @@ Reducer.root = (state, action) => {
   // LOGGER.debug(`root() type = ${action.type}`);
 
   if (typeof state === "undefined") {
-    return AppState.create();
+    return AppState.create({ filters: Reducer.loadFromLocalStorage() });
   }
 
   let gameToDetail;
@@ -150,6 +150,9 @@ Reducer.filterTableRows = (tableRows, filters) => {
 
   return Reducer.sortTableRows(answer);
 };
+
+Reducer.loadFromLocalStorage = () =>
+  localStorage.filters ? JSON.parse(localStorage.filters) : undefined;
 
 Reducer.saveToLocalStorage = filters => {
   localStorage.filters = JSON.stringify(filters);

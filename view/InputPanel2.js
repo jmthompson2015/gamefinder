@@ -2,38 +2,6 @@ class InputPanel2 extends React.Component {
   constructor(props) {
     super(props);
 
-    let selected;
-    const { initialValues, type } = this.props;
-
-    switch (type) {
-      case InputPanel2.Type.CHECKBOX:
-        selected = [];
-        break;
-      case InputPanel2.Type.TEXT:
-        selected = {};
-        break;
-      default:
-        throw new Error(`Unknown type: ${type}`);
-    }
-
-    if (initialValues) {
-      switch (type) {
-        case InputPanel2.Type.CHECKBOX:
-          selected = R.concat(selected, initialValues);
-          break;
-        case InputPanel2.Type.RADIO:
-          selected = initialValues;
-          break;
-        case InputPanel2.Type.TEXT:
-          selected = R.append(selected, initialValues);
-          break;
-        default:
-          throw new Error(`Unknown input type: ${type}`);
-      }
-    }
-
-    this.state = { selected };
-
     this.handleChange = this.handleChangeFunction.bind(this);
   }
 
@@ -55,8 +23,7 @@ class InputPanel2 extends React.Component {
   }
 
   createRow(i, value, inputProps0) {
-    const { selected } = this.state;
-    const { labelFunction, type } = this.props;
+    const { initialValues: selected, labelFunction, type } = this.props;
     const label = labelFunction ? labelFunction(value) : value;
 
     const inputProps = inputProps0;
@@ -94,7 +61,7 @@ class InputPanel2 extends React.Component {
   handleChangeFunction(event) {
     const source = event.target;
     const { id } = source;
-    let { selected } = this.state;
+    let { initialValues: selected } = this.props;
     const { onChange, type, values } = this.props;
     const mySelected = values[id];
 
@@ -116,7 +83,7 @@ class InputPanel2 extends React.Component {
         throw new Error(`Unknown input type: ${type}`);
     }
 
-    this.setState({ selected }, onChange(event, selected));
+    onChange(event, selected);
   }
 
   render() {
