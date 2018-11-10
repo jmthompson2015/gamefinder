@@ -18,7 +18,7 @@ FilterUtilities.passes = (filter, data) =>
 
 FilterUtilities.passesAll = (filters, data) => {
   let answer = true;
-  const propertyNames = Object.getOwnPropertyNames(filters);
+  const propertyNames = Object.keys(filters);
 
   for (let i = 0; i < propertyNames.length; i += 1) {
     const propertyName = propertyNames[i];
