@@ -135,10 +135,6 @@ const Mechanic = {
     "id": 2055,
     "name": "Paper-and-Pencil"
   },
-  "2057": {
-    "id": 2057,
-    "name": "Chit-Pull System"
-  },
   "2060": {
     "id": 2060,
     "name": "Pattern Recognition"

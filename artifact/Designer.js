@@ -307,14 +307,6 @@ const Designer = {
     "id": 169,
     "name": "Eric Goldberg"
   },
-  "170": {
-    "id": 170,
-    "name": "Vincent Tsao"
-  },
-  "171": {
-    "id": 171,
-    "name": "Ben Grossman"
-  },
   "172": {
     "id": 172,
     "name": "Urs Hostettler"
@@ -550,10 +542,6 @@ const Designer = {
   "901": {
     "id": 901,
     "name": "Gavin Thorpe"
-  },
-  "917": {
-    "id": 917,
-    "name": "Steve Marsh (I)"
   },
   "921": {
     "id": 921,
@@ -851,10 +839,6 @@ const Designer = {
     "id": 3526,
     "name": "Carl de Visser"
   },
-  "3540": {
-    "id": 3540,
-    "name": "Carlo A. Rossi"
-  },
   "3615": {
     "id": 3615,
     "name": "Ken Dunn"
@@ -930,10 +914,6 @@ const Designer = {
   "4337": {
     "id": 4337,
     "name": "Ludovic Maublanc"
-  },
-  "4350": {
-    "id": 4350,
-    "name": "Tetsuya Nakamura"
   },
   "4372": {
     "id": 4372,
@@ -1602,14 +1582,6 @@ const Designer = {
   "13362": {
     "id": 13362,
     "name": "Edward Bolme"
-  },
-  "13822": {
-    "id": 13822,
-    "name": "Nikola Vrtis"
-  },
-  "14479": {
-    "id": 14479,
-    "name": "Steven Marsh (II)"
   },
   "15719": {
     "id": 15719,
@@ -2898,6 +2870,10 @@ const Designer = {
   "102535": {
     "id": 102535,
     "name": "Herve Lemaître"
+  },
+  "103554": {
+    "id": 103554,
+    "name": "David Cicurel"
   },
   "105000": {
     "id": 105000,

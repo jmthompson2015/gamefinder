@@ -60,7 +60,7 @@ QUnit.test("createMechanicMap()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result).length, 8);
+  assert.equal(Object.keys(result).length, 9);
   verifyEntity(assert, result[2004], 2004, "Set Collection", 1);
   verifyEntity(assert, result[2011], 2011, "Modular Board", 1);
   verifyEntity(assert, result[2015], 2015, "Variable Player Powers", 2);
@@ -69,6 +69,7 @@ QUnit.test("createMechanicMap()", assert => {
   verifyEntity(assert, result[2040], 2040, "Hand Management", 1);
   verifyEntity(assert, result[2080], 2080, "Area Control / Area Influence", 2);
   verifyEntity(assert, result[2676], 2676, "Grid Movement", 1);
+  verifyEntity(assert, result[2689], 2689, "Action / Movement Programming", 1);
 });
 
 QUnit.test("createUserMap()", assert => {
