@@ -86,8 +86,8 @@ GameLoader.loadGameDetails = store =>
 
 GameLoader.loadGameSummaries = store =>
   new Promise(resolve => {
-    const receiveSummaryData = gameSummaries => {
-      store.dispatch(ActionCreator.addGameSummaries(gameSummaries));
+    const receiveSummaryData = ({ page, gameSummaries }) => {
+      store.dispatch(ActionCreator.addGameSummaries(page, gameSummaries));
 
       if (Selector.isSummariesLoaded(store.getState())) {
         const myGameSummaries = Object.values(Selector.gameToSummary(store.getState()));

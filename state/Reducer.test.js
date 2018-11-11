@@ -34,8 +34,9 @@ const createGameSummaries = () => [
 QUnit.test("addGameDetails()", assert => {
   // Setup.
   let state = AppState.create();
+  const page = 1;
   const gameSummaries = createGameSummaries();
-  const action1 = ActionCreator.addGameSummaries(gameSummaries);
+  const action1 = ActionCreator.addGameSummaries(page, gameSummaries);
   state = Reducer.root(state, action1);
   assert.equal(Object.values(state.gameToSummary).length, 2);
   const gameDetails = createGameDetails();
@@ -57,8 +58,9 @@ QUnit.test("addGameSummaries()", assert => {
   const state = AppState.create();
   const length = 0;
   assert.equal(Object.keys(state.gameToSummary).length, length);
+  const page = 1;
   const gameSummaries = createGameSummaries();
-  const action = ActionCreator.addGameSummaries(gameSummaries);
+  const action = ActionCreator.addGameSummaries(page, gameSummaries);
 
   // Run.
   const result = Reducer.root(state, action);

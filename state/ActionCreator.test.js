@@ -29,14 +29,16 @@ QUnit.test("addGameDetails()", assert => {
 
 QUnit.test("addGameSummaries()", assert => {
   // Setup.
+  const page = 2;
   const gameSummaries = 3;
 
   // Run.
-  const result = ActionCreator.addGameSummaries(gameSummaries);
+  const result = ActionCreator.addGameSummaries(page, gameSummaries);
 
   // Verify.
   assert.ok(result);
   assert.equal(result.type, ActionType.ADD_GAME_SUMMARIES);
+  assert.equal(result.page, page);
   assert.equal(result.gameSummaries, gameSummaries);
 });
 

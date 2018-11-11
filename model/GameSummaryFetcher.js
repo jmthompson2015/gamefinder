@@ -92,7 +92,7 @@ GameSummaryFetcher.fetchData = page =>
 
         xmlDocument.children[0].children[0].children[0].innerHTML = content;
         const gameSummaries = parseGameSummaries(xmlDocument);
-        resolve(gameSummaries);
+        resolve({ page, gameSummaries });
       } else {
         reject(new Error(`XML document content is undefined for page: ${page}`));
       }

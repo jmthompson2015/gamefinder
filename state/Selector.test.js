@@ -14,7 +14,6 @@ const GAME_IDS_1 = Immutable([1406, 169786]);
 const GAME_IDS_2 = Immutable([181, 162886]);
 
 const verifyGameIds = (assert, gameIds, length, idFirst, idLast) => {
-  // const length = 4;
   assert.equal(gameIds.length, length);
   assert.equal(gameIds[0], idFirst);
   assert.equal(typeof gameIds[0], "number");
@@ -22,64 +21,12 @@ const verifyGameIds = (assert, gameIds, length, idFirst, idLast) => {
   assert.equal(typeof gameIds[length - 1], "number");
 };
 
-// QUnit.test("findGameUsersByGameId()", assert => {
-//   // Setup.
-//   const store = Redux.createStore(Reducer.root);
-//   // const gameLoader = new GameLoader(store);
-//   const id = 161936; // Pandemic Legacy Season 1
-//   const done = assert.async();
-//   const callback = gameToUsers => {
-//     // Verify.
-//     assert.equal(Object.values(gameToUsers).length, 240);
-//
-//     // Run.
-//     const result = Selector.findGameUsersByGameId(store.getState(), id);
-//
-//     // Verify.
-//     assert.ok(true, "test resumed from async operation");
-//     assert.ok(result);
-//     assert.ok(Array.isArray(result));
-//     assert.equal(result.length, 1);
-//     assert.equal(result[0].name, "ghightshoe");
-//     done();
-//   };
-//
-//   // gameLoader.loadCollections(callback);
-// });
-//
-// QUnit.test("findGameDetailById()", assert => {
-//   // Setup.
-//   const store = Redux.createStore(Reducer.root);
-//   store.dispatch(ActionCreator.setPageCount(1));
-//   const newGameToSummary = createGameSummaryMap();
-//   store.dispatch(ActionCreator.addGameSummaries(newGameToSummary));
-//   // const gameLoader = new GameLoader(store);
-//   const id = 169786; // Scythe
-//
-//   const done = assert.async();
-//   const callback = gameToDetail => {
-//     // Verify.
-//     assert.equal(Object.values(gameToDetail).length, 1000);
-//
-//     // Run.
-//     const result = Selector.findGameDetailById(store.getState(), id);
-//
-//     // Verify.
-//     assert.ok(true, "test resumed from async operation");
-//     assert.ok(result);
-//     assert.equal(result.id, id);
-//     assert.equal(result.title, "Scythe");
-//     done();
-//   };
-//
-//   // gameLoader.loadGameDetails(newGameToSummary, callback);
-// });
-
 QUnit.test("findGameSummaryById()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
+  const page = 1;
   const newGameSummaries = createGameSummaries();
-  store.dispatch(ActionCreator.addGameSummaries(newGameSummaries));
+  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
   const id = 1406; // Monopoly
 
   // Run.
@@ -108,8 +55,9 @@ QUnit.test("gameIdsFromCollections()", assert => {
 QUnit.test("gameIdsFromCollectionsAndSummaries()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
+  const page = 1;
   const newGameSummaries = createGameSummaries();
-  store.dispatch(ActionCreator.addGameSummaries(newGameSummaries));
+  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
   store.dispatch(ActionCreator.addUserCollection(1, GAME_IDS_1));
   store.dispatch(ActionCreator.addUserCollection(2, GAME_IDS_2));
 
@@ -124,8 +72,9 @@ QUnit.test("gameIdsFromCollectionsAndSummaries()", assert => {
 QUnit.test("gameIdsFromSummaries()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
+  const page = 1;
   const newGameSummaries = createGameSummaries();
-  store.dispatch(ActionCreator.addGameSummaries(newGameSummaries));
+  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
 
   // Run.
   const result = Selector.gameIdsFromSummaries(store.getState());
@@ -182,8 +131,9 @@ QUnit.test("isCollectionsLoaded()", assert => {
 QUnit.test("isDetailsLoaded()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
+  const page = 1;
   const newGameSummaries = createGameSummaries();
-  store.dispatch(ActionCreator.addGameSummaries(newGameSummaries));
+  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
 
   // Run.
   const result = Selector.isDetailsLoaded(store.getState());

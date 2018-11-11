@@ -31,6 +31,7 @@ Reducer.root = (state, action) => {
   let newGameToSummary;
   let newGameToUsers;
   let newMechanicMap;
+  let newSummaryToReceivedMap;
   let newTableRows;
   let newUserMap;
   let newUserToGames;
@@ -68,14 +69,18 @@ Reducer.root = (state, action) => {
       }
       return R.assoc("gameToDetail", newGameToDetail, state);
     case ActionType.ADD_GAME_SUMMARIES:
-      console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);
+      // console.log(`Reducer gameToSummary.length = ${action.gameSummaries.length}`);
       gameToSummary = R.reduce(
         (accum, summary) => R.assoc(summary.id, summary, accum),
         {},
         action.gameSummaries
       );
       newGameToSummary = R.merge(state.gameToSummary, gameToSummary);
-      return R.assoc("gameToSummary", newGameToSummary, state);
+      newSummaryToReceivedMap = R.assoc(action.page, true, state.summaryToReceivedMap);
+      return R.pipe(
+        R.assoc("gameToSummary", newGameToSummary),
+        R.assoc("summaryToReceivedMap", newSummaryToReceivedMap)
+      )(state);
     case ActionType.ADD_USER_COLLECTION:
       console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
       newUserToGames = R.assoc(action.userId, action.gameIds, state.userToGames);

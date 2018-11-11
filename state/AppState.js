@@ -18,6 +18,7 @@ AppState.create = ({
   mechanicMap = {},
   userMap = {},
   userToGames = {},
+  summaryToReceivedMap = {},
   userToReceivedMap = {},
   filters = DefaultFilters.create()
 } = {}) =>
@@ -41,6 +42,8 @@ AppState.create = ({
     userMap,
     // user ID to game IDs
     userToGames,
+    // summary page to boolean
+    summaryToReceivedMap,
     // user ID to boolean
     userToReceivedMap,
     filters

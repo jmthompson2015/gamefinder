@@ -37,12 +37,9 @@ Selector.gameToUsers = state => state.gameToUsers;
 
 Selector.isCollectionsLoaded = state => {
   const userIds = ASelector.userIds();
-  const userToReceivedMap = Selector.userToReceivedMap(state);
+  const { userToReceivedMap } = state;
 
-  return userIds.reduce(
-    (accumulator, userId) => accumulator && userToReceivedMap[userId] === true,
-    true
-  );
+  return R.reduce((accum, userId) => accum && userToReceivedMap[userId] === true, true, userIds);
 };
 
 Selector.isDataLoaded = state => state.isDataLoaded;
@@ -50,11 +47,13 @@ Selector.isDataLoaded = state => state.isDataLoaded;
 Selector.isDetailsLoaded = state =>
   Selector.actualDetailCount(state) === Selector.expectedDetailCount(state);
 
-Selector.isSummariesLoaded = state =>
-  Selector.actualSummaryCount(state) === Selector.expectedSummaryCount(state);
+Selector.isSummariesLoaded = state => {
+  const pages = Array.from(Array(state.pageCount), (x, i) => i + 1);
+  const { summaryToReceivedMap } = state;
+
+  return R.reduce((accum, page) => accum && summaryToReceivedMap[page] === true, true, pages);
+};
 
 Selector.pageCount = state => state.pageCount;
-
-Selector.userToReceivedMap = state => state.userToReceivedMap;
 
 export default Selector;
