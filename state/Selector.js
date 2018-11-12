@@ -1,3 +1,4 @@
+import GameDetail from "../artifact/GameDetail.js";
 import ASelector from "../artifact/Selector.js";
 
 const Selector = {};
@@ -8,11 +9,30 @@ Selector.actualDetailCount = state => Object.keys(state.gameToDetail).length;
 
 Selector.actualSummaryCount = state => Object.keys(state.gameToSummary).length;
 
+Selector.boardGameRank = (state, gameId) => {
+  let answer;
+  const summary = Selector.gameSummary(state, gameId);
+
+  if (summary) {
+    answer = summary.boardGameRank;
+  }
+
+  if (answer === undefined) {
+    const detail = Selector.gameDetail(state, gameId);
+
+    if (detail) {
+      answer = detail.boardGameRank;
+    }
+  }
+
+  return answer;
+};
+
 Selector.expectedDetailCount = state => Selector.gameIdsFromCollectionsAndSummaries(state).length;
 
 Selector.expectedSummaryCount = state => Selector.pageCount(state) * 100;
 
-Selector.gameDetail = (state, id) => state.gameToDetail[id];
+Selector.gameDetail = (state, gameId) => state.gameToDetail[gameId] || GameDetail[gameId];
 
 Selector.gameIdsFromCollections = state => R.map(toInt, R.uniq(Object.keys(state.gameToUsers)));
 
@@ -25,9 +45,9 @@ Selector.gameIdsFromCollectionsAndSummaries = state => {
   return R.uniq(R.concat(gameIds1, gameIds2));
 };
 
-Selector.gameSummary = (state, id) => state.gameToSummary[id];
+Selector.gameSummary = (state, gameId) => state.gameToSummary[gameId];
 
-Selector.gameUsers = (state, id) => state.gameToUsers[id] || [];
+Selector.gameUsers = (state, gameId) => state.gameToUsers[gameId] || [];
 
 Selector.isCollectionsLoaded = state => {
   const userIds = ASelector.userIds();

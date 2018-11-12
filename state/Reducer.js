@@ -96,19 +96,19 @@ Reducer.root = (state, action) => {
         R.assoc("userToReceivedMap", newUserToReceivedMap)
       )(state);
     case ActionType.APPLY_FILTERS:
-      console.log(`Reducer APPLY_FILTERS`);
+      // console.log(`Reducer APPLY_FILTERS`);
       newFilteredTableRows = Reducer.filterTableRows(state.tableRows, state.filters);
       Reducer.saveToLocalStorage(state.filters);
       return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.REMOVE_FILTERS:
-      console.log("Reducer REMOVE_FILTERS");
+      // console.log("Reducer REMOVE_FILTERS");
       newFilteredTableRows = Reducer.sortTableRows(state.tableRows);
       return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.SET_COLLECTION_TIME:
       console.log(`Reducer collectionTime = ${action.time}`);
       return R.assoc("collectionTime", action.time, state);
     case ActionType.SET_DEFAULT_FILTERS:
-      console.log("Reducer SET_DEFAULT_FILTERS");
+      // console.log("Reducer SET_DEFAULT_FILTERS");
       newFilters = DefaultFilters.create();
       return R.assoc("filters", newFilters, state);
     case ActionType.SET_DETAIL_TIME:
@@ -117,7 +117,7 @@ Reducer.root = (state, action) => {
     case ActionType.SET_DISPLAY_TAB:
       return R.assoc("displayTab", action.displayTab, state);
     case ActionType.SET_FILTER:
-      console.log(`Reducer SET_FILTER filter = ${JSON.stringify(action.filter)}`);
+      // console.log(`Reducer SET_FILTER filter = ${JSON.stringify(action.filter)}`);
       newFilters = R.assoc(action.filter.columnKey, action.filter, state.filters);
       Reducer.saveToLocalStorage(newFilters);
       return R.assoc("filters", newFilters, state);
@@ -136,7 +136,7 @@ Reducer.root = (state, action) => {
 Reducer.addTableRows = (state, tableRows, gameDetails) => {
   const reduceFunction = (accum, gameDetail) => {
     // 1042: Expansion for Base-game
-    if (gameDetail.boardGameRank || !gameDetail.categoryIds.includes(1042)) {
+    if (Selector.boardGameRank(state, gameDetail.id) || !gameDetail.categoryIds.includes(1042)) {
       const gameSummary = Selector.gameSummary(state, parseInt(gameDetail.id, 10));
       const userIds = Selector.gameUsers(state, parseInt(gameDetail.id, 10));
       const users = ASelector.usersByIds(userIds);

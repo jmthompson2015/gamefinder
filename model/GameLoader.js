@@ -65,7 +65,7 @@ GameLoader.loadGameDetails = store =>
     const gameIds = Selector.gameIdsFromCollectionsAndSummaries(store.getState());
 
     const needGameDetailIds = gameIds.filter(
-      gameId => Selector.gameDetail(store.getState(), gameId) === undefined,
+      gameId => store.getState().gameToDetail[gameId] === undefined,
       this
     );
 
