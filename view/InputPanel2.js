@@ -108,7 +108,7 @@ InputPanel2.propTypes = {
   // Input type. (e.g. "checkbox", "radio", "text")
   type: PropTypes.string.isRequired,
   // Option values.
-  values: PropTypes.arrayOf().isRequired,
+  values: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 
   // Client properties.
   clientProps: PropTypes.shape(),

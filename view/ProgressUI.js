@@ -88,13 +88,20 @@ class ProgressUI extends React.Component {
 ProgressUI.propTypes = {
   collectionCount: PropTypes.number.isRequired,
   collectionTotal: PropTypes.number.isRequired,
-  collectionTime: PropTypes.number.isRequired,
   summaryCount: PropTypes.number.isRequired,
   summaryTotal: PropTypes.number.isRequired,
-  summaryTime: PropTypes.number.isRequired,
   detailCount: PropTypes.number.isRequired,
   detailTotal: PropTypes.number.isRequired,
-  detailTime: PropTypes.number.isRequired
+
+  collectionTime: PropTypes.number,
+  summaryTime: PropTypes.number,
+  detailTime: PropTypes.number
+};
+
+ProgressUI.defaultProps = {
+  collectionTime: undefined,
+  summaryTime: undefined,
+  detailTime: undefined
 };
 
 export default ProgressUI;

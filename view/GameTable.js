@@ -94,7 +94,7 @@ class GameTable extends React.Component {
 
 GameTable.propTypes = {
   isDisplayed: PropTypes.bool.isRequired,
-  rowData: PropTypes.arrayOf().isRequired
+  rowData: PropTypes.arrayOf(PropTypes.shape()).isRequired
 };
 
 export default GameTable;

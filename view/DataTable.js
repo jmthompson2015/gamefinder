@@ -85,8 +85,8 @@ class DataTable extends React.Component {
 }
 
 DataTable.propTypes = {
-  columns: PropTypes.arrayOf().isRequired,
-  rowData: PropTypes.arrayOf().isRequired,
+  columns: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  rowData: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 
   cellFunctions: PropTypes.shape(),
   valueFunctions: PropTypes.shape()
