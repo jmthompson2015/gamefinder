@@ -35,6 +35,8 @@ ActionCreator.setDefaultFilters = makeActionCreator(ActionType.SET_DEFAULT_FILTE
 
 ActionCreator.setDetailTime = makeActionCreator(ActionType.SET_DETAIL_TIME, "time");
 
+ActionCreator.setDisplayTab = makeActionCreator(ActionType.SET_DISPLAY_TAB, "displayTab");
+
 ActionCreator.setFilter = makeActionCreator(ActionType.SET_FILTER, "filter");
 
 ActionCreator.setPageCount = makeActionCreator(ActionType.SET_PAGE_COUNT, "pageCount");

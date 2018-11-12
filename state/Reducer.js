@@ -87,7 +87,7 @@ Reducer.root = (state, action) => {
       newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
       newGameToUsers = state.gameToUsers;
       R.forEach(id => {
-        const users = Selector.findGameUsersByGameId(state, parseInt(id, 10)) || [];
+        const users = Selector.gameUsers(state, parseInt(id, 10));
         newGameToUsers = R.assoc(id, R.append(action.userId, users), newGameToUsers);
       }, action.gameIds);
       return R.pipe(
@@ -114,6 +114,8 @@ Reducer.root = (state, action) => {
     case ActionType.SET_DETAIL_TIME:
       console.log(`Reducer detailTime = ${action.time}`);
       return R.assoc("detailTime", action.time, state);
+    case ActionType.SET_DISPLAY_TAB:
+      return R.assoc("displayTab", action.displayTab, state);
     case ActionType.SET_FILTER:
       console.log(`Reducer SET_FILTER filter = ${JSON.stringify(action.filter)}`);
       newFilters = R.assoc(action.filter.columnKey, action.filter, state.filters);
@@ -135,8 +137,8 @@ Reducer.addTableRows = (state, tableRows, gameDetails) => {
   const reduceFunction = (accum, gameDetail) => {
     // 1042: Expansion for Base-game
     if (gameDetail.boardGameRank || !gameDetail.categoryIds.includes(1042)) {
-      const gameSummary = Selector.findGameSummaryById(state, parseInt(gameDetail.id, 10));
-      const userIds = Selector.findGameUsersByGameId(state, parseInt(gameDetail.id, 10));
+      const gameSummary = Selector.gameSummary(state, parseInt(gameDetail.id, 10));
+      const userIds = Selector.gameUsers(state, parseInt(gameDetail.id, 10));
       const users = ASelector.usersByIds(userIds);
       const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
 

@@ -21,23 +21,6 @@ const verifyGameIds = (assert, gameIds, length, idFirst, idLast) => {
   assert.equal(typeof gameIds[length - 1], "number");
 };
 
-QUnit.test("findGameSummaryById()", assert => {
-  // Setup.
-  const store = Redux.createStore(Reducer.root);
-  const page = 1;
-  const newGameSummaries = createGameSummaries();
-  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
-  const id = 1406; // Monopoly
-
-  // Run.
-  const result = Selector.findGameSummaryById(store.getState(), id);
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(result.id, id);
-  assert.equal(result.title, "Monopoly (1933)");
-});
-
 QUnit.test("gameIdsFromCollections()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
@@ -84,37 +67,21 @@ QUnit.test("gameIdsFromSummaries()", assert => {
   verifyGameIds(assert, result, 2, 181, 1406);
 });
 
-QUnit.test("gameToUsers()", assert => {
+QUnit.test("gameSummary()", assert => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
+  const page = 1;
+  const newGameSummaries = createGameSummaries();
+  store.dispatch(ActionCreator.addGameSummaries(page, newGameSummaries));
+  const id = 1406; // Monopoly
 
   // Run.
-  const result = Selector.gameToUsers(store.getState());
+  const result = Selector.gameSummary(store.getState(), id);
 
   // Verify.
   assert.ok(result);
-});
-
-QUnit.test("gameToDetail()", assert => {
-  // Setup.
-  const store = Redux.createStore(Reducer.root);
-
-  // Run.
-  const result = Selector.gameToDetail(store.getState());
-
-  // Verify.
-  assert.ok(result);
-});
-
-QUnit.test("gameToSummary()", assert => {
-  // Setup.
-  const store = Redux.createStore(Reducer.root);
-
-  // Run.
-  const result = Selector.gameToSummary(store.getState());
-
-  // Verify.
-  assert.ok(result);
+  assert.equal(result.id, id);
+  assert.equal(result.title, "Monopoly (1933)");
 });
 
 QUnit.test("isCollectionsLoaded()", assert => {

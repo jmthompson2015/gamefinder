@@ -4,6 +4,10 @@ body {
   font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
 }
 
+canvas {
+  height: 300px;
+}
+
 table {
   border-collapse: collapse;
   text-align: center;

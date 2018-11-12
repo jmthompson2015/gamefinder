@@ -12,11 +12,7 @@ Selector.expectedDetailCount = state => Selector.gameIdsFromCollectionsAndSummar
 
 Selector.expectedSummaryCount = state => Selector.pageCount(state) * 100;
 
-Selector.findGameDetailById = (state, id) => Selector.gameToDetail(state)[id];
-
-Selector.findGameSummaryById = (state, id) => Selector.gameToSummary(state)[id];
-
-Selector.findGameUsersByGameId = (state, id) => Selector.gameToUsers(state)[id] || [];
+Selector.gameDetail = (state, id) => state.gameToDetail[id];
 
 Selector.gameIdsFromCollections = state => R.map(toInt, R.uniq(Object.keys(state.gameToUsers)));
 
@@ -29,11 +25,9 @@ Selector.gameIdsFromCollectionsAndSummaries = state => {
   return R.uniq(R.concat(gameIds1, gameIds2));
 };
 
-Selector.gameToDetail = state => state.gameToDetail;
+Selector.gameSummary = (state, id) => state.gameToSummary[id];
 
-Selector.gameToSummary = state => state.gameToSummary;
-
-Selector.gameToUsers = state => state.gameToUsers;
+Selector.gameUsers = (state, id) => state.gameToUsers[id] || [];
 
 Selector.isCollectionsLoaded = state => {
   const userIds = ASelector.userIds();
@@ -55,5 +49,7 @@ Selector.isSummariesLoaded = state => {
 };
 
 Selector.pageCount = state => state.pageCount;
+
+Selector.userGames = (state, userId) => state.userToGames[userId] || [];
 
 export default Selector;

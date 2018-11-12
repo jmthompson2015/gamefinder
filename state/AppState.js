@@ -6,6 +6,7 @@ AppState.create = ({
   pageCount = 5,
   tableRows = [],
   filteredTableRows = [],
+  displayTab = "Game Table",
   gameToDetail = {},
   gameToSummary = {},
   gameToUsers = {},
@@ -26,6 +27,7 @@ AppState.create = ({
     pageCount,
     tableRows,
     filteredTableRows,
+    displayTab,
     // game ID to detail
     gameToDetail,
     // game ID to summary

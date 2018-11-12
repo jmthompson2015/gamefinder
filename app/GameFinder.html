@@ -4,16 +4,17 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tachyons@4.11/css/tachyons.min.css">
 	<link rel="stylesheet" href="../view/style.css">
 
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/react@16.6/umd/react.development.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16.6/umd/react-dom.development.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/chart.js@2.7/dist/Chart.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react@16.6/umd/react.production.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16.6/umd/react-dom.production.min.js"></script>
 	<script crossorigin src="https://cdn.jsdelivr.net/npm/prop-types@15.6/prop-types.min.js"></script>
 	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom-factories@1.0/index.js"></script>
 	<script src="../lib/reactable.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-redux@5.1/dist/react-redux.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/redux@4.0/dist/redux.js"></script>
-	<script crossorigin src="https://cdn.jsdelivr.net/npm/seamless-immutable@7.1/seamless-immutable.development.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/react-redux@5.1/dist/react-redux.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/redux@4.0/dist/redux.min.js"></script>
+	<script crossorigin src="https://cdn.jsdelivr.net/npm/seamless-immutable@7.1/seamless-immutable.production.min.js"></script>
 
 	<script src="GameFinder.js" type="module"></script>
 </head>
@@ -23,13 +24,22 @@
 		Finder
 	</h1>
 	<section>
-		<div style="padding-bottom: 10px;" id="progress"></div>
+		<div id="progress" class="pa2"></div>
 	</section>
 	<section>
 		<div id="filter"></div>
 	</section>
 	<section>
+		<div id="displayTabs" class="pa2"></div>
+	</section>
+	<section>
 		<div id="gameTable"></div>
+	</section>
+	<section>
+		<div id="categoryCharts"></div>
+	</section>
+	<section>
+		<div id="mechanicCharts"></div>
 	</section>
 </body>
 

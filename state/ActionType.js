@@ -8,6 +8,7 @@ ActionType.REMOVE_FILTERS = "removeFilters";
 ActionType.SET_COLLECTION_TIME = "setCollectionTime";
 ActionType.SET_DEFAULT_FILTERS = "setDefaultFilters";
 ActionType.SET_DETAIL_TIME = "setDetailTime";
+ActionType.SET_DISPLAY_TAB = "setDisplayTab";
 ActionType.SET_FILTER = "setFilter";
 ActionType.SET_PAGE_COUNT = "setPageCount";
 ActionType.SET_SUMMARY_TIME = "setSummaryTime";

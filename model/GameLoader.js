@@ -41,8 +41,7 @@ GameLoader.loadCollections = store =>
       }
 
       if (Selector.isCollectionsLoaded(store.getState())) {
-        const gameToUsers = Selector.gameToUsers(store.getState());
-        resolve(gameToUsers);
+        resolve(store.getState().gameToUsers);
       }
     };
 
@@ -58,8 +57,7 @@ GameLoader.loadGameDetails = store =>
       store.dispatch(ActionCreator.addGameDetails(gameDetails));
 
       if (Selector.isDetailsLoaded(store.getState())) {
-        const gameToDetail = Selector.gameToDetail(store.getState());
-        resolve(gameToDetail);
+        resolve(store.getState().gameToDetail);
       }
     };
 
@@ -67,7 +65,7 @@ GameLoader.loadGameDetails = store =>
     const gameIds = Selector.gameIdsFromCollectionsAndSummaries(store.getState());
 
     const needGameDetailIds = gameIds.filter(
-      gameId => Selector.findGameDetailById(store.getState(), gameId) === undefined,
+      gameId => Selector.gameDetail(store.getState(), gameId) === undefined,
       this
     );
 
@@ -90,8 +88,7 @@ GameLoader.loadGameSummaries = store =>
       store.dispatch(ActionCreator.addGameSummaries(page, gameSummaries));
 
       if (Selector.isSummariesLoaded(store.getState())) {
-        const myGameSummaries = Object.values(Selector.gameToSummary(store.getState()));
-        resolve(myGameSummaries);
+        resolve(Object.values(store.getState().gameToSummary));
       }
     };
 

@@ -5,6 +5,8 @@ import Selector from "../state/Selector.js";
 
 import GameLoader from "../model/GameLoader.js";
 
+import DisplayTabContainer from "../container/DisplayTabContainer.js";
+import EntityChartsPanel from "../container/EntityChartsContainer.js";
 import FilterContainer from "../container/FilterContainer.js";
 import GameTableContainer from "../container/GameTableContainer.js";
 import ProgressContainer from "../container/ProgressContainer.js";
@@ -32,6 +34,18 @@ const container1 = React.createElement(FilterContainer);
 const element1 = React.createElement(ReactRedux.Provider, { store }, container1);
 ReactDOM.render(element1, document.getElementById("filter"));
 
-const container2 = React.createElement(GameTableContainer);
+const container2 = React.createElement(DisplayTabContainer);
 const element2 = React.createElement(ReactRedux.Provider, { store }, container2);
-ReactDOM.render(element2, document.getElementById("gameTable"));
+ReactDOM.render(element2, document.getElementById("displayTabs"));
+
+const container3 = React.createElement(GameTableContainer);
+const element3 = React.createElement(ReactRedux.Provider, { store }, container3);
+ReactDOM.render(element3, document.getElementById("gameTable"));
+
+const container4 = React.createElement(EntityChartsPanel, { entityName: "Categories" });
+const element4 = React.createElement(ReactRedux.Provider, { store }, container4);
+ReactDOM.render(element4, document.getElementById("categoryCharts"));
+
+const container5 = React.createElement(EntityChartsPanel, { entityName: "Mechanics" });
+const element5 = React.createElement(ReactRedux.Provider, { store }, container5);
+ReactDOM.render(element5, document.getElementById("mechanicCharts"));
