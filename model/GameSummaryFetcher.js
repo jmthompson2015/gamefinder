@@ -2,6 +2,8 @@
 
 import GameSummaryState from "../state/GameSummaryState.js";
 
+import FetchUtilities from "./FetchUtilities.js";
+
 const createUrl = page => {
   const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
 
@@ -100,21 +102,8 @@ GameSummaryFetcher.fetchData = page =>
     };
 
     const url = createUrl(page);
-    fetch(url)
-      .then(response => {
-        if (response.ok) {
-          return response.text();
-        }
-        throw Error(`Request rejected with status ${response.status}`);
-      })
-      .then(responseText => {
-        const parser = new DOMParser();
-        const xmlDocument = parser.parseFromString(responseText, "application/xml");
-        receiveData(xmlDocument);
-      })
-      .catch(error => {
-        reject(error);
-      });
+    const options = {};
+    FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
   });
 
 export default GameSummaryFetcher;

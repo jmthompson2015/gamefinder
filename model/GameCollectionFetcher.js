@@ -4,6 +4,8 @@ import ASelector from "../artifact/Selector.js";
 
 import GameCollectionState from "../state/GameCollectionState.js";
 
+import FetchUtilities from "./FetchUtilities.js";
+
 const createUrl = username => {
   const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
 
@@ -39,7 +41,7 @@ const parseUserGameIds = xmlDocument => {
 const GameCollectionFetcher = {};
 
 GameCollectionFetcher.fetchData = username =>
-  new Promise((resolve, reject) => {
+  new Promise(resolve => {
     const receiveData = xmlDocument => {
       const gameIds = parseUserGameIds(xmlDocument);
       gameIds.sort((a, b) => a - b);
@@ -48,21 +50,8 @@ GameCollectionFetcher.fetchData = username =>
     };
 
     const url = createUrl(username);
-    fetch(url)
-      .then(response => {
-        if (response.ok) {
-          return response.text();
-        }
-        throw Error(`Request rejected with status ${response.status}`);
-      })
-      .then(responseText => {
-        const parser = new DOMParser();
-        const xmlDocument = parser.parseFromString(responseText, "application/xml");
-        receiveData(xmlDocument);
-      })
-      .catch(error => {
-        reject(error);
-      });
+    const options = {};
+    FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
   });
 
 export default GameCollectionFetcher;

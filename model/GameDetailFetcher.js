@@ -4,6 +4,8 @@ import GameDetail from "../artifact/GameDetail.js";
 
 import GameDetailState from "../state/GameDetailState.js";
 
+import FetchUtilities from "./FetchUtilities.js";
+
 const createUrl = gameIds => {
   const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
 
@@ -232,7 +234,7 @@ const parseGameDetails = xmlDocument => {
 const GameDetailFetcher = {};
 
 GameDetailFetcher.fetchData = gameIds =>
-  new Promise((resolve, reject) => {
+  new Promise(resolve => {
     const reduceFunction = (accum, gameId) => {
       const gameDetail = GameDetail[gameId];
       return gameDetail ? R.append(gameDetail, accum) : accum;
@@ -249,21 +251,8 @@ GameDetailFetcher.fetchData = gameIds =>
       };
 
       const url = createUrl(gameIds1);
-      fetch(url)
-        .then(response => {
-          if (response.ok) {
-            return response.text();
-          }
-          throw Error(`Request rejected with status ${response.status}`);
-        })
-        .then(responseText => {
-          const parser = new DOMParser();
-          const xmlDocument = parser.parseFromString(responseText, "application/xml");
-          receiveData(xmlDocument);
-        })
-        .catch(error => {
-          reject(error);
-        });
+      const options = {};
+      FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
     } else {
       resolve(gameDetails0);
     }
