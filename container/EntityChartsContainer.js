@@ -6,6 +6,7 @@ import EntityChartsPanel from "../view/EntityChartsPanel.js";
 const createEntityMap = (gameDetails, entityName) =>
   R.cond([
     [R.equals("Categories"), R.always(EntityUtils.createCategoryMap(gameDetails))],
+    [R.equals("Designers"), R.always(EntityUtils.createDesignerMap(gameDetails))],
     [R.equals("Mechanics"), R.always(EntityUtils.createMechanicMap(gameDetails))],
     [
       R.T,

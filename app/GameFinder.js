@@ -46,6 +46,10 @@ const container4 = React.createElement(EntityChartsPanel, { entityName: "Categor
 const element4 = React.createElement(ReactRedux.Provider, { store }, container4);
 ReactDOM.render(element4, document.getElementById("categoryCharts"));
 
-const container5 = React.createElement(EntityChartsPanel, { entityName: "Mechanics" });
+const container5 = React.createElement(EntityChartsPanel, { entityName: "Designers" });
 const element5 = React.createElement(ReactRedux.Provider, { store }, container5);
-ReactDOM.render(element5, document.getElementById("mechanicCharts"));
+ReactDOM.render(element5, document.getElementById("designerCharts"));
+
+const container6 = React.createElement(EntityChartsPanel, { entityName: "Mechanics" });
+const element6 = React.createElement(ReactRedux.Provider, { store }, container6);
+ReactDOM.render(element6, document.getElementById("mechanicCharts"));

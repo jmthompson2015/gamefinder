@@ -269,6 +269,7 @@ const createStore1 = () => {
 };
 
 const entityName = "Categories";
+// const entityName = "Designers";
 // const entityName = "Mechanics";
 // const entityName = "bogus";
 
