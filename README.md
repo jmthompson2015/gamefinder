@@ -8,7 +8,6 @@ Provides an application to view and filter the top games at [BoardGameGeek](http
 
 ## Built With
 
-- [jQuery](https://jquery.com/) - A fast, small, and feature-rich JavaScript library.
 - [QUnit](https://qunitjs.com/) - JavaScript unit testing.
 - [Ramda](https://ramdajs.com) - A practical functional library for JavaScript programmers.
 - [React](http://facebook.github.io/react/) - A JavaScript library for building user interfaces.

@@ -85,6 +85,7 @@ GameSummaryFetcher.fetchData = page =>
     const receiveData = xmlDocument0 => {
       const xmlDocument = xmlDocument0;
       let content = xmlDocument.children[0].children[0].children[0];
+
       if (content) {
         content = content.innerHTML;
         content = content.replace(/&lt;/g, "<");
@@ -99,11 +100,20 @@ GameSummaryFetcher.fetchData = page =>
     };
 
     const url = createUrl(page);
-    $.ajax(url)
-      .done(receiveData)
-      .fail((jqXHR, textStatus, errorThrown) => {
-        console.error(errorThrown);
-        reject(errorThrown);
+    fetch(url)
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        }
+        throw Error(`Request rejected with status ${response.status}`);
+      })
+      .then(responseText => {
+        const parser = new DOMParser();
+        const xmlDocument = parser.parseFromString(responseText, "application/xml");
+        receiveData(xmlDocument);
+      })
+      .catch(error => {
+        reject(error);
       });
   });
 

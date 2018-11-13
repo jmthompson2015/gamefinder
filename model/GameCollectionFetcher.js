@@ -48,11 +48,20 @@ GameCollectionFetcher.fetchData = username =>
     };
 
     const url = createUrl(username);
-    $.ajax(url)
-      .done(receiveData)
-      .fail((jqXHR, textStatus, errorThrown) => {
-        console.error(errorThrown);
-        reject(errorThrown);
+    fetch(url)
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        }
+        throw Error(`Request rejected with status ${response.status}`);
+      })
+      .then(responseText => {
+        const parser = new DOMParser();
+        const xmlDocument = parser.parseFromString(responseText, "application/xml");
+        receiveData(xmlDocument);
+      })
+      .catch(error => {
+        reject(error);
       });
   });
 
