@@ -42,9 +42,9 @@ QUnit.test("create()", assert => {
 
   const rangeColumns = [1, 4, 5, 6, 7, 8, 9, 10, 11];
   const isMinEnableds = [false, false, true, false, true, false, true, false, true];
-  const minValues = [1, 2007, 7, 2, 4, 3, 30, 30, 1.5];
+  const minValues = [1, 2008, 7, 2, 4, 3, 30, 30, 1.5];
   const isMaxEnableds = [false, false, false, true, false, false, false, true, true];
-  const maxValues = [100, 2017, 10, 3, 6, 4, 90, 90, 3.2];
+  const maxValues = [100, 2018, 10, 3, 6, 4, 90, 90, 3.2];
   R.forEach(i => {
     const column = GameColumns[i];
     const filter = result[column.key];

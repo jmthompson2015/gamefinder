@@ -33,8 +33,11 @@ const createEntityFilters = () =>
     DefaultFilters.entityColumns
   );
 
-const createRangeFilters = () =>
-  R.reduce(
+const createRangeFilters = () => {
+  const now = new Date();
+  const thisYear = now.getFullYear();
+
+  return R.reduce(
     (accum, column) => {
       const minValue = 1;
       const maxValue = 10;
@@ -45,7 +48,11 @@ const createRangeFilters = () =>
           filter = RangeFilter.create({ columnKey: column.key, minValue, maxValue: 100 });
           break;
         case "yearPublished":
-          filter = RangeFilter.create({ columnKey: column.key, minValue: 2007, maxValue: 2017 });
+          filter = RangeFilter.create({
+            columnKey: column.key,
+            minValue: thisYear - 10,
+            maxValue: thisYear
+          });
           break;
         case "geekRating":
           filter = RangeFilter.create({
@@ -108,6 +115,7 @@ const createRangeFilters = () =>
     {},
     DefaultFilters.rangeColumns
   );
+};
 
 DefaultFilters.create = () => {
   const entityFilters = createEntityFilters();
