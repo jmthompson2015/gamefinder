@@ -3,16 +3,9 @@ import ActionCreator from "../state/ActionCreator.js";
 import DisplayTabs from "../view/DisplayTabs.js";
 
 const mapStateToProps = state => {
-  const { categoryMap, designerMap, filters, mechanicMap, userMap } = state;
+  const { displayTab } = state;
 
-  return {
-    filters,
-
-    categoryMap,
-    designerMap,
-    mechanicMap,
-    userMap
-  };
+  return { selected: displayTab };
 };
 
 const mapDispatchToProps = dispatch => ({
