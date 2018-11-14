@@ -27,5 +27,8 @@ const rowData = [
   })
 ];
 
-const element = React.createElement(GameTable, { rowData });
+const element = React.createElement(GameTable, {
+  isDisplayed: true,
+  rowData
+});
 ReactDOM.render(element, document.getElementById("panel"));
