@@ -1,5 +1,6 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 
+import Observer from "../state/Observer.js";
 import Reducer from "../state/Reducer.js";
 import Selector from "../state/Selector.js";
 
@@ -38,18 +39,17 @@ const container2 = React.createElement(DisplayTabContainer);
 const element2 = React.createElement(ReactRedux.Provider, { store }, container2);
 ReactDOM.render(element2, document.getElementById("displayTabs"));
 
-const container3 = React.createElement(GameTableContainer);
-const element3 = React.createElement(ReactRedux.Provider, { store }, container3);
-ReactDOM.render(element3, document.getElementById("gameTable"));
+const renderDisplayTab = () => {
+  const { displayTab } = store.getState();
+  const container3 =
+    displayTab === "Game Table"
+      ? React.createElement(GameTableContainer)
+      : React.createElement(EntityChartsPanel, { entityName: displayTab });
+  const element3 = React.createElement(ReactRedux.Provider, { store }, container3);
+  ReactDOM.render(element3, document.getElementById("tabPanel"));
+};
 
-const container4 = React.createElement(EntityChartsPanel, { entityName: "Categories" });
-const element4 = React.createElement(ReactRedux.Provider, { store }, container4);
-ReactDOM.render(element4, document.getElementById("categoryCharts"));
+const select = state => state.displayTab;
+Observer.observeStore(store, select, renderDisplayTab);
 
-const container5 = React.createElement(EntityChartsPanel, { entityName: "Designers" });
-const element5 = React.createElement(ReactRedux.Provider, { store }, container5);
-ReactDOM.render(element5, document.getElementById("designerCharts"));
-
-const container6 = React.createElement(EntityChartsPanel, { entityName: "Mechanics" });
-const element6 = React.createElement(ReactRedux.Provider, { store }, container6);
-ReactDOM.render(element6, document.getElementById("mechanicCharts"));
+renderDisplayTab();

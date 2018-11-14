@@ -75,25 +75,20 @@ const cellFunctions = {
 // /////////////////////////////////////////////////////////////////////////////////////////////////
 class GameTable extends React.Component {
   render() {
-    const { isDisplayed, rowData } = this.props;
+    const { rowData } = this.props;
 
-    if (isDisplayed) {
-      const table = React.createElement(DataTable, {
-        columns: GameColumns,
-        rowData,
-        cellFunctions,
-        valueFunctions
-      });
+    const table = React.createElement(DataTable, {
+      columns: GameColumns,
+      rowData,
+      cellFunctions,
+      valueFunctions
+    });
 
-      return table;
-    }
-
-    return ReactDOMFactories.span({}, " ");
+    return table;
   }
 }
 
 GameTable.propTypes = {
-  isDisplayed: PropTypes.bool.isRequired,
   rowData: PropTypes.arrayOf(PropTypes.shape()).isRequired
 };
 

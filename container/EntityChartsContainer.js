@@ -31,10 +31,8 @@ const userEntityToCount = (state, allGameIds, entityName, userId) => {
 };
 
 const mapStateToProps = (state, ownProps) => {
-  const { displayTab } = state;
   const { entityName } = ownProps;
 
-  const isDisplayed = displayTab === entityName;
   const allGameIds = R.map(row => row.id, state.filteredTableRows);
   const allGameDetails = R.map(gameId => Selector.gameDetail(state, gameId), allGameIds);
   const entityMap = createEntityMap(allGameDetails, entityName);
@@ -53,7 +51,6 @@ const mapStateToProps = (state, ownProps) => {
 
   return {
     entityMap,
-    isDisplayed,
     userToEntityToCount
   };
 };

@@ -22,7 +22,6 @@ const userToEntityToCount = {
 
 const element = React.createElement(EntityChartsPanel, {
   entityMap: Category,
-  isDisplayed: true,
   userToEntityToCount
 });
 ReactDOM.render(element, document.getElementById("panel"));
