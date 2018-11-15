@@ -13,18 +13,18 @@ const valueFunctions = {
 };
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////
-const createImageLink = (src, href, className) => {
-  const myClassName = className !== undefined ? className : "imageBlock";
-  const image = ReactDOMFactories.img({ className: myClassName, src });
+const createImageLink = (src, href, className = "imageBlock") => {
+  const image = ReactDOMFactories.img({ className, src });
 
   return ReactDOMFactories.a({ key: src, href, target: "_blank" }, image);
 };
 
+const BGG_SRC = "../resource/BoardGameGeek16.png";
+
 const createEntitiesTable = (entities, url) => {
-  const src = "../resource/BoardGameGeek16.png";
   const mapFunction = entity => {
     const href = url + entity.id;
-    const link = createImageLink(src, href);
+    const link = createImageLink(BGG_SRC, href);
     const cell = ReactUtils.createCell([entity.name, link]);
 
     return ReactUtils.createRow(cell, entity.name);
@@ -48,28 +48,22 @@ const mapUsers = users => {
 
 const round2 = value => Math.round(value * 100.0) / 100.0;
 
+const DESIGNER_URL = "https://www.boardgamegeek.com/boardgamedesigner/";
+const CATEGORY_URL = "https://www.boardgamegeek.com/boardgamecategory/";
+const MECHANIC_URL = "https://www.boardgamegeek.com/boardgamemechanic/";
+
 const cellFunctions = {
   usernames: data => (data.usernames !== undefined ? mapUsers(data.usernames) : undefined),
   title: data => {
-    const src = "../resource/BoardGameGeek16.png";
     const href = `https://www.boardgamegeek.com/boardgame/${data.id}`;
-    const link = createImageLink(src, href);
+    const link = createImageLink(BGG_SRC, href);
     return ReactDOMFactories.span({ className: "textImageLink" }, data.title, link);
   },
-  designers: data => {
-    const url = "https://www.boardgamegeek.com/boardgamedesigner/";
-    return createEntitiesTable(data.designers, url);
-  },
+  designers: data => createEntitiesTable(data.designers, DESIGNER_URL),
   geekRating: data => (data.geekRating !== undefined ? round2(data.geekRating) : undefined),
   averageWeight: data => round2(data.averageWeight),
-  categories: data => {
-    const url = "https://www.boardgamegeek.com/boardgamecategory/";
-    return createEntitiesTable(data.categories, url);
-  },
-  mechanics: data => {
-    const url = "https://www.boardgamegeek.com/boardgamemechanic/";
-    return createEntitiesTable(data.mechanics, url);
-  }
+  categories: data => createEntitiesTable(data.categories, CATEGORY_URL),
+  mechanics: data => createEntitiesTable(data.mechanics, MECHANIC_URL)
 };
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////

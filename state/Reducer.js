@@ -82,7 +82,7 @@ Reducer.root = (state, action) => {
         R.assoc("summaryToReceivedMap", newSummaryToReceivedMap)
       )(state);
     case ActionType.ADD_USER_COLLECTION:
-      console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
+      // console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
       newUserToGames = R.assoc(action.userId, action.gameIds, state.userToGames);
       newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
       newGameToUsers = state.gameToUsers;
