@@ -1,6 +1,5 @@
 import GameColumns from "../state/GameColumns.js";
 
-import DataTable from "./DataTable.js";
 import ReactUtils from "./ReactUtilities.js";
 
 const entityReduceFunction = (accum, entity) => R.append(`${entity.name}, `, accum);
@@ -10,6 +9,18 @@ const valueFunctions = {
   designers: data => R.reduce(entityReduceFunction, "", data.designers),
   categories: data => R.reduce(entityReduceFunction, "", data.categories),
   mechanics: data => R.reduce(entityReduceFunction, "", data.mechanics)
+};
+
+const determineValue = (column, data) => {
+  let answer;
+
+  if (valueFunctions && valueFunctions[column.key]) {
+    answer = valueFunctions[column.key](data);
+  } else {
+    answer = data[column.key];
+  }
+
+  return answer;
 };
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -66,19 +77,72 @@ const cellFunctions = {
   mechanics: data => createEntitiesTable(data.mechanics, MECHANIC_URL)
 };
 
+const determineCell = (column, data, value) => {
+  let answer;
+
+  if (cellFunctions && cellFunctions[column.key]) {
+    answer = cellFunctions[column.key](data);
+  } else {
+    answer = value;
+  }
+
+  return answer;
+};
+
 // /////////////////////////////////////////////////////////////////////////////////////////////////
 class GameTable extends React.Component {
+  constructor(props) {
+    super(props);
+
+    // Factories.
+    this.Table = React.createFactory(Reactable.Table);
+    this.Tr = React.createFactory(Reactable.Tr);
+    this.Td = React.createFactory(Reactable.Td);
+  }
+
+  createRow(data, key) {
+    const mapFunction = column => {
+      const value = determineValue(column, data);
+      const cell = determineCell(column, data, value);
+      return this.Td(
+        { key: column.key + data.id, className: column.className, column: column.key, value },
+        cell === undefined ? "" : cell
+      );
+    };
+    const cells = R.map(mapFunction, GameColumns);
+
+    return this.Tr({ key }, cells);
+  }
+
+  createTable(rowData) {
+    const mapFunction = data => this.createRow(data, data.id);
+    const rows = R.map(mapFunction, rowData);
+
+    return this.Table({ className: "dataTable", columns: GameColumns, sortable: true }, rows);
+  }
+
   render() {
     const { rowData } = this.props;
+    const table = this.createTable(rowData);
 
-    const table = React.createElement(DataTable, {
-      columns: GameColumns,
-      rowData,
-      cellFunctions,
-      valueFunctions
-    });
+    const rows = [];
 
-    return table;
+    const rowCount = `Row Count: ${rowData.length}`;
+    rows.push(
+      ReactDOMFactories.tr(
+        { key: rows.length },
+        ReactDOMFactories.td({ className: "rowCount" }, rowCount)
+      )
+    );
+    rows.push(ReactDOMFactories.tr({ key: rows.length }, ReactDOMFactories.td({}, table)));
+    rows.push(
+      ReactDOMFactories.tr(
+        { key: rows.length },
+        ReactDOMFactories.td({ className: "rowCount" }, rowCount)
+      )
+    );
+
+    return ReactDOMFactories.table({}, ReactDOMFactories.tbody({}, rows));
   }
 }
 
