@@ -123,26 +123,17 @@ class GameTable extends React.Component {
 
   render() {
     const { rowData } = this.props;
-    const table = this.createTable(rowData);
-
-    const rows = [];
 
     const rowCount = `Row Count: ${rowData.length}`;
-    rows.push(
-      ReactDOMFactories.tr(
-        { key: rows.length },
-        ReactDOMFactories.td({ className: "rowCount" }, rowCount)
-      )
-    );
-    rows.push(ReactDOMFactories.tr({ key: rows.length }, ReactDOMFactories.td({}, table)));
-    rows.push(
-      ReactDOMFactories.tr(
-        { key: rows.length },
-        ReactDOMFactories.td({ className: "rowCount" }, rowCount)
-      )
-    );
+    const table = this.createTable(rowData);
 
-    return ReactDOMFactories.table({}, ReactDOMFactories.tbody({}, rows));
+    const rows = [
+      ReactUtils.createRow(ReactUtils.createCell(rowCount, "top", "rowCount"), "topRow"),
+      ReactUtils.createRow(ReactUtils.createCell(table), "tableRow"),
+      ReactUtils.createRow(ReactUtils.createCell(rowCount, "bottom", "rowCount"), "bottomRow")
+    ];
+
+    return ReactUtils.createTable(rows);
   }
 }
 
