@@ -1,6 +1,7 @@
 import GameColumns from "../state/GameColumns.js";
 import RangeFilter from "../state/RangeFilter.js";
 
+import NumberInput from "./NumberInput.js";
 import ReactUtils from "./ReactUtilities.js";
 
 const createCheckbox = (column, filter, handleChange) => property =>
@@ -12,12 +13,12 @@ const createCheckbox = (column, filter, handleChange) => property =>
   });
 
 const createTextField = (column, filter, handleChange) => property =>
-  ReactDOMFactories.input({
+  React.createElement(NumberInput, {
     id: `${column.key}${property}`,
     type: "number",
     className: "filterField",
-    defaultValue: filter[property],
-    onChange: handleChange
+    initialValue: Number(filter[property]),
+    onBlur: handleChange
   });
 
 class RangeFilterRow extends React.Component {
@@ -53,32 +54,13 @@ class RangeFilterRow extends React.Component {
     const createCheckbox2 = createCheckbox(column, filter, this.handleChange);
     const createTextField2 = createTextField(column, filter, this.handleChange);
 
-    const cell0 = ReactUtils.createCell(
-      createCheckbox2("isMinEnabled"),
-      `${column.key}MinCheckedCell`,
-      "ph1"
-    );
-    const cell1 = ReactUtils.createCell(
-      createTextField2("minValue"),
-      `${column.key}MinCell`,
-      "ph1"
-    );
-    const cell2 = ReactUtils.createCell(
-      `\u2264 ${column.label} \u2264`,
-      `${column.key}LabelCell`,
-      "ph1 tc"
-    );
-    const cell3 = ReactUtils.createCell(
-      createCheckbox2("isMaxEnabled"),
-      `${column.key}MaxCheckedCell`,
-      "ph1"
-    );
-    const cell4 = ReactUtils.createCell(
-      createTextField2("maxValue"),
-      `${column.key}MaxCell`,
-      "ph1"
-    );
-    const cells = [cell0, cell1, cell2, cell3, cell4];
+    const cells = [
+      ReactUtils.createCell(createCheckbox2("isMinEnabled"), `${column.key}MinCheckCell`, "ph1"),
+      ReactUtils.createCell(createTextField2("minValue"), `${column.key}MinCell`, "ph1"),
+      ReactUtils.createCell(`\u2264 ${column.label} \u2264`, `${column.key}LabelCell`, "ph1 tc"),
+      ReactUtils.createCell(createCheckbox2("isMaxEnabled"), `${column.key}MaxCheckCell`, "ph1"),
+      ReactUtils.createCell(createTextField2("maxValue"), `${column.key}MaxCell`, "ph1")
+    ];
 
     return ReactUtils.createRow(cells, `${column.key}Row`);
   }
