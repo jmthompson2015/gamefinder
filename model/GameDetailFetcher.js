@@ -1,5 +1,3 @@
-/* eslint no-console: ["error", { allow: ["log", "error"] }] */
-
 import GameDetail from "../artifact/GameDetail.js";
 
 import GameDetailState from "../state/GameDetailState.js";
@@ -23,7 +21,7 @@ const createUrl = gameIds => {
   const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
   const query = `select * from xml where url='${sourceUrl}'`;
   const answer = baseUrl + encodeURIComponent(query);
-  console.log(`url = ${answer}`);
+  // console.log(`url = ${answer}`);
 
   return answer;
 };
@@ -244,7 +242,6 @@ GameDetailFetcher.fetchData = gameIds =>
     const gameIds1 = R.difference(gameIds, gameIds0);
 
     if (gameIds1.length > 0) {
-      console.log(`GameDetailFetcher gameIds1 = ${gameIds1}`);
       const receiveData = xmlDocument => {
         const gameDetails = parseGameDetails(xmlDocument);
         resolve(R.concat(gameDetails0, gameDetails));

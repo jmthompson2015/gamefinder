@@ -1,5 +1,3 @@
-/* eslint no-console: ["error", { allow: ["log", "error"] }] */
-
 import GameSummaryState from "../state/GameSummaryState.js";
 
 import FetchUtilities from "./FetchUtilities.js";

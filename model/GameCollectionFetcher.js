@@ -1,5 +1,3 @@
-/* eslint no-console: ["error", { allow: ["log", "error"] }] */
-
 import ASelector from "../artifact/Selector.js";
 
 import GameCollectionState from "../state/GameCollectionState.js";
