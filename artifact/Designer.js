@@ -1319,10 +1319,6 @@ const Designer = {
     "id": 9547,
     "name": "Satish Pillalamarri"
   },
-  "9580": {
-    "id": 9580,
-    "name": "John Clowdus"
-  },
   "9637": {
     "id": 9637,
     "name": "Eilif Svensson"
@@ -1722,10 +1718,6 @@ const Designer = {
   "34257": {
     "id": 34257,
     "name": "Chuck D. Yager"
-  },
-  "34517": {
-    "id": 34517,
-    "name": "Geoff Engelstein"
   },
   "34672": {
     "id": 34672,
@@ -2130,10 +2122,6 @@ const Designer = {
   "59521": {
     "id": 59521,
     "name": "Dylan Birtolo"
-  },
-  "59662": {
-    "id": 59662,
-    "name": "Sydney Engelstein"
   },
   "59915": {
     "id": 59915,

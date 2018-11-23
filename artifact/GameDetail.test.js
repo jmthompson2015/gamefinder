@@ -47,8 +47,8 @@ QUnit.test("GameDetail keys", assert => {
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[keys[length - 1]];
-  assert.equal(detailLast.id, 246718);
-  assert.equal(detailLast.title, "Star Wars: X-Wing Miniatures Game - TIE Reaper Expansion Pack");
+  assert.equal(detailLast.id, 257501);
+  assert.equal(detailLast.title, "KeyForge: Call of the Archons");
 });
 
 const GameDetailTest = {};
