@@ -49,7 +49,7 @@ const reduceFunction1 = (accum, dataRow) => {
 GameSummaryFetcher.fetch = page =>
   new Promise((resolve, reject) => {
     const inputFile = `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
-    FileLoader.loadFile(inputFile).then(data => {
+    const receiveData = data => {
       if (data === undefined) {
         reject(new Error(`Failed to load inputFile: ${inputFile}`));
       }
@@ -64,7 +64,12 @@ GameSummaryFetcher.fetch = page =>
       // console.log(`dataRows.length = ${dataRows.length}`);
 
       resolve(R.reduce(reduceFunction1, [], dataRows));
-    });
+    };
+
+    const options = {};
+    FileLoader.fetchRetry(inputFile, options, 3)
+      .then(response => response.text())
+      .then(receiveData);
   });
 
 GameSummaryFetcher.fetchAll = maxPages =>

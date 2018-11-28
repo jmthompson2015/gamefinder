@@ -16,7 +16,7 @@ QUnit.test("Mechanic properties Tile Placement", assert => {
 
 QUnit.test("Mechanic keys", assert => {
   // Setup.
-  const length = 50;
+  const length = 49;
 
   // Run.
   const keys = Object.keys(Mechanic);

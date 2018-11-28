@@ -1,8 +1,6 @@
-/* eslint new-cap: ["error", { "newIsCap": false }] */
 /* eslint no-console: ["error", { allow: ["log", "error"] }] */
 
 const xpath = require("xpath");
-const dom = require("xmldom").DOMParser;
 const R = require("ramda");
 
 const FileLoader = require("./FileLoader.js");
@@ -256,17 +254,14 @@ function parseGameDetails(xmlDocument) {
 }
 
 GameDetailFetcher.fetchAll = gameIds =>
-  new Promise((resolve, reject) => {
+  new Promise(resolve => {
     const url = createUrl(gameIds);
-    FileLoader.loadFile(url).then(data => {
-      if (data === undefined) {
-        reject(new Error(`Failed to load url: ${url}`));
-      }
-
-      const xmlDocument = new dom().parseFromString(data);
-
+    const receiveData = xmlDocument => {
       resolve(parseGameDetails(xmlDocument));
-    });
+    };
+
+    const options = {};
+    FileLoader.fetchRetryXml(url, options, 3).then(receiveData);
   });
 
 const start = Date.now();

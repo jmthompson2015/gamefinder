@@ -187,14 +187,6 @@ const Designer = {
     "id": 98,
     "name": "David A. Trampier"
   },
-  "103": {
-    "id": 103,
-    "name": "Darwin Bromley"
-  },
-  "106": {
-    "id": 106,
-    "name": "Bill Fawcett"
-  },
   "107": {
     "id": 107,
     "name": "Laurent Lavaur"
@@ -1507,10 +1499,6 @@ const Designer = {
     "id": 12199,
     "name": "Adam P. McIver"
   },
-  "12268": {
-    "id": 12268,
-    "name": "Robert K. Gabhart"
-  },
   "12293": {
     "id": 12293,
     "name": "Marco Canetta"
@@ -2767,6 +2755,10 @@ const Designer = {
     "id": 91757,
     "name": "Stephane Vachon"
   },
+  "91760": {
+    "id": 91760,
+    "name": "Gary Arant"
+  },
   "92370": {
     "id": 92370,
     "name": "Paul Dennen"
@@ -2839,6 +2831,10 @@ const Designer = {
     "id": 98735,
     "name": "William Julius Champion Jr."
   },
+  "98876": {
+    "id": 98876,
+    "name": "Ryan O'Connor"
+  },
   "99503": {
     "id": 99503,
     "name": "Przemyslaw Rymer"
@@ -2863,6 +2859,10 @@ const Designer = {
     "id": 103554,
     "name": "David Cicurel"
   },
+  "103821": {
+    "id": 103821,
+    "name": "S J Macdonald"
+  },
   "105000": {
     "id": 105000,
     "name": "Lincoln Petersen"
@@ -2874,6 +2874,14 @@ const Designer = {
   "108405": {
     "id": 108405,
     "name": "Jakub Lapot"
+  },
+  "113656": {
+    "id": 113656,
+    "name": "Jeff Liu"
+  },
+  "113657": {
+    "id": 113657,
+    "name": "Ian Estrin"
   }
 }
 

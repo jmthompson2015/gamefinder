@@ -1,8 +1,6 @@
-/* eslint new-cap: ["error", { "newIsCap": false }] */
 /* eslint no-console: ["error", { allow: ["log", "error"] }] */
 
 const xpath = require("xpath");
-const dom = require("xmldom").DOMParser;
 const R = require("ramda");
 
 const FileLoader = require("./FileLoader.js");
@@ -47,7 +45,7 @@ const parseUserGameIds = xmlDocument => {
 const GameCollectionFetcher = {};
 
 GameCollectionFetcher.fetchData = username =>
-  new Promise((resolve, reject) => {
+  new Promise(resolve => {
     const receiveData = xmlDocument => {
       const gameIds = parseUserGameIds(xmlDocument);
       gameIds.sort((a, b) => a - b);
@@ -56,15 +54,8 @@ GameCollectionFetcher.fetchData = username =>
     };
 
     const url = createUrl(username);
-    FileLoader.loadFile(url).then(data => {
-      if (data === undefined) {
-        reject(new Error(`Failed to load inputFile: ${url}`));
-      }
-
-      const xmlDocument = new dom().parseFromString(data);
-
-      receiveData(xmlDocument);
-    });
+    const options = {};
+    FileLoader.fetchRetryXml(url, options, 3).then(receiveData);
   });
 
 GameCollectionFetcher.fetchAll = () =>
