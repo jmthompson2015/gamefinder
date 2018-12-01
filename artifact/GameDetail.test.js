@@ -29,7 +29,7 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 23);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(round2(detail.geekRating), 7.89);
+  assert.equal(round2(detail.geekRating), 7.9);
 });
 
 QUnit.test("GameDetail keys", assert => {
