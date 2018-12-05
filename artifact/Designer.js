@@ -1499,6 +1499,10 @@ const Designer = {
     "id": 12199,
     "name": "Adam P. McIver"
   },
+  "12268": {
+    "id": 12268,
+    "name": "Robert K. Gabhart"
+  },
   "12293": {
     "id": 12293,
     "name": "Marco Canetta"
