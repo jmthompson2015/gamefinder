@@ -2387,10 +2387,6 @@ const Designer = {
     "id": 69927,
     "name": "Manuel Rozoy"
   },
-  "69985": {
-    "id": 69985,
-    "name": "Ben Petrisor"
-  },
   "70143": {
     "id": 70143,
     "name": "Michael Keller (II)"
