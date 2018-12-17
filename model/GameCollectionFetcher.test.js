@@ -14,10 +14,10 @@ QUnit.test("fetchData() ghightshoe", assert => {
     assert.ok(userId);
     assert.equal(userId, 1);
     assert.ok(gameIds);
-    const length = 31;
+    const length = 39;
     assert.equal(gameIds.length, length);
     assert.equal(gameIds[0], 74);
-    assert.equal(gameIds[length - 1], 221107);
+    assert.equal(gameIds[length - 1], 247030);
     done();
   });
 });

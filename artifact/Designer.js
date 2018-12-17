@@ -1219,6 +1219,10 @@ const Designer = {
     "id": 8251,
     "name": "Christian Leonhard"
   },
+  "8261": {
+    "id": 8261,
+    "name": "Murat Celebi"
+  },
   "8268": {
     "id": 8268,
     "name": "Markus Lubke"
@@ -2427,6 +2431,10 @@ const Designer = {
     "id": 71676,
     "name": "Ian Brody"
   },
+  "71956": {
+    "id": 71956,
+    "name": "Nicolas Degouy"
+  },
   "71982": {
     "id": 71982,
     "name": "Samuel Bailey"
@@ -2858,6 +2866,10 @@ const Designer = {
   "105000": {
     "id": 105000,
     "name": "Lincoln Petersen"
+  },
+  "107017": {
+    "id": 107017,
+    "name": "TOT"
   },
   "108405": {
     "id": 108405,
