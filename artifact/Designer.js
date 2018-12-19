@@ -1043,6 +1043,10 @@ const Designer = {
     "id": 6331,
     "name": "Chad Jensen"
   },
+  "6465": {
+    "id": 6465,
+    "name": "Clay Blankenship"
+  },
   "6475": {
     "id": 6475,
     "name": "Nicolas Oury"
@@ -1643,6 +1647,10 @@ const Designer = {
     "id": 25582,
     "name": "Bauldric & Friends"
   },
+  "26626": {
+    "id": 26626,
+    "name": "Jason Oman"
+  },
   "27141": {
     "id": 27141,
     "name": "Ryan Amos"
@@ -1678,6 +1686,10 @@ const Designer = {
   "28912": {
     "id": 28912,
     "name": "Christophe Raimbault"
+  },
+  "30118": {
+    "id": 30118,
+    "name": "Michael Haverty"
   },
   "30466": {
     "id": 30466,
@@ -2254,6 +2266,14 @@ const Designer = {
   "65023": {
     "id": 65023,
     "name": "Isaac Vega"
+  },
+  "65232": {
+    "id": 65232,
+    "name": "Blaise Hanczar"
+  },
+  "65233": {
+    "id": 65233,
+    "name": "Jorg Krismann"
   },
   "65291": {
     "id": 65291,

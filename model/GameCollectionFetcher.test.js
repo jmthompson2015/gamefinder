@@ -54,10 +54,10 @@ QUnit.test("fetchData() kmistr", assert => {
     assert.ok(userId);
     assert.equal(userId, 3);
     assert.ok(gameIds);
-    const length = 34;
+    const length = 40;
     assert.equal(gameIds.length, length);
     assert.equal(gameIds[0], 13);
-    assert.equal(gameIds[length - 1], 192951);
+    assert.equal(gameIds[length - 1], 220653);
     done();
   });
 });

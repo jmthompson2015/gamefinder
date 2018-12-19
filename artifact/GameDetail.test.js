@@ -27,14 +27,14 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 21);
+  assert.equal(detail.boardGameRank, 20);
   assert.equal(detail.title, "Spirit Island");
   assert.equal(round2(detail.geekRating), 7.91);
 });
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 1203;
+  const length = 1208;
 
   // Run.
   const keys = Object.keys(GameDetail);
