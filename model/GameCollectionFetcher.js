@@ -4,23 +4,14 @@ import GameCollectionState from "../state/GameCollectionState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = username => {
-  const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
-
-  // https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=ghightshoe
-  const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
-  const query = `select * from xml where url='${sourceUrl}'`;
-  const answer = baseUrl + encodeURIComponent(query);
-  // console.log(`url = ${answer}`);
-
-  return answer;
-};
+const createUrl = username =>
+  `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
 
 const parseUserGameIds = xmlDocument => {
   const answer = [];
 
   // This gives the data items.
-  const xpath = "query/results/items/item";
+  const xpath = "items/item";
   const resultType = XPathResult.ORDERED_NODE_ITERATOR_TYPE;
   const rows = xmlDocument.evaluate(xpath, xmlDocument, null, resultType, null);
   let thisRow = rows.iterateNext();

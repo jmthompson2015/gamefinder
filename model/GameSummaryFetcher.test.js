@@ -18,8 +18,8 @@ QUnit.test("fetchData() 2", assert => {
     assert.equal(gameSummaries.length, length);
     assert.equal(gameSummaries[0].id, 3, "id");
     assert.equal(gameSummaries[0].title, "Samurai (1998)");
-    assert.equal(gameSummaries[length - 1].id, 237182);
-    assert.equal(gameSummaries[length - 1].title, "Root (2018)");
+    assert.equal(gameSummaries[length - 1].id, 239188);
+    assert.equal(gameSummaries[length - 1].title, "Chronicles of Crime (2018)");
     done();
   });
 });

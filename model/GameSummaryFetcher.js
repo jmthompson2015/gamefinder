@@ -2,54 +2,51 @@ import GameSummaryState from "../state/GameSummaryState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = page => {
-  const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
+const createUrl = page => `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
 
-  // https://www.boardgamegeek.com/browse/boardgame
-  // https://www.boardgamegeek.com/browse/boardgame/page/2
-  const sourceUrl = `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
+const parseBetween = (htmlFragment, startKey, endKey) => {
+  const index0 = htmlFragment.indexOf(startKey);
+  const index1 = htmlFragment.lastIndexOf(endKey);
 
-  const query = `select * from htmlstring where url="${sourceUrl}"`;
-  const answer = `${baseUrl +
-    encodeURIComponent(query)}&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`;
-  // console.log(`url = ${answer}`);
-
-  return answer;
+  return htmlFragment.substring(index0 + startKey.length, index1).trim();
 };
 
-const parseGameSummary = (xmlDocument, xmlFragment) => {
-  // This gives the data cells (td).
-  const xpath = "td";
-  const resultType = XPathResult.ORDERED_NODE_SNAPSHOT_TYPE;
-  const cells = xmlDocument.evaluate(xpath, xmlFragment, null, resultType, null);
+const parseElement = (cell, tag) => {
+  const key0 = `<${tag}`;
+  const index0 = cell.indexOf(key0);
+  const key1 = `</${tag}>`;
+  const index1 = cell.indexOf(key1, index0 + key0.length);
+  const element = cell.substring(index0, index1 + key1.length);
 
-  const boardGameRank = cells.snapshotItem(0).textContent.trim();
-  let title = cells.snapshotItem(2).textContent.trim();
-  title = title.replace(/\n/g, "");
-  while (title.indexOf("  ") >= 0) {
-    title = title.replace(/ {2}/g, " ");
-  }
+  return parseBetween(element, ">", key1);
+};
 
-  const idCell = xmlDocument.evaluate(
-    "a/@href",
-    cells.snapshotItem(1),
-    null,
-    XPathResult.STRING_TYPE,
-    null
-  );
-  let id = idCell.stringValue.trim();
-  id = id.replace("/boardgame/", "");
-  id = id.replace("/boardgameexpansion/", "");
-  const index = id.indexOf("/");
-  id = id.substring(0, index);
+const parseId = cell => {
+  const key0 = "boardgame/";
+  const index0 = cell.indexOf(key0);
+  const key1 = "/";
+  const index1 = cell.indexOf(key1, index0 + key0.length);
 
-  const geekRatingDisplay = cells.snapshotItem(3).textContent.trim();
-  const averageRatingDisplay = cells.snapshotItem(4).textContent.trim();
-  const numVoters = cells.snapshotItem(5).textContent.trim();
+  return cell.substring(index0 + key0.length, index1);
+};
+
+const parseGameSummary = (htmlDocument, htmlFragment) => {
+  const cells = htmlFragment.split("<td");
+  const boardGameRank = parseBetween(cells[1], "</a>", "</td>");
+
+  const title = parseElement(cells[3], "a");
+  const id = parseId(cells[3]);
+  const year = parseElement(cells[3], "span");
+
+  const geekRatingDisplay = parseElement(`<td ${cells[4]}`, "td");
+
+  const averageRatingDisplay = parseElement(`<td ${cells[5]}`, "td");
+
+  const numVoters = parseElement(`<td ${cells[6]}`, "td");
 
   return GameSummaryState.create({
     id: parseInt(id, 10),
-    title,
+    title: `${title} ${year}`,
     boardGameRank: parseInt(boardGameRank, 10),
     geekRating: parseFloat(geekRatingDisplay),
     geekRatingDisplay,
@@ -59,21 +56,22 @@ const parseGameSummary = (xmlDocument, xmlFragment) => {
   });
 };
 
-const parseGameSummaries = xmlDocument => {
+const parseGameSummaries = htmlDocument => {
   const answer = [];
 
   // This gives the data rows (tr).
-  const xpath = "//tr[@id='row_']";
-  const resultType = XPathResult.ORDERED_NODE_ITERATOR_TYPE;
-  const rows = xmlDocument.evaluate(xpath, xmlDocument, null, resultType, null);
-  let thisRow = rows.iterateNext();
-
-  while (thisRow) {
-    const gameSummary = parseGameSummary(xmlDocument, thisRow);
+  const key = "<tr id='row_'>";
+  const rows = htmlDocument.split(key);
+  // Ignore first row.
+  rows.shift();
+  const lastRow0 = rows[rows.length - 1];
+  const lastKey = "</tr>";
+  const lastRow = lastRow0.substring(0, lastRow0.indexOf(lastKey) + lastKey.length);
+  rows[rows.length - 1] = lastRow;
+  rows.forEach(thisRow => {
+    const gameSummary = parseGameSummary(htmlDocument, thisRow.trim());
     answer.push(gameSummary);
-
-    thisRow = rows.iterateNext();
-  }
+  });
 
   return answer;
 };
@@ -82,26 +80,20 @@ const GameSummaryFetcher = {};
 
 GameSummaryFetcher.fetchData = page =>
   new Promise((resolve, reject) => {
-    const receiveData = xmlDocument0 => {
-      const xmlDocument = xmlDocument0;
-      let content = xmlDocument.children[0].children[0].children[0];
-
-      if (content) {
-        content = content.innerHTML;
-        content = content.replace(/&lt;/g, "<");
-        content = content.replace(/&gt;/g, ">");
-
-        xmlDocument.children[0].children[0].children[0].innerHTML = content;
-        const gameSummaries = parseGameSummaries(xmlDocument);
+    const receiveData = htmlDocument => {
+      if (htmlDocument) {
+        const gameSummaries = parseGameSummaries(htmlDocument);
         resolve({ page, gameSummaries });
       } else {
-        reject(new Error(`XML document content is undefined for page: ${page}`));
+        reject(new Error(`HTML document content is undefined for page: ${page}`));
       }
     };
 
     const url = createUrl(page);
     const options = {};
-    FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
+    FetchUtilities.fetchRetry(url, options, 3)
+      .then(response => response.text())
+      .then(receiveData);
   });
 
 export default GameSummaryFetcher;

@@ -5,8 +5,6 @@ import GameDetailState from "../state/GameDetailState.js";
 import FetchUtilities from "./FetchUtilities.js";
 
 const createUrl = gameIds => {
-  const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
-
   // https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=12333,120677
   const idsString = gameIds.reduce((previousValue, id, i) => {
     let answer = previousValue + id;
@@ -18,12 +16,7 @@ const createUrl = gameIds => {
     return answer;
   }, "");
 
-  const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
-  const query = `select * from xml where url='${sourceUrl}'`;
-  const answer = baseUrl + encodeURIComponent(query);
-  // console.log(`url = ${answer}`);
-
-  return answer;
+  return `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
 };
 
 const parseBestWithPlayers = (xmlDocument, xmlFragment) => {
@@ -214,7 +207,7 @@ const parseGameDetails = xmlDocument => {
   const answer = [];
 
   // This gives the data items.
-  const xpath = "query/results/items/item";
+  const xpath = "items/item";
   const resultType = XPathResult.ORDERED_NODE_ITERATOR_TYPE;
   const rows = xmlDocument.evaluate(xpath, xmlDocument, null, resultType, null);
   let thisRow = rows.iterateNext();
