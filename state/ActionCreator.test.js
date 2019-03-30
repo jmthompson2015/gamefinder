@@ -6,7 +6,7 @@ QUnit.module("ActionCreator");
 QUnit.test("all action types", assert => {
   // Setup.
   const actionTypeKeys = Object.getOwnPropertyNames(ActionType);
-  assert.equal(actionTypeKeys.length, 12);
+  assert.equal(actionTypeKeys.length, 9);
 
   // Run / Verify.
   actionTypeKeys.forEach(key => {
@@ -57,17 +57,6 @@ QUnit.test("addUserCollection()", assert => {
   assert.equal(result.gameIds, gameIds);
 });
 
-QUnit.test("removeFilters()", assert => {
-  // Setup.
-
-  // Run.
-  const result = ActionCreator.removeFilters();
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(result.type, ActionType.REMOVE_FILTERS);
-});
-
 QUnit.test("setCollectionTime()", assert => {
   // Setup.
   const time = 3;
@@ -81,17 +70,6 @@ QUnit.test("setCollectionTime()", assert => {
   assert.equal(result.time, time);
 });
 
-QUnit.test("setDefaultFilters()", assert => {
-  // Setup.
-
-  // Run.
-  const result = ActionCreator.setDefaultFilters();
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(result.type, ActionType.SET_DEFAULT_FILTERS);
-});
-
 QUnit.test("setDetailTime()", assert => {
   // Setup.
   const time = 3;
@@ -103,19 +81,6 @@ QUnit.test("setDetailTime()", assert => {
   assert.ok(result);
   assert.equal(result.type, ActionType.SET_DETAIL_TIME);
   assert.equal(result.time, time);
-});
-
-QUnit.test("setFilter()", assert => {
-  // Setup.
-  const filter = 3;
-
-  // Run.
-  const result = ActionCreator.setFilter(filter);
-
-  // Verify.
-  assert.ok(result);
-  assert.equal(result.type, ActionType.SET_FILTER);
-  assert.equal(result.filter, filter);
 });
 
 QUnit.test("setPageCount()", assert => {

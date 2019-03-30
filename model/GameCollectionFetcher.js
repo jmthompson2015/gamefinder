@@ -40,7 +40,7 @@ GameCollectionFetcher.fetchData = username =>
 
     const url = createUrl(username);
     const options = {};
-    FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
+    FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
   });
 
 export default GameCollectionFetcher;

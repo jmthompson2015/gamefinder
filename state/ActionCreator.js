@@ -25,19 +25,16 @@ ActionCreator.addUserCollection = makeActionCreator(
   "gameIds"
 );
 
-ActionCreator.applyFilters = makeActionCreator(ActionType.APPLY_FILTERS);
-
-ActionCreator.removeFilters = makeActionCreator(ActionType.REMOVE_FILTERS);
-
 ActionCreator.setCollectionTime = makeActionCreator(ActionType.SET_COLLECTION_TIME, "time");
-
-ActionCreator.setDefaultFilters = makeActionCreator(ActionType.SET_DEFAULT_FILTERS);
 
 ActionCreator.setDetailTime = makeActionCreator(ActionType.SET_DETAIL_TIME, "time");
 
 ActionCreator.setDisplayTab = makeActionCreator(ActionType.SET_DISPLAY_TAB, "displayTab");
 
-ActionCreator.setFilter = makeActionCreator(ActionType.SET_FILTER, "filter");
+ActionCreator.setFilteredReactTable = makeActionCreator(
+  ActionType.SET_FILTERED_REACT_TABLE,
+  "filteredReactTable"
+);
 
 ActionCreator.setPageCount = makeActionCreator(ActionType.SET_PAGE_COUNT, "pageCount");
 

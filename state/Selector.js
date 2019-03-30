@@ -32,6 +32,9 @@ Selector.expectedDetailCount = state => Selector.gameIdsFromCollectionsAndSummar
 
 Selector.expectedSummaryCount = state => Selector.pageCount(state) * 100;
 
+Selector.filteredTableRows = state =>
+  state.filteredReactTable ? state.filteredReactTable.filteredTableRows() : [];
+
 Selector.gameDetail = (state, gameId) => state.gameToDetail[gameId] || GameDetail[gameId];
 
 Selector.gameIdsFromCollections = state => R.map(toInt, R.uniq(Object.keys(state.gameToUsers)));

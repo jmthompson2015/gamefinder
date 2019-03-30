@@ -1,11 +1,9 @@
-import DefaultFilters from "./DefaultFilters.js";
-
 const AppState = {};
 
 AppState.create = ({
   pageCount = 5,
   tableRows = [],
-  filteredTableRows = [],
+  filteredReactTable,
   displayTab = "Game Table",
   gameToDetail = {},
   gameToSummary = {},
@@ -20,13 +18,12 @@ AppState.create = ({
   userMap = {},
   userToGames = {},
   summaryToReceivedMap = {},
-  userToReceivedMap = {},
-  filters = DefaultFilters.create()
+  userToReceivedMap = {}
 } = {}) =>
   Immutable({
     pageCount,
     tableRows,
-    filteredTableRows,
+    filteredReactTable,
     displayTab,
     // game ID to detail
     gameToDetail,
@@ -47,8 +44,7 @@ AppState.create = ({
     // summary page to boolean
     summaryToReceivedMap,
     // user ID to boolean
-    userToReceivedMap,
-    filters
+    userToReceivedMap
   });
 
 Object.freeze(AppState);

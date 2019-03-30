@@ -34,7 +34,7 @@ QUnit.test("fetchData() jmthompson", assert => {
     assert.ok(userId);
     assert.equal(userId, 2);
     assert.ok(gameIds);
-    const length = 182;
+    const length = 185;
     assert.equal(gameIds.length, length);
     assert.equal(gameIds[0], 1198);
     assert.equal(gameIds[length - 1], 246718);

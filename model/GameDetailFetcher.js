@@ -242,7 +242,7 @@ GameDetailFetcher.fetchData = gameIds =>
 
       const url = createUrl(gameIds1);
       const options = {};
-      FetchUtilities.fetchRetryXml(url, options, 3).then(receiveData);
+      FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
     } else {
       resolve(gameDetails0);
     }

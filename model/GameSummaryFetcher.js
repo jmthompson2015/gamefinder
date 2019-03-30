@@ -91,7 +91,7 @@ GameSummaryFetcher.fetchData = page =>
 
     const url = createUrl(page);
     const options = {};
-    FetchUtilities.fetchRetry(url, options, 3)
+    FetchUtilities.fetchRetry(url, options, 5)
       .then(response => response.text())
       .then(receiveData);
   });

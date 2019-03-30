@@ -4,9 +4,7 @@ import ASelector from "../artifact/Selector.js";
 
 import ActionType from "./ActionType.js";
 import AppState from "./AppState.js";
-import DefaultFilters from "./DefaultFilters.js";
 import EntityUtils from "./EntityUtilities.js";
-import FilterUtils from "./FilterUtilities.js";
 import Selector from "./Selector.js";
 import TableRow from "./TableRow.js";
 
@@ -24,8 +22,6 @@ Reducer.root = (state, action) => {
   let isDataLoaded;
   let newCategoryMap;
   let newDesignerMap;
-  let newFilteredTableRows;
-  let newFilters;
   let newGameDetails;
   let newGameToDetail;
   let newGameToSummary;
@@ -50,14 +46,12 @@ Reducer.root = (state, action) => {
       if (isDataLoaded) {
         newGameDetails = Object.values(newGameToDetail);
         newTableRows = Reducer.addTableRows(state, state.tableRows, newGameDetails);
-        newFilteredTableRows = Reducer.sortTableRows(newTableRows);
         newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
         newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
         newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
         newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
 
         return R.pipe(
-          R.assoc("filteredTableRows", newFilteredTableRows),
           R.assoc("tableRows", newTableRows),
           R.assoc("gameToDetail", newGameToDetail),
           R.assoc("isDataLoaded", isDataLoaded),
@@ -95,32 +89,17 @@ Reducer.root = (state, action) => {
         R.assoc("userToGames", newUserToGames),
         R.assoc("userToReceivedMap", newUserToReceivedMap)
       )(state);
-    case ActionType.APPLY_FILTERS:
-      // console.log(`Reducer APPLY_FILTERS`);
-      newFilteredTableRows = Reducer.filterTableRows(state.tableRows, state.filters);
-      Reducer.saveToLocalStorage(state.filters);
-      return R.assoc("filteredTableRows", newFilteredTableRows, state);
-    case ActionType.REMOVE_FILTERS:
-      // console.log("Reducer REMOVE_FILTERS");
-      newFilteredTableRows = Reducer.sortTableRows(state.tableRows);
-      return R.assoc("filteredTableRows", newFilteredTableRows, state);
     case ActionType.SET_COLLECTION_TIME:
       console.log(`Reducer collectionTime = ${action.time}`);
       return R.assoc("collectionTime", action.time, state);
-    case ActionType.SET_DEFAULT_FILTERS:
-      // console.log("Reducer SET_DEFAULT_FILTERS");
-      newFilters = DefaultFilters.create();
-      return R.assoc("filters", newFilters, state);
     case ActionType.SET_DETAIL_TIME:
       console.log(`Reducer detailTime = ${action.time}`);
       return R.assoc("detailTime", action.time, state);
     case ActionType.SET_DISPLAY_TAB:
       return R.assoc("displayTab", action.displayTab, state);
-    case ActionType.SET_FILTER:
-      // console.log(`Reducer SET_FILTER filter = ${JSON.stringify(action.filter)}`);
-      newFilters = R.assoc(action.filter.columnKey, action.filter, state.filters);
-      Reducer.saveToLocalStorage(newFilters);
-      return R.assoc("filters", newFilters, state);
+    case ActionType.SET_FILTERED_REACT_TABLE:
+      console.log("Reducer SET_FILTERED_REACT_TABLE");
+      return R.assoc("filteredReactTable", action.filteredReactTable, state);
     case ActionType.SET_PAGE_COUNT:
       console.log(`Reducer pageCount = ${action.pageCount}`);
       return R.assoc("pageCount", action.pageCount, state);
@@ -150,12 +129,6 @@ Reducer.addTableRows = (state, tableRows, gameDetails) => {
   const newTableRows = R.reduce(reduceFunction, [], gameDetails);
 
   return R.concat(tableRows, newTableRows);
-};
-
-Reducer.filterTableRows = (tableRows, filters) => {
-  const answer = R.filter(data => FilterUtils.passesAll(filters, data), tableRows);
-
-  return Reducer.sortTableRows(answer);
 };
 
 Reducer.loadFromLocalStorage = () =>
