@@ -14,7 +14,7 @@ Reducer.root = (state, action) => {
   // LOGGER.debug(`root() type = ${action.type}`);
 
   if (typeof state === "undefined") {
-    return AppState.create({ filters: Reducer.loadFromLocalStorage() });
+    return AppState.create();
   }
 
   let gameToDetail;
@@ -45,7 +45,9 @@ Reducer.root = (state, action) => {
 
       if (isDataLoaded) {
         newGameDetails = Object.values(newGameToDetail);
-        newTableRows = Reducer.addTableRows(state, state.tableRows, newGameDetails);
+        newTableRows = Reducer.sortTableRows(
+          Reducer.addTableRows(state, state.tableRows, newGameDetails)
+        );
         newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
         newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
         newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
@@ -131,17 +133,8 @@ Reducer.addTableRows = (state, tableRows, gameDetails) => {
   return R.concat(tableRows, newTableRows);
 };
 
-Reducer.loadFromLocalStorage = () =>
-  localStorage.filters ? JSON.parse(localStorage.filters) : undefined;
-
-Reducer.saveToLocalStorage = filters => {
-  localStorage.filters = JSON.stringify(filters);
-};
-
 Reducer.sortTableRows = tableRows => R.sort(R.ascend(R.prop("boardGameRank")), tableRows);
 
-if (Object.freeze) {
-  Object.freeze(Reducer);
-}
+Object.freeze(Reducer);
 
 export default Reducer;

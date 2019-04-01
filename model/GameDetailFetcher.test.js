@@ -49,7 +49,7 @@ QUnit.test("fetchData()", assert => {
 
     assert.ok(gameDetails[3]);
     assert.equal(gameDetails[3].id, 176371);
-    assert.equal(gameDetails[3].boardGameRank, 1067);
+    assert.equal(gameDetails[3].boardGameRank, 1068);
     assert.equal(gameDetails[3].title, "Explorers of the North Sea");
     assert.equal(round2(gameDetails[3].geekRating), 6.41);
     assert.equal(gameDetails[3].minPlayers, 1);

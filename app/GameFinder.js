@@ -29,7 +29,22 @@ GameLoader.load(store).then(() => {
 
     // Add the filter and table.
     const { tableRows } = store.getState();
-    frt = new FilteredReactTable(TableColumns, tableRows);
+    const appName = "GameFinder";
+    const onColumnChange = tableColumns => {
+      console.log(`onColumnChange() tableColumns.length = ${tableColumns.length}`);
+    };
+    const onFilterChange = filteredTableRows => {
+      console.log(`onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`);
+    };
+    const isVerbose = true;
+    frt = new FilteredReactTable(
+      TableColumns,
+      tableRows,
+      appName,
+      onColumnChange,
+      onFilterChange,
+      isVerbose
+    );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
     ReactDOM.render(frt.filterElement(), document.getElementById("filter"));
