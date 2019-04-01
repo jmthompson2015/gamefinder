@@ -41,12 +41,14 @@ const mapStateToProps = (state, ownProps) => {
   const ghightshoeToCount = userEntityToCount(state, allGameIds, entityName, 1);
   const jmthompsonToCount = userEntityToCount(state, allGameIds, entityName, 2);
   const kmistrToCount = userEntityToCount(state, allGameIds, entityName, 3);
+  const nicToCount = userEntityToCount(state, allGameIds, entityName, 4);
 
   const userToEntityToCount = {
     0: allToCount,
     1: ghightshoeToCount,
     2: jmthompsonToCount,
-    3: kmistrToCount
+    3: kmistrToCount,
+    4: nicToCount
   };
 
   return {

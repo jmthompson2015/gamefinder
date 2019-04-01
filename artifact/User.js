@@ -10,6 +10,10 @@ const User = {
   "3": {
     id: 3,
     name: "kmistr"
+  },
+  "4": {
+    id: 4,
+    name: "nic"
   }
 };
 

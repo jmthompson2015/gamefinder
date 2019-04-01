@@ -72,6 +72,7 @@ class EntityChartsPanel extends React.Component {
         [R.equals(1), R.always("red")],
         [R.equals(2), R.always("green")],
         [R.equals(3), R.always("blue")],
+        [R.equals(4), R.always("gold")],
         [R.T, R.always("gray")]
       ])(userId);
       const data = createData(entityMap, entityToCount, color);

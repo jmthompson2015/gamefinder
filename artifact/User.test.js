@@ -7,16 +7,16 @@ QUnit.test("User properties ghightshoe", assert => {
   const id = 1;
 
   // Run.
-  const mechanic = User[id];
+  const user = User[id];
 
   // Verify.
-  assert.equal(mechanic.id, id);
-  assert.equal(mechanic.name, "ghightshoe");
+  assert.equal(user.id, id);
+  assert.equal(user.name, "ghightshoe");
 });
 
 QUnit.test("User keys", assert => {
   // Setup.
-  const length = 3;
+  const length = 4;
 
   // Run.
   const keys = Object.keys(User);
@@ -24,13 +24,13 @@ QUnit.test("User keys", assert => {
   // Verify.
   assert.equal(keys.length, length);
 
-  const mechanic0 = User[keys[0]];
-  assert.equal(mechanic0.id, 1);
-  assert.equal(mechanic0.name, "ghightshoe");
+  const user0 = User[keys[0]];
+  assert.equal(user0.id, 1);
+  assert.equal(user0.name, "ghightshoe");
 
-  const mechanicLast = User[keys[length - 1]];
-  assert.equal(mechanicLast.id, 3);
-  assert.equal(mechanicLast.name, "kmistr");
+  const userLast = User[keys[length - 1]];
+  assert.equal(userLast.id, 4);
+  assert.equal(userLast.name, "nic");
 });
 
 const UserTest = {};

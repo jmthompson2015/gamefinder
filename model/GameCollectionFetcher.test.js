@@ -62,5 +62,25 @@ QUnit.test("fetchData() kmistr", assert => {
   });
 });
 
+QUnit.test("fetchData() nic", assert => {
+  // Setup.
+  const username0 = "nic";
+
+  // Run.
+  const done = assert.async();
+  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
+    // Verify.
+    assert.ok(true, "test resumed from async operation");
+    assert.ok(userId);
+    assert.equal(userId, 4);
+    assert.ok(gameIds);
+    const length = 8;
+    assert.equal(gameIds.length, length);
+    assert.equal(gameIds[0], 167791);
+    assert.equal(gameIds[length - 1], 255692);
+    done();
+  });
+});
+
 const GameCollectionFetcherTest = {};
 export default GameCollectionFetcherTest;
