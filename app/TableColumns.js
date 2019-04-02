@@ -64,6 +64,15 @@ const TableColumns = [
       const href = `https://www.boardgamegeek.com/boardgame/${row.id}`;
       const link = createImageLink(BGG_SRC, href);
       return ReactDOMFactories.span({ className: "textImageLink" }, row.title, link);
+    },
+    valueFunction: row => {
+      const editTitle = article => title =>
+        title.startsWith(article) ? title.substring(article.length) : title;
+      return R.pipe(
+        editTitle("A "),
+        editTitle("An "),
+        editTitle("The ")
+      )(row.title);
     }
   },
   {
