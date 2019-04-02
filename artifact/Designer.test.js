@@ -16,7 +16,7 @@ QUnit.test("Designer properties Stefan Feld", assert => {
 
 QUnit.test("Designer keys", assert => {
   // Setup.
-  const length = 726;
+  const length = 723;
 
   // Run.
   const keys = Object.keys(Designer);
@@ -29,8 +29,8 @@ QUnit.test("Designer keys", assert => {
   assert.equal(designer0.name, "Karl-Heinz Schmiel");
 
   const designerLast = Designer[keys[length - 1]];
-  assert.equal(designerLast.id, 113657);
-  assert.equal(designerLast.name, "Ian Estrin");
+  assert.equal(designerLast.id, 114456);
+  assert.equal(designerLast.name, "Maciej Obszanski");
 });
 
 const DesignerTest = {};

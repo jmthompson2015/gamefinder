@@ -194,6 +194,14 @@ const Mechanic = {
   "2689": {
     "id": 2689,
     "name": "Action / Movement Programming"
+  },
+  "2813": {
+    "id": 2813,
+    "name": "Rondel"
+  },
+  "2814": {
+    "id": 2814,
+    "name": "Hidden Traitor"
   }
 }
 

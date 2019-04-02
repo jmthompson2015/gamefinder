@@ -16,7 +16,7 @@ QUnit.test("Mechanic properties Tile Placement", assert => {
 
 QUnit.test("Mechanic keys", assert => {
   // Setup.
-  const length = 49;
+  const length = 51;
 
   // Run.
   const keys = Object.keys(Mechanic);
@@ -29,8 +29,8 @@ QUnit.test("Mechanic keys", assert => {
   assert.equal(mechanic0.name, "Action Point Allowance System");
 
   const mechanicLast = Mechanic[keys[length - 1]];
-  assert.equal(mechanicLast.id, 2689);
-  assert.equal(mechanicLast.name, "Action / Movement Programming");
+  assert.equal(mechanicLast.id, 2814);
+  assert.equal(mechanicLast.name, "Hidden Traitor");
 });
 
 const MechanicTest = {};

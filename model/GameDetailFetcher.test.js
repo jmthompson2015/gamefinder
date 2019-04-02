@@ -25,9 +25,9 @@ QUnit.test("fetchData()", assert => {
 
     assert.ok(gameDetails[0]);
     assert.equal(gameDetails[0].id, 1406);
-    assert.equal(gameDetails[0].boardGameRank, 16457, "gameDetails[0] boardGameRank");
+    assert.equal(gameDetails[0].boardGameRank, 16920, "gameDetails[0] boardGameRank");
     assert.equal(gameDetails[0].title, "Monopoly");
-    assert.equal(round2(gameDetails[0].geekRating), 4.33, "gameDetails[0] geekRating");
+    assert.equal(round2(gameDetails[0].geekRating), 4.32, "gameDetails[0] geekRating");
     assert.equal(gameDetails[0].minPlayers, 2);
     assert.equal(gameDetails[0].maxPlayers, 8);
 
@@ -41,15 +41,15 @@ QUnit.test("fetchData()", assert => {
 
     assert.ok(gameDetails[2]);
     assert.equal(gameDetails[2].id, 120677);
-    assert.equal(gameDetails[2].boardGameRank, 10);
+    assert.equal(gameDetails[2].boardGameRank, 11);
     assert.equal(gameDetails[2].title, "Terra Mystica");
-    assert.equal(round2(gameDetails[2].geekRating), 8.06);
+    assert.equal(round2(gameDetails[2].geekRating), 8.05);
     assert.equal(gameDetails[2].minPlayers, 2);
     assert.equal(gameDetails[2].maxPlayers, 5);
 
     assert.ok(gameDetails[3]);
     assert.equal(gameDetails[3].id, 176371);
-    assert.equal(gameDetails[3].boardGameRank, 1068);
+    assert.equal(gameDetails[3].boardGameRank, 1067);
     assert.equal(gameDetails[3].title, "Explorers of the North Sea");
     assert.equal(round2(gameDetails[3].geekRating), 6.41);
     assert.equal(gameDetails[3].minPlayers, 1);

@@ -13,9 +13,9 @@ QUnit.test("GameDetail properties Scythe", assert => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 7);
+  assert.equal(detail.boardGameRank, 8);
   assert.equal(detail.title, "Scythe");
-  assert.equal(round2(detail.geekRating), 8.11);
+  assert.equal(round2(detail.geekRating), 8.12);
 });
 
 QUnit.test("GameDetail properties Spirit Island", assert => {
@@ -27,14 +27,14 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 20);
+  assert.equal(detail.boardGameRank, 15);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(round2(detail.geekRating), 7.91);
+  assert.equal(round2(detail.geekRating), 7.99);
 });
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 1208;
+  const length = 1215;
 
   // Run.
   const keys = Object.keys(GameDetail);
@@ -47,8 +47,8 @@ QUnit.test("GameDetail keys", assert => {
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[keys[length - 1]];
-  assert.equal(detailLast.id, 257501);
-  assert.equal(detailLast.title, "KeyForge: Call of the Archons");
+  assert.equal(detailLast.id, 266192);
+  assert.equal(detailLast.title, "Wingspan");
 });
 
 const GameDetailTest = {};

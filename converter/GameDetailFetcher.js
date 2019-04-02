@@ -10,9 +10,7 @@ const GameDetailFetcher = {};
 
 const OUTPUT_FILE = "GameDetail.json";
 
-function createUrl(gameIds) {
-  const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
-
+const createUrl = gameIds => {
   // https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=12333,120677
   const idsString = gameIds.reduce((previousValue, id, i) => {
     let answer = previousValue + id;
@@ -24,11 +22,8 @@ function createUrl(gameIds) {
     return answer;
   }, "");
 
-  const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
-  const query = `select * from xml where url='${sourceUrl}'`;
-
-  return baseUrl + encodeURIComponent(query);
-}
+  return `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
+};
 
 const loadGameIds = () =>
   new Promise((resolve, reject) => {
@@ -238,7 +233,7 @@ function parseGameDetails(xmlDocument) {
   let answer = {};
 
   // This gives the data items.
-  const myXPath = "query/results/items/item";
+  const myXPath = "items/item";
   const resultType = xpath.XPathResult.ORDERED_NODE_ITERATOR_TYPE;
   const rows = xpath.evaluate(myXPath, xmlDocument, null, resultType, null);
   let thisRow = rows.iterateNext();

@@ -11,22 +11,14 @@ const USER = ["ghightshoe", "jmthompson", "kmistr"];
 const OUTPUT_FILE1 = "UserGame.json";
 const OUTPUT_FILE2 = "GameUser.json";
 
-const createUrl = username => {
-  const baseUrl = "https://query.yahooapis.com/v1/public/yql?q=";
-
-  // https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=ghightshoe
-  const sourceUrl = `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
-  const query = `select * from xml where url='${sourceUrl}'`;
-  const answer = baseUrl + encodeURIComponent(query);
-
-  return answer;
-};
+const createUrl = username =>
+  `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
 
 const parseUserGameIds = xmlDocument => {
   const answer = [];
 
   // This gives the data items.
-  const myXPath = "query/results/items/item";
+  const myXPath = "items/item";
   const resultType = xpath.XPathResult.ORDERED_NODE_ITERATOR_TYPE;
   const rows = xpath.evaluate(myXPath, xmlDocument, null, resultType, null);
   let thisRow = rows.iterateNext();
