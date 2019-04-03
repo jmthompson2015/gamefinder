@@ -5,7 +5,7 @@ import GameCollectionState from "../state/GameCollectionState.js";
 import FetchUtilities from "./FetchUtilities.js";
 
 const createUrl = username =>
-  `https://cors-anywhere.herokuapp.com/https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
+  `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
 
 const parseUserGameIds = xmlDocument => {
   const answer = [];
