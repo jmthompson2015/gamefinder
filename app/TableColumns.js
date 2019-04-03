@@ -54,6 +54,7 @@ const TableColumns = [
     key: "boardGameRank",
     label: "Board Game Rank",
     type: "number",
+    min: 1,
     className: "tr"
   },
   {
@@ -97,6 +98,9 @@ const TableColumns = [
     key: "geekRating",
     label: "Geek Rating",
     type: "number",
+    min: 0,
+    max: 10,
+    step: 0.1,
     className: "tr",
     convertFunction: data => (data.geekRating !== undefined ? round2(data.geekRating) : undefined)
   },
@@ -104,18 +108,21 @@ const TableColumns = [
     key: "minPlayers",
     label: "Min. Players",
     type: "number",
+    min: 1,
     className: "tr"
   },
   {
     key: "maxPlayers",
     label: "Max. Players",
     type: "number",
+    min: 1,
     className: "tr"
   },
   {
     key: "bestWithPlayers",
     label: "Best with Players",
     type: "number",
+    min: 1,
     className: "tr"
   },
   {
@@ -134,6 +141,9 @@ const TableColumns = [
     key: "averageWeight",
     label: "Weight",
     type: "number",
+    min: 1,
+    max: 5,
+    step: 0.1,
     className: "tr",
     convertFunction: data =>
       data.averageWeight !== undefined ? round2(data.averageWeight) : undefined
