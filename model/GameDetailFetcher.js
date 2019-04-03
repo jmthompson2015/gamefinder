@@ -16,7 +16,7 @@ const createUrl = gameIds => {
     return answer;
   }, "");
 
-  return `https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
+  return `https://cors-anywhere.herokuapp.com/https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=${idsString}`;
 };
 
 const parseBestWithPlayers = (xmlDocument, xmlFragment) => {

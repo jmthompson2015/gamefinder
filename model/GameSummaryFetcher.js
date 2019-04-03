@@ -2,7 +2,8 @@ import GameSummaryState from "../state/GameSummaryState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = page => `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
+const createUrl = page =>
+  `https://cors-anywhere.herokuapp.com/https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
 
 const parseBetween = (htmlFragment, startKey, endKey) => {
   const index0 = htmlFragment.indexOf(startKey);
