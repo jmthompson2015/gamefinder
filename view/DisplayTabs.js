@@ -4,7 +4,7 @@ const TABS = ["Game Table", "Designers", "Categories", "Mechanics"];
 const CLASS_SELECTED = "gf-bg-dark1 gf-light2 pa1";
 const CLASS_NON_SELECTED = "gf-bg-light1 pa1";
 
-class DisplayTabs extends React.Component {
+class DisplayTabs extends React.PureComponent {
   constructor(props) {
     super(props);
 

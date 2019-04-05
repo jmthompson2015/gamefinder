@@ -2,7 +2,7 @@ import TimePrinter from "./TimePrinter.js";
 
 const formatTime = time => (time !== undefined ? TimePrinter.formatElapsedTime("", 0, time) : "");
 
-class ProgressUI extends React.Component {
+class ProgressUI extends React.PureComponent {
   render() {
     const { collectionTime, detailTime, summaryTime } = this.props;
     const collectionTimeString = formatTime(collectionTime);

@@ -1,7 +1,7 @@
 // see https://stackoverflow.com/questions/43434609/use-chartjs-with-reactjs
 // see https://stackoverflow.com/questions/24785713/chart-js-load-totally-new-data
 
-class ChartComponent extends React.Component {
+class ChartComponent extends React.PureComponent {
   constructor(props) {
     super(props);
 

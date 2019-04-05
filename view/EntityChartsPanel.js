@@ -59,7 +59,7 @@ const OPTIONS = Immutable({
   }
 });
 
-class EntityChartsPanel extends React.Component {
+class EntityChartsPanel extends React.PureComponent {
   render() {
     const { entityMap, userToEntityToCount } = this.props;
 
