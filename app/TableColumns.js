@@ -1,4 +1,4 @@
-import ReactUtils from "../view/ReactUtilities.js";
+import EntitiesTable from "../view/EntitiesTable.js";
 
 import Formatter from "./Formatter.js";
 
@@ -14,18 +14,8 @@ const createImageLink = (src, href, className = "imageBlock") => {
   return ReactDOMFactories.a({ key: src, href, target: "_blank" }, image);
 };
 
-const createEntitiesTable = (entities, url) => {
-  const mapFunction = entity => {
-    const href = url + entity.id;
-    const link = createImageLink(BGG_SRC, href);
-    const cell = ReactUtils.createCell([entity.name, link]);
-
-    return ReactUtils.createRow(cell, entity.name);
-  };
-  const rows = R.map(mapFunction, entities);
-
-  return ReactUtils.createTable(rows, url, "bn gf-f-entity tl");
-};
+const createEntitiesTable = (entities, url) =>
+  React.createElement(EntitiesTable, { entities, url });
 
 const mapUsers = users => {
   const mapFunction = user => {
