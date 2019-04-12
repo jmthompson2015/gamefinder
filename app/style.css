@@ -47,6 +47,26 @@ body {
   text-align: left;
 }
 
+.frt-show-columns {
+  background: Green;
+  font-size: small;
+  padding: 5px;
+}
+
+.frt-show-columns .buttons {
+  float: right;
+}
+
+.frt-show-columns .button-panel {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.frt-show-columns .checkbox-panel {
+  background: White;
+  padding: 2px;
+}
+
 .frt-table {
   border-collapse: collapse;
   font-size: small;

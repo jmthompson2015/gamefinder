@@ -70,7 +70,7 @@ const TableColumns = [
     key: "id",
     label: "ID",
     className: "tr",
-    isHidden: true
+    isShown: false
   },
   {
     key: "designers",
