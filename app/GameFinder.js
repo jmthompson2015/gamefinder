@@ -47,8 +47,8 @@ GameLoader.load(store).then(() => {
     );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
-    ReactDOM.render(frt.filterElement(), document.getElementById("filter"));
-    ReactDOM.render(frt.showColumnsElement(), document.getElementById("showColumns"));
+    ReactDOM.render(frt.filterPanel(), document.getElementById("filter"));
+    ReactDOM.render(frt.showColumnsPanel(), document.getElementById("showColumns"));
     ReactDOM.render(frt.tableElement(), document.getElementById("tabPanel"));
   }
 });
