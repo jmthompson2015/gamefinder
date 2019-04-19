@@ -34,7 +34,7 @@ QUnit.test("GameDetail properties Spirit Island", assert => {
 
 QUnit.test("GameDetail keys", assert => {
   // Setup.
-  const length = 1215;
+  const length = 1216;
 
   // Run.
   const keys = Object.keys(GameDetail);
