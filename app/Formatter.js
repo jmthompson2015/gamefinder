@@ -32,7 +32,7 @@ Formatter.formatEntities = entities => {
 
     if (entities.length > 0) {
       const mapFunction = entity => entity.name;
-      const newEntities = R.map(mapFunction, entities);
+      const newEntities = R.map(mapFunction, R.sortBy(R.prop("name"), entities));
       return newEntities.join(", ");
     }
   }

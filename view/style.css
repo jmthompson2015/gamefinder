@@ -97,13 +97,6 @@ table {
   text-align: left;
 }
 
-#ALIGN_MIDDLE,
-#bgg_cornerlogo,
-.imageBlock,
-.alignMiddle {
-  vertical-align: middle;
-}
-
 #ALIGN_RIGHT,
 .numberCell,
 .progressNumberCell,
@@ -115,12 +108,6 @@ table {
 .textImageLink,
 .displayInlineBlock {
   display: inline-block;
-}
-
-#FLOAT_RIGHT,
-.imageBlock,
-.floatRight {
-  float: right;
 }
 
 #FONT_SMALL,

@@ -6,10 +6,10 @@ const DESIGNER_URL = "https://www.boardgamegeek.com/boardgamedesigner/";
 const CATEGORY_URL = "https://www.boardgamegeek.com/boardgamecategory/";
 const MECHANIC_URL = "https://www.boardgamegeek.com/boardgamemechanic/";
 
-const createImageLink = (src, href, className = "imageBlock") => {
-  const image = ReactDOMFactories.img({ className, src });
+const createImageLink = (src, href, title) => {
+  const image = ReactDOMFactories.img({ src });
 
-  return ReactDOMFactories.a({ key: src, href, target: "_blank" }, image);
+  return ReactDOMFactories.a({ key: src, href, title, target: "_blank" }, image);
 };
 
 const createLink = (href, name) => ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
@@ -22,9 +22,9 @@ const mapUsers = users => {
     const src = `../resource/${user.name}.png`;
     const href = `https://www.boardgamegeek.com/collection/user/${user.name}`;
 
-    return createImageLink(src, href, "");
+    return createImageLink(src, href, user.name);
   };
-  const cells = R.map(mapFunction, users);
+  const cells = R.map(mapFunction, R.sortBy(R.prop("name"), users));
 
   return ReactDOMFactories.span({ className: "widthFull" }, cells);
 };
