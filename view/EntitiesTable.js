@@ -1,12 +1,6 @@
 import ReactUtils from "./ReactUtilities.js";
 
-const BGG_SRC = "../resource/BoardGameGeek16.png";
-
-const createImageLink = (src, href, className = "imageBlock") => {
-  const image = ReactDOMFactories.img({ className, src });
-
-  return ReactDOMFactories.a({ key: src, href, target: "_blank" }, image);
-};
+const createLink = (href, name) => ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
 class EntitiesTable extends React.PureComponent {
   render() {
@@ -14,8 +8,8 @@ class EntitiesTable extends React.PureComponent {
 
     const mapFunction = entity => {
       const href = url + entity.id;
-      const link = createImageLink(BGG_SRC, href);
-      const cell = ReactUtils.createCell([entity.name, link]);
+      const link = createLink(href, entity.name);
+      const cell = ReactUtils.createCell(link);
 
       return ReactUtils.createRow(cell, entity.name);
     };

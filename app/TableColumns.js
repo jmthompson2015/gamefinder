@@ -2,8 +2,6 @@ import EntitiesTable from "../view/EntitiesTable.js";
 
 import Formatter from "./Formatter.js";
 
-const BGG_SRC = "../resource/BoardGameGeek16.png";
-
 const DESIGNER_URL = "https://www.boardgamegeek.com/boardgamedesigner/";
 const CATEGORY_URL = "https://www.boardgamegeek.com/boardgamecategory/";
 const MECHANIC_URL = "https://www.boardgamegeek.com/boardgamemechanic/";
@@ -13,6 +11,8 @@ const createImageLink = (src, href, className = "imageBlock") => {
 
   return ReactDOMFactories.a({ key: src, href, target: "_blank" }, image);
 };
+
+const createLink = (href, name) => ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
 const createEntitiesTable = (entities, url) =>
   React.createElement(EntitiesTable, { entities, url });
@@ -53,8 +53,7 @@ const TableColumns = [
     className: "tl",
     cellFunction: row => {
       const href = `https://www.boardgamegeek.com/boardgame/${row.id}`;
-      const link = createImageLink(BGG_SRC, href);
-      return ReactDOMFactories.span({ className: "textImageLink" }, row.title, link);
+      return createLink(href, row.title);
     },
     valueFunction: row => {
       const editTitle = article => title =>
