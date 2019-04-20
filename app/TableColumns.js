@@ -29,7 +29,7 @@ const mapUsers = users => {
   return ReactDOMFactories.span({ className: "widthFull" }, cells);
 };
 
-const round2 = value => Math.round(value * 100.0) / 100.0;
+const round2 = value => (![undefined, null].includes(value) ? value.toFixed(2) : undefined);
 
 const TableColumns = [
   {
@@ -91,7 +91,7 @@ const TableColumns = [
     max: 10,
     step: 0.1,
     className: "tr",
-    convertFunction: data => (data.geekRating !== undefined ? round2(data.geekRating) : undefined)
+    convertFunction: data => round2(data.geekRating)
   },
   {
     key: "minPlayers",
@@ -134,8 +134,7 @@ const TableColumns = [
     max: 5,
     step: 0.1,
     className: "tr",
-    convertFunction: data =>
-      data.averageWeight !== undefined ? round2(data.averageWeight) : undefined
+    convertFunction: data => round2(data.averageWeight)
   },
   {
     key: "categories",
