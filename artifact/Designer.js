@@ -895,10 +895,6 @@ const Designer = {
     "id": 4407,
     "name": "Helge Ostertag"
   },
-  "4700": {
-    "id": 4700,
-    "name": "Susumu Kawasaki"
-  },
   "4725": {
     "id": 4725,
     "name": "Michael Adams"
@@ -2163,6 +2159,10 @@ const Designer = {
     "id": 62238,
     "name": "Keith Matejka"
   },
+  "62511": {
+    "id": 62511,
+    "name": "Eduardo Baraf"
+  },
   "62640": {
     "id": 62640,
     "name": "Jamey Stegmaier"
@@ -2846,6 +2846,10 @@ const Designer = {
   "102535": {
     "id": 102535,
     "name": "Herve Lemaître"
+  },
+  "102932": {
+    "id": 102932,
+    "name": "Grace Holdinghaus"
   },
   "103554": {
     "id": 103554,
