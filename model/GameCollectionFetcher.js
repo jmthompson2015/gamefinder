@@ -28,6 +28,9 @@ const parseUserGameIds = xmlDocument => {
 };
 
 const NIC_GAME_IDS = [
+  222514, // Batman: Gotham City Chronicles
+  124361, // Concordia
+  269595, // Copenhagen
   193738, // Great Western Trail
   250458, // Gugong
   252446, // Key Flow
