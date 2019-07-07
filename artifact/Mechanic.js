@@ -95,10 +95,6 @@ const Mechanic = {
     "id": 2035,
     "name": "Roll / Spin and Move"
   },
-  "2038": {
-    "id": 2038,
-    "name": "Singing"
-  },
   "2039": {
     "id": 2039,
     "name": "Line Drawing"
