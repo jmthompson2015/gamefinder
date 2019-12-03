@@ -291,10 +291,6 @@ const Category = {
     "id": 1118,
     "name": "Mature / Adult"
   },
-  "1119": {
-    "id": 1119,
-    "name": "Game System"
-  },
   "1120": {
     "id": 1120,
     "name": "Print & Play"

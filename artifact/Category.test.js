@@ -16,7 +16,7 @@ QUnit.test("Category properties Science Fiction", assert => {
 
 QUnit.test("Category keys", assert => {
   // Setup.
-  const length = 81;
+  const length = 80;
 
   // Run.
   const keys = Object.keys(Category);

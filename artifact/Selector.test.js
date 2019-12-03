@@ -70,7 +70,7 @@ QUnit.test("mechanic()", assert => {
   // Verify.
   assert.ok(result);
   assert.equal(result.id, id);
-  assert.equal(result.name, "Action Point Allowance System");
+  assert.equal(result.name, "Action Points");
 });
 
 QUnit.test("mechanicsByIds()", assert => {

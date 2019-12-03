@@ -1,7 +1,7 @@
 const Mechanic = {
   "2001": {
     "id": 2001,
-    "name": "Action Point Allowance System"
+    "name": "Action Points"
   },
   "2002": {
     "id": 2002,
@@ -45,7 +45,7 @@ const Mechanic = {
   },
   "2014": {
     "id": 2014,
-    "name": "Betting/Wagering"
+    "name": "Betting and Bluffing"
   },
   "2015": {
     "id": 2015,
@@ -65,7 +65,7 @@ const Mechanic = {
   },
   "2019": {
     "id": 2019,
-    "name": "Partnerships"
+    "name": "Team-Based Game"
   },
   "2020": {
     "id": 2020,
@@ -77,11 +77,11 @@ const Mechanic = {
   },
   "2023": {
     "id": 2023,
-    "name": "Cooperative Play"
+    "name": "Cooperative Game"
   },
   "2026": {
     "id": 2026,
-    "name": "Hex-and-Counter"
+    "name": "Hexagon Grid"
   },
   "2027": {
     "id": 2027,
@@ -109,7 +109,7 @@ const Mechanic = {
   },
   "2043": {
     "id": 2043,
-    "name": "Area Enclosure"
+    "name": "Enclosure"
   },
   "2046": {
     "id": 2046,
@@ -153,11 +153,11 @@ const Mechanic = {
   },
   "2080": {
     "id": 2080,
-    "name": "Area Control / Area Influence"
+    "name": "Area Majority / Influence"
   },
   "2081": {
     "id": 2081,
-    "name": "Route/Network Building"
+    "name": "Network and Route Building"
   },
   "2082": {
     "id": 2082,
@@ -165,7 +165,7 @@ const Mechanic = {
   },
   "2661": {
     "id": 2661,
-    "name": "Press Your Luck"
+    "name": "Push Your Luck"
   },
   "2663": {
     "id": 2663,
@@ -173,7 +173,7 @@ const Mechanic = {
   },
   "2664": {
     "id": 2664,
-    "name": "Deck / Pool Building"
+    "name": "Deck, Bag, and Pool Building"
   },
   "2676": {
     "id": 2676,
@@ -189,7 +189,7 @@ const Mechanic = {
   },
   "2689": {
     "id": 2689,
-    "name": "Action / Movement Programming"
+    "name": "Action Queue"
   },
   "2813": {
     "id": 2813,
@@ -197,7 +197,419 @@ const Mechanic = {
   },
   "2814": {
     "id": 2814,
-    "name": "Hidden Traitor"
+    "name": "Traitor Game"
+  },
+  "2819": {
+    "id": 2819,
+    "name": "Solo / Solitaire Game"
+  },
+  "2820": {
+    "id": 2820,
+    "name": "Semi-Cooperative Game"
+  },
+  "2822": {
+    "id": 2822,
+    "name": "Scenario / Mission / Campaign Game"
+  },
+  "2823": {
+    "id": 2823,
+    "name": "Score-and-Reset Game"
+  },
+  "2824": {
+    "id": 2824,
+    "name": "Legacy Game"
+  },
+  "2826": {
+    "id": 2826,
+    "name": "Turn Order: Stat-Based"
+  },
+  "2827": {
+    "id": 2827,
+    "name": "Turn Order: Auction"
+  },
+  "2828": {
+    "id": 2828,
+    "name": "Turn Order: Progressive"
+  },
+  "2829": {
+    "id": 2829,
+    "name": "Turn Order: Claim Action"
+  },
+  "2830": {
+    "id": 2830,
+    "name": "Turn Order: Pass Order"
+  },
+  "2831": {
+    "id": 2831,
+    "name": "Real-Time"
+  },
+  "2833": {
+    "id": 2833,
+    "name": "Turn Order: Role Order"
+  },
+  "2834": {
+    "id": 2834,
+    "name": "Action Timer"
+  },
+  "2838": {
+    "id": 2838,
+    "name": "Action Drafting"
+  },
+  "2839": {
+    "id": 2839,
+    "name": "Action Retrieval"
+  },
+  "2840": {
+    "id": 2840,
+    "name": "Action/Event"
+  },
+  "2841": {
+    "id": 2841,
+    "name": "Command Cards"
+  },
+  "2843": {
+    "id": 2843,
+    "name": "Follow"
+  },
+  "2844": {
+    "id": 2844,
+    "name": "Order Counters"
+  },
+  "2846": {
+    "id": 2846,
+    "name": "Once-Per-Game Abilities"
+  },
+  "2847": {
+    "id": 2847,
+    "name": "Advantage Token"
+  },
+  "2849": {
+    "id": 2849,
+    "name": "Tech Trees / Tech Tracks"
+  },
+  "2850": {
+    "id": 2850,
+    "name": "Events"
+  },
+  "2851": {
+    "id": 2851,
+    "name": "Narrative Choice / Paragraph"
+  },
+  "2853": {
+    "id": 2853,
+    "name": "Stat Check Resolution"
+  },
+  "2854": {
+    "id": 2854,
+    "name": "Critical Hits and Failures"
+  },
+  "2855": {
+    "id": 2855,
+    "name": "Ratio / Combat Results Table"
+  },
+  "2856": {
+    "id": 2856,
+    "name": "Die Icon Resolution"
+  },
+  "2857": {
+    "id": 2857,
+    "name": "Card Play Conflict Resolution"
+  },
+  "2860": {
+    "id": 2860,
+    "name": "Flicking"
+  },
+  "2861": {
+    "id": 2861,
+    "name": "Static Capture"
+  },
+  "2863": {
+    "id": 2863,
+    "name": "Minimap Resolution"
+  },
+  "2864": {
+    "id": 2864,
+    "name": "Force Commitment"
+  },
+  "2866": {
+    "id": 2866,
+    "name": "Targeted Clues"
+  },
+  "2870": {
+    "id": 2870,
+    "name": "Re-rolling and Locking"
+  },
+  "2871": {
+    "id": 2871,
+    "name": "Kill Steal"
+  },
+  "2874": {
+    "id": 2874,
+    "name": "Victory Points as a Resource"
+  },
+  "2875": {
+    "id": 2875,
+    "name": "End Game Bonuses"
+  },
+  "2876": {
+    "id": 2876,
+    "name": "Race"
+  },
+  "2882": {
+    "id": 2882,
+    "name": "Elapsed Real Time Ending"
+  },
+  "2884": {
+    "id": 2884,
+    "name": "Sudden Death Ending"
+  },
+  "2886": {
+    "id": 2886,
+    "name": "King of the Hill"
+  },
+  "2887": {
+    "id": 2887,
+    "name": "Catch the Leader"
+  },
+  "2888": {
+    "id": 2888,
+    "name": "Tug of War"
+  },
+  "2889": {
+    "id": 2889,
+    "name": "Highest-Lowest Scoring"
+  },
+  "2891": {
+    "id": 2891,
+    "name": "Hidden Roles"
+  },
+  "2892": {
+    "id": 2892,
+    "name": "Roles with Asymmetric Information"
+  },
+  "2893": {
+    "id": 2893,
+    "name": "Communication Limits"
+  },
+  "2897": {
+    "id": 2897,
+    "name": "Variable Setup"
+  },
+  "2900": {
+    "id": 2900,
+    "name": "Market"
+  },
+  "2901": {
+    "id": 2901,
+    "name": "Delayed Purchase"
+  },
+  "2902": {
+    "id": 2902,
+    "name": "Income"
+  },
+  "2903": {
+    "id": 2903,
+    "name": "Automatic Resource Growth"
+  },
+  "2904": {
+    "id": 2904,
+    "name": "Loans"
+  },
+  "2906": {
+    "id": 2906,
+    "name": "I Cut, You Choose"
+  },
+  "2909": {
+    "id": 2909,
+    "name": "Random Production"
+  },
+  "2910": {
+    "id": 2910,
+    "name": "Investment"
+  },
+  "2911": {
+    "id": 2911,
+    "name": "Ownership"
+  },
+  "2912": {
+    "id": 2912,
+    "name": "Contracts"
+  },
+  "2913": {
+    "id": 2913,
+    "name": "Bribery"
+  },
+  "2914": {
+    "id": 2914,
+    "name": "Increase Value of Unchosen Resources"
+  },
+  "2915": {
+    "id": 2915,
+    "name": "Negotiation"
+  },
+  "2916": {
+    "id": 2916,
+    "name": "Alliances"
+  },
+  "2918": {
+    "id": 2918,
+    "name": "Auction: English"
+  },
+  "2919": {
+    "id": 2919,
+    "name": "Auction: Turn Order Until Pass"
+  },
+  "2920": {
+    "id": 2920,
+    "name": "Auction: Sealed Bid"
+  },
+  "2922": {
+    "id": 2922,
+    "name": "Constrained Bidding"
+  },
+  "2923": {
+    "id": 2923,
+    "name": "Auction: Once Around"
+  },
+  "2924": {
+    "id": 2924,
+    "name": "Auction: Dutch"
+  },
+  "2926": {
+    "id": 2926,
+    "name": "Selection Order Bid"
+  },
+  "2928": {
+    "id": 2928,
+    "name": "Closed Economy Auction"
+  },
+  "2931": {
+    "id": 2931,
+    "name": "Auction: Fixed Placement"
+  },
+  "2932": {
+    "id": 2932,
+    "name": "Auction: Dutch Priority"
+  },
+  "2933": {
+    "id": 2933,
+    "name": "Worker Placement, Different Worker Types"
+  },
+  "2935": {
+    "id": 2935,
+    "name": "Worker Placement with Dice Workers"
+  },
+  "2939": {
+    "id": 2939,
+    "name": "Track Movement"
+  },
+  "2940": {
+    "id": 2940,
+    "name": "Square Grid"
+  },
+  "2944": {
+    "id": 2944,
+    "name": "Three Dimensional Movement"
+  },
+  "2946": {
+    "id": 2946,
+    "name": "Pattern Movement"
+  },
+  "2947": {
+    "id": 2947,
+    "name": "Movement Points"
+  },
+  "2948": {
+    "id": 2948,
+    "name": "Resource to Move"
+  },
+  "2950": {
+    "id": 2950,
+    "name": "Different Dice Movement"
+  },
+  "2953": {
+    "id": 2953,
+    "name": "Programmed Movement"
+  },
+  "2954": {
+    "id": 2954,
+    "name": "Relative Movement"
+  },
+  "2955": {
+    "id": 2955,
+    "name": "Mancala"
+  },
+  "2956": {
+    "id": 2956,
+    "name": "Chaining"
+  },
+  "2957": {
+    "id": 2957,
+    "name": "Bias"
+  },
+  "2958": {
+    "id": 2958,
+    "name": "Moving Multiple Units"
+  },
+  "2959": {
+    "id": 2959,
+    "name": "Map Addition"
+  },
+  "2960": {
+    "id": 2960,
+    "name": "Map Reduction"
+  },
+  "2961": {
+    "id": 2961,
+    "name": "Map Deformation"
+  },
+  "2962": {
+    "id": 2962,
+    "name": "Move Through Deck"
+  },
+  "2963": {
+    "id": 2963,
+    "name": "Movement Template"
+  },
+  "2965": {
+    "id": 2965,
+    "name": "Multiple Maps"
+  },
+  "2967": {
+    "id": 2967,
+    "name": "Hidden Movement"
+  },
+  "2975": {
+    "id": 2975,
+    "name": "Line of Sight"
+  },
+  "2978": {
+    "id": 2978,
+    "name": "Grid Coverage"
+  },
+  "2980": {
+    "id": 2980,
+    "name": "Ladder Climbing"
+  },
+  "2981": {
+    "id": 2981,
+    "name": "Melding and Splaying"
+  },
+  "2984": {
+    "id": 2984,
+    "name": "Drafting"
+  },
+  "2987": {
+    "id": 2987,
+    "name": "Hidden Victory Points"
+  },
+  "2988": {
+    "id": 2988,
+    "name": "Stacking and Balancing"
+  },
+  "2990": {
+    "id": 2990,
+    "name": "Cube Tower"
   }
 }
 
