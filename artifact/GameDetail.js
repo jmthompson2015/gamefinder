@@ -2306,6 +2306,31 @@ const GameDetail = {
       2874
     ]
   },
+  "1198": {
+    "id": 1198,
+    "boardGameRank": 1306,
+    "title": "SET",
+    "yearPublished": 1988,
+    "geekRating": 6.31275,
+    "minPlayers": 2,
+    "maxPlayers": 20,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.6881,
+    "categoryIds": [
+      1002,
+      1028,
+      1037
+    ],
+    "designerIds": [
+      620
+    ],
+    "mechanicIds": [
+      2060,
+      2004
+    ]
+  },
   "1261": {
     "id": 1261,
     "boardGameRank": 876,
@@ -2511,6 +2536,29 @@ const GameDetail = {
       2014,
       2040,
       2009
+    ]
+  },
+  "1472": {
+    "id": 1472,
+    "boardGameRank": 4325,
+    "title": "Five Crowns",
+    "yearPublished": 1996,
+    "geekRating": 5.71325,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.2589,
+    "categoryIds": [
+      1002
+    ],
+    "designerIds": [
+      620
+    ],
+    "mechanicIds": [
+      2040,
+      2004
     ]
   },
   "1513": {
@@ -3108,6 +3156,54 @@ const GameDetail = {
       2828,
       2079
     ]
+  },
+  "3090": {
+    "id": 3090,
+    "boardGameRank": 16540,
+    "title": "Doctor Who: The Game of Time & Space",
+    "yearPublished": 1980,
+    "geekRating": 5.4798,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 3,
+    "minPlayTime": 90,
+    "maxPlayTime": 90,
+    "averageWeight": 1.9091,
+    "categoryIds": [
+      1020,
+      1046,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      128
+    ],
+    "mechanicIds": [
+      2004
+    ]
+  },
+  "3122": {
+    "id": 3122,
+    "boardGameRank": 17952,
+    "title": "Doctor Who Collectible Card Game",
+    "yearPublished": 1996,
+    "geekRating": 5.37702,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.7778,
+    "categoryIds": [
+      1002,
+      1044,
+      1064
+    ],
+    "designerIds": [
+      1291,
+      1292
+    ],
+    "mechanicIds": []
   },
   "3201": {
     "id": 3201,
@@ -7404,6 +7500,61 @@ const GameDetail = {
       2004
     ]
   },
+  "34499": {
+    "id": 34499,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: The Gathering Storm",
+    "yearPublished": 2008,
+    "geekRating": 7.73893,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9837,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2040,
+      2020,
+      2079,
+      2015
+    ]
+  },
+  "34583": {
+    "id": 34583,
+    "boardGameRank": 17308,
+    "title": "Set Cubed",
+    "yearPublished": 2008,
+    "geekRating": 5.45794,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 1.963,
+    "categoryIds": [
+      1009,
+      1017
+    ],
+    "designerIds": [
+      620
+    ],
+    "mechanicIds": [
+      2072,
+      2048,
+      2060
+    ]
+  },
   "34635": {
     "id": 34635,
     "boardGameRank": 91,
@@ -8253,6 +8404,35 @@ const GameDetail = {
     ],
     "mechanicIds": [
       2041,
+      2040,
+      2020,
+      2015
+    ]
+  },
+  "40210": {
+    "id": 40210,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: Rebel vs Imperium",
+    "yearPublished": 2009,
+    "geekRating": 7.44733,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.0665,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
       2040,
       2020,
       2015
@@ -10168,6 +10348,35 @@ const GameDetail = {
       2040
     ]
   },
+  "66121": {
+    "id": 66121,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: The Brink of War",
+    "yearPublished": 2010,
+    "geekRating": 7.09465,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.3559,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2040,
+      2020,
+      2015
+    ]
+  },
   "66188": {
     "id": 66188,
     "boardGameRank": 281,
@@ -11799,6 +12008,37 @@ const GameDetail = {
       2017
     ]
   },
+  "92932": {
+    "id": 92932,
+    "boardGameRank": null,
+    "title": "Race for the Galaxy: Alien Artifacts",
+    "yearPublished": 2013,
+    "geekRating": 6.51296,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.9167,
+    "categoryIds": [
+      1002,
+      1015,
+      1021,
+      1042,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      150
+    ],
+    "mechanicIds": [
+      2676,
+      2040,
+      2020,
+      2002,
+      2015
+    ]
+  },
   "93260": {
     "id": 93260,
     "boardGameRank": 187,
@@ -11852,6 +12092,33 @@ const GameDetail = {
       2018,
       2072,
       2019,
+      2015
+    ]
+  },
+  "94288": {
+    "id": 94288,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hunt for Gollum",
+    "yearPublished": 2011,
+    "geekRating": 6.4464,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8272,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -11913,6 +12180,33 @@ const GameDetail = {
       2007,
       2661,
       2035,
+      2015
+    ]
+  },
+  "95338": {
+    "id": 95338,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Conflict at the Carrock",
+    "yearPublished": 2011,
+    "geekRating": 6.55886,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8772,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -12114,6 +12408,33 @@ const GameDetail = {
       2015
     ]
   },
+  "98113": {
+    "id": 98113,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - A Journey to Rhosgobel",
+    "yearPublished": 2011,
+    "geekRating": 6.37717,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8542,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "98229": {
     "id": 98229,
     "boardGameRank": 651,
@@ -12165,6 +12486,33 @@ const GameDetail = {
       2040
     ]
   },
+  "98634": {
+    "id": 98634,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hills of Emyn Muil",
+    "yearPublished": 2011,
+    "geekRating": 6.22059,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.7021,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "98778": {
     "id": 98778,
     "boardGameRank": 332,
@@ -12191,6 +12539,33 @@ const GameDetail = {
       2040,
       2047,
       2004
+    ]
+  },
+  "100092": {
+    "id": 100092,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dead Marshes",
+    "yearPublished": 2011,
+    "geekRating": 6.27059,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "100423": {
@@ -12282,6 +12657,30 @@ const GameDetail = {
       2676,
       2020,
       2015
+    ]
+  },
+  "102104": {
+    "id": 102104,
+    "boardGameRank": 1944,
+    "title": "Star Fluxx",
+    "yearPublished": 2011,
+    "geekRating": 6.08379,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 4,
+    "minPlayTime": 10,
+    "maxPlayTime": 40,
+    "averageWeight": 1.4335,
+    "categoryIds": [
+      1002,
+      1016
+    ],
+    "designerIds": [
+      122
+    ],
+    "mechanicIds": [
+      2040,
+      2004
     ]
   },
   "102548": {
@@ -12400,6 +12799,33 @@ const GameDetail = {
       2914,
       2002,
       2082
+    ]
+  },
+  "102875": {
+    "id": 102875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Return to Mirkwood",
+    "yearPublished": 2011,
+    "geekRating": 6.36311,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9231,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "103343": {
@@ -12880,6 +13306,34 @@ const GameDetail = {
       2897
     ]
   },
+  "107933": {
+    "id": 107933,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Khazad-dûm",
+    "yearPublished": 2011,
+    "geekRating": 6.69596,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "108044": {
     "id": 108044,
     "boardGameRank": 2332,
@@ -13039,6 +13493,34 @@ const GameDetail = {
       2013,
       2079,
       2082
+    ]
+  },
+  "110193": {
+    "id": 110193,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Redhorn Gate",
+    "yearPublished": 2012,
+    "geekRating": 6.15277,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6818,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "110277": {
@@ -13252,6 +13734,34 @@ const GameDetail = {
       2015
     ]
   },
+  "112064": {
+    "id": 112064,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Road to Rivendell",
+    "yearPublished": 2012,
+    "geekRating": 6.09869,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6842,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "113294": {
     "id": 113294,
     "boardGameRank": 482,
@@ -13345,6 +13855,34 @@ const GameDetail = {
       2040
     ]
   },
+  "114351": {
+    "id": 114351,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Watcher in the Water",
+    "yearPublished": 2012,
+    "geekRating": 6.1926,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.7143,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "115746": {
     "id": 115746,
     "boardGameRank": 12,
@@ -13436,6 +13974,34 @@ const GameDetail = {
       2961,
       2004,
       2082
+    ]
+  },
+  "117929": {
+    "id": 117929,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Long Dark",
+    "yearPublished": 2012,
+    "geekRating": 6.04418,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.5882,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "117959": {
@@ -13590,6 +14156,34 @@ const GameDetail = {
       2080,
       2012,
       2041
+    ]
+  },
+  "119640": {
+    "id": 119640,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Foundations of Stone",
+    "yearPublished": 2012,
+    "geekRating": 6.22512,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.65,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "119788": {
@@ -13816,6 +14410,34 @@ const GameDetail = {
       2011
     ]
   },
+  "121900": {
+    "id": 121900,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Shadow and Flame",
+    "yearPublished": 2012,
+    "geekRating": 6.12957,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "121921": {
     "id": 121921,
     "boardGameRank": 44,
@@ -14019,6 +14641,161 @@ const GameDetail = {
       2015
     ]
   },
+  "123695": {
+    "id": 123695,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hobbit: Over Hill and Under Hill",
+    "yearPublished": 2012,
+    "geekRating": 6.39204,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.1081,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "123755": {
+    "id": 123755,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - X-Wing Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.73717,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2951,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123759": {
+    "id": 123759,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Fighter Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.64992,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2222,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123763": {
+    "id": 123763,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Y-Wing Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.73385,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.3077,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "123764": {
+    "id": 123764,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Advanced Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.78563,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.2763,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "123955": {
     "id": 123955,
     "boardGameRank": 862,
@@ -14044,6 +14821,33 @@ const GameDetail = {
       2040,
       2026,
       2070
+    ]
+  },
+  "124185": {
+    "id": 124185,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Unity Hero Character",
+    "yearPublished": 2012,
+    "geekRating": 6.51536,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.303,
+    "categoryIds": [
+      1002,
+      1116,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
     ]
   },
   "124361": {
@@ -14379,6 +15183,31 @@ const GameDetail = {
       2676,
       2081,
       2082
+    ]
+  },
+  "126951": {
+    "id": 126951,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Ambuscade Villain Character",
+    "yearPublished": 2012,
+    "geekRating": 6.33587,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.1852,
+    "categoryIds": [
+      1002,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023
     ]
   },
   "127023": {
@@ -14765,6 +15594,141 @@ const GameDetail = {
       2001
     ]
   },
+  "129430": {
+    "id": 129430,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - A-Wing Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.64879,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.3778,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129431": {
+    "id": 129431,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Interceptor Expansion Pack",
+    "yearPublished": 2012,
+    "geekRating": 6.75266,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.2955,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129432": {
+    "id": 129432,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Millennium Falcon Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 7.02416,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.3906,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "129433": {
+    "id": 129433,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Slave I Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.78746,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4182,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
   "129437": {
     "id": 129437,
     "boardGameRank": 147,
@@ -14790,6 +15754,35 @@ const GameDetail = {
       2820,
       2819,
       2897
+    ]
+  },
+  "129480": {
+    "id": 129480,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Heirs of Numenor",
+    "yearPublished": 2012,
+    "geekRating": 6.17229,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3.1379,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "129622": {
@@ -14868,6 +15861,33 @@ const GameDetail = {
     "mechanicIds": [
       2014,
       2040
+    ]
+  },
+  "130715": {
+    "id": 130715,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Hobbit: On the Doorstep",
+    "yearPublished": 2013,
+    "geekRating": 6.17969,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3.12,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "130960": {
@@ -15067,6 +16087,35 @@ const GameDetail = {
       2888
     ]
   },
+  "132020": {
+    "id": 132020,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Steward's Fear",
+    "yearPublished": 2013,
+    "geekRating": 5.95527,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 1,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "132028": {
     "id": 132028,
     "boardGameRank": 573,
@@ -15185,6 +16234,35 @@ const GameDetail = {
       2015
     ]
   },
+  "133167": {
+    "id": 133167,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Druadan Forest",
+    "yearPublished": 2013,
+    "geekRating": 5.86815,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.9091,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "133473": {
     "id": 133473,
     "boardGameRank": 405,
@@ -15208,6 +16286,32 @@ const GameDetail = {
       2040,
       2004,
       2020
+    ]
+  },
+  "133597": {
+    "id": 133597,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Miss Information Villain Character",
+    "yearPublished": 2013,
+    "geekRating": 6.31659,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.381,
+    "categoryIds": [
+      1002,
+      1042
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243,
+      68036
+    ],
+    "mechanicIds": [
+      2023
     ]
   },
   "133848": {
@@ -15326,6 +16430,90 @@ const GameDetail = {
       2017
     ]
   },
+  "134388": {
+    "id": 134388,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Silver Gulch, 1883 Environment",
+    "yearPublished": 2013,
+    "geekRating": 6.32057,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.2174,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "134389": {
+    "id": 134389,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Scholar Hero Character",
+    "yearPublished": 2013,
+    "geekRating": 6.38889,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.3636,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "134396": {
+    "id": 134396,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Final Wasteland Environment",
+    "yearPublished": 2013,
+    "geekRating": 6.31567,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
   "134453": {
     "id": 134453,
     "boardGameRank": 988,
@@ -15377,6 +16565,35 @@ const GameDetail = {
       2080,
       2040,
       2686,
+      2015
+    ]
+  },
+  "134946": {
+    "id": 134946,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Encounter at Amon Dîn",
+    "yearPublished": 2013,
+    "geekRating": 5.87317,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 2.7778,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -15780,6 +16997,35 @@ const GameDetail = {
       2015
     ]
   },
+  "137773": {
+    "id": 137773,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Assault on Osgiliath",
+    "yearPublished": 2013,
+    "geekRating": 5.84842,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "137988": {
     "id": 137988,
     "boardGameRank": 505,
@@ -15841,6 +17087,35 @@ const GameDetail = {
       2007,
       2686,
       2008,
+      2015
+    ]
+  },
+  "139413": {
+    "id": 139413,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Blood of Gondor",
+    "yearPublished": 2013,
+    "geekRating": 5.82904,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -15952,6 +17227,34 @@ const GameDetail = {
       2040,
       2078,
       2082
+    ]
+  },
+  "140917": {
+    "id": 140917,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Morgul Vale",
+    "yearPublished": 2013,
+    "geekRating": 5.86027,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      62803
+    ],
+    "mechanicIds": [
+      2023,
+      2040
     ]
   },
   "140933": {
@@ -16151,6 +17454,169 @@ const GameDetail = {
       2026,
       2011,
       2002
+    ]
+  },
+  "142527": {
+    "id": 142527,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Lambda-class Shuttle Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.33238,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.619,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142545": {
+    "id": 142545,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - HWK-290 Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.24479,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.3333,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142546": {
+    "id": 142546,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - B-Wing Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.61724,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.6786,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142547": {
+    "id": 142547,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Bomber Expansion Pack",
+    "yearPublished": 2013,
+    "geekRating": 6.3878,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "142875": {
+    "id": 142875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Black Riders",
+    "yearPublished": 2013,
+    "geekRating": 6.25834,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.9583,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "142992": {
@@ -16651,6 +18117,31 @@ const GameDetail = {
       2004
     ]
   },
+  "145976": {
+    "id": 145976,
+    "boardGameRank": 1963,
+    "title": "Talon",
+    "yearPublished": 2016,
+    "geekRating": 6.07852,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 90,
+    "averageWeight": 2.5238,
+    "categoryIds": [
+      1016,
+      1019
+    ],
+    "designerIds": [
+      9719
+    ],
+    "mechanicIds": [
+      2676,
+      2026,
+      2015
+    ]
+  },
   "146021": {
     "id": 146021,
     "boardGameRank": 62,
@@ -16776,6 +18267,34 @@ const GameDetail = {
       2015
     ]
   },
+  "146574": {
+    "id": 146574,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Voice of Isengard",
+    "yearPublished": 2014,
+    "geekRating": 5.9212,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "146652": {
     "id": 146652,
     "boardGameRank": 100,
@@ -16806,6 +18325,71 @@ const GameDetail = {
       2685,
       2819,
       2019,
+      2015
+    ]
+  },
+  "146757": {
+    "id": 146757,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Rebel Transport Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.00135,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.9333,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      60239,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "146766": {
+    "id": 146766,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Tantive IV Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.04303,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.8667,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
       2015
     ]
   },
@@ -16951,6 +18535,35 @@ const GameDetail = {
       2002
     ]
   },
+  "147723": {
+    "id": 147723,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Road Darkens",
+    "yearPublished": 2014,
+    "geekRating": 5.97113,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "147949": {
     "id": 147949,
     "boardGameRank": 350,
@@ -17005,6 +18618,44 @@ const GameDetail = {
       2041,
       2912,
       2004
+    ]
+  },
+  "148259": {
+    "id": 148259,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Aces Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.52009,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2685,
+      2078,
+      2020,
+      2019,
+      2015
     ]
   },
   "148319": {
@@ -17511,6 +19162,64 @@ const GameDetail = {
       2004
     ]
   },
+  "153130": {
+    "id": 153130,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dunland Trap",
+    "yearPublished": 2014,
+    "geekRating": 5.78749,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "153527": {
+    "id": 153527,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Rook City & Infernal Relics",
+    "yearPublished": 2013,
+    "geekRating": 6.45748,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.6786,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      4819,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "153938": {
     "id": 153938,
     "boardGameRank": 431,
@@ -17673,6 +19382,171 @@ const GameDetail = {
       2040,
       2007,
       2002
+    ]
+  },
+  "154493": {
+    "id": 154493,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Three Trials",
+    "yearPublished": 2014,
+    "geekRating": 5.80514,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "154766": {
+    "id": 154766,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Z-95 Headhunter Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.14877,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.1818,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154767": {
+    "id": 154767,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Defender Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.25367,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.4737,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154768": {
+    "id": 154768,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - E-Wing Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.24622,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "154769": {
+    "id": 154769,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Phantom Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.3891,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
     ]
   },
   "154809": {
@@ -18090,6 +19964,34 @@ const GameDetail = {
       2819
     ]
   },
+  "156416": {
+    "id": 156416,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Trouble in Tharbad",
+    "yearPublished": 2014,
+    "geekRating": 5.75636,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 2.8333,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "156546": {
     "id": 156546,
     "boardGameRank": 385,
@@ -18167,6 +20069,40 @@ const GameDetail = {
     "mechanicIds": [
       2023,
       2664
+    ]
+  },
+  "156770": {
+    "id": 156770,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Rebel Aces Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.3524,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 30,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
     ]
   },
   "156776": {
@@ -18782,6 +20718,34 @@ const GameDetail = {
       2015
     ]
   },
+  "160464": {
+    "id": 160464,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Antlered Crown",
+    "yearPublished": 2014,
+    "geekRating": 5.73083,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "160477": {
     "id": 160477,
     "boardGameRank": 213,
@@ -18911,6 +20875,64 @@ const GameDetail = {
       2048,
       2004,
       2002
+    ]
+  },
+  "161031": {
+    "id": 161031,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - VT-49 Decimator Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.14504,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4545,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2020,
+      2015
+    ]
+  },
+  "161032": {
+    "id": 161032,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - YT-2400 Freighter Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.1587,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.4545,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2020,
+      2015
     ]
   },
   "161417": {
@@ -19395,6 +21417,62 @@ const GameDetail = {
       2082
     ]
   },
+  "163676": {
+    "id": 163676,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Omnitron IV Environment",
+    "yearPublished": 2015,
+    "geekRating": 5.99248,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
+  "163686": {
+    "id": 163686,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Wager Master Villain Character",
+    "yearPublished": 2015,
+    "geekRating": 5.92054,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.1429,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2015
+    ]
+  },
   "163745": {
     "id": 163745,
     "boardGameRank": 228,
@@ -19547,6 +21625,98 @@ const GameDetail = {
       2015
     ]
   },
+  "164165": {
+    "id": 164165,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - StarViper Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.9508,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164166": {
+    "id": 164166,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - M3-A Interceptor Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.83586,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164168": {
+    "id": 164168,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - IG-2000 Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 5.92873,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "164169": {
+    "id": 164169,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Most Wanted Expansion Pack",
+    "yearPublished": 2014,
+    "geekRating": 6.15511,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2.125,
+    "categoryIds": [
+      2650,
+      1042,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
   "164265": {
     "id": 164265,
     "boardGameRank": 779,
@@ -19575,6 +21745,33 @@ const GameDetail = {
       2027
     ]
   },
+  "164313": {
+    "id": 164313,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Lost Realm",
+    "yearPublished": 2015,
+    "geekRating": 5.82816,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 1,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040
+    ]
+  },
   "164338": {
     "id": 164338,
     "boardGameRank": 863,
@@ -19600,6 +21797,63 @@ const GameDetail = {
       2041,
       2011,
       2002
+    ]
+  },
+  "164340": {
+    "id": 164340,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Guise Hero Character",
+    "yearPublished": 2015,
+    "geekRating": 6.12928,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 1,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.0769,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
+  "164665": {
+    "id": 164665,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Treason of Saruman",
+    "yearPublished": 2015,
+    "geekRating": 5.82755,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 2.8,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "164928": {
@@ -19863,6 +22117,118 @@ const GameDetail = {
       2079
     ]
   },
+  "166702": {
+    "id": 166702,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Bases & Battleships",
+    "yearPublished": 2014,
+    "geekRating": 6.78122,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166704": {
+    "id": 166704,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Fleets & Fortresses",
+    "yearPublished": 2014,
+    "geekRating": 6.72946,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2.025,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166707": {
+    "id": 166707,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Events",
+    "yearPublished": 2014,
+    "geekRating": 6.39343,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 1.9149,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
+  "166708": {
+    "id": 166708,
+    "boardGameRank": null,
+    "title": "Star Realms: Crisis - Heroes",
+    "yearPublished": 2014,
+    "geekRating": 6.34052,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1042,
+      1046,
+      1016
+    ],
+    "designerIds": [
+      4113,
+      4059
+    ],
+    "mechanicIds": [
+      2041,
+      2664,
+      2686
+    ]
+  },
   "167355": {
     "id": 167355,
     "boardGameRank": 51,
@@ -20038,6 +22404,174 @@ const GameDetail = {
       2080,
       2040,
       2015
+    ]
+  },
+  "168927": {
+    "id": 168927,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Victory-class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.77,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.75,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "168928": {
+    "id": 168928,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - CR90 Corellian Corvette Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.78013,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "168929": {
+    "id": 168929,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Nebulon-B Frigate Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.75096,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2015
+    ]
+  },
+  "169017": {
+    "id": 169017,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Assault Frigate Mark II Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.81054,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.8333,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "169018": {
+    "id": 169018,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Gladiator-class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.86321,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "169019": {
+    "id": 169019,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Rebel Fighter Squadrons Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.88194,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
+    ]
+  },
+  "169020": {
+    "id": 169020,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Fighter Squadrons Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.85843,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.6667,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2079
     ]
   },
   "169124": {
@@ -20326,6 +22860,37 @@ const GameDetail = {
       2046,
       2955,
       2813,
+      2015
+    ]
+  },
+  "170728": {
+    "id": 170728,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Raider Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.855,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1016
+    ],
+    "designerIds": [
+      60239,
+      65291,
+      12018
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2078,
+      2020,
       2015
     ]
   },
@@ -20796,6 +23361,34 @@ const GameDetail = {
       2082
     ]
   },
+  "172680": {
+    "id": 172680,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Wastes of Eriador",
+    "yearPublished": 2015,
+    "geekRating": 5.68686,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "172818": {
     "id": 172818,
     "boardGameRank": 208,
@@ -20939,6 +23532,26 @@ const GameDetail = {
       2082
     ]
   },
+  "173899": {
+    "id": 173899,
+    "boardGameRank": 17420,
+    "title": "The Sherlock Holmes Puzzle Case",
+    "yearPublished": 2014,
+    "geekRating": 5.4521,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 1,
+    "categoryIds": [
+      1039,
+      1030,
+      1028
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "174430": {
     "id": 174430,
     "boardGameRank": 1,
@@ -20973,6 +23586,34 @@ const GameDetail = {
       2020,
       2819,
       2027,
+      2015
+    ]
+  },
+  "174565": {
+    "id": 174565,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Escape from Mount Gram",
+    "yearPublished": 2015,
+    "geekRating": 5.69664,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
       2015
     ]
   },
@@ -21175,6 +23816,155 @@ const GameDetail = {
       2079
     ]
   },
+  "175283": {
+    "id": 175283,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Class Star Destroyer Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.86878,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175284": {
+    "id": 175284,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Home One Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.80955,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      1017,
+      1042,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175285": {
+    "id": 175285,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Rogues and Villains Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.85436,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 3,
+    "categoryIds": [
+      1017,
+      1042,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2015
+    ]
+  },
+  "175286": {
+    "id": 175286,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Raider Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.72301,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1064,
+      1019
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
+  "175287": {
+    "id": 175287,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - MC30c Frigate Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.74215,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 2.3333,
+    "categoryIds": [
+      1017,
+      1042,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      46412,
+      64445,
+      21
+    ],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
   "175324": {
     "id": 175324,
     "boardGameRank": 727,
@@ -21257,6 +24047,34 @@ const GameDetail = {
       2011,
       2081,
       2020
+    ]
+  },
+  "176058": {
+    "id": 176058,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - Across the Ettenmoors",
+    "yearPublished": 2015,
+    "geekRating": 5.68926,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "176165": {
@@ -21483,6 +24301,147 @@ const GameDetail = {
       2082
     ]
   },
+  "176742": {
+    "id": 176742,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Hound's Tooth Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.85523,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      64445,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "176744": {
+    "id": 176744,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - K-wing Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.98417,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "176819": {
+    "id": 176819,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Punisher Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.8787,
+    "minPlayers": 2,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "176820": {
+    "id": 176820,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Kihraxz Fighter Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.8307,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      46412,
+      65291,
+      64445,
+      6651,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "176920": {
     "id": 176920,
     "boardGameRank": 230,
@@ -21509,6 +24468,35 @@ const GameDetail = {
       2020,
       2686,
       2833
+    ]
+  },
+  "177163": {
+    "id": 177163,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Land of Shadow",
+    "yearPublished": 2015,
+    "geekRating": 5.75004,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3.25,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "177524": {
@@ -21564,6 +24552,34 @@ const GameDetail = {
       2080,
       2018,
       2040
+    ]
+  },
+  "177608": {
+    "id": 177608,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Treachery of Rhudaur",
+    "yearPublished": 2015,
+    "geekRating": 5.67624,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "177639": {
@@ -21708,6 +24724,34 @@ const GameDetail = {
       2080,
       2041,
       2004
+    ]
+  },
+  "178862": {
+    "id": 178862,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Battle of Carn Dûm",
+    "yearPublished": 2015,
+    "geekRating": 5.66017,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 1,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "178900": {
@@ -21990,6 +25034,34 @@ const GameDetail = {
       2040
     ]
   },
+  "180695": {
+    "id": 180695,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Dread Realm",
+    "yearPublished": 2015,
+    "geekRating": 5.67203,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 1,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      69895,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
+    ]
+  },
   "180899": {
     "id": 180899,
     "boardGameRank": 925,
@@ -22159,6 +25231,52 @@ const GameDetail = {
       2015
     ]
   },
+  "181682": {
+    "id": 181682,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: The Celestial Tribunal Environment",
+    "yearPublished": 2015,
+    "geekRating": 5.84967,
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "bestWithPlayers": 5,
+    "minPlayTime": 30,
+    "maxPlayTime": 60,
+    "averageWeight": 1,
+    "categoryIds": [
+      1002,
+      1116,
+      1042,
+      1046
+    ],
+    "designerIds": [
+      50244,
+      50245,
+      50243
+    ],
+    "mechanicIds": [
+      2023
+    ]
+  },
+  "181683": {
+    "id": 181683,
+    "boardGameRank": null,
+    "title": "Sentinels of the Multiverse: Chokepoint Villain Character",
+    "yearPublished": 2015,
+    "geekRating": 5.85279,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "bestWithPlayers": 3,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 1,
+    "categoryIds": [
+      1116,
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "181687": {
     "id": 181687,
     "boardGameRank": 647,
@@ -22302,6 +25420,111 @@ const GameDetail = {
       2015
     ]
   },
+  "182369": {
+    "id": 182369,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Inquisitor's TIE Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.82972,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182370": {
+    "id": 182370,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Ghost Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.84994,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182371": {
+    "id": 182371,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Assault Carrier Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.77177,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182373": {
+    "id": 182373,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Punishing One Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.81116,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 3,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "182374": {
+    "id": 182374,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Mist Hunter",
+    "yearPublished": 2016,
+    "geekRating": 5.74787,
+    "minPlayers": 0,
+    "maxPlayers": 0,
+    "bestWithPlayers": 0,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
   "182631": {
     "id": 182631,
     "boardGameRank": 158,
@@ -22388,6 +25611,32 @@ const GameDetail = {
       2004,
       2015,
       2897
+    ]
+  },
+  "182930": {
+    "id": 182930,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The Grey Havens",
+    "yearPublished": 2015,
+    "geekRating": 5.79194,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 90,
+    "averageWeight": 3.5,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040
     ]
   },
   "183251": {
@@ -22562,6 +25811,66 @@ const GameDetail = {
       2018,
       2072,
       2040,
+      2015
+    ]
+  },
+  "183966": {
+    "id": 183966,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - T-70 X-Wing Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.85,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.4,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
+      2015
+    ]
+  },
+  "183967": {
+    "id": 183967,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE/fo Fighter Expansion Pack",
+    "yearPublished": 2015,
+    "geekRating": 5.82196,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 20,
+    "maxPlayTime": 20,
+    "averageWeight": 2.5,
+    "categoryIds": [
+      2650,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2078,
+      2020,
       2015
     ]
   },
@@ -22982,6 +26291,39 @@ const GameDetail = {
       2078,
       2016,
       2019
+    ]
+  },
+  "190087": {
+    "id": 190087,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Imperial Veterans Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.85454,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 0,
+    "averageWeight": 2,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2043,
+      2685,
+      2078,
+      2020,
+      2019,
+      2015
     ]
   },
   "191051": {
@@ -23427,6 +26769,38 @@ const GameDetail = {
       2040,
       2685,
       2988
+    ]
+  },
+  "193065": {
+    "id": 193065,
+    "boardGameRank": null,
+    "title": "Spirit Island: Branch & Claw",
+    "yearPublished": 2017,
+    "geekRating": 7.14334,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 90,
+    "maxPlayTime": 120,
+    "averageWeight": 4,
+    "categoryIds": [
+      2726,
+      1084,
+      1042,
+      1010,
+      1046,
+      1082
+    ],
+    "designerIds": [
+      16615
+    ],
+    "mechanicIds": [
+      2041,
+      2023,
+      2040,
+      2011,
+      2020,
+      2015
     ]
   },
   "193214": {
@@ -24104,6 +27478,58 @@ const GameDetail = {
       2019
     ]
   },
+  "198786": {
+    "id": 198786,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Assault Carriers Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.64377,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2079,
+      2015
+    ]
+  },
+  "198787": {
+    "id": 198787,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada -  Rebel Transports Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.63553,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2079,
+      2015
+    ]
+  },
   "198830": {
     "id": 198830,
     "boardGameRank": 844,
@@ -24248,6 +27674,36 @@ const GameDetail = {
       2015
     ]
   },
+  "199451": {
+    "id": 199451,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Heroes of the Resistance Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.83195,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "199478": {
     "id": 199478,
     "boardGameRank": 197,
@@ -24300,6 +27756,31 @@ const GameDetail = {
       2072,
       2048,
       2004
+    ]
+  },
+  "199727": {
+    "id": 199727,
+    "boardGameRank": null,
+    "title": "Scythe: Invaders from Afar",
+    "yearPublished": 2016,
+    "geekRating": 7.81861,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 5,
+    "minPlayTime": 90,
+    "maxPlayTime": 140,
+    "averageWeight": 3.4026,
+    "categoryIds": [
+      1021,
+      1042,
+      1086,
+      1019
+    ],
+    "designerIds": [
+      62640
+    ],
+    "mechanicIds": [
+      2080
     ]
   },
   "199792": {
@@ -24383,6 +27864,32 @@ const GameDetail = {
       2082
     ]
   },
+  "200454": {
+    "id": 200454,
+    "boardGameRank": 1876,
+    "title": "Planetarium",
+    "yearPublished": 2017,
+    "geekRating": 6.10553,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 2.0588,
+    "categoryIds": [
+      1094,
+      1016,
+      1113
+    ],
+    "designerIds": [
+      91757
+    ],
+    "mechanicIds": [
+      2676,
+      2040,
+      2004
+    ]
+  },
   "200680": {
     "id": 200680,
     "boardGameRank": 79,
@@ -24437,6 +27944,169 @@ const GameDetail = {
       2020,
       2002,
       2079
+    ]
+  },
+  "201038": {
+    "id": 201038,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Interdictor Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.66907,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1064,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
+  "201039": {
+    "id": 201039,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Liberty Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.6673,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1017,
+      1042,
+      1064,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072
+    ]
+  },
+  "201310": {
+    "id": 201310,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Protectorate Starfighter Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.75388,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201311": {
+    "id": 201311,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Shadow Caster Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.70984,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201312": {
+    "id": 201312,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Special Forces TIE Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.75333,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [
+      60309,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
+    ]
+  },
+  "201313": {
+    "id": 201313,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - ARC-170 Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.76477,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
     ]
   },
   "201808": {
@@ -24494,6 +28164,34 @@ const GameDetail = {
       2002,
       2015,
       2082
+    ]
+  },
+  "201875": {
+    "id": 201875,
+    "boardGameRank": null,
+    "title": "The Lord of the Rings: The Card Game - The City of Corsairs",
+    "yearPublished": 2016,
+    "geekRating": 5.6123,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 60,
+    "averageWeight": 0,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "201921": {
@@ -24928,6 +28626,38 @@ const GameDetail = {
       2023
     ]
   },
+  "204853": {
+    "id": 204853,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - The Corellian Conflict",
+    "yearPublished": 2016,
+    "geekRating": 5.65278,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 120,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      46412,
+      97519,
+      21425
+    ],
+    "mechanicIds": [
+      2001,
+      2689,
+      2072,
+      2015
+    ]
+  },
   "205059": {
     "id": 205059,
     "boardGameRank": 29,
@@ -25254,6 +28984,111 @@ const GameDetail = {
       2981
     ]
   },
+  "207580": {
+    "id": 207580,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Sabine's TIE Fighter Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.67952,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "207581": {
+    "id": 207581,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Quadjumper Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.63757,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "207582": {
+    "id": 207582,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Upsilon-class Shuttle Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.6883,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60309,
+      60239,
+      46412,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "207691": {
     "id": 207691,
     "boardGameRank": 756,
@@ -25304,6 +29139,103 @@ const GameDetail = {
       2023,
       2040,
       2831,
+      2015
+    ]
+  },
+  "208071": {
+    "id": 208071,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Striker Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.72752,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "208072": {
+    "id": 208072,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - U-Wing Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.71542,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      60239,
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "208545": {
+    "id": 208545,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Dunwich Legacy: Expansion",
+    "yearPublished": 2017,
+    "geekRating": 7.20339,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.48,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2819,
       2015
     ]
   },
@@ -25367,6 +29299,32 @@ const GameDetail = {
       2040
     ]
   },
+  "209636": {
+    "id": 209636,
+    "boardGameRank": null,
+    "title": "Talon 1000",
+    "yearPublished": 2018,
+    "geekRating": 5.59704,
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 90,
+    "averageWeight": 2.75,
+    "categoryIds": [
+      1042,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      9719
+    ],
+    "mechanicIds": [
+      2676,
+      2026,
+      2015
+    ]
+  },
   "209685": {
     "id": 209685,
     "boardGameRank": 234,
@@ -25397,6 +29355,40 @@ const GameDetail = {
       2004
     ]
   },
+  "209728": {
+    "id": 209728,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Curse of the Rougarou: Scenario Pack",
+    "yearPublished": 2016,
+    "geekRating": 6.33823,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.4,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2001,
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
+    ]
+  },
   "209778": {
     "id": 209778,
     "boardGameRank": 406,
@@ -25425,6 +29417,108 @@ const GameDetail = {
       2011,
       2015
     ]
+  },
+  "210025": {
+    "id": 210025,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Miskatonic Museum: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.57203,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.4615,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2819,
+      2015
+    ]
+  },
+  "212317": {
+    "id": 212317,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Phoenix Home Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.58368,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "212318": {
+    "id": 212318,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Light Cruiser Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.61867,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "212350": {
+    "id": 212350,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Rebel Fighter Squadrons II Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.59516,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 3,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "212351": {
+    "id": 212351,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Fighter Squadrons II Expansion Pack",
+    "yearPublished": 2016,
+    "geekRating": 5.63017,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
   },
   "212402": {
     "id": 212402,
@@ -25479,6 +29573,36 @@ const GameDetail = {
       2072,
       2676,
       2947,
+      2015
+    ]
+  },
+  "212734": {
+    "id": 212734,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Essex County Express: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.58247,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2819,
       2015
     ]
   },
@@ -25614,6 +29738,41 @@ const GameDetail = {
       2664
     ]
   },
+  "215510": {
+    "id": 215510,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Carnevale of Horrors: Scenario Pack",
+    "yearPublished": 2016,
+    "geekRating": 6.36392,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 3,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2001,
+      2023,
+      2664,
+      2040,
+      2028,
+      2819,
+      2015
+    ]
+  },
   "216091": {
     "id": 216091,
     "boardGameRank": 981,
@@ -25718,6 +29877,35 @@ const GameDetail = {
       2023,
       2040,
       2819
+    ]
+  },
+  "216556": {
+    "id": 216556,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Blood on the Altar: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.4767,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.6364,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "216734": {
@@ -25825,6 +30013,33 @@ const GameDetail = {
     "mechanicIds": [
       2001,
       2041
+    ]
+  },
+  "217973": {
+    "id": 217973,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - C-ROC Cruiser Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.60441,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1044,
+      1042,
+      1047,
+      1064,
+      1016
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
     ]
   },
   "218333": {
@@ -25968,6 +30183,35 @@ const GameDetail = {
     ],
     "mechanicIds": [
       2001
+    ]
+  },
+  "219054": {
+    "id": 219054,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Undimensioned and Unseen: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.32506,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.5455,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "219215": {
@@ -26250,6 +30494,39 @@ const GameDetail = {
       2002
     ]
   },
+  "221725": {
+    "id": 221725,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Where Doom Awaits: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.30992,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.7,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
+    ]
+  },
   "221965": {
     "id": 221965,
     "boardGameRank": 397,
@@ -26363,6 +30640,153 @@ const GameDetail = {
       2027
     ]
   },
+  "223355": {
+    "id": 223355,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Imperial Light Carrier Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.5898,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2079,
+      2015
+    ]
+  },
+  "223356": {
+    "id": 223356,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Hammerhead Corvettes Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.57086,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 120,
+    "maxPlayTime": 120,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2079,
+      2015
+    ]
+  },
+  "223421": {
+    "id": 223421,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Scurrg H-6 Bomber Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.64786,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "223422": {
+    "id": 223422,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Aggressor Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62677,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "223423": {
+    "id": 223423,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Auzituck Gunship Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.6371,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
   "223495": {
     "id": 223495,
     "boardGameRank": null,
@@ -26387,6 +30811,33 @@ const GameDetail = {
     "mechanicIds": [
       2040,
       2020
+    ]
+  },
+  "223555": {
+    "id": 223555,
+    "boardGameRank": null,
+    "title": "Scythe: The Wind Gambit",
+    "yearPublished": 2017,
+    "geekRating": 7.26789,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 70,
+    "maxPlayTime": 140,
+    "averageWeight": 3.3143,
+    "categoryIds": [
+      1021,
+      1042,
+      1011,
+      1019
+    ],
+    "designerIds": [
+      99547,
+      62640
+    ],
+    "mechanicIds": [
+      2080,
+      2078
     ]
   },
   "223750": {
@@ -26494,6 +30945,35 @@ const GameDetail = {
       2023,
       2661,
       2019
+    ]
+  },
+  "224363": {
+    "id": 224363,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Lost in Time and Space: Mythos Pack",
+    "yearPublished": 2017,
+    "geekRating": 6.33028,
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.5556,
+    "categoryIds": [
+      1002,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [
+      11655,
+      40573
+    ],
+    "mechanicIds": [
+      2023,
+      2040,
+      2015
     ]
   },
   "224517": {
@@ -26811,6 +31291,36 @@ const GameDetail = {
       2078,
       2015,
       2935
+    ]
+  },
+  "228391": {
+    "id": 228391,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Guns for Hire Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62818,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 0,
+    "maxPlayTime": 0,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2020,
+      2015
     ]
   },
   "229220": {
@@ -27465,6 +31975,37 @@ const GameDetail = {
       2048
     ]
   },
+  "233977": {
+    "id": 233977,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - The Labyrinths of Lunacy: Scenario Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.81715,
+    "minPlayers": 1,
+    "maxPlayers": 12,
+    "bestWithPlayers": 6,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2001,
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
+    ]
+  },
   "234277": {
     "id": 234277,
     "boardGameRank": 516,
@@ -27588,6 +32129,29 @@ const GameDetail = {
       2023
     ]
   },
+  "235365": {
+    "id": 235365,
+    "boardGameRank": 4098,
+    "title": "Doctor Who Fluxx",
+    "yearPublished": 2017,
+    "geekRating": 5.731,
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "bestWithPlayers": 6,
+    "minPlayTime": 5,
+    "maxPlayTime": 30,
+    "averageWeight": 2,
+    "categoryIds": [
+      1002,
+      1064
+    ],
+    "designerIds": [
+      122
+    ],
+    "mechanicIds": [
+      2004
+    ]
+  },
   "235488": {
     "id": 235488,
     "boardGameRank": 864,
@@ -27611,6 +32175,100 @@ const GameDetail = {
       2072,
       2004
     ]
+  },
+  "235604": {
+    "id": 235604,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Chimaera Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.57934,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235605": {
+    "id": 235605,
+    "boardGameRank": null,
+    "title": "Star Wars: Armada - Profundity Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.57024,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 3,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235606": {
+    "id": 235606,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Alpha-Class Star Wing Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62682,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [
+      60309,
+      60239,
+      46412
+    ],
+    "mechanicIds": []
+  },
+  "235607": {
+    "id": 235607,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - M12-L Kimogila Fighter Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.57037,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
+  },
+  "235608": {
+    "id": 235608,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Phantom II Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.59926,
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 45,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      1042
+    ],
+    "designerIds": [],
+    "mechanicIds": []
   },
   "235802": {
     "id": 235802,
@@ -27721,6 +32379,68 @@ const GameDetail = {
       2072,
       2040,
       2078,
+      2015
+    ]
+  },
+  "237192": {
+    "id": 237192,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Silencer Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.62217,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
+    ]
+  },
+  "237391": {
+    "id": 237391,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - Resistance Bomber Expansion Pack",
+    "yearPublished": 2017,
+    "geekRating": 5.58745,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
       2015
     ]
   },
@@ -28025,6 +32745,37 @@ const GameDetail = {
       2664,
       2040,
       2686
+    ]
+  },
+  "244145": {
+    "id": 244145,
+    "boardGameRank": null,
+    "title": "Arkham Horror: The Card Game - Return to the Night of the Zealot",
+    "yearPublished": 2018,
+    "geekRating": 5.9438,
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "bestWithPlayers": 2,
+    "minPlayTime": 60,
+    "maxPlayTime": 120,
+    "averageWeight": 3.3333,
+    "categoryIds": [
+      1022,
+      1002,
+      1044,
+      1042,
+      1010,
+      1024,
+      1093
+    ],
+    "designerIds": [],
+    "mechanicIds": [
+      2001,
+      2023,
+      2664,
+      2040,
+      2028,
+      2015
     ]
   },
   "244228": {
@@ -28360,6 +33111,39 @@ const GameDetail = {
     ],
     "mechanicIds": [
       2041
+    ]
+  },
+  "246718": {
+    "id": 246718,
+    "boardGameRank": null,
+    "title": "Star Wars: X-Wing Miniatures Game - TIE Reaper Expansion Pack",
+    "yearPublished": 2018,
+    "geekRating": 5.58378,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 4,
+    "minPlayTime": 30,
+    "maxPlayTime": 45,
+    "averageWeight": 0,
+    "categoryIds": [
+      2650,
+      1023,
+      1044,
+      1042,
+      1047,
+      1064,
+      1016,
+      1019
+    ],
+    "designerIds": [
+      4786
+    ],
+    "mechanicIds": [
+      2689,
+      2072,
+      2685,
+      2020,
+      2015
     ]
   },
   "246784": {
@@ -29033,6 +33817,34 @@ const GameDetail = {
       2035
     ]
   },
+  "262151": {
+    "id": 262151,
+    "boardGameRank": null,
+    "title": "Scythe: Encounters",
+    "yearPublished": 2018,
+    "geekRating": 6.45127,
+    "minPlayers": 1,
+    "maxPlayers": 7,
+    "bestWithPlayers": 4,
+    "minPlayTime": 90,
+    "maxPlayTime": 115,
+    "averageWeight": 3,
+    "categoryIds": [
+      1021,
+      1042,
+      1020,
+      1046,
+      1086
+    ],
+    "designerIds": [
+      62640
+    ],
+    "mechanicIds": [
+      2080,
+      2676,
+      2015
+    ]
+  },
   "262215": {
     "id": 262215,
     "boardGameRank": 599,
@@ -29436,6 +34248,34 @@ const GameDetail = {
       2939
     ]
   },
+  "279304": {
+    "id": 279304,
+    "boardGameRank": null,
+    "title": "Scythe: Modular Board",
+    "yearPublished": 2019,
+    "geekRating": 5.92008,
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "bestWithPlayers": 4,
+    "minPlayTime": 90,
+    "maxPlayTime": 115,
+    "averageWeight": 3,
+    "categoryIds": [
+      1021,
+      1042,
+      1046,
+      1016,
+      1086
+    ],
+    "designerIds": [
+      62640
+    ],
+    "mechanicIds": [
+      2080,
+      2676,
+      2015
+    ]
+  },
   "282524": {
     "id": 282524,
     "boardGameRank": 660,
@@ -29462,6 +34302,35 @@ const GameDetail = {
       2007,
       2078,
       2897
+    ]
+  },
+  "284444": {
+    "id": 284444,
+    "boardGameRank": null,
+    "title": "War Chest: Nobility",
+    "yearPublished": 2019,
+    "geekRating": 5.56683,
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "bestWithPlayers": 2,
+    "minPlayTime": 30,
+    "maxPlayTime": 60,
+    "averageWeight": 2,
+    "categoryIds": [
+      1009,
+      1042,
+      1019
+    ],
+    "designerIds": [
+      90410,
+      67071
+    ],
+    "mechanicIds": [
+      2080,
+      2664,
+      2040,
+      2019,
+      2015
     ]
   },
   "285774": {

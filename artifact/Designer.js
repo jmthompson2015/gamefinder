@@ -215,6 +215,10 @@ const Designer = {
     "id": 125,
     "name": "Bruno Faidutti"
   },
+  "128": {
+    "id": 128,
+    "name": "Derek Carver"
+  },
   "132": {
     "id": 132,
     "name": "Gunter Cornett"
@@ -423,6 +427,10 @@ const Designer = {
     "id": 618,
     "name": "Ken Fisher"
   },
+  "620": {
+    "id": 620,
+    "name": "Marsha J. Falco"
+  },
   "631": {
     "id": 631,
     "name": "Phil Kendall"
@@ -578,6 +586,14 @@ const Designer = {
   "1279": {
     "id": 1279,
     "name": "Igor Polouchine"
+  },
+  "1291": {
+    "id": 1291,
+    "name": "Eamon Bloomfield"
+  },
+  "1292": {
+    "id": 1292,
+    "name": "Paul Viall"
   },
   "1318": {
     "id": 1318,
@@ -1387,6 +1403,10 @@ const Designer = {
     "id": 11906,
     "name": "Don Eskridge"
   },
+  "12018": {
+    "id": 12018,
+    "name": "Andrew Navaro"
+  },
   "12023": {
     "id": 12023,
     "name": "Dave Kimmel"
@@ -1494,6 +1514,10 @@ const Designer = {
   "20991": {
     "id": 20991,
     "name": "Sen-Foong Lim"
+  },
+  "21425": {
+    "id": 21425,
+    "name": "Sam Stewart"
   },
   "21902": {
     "id": 21902,
@@ -2039,6 +2063,10 @@ const Designer = {
     "id": 60239,
     "name": "Frank Brooks"
   },
+  "60309": {
+    "id": 60309,
+    "name": "Max Brooke"
+  },
   "60311": {
     "id": 60311,
     "name": "Adam Carlson"
@@ -2226,6 +2254,10 @@ const Designer = {
   "68016": {
     "id": 68016,
     "name": "Scot Eaton"
+  },
+  "68036": {
+    "id": 68036,
+    "name": "Ashley Wagner"
   },
   "68139": {
     "id": 68139,
@@ -2695,6 +2727,10 @@ const Designer = {
     "id": 91357,
     "name": "Paul Kluka"
   },
+  "91757": {
+    "id": 91757,
+    "name": "Stephane Vachon"
+  },
   "91760": {
     "id": 91760,
     "name": "Gary Arant"
@@ -2763,6 +2799,10 @@ const Designer = {
     "id": 97486,
     "name": "Kami Mandell"
   },
+  "97519": {
+    "id": 97519,
+    "name": "Michael Gernes"
+  },
   "97628": {
     "id": 97628,
     "name": "Nick Shaw"
@@ -2782,6 +2822,10 @@ const Designer = {
   "99503": {
     "id": 99503,
     "name": "Przemyslaw Rymer"
+  },
+  "99547": {
+    "id": 99547,
+    "name": "Kai Starck"
   },
   "100012": {
     "id": 100012,
