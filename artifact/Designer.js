@@ -187,6 +187,10 @@ const Designer = {
     "id": 108,
     "name": "Eric Randall"
   },
+  "116": {
+    "id": 116,
+    "name": "Albert Lamorisse"
+  },
   "117": {
     "id": 117,
     "name": "Andreas Seyfarth"
@@ -259,6 +263,10 @@ const Designer = {
     "id": 161,
     "name": "Julian Courtland-Smith"
   },
+  "164": {
+    "id": 164,
+    "name": "Kristin Looney"
+  },
   "169": {
     "id": 169,
     "name": "Eric Goldberg"
@@ -326,6 +334,10 @@ const Designer = {
   "287": {
     "id": 287,
     "name": "Michael Gray"
+  },
+  "294": {
+    "id": 294,
+    "name": "Mark Alan Osterhaus"
   },
   "295": {
     "id": 295,
@@ -423,6 +435,10 @@ const Designer = {
     "id": 637,
     "name": "Robert Haines"
   },
+  "660": {
+    "id": 660,
+    "name": "Anthony E. Pratt"
+  },
   "674": {
     "id": 674,
     "name": "Ed Beach"
@@ -515,6 +531,10 @@ const Designer = {
     "id": 1018,
     "name": "Andreas Steding"
   },
+  "1047": {
+    "id": 1047,
+    "name": "Michael I. Levin"
+  },
   "1078": {
     "id": 1078,
     "name": "John Yianni"
@@ -550,6 +570,10 @@ const Designer = {
   "1221": {
     "id": 1221,
     "name": "Raymond Edwards"
+  },
+  "1268": {
+    "id": 1268,
+    "name": "Charles Darrow"
   },
   "1279": {
     "id": 1279,
@@ -643,6 +667,14 @@ const Designer = {
     "id": 2617,
     "name": "Frederic Henry"
   },
+  "2622": {
+    "id": 2622,
+    "name": "Rosanna Leocata"
+  },
+  "2623": {
+    "id": 2623,
+    "name": "Gaetano Evola"
+  },
   "2663": {
     "id": 2663,
     "name": "Stephen McLaughlin"
@@ -694,6 +726,10 @@ const Designer = {
   "3080": {
     "id": 3080,
     "name": "Satoshi Nakamura"
+  },
+  "3109": {
+    "id": 3109,
+    "name": "Elizabeth J. Magie (Phillips)"
   },
   "3245": {
     "id": 3245,
@@ -827,6 +863,14 @@ const Designer = {
     "id": 4819,
     "name": "Richard Launius"
   },
+  "4827": {
+    "id": 4827,
+    "name": "Richard Tait"
+  },
+  "4828": {
+    "id": 4828,
+    "name": "Whit Alexander"
+  },
   "4871": {
     "id": 4871,
     "name": "Henry Stern"
@@ -883,6 +927,10 @@ const Designer = {
     "id": 5816,
     "name": "Devin Low"
   },
+  "5874": {
+    "id": 5874,
+    "name": "Shane Small"
+  },
   "6001": {
     "id": 6001,
     "name": "Carl Chudyk"
@@ -914,6 +962,10 @@ const Designer = {
   "6331": {
     "id": 6331,
     "name": "Chad Jensen"
+  },
+  "6465": {
+    "id": 6465,
+    "name": "Clay Blankenship"
   },
   "6475": {
     "id": 6475,
@@ -978,6 +1030,10 @@ const Designer = {
   "7011": {
     "id": 7011,
     "name": "Chris Cieslik"
+  },
+  "7034": {
+    "id": 7034,
+    "name": "Matthew Kirby"
   },
   "7098": {
     "id": 7098,
@@ -1463,6 +1519,10 @@ const Designer = {
     "id": 25578,
     "name": "Adam Poots"
   },
+  "26626": {
+    "id": 26626,
+    "name": "Jason Oman"
+  },
   "27141": {
     "id": 27141,
     "name": "Ryan Amos"
@@ -1498,6 +1558,10 @@ const Designer = {
   "28912": {
     "id": 28912,
     "name": "Christophe Raimbault"
+  },
+  "30118": {
+    "id": 30118,
+    "name": "Michael Haverty"
   },
   "30466": {
     "id": 30466,
@@ -1867,6 +1931,14 @@ const Designer = {
     "id": 53303,
     "name": "Evan Derrick"
   },
+  "53399": {
+    "id": 53399,
+    "name": "Ty Hansen"
+  },
+  "53400": {
+    "id": 53400,
+    "name": "Erik Assadourian"
+  },
   "53889": {
     "id": 53889,
     "name": "Dan Cassar"
@@ -2091,6 +2163,14 @@ const Designer = {
     "id": 65023,
     "name": "Isaac Vega"
   },
+  "65232": {
+    "id": 65232,
+    "name": "Blaise Hanczar"
+  },
+  "65233": {
+    "id": 65233,
+    "name": "Jorg Krismann"
+  },
   "65291": {
     "id": 65291,
     "name": "Steven Kimball"
@@ -2246,6 +2326,10 @@ const Designer = {
   "71006": {
     "id": 71006,
     "name": "Morten Monrad Pedersen"
+  },
+  "71478": {
+    "id": 71478,
+    "name": "Matthew Inman"
   },
   "71676": {
     "id": 71676,
@@ -2422,6 +2506,10 @@ const Designer = {
   "79931": {
     "id": 79931,
     "name": "Fabien Riffaud"
+  },
+  "80158": {
+    "id": 80158,
+    "name": "Elan Lee"
   },
   "80162": {
     "id": 80162,
@@ -2682,6 +2770,10 @@ const Designer = {
   "97955": {
     "id": 97955,
     "name": "Nate Chatellier"
+  },
+  "98735": {
+    "id": 98735,
+    "name": "William Julius Champion Jr."
   },
   "98876": {
     "id": 98876,

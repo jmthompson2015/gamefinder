@@ -95,6 +95,10 @@ const Mechanic = {
     "id": 2035,
     "name": "Roll / Spin and Move"
   },
+  "2038": {
+    "id": 2038,
+    "name": "Singing"
+  },
   "2039": {
     "id": 2039,
     "name": "Line Drawing"
@@ -330,6 +334,10 @@ const Mechanic = {
   "2864": {
     "id": 2864,
     "name": "Force Commitment"
+  },
+  "2865": {
+    "id": 2865,
+    "name": "Player Judge"
   },
   "2866": {
     "id": 2866,
