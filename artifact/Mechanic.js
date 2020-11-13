@@ -131,6 +131,10 @@ const Mechanic = {
     "id": 2055,
     "name": "Paper-and-Pencil"
   },
+  "2057": {
+    "id": 2057,
+    "name": "Chit-Pull System"
+  },
   "2060": {
     "id": 2060,
     "name": "Pattern Recognition"
@@ -211,6 +215,10 @@ const Mechanic = {
     "id": 2820,
     "name": "Semi-Cooperative Game"
   },
+  "2821": {
+    "id": 2821,
+    "name": "Single Loser Game"
+  },
   "2822": {
     "id": 2822,
     "name": "Scenario / Mission / Campaign Game"
@@ -254,6 +262,18 @@ const Mechanic = {
   "2834": {
     "id": 2834,
     "name": "Action Timer"
+  },
+  "2835": {
+    "id": 2835,
+    "name": "Passed Action Token"
+  },
+  "2836": {
+    "id": 2836,
+    "name": "Lose a Turn"
+  },
+  "2837": {
+    "id": 2837,
+    "name": "Interrupts"
   },
   "2838": {
     "id": 2838,
@@ -319,6 +339,10 @@ const Mechanic = {
     "id": 2857,
     "name": "Card Play Conflict Resolution"
   },
+  "2858": {
+    "id": 2858,
+    "name": "Prisoner's Dilemma"
+  },
   "2860": {
     "id": 2860,
     "name": "Flicking"
@@ -334,10 +358,6 @@ const Mechanic = {
   "2864": {
     "id": 2864,
     "name": "Force Commitment"
-  },
-  "2865": {
-    "id": 2865,
-    "name": "Player Judge"
   },
   "2866": {
     "id": 2866,
@@ -367,9 +387,17 @@ const Mechanic = {
     "id": 2882,
     "name": "Elapsed Real Time Ending"
   },
+  "2883": {
+    "id": 2883,
+    "name": "Connections"
+  },
   "2884": {
     "id": 2884,
     "name": "Sudden Death Ending"
+  },
+  "2885": {
+    "id": 2885,
+    "name": "Finale Ending"
   },
   "2886": {
     "id": 2886,
@@ -487,6 +515,10 @@ const Mechanic = {
     "id": 2926,
     "name": "Selection Order Bid"
   },
+  "2927": {
+    "id": 2927,
+    "name": "Multiple-Lot Auction"
+  },
   "2928": {
     "id": 2928,
     "name": "Closed Economy Auction"
@@ -530,6 +562,10 @@ const Mechanic = {
   "2948": {
     "id": 2948,
     "name": "Resource to Move"
+  },
+  "2949": {
+    "id": 2949,
+    "name": "Measurement Movement"
   },
   "2950": {
     "id": 2950,
@@ -579,6 +615,10 @@ const Mechanic = {
     "id": 2963,
     "name": "Movement Template"
   },
+  "2964": {
+    "id": 2964,
+    "name": "Pieces as Map"
+  },
   "2965": {
     "id": 2965,
     "name": "Multiple Maps"
@@ -607,6 +647,10 @@ const Mechanic = {
     "id": 2984,
     "name": "Drafting"
   },
+  "2985": {
+    "id": 2985,
+    "name": "Turn Order: Random"
+  },
   "2987": {
     "id": 2987,
     "name": "Hidden Victory Points"
@@ -618,6 +662,34 @@ const Mechanic = {
   "2990": {
     "id": 2990,
     "name": "Cube Tower"
+  },
+  "2999": {
+    "id": 2999,
+    "name": "Bingo"
+  },
+  "3001": {
+    "id": 3001,
+    "name": "Layering"
+  },
+  "3002": {
+    "id": 3002,
+    "name": "Deduction"
+  },
+  "3003": {
+    "id": 3003,
+    "name": "Induction"
+  },
+  "3004": {
+    "id": 3004,
+    "name": "Deck Construction"
+  },
+  "3005": {
+    "id": 3005,
+    "name": "Slide/Push"
+  },
+  "3006": {
+    "id": 3006,
+    "name": "Predictive Bid"
   }
 }
 
