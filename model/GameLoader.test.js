@@ -5,7 +5,7 @@ import GameLoader from "./GameLoader.js";
 
 QUnit.module("GameLoader");
 
-QUnit.test("load()", assert => {
+QUnit.test("load()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   store.dispatch(ActionCreator.setPageCount(2));
@@ -17,16 +17,20 @@ QUnit.test("load()", assert => {
     assert.ok(true, "test resumed from async operation");
     const { gameToUsers, gameToDetail, gameToSummary } = store.getState();
     assert.ok(gameToUsers);
-    assert.equal(Object.keys(gameToUsers).length, 272);
+    assert.equal(Object.keys(gameToUsers).length, 297, "gameToUsers length");
     assert.ok(gameToSummary);
-    assert.equal(Object.keys(gameToSummary).length, 200);
+    assert.equal(
+      Object.keys(gameToSummary).length,
+      200,
+      "gameToSummary length"
+    );
     assert.ok(gameToDetail);
-    assert.equal(Object.keys(gameToDetail).length, 443);
+    assert.equal(Object.keys(gameToDetail).length, 465, "gameToDetail length");
     done();
   });
 });
 
-QUnit.test("loadCollections()", assert => {
+QUnit.test("loadCollections()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
@@ -37,25 +41,25 @@ QUnit.test("loadCollections()", assert => {
     assert.ok(true, "test resumed from async operation");
     const { gameToUsers } = store.getState();
     assert.ok(gameToUsers);
-    assert.equal(Object.keys(gameToUsers).length, 272);
+    assert.equal(Object.keys(gameToUsers).length, 297);
     done();
   });
 });
 
-QUnit.test("loadGameDetails()", assert => {
+QUnit.test("loadGameDetails()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   store.dispatch(ActionCreator.setPageCount(1));
 
   // Run.
   const done2 = assert.async();
-  GameLoader.loadGameSummaries(store).then(gameToSummary => {
+  GameLoader.loadGameSummaries(store).then((gameToSummary) => {
     assert.ok(true, "test resumed from async operation");
     assert.ok(gameToSummary);
 
     // Run.
     const done = assert.async();
-    GameLoader.loadGameDetails(store).then(gameToDetail => {
+    GameLoader.loadGameDetails(store).then((gameToDetail) => {
       // Verify.
       assert.ok(true, "test resumed from async operation");
       assert.ok(gameToDetail);
@@ -67,14 +71,14 @@ QUnit.test("loadGameDetails()", assert => {
   });
 });
 
-QUnit.test("loadGameSummaries()", assert => {
+QUnit.test("loadGameSummaries()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   store.dispatch(ActionCreator.setPageCount(2));
 
   // Run.
   const done = assert.async();
-  GameLoader.loadGameSummaries(store).then(gameToSummary => {
+  GameLoader.loadGameSummaries(store).then((gameToSummary) => {
     // Verify.
     assert.ok(true, "summaryCallback() test resumed from async operation");
     assert.ok(gameToSummary);

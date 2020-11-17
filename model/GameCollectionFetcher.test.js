@@ -2,7 +2,7 @@ import GameCollectionFetcher from "./GameCollectionFetcher.js";
 
 QUnit.module("GameCollectionFetcher");
 
-QUnit.test("fetchData() ghightshoe", assert => {
+QUnit.test("fetchData() ghightshoe", (assert) => {
   // Setup.
   const username0 = "ghightshoe";
 
@@ -14,15 +14,14 @@ QUnit.test("fetchData() ghightshoe", assert => {
     assert.ok(userId);
     assert.equal(userId, 1);
     assert.ok(gameIds);
-    const length = 39;
-    assert.equal(gameIds.length, length);
-    assert.equal(gameIds[0], 74);
-    assert.equal(gameIds[length - 1], 247030);
+    assert.equal(gameIds.length, 42);
+    assert.equal(R.head(gameIds), 74);
+    assert.equal(R.last(gameIds), 255681);
     done();
   });
 });
 
-QUnit.test("fetchData() jmthompson", assert => {
+QUnit.test("fetchData() jmthompson", (assert) => {
   // Setup.
   const username0 = "jmthompson";
 
@@ -34,15 +33,14 @@ QUnit.test("fetchData() jmthompson", assert => {
     assert.ok(userId);
     assert.equal(userId, 2);
     assert.ok(gameIds);
-    const length = 187;
-    assert.equal(gameIds.length, length);
-    assert.equal(gameIds[0], 1198);
-    assert.equal(gameIds[length - 1], 246718);
+    assert.equal(gameIds.length, 203);
+    assert.equal(R.head(gameIds), 1198);
+    assert.equal(R.last(gameIds), 284444);
     done();
   });
 });
 
-QUnit.test("fetchData() kmistr", assert => {
+QUnit.test("fetchData() kmistr", (assert) => {
   // Setup.
   const username0 = "kmistr";
 
@@ -54,15 +52,14 @@ QUnit.test("fetchData() kmistr", assert => {
     assert.ok(userId);
     assert.equal(userId, 3);
     assert.ok(gameIds);
-    const length = 41;
-    assert.equal(gameIds.length, length);
-    assert.equal(gameIds[0], 13);
-    assert.equal(gameIds[length - 1], 220653);
+    assert.equal(gameIds.length, 46);
+    assert.equal(R.head(gameIds), 13);
+    assert.equal(R.last(gameIds), 312667);
     done();
   });
 });
 
-QUnit.test("fetchData() nic", assert => {
+QUnit.test("fetchData() nic", (assert) => {
   // Setup.
   const username0 = "nic";
 
@@ -74,10 +71,9 @@ QUnit.test("fetchData() nic", assert => {
     assert.ok(userId);
     assert.equal(userId, 4);
     assert.ok(gameIds);
-    const length = 8;
-    assert.equal(gameIds.length, length);
-    assert.equal(gameIds[0], 167791);
-    assert.equal(gameIds[length - 1], 255692);
+    assert.equal(gameIds.length, 11);
+    assert.equal(R.head(gameIds), 124361);
+    assert.equal(R.last(gameIds), 269595);
     done();
   });
 });
