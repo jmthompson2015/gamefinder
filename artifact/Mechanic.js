@@ -359,6 +359,10 @@ const Mechanic = {
     "id": 2864,
     "name": "Force Commitment"
   },
+  "2865": {
+    "id": 2865,
+    "name": "Player Judge"
+  },
   "2866": {
     "id": 2866,
     "name": "Targeted Clues"
@@ -666,6 +670,10 @@ const Mechanic = {
   "2999": {
     "id": 2999,
     "name": "Bingo"
+  },
+  "3000": {
+    "id": 3000,
+    "name": "Hot Potato"
   },
   "3001": {
     "id": 3001,

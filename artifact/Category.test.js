@@ -2,7 +2,7 @@ import Category from "./Category.js";
 
 QUnit.module("Category");
 
-QUnit.test("Category properties Science Fiction", assert => {
+QUnit.test("Category properties Science Fiction", (assert) => {
   // Setup.
   const id = 1016;
 
@@ -14,9 +14,9 @@ QUnit.test("Category properties Science Fiction", assert => {
   assert.equal(category.name, "Science Fiction");
 });
 
-QUnit.test("Category keys", assert => {
+QUnit.test("Category keys", (assert) => {
   // Setup.
-  const length = 80;
+  const length = 79;
 
   // Run.
   const keys = Object.keys(Category);

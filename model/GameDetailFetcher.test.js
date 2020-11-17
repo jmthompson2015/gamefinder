@@ -67,7 +67,7 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(gameDetails[3].id, 176371);
     assert.equal(
       gameDetails[3].boardGameRank,
-      1000,
+      999,
       "gameDetails[3] boardGameRank"
     );
     assert.equal(gameDetails[3].title, "Explorers of the North Sea");

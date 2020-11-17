@@ -2,7 +2,7 @@ import Designer from "./Designer.js";
 
 QUnit.module("Designer");
 
-QUnit.test("Designer properties Stefan Feld", assert => {
+QUnit.test("Designer properties Stefan Feld", (assert) => {
   // Setup.
   const id = 4958;
 
@@ -14,7 +14,7 @@ QUnit.test("Designer properties Stefan Feld", assert => {
   assert.equal(designer.name, "Stefan Feld");
 });
 
-QUnit.test("Designer keys", assert => {
+QUnit.test("Designer keys", (assert) => {
   // Setup.
   const length = 740;
 
@@ -29,8 +29,8 @@ QUnit.test("Designer keys", assert => {
   assert.equal(designer0.name, "Karl-Heinz Schmiel");
 
   const designerLast = Designer[keys[length - 1]];
-  assert.equal(designerLast.id, 119800);
-  assert.equal(designerLast.name, "Michael Boggs");
+  assert.equal(designerLast.id, 130658);
+  assert.equal(designerLast.name, "Mathieu Casnin");
 });
 
 const DesignerTest = {};

@@ -2,6 +2,25 @@ import GameCollectionFetcher from "./GameCollectionFetcher.js";
 
 QUnit.module("GameCollectionFetcher");
 
+QUnit.test("fetchData() boardGameArena", (assert) => {
+  // Setup.
+  const username0 = "boardGameArena";
+
+  // Run.
+  const done = assert.async();
+  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
+    // Verify.
+    assert.ok(true, "test resumed from async operation");
+    assert.ok(userId);
+    assert.equal(userId, 5);
+    assert.ok(gameIds);
+    assert.equal(gameIds.length, 202);
+    assert.equal(R.head(gameIds), 10);
+    assert.equal(R.last(gameIds), 308357);
+    done();
+  });
+});
+
 QUnit.test("fetchData() ghightshoe", (assert) => {
   // Setup.
   const username0 = "ghightshoe";

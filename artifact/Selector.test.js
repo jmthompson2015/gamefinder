@@ -2,7 +2,7 @@ import Selector from "./Selector.js";
 
 QUnit.module("Selector");
 
-QUnit.test("category()", assert => {
+QUnit.test("category()", (assert) => {
   // Setup.
   const id = 1001;
 
@@ -15,7 +15,7 @@ QUnit.test("category()", assert => {
   assert.equal(result.name, "Political");
 });
 
-QUnit.test("categoriesByIds()", assert => {
+QUnit.test("categoriesByIds()", (assert) => {
   // Setup.
   const ids = [1001, 1002, 1003]; // there is no 1003
 
@@ -31,7 +31,7 @@ QUnit.test("categoriesByIds()", assert => {
   assert.equal(result[1].name, "Card Game");
 });
 
-QUnit.test("designer()", assert => {
+QUnit.test("designer()", (assert) => {
   // Setup.
   const id = 1;
 
@@ -44,7 +44,7 @@ QUnit.test("designer()", assert => {
   assert.equal(result.name, "Karl-Heinz Schmiel");
 });
 
-QUnit.test("designersByIds()", assert => {
+QUnit.test("designersByIds()", (assert) => {
   // Setup.
   const ids = [14, 15, 19]; // there is no 15
 
@@ -60,7 +60,7 @@ QUnit.test("designersByIds()", assert => {
   assert.equal(result[1].name, "Richard Hamblen");
 });
 
-QUnit.test("mechanic()", assert => {
+QUnit.test("mechanic()", (assert) => {
   // Setup.
   const id = 2001;
 
@@ -73,7 +73,7 @@ QUnit.test("mechanic()", assert => {
   assert.equal(result.name, "Action Points");
 });
 
-QUnit.test("mechanicsByIds()", assert => {
+QUnit.test("mechanicsByIds()", (assert) => {
   // Setup.
   const ids = [2005, 2006, 2007]; // there is no 2006
 
@@ -89,7 +89,7 @@ QUnit.test("mechanicsByIds()", assert => {
   assert.equal(result[1].name, "Pick-up and Deliver");
 });
 
-QUnit.test("userByName()", assert => {
+QUnit.test("userByName()", (assert) => {
   // Setup.
   const name = "ghightshoe";
 
@@ -102,7 +102,7 @@ QUnit.test("userByName()", assert => {
   assert.equal(result.name, name);
 });
 
-QUnit.test("usernames()", assert => {
+QUnit.test("usernames()", (assert) => {
   // Setup.
 
   // Run.
@@ -110,14 +110,15 @@ QUnit.test("usernames()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 4);
+  assert.equal(result.length, 5);
   assert.equal(result[0], "ghightshoe");
   assert.equal(result[1], "jmthompson");
   assert.equal(result[2], "kmistr");
   assert.equal(result[3], "nic");
+  assert.equal(result[4], "boardGameArena");
 });
 
-QUnit.test("usersByIds()", assert => {
+QUnit.test("usersByIds()", (assert) => {
   // Setup.
   const ids = [1, 55, 3]; // there is no 55
 

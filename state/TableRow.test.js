@@ -16,7 +16,7 @@ const createTestState = () => {
   return TableRow.create({ gameSummary, gameDetail, users });
 };
 
-QUnit.test("create()", assert => {
+QUnit.test("create()", (assert) => {
   // Run.
   const data = createTestState();
 
@@ -26,7 +26,7 @@ QUnit.test("create()", assert => {
   });
 });
 
-QUnit.test("create() Scythe", assert => {
+QUnit.test("create() Scythe", (assert) => {
   // Setup.
   const gameSummary = GameSummaryState.create({ id: 169786 });
   const gameDetail = GameDetail[169786];
@@ -43,11 +43,15 @@ QUnit.test("create() Scythe", assert => {
   assert.equal(data.categories[0].name, "Economic", "categories[0] name");
   assert.equal(data.designers.length, 1, "designers length");
   assert.equal(data.designers[0].name, "Jamey Stegmaier", "designers[0] name");
-  assert.equal(data.mechanics.length, 3, "mechanics length");
-  assert.equal(data.mechanics[0].name, "Area Control / Area Influence", "mechanics[0] name");
+  assert.equal(data.mechanics.length, 15, "mechanics length");
+  assert.equal(
+    data.mechanics[0].name,
+    "Area Majority / Influence",
+    "mechanics[0] name"
+  );
 });
 
-QUnit.test("create() immutable", assert => {
+QUnit.test("create() immutable", (assert) => {
   // Setup.
   const data = createTestState();
 
