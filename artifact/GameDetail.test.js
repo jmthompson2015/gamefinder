@@ -39,7 +39,7 @@ QUnit.test("GameDetail keys", (assert) => {
   const keys = Object.keys(GameDetail);
 
   // Verify.
-  assert.equal(keys.length, 1236);
+  assert.equal(keys.length, 1404);
 
   const detail0 = GameDetail[R.head(keys)];
   assert.equal(detail0.id, 1);

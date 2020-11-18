@@ -17,7 +17,7 @@ QUnit.test("load()", (assert) => {
     assert.ok(true, "test resumed from async operation");
     const { gameToUsers, gameToDetail, gameToSummary } = store.getState();
     assert.ok(gameToUsers);
-    assert.equal(Object.keys(gameToUsers).length, 493, "gameToUsers length");
+    assert.equal(Object.keys(gameToUsers).length, 536, "gameToUsers length");
     assert.ok(gameToSummary);
     assert.equal(
       Object.keys(gameToSummary).length,
@@ -25,7 +25,7 @@ QUnit.test("load()", (assert) => {
       "gameToSummary length"
     );
     assert.ok(gameToDetail);
-    assert.equal(Object.keys(gameToDetail).length, 640, "gameToDetail length");
+    assert.equal(Object.keys(gameToDetail).length, 682, "gameToDetail length");
     done();
   });
 });
@@ -41,7 +41,7 @@ QUnit.test("loadCollections()", (assert) => {
     assert.ok(true, "test resumed from async operation");
     const { gameToUsers } = store.getState();
     assert.ok(gameToUsers);
-    assert.equal(Object.keys(gameToUsers).length, 493);
+    assert.equal(Object.keys(gameToUsers).length, 536);
     done();
   });
 });

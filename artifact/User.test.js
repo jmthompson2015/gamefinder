@@ -29,7 +29,7 @@ QUnit.test("User keys", (assert) => {
 
   const userLast = User[R.last(keys)];
   assert.equal(userLast.id, 5);
-  assert.equal(userLast.name, "boardGameArena");
+  assert.equal(userLast.name, "nic");
 });
 
 const UserTest = {};

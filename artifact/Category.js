@@ -171,6 +171,10 @@ const Category = {
     "id": 1052,
     "name": "Arabian"
   },
+  "1054": {
+    "id": 1054,
+    "name": "Music"
+  },
   "1055": {
     "id": 1055,
     "name": "American West"
@@ -286,6 +290,10 @@ const Category = {
   "1118": {
     "id": 1118,
     "name": "Mature / Adult"
+  },
+  "1119": {
+    "id": 1119,
+    "name": "Game System"
   },
   "1120": {
     "id": 1120,

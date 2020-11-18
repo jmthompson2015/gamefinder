@@ -16,19 +16,18 @@ QUnit.test("Category properties Science Fiction", (assert) => {
 
 QUnit.test("Category keys", (assert) => {
   // Setup.
-  const length = 79;
 
   // Run.
   const keys = Object.keys(Category);
 
   // Verify.
-  assert.equal(keys.length, length);
+  assert.equal(keys.length, 81);
 
-  const category0 = Category[keys[0]];
+  const category0 = Category[R.head(keys)];
   assert.equal(category0.id, 1001);
   assert.equal(category0.name, "Political");
 
-  const categoryLast = Category[keys[length - 1]];
+  const categoryLast = Category[R.last(keys)];
   assert.equal(categoryLast.id, 2726);
   assert.equal(categoryLast.name, "Age of Reason");
 });

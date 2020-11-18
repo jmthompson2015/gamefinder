@@ -27,7 +27,7 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(gameDetails[0].id, 1406);
     assert.equal(
       gameDetails[0].boardGameRank,
-      19794,
+      19802,
       "gameDetails[0] boardGameRank"
     );
     assert.equal(gameDetails[0].title, "Monopoly");

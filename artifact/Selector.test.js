@@ -114,8 +114,8 @@ QUnit.test("usernames()", (assert) => {
   assert.equal(result[0], "ghightshoe");
   assert.equal(result[1], "jmthompson");
   assert.equal(result[2], "kmistr");
-  assert.equal(result[3], "nic");
-  assert.equal(result[4], "boardGameArena");
+  assert.equal(result[3], "BoardGameArena");
+  assert.equal(result[4], "nic");
 });
 
 QUnit.test("usersByIds()", (assert) => {

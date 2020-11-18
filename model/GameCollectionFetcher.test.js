@@ -2,9 +2,9 @@ import GameCollectionFetcher from "./GameCollectionFetcher.js";
 
 QUnit.module("GameCollectionFetcher");
 
-QUnit.test("fetchData() boardGameArena", (assert) => {
+QUnit.test("fetchData() BoardGameArena", (assert) => {
   // Setup.
-  const username0 = "boardGameArena";
+  const username0 = "BoardGameArena";
 
   // Run.
   const done = assert.async();
@@ -12,11 +12,11 @@ QUnit.test("fetchData() boardGameArena", (assert) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
-    assert.equal(userId, 5);
+    assert.equal(userId, 4);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 202);
+    assert.equal(gameIds.length, 250);
     assert.equal(R.head(gameIds), 10);
-    assert.equal(R.last(gameIds), 308357);
+    assert.equal(R.last(gameIds), 310888);
     done();
   });
 });
@@ -88,7 +88,7 @@ QUnit.test("fetchData() nic", (assert) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
-    assert.equal(userId, 4);
+    assert.equal(userId, 5);
     assert.ok(gameIds);
     assert.equal(gameIds.length, 11);
     assert.equal(R.head(gameIds), 124361);

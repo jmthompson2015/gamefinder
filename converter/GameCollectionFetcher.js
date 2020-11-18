@@ -6,15 +6,15 @@ const R = require("ramda");
 const FileLoader = require("./FileLoader.js");
 const FileWriter = require("./FileWriter.js");
 
-const USER = ["ghightshoe", "jmthompson", "kmistr"];
+const USER = ["ghightshoe", "jmthompson", "kmistr", "BoardGameArena"];
 
 const OUTPUT_FILE1 = "UserGame.json";
 const OUTPUT_FILE2 = "GameUser.json";
 
-const createUrl = username =>
+const createUrl = (username) =>
   `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
 
-const parseUserGameIds = xmlDocument => {
+const parseUserGameIds = (xmlDocument) => {
   const answer = [];
 
   // This gives the data items.
@@ -24,7 +24,13 @@ const parseUserGameIds = xmlDocument => {
   let thisRow = rows.iterateNext();
 
   while (thisRow) {
-    const idCell = xpath.evaluate("@objectid", thisRow, null, xpath.XPathResult.STRING_TYPE, null);
+    const idCell = xpath.evaluate(
+      "@objectid",
+      thisRow,
+      null,
+      xpath.XPathResult.STRING_TYPE,
+      null
+    );
     const id = parseInt(idCell.stringValue.trim(), 10);
     answer.push(id);
 
@@ -36,9 +42,9 @@ const parseUserGameIds = xmlDocument => {
 
 const GameCollectionFetcher = {};
 
-GameCollectionFetcher.fetchData = username =>
-  new Promise(resolve => {
-    const receiveData = xmlDocument => {
+GameCollectionFetcher.fetchData = (username) =>
+  new Promise((resolve) => {
+    const receiveData = (xmlDocument) => {
       const gameIds = parseUserGameIds(xmlDocument);
       gameIds.sort((a, b) => a - b);
       const userId = USER.indexOf(username) + 1;
@@ -51,11 +57,11 @@ GameCollectionFetcher.fetchData = username =>
   });
 
 GameCollectionFetcher.fetchAll = () =>
-  new Promise(resolve => {
+  new Promise((resolve) => {
     let content1 = {};
     let content2 = {};
     let count = 0;
-    const loopFunction = data => {
+    const loopFunction = (data) => {
       content1 = R.assoc(data.userId, data, content1);
       content2 = R.reduce(
         (accum, gameId) => {
@@ -84,7 +90,7 @@ GameCollectionFetcher.fetchAll = () =>
   });
 
 const start = Date.now();
-GameCollectionFetcher.fetchAll().then(contents => {
+GameCollectionFetcher.fetchAll().then((contents) => {
   const content1 = JSON.stringify(contents[0], null, "  ");
   const content2 = JSON.stringify(contents[1], null, "  ");
   FileWriter.writeFile(OUTPUT_FILE1, content1);
