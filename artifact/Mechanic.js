@@ -131,10 +131,6 @@ const Mechanic = {
     "id": 2055,
     "name": "Paper-and-Pencil"
   },
-  "2057": {
-    "id": 2057,
-    "name": "Chit-Pull System"
-  },
   "2060": {
     "id": 2060,
     "name": "Pattern Recognition"
@@ -433,7 +429,7 @@ const Mechanic = {
   },
   "2897": {
     "id": 2897,
-    "name": "Variable Setup"
+    "name": "Variable Set-up"
   },
   "2900": {
     "id": 2900,
@@ -663,9 +659,17 @@ const Mechanic = {
     "id": 2988,
     "name": "Stacking and Balancing"
   },
+  "2989": {
+    "id": 2989,
+    "name": "Physical Removal"
+  },
   "2990": {
     "id": 2990,
     "name": "Cube Tower"
+  },
+  "2991": {
+    "id": 2991,
+    "name": "Speed Matching"
   },
   "2999": {
     "id": 2999,

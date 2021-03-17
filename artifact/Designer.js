@@ -91,10 +91,6 @@ const Designer = {
     "id": 49,
     "name": "Philippe Keyaerts"
   },
-  "50": {
-    "id": 50,
-    "name": "Klaus Palesch"
-  },
   "51": {
     "id": 51,
     "name": "Stephen Hand"
@@ -266,6 +262,10 @@ const Designer = {
   "164": {
     "id": 164,
     "name": "Kristin Looney"
+  },
+  "166": {
+    "id": 166,
+    "name": "David Parlett"
   },
   "169": {
     "id": 169,
@@ -559,6 +559,10 @@ const Designer = {
     "id": 1206,
     "name": "Christophe Boelinger"
   },
+  "1210": {
+    "id": 1210,
+    "name": "Haim Shafir"
+  },
   "1219": {
     "id": 1219,
     "name": "Gary Grady"
@@ -671,6 +675,10 @@ const Designer = {
     "id": 2201,
     "name": "Kory Heath"
   },
+  "2212": {
+    "id": 2212,
+    "name": "Kevin G. Nunn"
+  },
   "2276": {
     "id": 2276,
     "name": "Ryan Miller"
@@ -682,6 +690,10 @@ const Designer = {
   "2341": {
     "id": 2341,
     "name": "Anthony J. Gallela"
+  },
+  "2376": {
+    "id": 2376,
+    "name": "Joe Huber (I)"
   },
   "2432": {
     "id": 2432,
@@ -1071,6 +1083,10 @@ const Designer = {
     "id": 6838,
     "name": "Andrea Chiarvesio"
   },
+  "6882": {
+    "id": 6882,
+    "name": "Professor I-Chen Wu"
+  },
   "6940": {
     "id": 6940,
     "name": "Inka Brand"
@@ -1279,17 +1295,13 @@ const Designer = {
     "id": 9122,
     "name": "Brandon Tibbetts"
   },
+  "9217": {
+    "id": 9217,
+    "name": "Tomas Uhliř"
+  },
   "9247": {
     "id": 9247,
     "name": "Sergey Machin"
-  },
-  "9256": {
-    "id": 9256,
-    "name": "Henrik Berg"
-  },
-  "9257": {
-    "id": 9257,
-    "name": "Åse Berg"
   },
   "9307": {
     "id": 9307,
@@ -1306,6 +1318,14 @@ const Designer = {
   "9637": {
     "id": 9637,
     "name": "Eilif Svensson"
+  },
+  "9657": {
+    "id": 9657,
+    "name": "Martin Nedergaard Andersen"
+  },
+  "9690": {
+    "id": 9690,
+    "name": "Salvatore Vasta"
   },
   "9714": {
     "id": 9714,
@@ -1370,10 +1390,6 @@ const Designer = {
   "10424": {
     "id": 10424,
     "name": "Bill McQuillan"
-  },
-  "10426": {
-    "id": 10426,
-    "name": "Yann and Clem"
   },
   "10489": {
     "id": 10489,
@@ -1442,6 +1458,10 @@ const Designer = {
   "11555": {
     "id": 11555,
     "name": "Wei-Hwa Huang"
+  },
+  "11640": {
+    "id": 11640,
+    "name": "Alf Seegert"
   },
   "11655": {
     "id": 11655,
@@ -1571,9 +1591,9 @@ const Designer = {
     "id": 18320,
     "name": "Tory Niemann"
   },
-  "20341": {
-    "id": 20341,
-    "name": "Max Temkin"
+  "18701": {
+    "id": 18701,
+    "name": "Nouri Khalifa"
   },
   "20990": {
     "id": 20990,
@@ -1646,6 +1666,10 @@ const Designer = {
   "27641": {
     "id": 27641,
     "name": "Oliver Richtberg"
+  },
+  "28008": {
+    "id": 28008,
+    "name": "Chris Leder"
   },
   "28220": {
     "id": 28220,
@@ -1751,10 +1775,6 @@ const Designer = {
     "id": 35026,
     "name": "Charlie Bink"
   },
-  "35091": {
-    "id": 35091,
-    "name": "Hal Eccles"
-  },
   "35418": {
     "id": 35418,
     "name": "Simone Luciani"
@@ -1766,6 +1786,10 @@ const Designer = {
   "35741": {
     "id": 35741,
     "name": "Cedric Lefebvre"
+  },
+  "35840": {
+    "id": 35840,
+    "name": "Julien Griffon"
   },
   "36098": {
     "id": 36098,
@@ -1861,7 +1885,7 @@ const Designer = {
   },
   "40573": {
     "id": 40573,
-    "name": "Matthew Newman"
+    "name": "MJ Newman"
   },
   "41335": {
     "id": 41335,
@@ -1886,10 +1910,6 @@ const Designer = {
   "42568": {
     "id": 42568,
     "name": "Guilherme Goulart"
-  },
-  "42727": {
-    "id": 42727,
-    "name": "Sotirios Tsantilas"
   },
   "42812": {
     "id": 42812,
@@ -1971,10 +1991,6 @@ const Designer = {
     "id": 48666,
     "name": "Lionel Borg"
   },
-  "48981": {
-    "id": 48981,
-    "name": "A. J. Porfirio"
-  },
   "49208": {
     "id": 49208,
     "name": "Andrew Wolf"
@@ -2055,10 +2071,6 @@ const Designer = {
     "id": 51590,
     "name": "Greg Daigle"
   },
-  "52007": {
-    "id": 52007,
-    "name": "Hope S. Hwang"
-  },
   "52075": {
     "id": 52075,
     "name": "Jacob Fryxelius"
@@ -2078,10 +2090,6 @@ const Designer = {
   "52954": {
     "id": 52954,
     "name": "Filip Neduk"
-  },
-  "53095": {
-    "id": 53095,
-    "name": "Jason Maxwell"
   },
   "53399": {
     "id": 53399,
@@ -2105,7 +2113,7 @@ const Designer = {
   },
   "54149": {
     "id": 54149,
-    "name": "Erik Dahlman"
+    "name": "Erik Dahlman (I)"
   },
   "55873": {
     "id": 55873,
@@ -2127,6 +2135,10 @@ const Designer = {
     "id": 56546,
     "name": "Joseph Fatula"
   },
+  "56905": {
+    "id": 56905,
+    "name": "Christian Boutin"
+  },
   "57202": {
     "id": 57202,
     "name": "Wolf Plancke"
@@ -2146,6 +2158,10 @@ const Designer = {
   "57793": {
     "id": 57793,
     "name": "Ole Steiness"
+  },
+  "58052": {
+    "id": 58052,
+    "name": "Alexandre Garcia"
   },
   "58071": {
     "id": 58071,
@@ -2283,10 +2299,6 @@ const Designer = {
     "id": 62674,
     "name": "Aaron Dill"
   },
-  "62686": {
-    "id": 62686,
-    "name": "Pantelis Bouboulis"
-  },
   "62803": {
     "id": 62803,
     "name": "Lukas Litzsinger"
@@ -2302,6 +2314,10 @@ const Designer = {
   "63549": {
     "id": 63549,
     "name": "Thomas Spitzer"
+  },
+  "63649": {
+    "id": 63649,
+    "name": "Brad Brooks"
   },
   "63686": {
     "id": 63686,
@@ -2382,6 +2398,10 @@ const Designer = {
   "67160": {
     "id": 67160,
     "name": "Nunzio Surace"
+  },
+  "67287": {
+    "id": 67287,
+    "name": "Chris Darden"
   },
   "67502": {
     "id": 67502,
@@ -2519,6 +2539,10 @@ const Designer = {
     "id": 70615,
     "name": "Matt Golec"
   },
+  "70631": {
+    "id": 70631,
+    "name": "Johannes Sich"
+  },
   "70710": {
     "id": 70710,
     "name": "BakaFire"
@@ -2531,10 +2555,6 @@ const Designer = {
     "id": 70943,
     "name": "Nicholas Bodart"
   },
-  "71006": {
-    "id": 71006,
-    "name": "Morten Monrad Pedersen"
-  },
   "71478": {
     "id": 71478,
     "name": "Matthew Inman"
@@ -2542,6 +2562,10 @@ const Designer = {
   "71676": {
     "id": 71676,
     "name": "Ian Brody"
+  },
+  "71806": {
+    "id": 71806,
+    "name": "Andrew Platt"
   },
   "71982": {
     "id": 71982,
@@ -2567,9 +2591,9 @@ const Designer = {
     "id": 73154,
     "name": "David Chircop"
   },
-  "73308": {
-    "id": 73308,
-    "name": "Nicolas Poncin"
+  "73362": {
+    "id": 73362,
+    "name": "Luther Bell Hendricks V"
   },
   "73364": {
     "id": 73364,
@@ -2618,10 +2642,6 @@ const Designer = {
   "74331": {
     "id": 74331,
     "name": "József Dorsonczky"
-  },
-  "74489": {
-    "id": 74489,
-    "name": "Yuri Zhuravljov"
   },
   "74989": {
     "id": 74989,
@@ -2691,13 +2711,13 @@ const Designer = {
     "id": 77318,
     "name": "Olivier Rolko"
   },
+  "77527": {
+    "id": 77527,
+    "name": "Louis Lafair"
+  },
   "77890": {
     "id": 77890,
     "name": "Mikkel Bertelsen"
-  },
-  "77922": {
-    "id": 77922,
-    "name": "Harold Buchanan"
   },
   "78199": {
     "id": 78199,
@@ -2759,6 +2779,10 @@ const Designer = {
     "id": 80920,
     "name": "Brian Neff"
   },
+  "81172": {
+    "id": 81172,
+    "name": "Saashi"
+  },
   "81193": {
     "id": 81193,
     "name": "Andrew Ruhnke"
@@ -2774,10 +2798,6 @@ const Designer = {
   "81782": {
     "id": 81782,
     "name": "Sami Laakso"
-  },
-  "81801": {
-    "id": 81801,
-    "name": "Jesse Li"
   },
   "81814": {
     "id": 81814,
@@ -2811,10 +2831,6 @@ const Designer = {
     "id": 84004,
     "name": "Jon Mietling"
   },
-  "84055": {
-    "id": 84055,
-    "name": "Will Kenyon"
-  },
   "84477": {
     "id": 84477,
     "name": "Adrian Abela"
@@ -2826,6 +2842,10 @@ const Designer = {
   "85259": {
     "id": 85259,
     "name": "Michal Walczak"
+  },
+  "85379": {
+    "id": 85379,
+    "name": "Alexandar Ortloff"
   },
   "85840": {
     "id": 85840,
@@ -2899,6 +2919,10 @@ const Designer = {
     "id": 88892,
     "name": "Ben Goldman"
   },
+  "89358": {
+    "id": 89358,
+    "name": "Jochen Eisenhuth"
+  },
   "89487": {
     "id": 89487,
     "name": "Ghislain Masson"
@@ -2946,6 +2970,10 @@ const Designer = {
   "92370": {
     "id": 92370,
     "name": "Paul Dennen"
+  },
+  "92485": {
+    "id": 92485,
+    "name": "Stuart Platt"
   },
   "93295": {
     "id": 93295,
@@ -3039,6 +3067,10 @@ const Designer = {
     "id": 97519,
     "name": "Michael Gernes"
   },
+  "97699": {
+    "id": 97699,
+    "name": "J.B. Howell"
+  },
   "97955": {
     "id": 97955,
     "name": "Nate Chatellier"
@@ -3123,6 +3155,10 @@ const Designer = {
     "id": 103821,
     "name": "S J Macdonald"
   },
+  "103888": {
+    "id": 103888,
+    "name": "Norbert Abel"
+  },
   "103924": {
     "id": 103924,
     "name": "Annie VanderMeer Mitsoda"
@@ -3130,6 +3166,10 @@ const Designer = {
   "105000": {
     "id": 105000,
     "name": "Lincoln Petersen"
+  },
+  "105241": {
+    "id": 105241,
+    "name": "Alexis Allard"
   },
   "105994": {
     "id": 105994,
@@ -3207,6 +3247,10 @@ const Designer = {
     "id": 112588,
     "name": "Tyler Parrott"
   },
+  "112943": {
+    "id": 112943,
+    "name": "Joshua Lafair"
+  },
   "113280": {
     "id": 113280,
     "name": "Brian O'Neill"
@@ -3259,6 +3303,10 @@ const Designer = {
     "id": 117880,
     "name": "Kevin Russ"
   },
+  "117910": {
+    "id": 117910,
+    "name": "Becca Lafair"
+  },
   "118086": {
     "id": 118086,
     "name": "Carsten Lauber"
@@ -3279,9 +3327,21 @@ const Designer = {
     "id": 119800,
     "name": "Michael Boggs"
   },
+  "119851": {
+    "id": 119851,
+    "name": "Will Leaf"
+  },
   "120147": {
     "id": 120147,
     "name": "Robert William Smith"
+  },
+  "120154": {
+    "id": 120154,
+    "name": "Adrien Hesling"
+  },
+  "120155": {
+    "id": 120155,
+    "name": "Axel Hesling"
   },
   "120500": {
     "id": 120500,
@@ -3294,6 +3354,18 @@ const Designer = {
   "124763": {
     "id": 124763,
     "name": "Jeremie Chassaing"
+  },
+  "127822": {
+    "id": 127822,
+    "name": "Min"
+  },
+  "127823": {
+    "id": 127823,
+    "name": "Elwen"
+  },
+  "129749": {
+    "id": 129749,
+    "name": "Dennis K. Chan"
   },
   "130658": {
     "id": 130658,
