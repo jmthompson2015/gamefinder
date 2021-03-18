@@ -33,6 +33,12 @@ const parseUserGameIds = (xmlDocument) => {
   return answer;
 };
 
+const GREG_GAME_IDS = [
+  224517, // Brass: Birmingham
+];
+const KIRK_GAME_IDS = [
+  283355, // Dune (2019)
+];
 const NIC_GAME_IDS = [
   222514, // Batman: Gotham City Chronicles
   124361, // Concordia
@@ -58,7 +64,15 @@ GameCollectionFetcher.fetchData = (username) =>
       resolve(GameCollectionState.create({ userId: user.id, gameIds }));
     } else {
       const receiveData = (xmlDocument) => {
-        const gameIds = parseUserGameIds(xmlDocument);
+        const gameIds0 = parseUserGameIds(xmlDocument);
+        let gameIds = gameIds0;
+
+        if (username === "ghightshoe") {
+          gameIds = R.uniq(R.concat(gameIds0, GREG_GAME_IDS));
+        } else if (username === "kmistr") {
+          gameIds = R.uniq(R.concat(gameIds0, KIRK_GAME_IDS));
+        }
+
         gameIds.sort((a, b) => a - b);
         const user = ASelector.userByName(username);
         resolve(GameCollectionState.create({ userId: user.id, gameIds }));
