@@ -21,11 +21,11 @@ QUnit.test("load()", (assert) => {
     assert.ok(gameToSummary);
     assert.equal(
       Object.keys(gameToSummary).length,
-      185,
+      200,
       "gameToSummary length"
     );
     assert.ok(gameToDetail);
-    assert.equal(Object.keys(gameToDetail).length, 746, "gameToDetail length");
+    assert.equal(Object.keys(gameToDetail).length, 747, "gameToDetail length");
     done();
   });
 });
@@ -64,7 +64,7 @@ QUnit.test("loadGameDetails()", (assert) => {
       assert.ok(true, "test resumed from async operation");
       assert.ok(gameToDetail);
 
-      assert.equal(Object.keys(gameToDetail).length, 94);
+      assert.equal(Object.keys(gameToDetail).length, 100);
       done();
       done2();
     });
@@ -82,7 +82,7 @@ QUnit.test("loadGameSummaries()", (assert) => {
     // Verify.
     assert.ok(true, "summaryCallback() test resumed from async operation");
     assert.ok(gameToSummary);
-    assert.equal(Object.keys(gameToSummary).length, 185);
+    assert.equal(Object.keys(gameToSummary).length, 200);
     done();
   });
 });

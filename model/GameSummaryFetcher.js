@@ -2,7 +2,8 @@ import GameSummaryState from "../state/GameSummaryState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = page => `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
+const createUrl = (page) =>
+  `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
 
 const parseBetween = (htmlFragment, startKey, endKey) => {
   const index0 = htmlFragment.indexOf(startKey);
@@ -21,7 +22,7 @@ const parseElement = (cell, tag) => {
   return parseBetween(element, ">", key1);
 };
 
-const parseId = cell => {
+const parseId = (cell) => {
   const key0 = "boardgame/";
   const index0 = cell.indexOf(key0);
   const key1 = "/";
@@ -52,23 +53,26 @@ const parseGameSummary = (htmlDocument, htmlFragment) => {
     geekRatingDisplay,
     averageRating: parseFloat(averageRatingDisplay),
     averageRatingDisplay,
-    numVoters: parseInt(numVoters, 10)
+    numVoters: parseInt(numVoters, 10),
   });
 };
 
-const parseGameSummaries = htmlDocument => {
+const parseGameSummaries = (htmlDocument) => {
   const answer = [];
 
   // This gives the data rows (tr).
-  const key = "<tr id='row_'>";
+  const key = "<tr id='row_";
   const rows = htmlDocument.split(key);
   // Ignore first row.
   rows.shift();
   const lastRow0 = rows[rows.length - 1];
   const lastKey = "</tr>";
-  const lastRow = lastRow0.substring(0, lastRow0.indexOf(lastKey) + lastKey.length);
+  const lastRow = lastRow0.substring(
+    0,
+    lastRow0.indexOf(lastKey) + lastKey.length
+  );
   rows[rows.length - 1] = lastRow;
-  rows.forEach(thisRow => {
+  rows.forEach((thisRow) => {
     const gameSummary = parseGameSummary(htmlDocument, thisRow.trim());
     answer.push(gameSummary);
   });
@@ -78,21 +82,23 @@ const parseGameSummaries = htmlDocument => {
 
 const GameSummaryFetcher = {};
 
-GameSummaryFetcher.fetchData = page =>
+GameSummaryFetcher.fetchData = (page) =>
   new Promise((resolve, reject) => {
-    const receiveData = htmlDocument => {
+    const receiveData = (htmlDocument) => {
       if (htmlDocument) {
         const gameSummaries = parseGameSummaries(htmlDocument);
         resolve({ page, gameSummaries });
       } else {
-        reject(new Error(`HTML document content is undefined for page: ${page}`));
+        reject(
+          new Error(`HTML document content is undefined for page: ${page}`)
+        );
       }
     };
 
     const url = createUrl(page);
     const options = {};
     FetchUtilities.fetchRetry(url, options, 5)
-      .then(response => response.text())
+      .then((response) => response.text())
       .then(receiveData);
   });
 
