@@ -59,11 +59,11 @@ QUnit.test("createMechanicMap()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result).length, 21);
+  assert.equal(Object.keys(result).length, 20);
   verifyEntity(assert, result[2004], 2004, "Set Collection", 1);
   verifyEntity(assert, result[2011], 2011, "Modular Board", 1);
   verifyEntity(assert, result[2015], 2015, "Variable Player Powers", 2);
-  verifyEntity(assert, result[2020], 2020, "Simultaneous Action Selection", 2);
+  verifyEntity(assert, result[2020], 2020, "Simultaneous Action Selection", 1);
   verifyEntity(assert, result[2023], 2023, "Cooperative Game", 1);
   verifyEntity(assert, result[2040], 2040, "Hand Management", 1);
   verifyEntity(assert, result[2080], 2080, "Area Majority / Influence", 2);

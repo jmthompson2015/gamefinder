@@ -14,15 +14,13 @@ QUnit.test("fetchData() 2", (assert) => {
     assert.equal(page, page0);
     assert.ok(gameSummaries);
     gameSummaries.sort((a, b) => a.id - b.id);
-    const length = 100;
-    assert.equal(gameSummaries.length, length);
-    assert.equal(gameSummaries[0].id, 12, "id");
-    assert.equal(gameSummaries[0].title, "Ra (1999)");
-    assert.equal(gameSummaries[length - 1].id, 287954);
-    assert.equal(
-      gameSummaries[length - 1].title,
-      "Azul: Summer Pavilion (2019)"
-    );
+    assert.equal(gameSummaries.length, 91);
+    const gameSummary0 = R.head(gameSummaries);
+    assert.equal(gameSummary0.id, 12, "id");
+    assert.equal(gameSummary0.title, "Ra (1999)");
+    const gameSummaryLast = R.last(gameSummaries);
+    assert.equal(gameSummaryLast.id, 312484);
+    assert.equal(gameSummaryLast.title, "Lost Ruins of Arnak (2020)");
     done();
   });
 });

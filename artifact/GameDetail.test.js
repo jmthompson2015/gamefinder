@@ -13,9 +13,9 @@ QUnit.test("GameDetail properties Scythe", (assert) => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 12);
+  assert.equal(detail.boardGameRank, 14);
   assert.equal(detail.title, "Scythe");
-  assert.equal(round2(detail.geekRating), 8.09);
+  assert.equal(round2(detail.geekRating), 8.08);
 });
 
 QUnit.test("GameDetail properties Spirit Island", (assert) => {
@@ -27,9 +27,9 @@ QUnit.test("GameDetail properties Spirit Island", (assert) => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 13);
+  assert.equal(detail.boardGameRank, 12);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(round2(detail.geekRating), 8.07);
+  assert.equal(round2(detail.geekRating), 8.11);
 });
 
 QUnit.test("GameDetail keys", (assert) => {
@@ -39,15 +39,15 @@ QUnit.test("GameDetail keys", (assert) => {
   const keys = Object.keys(GameDetail);
 
   // Verify.
-  assert.equal(keys.length, 1404);
+  assert.equal(keys.length, 1457);
 
   const detail0 = GameDetail[R.head(keys)];
   assert.equal(detail0.id, 1);
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[R.last(keys)];
-  assert.equal(detailLast.id, 312667);
-  assert.equal(detailLast.title, "Exploding Kittens: Barking Kittens");
+  assert.equal(detailLast.id, 318977);
+  assert.equal(detailLast.title, "MicroMacro: Crime City");
 });
 
 const GameDetailTest = {};

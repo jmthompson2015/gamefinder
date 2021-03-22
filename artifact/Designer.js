@@ -2971,6 +2971,10 @@ const Designer = {
     "id": 92370,
     "name": "Paul Dennen"
   },
+  "92425": {
+    "id": 92425,
+    "name": "Peter Rustemeyer"
+  },
   "92485": {
     "id": 92485,
     "name": "Stuart Platt"
@@ -3370,6 +3374,14 @@ const Designer = {
   "130658": {
     "id": 130658,
     "name": "Mathieu Casnin"
+  },
+  "130660": {
+    "id": 130660,
+    "name": "Yohan Servais"
+  },
+  "130661": {
+    "id": 130661,
+    "name": "Aristide Bruyant"
   }
 }
 

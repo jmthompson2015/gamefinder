@@ -43,7 +43,7 @@ QUnit.test("create() Scythe", (assert) => {
   assert.equal(data.categories[0].name, "Economic", "categories[0] name");
   assert.equal(data.designers.length, 1, "designers length");
   assert.equal(data.designers[0].name, "Jamey Stegmaier", "designers[0] name");
-  assert.equal(data.mechanics.length, 15, "mechanics length");
+  assert.equal(data.mechanics.length, 12, "mechanics length");
   assert.equal(
     data.mechanics[0].name,
     "Area Majority / Influence",
