@@ -35,6 +35,8 @@ const parseUserGameIds = (xmlDocument) => {
 
 const GREG_GAME_IDS = [
   224517, // Brass: Birmingham
+  146508, // T.I.M.E Stories
+  266192, // Wingspan
 ];
 const KIRK_GAME_IDS = [
   283355, // Dune (2019)
