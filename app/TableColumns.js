@@ -2,21 +2,11 @@ import EntitiesTable from "../view/EntitiesTable.js";
 
 import Formatter from "./Formatter.js";
 
+const { ColumnUtilities: CU } = FilteredReactTable;
+
 const DESIGNER_URL = "https://www.boardgamegeek.com/boardgamedesigner/";
 const CATEGORY_URL = "https://www.boardgamegeek.com/boardgamecategory/";
 const MECHANIC_URL = "https://www.boardgamegeek.com/boardgamemechanic/";
-
-const createImageLink = (src, href, title) => {
-  const image = ReactDOMFactories.img({ src });
-
-  return ReactDOMFactories.a(
-    { key: src, href, title, target: "_blank" },
-    image
-  );
-};
-
-const createLink = (href, name) =>
-  ReactDOMFactories.a({ key: name, href, target: "_blank" }, name);
 
 const createEntitiesTable = (entities, url) =>
   React.createElement(EntitiesTable, { entities, url });
@@ -26,15 +16,12 @@ const mapUsers = (users) => {
     const src = `../resource/${user.name}.png`;
     const href = `https://www.boardgamegeek.com/collection/user/${user.name}`;
 
-    return createImageLink(src, href, user.name);
+    return CU.createImageLink(src, href, user.name);
   };
   const cells = R.map(mapFunction, R.sortBy(R.prop("name"), users));
 
   return ReactDOMFactories.span({ className: "widthFull" }, cells);
 };
-
-const round2 = (value) =>
-  ![undefined, null].includes(value) ? value.toFixed(2) : undefined;
 
 const TableColumns = [
   {
@@ -42,9 +29,9 @@ const TableColumns = [
     label: "Owner",
     type: "string",
     className: "displayInlineBlock",
+    valueFunction: (row) => Formatter.formatEntities(row.usernames),
     cellFunction: (row) =>
       row.usernames !== undefined ? mapUsers(row.usernames) : undefined,
-    valueFunction: (row) => Formatter.formatEntities(row.usernames),
   },
   {
     key: "boardGameRank",
@@ -57,10 +44,6 @@ const TableColumns = [
     key: "title",
     label: "Title",
     className: "tl",
-    cellFunction: (row) => {
-      const href = `https://www.boardgamegeek.com/boardgame/${row.id}`;
-      return createLink(href, row.title);
-    },
     valueFunction: (row) => {
       const editTitle = (article) => (title) =>
         title.startsWith(article) ? title.substring(article.length) : title;
@@ -70,12 +53,16 @@ const TableColumns = [
         editTitle("The ")
       )(row.title);
     },
+    cellFunction: (row) => {
+      const href = `https://www.boardgamegeek.com/boardgame/${row.id}`;
+      return CU.createLink(href, row.title);
+    },
   },
   {
     key: "designers",
     label: "Designer",
-    cellFunction: (row) => createEntitiesTable(row.designers, DESIGNER_URL),
     valueFunction: (row) => Formatter.formatEntities(row.designers),
+    cellFunction: (row) => createEntitiesTable(row.designers, DESIGNER_URL),
   },
   {
     key: "yearPublished",
@@ -91,7 +78,8 @@ const TableColumns = [
     max: 10,
     step: 0.1,
     className: "tr",
-    convertFunction: (data) => round2(data.geekRating),
+    convertFunction: (data) =>
+      CU.formatNumber(data.geekRating, CU.US_FORMATTER2),
   },
   {
     key: "minPlayers",
@@ -134,19 +122,20 @@ const TableColumns = [
     max: 5,
     step: 0.1,
     className: "tr",
-    convertFunction: (data) => round2(data.averageWeight),
+    convertFunction: (data) =>
+      CU.formatNumber(data.averageWeight, CU.US_FORMATTER2),
   },
   {
     key: "categories",
     label: "Category",
-    cellFunction: (row) => createEntitiesTable(row.categories, CATEGORY_URL),
     valueFunction: (row) => Formatter.formatEntities(row.categories),
+    cellFunction: (row) => createEntitiesTable(row.categories, CATEGORY_URL),
   },
   {
     key: "mechanics",
     label: "Mechanic",
-    cellFunction: (row) => createEntitiesTable(row.mechanics, MECHANIC_URL),
     valueFunction: (row) => Formatter.formatEntities(row.mechanics),
+    cellFunction: (row) => createEntitiesTable(row.mechanics, MECHANIC_URL),
   },
 ];
 

@@ -17,7 +17,11 @@ const store = Redux.createStore(Reducer.root);
 let frt;
 
 GameLoader.load(store).then(() => {
-  console.log(`myCallback() store.getState().isDataLoaded ? ${store.getState().isDataLoaded}`);
+  console.log(
+    `myCallback() store.getState().isDataLoaded ? ${
+      store.getState().isDataLoaded
+    }`
+  );
 
   if (Selector.isDataLoaded(store.getState())) {
     // Clear the progress area.
@@ -30,11 +34,17 @@ GameLoader.load(store).then(() => {
     // Add the filter and table.
     const { tableRows } = store.getState();
     const appName = "GameFinder";
-    const onFilterChange = filteredTableRows => {
-      console.log(`onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`);
+    const onFilterChange = (filteredTableRows) => {
+      console.log(
+        `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
+      );
     };
-    const onShowColumnChange = columnToChecked => {
-      console.log(`onShowColumnChange() columnToChecked = ${JSON.stringify(columnToChecked)}`);
+    const onShowColumnChange = (columnToChecked) => {
+      console.log(
+        `onShowColumnChange() columnToChecked = ${JSON.stringify(
+          columnToChecked
+        )}`
+      );
     };
     const isVerbose = true;
     frt = new FilteredReactTable(
@@ -47,18 +57,34 @@ GameLoader.load(store).then(() => {
     );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
-    ReactDOM.render(frt.filterPanel(), document.getElementById("filter"));
-    ReactDOM.render(frt.showColumnsPanel(), document.getElementById("showColumns"));
+    const className = "gf-bg-dark1 ma1";
+    const headerClass = "f5 ph1 pt1 tl white";
+    ReactDOM.render(
+      frt.filterPanel("Filters", className, headerClass),
+      document.getElementById("filter")
+    );
+    ReactDOM.render(
+      frt.showColumnsPanel("Columns", className, headerClass),
+      document.getElementById("showColumns")
+    );
     ReactDOM.render(frt.tableElement(), document.getElementById("tabPanel"));
   }
 });
 
 const container0 = React.createElement(ProgressContainer);
-const element0 = React.createElement(ReactRedux.Provider, { store }, container0);
+const element0 = React.createElement(
+  ReactRedux.Provider,
+  { store },
+  container0
+);
 ReactDOM.render(element0, document.getElementById("progress"));
 
 const container2 = React.createElement(DisplayTabContainer);
-const element2 = React.createElement(ReactRedux.Provider, { store }, container2);
+const element2 = React.createElement(
+  ReactRedux.Provider,
+  { store },
+  container2
+);
 ReactDOM.render(element2, document.getElementById("displayTabs"));
 
 const renderDisplayTab = () => {
@@ -69,7 +95,9 @@ const renderDisplayTab = () => {
       ReactDOM.render(frt.tableElement(), document.getElementById("tabPanel"));
     }
   } else {
-    const container3 = React.createElement(EntityChartsContainer, { entityName: displayTab });
+    const container3 = React.createElement(EntityChartsContainer, {
+      entityName: displayTab,
+    });
     const element3 = React.createElement(
       ReactRedux.Provider,
       { key: displayTab, store },
@@ -79,5 +107,5 @@ const renderDisplayTab = () => {
   }
 };
 
-const select = state => state.displayTab;
+const select = (state) => state.displayTab;
 Observer.observeStore(store, select, renderDisplayTab);

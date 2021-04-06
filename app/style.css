@@ -8,37 +8,13 @@ body {
   width: 100%;
 }
 
-.frt-filter {
+.fjs-filter-ui input {
+  width: 100px;
+}
+
+.fjs-filters-ui {
   background: Green;
   font-size: small;
-}
-
-.frt-filter .button {
-  padding: 2px;
-}
-
-.frt-filter .buttons {
-  float: right;
-}
-
-.frt-filter .button-panel {
-  padding: 2px;
-  text-align: center;
-}
-
-.frt-filter .field {
-  width: 150px;
-}
-
-.frt-filter .title {
-  font-size: large;
-  font-weight: bold;
-  padding: 2px;
-  text-align: left;
-}
-
-.frt-filter-row div {
-  padding: 2px;
 }
 
 .frt-rowCount {
