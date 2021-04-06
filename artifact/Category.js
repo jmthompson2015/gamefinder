@@ -239,6 +239,10 @@ const Category = {
     "id": 1090,
     "name": "Pirates"
   },
+  "1091": {
+    "id": 1091,
+    "name": "Korean War"
+  },
   "1093": {
     "id": 1093,
     "name": "Novel-based"
@@ -286,6 +290,10 @@ const Category = {
   "1116": {
     "id": 1116,
     "name": "Comic Book / Strip"
+  },
+  "1117": {
+    "id": 1117,
+    "name": "Book"
   },
   "1118": {
     "id": 1118,

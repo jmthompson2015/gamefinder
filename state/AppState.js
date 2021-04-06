@@ -1,7 +1,7 @@
 const AppState = {};
 
 AppState.create = ({
-  pageCount = 5,
+  pageCount = 10,
   tableRows = [],
   filteredReactTable,
   displayTab = "Game Table",
@@ -18,7 +18,7 @@ AppState.create = ({
   userMap = {},
   userToGames = {},
   summaryToReceivedMap = {},
-  userToReceivedMap = {}
+  userToReceivedMap = {},
 } = {}) =>
   Immutable({
     pageCount,
@@ -44,7 +44,7 @@ AppState.create = ({
     // summary page to boolean
     summaryToReceivedMap,
     // user ID to boolean
-    userToReceivedMap
+    userToReceivedMap,
   });
 
 Object.freeze(AppState);

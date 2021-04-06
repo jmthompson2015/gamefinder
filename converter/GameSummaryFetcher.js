@@ -9,7 +9,7 @@ const GameSummaryFetcher = {};
 
 const OUTPUT_FILE = "GameSummary.json";
 
-const extractCellContent = cellRow => {
+const extractCellContent = (cellRow) => {
   const key0 = "<td";
   const index0 = cellRow.indexOf(key0);
   const key1 = ">";
@@ -20,7 +20,7 @@ const extractCellContent = cellRow => {
   return index2 >= 0 ? content.substring(index2 + key1.length).trim() : content;
 };
 
-const extractLinkHref = anchorRow => {
+const extractLinkHref = (anchorRow) => {
   const key0 = "<a";
   const index0 = anchorRow.indexOf(key0);
   const key1 = 'href="';
@@ -35,7 +35,9 @@ const reduceFunction1 = (accum, dataRow) => {
   if (dataElements.length > 0 && dataElements[0] && dataElements[2]) {
     const rankString = extractCellContent(dataElements[0]);
     const rank = parseInt(rankString, 10);
-    const url = `https://www.boardgamegeek.com/${extractLinkHref(dataElements[2])}`;
+    const url = `https://www.boardgamegeek.com/${extractLinkHref(
+      dataElements[2]
+    )}`;
     const index1 = url.lastIndexOf("/");
     const index0 = url.lastIndexOf("/", index1 - 1);
     const gameId = url.substring(index0 + 1, index1);
@@ -46,10 +48,10 @@ const reduceFunction1 = (accum, dataRow) => {
   return accum;
 };
 
-GameSummaryFetcher.fetch = page =>
+GameSummaryFetcher.fetch = (page) =>
   new Promise((resolve, reject) => {
     const inputFile = `https://www.boardgamegeek.com/browse/boardgame/page/${page}`;
-    const receiveData = data => {
+    const receiveData = (data) => {
       if (data === undefined) {
         reject(new Error(`Failed to load inputFile: ${inputFile}`));
       }
@@ -68,15 +70,15 @@ GameSummaryFetcher.fetch = page =>
 
     const options = {};
     FileLoader.fetchRetry(inputFile, options, 3)
-      .then(response => response.text())
+      .then((response) => response.text())
       .then(receiveData);
   });
 
-GameSummaryFetcher.fetchAll = maxPages =>
-  new Promise(resolve => {
+GameSummaryFetcher.fetchAll = (maxPages) =>
+  new Promise((resolve) => {
     let content = [];
     let count = 0;
-    const loopFunction = data => {
+    const loopFunction = (data) => {
       content = R.concat(content, data);
       count += 1;
 
@@ -91,8 +93,8 @@ GameSummaryFetcher.fetchAll = maxPages =>
   });
 
 const start = Date.now();
-const maxPages = 10;
-GameSummaryFetcher.fetchAll(maxPages).then(content0 => {
+const maxPages = 15;
+GameSummaryFetcher.fetchAll(maxPages).then((content0) => {
   const content = JSON.stringify(content0, null, "  ");
   FileWriter.writeFile(OUTPUT_FILE, content);
   const end = Date.now();

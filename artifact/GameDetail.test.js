@@ -39,15 +39,15 @@ QUnit.test("GameDetail keys", (assert) => {
   const keys = Object.keys(GameDetail);
 
   // Verify.
-  assert.equal(keys.length, 1457);
+  assert.equal(keys.length, 1938);
 
   const detail0 = GameDetail[R.head(keys)];
   assert.equal(detail0.id, 1);
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[R.last(keys)];
-  assert.equal(detailLast.id, 318977);
-  assert.equal(detailLast.title, "MicroMacro: Crime City");
+  assert.equal(detailLast.id, 319966);
+  assert.equal(detailLast.title, "The King is Dead: Second Edition");
 });
 
 const GameDetailTest = {};

@@ -31,6 +31,10 @@ const Mechanic = {
     "id": 2009,
     "name": "Trick-taking"
   },
+  "2010": {
+    "id": 2010,
+    "name": "Crayon Rail System"
+  },
   "2011": {
     "id": 2011,
     "name": "Modular Board"
@@ -130,6 +134,10 @@ const Mechanic = {
   "2055": {
     "id": 2055,
     "name": "Paper-and-Pencil"
+  },
+  "2057": {
+    "id": 2057,
+    "name": "Chit-Pull System"
   },
   "2060": {
     "id": 2060,
@@ -626,6 +634,10 @@ const Mechanic = {
   "2967": {
     "id": 2967,
     "name": "Hidden Movement"
+  },
+  "2974": {
+    "id": 2974,
+    "name": "Zone of Control"
   },
   "2975": {
     "id": 2975,
