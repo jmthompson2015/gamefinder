@@ -39,6 +39,7 @@ const TableColumns = [
     type: "number",
     min: 1,
     className: "tr",
+    cellFunction: (row) => CU.formatNumber(row.boardGameRank),
   },
   {
     key: "title",
@@ -78,8 +79,7 @@ const TableColumns = [
     max: 10,
     step: 0.1,
     className: "tr",
-    convertFunction: (data) =>
-      CU.formatNumber(data.geekRating, CU.US_FORMATTER2),
+    cellFunction: (row) => CU.formatNumber(row.geekRating, CU.US_FORMATTER2),
   },
   {
     key: "minPlayers",
@@ -122,8 +122,7 @@ const TableColumns = [
     max: 5,
     step: 0.1,
     className: "tr",
-    convertFunction: (data) =>
-      CU.formatNumber(data.averageWeight, CU.US_FORMATTER2),
+    cellFunction: (row) => CU.formatNumber(row.averageWeight, CU.US_FORMATTER2),
   },
   {
     key: "categories",
