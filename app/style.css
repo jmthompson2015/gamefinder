@@ -1,8 +1,3 @@
-body {
-  background-color: Gainsboro;
-  font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
-}
-
 .textImageLink {
   display: inline-block;
   width: 100%;
@@ -15,11 +10,11 @@ body {
 .fjs-filters-ui {
   background: Green;
   font-size: small;
+  padding: 5px;
 }
 
 .frt-rowCount {
   font-size: small;
-  padding-top: 10px;
   text-align: left;
 }
 

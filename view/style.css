@@ -1,6 +1,5 @@
 body {
-  background-image: url("../resource/yellowGradient.png");
-  background-repeat: repeat-y;
+  background-color: Gray;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -15,7 +14,7 @@ table {
 
 .gf-b--dark1,
 .dataTable td {
-  border: 1px solid DarkGreen;
+  border: 1px solid #008000;
 }
 
 .gf-b--light2,
@@ -57,7 +56,7 @@ table {
 }
 
 .gf-dark1 {
-  color: DarkGreen;
+  color: #008000;
 }
 
 .gf-light2,
@@ -79,65 +78,4 @@ table {
 
 .gf-h-entity {
   height: 180px;
-}
-
-.dataTable tbody tr:nth-child(2n) td {
-  background: #e0ffe0;
-}
-
-.dataTable tbody tr:nth-child(2n + 1) td {
-  background: White;
-}
-
-#ALIGN_LEFT,
-.progressTextCell,
-.rowCount,
-.textCell,
-.alignLeft {
-  text-align: left;
-}
-
-#ALIGN_RIGHT,
-.numberCell,
-.progressNumberCell,
-.alignRight {
-  text-align: right;
-}
-
-#DISPLAY_INLINE_BLOCK,
-.textImageLink,
-.displayInlineBlock {
-  display: inline-block;
-}
-
-#FONT_SMALL,
-.dataTable,
-.rowCount,
-.fontSmall {
-  font-size: small;
-}
-
-#PADDING_LR3,
-.progressUI td,
-.paddingLR3 {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-#PADDING_TOP_10,
-.rowCount,
-.paddingTop10 {
-  padding-top: 10px;
-}
-
-#WIDTH_60,
-.filterField,
-.width60 {
-  width: 60px;
-}
-
-#WIDTH_FULL,
-.textImageLink,
-.widthFull {
-  width: 100%;
 }
