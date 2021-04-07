@@ -11,7 +11,12 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     );
   }
 
-  const { boardGameRank: boardGameRank1, geekRating: geekRating1, id: id1 } = gameSummary || {};
+  const {
+    boardGameRank: boardGameRank1,
+    geekRating: geekRating1,
+    id: id1,
+    imageUrl,
+  } = gameSummary || {};
   const {
     averageWeight,
     bestWithPlayers,
@@ -26,7 +31,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     yearPublished,
     categoryIds,
     designerIds,
-    mechanicIds
+    mechanicIds,
   } = gameDetail;
 
   const id = id1 || id2;
@@ -39,6 +44,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     boardGameRank,
     geekRating,
     id,
+    imageUrl,
     maxPlayers,
     maxPlayTime,
     minPlayers,
@@ -48,7 +54,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     yearPublished,
     categories: ASelector.categoriesByIds(categoryIds),
     designers: ASelector.designersByIds(designerIds),
-    mechanics: ASelector.mechanicsByIds(mechanicIds)
+    mechanics: ASelector.mechanicsByIds(mechanicIds),
   });
 };
 

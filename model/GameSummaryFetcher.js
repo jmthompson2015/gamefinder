@@ -31,9 +31,21 @@ const parseId = (cell) => {
   return cell.substring(index0 + key0.length, index1);
 };
 
+const parseImageUrl = (cell) => {
+  const key0 = 'src="';
+  const index0 = cell.indexOf(key0);
+  const key1 = '"';
+  const index1 = cell.indexOf(key1, index0 + key0.length);
+
+  return index1 > index0
+    ? cell.substring(index0 + key0.length, index1)
+    : undefined;
+};
+
 const parseGameSummary = (htmlDocument, htmlFragment) => {
   const cells = htmlFragment.split("<td");
   const boardGameRank = parseBetween(cells[1], "</a>", "</td>");
+  const imageUrl = parseImageUrl(cells[2]);
 
   const title = parseElement(cells[3], "a");
   const id = parseId(cells[3]);
@@ -47,6 +59,7 @@ const parseGameSummary = (htmlDocument, htmlFragment) => {
 
   return GameSummaryState.create({
     id: parseInt(id, 10),
+    imageUrl,
     title: `${title} ${year}`,
     boardGameRank: parseInt(boardGameRank, 10),
     geekRating: parseFloat(geekRatingDisplay),

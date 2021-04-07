@@ -42,6 +42,14 @@ const TableColumns = [
     cellFunction: (row) => CU.formatNumber(row.boardGameRank),
   },
   {
+    key: "imageUrl",
+    label: "Image",
+    type: "string",
+    valueFunction: (row) => row.title,
+    cellFunction: (row) =>
+      row.imageUrl ? CU.createIcon(row.imageUrl, row.title) : " ",
+  },
+  {
     key: "title",
     label: "Title",
     className: "tl",

@@ -2,23 +2,25 @@ const GameSummaryState = {};
 
 GameSummaryState.create = ({
   id,
+  imageUrl,
   title,
   boardGameRank,
   geekRating,
   geekRatingDisplay,
   averageRating,
   averageRatingDisplay,
-  numVoters
+  numVoters,
 }) =>
   Immutable({
     id,
+    imageUrl,
     title,
     boardGameRank,
     geekRating,
     geekRatingDisplay,
     averageRating,
     averageRatingDisplay,
-    numVoters
+    numVoters,
   });
 
 Object.freeze(GameSummaryState);
