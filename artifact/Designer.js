@@ -381,7 +381,7 @@ const Designer = {
   },
   "219": {
     "id": 219,
-    "name": "Philippe des Pallières"
+    "name": "Philippe des Pallieres"
   },
   "222": {
     "id": 222,
@@ -462,10 +462,6 @@ const Designer = {
   "335": {
     "id": 335,
     "name": "Frank Chadwick"
-  },
-  "345": {
-    "id": 345,
-    "name": "Robert Harris"
   },
   "352": {
     "id": 352,
@@ -2425,7 +2421,7 @@ const Designer = {
   },
   "40646": {
     "id": 40646,
-    "name": "Nicolò Tedeschi"
+    "name": "Nicolo Tedeschi"
   },
   "40648": {
     "id": 40648,
@@ -3317,7 +3313,7 @@ const Designer = {
   },
   "72628": {
     "id": 72628,
-    "name": "Theo Rivière"
+    "name": "Theo Riviere"
   },
   "72770": {
     "id": 72770,
@@ -3381,7 +3377,7 @@ const Designer = {
   },
   "74331": {
     "id": 74331,
-    "name": "József Dorsonczky"
+    "name": "Jozsef Dorsonczky"
   },
   "74432": {
     "id": 74432,
@@ -4173,7 +4169,7 @@ const Designer = {
   },
   "102535": {
     "id": 102535,
-    "name": "Herve Lemaître"
+    "name": "Herve Lemaitre"
   },
   "102932": {
     "id": 102932,
@@ -4475,6 +4471,14 @@ const Designer = {
     "id": 120699,
     "name": "Foxtrot Games"
   },
+  "121697": {
+    "id": 121697,
+    "name": "Kevin Rodgers"
+  },
+  "123285": {
+    "id": 123285,
+    "name": "Geonil"
+  },
   "124762": {
     "id": 124762,
     "name": "Quentin de Cagny"
@@ -4498,6 +4502,10 @@ const Designer = {
   "129749": {
     "id": 129749,
     "name": "Dennis K. Chan"
+  },
+  "130278": {
+    "id": 130278,
+    "name": "Fabien Gridel"
   },
   "130658": {
     "id": 130658,
