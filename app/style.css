@@ -1,3 +1,19 @@
+.checkbox-panel {
+  background: Green;
+  font-size: small;
+  padding: 5px;
+}
+
+.checkbox-panel .button-table {
+  float: right;
+  padding-top: 5px;
+}
+
+.checkbox-panel .scroll-pane {
+  background: White;
+  padding: 2px;
+}
+
 .textImageLink {
   display: inline-block;
   width: 100%;
@@ -16,26 +32,6 @@
 .frt-rowCount {
   font-size: small;
   text-align: left;
-}
-
-.frt-show-columns {
-  background: Green;
-  font-size: small;
-  padding: 5px;
-}
-
-.frt-show-columns .buttons {
-  float: right;
-}
-
-.frt-show-columns .button-panel {
-  padding-top: 5px;
-  text-align: center;
-}
-
-.frt-show-columns .checkbox-panel {
-  background: White;
-  padding: 2px;
 }
 
 .frt-table {
