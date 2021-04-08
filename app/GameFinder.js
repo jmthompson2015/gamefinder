@@ -57,8 +57,8 @@ GameLoader.load(store).then(() => {
     );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
-    const className = undefined;
-    const headerClass = "f5 gf-bg-light1 ph1 pt1 tl";
+    const className = "gf-bg-light1 ma1";
+    const headerClass = "f5 ph1 pt1 tl";
     ReactDOM.render(
       frt.filterPanel("Filters", className, headerClass),
       document.getElementById("filter")
