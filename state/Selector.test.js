@@ -6,12 +6,12 @@ QUnit.module("Selector");
 
 const createGameDetails = () => [
   { id: 1406, title: "Monopoly (1933)", boardGameRank: 16250 },
-  { id: 181, title: "Risk (1959)", boardGameRank: 15588 }
+  { id: 181, title: "Risk (1959)", boardGameRank: 15588 },
 ];
 
 const createGameSummaries = () => [
   { id: 1406, title: "Monopoly (1933)", boardGameRank: 16265 },
-  { id: 181, title: "Risk (1959)", boardGameRank: 15588 }
+  { id: 181, title: "Risk (1959)", boardGameRank: 15588 },
 ];
 
 const GAME_IDS_1 = Immutable([1406, 169786]);
@@ -26,7 +26,7 @@ const verifyGameIds = (assert, gameIds, length, idFirst, idLast) => {
   assert.equal(typeof gameIds[length - 1], "number");
 };
 
-QUnit.test("actualDetailCount()", assert => {
+QUnit.test("actualDetailCount()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -44,7 +44,7 @@ QUnit.test("actualDetailCount()", assert => {
   assert.equal(result, 2);
 });
 
-QUnit.test("actualSummaryCount()", assert => {
+QUnit.test("actualSummaryCount()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -60,7 +60,7 @@ QUnit.test("actualSummaryCount()", assert => {
   assert.equal(result, 2);
 });
 
-QUnit.test("boardGameRank() Monopoly", assert => {
+QUnit.test("boardGameRank() Monopoly", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -79,7 +79,7 @@ QUnit.test("boardGameRank() Monopoly", assert => {
   assert.equal(result, 16265);
 });
 
-QUnit.test("boardGameRank() Risk", assert => {
+QUnit.test("boardGameRank() Risk", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -98,7 +98,7 @@ QUnit.test("boardGameRank() Risk", assert => {
   assert.equal(result, 15588);
 });
 
-QUnit.test("expectedDetailCount()", assert => {
+QUnit.test("expectedDetailCount()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -116,7 +116,7 @@ QUnit.test("expectedDetailCount()", assert => {
   assert.equal(result, 4);
 });
 
-QUnit.test("expectedSummaryCount()", assert => {
+QUnit.test("expectedSummaryCount()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -129,10 +129,10 @@ QUnit.test("expectedSummaryCount()", assert => {
   const result = Selector.expectedSummaryCount(store.getState());
 
   // Verify.
-  assert.equal(result, 500);
+  assert.equal(result, 1000);
 });
 
-QUnit.test("gameIdsFromCollections()", assert => {
+QUnit.test("gameIdsFromCollections()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   store.dispatch(ActionCreator.addUserCollection(1, GAME_IDS_1));
@@ -146,7 +146,7 @@ QUnit.test("gameIdsFromCollections()", assert => {
   verifyGameIds(assert, result, 4, 181, 169786);
 });
 
-QUnit.test("gameIdsFromCollectionsAndSummaries()", assert => {
+QUnit.test("gameIdsFromCollectionsAndSummaries()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -163,7 +163,7 @@ QUnit.test("gameIdsFromCollectionsAndSummaries()", assert => {
   verifyGameIds(assert, result, 4, 181, 169786);
 });
 
-QUnit.test("gameIdsFromSummaries()", assert => {
+QUnit.test("gameIdsFromSummaries()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -178,7 +178,7 @@ QUnit.test("gameIdsFromSummaries()", assert => {
   verifyGameIds(assert, result, 2, 181, 1406);
 });
 
-QUnit.test("gameSummary()", assert => {
+QUnit.test("gameSummary()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -195,7 +195,7 @@ QUnit.test("gameSummary()", assert => {
   assert.equal(result.title, "Monopoly (1933)");
 });
 
-QUnit.test("isCollectionsLoaded()", assert => {
+QUnit.test("isCollectionsLoaded()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
@@ -206,7 +206,7 @@ QUnit.test("isCollectionsLoaded()", assert => {
   assert.ok(!result);
 });
 
-QUnit.test("isDetailsLoaded()", assert => {
+QUnit.test("isDetailsLoaded()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
   const page = 1;
@@ -220,7 +220,7 @@ QUnit.test("isDetailsLoaded()", assert => {
   assert.ok(!result);
 });
 
-QUnit.test("isSummariesLoaded()", assert => {
+QUnit.test("isSummariesLoaded()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
@@ -231,7 +231,7 @@ QUnit.test("isSummariesLoaded()", assert => {
   assert.ok(!result);
 });
 
-QUnit.test("pageCount()", assert => {
+QUnit.test("pageCount()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
 
@@ -240,7 +240,7 @@ QUnit.test("pageCount()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result, 5);
+  assert.equal(result, 10);
 });
 
 const SelectorTest = {};

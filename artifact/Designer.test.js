@@ -21,7 +21,7 @@ QUnit.test("Designer keys", (assert) => {
   const keys = Object.keys(Designer);
 
   // Verify.
-  assert.equal(keys.length, 1130);
+  assert.equal(keys.length, 1132);
 
   const designer0 = Designer[R.head(keys)];
   assert.equal(designer0.id, 1);

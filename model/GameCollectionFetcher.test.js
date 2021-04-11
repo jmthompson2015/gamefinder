@@ -14,9 +14,9 @@ QUnit.test("fetchData() BoardGameArena", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 4);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 300);
+    assert.equal(gameIds.length, 305);
     assert.equal(R.head(gameIds), 10);
-    assert.equal(R.last(gameIds), 310888);
+    assert.equal(R.last(gameIds), 319680);
     done();
   });
 });

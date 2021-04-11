@@ -12,7 +12,7 @@ const createGameDetails = () => [
     maxPlayers: 8,
     categoryIds: [],
     designerIds: [],
-    mechanicIds: []
+    mechanicIds: [],
   },
   {
     id: 181,
@@ -21,16 +21,16 @@ const createGameDetails = () => [
     maxPlayers: 6,
     categoryIds: [],
     designerIds: [],
-    mechanicIds: []
-  }
+    mechanicIds: [],
+  },
 ];
 
 const createGameSummaries = () => [
   { id: 1406, title: "Monopoly (1933)" },
-  { id: 181, title: "Risk (1959)" }
+  { id: 181, title: "Risk (1959)" },
 ];
 
-QUnit.test("addGameDetails()", assert => {
+QUnit.test("addGameDetails()", (assert) => {
   // Setup.
   let state = AppState.create();
   const page = 1;
@@ -47,11 +47,15 @@ QUnit.test("addGameDetails()", assert => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.values(result.gameToDetail).length, 2, "gameToDetail length");
+  assert.equal(
+    Object.values(result.gameToDetail).length,
+    2,
+    "gameToDetail length"
+  );
   assert.equal(result.tableRows.length, 2, "tableRows length");
 });
 
-QUnit.test("addGameSummaries()", assert => {
+QUnit.test("addGameSummaries()", (assert) => {
   // Setup.
   const state = AppState.create();
   const length = 0;
@@ -68,7 +72,7 @@ QUnit.test("addGameSummaries()", assert => {
   assert.equal(Object.keys(result.gameToSummary).length, length + 2);
 });
 
-QUnit.test("addUserCollection()", assert => {
+QUnit.test("addUserCollection()", (assert) => {
   // Setup.
   const state = AppState.create();
   const length = 0;
@@ -85,7 +89,7 @@ QUnit.test("addUserCollection()", assert => {
   assert.equal(Object.keys(result.gameToUsers).length, length + 2);
 });
 
-QUnit.test("setCollectionTime()", assert => {
+QUnit.test("setCollectionTime()", (assert) => {
   // Setup.
   const state = AppState.create();
   const time = 12;
@@ -99,7 +103,7 @@ QUnit.test("setCollectionTime()", assert => {
   assert.equal(result.collectionTime, time);
 });
 
-QUnit.test("setDetailTime()", assert => {
+QUnit.test("setDetailTime()", (assert) => {
   // Setup.
   const state = AppState.create();
   const time = 12;
@@ -113,10 +117,10 @@ QUnit.test("setDetailTime()", assert => {
   assert.equal(result.detailTime, time);
 });
 
-QUnit.test("setPageCount()", assert => {
+QUnit.test("setPageCount()", (assert) => {
   // Setup.
   const state = AppState.create();
-  assert.equal(state.pageCount, 5);
+  assert.equal(state.pageCount, 10);
   const pageCount = 5;
   const action = ActionCreator.setPageCount(pageCount);
 
@@ -128,7 +132,7 @@ QUnit.test("setPageCount()", assert => {
   assert.equal(result.pageCount, pageCount);
 });
 
-QUnit.test("setSummaryTime()", assert => {
+QUnit.test("setSummaryTime()", (assert) => {
   // Setup.
   const state = AppState.create();
   const time = 12;
