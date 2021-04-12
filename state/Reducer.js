@@ -1,4 +1,4 @@
-/* eslint no-console: ["error", { allow: ["log", "warn"] }] */
+/* eslint no-console: ["error", { allow: ["warn"] }] */
 
 import ASelector from "../artifact/Selector.js";
 
@@ -141,24 +141,24 @@ Reducer.root = (state, action) => {
         R.assoc("userToReceivedMap2", newUserToReceivedMap2)
       )(state);
     case ActionType.SET_COLLECTION_TIME:
-      console.log(`Reducer collectionTime = ${action.time}`);
+      // console.log(`Reducer collectionTime = ${action.time}`);
       return R.assoc("collectionTime", action.time, state);
     case ActionType.SET_DETAIL_TIME:
-      console.log(`Reducer detailTime = ${action.time}`);
+      // console.log(`Reducer detailTime = ${action.time}`);
       return R.assoc("detailTime", action.time, state);
     case ActionType.SET_DISPLAY_TAB:
       return R.assoc("displayTab", action.displayTab, state);
     case ActionType.SET_FILTERED_REACT_TABLE:
-      console.log("Reducer SET_FILTERED_REACT_TABLE");
+      // console.log("Reducer SET_FILTERED_REACT_TABLE");
       return R.assoc("filteredReactTable", action.filteredReactTable, state);
     case ActionType.SET_PAGE_COUNT:
-      console.log(`Reducer pageCount = ${action.pageCount}`);
+      // console.log(`Reducer pageCount = ${action.pageCount}`);
       return R.assoc("pageCount", action.pageCount, state);
     case ActionType.SET_SUMMARY_TIME:
-      console.log(`Reducer summaryTime = ${action.time}`);
+      // console.log(`Reducer summaryTime = ${action.time}`);
       return R.assoc("summaryTime", action.time, state);
     case ActionType.SET_WISHLIST_TIME:
-      console.log(`Reducer wishlistTime = ${action.time}`);
+      // console.log(`Reducer wishlistTime = ${action.time}`);
       return R.assoc("wishlistTime", action.time, state);
     default:
       console.warn(`Reducer.root: Unhandled action type: ${action.type}`);

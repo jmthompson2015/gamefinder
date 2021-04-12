@@ -17,11 +17,11 @@ const store = Redux.createStore(Reducer.root);
 let frt;
 
 GameLoader.load(store).then(() => {
-  console.log(
-    `myCallback() store.getState().isDataLoaded ? ${
-      store.getState().isDataLoaded
-    }`
-  );
+  // console.log(
+  //   `myCallback() store.getState().isDataLoaded ? ${
+  //     store.getState().isDataLoaded
+  //   }`
+  // );
 
   if (Selector.isDataLoaded(store.getState())) {
     // Clear the progress area.
@@ -34,19 +34,21 @@ GameLoader.load(store).then(() => {
     // Add the filter and table.
     const { tableRows } = store.getState();
     const appName = "GameFinder";
-    const onFilterChange = (filteredTableRows) => {
-      console.log(
-        `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
-      );
+    const onFilterChange = (/* filteredTableRows */) => {
+      console.log(`onFilterChange()`);
+      // console.log(
+      //   `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
+      // );
     };
-    const onShowColumnChange = (columnToChecked) => {
-      console.log(
-        `onShowColumnChange() columnToChecked = ${JSON.stringify(
-          columnToChecked
-        )}`
-      );
+    const onShowColumnChange = (/* columnToChecked */) => {
+      console.log(`onShowColumnChange()`);
+      // console.log(
+      //   `onShowColumnChange() columnToChecked = ${JSON.stringify(
+      //     columnToChecked
+      //   )}`
+      // );
     };
-    const isVerbose = true;
+    const isVerbose = false;
     frt = new FilteredReactTable(
       TableColumns,
       tableRows,
