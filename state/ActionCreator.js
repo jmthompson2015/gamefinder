@@ -11,7 +11,10 @@ const makeActionCreator = (type, ...argNames) => (...args) => {
   return action;
 };
 
-ActionCreator.addGameDetails = makeActionCreator(ActionType.ADD_GAME_DETAILS, "gameDetails");
+ActionCreator.addGameDetails = makeActionCreator(
+  ActionType.ADD_GAME_DETAILS,
+  "gameDetails"
+);
 
 ActionCreator.addGameSummaries = makeActionCreator(
   ActionType.ADD_GAME_SUMMARIES,
@@ -25,20 +28,46 @@ ActionCreator.addUserCollection = makeActionCreator(
   "gameIds"
 );
 
-ActionCreator.setCollectionTime = makeActionCreator(ActionType.SET_COLLECTION_TIME, "time");
+ActionCreator.addUserWishlist = makeActionCreator(
+  ActionType.ADD_USER_WISHLIST,
+  "userId",
+  "gameIds"
+);
 
-ActionCreator.setDetailTime = makeActionCreator(ActionType.SET_DETAIL_TIME, "time");
+ActionCreator.setCollectionTime = makeActionCreator(
+  ActionType.SET_COLLECTION_TIME,
+  "time"
+);
 
-ActionCreator.setDisplayTab = makeActionCreator(ActionType.SET_DISPLAY_TAB, "displayTab");
+ActionCreator.setDetailTime = makeActionCreator(
+  ActionType.SET_DETAIL_TIME,
+  "time"
+);
+
+ActionCreator.setDisplayTab = makeActionCreator(
+  ActionType.SET_DISPLAY_TAB,
+  "displayTab"
+);
 
 ActionCreator.setFilteredReactTable = makeActionCreator(
   ActionType.SET_FILTERED_REACT_TABLE,
   "filteredReactTable"
 );
 
-ActionCreator.setPageCount = makeActionCreator(ActionType.SET_PAGE_COUNT, "pageCount");
+ActionCreator.setPageCount = makeActionCreator(
+  ActionType.SET_PAGE_COUNT,
+  "pageCount"
+);
 
-ActionCreator.setSummaryTime = makeActionCreator(ActionType.SET_SUMMARY_TIME, "time");
+ActionCreator.setSummaryTime = makeActionCreator(
+  ActionType.SET_SUMMARY_TIME,
+  "time"
+);
+
+ActionCreator.setWishlistTime = makeActionCreator(
+  ActionType.SET_WISHLIST_TIME,
+  "time"
+);
 
 Object.freeze(ActionCreator);
 

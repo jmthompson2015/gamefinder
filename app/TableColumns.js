@@ -34,6 +34,15 @@ const TableColumns = [
       row.usernames !== undefined ? mapUsers(row.usernames) : undefined,
   },
   {
+    key: "wishers",
+    label: "Wishlist",
+    type: "string",
+    className: "displayInlineBlock",
+    valueFunction: (row) => Formatter.formatEntities(row.wishers),
+    cellFunction: (row) =>
+      row.wishers !== undefined ? mapUsers(row.wishers) : undefined,
+  },
+  {
     key: "boardGameRank",
     label: "Board Game Rank",
     type: "number",

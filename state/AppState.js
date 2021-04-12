@@ -8,7 +8,9 @@ AppState.create = ({
   gameToDetail = {},
   gameToSummary = {},
   gameToUsers = {},
+  wishToUsers = {},
   collectionTime,
+  wishlistTime,
   summaryTime,
   detailTime,
   isDataLoaded = false,
@@ -17,8 +19,10 @@ AppState.create = ({
   mechanicMap = {},
   userMap = {},
   userToGames = {},
+  userToWishes = {},
   summaryToReceivedMap = {},
   userToReceivedMap = {},
+  userToReceivedMap2 = {},
 } = {}) =>
   Immutable({
     pageCount,
@@ -31,7 +35,9 @@ AppState.create = ({
     gameToSummary,
     // game ID to user IDs
     gameToUsers,
+    wishToUsers,
     collectionTime,
+    wishlistTime,
     summaryTime,
     detailTime,
     isDataLoaded,
@@ -41,10 +47,12 @@ AppState.create = ({
     userMap,
     // user ID to game IDs
     userToGames,
+    userToWishes,
     // summary page to boolean
     summaryToReceivedMap,
     // user ID to boolean
     userToReceivedMap,
+    userToReceivedMap2,
   });
 
 Object.freeze(AppState);

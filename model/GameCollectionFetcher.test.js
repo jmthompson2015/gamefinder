@@ -21,7 +21,7 @@ QUnit.test("fetchData() BoardGameArena", (assert) => {
   });
 });
 
-QUnit.test("fetchData() ghightshoe", (assert) => {
+QUnit.test("fetchData() ghightshoe collection", (assert) => {
   // Setup.
   const username0 = "ghightshoe";
 
@@ -40,7 +40,28 @@ QUnit.test("fetchData() ghightshoe", (assert) => {
   });
 });
 
-QUnit.test("fetchData() jmthompson", (assert) => {
+QUnit.test("fetchData() ghightshoe wishlist", (assert) => {
+  // Setup.
+  const username0 = "ghightshoe";
+
+  // Run.
+  const done = assert.async();
+  GameCollectionFetcher.fetchData(username0, true).then(
+    ({ userId, gameIds }) => {
+      // Verify.
+      assert.ok(true, "test resumed from async operation");
+      assert.ok(userId);
+      assert.equal(userId, 1);
+      assert.ok(gameIds);
+      assert.equal(gameIds.length, 3);
+      assert.equal(R.head(gameIds), 146508);
+      assert.equal(R.last(gameIds), 266192);
+      done();
+    }
+  );
+});
+
+QUnit.test("fetchData() jmthompson collection", (assert) => {
   // Setup.
   const username0 = "jmthompson";
 
@@ -59,7 +80,28 @@ QUnit.test("fetchData() jmthompson", (assert) => {
   });
 });
 
-QUnit.test("fetchData() kmistr", (assert) => {
+QUnit.test("fetchData() jmthompson wishlist", (assert) => {
+  // Setup.
+  const username0 = "jmthompson";
+
+  // Run.
+  const done = assert.async();
+  GameCollectionFetcher.fetchData(username0, true).then(
+    ({ userId, gameIds }) => {
+      // Verify.
+      assert.ok(true, "test resumed from async operation");
+      assert.ok(userId);
+      assert.equal(userId, 2);
+      assert.ok(gameIds);
+      assert.equal(gameIds.length, 17);
+      assert.equal(R.head(gameIds), 93);
+      assert.equal(R.last(gameIds), 324656);
+      done();
+    }
+  );
+});
+
+QUnit.test("fetchData() kmistr collection", (assert) => {
   // Setup.
   const username0 = "kmistr";
 
@@ -76,6 +118,27 @@ QUnit.test("fetchData() kmistr", (assert) => {
     assert.equal(R.last(gameIds), 312667);
     done();
   });
+});
+
+QUnit.test("fetchData() kmistr wishlist", (assert) => {
+  // Setup.
+  const username0 = "kmistr";
+
+  // Run.
+  const done = assert.async();
+  GameCollectionFetcher.fetchData(username0, true).then(
+    ({ userId, gameIds }) => {
+      // Verify.
+      assert.ok(true, "test resumed from async operation");
+      assert.ok(userId);
+      assert.equal(userId, 3);
+      assert.ok(gameIds);
+      assert.equal(gameIds.length, 18);
+      assert.equal(R.head(gameIds), 13004);
+      assert.equal(R.last(gameIds), 283355);
+      done();
+    }
+  );
 });
 
 QUnit.test("fetchData() nic", (assert) => {

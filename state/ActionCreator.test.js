@@ -3,18 +3,21 @@ import ActionType from "./ActionType.js";
 
 QUnit.module("ActionCreator");
 
-QUnit.test("all action types", assert => {
+QUnit.test("all action types", (assert) => {
   // Setup.
   const actionTypeKeys = Object.getOwnPropertyNames(ActionType);
-  assert.equal(actionTypeKeys.length, 9);
+  assert.equal(actionTypeKeys.length, 11);
 
   // Run / Verify.
-  actionTypeKeys.forEach(key => {
-    assert.ok(ActionCreator[ActionType[key]], `actionType = ${key} ${ActionType[key]}`);
+  actionTypeKeys.forEach((key) => {
+    assert.ok(
+      ActionCreator[ActionType[key]],
+      `actionType = ${key} ${ActionType[key]}`
+    );
   });
 });
 
-QUnit.test("addGameDetails()", assert => {
+QUnit.test("addGameDetails()", (assert) => {
   // Setup.
   const gameDetails = 3;
 
@@ -27,7 +30,7 @@ QUnit.test("addGameDetails()", assert => {
   assert.equal(result.gameDetails, gameDetails);
 });
 
-QUnit.test("addGameSummaries()", assert => {
+QUnit.test("addGameSummaries()", (assert) => {
   // Setup.
   const page = 2;
   const gameSummaries = 3;
@@ -42,7 +45,7 @@ QUnit.test("addGameSummaries()", assert => {
   assert.equal(result.gameSummaries, gameSummaries);
 });
 
-QUnit.test("addUserCollection()", assert => {
+QUnit.test("addUserCollection()", (assert) => {
   // Setup.
   const userId = 3;
   const gameIds = 4;
@@ -57,7 +60,7 @@ QUnit.test("addUserCollection()", assert => {
   assert.equal(result.gameIds, gameIds);
 });
 
-QUnit.test("setCollectionTime()", assert => {
+QUnit.test("setCollectionTime()", (assert) => {
   // Setup.
   const time = 3;
 
@@ -70,7 +73,7 @@ QUnit.test("setCollectionTime()", assert => {
   assert.equal(result.time, time);
 });
 
-QUnit.test("setDetailTime()", assert => {
+QUnit.test("setDetailTime()", (assert) => {
   // Setup.
   const time = 3;
 
@@ -83,7 +86,7 @@ QUnit.test("setDetailTime()", assert => {
   assert.equal(result.time, time);
 });
 
-QUnit.test("setPageCount()", assert => {
+QUnit.test("setPageCount()", (assert) => {
   // Setup.
   const pageCount = 3;
 
@@ -96,7 +99,7 @@ QUnit.test("setPageCount()", assert => {
   assert.equal(result.pageCount, pageCount);
 });
 
-QUnit.test("setSummaryTime()", assert => {
+QUnit.test("setSummaryTime()", (assert) => {
   // Setup.
   const time = 3;
 

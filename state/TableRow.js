@@ -2,9 +2,10 @@ import ASelector from "../artifact/Selector.js";
 
 const TableRow = {};
 
-TableRow.create = ({ gameSummary, gameDetail, users }) => {
+TableRow.create = ({ gameSummary, gameDetail, users, wishers }) => {
   // gameSummary optional.
   // users optional.
+  // wishers optional.
   if (gameSummary && gameSummary.id !== gameDetail.id) {
     throw new Error(
       `ID mismatch: gameSummary.id = ${gameSummary.id} gameDetail.id = ${gameDetail.id}`
@@ -51,6 +52,7 @@ TableRow.create = ({ gameSummary, gameDetail, users }) => {
     minPlayTime,
     title,
     usernames: users,
+    wishers,
     yearPublished,
     categories: ASelector.categoriesByIds(categoryIds),
     designers: ASelector.designersByIds(designerIds),

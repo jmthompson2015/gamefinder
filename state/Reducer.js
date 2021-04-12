@@ -32,6 +32,9 @@ Reducer.root = (state, action) => {
   let newUserMap;
   let newUserToGames;
   let newUserToReceivedMap;
+  let newUserToReceivedMap2;
+  let newUserToWishes;
+  let newWishToUsers;
 
   switch (action.type) {
     case ActionType.ADD_GAME_DETAILS:
@@ -41,7 +44,9 @@ Reducer.root = (state, action) => {
         action.gameDetails
       );
       newGameToDetail = R.merge(state.gameToDetail, gameToDetail);
-      isDataLoaded = Selector.expectedDetailCount(state) === Object.keys(newGameToDetail).length;
+      isDataLoaded =
+        Selector.expectedDetailCount(state) ===
+        Object.keys(newGameToDetail).length;
 
       if (isDataLoaded) {
         newGameDetails = Object.values(newGameToDetail);
@@ -51,7 +56,10 @@ Reducer.root = (state, action) => {
         newCategoryMap = EntityUtils.createCategoryMap(newGameDetails);
         newDesignerMap = EntityUtils.createDesignerMap(newGameDetails);
         newMechanicMap = EntityUtils.createMechanicMap(newGameDetails);
-        newUserMap = EntityUtils.createUserMap(newGameDetails, state.gameToUsers);
+        newUserMap = EntityUtils.createUserMap(
+          newGameDetails,
+          state.gameToUsers
+        );
 
         return R.pipe(
           R.assoc("tableRows", newTableRows),
@@ -72,24 +80,65 @@ Reducer.root = (state, action) => {
         action.gameSummaries
       );
       newGameToSummary = R.merge(state.gameToSummary, gameToSummary);
-      newSummaryToReceivedMap = R.assoc(action.page, true, state.summaryToReceivedMap);
+      newSummaryToReceivedMap = R.assoc(
+        action.page,
+        true,
+        state.summaryToReceivedMap
+      );
       return R.pipe(
         R.assoc("gameToSummary", newGameToSummary),
         R.assoc("summaryToReceivedMap", newSummaryToReceivedMap)
       )(state);
     case ActionType.ADD_USER_COLLECTION:
       // console.log(`Reducer gameIds.length = ${action.gameIds.length}`);
-      newUserToGames = R.assoc(action.userId, action.gameIds, state.userToGames);
-      newUserToReceivedMap = R.assoc(action.userId, true, state.userToReceivedMap);
+      newUserToGames = R.assoc(
+        action.userId,
+        action.gameIds,
+        state.userToGames
+      );
+      newUserToReceivedMap = R.assoc(
+        action.userId,
+        true,
+        state.userToReceivedMap
+      );
       newGameToUsers = state.gameToUsers;
-      R.forEach(id => {
+      R.forEach((id) => {
         const users = Selector.gameUsers(state, parseInt(id, 10));
-        newGameToUsers = R.assoc(id, R.append(action.userId, users), newGameToUsers);
+        newGameToUsers = R.assoc(
+          id,
+          R.append(action.userId, users),
+          newGameToUsers
+        );
       }, action.gameIds);
       return R.pipe(
         R.assoc("gameToUsers", newGameToUsers),
         R.assoc("userToGames", newUserToGames),
         R.assoc("userToReceivedMap", newUserToReceivedMap)
+      )(state);
+    case ActionType.ADD_USER_WISHLIST:
+      newUserToWishes = R.assoc(
+        action.userId,
+        action.gameIds,
+        state.userToWishes
+      );
+      newUserToReceivedMap2 = R.assoc(
+        action.userId,
+        true,
+        state.userToReceivedMap2
+      );
+      newWishToUsers = state.wishToUsers;
+      R.forEach((id) => {
+        const users = Selector.wishUsers(state, parseInt(id, 10));
+        newWishToUsers = R.assoc(
+          id,
+          R.append(action.userId, users),
+          newWishToUsers
+        );
+      }, action.gameIds);
+      return R.pipe(
+        R.assoc("wishToUsers", newWishToUsers),
+        R.assoc("userToWishes", newUserToWishes),
+        R.assoc("userToReceivedMap2", newUserToReceivedMap2)
       )(state);
     case ActionType.SET_COLLECTION_TIME:
       console.log(`Reducer collectionTime = ${action.time}`);
@@ -108,6 +157,9 @@ Reducer.root = (state, action) => {
     case ActionType.SET_SUMMARY_TIME:
       console.log(`Reducer summaryTime = ${action.time}`);
       return R.assoc("summaryTime", action.time, state);
+    case ActionType.SET_WISHLIST_TIME:
+      console.log(`Reducer wishlistTime = ${action.time}`);
+      return R.assoc("wishlistTime", action.time, state);
     default:
       console.warn(`Reducer.root: Unhandled action type: ${action.type}`);
       return state;
@@ -117,11 +169,24 @@ Reducer.root = (state, action) => {
 Reducer.addTableRows = (state, tableRows, gameDetails) => {
   const reduceFunction = (accum, gameDetail) => {
     // 1042: Expansion for Base-game
-    if (Selector.boardGameRank(state, gameDetail.id) || !gameDetail.categoryIds.includes(1042)) {
-      const gameSummary = Selector.gameSummary(state, parseInt(gameDetail.id, 10));
+    if (
+      Selector.boardGameRank(state, gameDetail.id) ||
+      !gameDetail.categoryIds.includes(1042)
+    ) {
+      const gameSummary = Selector.gameSummary(
+        state,
+        parseInt(gameDetail.id, 10)
+      );
       const userIds = Selector.gameUsers(state, parseInt(gameDetail.id, 10));
       const users = ASelector.usersByIds(userIds);
-      const newTableRow = TableRow.create({ gameSummary, gameDetail, users });
+      const wisherIds = Selector.wishUsers(state, parseInt(gameDetail.id, 10));
+      const wishers = ASelector.usersByIds(wisherIds);
+      const newTableRow = TableRow.create({
+        gameSummary,
+        gameDetail,
+        users,
+        wishers,
+      });
 
       return R.append(newTableRow, accum);
     }
@@ -133,7 +198,8 @@ Reducer.addTableRows = (state, tableRows, gameDetails) => {
   return R.concat(tableRows, newTableRows);
 };
 
-Reducer.sortTableRows = tableRows => R.sort(R.ascend(R.prop("boardGameRank")), tableRows);
+Reducer.sortTableRows = (tableRows) =>
+  R.sort(R.ascend(R.prop("boardGameRank")), tableRows);
 
 Object.freeze(Reducer);
 

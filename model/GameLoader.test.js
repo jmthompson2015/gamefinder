@@ -25,7 +25,7 @@ QUnit.test("load()", (assert) => {
       "gameToSummary length"
     );
     assert.ok(gameToDetail);
-    assert.equal(Object.keys(gameToDetail).length, 751, "gameToDetail length");
+    assert.equal(Object.keys(gameToDetail).length, 780, "gameToDetail length");
     done();
   });
 });
@@ -83,6 +83,22 @@ QUnit.test("loadGameSummaries()", (assert) => {
     assert.ok(true, "summaryCallback() test resumed from async operation");
     assert.ok(gameToSummary);
     assert.equal(Object.keys(gameToSummary).length, 200);
+    done();
+  });
+});
+
+QUnit.test("loadWishlists()", (assert) => {
+  // Setup.
+  const store = Redux.createStore(Reducer.root);
+
+  // Run.
+  const done = assert.async();
+  GameLoader.loadWishlists(store).then(() => {
+    // Verify.
+    assert.ok(true, "test resumed from async operation");
+    const { wishToUsers } = store.getState();
+    assert.ok(wishToUsers);
+    assert.equal(Object.keys(wishToUsers).length, 38);
     done();
   });
 });

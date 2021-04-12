@@ -89,6 +89,23 @@ QUnit.test("addUserCollection()", (assert) => {
   assert.equal(Object.keys(result.gameToUsers).length, length + 2);
 });
 
+QUnit.test("addUserWishlist()", (assert) => {
+  // Setup.
+  const state = AppState.create();
+  const length = 0;
+  assert.equal(Object.keys(state.wishToUsers).length, length);
+  const userId = 2;
+  const gameIds = [1406, 181];
+  const action = ActionCreator.addUserWishlist(userId, gameIds);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(Object.keys(result.wishToUsers).length, length + 2);
+});
+
 QUnit.test("setCollectionTime()", (assert) => {
   // Setup.
   const state = AppState.create();
@@ -144,6 +161,20 @@ QUnit.test("setSummaryTime()", (assert) => {
   // Verify.
   assert.ok(result);
   assert.equal(result.summaryTime, time);
+});
+
+QUnit.test("setWishlistTime()", (assert) => {
+  // Setup.
+  const state = AppState.create();
+  const time = 12;
+  const action = ActionCreator.setWishlistTime(time);
+
+  // Run.
+  const result = Reducer.root(state, action);
+
+  // Verify.
+  assert.ok(result);
+  assert.equal(result.wishlistTime, time);
 });
 
 const ReducerTest = {};

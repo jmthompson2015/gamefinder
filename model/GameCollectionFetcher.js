@@ -4,8 +4,12 @@ import GameCollectionState from "../state/GameCollectionState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = (username) =>
-  `https://www.boardgamegeek.com/xmlapi2/collection?own=1&username=${username}`;
+const createUrl = (username, isWished) => {
+  const base = "https://www.boardgamegeek.com/xmlapi2/collection?";
+  const parameter = isWished ? "wishlist=1&" : "own=1&";
+
+  return `${base}${parameter}username=${username}`;
+};
 
 const parseUserGameIds = (xmlDocument) => {
   const answer = [];
@@ -57,13 +61,17 @@ const NIC_GAME_IDS = [
 
 const GameCollectionFetcher = {};
 
-GameCollectionFetcher.fetchData = (username) =>
+GameCollectionFetcher.fetchData = (username, isWished = false) =>
   new Promise((resolve) => {
     if (username === "nic") {
-      const gameIds = NIC_GAME_IDS;
-      gameIds.sort((a, b) => a - b);
       const user = ASelector.userByName(username);
-      resolve(GameCollectionState.create({ userId: user.id, gameIds }));
+      if (isWished) {
+        resolve(GameCollectionState.create({ userId: user.id, gameIds: [] }));
+      } else {
+        const gameIds = NIC_GAME_IDS;
+        gameIds.sort((a, b) => a - b);
+        resolve(GameCollectionState.create({ userId: user.id, gameIds }));
+      }
     } else {
       const receiveData = (xmlDocument) => {
         const gameIds0 = parseUserGameIds(xmlDocument);
@@ -80,7 +88,7 @@ GameCollectionFetcher.fetchData = (username) =>
         resolve(GameCollectionState.create({ userId: user.id, gameIds }));
       };
 
-      const url = createUrl(username);
+      const url = createUrl(username, isWished);
       const options = {};
       FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
     }

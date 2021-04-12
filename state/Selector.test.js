@@ -178,6 +178,20 @@ QUnit.test("gameIdsFromSummaries()", (assert) => {
   verifyGameIds(assert, result, 2, 181, 1406);
 });
 
+QUnit.test("gameIdsFromWishlists()", (assert) => {
+  // Setup.
+  const store = Redux.createStore(Reducer.root);
+  store.dispatch(ActionCreator.addUserWishlist(1, GAME_IDS_1));
+  store.dispatch(ActionCreator.addUserWishlist(2, GAME_IDS_2));
+
+  // Run.
+  const result = Selector.gameIdsFromWishlists(store.getState());
+
+  // Verify.
+  assert.ok(result);
+  verifyGameIds(assert, result, 4, 181, 169786);
+});
+
 QUnit.test("gameSummary()", (assert) => {
   // Setup.
   const store = Redux.createStore(Reducer.root);
@@ -226,6 +240,17 @@ QUnit.test("isSummariesLoaded()", (assert) => {
 
   // Run.
   const result = Selector.isSummariesLoaded(store.getState());
+
+  // Verify.
+  assert.ok(!result);
+});
+
+QUnit.test("isWishlistsLoaded()", (assert) => {
+  // Setup.
+  const store = Redux.createStore(Reducer.root);
+
+  // Run.
+  const result = Selector.isWishlistsLoaded(store.getState());
 
   // Verify.
   assert.ok(!result);

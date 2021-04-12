@@ -9,8 +9,8 @@ import GameSummaryFetcher from "./GameSummaryFetcher.js";
 
 const GameLoader = {};
 
-GameLoader.load = store =>
-  new Promise(resolve => {
+GameLoader.load = (store) =>
+  new Promise((resolve) => {
     // Load from the internet.
     const start0 = Date.now();
 
@@ -19,22 +19,28 @@ GameLoader.load = store =>
       store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
       const start1 = Date.now();
 
-      GameLoader.loadGameSummaries(store).then(() => {
+      GameLoader.loadWishlists(store).then(() => {
         const end1 = Date.now();
-        store.dispatch(ActionCreator.setSummaryTime(end1 - start1));
+        store.dispatch(ActionCreator.setWishlistTime(end1 - start1));
         const start2 = Date.now();
 
-        GameLoader.loadGameDetails(store).then(() => {
+        GameLoader.loadGameSummaries(store).then(() => {
           const end2 = Date.now();
-          store.dispatch(ActionCreator.setDetailTime(end2 - start2));
-          resolve();
+          store.dispatch(ActionCreator.setSummaryTime(end2 - start2));
+          const start3 = Date.now();
+
+          GameLoader.loadGameDetails(store).then(() => {
+            const end3 = Date.now();
+            store.dispatch(ActionCreator.setDetailTime(end3 - start3));
+            resolve();
+          });
         });
       });
     });
   });
 
-GameLoader.loadCollections = store =>
-  new Promise(resolve => {
+GameLoader.loadCollections = (store) =>
+  new Promise((resolve) => {
     const receiveCollection = ({ userId, gameIds }) => {
       if (gameIds.length > 0) {
         store.dispatch(ActionCreator.addUserCollection(userId, gameIds));
@@ -46,14 +52,14 @@ GameLoader.loadCollections = store =>
     };
 
     const usernames = ASelector.usernames();
-    usernames.forEach(username => {
+    usernames.forEach((username) => {
       GameCollectionFetcher.fetchData(username).then(receiveCollection);
     });
   });
 
-GameLoader.loadGameDetails = store =>
-  new Promise(resolve => {
-    const receiveDetailData = gameDetails => {
+GameLoader.loadGameDetails = (store) =>
+  new Promise((resolve) => {
+    const receiveDetailData = (gameDetails) => {
       store.dispatch(ActionCreator.addGameDetails(gameDetails));
 
       if (Selector.isDetailsLoaded(store.getState())) {
@@ -62,10 +68,12 @@ GameLoader.loadGameDetails = store =>
     };
 
     // Fetch a game detail for each game summary.
-    const gameIds = Selector.gameIdsFromCollectionsAndSummaries(store.getState());
+    const gameIds = Selector.gameIdsFromCollectionsAndSummaries(
+      store.getState()
+    );
 
     const needGameDetailIds = gameIds.filter(
-      gameId => store.getState().gameToDetail[gameId] === undefined,
+      (gameId) => store.getState().gameToDetail[gameId] === undefined,
       this
     );
 
@@ -77,13 +85,15 @@ GameLoader.loadGameDetails = store =>
         const start = numPerCall * i;
         const max = Math.min(numPerCall, needGameDetailIds.length);
         const end = start + max;
-        GameDetailFetcher.fetchData(needGameDetailIds.slice(start, end)).then(receiveDetailData);
+        GameDetailFetcher.fetchData(needGameDetailIds.slice(start, end)).then(
+          receiveDetailData
+        );
       }
     }
   });
 
-GameLoader.loadGameSummaries = store =>
-  new Promise(resolve => {
+GameLoader.loadGameSummaries = (store) =>
+  new Promise((resolve) => {
     const receiveSummaryData = ({ page, gameSummaries }) => {
       store.dispatch(ActionCreator.addGameSummaries(page, gameSummaries));
 
@@ -97,6 +107,22 @@ GameLoader.loadGameSummaries = store =>
     for (let i = 1; i <= pageCount; i += 1) {
       GameSummaryFetcher.fetchData(i).then(receiveSummaryData);
     }
+  });
+
+GameLoader.loadWishlists = (store) =>
+  new Promise((resolve) => {
+    const receiveCollection = ({ userId, gameIds }) => {
+      store.dispatch(ActionCreator.addUserWishlist(userId, gameIds));
+
+      if (Selector.isWishlistsLoaded(store.getState())) {
+        resolve(store.getState().wishToUsers);
+      }
+    };
+
+    const usernames = ASelector.usernames();
+    usernames.forEach((username) => {
+      GameCollectionFetcher.fetchData(username, true).then(receiveCollection);
+    });
   });
 
 export default GameLoader;
