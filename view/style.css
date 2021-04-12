@@ -1,81 +1,13 @@
-body {
-  background-color: Gray;
-  font-family: "San Francisco", "Helvetica Neue", Helvetica, sans-serif;
+.frt-table td {
+  border: 1px solid Green;
 }
 
-canvas {
-  height: 300px;
-}
-
-table {
-  border-collapse: collapse;
-  text-align: center;
-}
-
-.gf-b--dark1,
-.dataTable td {
-  border: 1px solid #008000;
-}
-
-.gf-b--light2,
-.dataTable th {
+.frt-table th {
+  background: Green;
   border: 1px solid LightYellow;
-}
-
-.gf-bg-light1 {
-  background: #e0ffe0;
-}
-
-.gf-bg-medium1 {
-  background: LimeGreen;
-}
-
-.gf-bg-dark1,
-.dataTable th {
-  background: #008000;
-}
-
-.gf-bg-light2 {
-  background: LightYellow;
-}
-
-.gf-bg-medium2 {
-  background: Yellow;
-}
-
-.gf-bg-dark2 {
-  background: Olive;
-}
-
-.gf-light1 {
-  color: #e0ffe0;
-}
-
-.gf-medium1 {
-  color: LimeGreen;
-}
-
-.gf-dark1 {
-  color: #008000;
-}
-
-.gf-light2,
-.dataTable th {
   color: LightYellow;
-}
-
-.gf-medium2 {
-  color: Yellow;
-}
-
-.gf-dark2 {
-  color: Olive;
 }
 
 .gf-f-entity {
   font-size: x-small;
-}
-
-.gf-h-entity {
-  height: 180px;
 }

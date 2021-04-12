@@ -14,7 +14,7 @@ QUnit.test("fetchData() BoardGameArena", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 4);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 305);
+    assert.equal(gameIds.length, 306);
     assert.equal(R.head(gameIds), 10);
     assert.equal(R.last(gameIds), 319680);
     done();
@@ -93,7 +93,7 @@ QUnit.test("fetchData() jmthompson wishlist", (assert) => {
       assert.ok(userId);
       assert.equal(userId, 2);
       assert.ok(gameIds);
-      assert.equal(gameIds.length, 17);
+      assert.equal(gameIds.length, 18);
       assert.equal(R.head(gameIds), 93);
       assert.equal(R.last(gameIds), 324656);
       done();

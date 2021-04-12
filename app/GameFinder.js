@@ -57,7 +57,7 @@ GameLoader.load(store).then(() => {
     );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
-    const className = "gf-bg-light1 ma1";
+    const className = "bg-honeydew ma1";
     const headerClass = "f5 ph1 pt1 tl";
     ReactDOM.render(
       frt.filterPanel("Filters", className, headerClass),
@@ -67,7 +67,11 @@ GameLoader.load(store).then(() => {
       frt.showColumnsPanel("Columns", className, headerClass),
       document.getElementById("showColumns")
     );
-    ReactDOM.render(frt.tableElement(), document.getElementById("tabPanel"));
+    const dataTableProps = { rowClass: "striped--honeydew" };
+    ReactDOM.render(
+      frt.tableElement(dataTableProps),
+      document.getElementById("tabPanel")
+    );
   }
 });
 
