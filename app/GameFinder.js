@@ -17,12 +17,6 @@ const store = Redux.createStore(Reducer.root);
 let frt;
 
 GameLoader.load(store).then(() => {
-  // console.log(
-  //   `myCallback() store.getState().isDataLoaded ? ${
-  //     store.getState().isDataLoaded
-  //   }`
-  // );
-
   if (Selector.isDataLoaded(store.getState())) {
     // Clear the progress area.
     const el = document.getElementById("progress");
@@ -34,19 +28,11 @@ GameLoader.load(store).then(() => {
     // Add the filter and table.
     const { tableRows } = store.getState();
     const appName = "GameFinder";
-    const onFilterChange = (/* filteredTableRows */) => {
+    const onFilterChange = () => {
       console.log(`onFilterChange()`);
-      // console.log(
-      //   `onFilterChange() filteredTableRows.length = ${filteredTableRows.length}`
-      // );
     };
-    const onShowColumnChange = (/* columnToChecked */) => {
+    const onShowColumnChange = () => {
       console.log(`onShowColumnChange()`);
-      // console.log(
-      //   `onShowColumnChange() columnToChecked = ${JSON.stringify(
-      //     columnToChecked
-      //   )}`
-      // );
     };
     const isVerbose = false;
     frt = new FilteredReactTable(
@@ -59,14 +45,16 @@ GameLoader.load(store).then(() => {
     );
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
-    const className = "bg-honeydew ma1";
-    const headerClass = "f5 ph1 pt1 tl";
+    const collapsiblePaneProps = {
+      className: "bg-green ma1",
+      titleClass: "bg-honeydew f5 ph1 pt1 tl",
+    };
     ReactDOM.render(
-      frt.filterPanel("Filters", className, headerClass),
+      frt.filterPanel(collapsiblePaneProps),
       document.getElementById("filter")
     );
     ReactDOM.render(
-      frt.showColumnsPanel("Columns", className, headerClass),
+      frt.showColumnsPanel(collapsiblePaneProps),
       document.getElementById("showColumns")
     );
     const dataTableProps = { rowClass: "striped--honeydew" };

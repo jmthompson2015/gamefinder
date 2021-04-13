@@ -1,7 +1,7 @@
 import ReactUtils from "./ReactUtilities.js";
 
 const TABS = ["Game Table", "Designers", "Categories", "Mechanics"];
-const CLASS_SELECTED = "bg-green light-yellow pa1";
+const CLASS_SELECTED = "bg-green honeydew pa1";
 const CLASS_NON_SELECTED = "bg-honeydew pa1";
 
 class DisplayTabs extends React.PureComponent {
