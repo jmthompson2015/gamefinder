@@ -35,14 +35,14 @@ GameLoader.load(store).then(() => {
       console.log(`onShowColumnChange()`);
     };
     const isVerbose = false;
-    frt = new FilteredReactTable(
-      TableColumns,
+    frt = new FilteredReactTable({
+      tableColumns: TableColumns,
       tableRows,
       appName,
       onFilterChange,
       onShowColumnChange,
-      isVerbose
-    );
+      isVerbose,
+    });
     store.dispatch(ActionCreator.setFilteredReactTable(frt));
 
     const collapsiblePaneProps = {
