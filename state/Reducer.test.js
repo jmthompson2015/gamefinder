@@ -137,7 +137,7 @@ QUnit.test("setDetailTime()", (assert) => {
 QUnit.test("setPageCount()", (assert) => {
   // Setup.
   const state = AppState.create();
-  assert.equal(state.pageCount, 10);
+  assert.equal(state.pageCount, 20);
   const pageCount = 5;
   const action = ActionCreator.setPageCount(pageCount);
 

@@ -19,8 +19,8 @@ QUnit.test("fetchData() 2", (assert) => {
     assert.equal(gameSummary0.id, 12, "id");
     assert.equal(gameSummary0.title, "Ra (1999)");
     const gameSummaryLast = R.last(gameSummaries);
-    assert.equal(gameSummaryLast.id, 316554);
-    assert.equal(gameSummaryLast.title, "Dune: Imperium (2020)");
+    assert.equal(gameSummaryLast.id, 314040);
+    assert.equal(gameSummaryLast.title, "Pandemic Legacy: Season 0 (2020)");
     done();
   });
 });
@@ -42,8 +42,8 @@ QUnit.test("fetchData() 3", (assert) => {
     assert.equal(gameSummary0.id, 1, "id");
     assert.equal(gameSummary0.title, "Die Macher (1986)");
     const gameSummaryLast = R.last(gameSummaries);
-    assert.equal(gameSummaryLast.id, 314040);
-    assert.equal(gameSummaryLast.title, "Pandemic Legacy: Season 0 (2020)");
+    assert.equal(gameSummaryLast.id, 296151);
+    assert.equal(gameSummaryLast.title, "Viscounts of the West Kingdom (2020)");
 
     const ids = R.map(R.prop("id"), gameSummaries);
     // console.log(`ids = ${ids}`);

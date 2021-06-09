@@ -4,7 +4,7 @@ import GameDetailState from "../state/GameDetailState.js";
 
 import FetchUtilities from "./FetchUtilities.js";
 
-const createUrl = gameIds => {
+const createUrl = (gameIds) => {
   // https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=12333,120677
   const idsString = gameIds.reduce((previousValue, id, i) => {
     let answer = previousValue + id;
@@ -66,15 +66,27 @@ const parseEntities = (xmlDocument, xmlFragment, type) => {
   let thisRow = rows.iterateNext();
 
   while (thisRow) {
-    const idCell = xmlDocument.evaluate("@id", thisRow, null, XPathResult.STRING_TYPE, null);
+    const idCell = xmlDocument.evaluate(
+      "@id",
+      thisRow,
+      null,
+      XPathResult.STRING_TYPE,
+      null
+    );
     const id = idCell.stringValue.trim();
-    const nameCell = xmlDocument.evaluate("@value", thisRow, null, XPathResult.STRING_TYPE, null);
+    const nameCell = xmlDocument.evaluate(
+      "@value",
+      thisRow,
+      null,
+      XPathResult.STRING_TYPE,
+      null
+    );
     const name = nameCell.stringValue.trim();
     const entity = {
       type,
       id: parseInt(id, 10),
       name,
-      count: 1
+      count: 1,
     };
     answer.push(entity);
 
@@ -85,7 +97,13 @@ const parseEntities = (xmlDocument, xmlFragment, type) => {
 };
 
 const parseGameDetail = (xmlDocument, xmlFragment) => {
-  const idCell = xmlDocument.evaluate("@id", xmlFragment, null, XPathResult.STRING_TYPE, null);
+  const idCell = xmlDocument.evaluate(
+    "@id",
+    xmlFragment,
+    null,
+    XPathResult.STRING_TYPE,
+    null
+  );
   const id = idCell.stringValue.trim();
 
   const boardGameRankCell = xmlDocument.evaluate(
@@ -114,6 +132,15 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     null
   );
   const yearPublished = yearPublishedCell.stringValue.trim();
+
+  const averageRatingCell = xmlDocument.evaluate(
+    "statistics/ratings/average/@value",
+    xmlFragment,
+    null,
+    XPathResult.STRING_TYPE,
+    null
+  );
+  const averageRating = averageRatingCell.stringValue.trim();
 
   const geekRatingCell = xmlDocument.evaluate(
     "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@bayesaverage",
@@ -171,25 +198,42 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
   );
   const averageWeight = averageWeightCell.stringValue.trim();
 
-  const boardGameRank1 = boardGameRank0 !== undefined ? parseInt(boardGameRank0, 10) : undefined;
-  const boardGameRank = !Number.isNaN(boardGameRank1) ? boardGameRank1 : undefined;
+  const boardGameRank1 =
+    boardGameRank0 !== undefined ? parseInt(boardGameRank0, 10) : undefined;
+  const boardGameRank = !Number.isNaN(boardGameRank1)
+    ? boardGameRank1
+    : undefined;
 
-  const geekRating1 = geekRating0 !== undefined ? Number(geekRating0, 10) : undefined;
+  const geekRating1 =
+    geekRating0 !== undefined ? Number(geekRating0, 10) : undefined;
   const geekRating = !Number.isNaN(geekRating1) ? geekRating1 : undefined;
 
-  const categories = parseEntities(xmlDocument, xmlFragment, "boardgamecategory");
-  const designers = parseEntities(xmlDocument, xmlFragment, "boardgamedesigner");
-  const mechanics = parseEntities(xmlDocument, xmlFragment, "boardgamemechanic");
+  const categories = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamecategory"
+  );
+  const designers = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamedesigner"
+  );
+  const mechanics = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamemechanic"
+  );
 
-  const categoryIds = R.map(category => category.id, categories);
-  const designerIds = R.map(designer => designer.id, designers);
-  const mechanicIds = R.map(mechanic => mechanic.id, mechanics);
+  const categoryIds = R.map((category) => category.id, categories);
+  const designerIds = R.map((designer) => designer.id, designers);
+  const mechanicIds = R.map((mechanic) => mechanic.id, mechanics);
 
   return GameDetailState.create({
     id: parseInt(id, 10),
     boardGameRank,
     title,
     yearPublished: parseInt(yearPublished, 10),
+    averageRating,
     geekRating,
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
@@ -199,11 +243,11 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     averageWeight: Number(averageWeight),
     categoryIds,
     designerIds,
-    mechanicIds
+    mechanicIds,
   });
 };
 
-const parseGameDetails = xmlDocument => {
+const parseGameDetails = (xmlDocument) => {
   const answer = [];
 
   // This gives the data items.
@@ -224,18 +268,18 @@ const parseGameDetails = xmlDocument => {
 
 const GameDetailFetcher = {};
 
-GameDetailFetcher.fetchData = gameIds =>
-  new Promise(resolve => {
+GameDetailFetcher.fetchData = (gameIds) =>
+  new Promise((resolve) => {
     const reduceFunction = (accum, gameId) => {
       const gameDetail = GameDetail[gameId];
       return gameDetail ? R.append(gameDetail, accum) : accum;
     };
     const gameDetails0 = R.reduce(reduceFunction, [], gameIds);
-    const gameIds0 = R.map(detail => detail.id, Object.values(gameDetails0));
+    const gameIds0 = R.map((detail) => detail.id, Object.values(gameDetails0));
     const gameIds1 = R.difference(gameIds, gameIds0);
 
     if (gameIds1.length > 0) {
-      const receiveData = xmlDocument => {
+      const receiveData = (xmlDocument) => {
         const gameDetails = parseGameDetails(xmlDocument);
         resolve(R.concat(gameDetails0, gameDetails));
       };

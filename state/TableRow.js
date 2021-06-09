@@ -19,6 +19,7 @@ TableRow.create = ({ gameSummary, gameDetail, users, wishers }) => {
     imageUrl,
   } = gameSummary || {};
   const {
+    averageRating,
     averageWeight,
     bestWithPlayers,
     boardGameRank: boardGameRank2,
@@ -40,6 +41,7 @@ TableRow.create = ({ gameSummary, gameDetail, users, wishers }) => {
   const geekRating = geekRating1 || geekRating2;
 
   return Immutable({
+    averageRating,
     averageWeight,
     bestWithPlayers,
     boardGameRank,

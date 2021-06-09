@@ -89,6 +89,16 @@ const TableColumns = [
     className: "tr",
   },
   {
+    key: "averageRating",
+    label: "Average Rating",
+    type: "number",
+    min: 0,
+    max: 10,
+    step: 0.1,
+    className: "tr",
+    cellFunction: (row) => CU.formatNumber(row.averageRating, CU.US_FORMATTER2),
+  },
+  {
     key: "geekRating",
     label: "Geek Rating",
     type: "number",

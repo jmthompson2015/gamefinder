@@ -10,7 +10,7 @@ const GameDetailFetcher = {};
 
 const OUTPUT_FILE = "GameDetail.json";
 
-const createUrl = gameIds => {
+const createUrl = (gameIds) => {
   // https://www.boardgamegeek.com/xmlapi2/thing?stats=1&id=12333,120677
   const idsString = gameIds.reduce((previousValue, id, i) => {
     let answer = previousValue + id;
@@ -28,7 +28,7 @@ const createUrl = gameIds => {
 const loadGameIds = () =>
   new Promise((resolve, reject) => {
     const inputFile1 = "GameUser.json";
-    FileLoader.loadLocalFile(inputFile1).then(data1 => {
+    FileLoader.loadLocalFile(inputFile1).then((data1) => {
       if (data1 === undefined) {
         reject(new Error(`Failed to load url: ${inputFile1}`));
       }
@@ -37,13 +37,13 @@ const loadGameIds = () =>
       const gameIds1 = Object.keys(gameToUser);
 
       const inputFile2 = "GameSummary.json";
-      FileLoader.loadLocalFile(inputFile2).then(data2 => {
+      FileLoader.loadLocalFile(inputFile2).then((data2) => {
         if (data2 === undefined) {
           reject(new Error(`Failed to load url: ${inputFile2}`));
         }
 
         const summaries = JSON.parse(data2);
-        const gameIds2 = R.map(summary => summary.gameId, summaries);
+        const gameIds2 = R.map((summary) => summary.gameId, summaries);
 
         const gameIds = R.uniq(R.concat(gameIds1, gameIds2));
         gameIds.sort();
@@ -102,15 +102,27 @@ function parseEntities(xmlDocument, xmlFragment, type) {
   let thisRow = rows.iterateNext();
 
   while (thisRow) {
-    const idCell = xpath.evaluate("@id", thisRow, null, xpath.XPathResult.STRING_TYPE, null);
+    const idCell = xpath.evaluate(
+      "@id",
+      thisRow,
+      null,
+      xpath.XPathResult.STRING_TYPE,
+      null
+    );
     const id = idCell.stringValue.trim();
-    const nameCell = xpath.evaluate("@value", thisRow, null, xpath.XPathResult.STRING_TYPE, null);
+    const nameCell = xpath.evaluate(
+      "@value",
+      thisRow,
+      null,
+      xpath.XPathResult.STRING_TYPE,
+      null
+    );
     const name = nameCell.stringValue.trim();
     const entity = {
       type,
       id: parseInt(id, 10),
       name,
-      count: 1
+      count: 1,
     };
     answer.push(entity);
 
@@ -121,7 +133,13 @@ function parseEntities(xmlDocument, xmlFragment, type) {
 }
 
 function parseGameDetail(xmlDocument, xmlFragment) {
-  const idCell = xpath.evaluate("@id", xmlFragment, null, xpath.XPathResult.STRING_TYPE, null);
+  const idCell = xpath.evaluate(
+    "@id",
+    xmlFragment,
+    null,
+    xpath.XPathResult.STRING_TYPE,
+    null
+  );
   const id = idCell.stringValue.trim();
 
   const boardGameRankCell = xpath.evaluate(
@@ -150,6 +168,15 @@ function parseGameDetail(xmlDocument, xmlFragment) {
     null
   );
   const yearPublished = yearPublishedCell.stringValue.trim();
+
+  const averageRatingCell = xpath.evaluate(
+    "statistics/ratings/average/@value",
+    xmlFragment,
+    null,
+    xpath.XPathResult.STRING_TYPE,
+    null
+  );
+  const averageRating = averageRatingCell.stringValue.trim();
 
   const geekRatingCell = xpath.evaluate(
     "statistics/ratings/ranks/rank[@friendlyname='Board Game Rank']/@bayesaverage",
@@ -207,9 +234,21 @@ function parseGameDetail(xmlDocument, xmlFragment) {
   );
   const averageWeight = averageWeightCell.stringValue.trim();
 
-  const categories = parseEntities(xmlDocument, xmlFragment, "boardgamecategory");
-  const designers = parseEntities(xmlDocument, xmlFragment, "boardgamedesigner");
-  const mechanics = parseEntities(xmlDocument, xmlFragment, "boardgamemechanic");
+  const categories = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamecategory"
+  );
+  const designers = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamedesigner"
+  );
+  const mechanics = parseEntities(
+    xmlDocument,
+    xmlFragment,
+    "boardgamemechanic"
+  );
 
   return {
     id: parseInt(id, 10),
@@ -217,6 +256,7 @@ function parseGameDetail(xmlDocument, xmlFragment) {
     title,
     designers,
     yearPublished: parseInt(yearPublished, 10),
+    averageRating: Number(averageRating),
     geekRating: Number(geekRating),
     minPlayers: parseInt(minPlayers, 10),
     maxPlayers: parseInt(maxPlayers, 10),
@@ -225,7 +265,7 @@ function parseGameDetail(xmlDocument, xmlFragment) {
     maxPlayTime: parseInt(maxPlayTime, 10),
     averageWeight: Number(averageWeight),
     categories,
-    mechanics
+    mechanics,
   };
 }
 
@@ -248,10 +288,10 @@ function parseGameDetails(xmlDocument) {
   return answer;
 }
 
-GameDetailFetcher.fetchAll = gameIds =>
-  new Promise(resolve => {
+GameDetailFetcher.fetchAll = (gameIds) =>
+  new Promise((resolve) => {
     const url = createUrl(gameIds);
-    const receiveData = xmlDocument => {
+    const receiveData = (xmlDocument) => {
       resolve(parseGameDetails(xmlDocument));
     };
 
@@ -260,13 +300,13 @@ GameDetailFetcher.fetchAll = gameIds =>
   });
 
 const start = Date.now();
-loadGameIds().then(gameIds => {
+loadGameIds().then((gameIds) => {
   const gameIdSets = R.splitEvery(20, gameIds);
   const setCount = gameIdSets.length;
   let gameDetails = {};
   let count = 0;
-  const forEachFunction = gameIdSet => {
-    GameDetailFetcher.fetchAll(gameIdSet).then(myGameDetails => {
+  const forEachFunction = (gameIdSet) => {
+    GameDetailFetcher.fetchAll(gameIdSet).then((myGameDetails) => {
       gameDetails = R.merge(gameDetails, myGameDetails);
       count += 1;
 

@@ -1,7 +1,7 @@
 const AppState = {};
 
 AppState.create = ({
-  pageCount = 10,
+  pageCount = 20,
   tableRows = [],
   filteredReactTable,
   displayTab = "Game Table",

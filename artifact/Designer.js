@@ -271,10 +271,6 @@ const Designer = {
     "id": 128,
     "name": "Derek Carver"
   },
-  "129": {
-    "id": 129,
-    "name": "Bernhard Weber"
-  },
   "132": {
     "id": 132,
     "name": "Gunter Cornett"
@@ -771,10 +767,6 @@ const Designer = {
     "id": 1279,
     "name": "Igor Polouchine"
   },
-  "1288": {
-    "id": 1288,
-    "name": "Jens-Peter Schliemann"
-  },
   "1291": {
     "id": 1291,
     "name": "Eamon Bloomfield"
@@ -898,10 +890,6 @@ const Designer = {
   "2201": {
     "id": 2201,
     "name": "Kory Heath"
-  },
-  "2204": {
-    "id": 2204,
-    "name": "Brett G. Murrell"
   },
   "2212": {
     "id": 2212,
@@ -1238,10 +1226,6 @@ const Designer = {
   "4871": {
     "id": 4871,
     "name": "Henry Stern"
-  },
-  "4884": {
-    "id": 4884,
-    "name": "Marco Teubner"
   },
   "4958": {
     "id": 4958,
@@ -1939,10 +1923,6 @@ const Designer = {
     "id": 11906,
     "name": "Don Eskridge"
   },
-  "12018": {
-    "id": 12018,
-    "name": "Andrew Navaro"
-  },
   "12023": {
     "id": 12023,
     "name": "Dave Kimmel"
@@ -1958,10 +1938,6 @@ const Designer = {
   "12199": {
     "id": 12199,
     "name": "Adam P. McIver"
-  },
-  "12268": {
-    "id": 12268,
-    "name": "Robert K. Gabhart"
   },
   "12293": {
     "id": 12293,
@@ -3131,6 +3107,10 @@ const Designer = {
     "id": 67502,
     "name": "Daryl Andrews"
   },
+  "67519": {
+    "id": 67519,
+    "name": "Marek Spichalski"
+  },
   "67760": {
     "id": 67760,
     "name": "Adela Torre"
@@ -3787,6 +3767,10 @@ const Designer = {
     "id": 85379,
     "name": "Alexandar Ortloff"
   },
+  "85666": {
+    "id": 85666,
+    "name": "Zachary Eagle"
+  },
   "85684": {
     "id": 85684,
     "name": "Stefan Alexander"
@@ -4022,6 +4006,10 @@ const Designer = {
   "94063": {
     "id": 94063,
     "name": "Matthew Austin"
+  },
+  "94184": {
+    "id": 94184,
+    "name": "Michal Golębiowski"
   },
   "94322": {
     "id": 94322,
@@ -4411,6 +4399,14 @@ const Designer = {
     "id": 110951,
     "name": "Peter McPherson"
   },
+  "111126": {
+    "id": 111126,
+    "name": "Jan Březina"
+  },
+  "111127": {
+    "id": 111127,
+    "name": "Martin Hrabalek"
+  },
   "111338": {
     "id": 111338,
     "name": "Elizabeth Hargrave"
@@ -4418,6 +4414,10 @@ const Designer = {
   "111452": {
     "id": 111452,
     "name": "Alexander Kneepkens"
+  },
+  "111481": {
+    "id": 111481,
+    "name": "Michal Požarek"
   },
   "111626": {
     "id": 111626,
@@ -4458,10 +4458,6 @@ const Designer = {
   "114258": {
     "id": 114258,
     "name": "Luka Krleža"
-  },
-  "114456": {
-    "id": 114456,
-    "name": "Maciej Obszanski"
   },
   "114764": {
     "id": 114764,
@@ -4678,6 +4674,10 @@ const Designer = {
   "133479": {
     "id": 133479,
     "name": "Gael DC"
+  },
+  "134494": {
+    "id": 134494,
+    "name": "HeidelBAR Games Team"
   }
 }
 

@@ -14,9 +14,9 @@ QUnit.test("fetchData() BoardGameArena", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 4);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 306);
+    assert.equal(gameIds.length, 392);
     assert.equal(R.head(gameIds), 10);
-    assert.equal(R.last(gameIds), 319680);
+    assert.equal(R.last(gameIds), 332317);
     done();
   });
 });
@@ -73,8 +73,8 @@ QUnit.test("fetchData() jmthompson collection", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 2);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 220);
-    assert.equal(R.head(gameIds), 1198);
+    assert.equal(gameIds.length, 226);
+    assert.equal(R.head(gameIds), 42);
     assert.equal(R.last(gameIds), 300327);
     done();
   });
@@ -93,9 +93,9 @@ QUnit.test("fetchData() jmthompson wishlist", (assert) => {
       assert.ok(userId);
       assert.equal(userId, 2);
       assert.ok(gameIds);
-      assert.equal(gameIds.length, 18);
-      assert.equal(R.head(gameIds), 93);
-      assert.equal(R.last(gameIds), 324656);
+      assert.equal(gameIds.length, 10);
+      assert.equal(R.head(gameIds), 107998);
+      assert.equal(R.last(gameIds), 319959);
       done();
     }
   );

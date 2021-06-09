@@ -129,7 +129,7 @@ QUnit.test("expectedSummaryCount()", (assert) => {
   const result = Selector.expectedSummaryCount(store.getState());
 
   // Verify.
-  assert.equal(result, 1000);
+  assert.equal(result, 2000);
 });
 
 QUnit.test("gameIdsFromCollections()", (assert) => {
@@ -265,7 +265,7 @@ QUnit.test("pageCount()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result, 10);
+  assert.equal(result, 20);
 });
 
 const SelectorTest = {};
