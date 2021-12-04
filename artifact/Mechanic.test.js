@@ -21,7 +21,7 @@ QUnit.test("Mechanic keys", (assert) => {
   const keys = Object.keys(Mechanic);
 
   // Verify.
-  assert.equal(keys.length, 180);
+  assert.equal(keys.length, 181);
 
   const mechanic0 = Mechanic[R.head(keys)];
   assert.equal(mechanic0.id, 2001);

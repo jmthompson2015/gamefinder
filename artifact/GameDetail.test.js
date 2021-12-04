@@ -15,7 +15,7 @@ QUnit.test("GameDetail properties Scythe", (assert) => {
   assert.equal(detail.id, id);
   assert.equal(detail.boardGameRank, 14);
   assert.equal(detail.title, "Scythe");
-  assert.equal(round2(detail.geekRating), 8.08);
+  assert.equal(round2(detail.geekRating), 8.06);
 });
 
 QUnit.test("GameDetail properties Spirit Island", (assert) => {
@@ -27,9 +27,9 @@ QUnit.test("GameDetail properties Spirit Island", (assert) => {
 
   // Verify.
   assert.equal(detail.id, id);
-  assert.equal(detail.boardGameRank, 12);
+  assert.equal(detail.boardGameRank, 11);
   assert.equal(detail.title, "Spirit Island");
-  assert.equal(round2(detail.geekRating), 8.12);
+  assert.equal(round2(detail.geekRating), 8.13);
 });
 
 QUnit.test("GameDetail keys", (assert) => {
@@ -39,15 +39,15 @@ QUnit.test("GameDetail keys", (assert) => {
   const keys = Object.keys(GameDetail);
 
   // Verify.
-  assert.equal(keys.length, 2008);
+  assert.equal(keys.length, 2114);
 
   const detail0 = GameDetail[R.head(keys)];
   assert.equal(detail0.id, 1);
   assert.equal(detail0.title, "Die Macher");
 
   const detailLast = GameDetail[R.last(keys)];
-  assert.equal(detailLast.id, 332317);
-  assert.equal(detailLast.title, "Blaze");
+  assert.equal(detailLast.id, 347702);
+  assert.equal(detailLast.title, "Las Vegan");
 });
 
 const GameDetailTest = {};

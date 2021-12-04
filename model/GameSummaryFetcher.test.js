@@ -19,8 +19,8 @@ QUnit.test("fetchData() 2", (assert) => {
     assert.equal(gameSummary0.id, 12, "id");
     assert.equal(gameSummary0.title, "Ra (1999)");
     const gameSummaryLast = R.last(gameSummaries);
-    assert.equal(gameSummaryLast.id, 314040);
-    assert.equal(gameSummaryLast.title, "Pandemic Legacy: Season 0 (2020)");
+    assert.equal(gameSummaryLast.id, 317985);
+    assert.equal(gameSummaryLast.title, "Beyond the Sun (2020)");
     done();
   });
 });
@@ -39,11 +39,11 @@ QUnit.test("fetchData() 3", (assert) => {
     gameSummaries.sort((a, b) => a.id - b.id);
     assert.equal(gameSummaries.length, 100);
     const gameSummary0 = R.head(gameSummaries);
-    assert.equal(gameSummary0.id, 1, "id");
-    assert.equal(gameSummary0.title, "Die Macher (1986)");
+    assert.equal(gameSummary0.id, 3, "id");
+    assert.equal(gameSummary0.title, "Samurai (1998)");
     const gameSummaryLast = R.last(gameSummaries);
-    assert.equal(gameSummaryLast.id, 296151);
-    assert.equal(gameSummaryLast.title, "Viscounts of the West Kingdom (2020)");
+    assert.equal(gameSummaryLast.id, 318977);
+    assert.equal(gameSummaryLast.title, "MicroMacro: Crime City (2020)");
 
     const ids = R.map(R.prop("id"), gameSummaries);
     // console.log(`ids = ${ids}`);

@@ -21,15 +21,15 @@ QUnit.test("Designer keys", (assert) => {
   const keys = Object.keys(Designer);
 
   // Verify.
-  assert.equal(keys.length, 1170);
+  assert.equal(keys.length, 1235);
 
   const designer0 = Designer[R.head(keys)];
   assert.equal(designer0.id, 1);
   assert.equal(designer0.name, "Karl-Heinz Schmiel");
 
   const designerLast = Designer[R.last(keys)];
-  assert.equal(designerLast.id, 134494);
-  assert.equal(designerLast.name, "HeidelBAR Games Team");
+  assert.equal(designerLast.id, 142169);
+  assert.equal(designerLast.name, "Kamil Jarząbek");
 });
 
 const DesignerTest = {};

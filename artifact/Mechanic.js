@@ -579,6 +579,10 @@ const Mechanic = {
     "id": 2950,
     "name": "Different Dice Movement"
   },
+  "2952": {
+    "id": 2952,
+    "name": "Impulse Movement"
+  },
   "2953": {
     "id": 2953,
     "name": "Programmed Movement"
