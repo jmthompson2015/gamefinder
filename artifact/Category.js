@@ -291,10 +291,6 @@ const Category = {
     "id": 1116,
     "name": "Comic Book / Strip"
   },
-  "1117": {
-    "id": 1117,
-    "name": "Book"
-  },
   "1118": {
     "id": 1118,
     "name": "Mature / Adult"

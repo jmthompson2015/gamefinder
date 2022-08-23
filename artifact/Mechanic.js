@@ -113,7 +113,7 @@ const Mechanic = {
   },
   "2041": {
     "id": 2041,
-    "name": "Card Drafting"
+    "name": "Open Drafting"
   },
   "2043": {
     "id": 2043,
@@ -661,7 +661,7 @@ const Mechanic = {
   },
   "2984": {
     "id": 2984,
-    "name": "Drafting"
+    "name": "Closed Drafting"
   },
   "2985": {
     "id": 2985,
@@ -722,6 +722,10 @@ const Mechanic = {
   "3007": {
     "id": 3007,
     "name": "Matching"
+  },
+  "3098": {
+    "id": 3098,
+    "name": "Auction Compensation"
   }
 }
 
