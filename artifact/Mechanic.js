@@ -181,7 +181,7 @@ const Mechanic = {
   },
   "2663": {
     "id": 2663,
-    "name": "Time Track"
+    "name": "Turn Order: Time Track"
   },
   "2664": {
     "id": 2664,
@@ -525,7 +525,7 @@ const Mechanic = {
   },
   "2927": {
     "id": 2927,
-    "name": "Multiple-Lot Auction"
+    "name": "Auction: Multiple Lot"
   },
   "2928": {
     "id": 2928,
@@ -723,9 +723,29 @@ const Mechanic = {
     "id": 3007,
     "name": "Matching"
   },
+  "3096": {
+    "id": 3096,
+    "name": "Drawing"
+  },
   "3098": {
     "id": 3098,
     "name": "Auction Compensation"
+  },
+  "3099": {
+    "id": 3099,
+    "name": "Multi-Use Cards"
+  },
+  "3100": {
+    "id": 3100,
+    "name": "Tags"
+  },
+  "3103": {
+    "id": 3103,
+    "name": "Resource Queue"
+  },
+  "3104": {
+    "id": 3104,
+    "name": "Neighbor Scope"
   }
 }
 
