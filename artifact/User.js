@@ -13,11 +13,11 @@ const User = {
   },
   "4": {
     id: 4,
-    name: "BoardGameArena",
+    name: "nskinner07",
   },
   "5": {
     id: 5,
-    name: "nic",
+    name: "BoardGameArena",
   },
 };
 

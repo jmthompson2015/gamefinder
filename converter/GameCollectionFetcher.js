@@ -6,7 +6,7 @@ const R = require("ramda");
 const FileLoader = require("./FileLoader.js");
 const FileWriter = require("./FileWriter.js");
 
-const USER = ["ghightshoe", "jmthompson", "kmistr", "BoardGameArena"];
+const USER = ["ghightshoe", "jmthompson", "kmistr", "nskinner07", "BoardGameArena"];
 
 const OUTPUT_FILE1 = "UserGame.json";
 const OUTPUT_FILE2 = "GameUser.json";

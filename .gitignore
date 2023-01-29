@@ -2,4 +2,5 @@ converter/GameDetail.json
 converter/GameSummary.json
 converter/GameUser.json
 converter/UserGame.json
+gamefinder.sublime-workspace
 node_modules/
