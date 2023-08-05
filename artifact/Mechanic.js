@@ -727,6 +727,10 @@ const Mechanic = {
     "id": 3096,
     "name": "Drawing"
   },
+  "3097": {
+    "id": 3097,
+    "name": "Bids As Wagers"
+  },
   "3098": {
     "id": 3098,
     "name": "Auction Compensation"
@@ -738,6 +742,10 @@ const Mechanic = {
   "3100": {
     "id": 3100,
     "name": "Tags"
+  },
+  "3101": {
+    "id": 3101,
+    "name": "Ordering"
   },
   "3103": {
     "id": 3103,
