@@ -76,19 +76,22 @@ const parseGameSummaries = (htmlDocument) => {
   // This gives the data rows (tr).
   const key = "<tr id='row_";
   const rows = htmlDocument.split(key);
-  // Ignore first row.
-  rows.shift();
-  const lastRow0 = rows[rows.length - 1];
-  const lastKey = "</tr>";
-  const lastRow = lastRow0.substring(
-    0,
-    lastRow0.indexOf(lastKey) + lastKey.length
-  );
-  rows[rows.length - 1] = lastRow;
-  rows.forEach((thisRow) => {
-    const gameSummary = parseGameSummary(htmlDocument, thisRow.trim());
-    answer.push(gameSummary);
-  });
+
+  if (rows.length > 1) {
+    // Ignore first row.
+    rows.shift();
+    const lastRow0 = rows[rows.length - 1];
+    const lastKey = "</tr>";
+    const lastRow = lastRow0.substring(
+      0,
+      lastRow0.indexOf(lastKey) + lastKey.length,
+    );
+    rows[rows.length - 1] = lastRow;
+    rows.forEach((thisRow) => {
+      const gameSummary = parseGameSummary(htmlDocument, thisRow.trim());
+      answer.push(gameSummary);
+    });
+  }
 
   return answer;
 };
@@ -103,7 +106,7 @@ GameSummaryFetcher.fetchData = (page) =>
         resolve({ page, gameSummaries });
       } else {
         reject(
-          new Error(`HTML document content is undefined for page: ${page}`)
+          new Error(`HTML document content is undefined for page: ${page}`),
         );
       }
     };
