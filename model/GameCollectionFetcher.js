@@ -26,7 +26,7 @@ const parseUserGameIds = (xmlDocument) => {
       thisRow,
       null,
       XPathResult.STRING_TYPE,
-      null
+      null,
     );
     const id = parseInt(idCell.stringValue.trim(), 10);
     answer.push(id);
@@ -48,6 +48,7 @@ const GREG_GAME_IDS = [
 const KIRK_GAME_IDS = [
   283355, // Dune (2019)
   242302, // Space Base (2018)
+  163967, // Tiny Epic Galaxies (2015)
 ];
 // const NIC_GAME_IDS = [
 //   222514, // Batman: Gotham City Chronicles
@@ -77,24 +78,24 @@ GameCollectionFetcher.fetchData = (username, isWished = false) =>
     //     resolve(GameCollectionState.create({ userId: user.id, gameIds }));
     //   }
     // } else {
-      const receiveData = (xmlDocument) => {
-        const gameIds0 = parseUserGameIds(xmlDocument);
-        let gameIds = gameIds0;
+    const receiveData = (xmlDocument) => {
+      const gameIds0 = parseUserGameIds(xmlDocument);
+      let gameIds = gameIds0;
 
-        if (username === "ghightshoe") {
-          gameIds = R.uniq(R.concat(gameIds0, GREG_GAME_IDS));
-        } else if (username === "kmistr") {
-          gameIds = R.uniq(R.concat(gameIds0, KIRK_GAME_IDS));
-        }
+      if (username === "ghightshoe") {
+        gameIds = R.uniq(R.concat(gameIds0, GREG_GAME_IDS));
+      } else if (username === "kmistr") {
+        gameIds = R.uniq(R.concat(gameIds0, KIRK_GAME_IDS));
+      }
 
-        gameIds.sort((a, b) => a - b);
-        const user = ASelector.userByName(username);
-        resolve(GameCollectionState.create({ userId: user.id, gameIds }));
-      };
+      gameIds.sort((a, b) => a - b);
+      const user = ASelector.userByName(username);
+      resolve(GameCollectionState.create({ userId: user.id, gameIds }));
+    };
 
-      const url = createUrl(username, isWished);
-      const options = {};
-      FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
+    const url = createUrl(username, isWished);
+    const options = {};
+    FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
     // }
   });
 

@@ -31,10 +31,6 @@ const Mechanic = {
     "id": 2009,
     "name": "Trick-taking"
   },
-  "2010": {
-    "id": 2010,
-    "name": "Crayon Rail System"
-  },
   "2011": {
     "id": 2011,
     "name": "Modular Board"
