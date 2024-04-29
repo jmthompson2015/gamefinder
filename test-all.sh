@@ -1,12 +1,12 @@
 #! /bin/bash
 
-export BASE=/Volumes/StorageDrive/jmthompson/git/gamefinder
+export BASE="/Users/jmthompson/Documents/Software Development/git/gamefinder"
 
-open ${BASE}/artifact/TestSuite.html
+open "${BASE}/artifact/TestSuite.html"
 
-open ${BASE}/state/TestSuite.html
+open "${BASE}/state/TestSuite.html"
 
-open ${BASE}/model/TestSuite.html
+open "${BASE}/model/TestSuite.html"
 
 cd view
 ./viewtest-suite.sh

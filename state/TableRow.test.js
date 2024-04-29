@@ -39,12 +39,16 @@ QUnit.test("create() Scythe", (assert) => {
   assert.ok(data);
   assert.equal(data.id, 169786);
   assert.equal(data.title, "Scythe");
-  assert.equal(data.categories.length, 5, "categories length");
+  assert.equal(data.categories.length, 4, "categories length");
   assert.equal(data.categories[0].name, "Economic", "categories[0] name");
   assert.equal(data.designers.length, 1, "designers length");
   assert.equal(data.designers[0].name, "Jamey Stegmaier", "designers[0] name");
-  assert.equal(data.mechanics.length, 13, "mechanics length");
-  assert.equal(data.mechanics[0].name, "Action Drafting", "mechanics[0] name");
+  assert.equal(data.mechanics.length, 16, "mechanics length");
+  assert.equal(
+    data.mechanics[0].name,
+    "Area Majority / Influence",
+    "mechanics[0] name",
+  );
 });
 
 QUnit.test("create() immutable", (assert) => {

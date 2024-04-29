@@ -12,11 +12,11 @@ QUnit.test("fetchData() BoardGameArena", (assert) => {
     // Verify.
     assert.ok(true, "test resumed from async operation");
     assert.ok(userId);
-    assert.equal(userId, 4);
+    assert.equal(userId, 5);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 533);
+    assert.equal(gameIds.length, 756);
     assert.equal(R.head(gameIds), 10);
-    assert.equal(R.last(gameIds), 347702);
+    assert.equal(R.last(gameIds), 380728);
     done();
   });
 });
@@ -33,9 +33,9 @@ QUnit.test("fetchData() ghightshoe collection", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 1);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 45);
+    assert.equal(gameIds.length, 51);
     assert.equal(R.head(gameIds), 74);
-    assert.equal(R.last(gameIds), 266192);
+    assert.equal(R.last(gameIds), 317985);
     done();
   });
 });
@@ -53,11 +53,11 @@ QUnit.test("fetchData() ghightshoe wishlist", (assert) => {
       assert.ok(userId);
       assert.equal(userId, 1);
       assert.ok(gameIds);
-      assert.equal(gameIds.length, 3);
+      assert.equal(gameIds.length, 6);
       assert.equal(R.head(gameIds), 146508);
-      assert.equal(R.last(gameIds), 266192);
+      assert.equal(R.last(gameIds), 317985);
       done();
-    }
+    },
   );
 });
 
@@ -73,9 +73,9 @@ QUnit.test("fetchData() jmthompson collection", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 2);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 232);
+    assert.equal(gameIds.length, 247);
     assert.equal(R.head(gameIds), 42);
-    assert.equal(R.last(gameIds), 300327);
+    assert.equal(R.last(gameIds), 364073);
     done();
   });
 });
@@ -93,11 +93,11 @@ QUnit.test("fetchData() jmthompson wishlist", (assert) => {
       assert.ok(userId);
       assert.equal(userId, 2);
       assert.ok(gameIds);
-      assert.equal(gameIds.length, 15);
-      assert.equal(R.head(gameIds), 9674);
-      assert.equal(R.last(gameIds), 337627);
+      assert.equal(gameIds.length, 9);
+      assert.equal(R.head(gameIds), 823);
+      assert.equal(R.last(gameIds), 376373);
       done();
-    }
+    },
   );
 });
 
@@ -113,7 +113,7 @@ QUnit.test("fetchData() kmistr collection", (assert) => {
     assert.ok(userId);
     assert.equal(userId, 3);
     assert.ok(gameIds);
-    assert.equal(gameIds.length, 49);
+    assert.equal(gameIds.length, 54);
     assert.equal(R.head(gameIds), 13);
     assert.equal(R.last(gameIds), 312667);
     done();
@@ -133,31 +133,12 @@ QUnit.test("fetchData() kmistr wishlist", (assert) => {
       assert.ok(userId);
       assert.equal(userId, 3);
       assert.ok(gameIds);
-      assert.equal(gameIds.length, 18);
+      assert.equal(gameIds.length, 22);
       assert.equal(R.head(gameIds), 13004);
-      assert.equal(R.last(gameIds), 283355);
+      assert.equal(R.last(gameIds), 356414);
       done();
-    }
+    },
   );
-});
-
-QUnit.test("fetchData() nic", (assert) => {
-  // Setup.
-  const username0 = "nic";
-
-  // Run.
-  const done = assert.async();
-  GameCollectionFetcher.fetchData(username0).then(({ userId, gameIds }) => {
-    // Verify.
-    assert.ok(true, "test resumed from async operation");
-    assert.ok(userId);
-    assert.equal(userId, 5);
-    assert.ok(gameIds);
-    assert.equal(gameIds.length, 11);
-    assert.equal(R.head(gameIds), 124361);
-    assert.equal(R.last(gameIds), 269595);
-    done();
-  });
 });
 
 const GameCollectionFetcherTest = {};

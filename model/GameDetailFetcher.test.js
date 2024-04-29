@@ -27,14 +27,14 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(gameDetails[0].id, 1406);
     assert.equal(
       gameDetails[0].boardGameRank,
-      21617,
-      "gameDetails[0] boardGameRank"
+      25448,
+      "gameDetails[0] boardGameRank",
     );
     assert.equal(gameDetails[0].title, "Monopoly");
     assert.equal(
       round2(gameDetails[0].geekRating),
-      4.31,
-      "gameDetails[0] geekRating"
+      4.29,
+      "gameDetails[0] geekRating",
     );
     assert.equal(gameDetails[0].minPlayers, 2);
     assert.equal(gameDetails[0].maxPlayers, 8);
@@ -44,10 +44,10 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(
       gameDetails[1].boardGameRank,
       13,
-      "gameDetails[1] boardGameRank"
+      "gameDetails[1] boardGameRank",
     );
     assert.equal(gameDetails[1].title, "Twilight Struggle");
-    assert.equal(round2(gameDetails[1].geekRating), 8.12);
+    assert.equal(round2(gameDetails[1].geekRating), 8.08);
     assert.equal(gameDetails[1].minPlayers, 2);
     assert.equal(gameDetails[1].maxPlayers, 2);
 
@@ -55,11 +55,11 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(gameDetails[2].id, 120677);
     assert.equal(
       gameDetails[2].boardGameRank,
-      18,
-      "gameDetails[2] boardGameRank"
+      26,
+      "gameDetails[2] boardGameRank",
     );
     assert.equal(gameDetails[2].title, "Terra Mystica");
-    assert.equal(round2(gameDetails[2].geekRating), 7.97);
+    assert.equal(round2(gameDetails[2].geekRating), 7.91);
     assert.equal(gameDetails[2].minPlayers, 2);
     assert.equal(gameDetails[2].maxPlayers, 5);
 
@@ -67,11 +67,11 @@ QUnit.test("fetchData()", (assert) => {
     assert.equal(gameDetails[3].id, 176371);
     assert.equal(
       gameDetails[3].boardGameRank,
-      981,
-      "gameDetails[3] boardGameRank"
+      1073,
+      "gameDetails[3] boardGameRank",
     );
     assert.equal(gameDetails[3].title, "Explorers of the North Sea");
-    assert.equal(round2(gameDetails[3].geekRating), 6.55);
+    assert.equal(round2(gameDetails[3].geekRating), 6.57);
     assert.equal(gameDetails[3].minPlayers, 1);
     assert.equal(gameDetails[3].maxPlayers, 4);
     done();

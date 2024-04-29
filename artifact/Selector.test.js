@@ -46,7 +46,7 @@ QUnit.test("designer()", (assert) => {
 
 QUnit.test("designersByIds()", (assert) => {
   // Setup.
-  const ids = [14, 15, 19]; // there is no 15
+  const ids = [14, 15, 25]; // there is no 15
 
   // Run.
   const result = Selector.designersByIds(ids);
@@ -57,7 +57,7 @@ QUnit.test("designersByIds()", (assert) => {
   assert.equal(result[0].id, ids[0]);
   assert.equal(result[0].name, "Richard Garfield");
   assert.equal(result[1].id, ids[2]);
-  assert.equal(result[1].name, "Richard Hamblen");
+  assert.equal(result[1].name, "Richard Borg");
 });
 
 QUnit.test("mechanic()", (assert) => {
@@ -114,8 +114,8 @@ QUnit.test("usernames()", (assert) => {
   assert.equal(result[0], "ghightshoe");
   assert.equal(result[1], "jmthompson");
   assert.equal(result[2], "kmistr");
-  assert.equal(result[3], "BoardGameArena");
-  assert.equal(result[4], "nic");
+  assert.equal(result[3], "nskinner07");
+  assert.equal(result[4], "BoardGameArena");
 });
 
 QUnit.test("usersByIds()", (assert) => {

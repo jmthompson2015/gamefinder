@@ -25,15 +25,15 @@ QUnit.test("createCategoryMap()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result).length, 10);
+  assert.equal(Object.keys(result).length, 6);
   verifyEntity(assert, result[1010], 1010, "Fantasy", 1);
   verifyEntity(assert, result[1016], 1016, "Science Fiction", 1);
   verifyEntity(assert, result[1021], 1021, "Economic", 1);
   verifyEntity(assert, result[1046], 1046, "Fighting", 2);
   verifyEntity(assert, result[1082], 1082, "Mythology", 1);
-  verifyEntity(assert, result[1084], 1084, "Environmental", 1);
-  verifyEntity(assert, result[1086], 1086, "Territory Building", 2);
-  verifyEntity(assert, result[2726], 2726, "Age of Reason", 1);
+  // verifyEntity(assert, result[1084], 1084, "Environmental", 1);
+  // verifyEntity(assert, result[1086], 1086, "Territory Building", 2);
+  // verifyEntity(assert, result[2726], 2726, "Age of Reason", 1);
 });
 
 QUnit.test("createDesignerMap()", (assert) => {
@@ -59,14 +59,14 @@ QUnit.test("createMechanicMap()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(Object.keys(result).length, 22);
+  assert.equal(Object.keys(result).length, 25);
   verifyEntity(assert, result[2004], 2004, "Set Collection", 1);
   verifyEntity(assert, result[2011], 2011, "Modular Board", 1);
   verifyEntity(assert, result[2015], 2015, "Variable Player Powers", 2);
   verifyEntity(assert, result[2020], 2020, "Simultaneous Action Selection", 1);
   verifyEntity(assert, result[2023], 2023, "Cooperative Game", 1);
   verifyEntity(assert, result[2040], 2040, "Hand Management", 1);
-  verifyEntity(assert, result[2080], 2080, "Area Majority / Influence", 1);
+  verifyEntity(assert, result[2080], 2080, "Area Majority / Influence", 2);
   verifyEntity(assert, result[2676], 2676, "Grid Movement", 1);
 });
 

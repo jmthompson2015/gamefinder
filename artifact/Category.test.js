@@ -21,7 +21,7 @@ QUnit.test("Category keys", (assert) => {
   const keys = Object.keys(Category);
 
   // Verify.
-  assert.equal(keys.length, 83);
+  assert.equal(keys.length, 81);
 
   const category0 = Category[R.head(keys)];
   assert.equal(category0.id, 1001);
