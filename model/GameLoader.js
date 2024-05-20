@@ -14,29 +14,53 @@ GameLoader.load = (store) =>
     // Load from the internet.
     const start0 = Date.now();
 
-    GameLoader.loadCollections(store).then(() => {
-      const end0 = Date.now();
-      store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
-      const start1 = Date.now();
+    store.dispatch(ActionCreator.setCollectionBusy(true));
+    GameLoader.loadCollections(store)
+      .then(() => {
+        const end0 = Date.now();
+        store.dispatch(ActionCreator.setCollectionBusy(false));
+        store.dispatch(ActionCreator.setCollectionTime(end0 - start0));
+        const start1 = Date.now();
 
-      GameLoader.loadWishlists(store).then(() => {
-        const end1 = Date.now();
-        store.dispatch(ActionCreator.setWishlistTime(end1 - start1));
-        const start2 = Date.now();
+        store.dispatch(ActionCreator.setWishlistBusy(true));
+        GameLoader.loadWishlists(store)
+          .then(() => {
+            const end1 = Date.now();
+            store.dispatch(ActionCreator.setWishlistBusy(false));
+            store.dispatch(ActionCreator.setWishlistTime(end1 - start1));
+            const start2 = Date.now();
 
-        GameLoader.loadGameSummaries(store).then(() => {
-          const end2 = Date.now();
-          store.dispatch(ActionCreator.setSummaryTime(end2 - start2));
-          const start3 = Date.now();
+            store.dispatch(ActionCreator.setSummaryBusy(true));
+            GameLoader.loadGameSummaries(store)
+              .then(() => {
+                const end2 = Date.now();
+                store.dispatch(ActionCreator.setSummaryBusy(false));
+                store.dispatch(ActionCreator.setSummaryTime(end2 - start2));
+                const start3 = Date.now();
 
-          GameLoader.loadGameDetails(store).then(() => {
-            const end3 = Date.now();
-            store.dispatch(ActionCreator.setDetailTime(end3 - start3));
-            resolve();
+                store.dispatch(ActionCreator.setDetailBusy(true));
+                GameLoader.loadGameDetails(store)
+                  .then(() => {
+                    const end3 = Date.now();
+                    store.dispatch(ActionCreator.setDetailBusy(false));
+                    store.dispatch(ActionCreator.setDetailTime(end3 - start3));
+                    resolve();
+                  })
+                  .catch((error) => {
+                    store.dispatch(ActionCreator.setDetailError(error));
+                  });
+              })
+              .catch((error) => {
+                store.dispatch(ActionCreator.setSummaryError(error));
+              });
+          })
+          .catch((error) => {
+            store.dispatch(ActionCreator.setWishlistError(error));
           });
-        });
+      })
+      .catch((error) => {
+        store.dispatch(ActionCreator.setCollectionError(error));
       });
-    });
   });
 
 GameLoader.loadCollections = (store) =>
@@ -69,12 +93,12 @@ GameLoader.loadGameDetails = (store) =>
 
     // Fetch a game detail for each game summary.
     const gameIds = Selector.gameIdsFromCollectionsAndSummaries(
-      store.getState()
+      store.getState(),
     );
 
     const needGameDetailIds = gameIds.filter(
       (gameId) => store.getState().gameToDetail[gameId] === undefined,
-      this
+      this,
     );
 
     if (needGameDetailIds.length > 0) {
@@ -86,7 +110,7 @@ GameLoader.loadGameDetails = (store) =>
         const max = Math.min(numPerCall, needGameDetailIds.length);
         const end = start + max;
         GameDetailFetcher.fetchData(needGameDetailIds.slice(start, end)).then(
-          receiveDetailData
+          receiveDetailData,
         );
       }
     }

@@ -2,10 +2,7 @@ const FetchUtilities = {};
 
 // see https://dev.to/ycmjason/javascript-fetch-retry-upon-failure-3p6g
 FetchUtilities.fetchRetry = (url, options, n) => {
-  const myHeaders = new Headers({
-    "x-requested-with": "fetch",
-  });
-  return fetch(url, { mode: "cors", headers: myHeaders })
+  return fetch(url, options)
     .then((response) => {
       if (response.ok) return response;
       throw Error(`Request rejected with status ${response.status}`);
@@ -20,7 +17,7 @@ FetchUtilities.fetchRetryXml = (url, options, n) =>
   FetchUtilities.fetchRetry(url, options, n)
     .then((response) => response.text())
     .then((responseText) =>
-      new DOMParser().parseFromString(responseText, "application/xml")
+      new DOMParser().parseFromString(responseText, "application/xml"),
     );
 
 export default FetchUtilities;

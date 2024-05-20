@@ -34,7 +34,7 @@ const parseBestWithPlayers = (xmlDocument, xmlFragment) => {
       thisRow,
       null,
       XPathResult.STRING_TYPE,
-      null
+      null,
     );
     const numPlayers = numPlayersCell.stringValue.trim();
     const numVotesCell = xmlDocument.evaluate(
@@ -42,7 +42,7 @@ const parseBestWithPlayers = (xmlDocument, xmlFragment) => {
       thisRow,
       null,
       XPathResult.STRING_TYPE,
-      null
+      null,
     );
     const numVotes = parseInt(numVotesCell.stringValue.trim(), 10);
 
@@ -71,7 +71,7 @@ const parseEntities = (xmlDocument, xmlFragment, type) => {
       thisRow,
       null,
       XPathResult.STRING_TYPE,
-      null
+      null,
     );
     const id = idCell.stringValue.trim();
     const nameCell = xmlDocument.evaluate(
@@ -79,7 +79,7 @@ const parseEntities = (xmlDocument, xmlFragment, type) => {
       thisRow,
       null,
       XPathResult.STRING_TYPE,
-      null
+      null,
     );
     const name = nameCell.stringValue.trim();
     const entity = {
@@ -102,7 +102,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const id = idCell.stringValue.trim();
 
@@ -111,7 +111,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const boardGameRank0 = boardGameRankCell.stringValue.trim();
 
@@ -120,7 +120,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const title = titleCell.stringValue.trim();
 
@@ -129,7 +129,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const yearPublished = yearPublishedCell.stringValue.trim();
 
@@ -138,7 +138,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const averageRating = averageRatingCell.stringValue.trim();
 
@@ -147,7 +147,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const geekRating0 = geekRatingCell.stringValue.trim();
 
@@ -156,7 +156,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const minPlayers = minPlayersCell.stringValue.trim();
 
@@ -165,7 +165,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const maxPlayers = maxPlayersCell.stringValue.trim();
 
@@ -176,7 +176,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const minPlayTime = minPlayTimeCell.stringValue.trim();
 
@@ -185,7 +185,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const maxPlayTime = maxPlayTimeCell.stringValue.trim();
 
@@ -194,7 +194,7 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
     xmlFragment,
     null,
     XPathResult.STRING_TYPE,
-    null
+    null,
   );
   const averageWeight = averageWeightCell.stringValue.trim();
 
@@ -211,17 +211,17 @@ const parseGameDetail = (xmlDocument, xmlFragment) => {
   const categories = parseEntities(
     xmlDocument,
     xmlFragment,
-    "boardgamecategory"
+    "boardgamecategory",
   );
   const designers = parseEntities(
     xmlDocument,
     xmlFragment,
-    "boardgamedesigner"
+    "boardgamedesigner",
   );
   const mechanics = parseEntities(
     xmlDocument,
     xmlFragment,
-    "boardgamemechanic"
+    "boardgamemechanic",
   );
 
   const categoryIds = R.map((category) => category.id, categories);
@@ -269,7 +269,7 @@ const parseGameDetails = (xmlDocument) => {
 const GameDetailFetcher = {};
 
 GameDetailFetcher.fetchData = (gameIds) =>
-  new Promise((resolve) => {
+  new Promise((resolve, reject) => {
     const reduceFunction = (accum, gameId) => {
       const gameDetail = GameDetail[gameId];
       return gameDetail ? R.append(gameDetail, accum) : accum;
@@ -286,7 +286,11 @@ GameDetailFetcher.fetchData = (gameIds) =>
 
       const url = createUrl(gameIds1);
       const options = {};
-      FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
+      FetchUtilities.fetchRetryXml(url, options, 5)
+        .then(receiveData)
+        .catch((error) => {
+          reject(error);
+        });
     } else {
       resolve(gameDetails0);
     }

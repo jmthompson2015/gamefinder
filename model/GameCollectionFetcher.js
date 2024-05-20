@@ -47,44 +47,22 @@ const GREG_GAME_IDS = [
 ];
 const KIRK_GAME_IDS = [
   283355, // Dune (2019)
+  316554, // Dune: Imperium (2020)
   242302, // Space Base (2018)
   163967, // Tiny Epic Galaxies (2015)
 ];
-// const NIC_GAME_IDS = [
-//   222514, // Batman: Gotham City Chronicles
-//   124361, // Concordia
-//   269595, // Copenhagen
-//   193738, // Great Western Trail
-//   250458, // Gugong
-//   252446, // Key Flow
-//   255692, // New Frontiers
-//   242302, // Space Base
-//   229853, // Teotihuacan: City of Gods
-//   167791, // Terraforming Mars
-//   247763, // Underwater Cities
-// ];
 
 const GameCollectionFetcher = {};
 
 GameCollectionFetcher.fetchData = (username, isWished = false) =>
-  new Promise((resolve) => {
-    // if (username === "nic") {
-    //   const user = ASelector.userByName(username);
-    //   if (isWished) {
-    //     resolve(GameCollectionState.create({ userId: user.id, gameIds: [] }));
-    //   } else {
-    //     const gameIds = NIC_GAME_IDS;
-    //     gameIds.sort((a, b) => a - b);
-    //     resolve(GameCollectionState.create({ userId: user.id, gameIds }));
-    //   }
-    // } else {
+  new Promise((resolve, reject) => {
     const receiveData = (xmlDocument) => {
       const gameIds0 = parseUserGameIds(xmlDocument);
       let gameIds = gameIds0;
 
-      if (username === "ghightshoe") {
+      if (!isWished && username === "ghightshoe") {
         gameIds = R.uniq(R.concat(gameIds0, GREG_GAME_IDS));
-      } else if (username === "kmistr") {
+      } else if (!isWished && username === "kmistr") {
         gameIds = R.uniq(R.concat(gameIds0, KIRK_GAME_IDS));
       }
 
@@ -95,8 +73,11 @@ GameCollectionFetcher.fetchData = (username, isWished = false) =>
 
     const url = createUrl(username, isWished);
     const options = {};
-    FetchUtilities.fetchRetryXml(url, options, 5).then(receiveData);
-    // }
+    FetchUtilities.fetchRetryXml(url, options, 5)
+      .then(receiveData)
+      .catch((error) => {
+        reject(error);
+      });
   });
 
 export default GameCollectionFetcher;

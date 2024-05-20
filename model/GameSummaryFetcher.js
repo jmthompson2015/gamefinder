@@ -115,7 +115,10 @@ GameSummaryFetcher.fetchData = (page) =>
     const options = {};
     FetchUtilities.fetchRetry(url, options, 5)
       .then((response) => response.text())
-      .then(receiveData);
+      .then(receiveData)
+      .catch((error) => {
+        reject(error);
+      });
   });
 
 export default GameSummaryFetcher;
