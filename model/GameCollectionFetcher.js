@@ -42,8 +42,11 @@ const GREG_GAME_IDS = [
   224517, // Brass: Birmingham
   290236, // Canvas
   293014, // Nidavellir
+  332772, // Revive
+  182028, // Through the Ages: A New Story of Civilization
   146508, // T.I.M.E Stories
   266192, // Wingspan
+  410201, // Wyrmspan
 ];
 const KIRK_GAME_IDS = [
   283355, // Dune (2019)
