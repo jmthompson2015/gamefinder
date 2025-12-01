@@ -1,6 +1,6 @@
 #! /bin/bash
 
-export BASE="/Users/jmthompson/Documents/Software Development/git/gamefinder"
+export BASE="/Users/jmthompson/Documents/SoftwareDev/git/gamefinder"
 
 open "${BASE}/artifact/TestSuite.html"
 

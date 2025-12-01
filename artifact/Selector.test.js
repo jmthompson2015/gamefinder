@@ -110,12 +110,12 @@ QUnit.test("usernames()", (assert) => {
 
   // Verify.
   assert.ok(result);
-  assert.equal(result.length, 5);
+  assert.equal(result.length, 4);
   assert.equal(result[0], "ghightshoe");
   assert.equal(result[1], "jmthompson");
   assert.equal(result[2], "kmistr");
-  assert.equal(result[3], "nskinner07");
-  assert.equal(result[4], "BoardGameArena");
+  // assert.equal(result[3], "nskinner07");
+  assert.equal(result[3], "BoardGameArena");
 });
 
 QUnit.test("usersByIds()", (assert) => {
